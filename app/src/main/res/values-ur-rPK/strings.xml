@@ -2834,6 +2834,8 @@
     <string name="ah24010a">Yes</string>
     <string name="ah24010b">No</string>
     <string name="ah24011">None Of The Above</string>
+    <string name="ah24011a">Yes</string>
+    <string name="ah24011b">No</string>
     <string name="ah25">Did You Seek Care For The Above Mentioned Illness?</string>
     <string name="ah25a">Yes</string>
     <string name="ah25b">No</string>

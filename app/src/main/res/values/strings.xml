@@ -2835,6 +2835,8 @@
     <string name="ah24010a">Yes</string>
     <string name="ah24010b">No</string>
     <string name="ah24011">None Of The Above</string>
+    <string name="ah24011a">Yes</string>
+    <string name="ah24011b">No</string>
     <string name="ah25">Did You Seek Care For The Above Mentioned Illness?</string>
     <string name="ah25a">Yes</string>
     <string name="ah25b">No</string>
@@ -2901,9 +2903,9 @@
     <string name="ah3205">Girls And Boys Should Be Treated Equally By Their Teachers.</string>
     <string name="ah3205a">Strongly Agree</string>
     <string name="ah3205b">Agree</string>
-    <string name="ah3205e">Disagree</string>
+    <string name="ah3205c">Disagree</string>
     <string name="ah3205d">Strongly Disagree</string>
-    <string name="ah3205c">Don’t Know</string>
+    <string name="ah3205e">Don’t Know</string>
     <string name="ahnktitle">Nutrition Knowledge:</string>
     <string name="ah33">What Foods Are A Good Source Of Iron? (Don’T Probe, Select All That Apply)</string>
     <string name="ah33a">Vegetables (Green Leafy, Carrot )</string>
