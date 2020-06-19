@@ -28,8 +28,7 @@
             <!-- ahdmtitle  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVahdmtitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -37,18 +36,17 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/textView3Head"
                         android:text="@string/ahdmtitle" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3701  Title   -->
+            <!-- ah3701  Checkbox  -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3701"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,67 +54,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3701" />
 
                     <CheckBox
                         android:id="@+id/ah3701a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701a" />
 
                     <CheckBox
                         android:id="@+id/ah3701b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701b" />
 
                     <CheckBox
                         android:id="@+id/ah3701c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701c" />
 
                     <CheckBox
                         android:id="@+id/ah3701d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701d" />
 
                     <CheckBox
                         android:id="@+id/ah3701e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701e" />
 
                     <CheckBox
                         android:id="@+id/ah3701f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3701f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                    <CheckBox
+                        android:id="@+id/ah370196"
+                        style="@style/checkbox"
                         android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3701x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3701x" />
+                        android:id="@+id/ah370196x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370196"
+                        android:text='@{ah370196.checked? ah370196x.getText().toString() : ""}'
+                        android:visibility='@{ah370196.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3702  Title   -->
+            <!-- ah3702  Checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3702"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,67 +115,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3702" />
 
                     <CheckBox
                         android:id="@+id/ah3702a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702a" />
 
                     <CheckBox
                         android:id="@+id/ah3702b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702b" />
 
                     <CheckBox
                         android:id="@+id/ah3702c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702c" />
 
                     <CheckBox
                         android:id="@+id/ah3702e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702e" />
 
                     <CheckBox
                         android:id="@+id/ah3702d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702d" />
 
                     <CheckBox
                         android:id="@+id/ah3702f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3702f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah3702x" />
+                    <CheckBox
+                        android:id="@+id/ah370296"
+                        style="@style/checkbox"
+                        android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3702x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3702x" />
+                        android:id="@+id/ah370296x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370296"
+                        android:text='@{ah370296.checked? ah370296x.getText().toString() : ""}'
+                        android:visibility='@{ah370296.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3703  Title   -->
+            <!-- ah3703  Checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3703"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -192,67 +176,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3703" />
 
                     <CheckBox
                         android:id="@+id/ah3703a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703a" />
 
                     <CheckBox
                         android:id="@+id/ah3703b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703b" />
 
                     <CheckBox
                         android:id="@+id/ah3703c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703c" />
 
                     <CheckBox
                         android:id="@+id/ah3703e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703e" />
 
                     <CheckBox
                         android:id="@+id/ah3703d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703d" />
 
                     <CheckBox
                         android:id="@+id/ah3703f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3703f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah3703x" />
+                    <CheckBox
+                        android:id="@+id/ah370396"
+                        style="@style/checkbox"
+                        android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3703x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3703x" />
+                        android:id="@+id/ah370396x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370396"
+                        android:text='@{ah370396.checked? ah370396x.getText().toString() : ""}'
+                        android:visibility='@{ah370396.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3704  Title   -->
+            <!-- ah3704  Checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3704"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -260,67 +237,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3704" />
 
                     <CheckBox
                         android:id="@+id/ah3704a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704a" />
 
                     <CheckBox
                         android:id="@+id/ah3704b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704b" />
 
                     <CheckBox
                         android:id="@+id/ah3704c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704c" />
 
                     <CheckBox
                         android:id="@+id/ah3704e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704e" />
 
                     <CheckBox
                         android:id="@+id/ah3704d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704d" />
 
                     <CheckBox
                         android:id="@+id/ah3704f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3704f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah3704x" />
+                    <CheckBox
+                        android:id="@+id/ah370496"
+                        style="@style/checkbox"
+                        android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3704x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3704x" />
+                        android:id="@+id/ah370496x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370496"
+                        android:text='@{ah370496.checked? ah370496x.getText().toString() : ""}'
+                        android:visibility='@{ah370496.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3705  Title   -->
+            <!-- ah3705  Checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3705"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -328,67 +298,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3705" />
 
                     <CheckBox
                         android:id="@+id/ah3705a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705a" />
 
                     <CheckBox
                         android:id="@+id/ah3705b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705b" />
 
                     <CheckBox
                         android:id="@+id/ah3705c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705c" />
 
                     <CheckBox
                         android:id="@+id/ah3705e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705e" />
 
                     <CheckBox
                         android:id="@+id/ah3705d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705d" />
 
                     <CheckBox
                         android:id="@+id/ah3705f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3705f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah3705x" />
+                    <CheckBox
+                        android:id="@+id/ah370596"
+                        style="@style/checkbox"
+                        android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3705x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3705x" />
+                        android:id="@+id/ah370596x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370596"
+                        android:text='@{ah370596.checked? ah370596x.getText().toString() : ""}'
+                        android:visibility='@{ah370596.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah3706  Title   -->
+            <!-- ah3706  Checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3706"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -396,67 +359,60 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah3706" />
 
                     <CheckBox
                         android:id="@+id/ah3706a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706a" />
 
                     <CheckBox
                         android:id="@+id/ah3706b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706b" />
 
                     <CheckBox
                         android:id="@+id/ah3706c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706c" />
 
                     <CheckBox
                         android:id="@+id/ah3706e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706e" />
 
                     <CheckBox
                         android:id="@+id/ah3706d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706d" />
 
                     <CheckBox
                         android:id="@+id/ah3706f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah3706f" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah3706x" />
+                    <CheckBox
+                        android:id="@+id/ah370696"
+                        style="@style/checkbox"
+                        android:text="@string/ah3701x" />
 
                     <EditText
-                        android:id="@+id/ah3706x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah3706x" />
+                        android:id="@+id/ah370696x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah3701x"
+                        android:tag="ah370696"
+                        android:text='@{ah370696.checked? ah370696x.getText().toString() : ""}'
+                        android:visibility='@{ah370696.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah37a  Title   -->
+            <!-- ah37a  Edittext   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah37a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -464,22 +420,16 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah37a" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textviewhint"
                         android:text="@string/ah37aa" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/ah37aa"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
+                        style="@style/EditTextNum"
                         android:hint="@string/ah37aa"
                         app:mask="##"
                         app:maxValue="29"
@@ -487,16 +437,12 @@
                         app:type="range" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textviewhint"
                         android:text="@string/ah37ab" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/ah37ab"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
+                        style="@style/EditTextNum"
                         android:hint="@string/ah37ab"
                         app:mask="##"
                         app:maxValue="11"
@@ -504,29 +450,26 @@
                         app:type="range" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textviewhint"
                         android:text="@string/ah37ac" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/ah37ac"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
+                        style="@style/EditTextNum"
                         android:hint="@string/ah37ac"
                         app:mask="##"
                         app:maxValue="19"
                         app:minValue="1"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah38  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah38"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -534,36 +477,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah38" />
 
                     <RadioGroup
                         android:id="@+id/ah38"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/ah38a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah38a" />
 
                         <RadioButton
                             android:id="@+id/ah38b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah38b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah39  Title   -->
+            <!-- ah39  checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -571,55 +516,50 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah39" />
 
                     <CheckBox
                         android:id="@+id/ah39a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah39a" />
 
                     <CheckBox
                         android:id="@+id/ah39b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah39b" />
 
                     <CheckBox
                         android:id="@+id/ah39c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah39c" />
 
                     <CheckBox
                         android:id="@+id/ah39d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah39d" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                    <CheckBox
+                        android:id="@+id/ah3996"
+                        style="@style/checkbox"
                         android:text="@string/ah39x" />
 
                     <EditText
-                        android:id="@+id/ah39x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah39x" />
+                        android:id="@+id/ah3996x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah39x"
+                        android:tag="ah3996"
+                        android:text='@{ah3996.checked? ah3996x.getText().toString() : ""}'
+                        android:visibility='@{ah3996.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah40  Title   -->
+            <!-- ah40  checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -627,92 +567,95 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah40" />
 
                     <CheckBox
                         android:id="@+id/ah40a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40a" />
 
                     <CheckBox
                         android:id="@+id/ah40b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40b" />
 
                     <CheckBox
                         android:id="@+id/ah40c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40c" />
 
                     <CheckBox
                         android:id="@+id/ah40d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40d" />
 
                     <CheckBox
                         android:id="@+id/ah40e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40e" />
 
                     <CheckBox
                         android:id="@+id/ah40f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40f" />
 
                     <CheckBox
                         android:id="@+id/ah40g"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40g" />
 
                     <CheckBox
                         android:id="@+id/ah40h"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40h" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-            <!-- ah40x  Input   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVah40x"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                    <CheckBox
+                        android:id="@+id/ah4096"
+                        style="@style/checkbox"
                         android:text="@string/ah40x" />
 
                     <EditText
-                        android:id="@+id/ah40x"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah40x" />
+                        android:id="@+id/ah4096x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah40x"
+                        android:tag="ah4096"
+                        android:text='@{ah4096.checked? ah4096x.getText().toString() : ""}'
+                        android:visibility='@{ah4096.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
+            <!-- ah40x  Input   -->
+            <!-- <androidx.cardview.widget.CardView
+                 android:id="@+id/fldGrpCVah40x"
+                 style="@style/cardView">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="56dp"
+                         android:layout_marginTop="12dp"
+                         android:text="@string/ah40x" />
+
+                     <EditText
+                         android:id="@+id/ah40x"
+                         android:layout_width="match_parent"
+                         android:layout_height="56dp"
+                         android:layout_marginBottom="12dp"
+                         android:hint="@string/ah40x" />
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>-->
 
             <!-- ah40aa  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah40aa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -720,79 +663,70 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah40aa" />
 
                     <CheckBox
                         android:id="@+id/ah40aaa"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aaa" />
 
                     <CheckBox
                         android:id="@+id/ah40aab"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aab" />
 
                     <CheckBox
                         android:id="@+id/ah40aac"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aac" />
 
                     <CheckBox
                         android:id="@+id/ah40aad"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aad" />
 
                     <CheckBox
                         android:id="@+id/ah40aae"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aae" />
 
                     <CheckBox
                         android:id="@+id/ah40aaf"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aaf" />
 
                     <CheckBox
                         android:id="@+id/ah40aag"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aag" />
 
                     <CheckBox
                         android:id="@+id/ah40aah"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah40aah" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                    <CheckBox
+                        android:id="@+id/ah40aai"
+                        style="@style/checkbox"
                         android:text="@string/ah40aai" />
 
                     <EditText
-                        android:id="@+id/ah40aai"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/ah40aai" />
+                        android:id="@+id/ah40aaix"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/ah40aai"
+                        android:tag="ah4096"
+                        android:text='@{ah40aai.checked? ah40aaix.getText().toString() : ""}'
+                        android:visibility='@{ah40aai.checked? View.VISIBLE : View.GONE}' />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah41  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -800,42 +734,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah41" />
 
                     <RadioGroup
                         android:id="@+id/ah41"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah41a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah41a" />
 
                         <RadioButton
                             android:id="@+id/ah41b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah41b" />
 
                         <RadioButton
                             android:id="@+id/ah41c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah41c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah42  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah42"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -843,42 +773,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah42" />
 
                     <RadioGroup
                         android:id="@+id/ah42"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah42a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah42a" />
 
                         <RadioButton
                             android:id="@+id/ah42b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah42b" />
 
                         <RadioButton
                             android:id="@+id/ah42c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah42c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah43  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah43"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -886,36 +812,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah43" />
 
                     <RadioGroup
                         android:id="@+id/ah43"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/ah43a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah43a" />
 
                         <RadioButton
                             android:id="@+id/ah43b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah43b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <!-- ah44  Title   -->
+            <!-- ah44  checkbox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah44"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -923,72 +851,62 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah44" />
 
                     <CheckBox
                         android:id="@+id/ah44a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44a" />
 
                     <CheckBox
                         android:id="@+id/ah44b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44b" />
 
                     <CheckBox
                         android:id="@+id/ah44c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44c" />
 
                     <CheckBox
                         android:id="@+id/ah44d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44d" />
 
                     <CheckBox
                         android:id="@+id/ah44e"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44e" />
 
                     <CheckBox
                         android:id="@+id/ah44f"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44f" />
 
                     <CheckBox
                         android:id="@+id/ah44g"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44g" />
 
                     <CheckBox
                         android:id="@+id/ah44h"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44h" />
 
                     <CheckBox
                         android:id="@+id/ah44i"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/checkbox"
                         android:text="@string/ah44i" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah45  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah45"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -996,42 +914,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah45" />
 
                     <RadioGroup
                         android:id="@+id/ah45"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah45a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah45a" />
 
                         <RadioButton
                             android:id="@+id/ah45b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah45b" />
 
                         <RadioButton
                             android:id="@+id/ah45c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah45c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah46  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah46"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1039,42 +953,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah46" />
 
                     <RadioGroup
                         android:id="@+id/ah46"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah46a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah46a" />
 
                         <RadioButton
                             android:id="@+id/ah46b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah46b" />
 
                         <RadioButton
                             android:id="@+id/ah46c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah46c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah47d  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah47d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1082,42 +992,38 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah47d" />
 
                     <RadioGroup
                         android:id="@+id/ah47d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah47a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah47a" />
 
                         <RadioButton
                             android:id="@+id/ah47b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah47b" />
 
                         <RadioButton
                             android:id="@+id/ah47c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah47c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- ah48  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah48"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1125,67 +1031,64 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
+                        style="@style/i_textview"
                         android:text="@string/ah48" />
 
                     <RadioGroup
                         android:id="@+id/ah48"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/ah48a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah48a" />
 
                         <RadioButton
                             android:id="@+id/ah48b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah48b" />
 
                         <RadioButton
                             android:id="@+id/ah48c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah48c" />
 
                         <RadioButton
                             android:id="@+id/ah48d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/ah48d" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btn_End"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
+                    android:id="@+id/btnEnd"
+                    style="@style/buttons_bottom"
+                    android:background="@android:color/holo_red_light"
                     android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Cancel" />
+                    android:text="@string/end_interview" />
 
                 <Button
-                    android:id="@+id/btn_Continue"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
+                    android:id="@+id/btnNext"
+                    style="@style/buttons_bottom"
+                    android:background="@android:color/holo_green_light"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="Save" />
-                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+                    android:text="@string/nextSection" />
+
             </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
+
 </layout>

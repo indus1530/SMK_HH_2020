@@ -90,9 +90,7 @@ public class SectionAH7Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
         json.put("ah49a", bi.ah49a.isChecked() ? "1" : "-1");
-
         json.put("ah49b", bi.ah49b.isChecked() ? "2" : "-1");
-
         json.put("ah49c", bi.ah49c.isChecked() ? "98" : "-1");
 
         json.put("ah50", bi.ah50a.isChecked() ? "1"
@@ -120,8 +118,8 @@ public class SectionAH7Activity extends AppCompatActivity {
         json.put("ah54", bi.ah54a.isChecked() ? "1"
                 : bi.ah54b.isChecked() ? "98"
                 : "-1");
-
         json.put("ah54ax", bi.ah54ax.getText().toString());
+
         json.put("ah55", bi.ah55a.isChecked() ? "1"
                 : bi.ah55b.isChecked() ? "2"
                 : bi.ah55c.isChecked() ? "3"
@@ -130,15 +128,16 @@ public class SectionAH7Activity extends AppCompatActivity {
 
         json.put("ah56a", bi.ah56a.getText().toString());
 
-        json.put("ah57", "-1");
+//        json.put("ah57", "-1");
 
         json.put("ah57a", bi.ah57a.getText().toString());
+        json.put("ah57b", bi.ah49a.isChecked() ? "1" : "-1");
 
-        json.put("ah57b", "-1");
+//        json.put("ah57b", "-1");
 
         json.put("ah58", bi.ah58.getText().toString());
 
-        json.put("ah 59", bi.ah59.getText().toString());
+        json.put("ah59", bi.ah59.getText().toString());
 
         json.put("ah60", bi.ah60.getText().toString());
 
