@@ -187,7 +187,7 @@ public class SectionH2Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionKActivity.class));
+                startActivity(new Intent(this, SectionAH1Activity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
