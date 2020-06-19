@@ -22,13 +22,7 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-        <activity android:name=".ui.sections.SectionAH7Activity"></activity>
-        <activity android:name=".ui.sections.SectionAH6Activity" />
-        <activity android:name=".ui.sections.SectionAH5Activity" />
-        <activity android:name=".ui.sections.SectionAH4Activity" />
-        <activity android:name=".ui.sections.SectionAH3Activity" />
-        <activity android:name=".ui.sections.SectionAH2Activity" />
-        <activity android:name=".ui.sections.SectionAH1Activity" />
+
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -98,6 +92,34 @@
         <activity
             android:name=".ui.sections.SectionH2Activity"
             android:label="@string/th2heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH1Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH2Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH3Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH4Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH5Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH6Activity"
+            android:label="@string/ah0title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionAH7Activity"
+            android:label="@string/ah0title"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionI1Activity"
