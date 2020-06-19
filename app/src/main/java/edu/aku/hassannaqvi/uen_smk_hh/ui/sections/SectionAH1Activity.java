@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -48,6 +49,18 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.fldGrpCVh104.setVisibility(View.GONE);
             }
         });*/
+
+        bi.ah1.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah1a.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecAH101);
+            }
+        }));
+
+        bi.ah2.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah2b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah3);
+            }
+        }));
 
 
     }
