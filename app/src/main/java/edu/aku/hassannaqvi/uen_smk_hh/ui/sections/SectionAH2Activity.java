@@ -36,20 +36,6 @@ public class SectionAH2Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        //h102
-        /*bi.h102.setOnCheckedChangeListener((group, checkedId) -> {
-
-            if (checkedId != bi.h102a.getId()) {
-                bi.fldGrpCVh103.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh104.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVh103);
-                Clear.clearAllFields(bi.fldGrpCVh104);
-                bi.fldGrpCVh103.setVisibility(View.GONE);
-                bi.fldGrpCVh104.setVisibility(View.GONE);
-            }
-        });*/
-
         bi.ah8.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah8c.getId()) {
                 Clear.clearAllFields(bi.fldGrpSecAH201);
@@ -61,7 +47,6 @@ public class SectionAH2Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpSecAH202);
             }
         }));
-
 
     }
 

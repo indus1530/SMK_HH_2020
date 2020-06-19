@@ -2785,6 +2785,9 @@
     <string name="ah21f">Never Talk To Them</string>
     <string name="ah21g">I Only Talk With My Friend</string>
     <string name="ah22">Do You Currently Have Any Of These Habits? (It Also Include “Ever” Having These Habits)</string>
+    <string name="ah22a">Yes</string>
+    <string name="ah22b">No</string>
+    <string name="ah22c">Never</string>
     <string name="ah2201">Cigarette Smoking</string>
     <string name="ah2201a">Yes</string>
     <string name="ah2201b">No</string>
@@ -2798,6 +2801,9 @@
     <string name="ah2203b">No</string>
     <string name="ah2203c">Never</string>
     <string name="ah22x">Other (Specify)</string>
+    <string name="ah2204a">Yes</string>
+    <string name="ah2204b">No</string>
+    <string name="ah2204c">Never</string>
     <string name="ah23">Since When?</string>
     <string name="ah23a">Days</string>
     <string name="ah23b">Month</string>

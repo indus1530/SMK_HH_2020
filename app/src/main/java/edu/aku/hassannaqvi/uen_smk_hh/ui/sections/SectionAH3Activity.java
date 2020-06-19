@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -48,6 +49,48 @@ public class SectionAH3Activity extends AppCompatActivity {
                 bi.fldGrpCVh104.setVisibility(View.GONE);
             }
         });*/
+
+        bi.ah16.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah16b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecAH301);
+            }
+        }));
+
+        bi.ah19.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah19b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecAH302);
+            }
+        }));
+
+        bi.ah22.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i != bi.ah22a.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecAH303);
+            }
+        }));
+
+        bi.ah24011.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah24011a.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecAH304);
+            }
+        }));
+
+        bi.ah25.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah25b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah26);
+            }
+        }));
+
+        bi.ah27.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah27b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah28);
+            }
+        }));
+
+        bi.ah3003.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i != bi.ah3003a.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah31);
+            }
+        }));
 
 
     }
@@ -138,6 +181,11 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah21g.isChecked() ? "7"
                 : "-1");
 
+        json.put("ah22", bi.ah22a.isChecked() ? "1"
+                : bi.ah22b.isChecked() ? "2"
+                : bi.ah22c.isChecked() ? "3"
+                : "-1");
+
         json.put("ah2201", bi.ah2201a.isChecked() ? "1"
                 : bi.ah2201b.isChecked() ? "2"
                 : bi.ah2201c.isChecked() ? "3"
@@ -153,7 +201,11 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah2203c.isChecked() ? "3"
                 : "-1");
 
-        json.put("ah22x", bi.ah22x.getText().toString());
+        json.put("ah2204", bi.ah2204a.isChecked() ? "1"
+                : bi.ah2204b.isChecked() ? "2"
+                : bi.ah2204c.isChecked() ? "3"
+                : "-1");
+        json.put("ah2296x", bi.ah2296x.getText().toString());
 
 //        json.put("ah23", bi.ah23.getText().toString());
 
