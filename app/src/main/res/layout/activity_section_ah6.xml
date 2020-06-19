@@ -57,48 +57,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3701" />
 
-                    <CheckBox
-                        android:id="@+id/ah3701a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701a" />
+                    <LinearLayout
+                        android:id="@+id/AH3701check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3701b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701b" />
+                        <CheckBox
+                            android:id="@+id/ah3701a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3701c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701c" />
+                        <CheckBox
+                            android:id="@+id/ah3701b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3701d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701d" />
+                        <CheckBox
+                            android:id="@+id/ah3701c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3701e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701e" />
+                        <CheckBox
+                            android:id="@+id/ah3701d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701d" />
 
-                    <CheckBox
-                        android:id="@+id/ah3701f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701f" />
+                        <CheckBox
+                            android:id="@+id/ah3701e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701e" />
 
-                    <CheckBox
-                        android:id="@+id/ah370196"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3701f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701f" />
 
-                    <EditText
-                        android:id="@+id/ah370196x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370196"
-                        android:text='@{ah370196.checked? ah370196x.getText().toString() : ""}'
-                        android:visibility='@{ah370196.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370196"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370196x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370196"
+                            android:text='@{ah370196.checked? ah370196x.getText().toString() : ""}'
+                            android:visibility='@{ah370196.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -118,48 +127,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3702" />
 
-                    <CheckBox
-                        android:id="@+id/ah3702a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702a" />
+                    <LinearLayout
+                        android:id="@+id/AH3702check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3702b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702b" />
+                        <CheckBox
+                            android:id="@+id/ah3702a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3702c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702c" />
+                        <CheckBox
+                            android:id="@+id/ah3702b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3702e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702e" />
+                        <CheckBox
+                            android:id="@+id/ah3702c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3702d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702d" />
+                        <CheckBox
+                            android:id="@+id/ah3702e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702e" />
 
-                    <CheckBox
-                        android:id="@+id/ah3702f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3702f" />
+                        <CheckBox
+                            android:id="@+id/ah3702d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702d" />
 
-                    <CheckBox
-                        android:id="@+id/ah370296"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3702f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3702f" />
 
-                    <EditText
-                        android:id="@+id/ah370296x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370296"
-                        android:text='@{ah370296.checked? ah370296x.getText().toString() : ""}'
-                        android:visibility='@{ah370296.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370296"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370296x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370296"
+                            android:text='@{ah370296.checked? ah370296x.getText().toString() : ""}'
+                            android:visibility='@{ah370296.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -179,48 +197,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3703" />
 
-                    <CheckBox
-                        android:id="@+id/ah3703a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703a" />
+                    <LinearLayout
+                        android:id="@+id/AH3703check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3703b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703b" />
+                        <CheckBox
+                            android:id="@+id/ah3703a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3703c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703c" />
+                        <CheckBox
+                            android:id="@+id/ah3703b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3703e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703e" />
+                        <CheckBox
+                            android:id="@+id/ah3703c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3703d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703d" />
+                        <CheckBox
+                            android:id="@+id/ah3703e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703e" />
 
-                    <CheckBox
-                        android:id="@+id/ah3703f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3703f" />
+                        <CheckBox
+                            android:id="@+id/ah3703d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703d" />
 
-                    <CheckBox
-                        android:id="@+id/ah370396"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3703f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3703f" />
 
-                    <EditText
-                        android:id="@+id/ah370396x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370396"
-                        android:text='@{ah370396.checked? ah370396x.getText().toString() : ""}'
-                        android:visibility='@{ah370396.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370396"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370396x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370396"
+                            android:text='@{ah370396.checked? ah370396x.getText().toString() : ""}'
+                            android:visibility='@{ah370396.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -240,48 +267,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3704" />
 
-                    <CheckBox
-                        android:id="@+id/ah3704a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704a" />
+                    <LinearLayout
+                        android:id="@+id/AH3704check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3704b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704b" />
+                        <CheckBox
+                            android:id="@+id/ah3704a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3704c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704c" />
+                        <CheckBox
+                            android:id="@+id/ah3704b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3704e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704e" />
+                        <CheckBox
+                            android:id="@+id/ah3704c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3704d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704d" />
+                        <CheckBox
+                            android:id="@+id/ah3704e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704e" />
 
-                    <CheckBox
-                        android:id="@+id/ah3704f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3704f" />
+                        <CheckBox
+                            android:id="@+id/ah3704d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704d" />
 
-                    <CheckBox
-                        android:id="@+id/ah370496"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3704f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3704f" />
 
-                    <EditText
-                        android:id="@+id/ah370496x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370496"
-                        android:text='@{ah370496.checked? ah370496x.getText().toString() : ""}'
-                        android:visibility='@{ah370496.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370496"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370496x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370496"
+                            android:text='@{ah370496.checked? ah370496x.getText().toString() : ""}'
+                            android:visibility='@{ah370496.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -301,48 +337,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3705" />
 
-                    <CheckBox
-                        android:id="@+id/ah3705a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705a" />
+                    <LinearLayout
+                        android:id="@+id/AH3705check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3705b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705b" />
+                        <CheckBox
+                            android:id="@+id/ah3705a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3705c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705c" />
+                        <CheckBox
+                            android:id="@+id/ah3705b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3705e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705e" />
+                        <CheckBox
+                            android:id="@+id/ah3705c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3705d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705d" />
+                        <CheckBox
+                            android:id="@+id/ah3705e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705e" />
 
-                    <CheckBox
-                        android:id="@+id/ah3705f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3705f" />
+                        <CheckBox
+                            android:id="@+id/ah3705d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705d" />
 
-                    <CheckBox
-                        android:id="@+id/ah370596"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3705f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3705f" />
 
-                    <EditText
-                        android:id="@+id/ah370596x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370596"
-                        android:text='@{ah370596.checked? ah370596x.getText().toString() : ""}'
-                        android:visibility='@{ah370596.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370596"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370596x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370596"
+                            android:text='@{ah370596.checked? ah370596x.getText().toString() : ""}'
+                            android:visibility='@{ah370596.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -362,48 +407,57 @@
                         style="@style/i_textview"
                         android:text="@string/ah3706" />
 
-                    <CheckBox
-                        android:id="@+id/ah3706a"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706a" />
+                    <LinearLayout
+                        android:id="@+id/AH3706check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah3706b"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706b" />
+                        <CheckBox
+                            android:id="@+id/ah3706a"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706a" />
 
-                    <CheckBox
-                        android:id="@+id/ah3706c"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706c" />
+                        <CheckBox
+                            android:id="@+id/ah3706b"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706b" />
 
-                    <CheckBox
-                        android:id="@+id/ah3706e"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706e" />
+                        <CheckBox
+                            android:id="@+id/ah3706c"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3706d"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706d" />
+                        <CheckBox
+                            android:id="@+id/ah3706e"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706e" />
 
-                    <CheckBox
-                        android:id="@+id/ah3706f"
-                        style="@style/checkbox"
-                        android:text="@string/ah3706f" />
+                        <CheckBox
+                            android:id="@+id/ah3706d"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706d" />
 
-                    <CheckBox
-                        android:id="@+id/ah370696"
-                        style="@style/checkbox"
-                        android:text="@string/ah3701x" />
+                        <CheckBox
+                            android:id="@+id/ah3706f"
+                            style="@style/checkbox"
+                            android:text="@string/ah3706f" />
 
-                    <EditText
-                        android:id="@+id/ah370696x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah3701x"
-                        android:tag="ah370696"
-                        android:text='@{ah370696.checked? ah370696x.getText().toString() : ""}'
-                        android:visibility='@{ah370696.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah370696"
+                            style="@style/checkbox"
+                            android:text="@string/ah3701x" />
+
+                        <EditText
+                            android:id="@+id/ah370696x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah3701x"
+                            android:tag="ah370696"
+                            android:text='@{ah370696.checked? ah370696x.getText().toString() : ""}'
+                            android:visibility='@{ah370696.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -519,38 +573,47 @@
                         style="@style/i_textview"
                         android:text="@string/ah39" />
 
-                    <CheckBox
-                        android:id="@+id/ah39a"
-                        style="@style/checkbox"
-                        android:text="@string/ah39a" />
+                    <LinearLayout
+                        android:id="@+id/AH39check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah39b"
-                        style="@style/checkbox"
-                        android:text="@string/ah39b" />
+                        <CheckBox
+                            android:id="@+id/ah39a"
+                            style="@style/checkbox"
+                            android:text="@string/ah39a" />
 
-                    <CheckBox
-                        android:id="@+id/ah39c"
-                        style="@style/checkbox"
-                        android:text="@string/ah39c" />
+                        <CheckBox
+                            android:id="@+id/ah39b"
+                            style="@style/checkbox"
+                            android:text="@string/ah39b" />
 
-                    <CheckBox
-                        android:id="@+id/ah39d"
-                        style="@style/checkbox"
-                        android:text="@string/ah39d" />
+                        <CheckBox
+                            android:id="@+id/ah39c"
+                            style="@style/checkbox"
+                            android:text="@string/ah39c" />
 
-                    <CheckBox
-                        android:id="@+id/ah3996"
-                        style="@style/checkbox"
-                        android:text="@string/ah39x" />
+                        <CheckBox
+                            android:id="@+id/ah39d"
+                            style="@style/checkbox"
+                            android:text="@string/ah39d" />
 
-                    <EditText
-                        android:id="@+id/ah3996x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah39x"
-                        android:tag="ah3996"
-                        android:text='@{ah3996.checked? ah3996x.getText().toString() : ""}'
-                        android:visibility='@{ah3996.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah3996"
+                            style="@style/checkbox"
+                            android:text="@string/ah39x" />
+
+                        <EditText
+                            android:id="@+id/ah3996x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah39x"
+                            android:tag="ah3996"
+                            android:text='@{ah3996.checked? ah3996x.getText().toString() : ""}'
+                            android:visibility='@{ah3996.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -570,58 +633,67 @@
                         style="@style/i_textview"
                         android:text="@string/ah40" />
 
-                    <CheckBox
-                        android:id="@+id/ah40a"
-                        style="@style/checkbox"
-                        android:text="@string/ah40a" />
+                    <LinearLayout
+                        android:id="@+id/AH40check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah40b"
-                        style="@style/checkbox"
-                        android:text="@string/ah40b" />
+                        <CheckBox
+                            android:id="@+id/ah40a"
+                            style="@style/checkbox"
+                            android:text="@string/ah40a" />
 
-                    <CheckBox
-                        android:id="@+id/ah40c"
-                        style="@style/checkbox"
-                        android:text="@string/ah40c" />
+                        <CheckBox
+                            android:id="@+id/ah40b"
+                            style="@style/checkbox"
+                            android:text="@string/ah40b" />
 
-                    <CheckBox
-                        android:id="@+id/ah40d"
-                        style="@style/checkbox"
-                        android:text="@string/ah40d" />
+                        <CheckBox
+                            android:id="@+id/ah40c"
+                            style="@style/checkbox"
+                            android:text="@string/ah40c" />
 
-                    <CheckBox
-                        android:id="@+id/ah40e"
-                        style="@style/checkbox"
-                        android:text="@string/ah40e" />
+                        <CheckBox
+                            android:id="@+id/ah40d"
+                            style="@style/checkbox"
+                            android:text="@string/ah40d" />
 
-                    <CheckBox
-                        android:id="@+id/ah40f"
-                        style="@style/checkbox"
-                        android:text="@string/ah40f" />
+                        <CheckBox
+                            android:id="@+id/ah40e"
+                            style="@style/checkbox"
+                            android:text="@string/ah40e" />
 
-                    <CheckBox
-                        android:id="@+id/ah40g"
-                        style="@style/checkbox"
-                        android:text="@string/ah40g" />
+                        <CheckBox
+                            android:id="@+id/ah40f"
+                            style="@style/checkbox"
+                            android:text="@string/ah40f" />
 
-                    <CheckBox
-                        android:id="@+id/ah40h"
-                        style="@style/checkbox"
-                        android:text="@string/ah40h" />
+                        <CheckBox
+                            android:id="@+id/ah40g"
+                            style="@style/checkbox"
+                            android:text="@string/ah40g" />
 
-                    <CheckBox
-                        android:id="@+id/ah4096"
-                        style="@style/checkbox"
-                        android:text="@string/ah40x" />
+                        <CheckBox
+                            android:id="@+id/ah40h"
+                            style="@style/checkbox"
+                            android:text="@string/ah40h" />
 
-                    <EditText
-                        android:id="@+id/ah4096x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah40x"
-                        android:tag="ah4096"
-                        android:text='@{ah4096.checked? ah4096x.getText().toString() : ""}'
-                        android:visibility='@{ah4096.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah4096"
+                            style="@style/checkbox"
+                            android:text="@string/ah40x" />
+
+                        <EditText
+                            android:id="@+id/ah4096x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah40x"
+                            android:tag="ah4096"
+                            android:text='@{ah4096.checked? ah4096x.getText().toString() : ""}'
+                            android:visibility='@{ah4096.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -666,58 +738,67 @@
                         style="@style/i_textview"
                         android:text="@string/ah40aa" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aaa"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aaa" />
+                    <LinearLayout
+                        android:id="@+id/AH40aacheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah40aab"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aab" />
+                        <CheckBox
+                            android:id="@+id/ah40aaa"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aaa" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aac"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aac" />
+                        <CheckBox
+                            android:id="@+id/ah40aab"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aab" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aad"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aad" />
+                        <CheckBox
+                            android:id="@+id/ah40aac"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aac" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aae"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aae" />
+                        <CheckBox
+                            android:id="@+id/ah40aad"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aad" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aaf"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aaf" />
+                        <CheckBox
+                            android:id="@+id/ah40aae"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aae" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aag"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aag" />
+                        <CheckBox
+                            android:id="@+id/ah40aaf"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aaf" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aah"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aah" />
+                        <CheckBox
+                            android:id="@+id/ah40aag"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aag" />
 
-                    <CheckBox
-                        android:id="@+id/ah40aai"
-                        style="@style/checkbox"
-                        android:text="@string/ah40aai" />
+                        <CheckBox
+                            android:id="@+id/ah40aah"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aah" />
 
-                    <EditText
-                        android:id="@+id/ah40aaix"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/ah40aai"
-                        android:tag="ah4096"
-                        android:text='@{ah40aai.checked? ah40aaix.getText().toString() : ""}'
-                        android:visibility='@{ah40aai.checked? View.VISIBLE : View.GONE}' />
+                        <CheckBox
+                            android:id="@+id/ah40aai"
+                            style="@style/checkbox"
+                            android:text="@string/ah40aai" />
+
+                        <EditText
+                            android:id="@+id/ah40aaix"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/ah40aai"
+                            android:tag="ah4096"
+                            android:text='@{ah40aai.checked? ah40aaix.getText().toString() : ""}'
+                            android:visibility='@{ah40aai.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -854,50 +935,59 @@
                         style="@style/i_textview"
                         android:text="@string/ah44" />
 
-                    <CheckBox
-                        android:id="@+id/ah44a"
-                        style="@style/checkbox"
-                        android:text="@string/ah44a" />
+                    <LinearLayout
+                        android:id="@+id/AH44check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/ah44b"
-                        style="@style/checkbox"
-                        android:text="@string/ah44b" />
+                        <CheckBox
+                            android:id="@+id/ah44a"
+                            style="@style/checkbox"
+                            android:text="@string/ah44a" />
 
-                    <CheckBox
-                        android:id="@+id/ah44c"
-                        style="@style/checkbox"
-                        android:text="@string/ah44c" />
+                        <CheckBox
+                            android:id="@+id/ah44b"
+                            style="@style/checkbox"
+                            android:text="@string/ah44b" />
 
-                    <CheckBox
-                        android:id="@+id/ah44d"
-                        style="@style/checkbox"
-                        android:text="@string/ah44d" />
+                        <CheckBox
+                            android:id="@+id/ah44c"
+                            style="@style/checkbox"
+                            android:text="@string/ah44c" />
 
-                    <CheckBox
-                        android:id="@+id/ah44e"
-                        style="@style/checkbox"
-                        android:text="@string/ah44e" />
+                        <CheckBox
+                            android:id="@+id/ah44d"
+                            style="@style/checkbox"
+                            android:text="@string/ah44d" />
 
-                    <CheckBox
-                        android:id="@+id/ah44f"
-                        style="@style/checkbox"
-                        android:text="@string/ah44f" />
+                        <CheckBox
+                            android:id="@+id/ah44e"
+                            style="@style/checkbox"
+                            android:text="@string/ah44e" />
 
-                    <CheckBox
-                        android:id="@+id/ah44g"
-                        style="@style/checkbox"
-                        android:text="@string/ah44g" />
+                        <CheckBox
+                            android:id="@+id/ah44f"
+                            style="@style/checkbox"
+                            android:text="@string/ah44f" />
 
-                    <CheckBox
-                        android:id="@+id/ah44h"
-                        style="@style/checkbox"
-                        android:text="@string/ah44h" />
+                        <CheckBox
+                            android:id="@+id/ah44g"
+                            style="@style/checkbox"
+                            android:text="@string/ah44g" />
 
-                    <CheckBox
-                        android:id="@+id/ah44i"
-                        style="@style/checkbox"
-                        android:text="@string/ah44i" />
+                        <CheckBox
+                            android:id="@+id/ah44h"
+                            style="@style/checkbox"
+                            android:text="@string/ah44h" />
+
+                        <CheckBox
+                            android:id="@+id/ah44i"
+                            style="@style/checkbox"
+                            android:text="@string/ah44i" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -1064,6 +1154,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1086,6 +1177,7 @@
                     android:text="@string/nextSection" />
 
             </LinearLayout>
+
 
         </LinearLayout>
 

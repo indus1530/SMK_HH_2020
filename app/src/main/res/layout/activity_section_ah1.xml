@@ -322,6 +322,7 @@
                         android:text="@string/ah7" />
 
                     <LinearLayout
+                        android:id="@+id/AH7check"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
