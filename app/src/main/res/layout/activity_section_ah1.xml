@@ -186,8 +186,8 @@
 
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah3"
-                            android:layout_width="match_parent"
                             style="@style/EditTextNum"
+                            android:layout_width="match_parent"
                             android:hint="@string/ah3"
                             app:mask="##"
                             app:maxValue="100"
@@ -214,8 +214,8 @@
 
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah4"
-                            android:layout_width="match_parent"
                             style="@style/EditTextNum"
+                            android:layout_width="match_parent"
                             android:hint="@string/ah4"
                             app:mask="##"
                             app:maxValue="100"
