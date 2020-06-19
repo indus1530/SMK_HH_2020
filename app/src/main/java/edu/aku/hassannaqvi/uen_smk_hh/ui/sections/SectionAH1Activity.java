@@ -89,15 +89,15 @@ public class SectionAH1Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("ah1", bi.ah1a.isChecked() ? ""
-                : bi.ah1b.isChecked() ? "1"
-                : bi.ah1c.isChecked() ? "2"
-                : bi.ah1d.isChecked() ? "3"
-                : bi.ah1e.isChecked() ? "4"
-                : bi.ah1f.isChecked() ? "5"
-                : bi.ah1g.isChecked() ? "6"
-                : bi.ah1h.isChecked() ? "7"
-                : bi.ah1i.isChecked() ? "8"
+        json.put("ah1", bi.ah1a.isChecked() ? "11"
+                : bi.ah1b.isChecked() ? "12"
+                : bi.ah1c.isChecked() ? "13"
+                : bi.ah1d.isChecked() ? "14"
+                : bi.ah1e.isChecked() ? "15"
+                : bi.ah1f.isChecked() ? "16"
+                : bi.ah1g.isChecked() ? "17"
+                : bi.ah1h.isChecked() ? "18"
+                : bi.ah1i.isChecked() ? "19"
                 : bi.ah1j.isChecked() ? "98"
                 : bi.ah1k.isChecked() ? "99"
                 : "-1");
@@ -119,7 +119,16 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : bi.ah6c.isChecked() ? "3"
                 : "-1");
 
-        json.put("ah7x", bi.ah7x.getText().toString());
+        json.put("ah7a", bi.ah7a.isChecked() ? "1" : "-1");
+        json.put("ah7b", bi.ah7b.isChecked() ? "2" : "-1");
+        json.put("ah7c", bi.ah7c.isChecked() ? "3" : "-1");
+        json.put("ah7d", bi.ah7d.isChecked() ? "4" : "-1");
+        json.put("ah7e", bi.ah7e.isChecked() ? "5" : "-1");
+        json.put("ah7f", bi.ah7f.isChecked() ? "6" : "-1");
+        json.put("ah7g", bi.ah7g.isChecked() ? "7" : "-1");
+        json.put("ah7h", bi.ah7h.isChecked() ? "8" : "-1");
+        json.put("ah796", bi.ah796.isChecked() ? "96" : "-1");
+        json.put("ah796x", bi.ah796x.getText().toString());
 
 
         MainApp.kish.setsH1(String.valueOf(json));
