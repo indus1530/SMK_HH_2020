@@ -14,9 +14,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
-import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
-import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh3Binding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
@@ -35,20 +32,6 @@ public class SectionAH3Activity extends AppCompatActivity {
     }
 
     private void setupSkips() {
-
-        //h102
-        /*bi.h102.setOnCheckedChangeListener((group, checkedId) -> {
-
-            if (checkedId != bi.h102a.getId()) {
-                bi.fldGrpCVh103.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh104.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVh103);
-                Clear.clearAllFields(bi.fldGrpCVh104);
-                bi.fldGrpCVh103.setVisibility(View.GONE);
-                bi.fldGrpCVh104.setVisibility(View.GONE);
-            }
-        });*/
 
         bi.ah16.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah16b.getId()) {
@@ -118,14 +101,16 @@ public class SectionAH3Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SH1, MainApp.kish.getsH1());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+
+        return true;
     }
 
     private void SaveDraft() throws JSONException {
@@ -298,7 +283,7 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : "-1");
 
 
-        MainApp.kish.setsH1(String.valueOf(json));
+        //       MainApp.kish.setsH1(String.valueOf(json));
     }
 
     private boolean formValidation() {

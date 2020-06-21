@@ -13,9 +13,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
-import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
-import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh7Binding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
@@ -75,14 +72,16 @@ public class SectionAH7Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SH1, MainApp.kish.getsH1());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+
+        return true;
     }
 
     private void SaveDraft() throws JSONException {
@@ -142,7 +141,7 @@ public class SectionAH7Activity extends AppCompatActivity {
         json.put("ah60", bi.ah60.getText().toString());
 
 
-        MainApp.kish.setsH1(String.valueOf(json));
+        //       MainApp.kish.setsH1(String.valueOf(json));
     }
 
     private boolean formValidation() {
