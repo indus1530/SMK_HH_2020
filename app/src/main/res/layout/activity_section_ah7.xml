@@ -138,31 +138,54 @@
                         style="@style/i_textview"
                         android:text="@string/ah50aa" />
 
-                    <TextView
-                        style="@style/i_textviewhint"
-                        android:text="@string/ah50aaa" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/ah50aaa"
-                        style="@style/EditTextNum"
-                        android:hint="@string/ah50aaa"
-                        app:mask="##"
-                        app:maxValue="100"
-                        app:minValue="0"
-                        app:type="range" />
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/ah50aaa" />
 
-                    <TextView
-                        style="@style/i_textviewhint"
-                        android:text="@string/ah50aab" />
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah50aaa"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:hint="@string/ah50aaa"
+                            app:mask="##"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            app:type="range" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/ah50aab"
-                        style="@style/EditTextNum"
-                        android:hint="@string/ah50aab"
-                        app:mask="##"
-                        app:maxValue="100"
-                        app:minValue="0"
-                        app:type="range" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/ah50aab" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah50aab"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:hint="@string/ah50aab"
+                            app:mask="##"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            app:type="range" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

@@ -463,8 +463,108 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- ah37a  Edittext   -->
+
+            <!-- ah37a  DOB   -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVah37a"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text='@string/ah37a' />
+
+                    <LinearLayout
+                        style="@style/linearlayout_view_wt_bound"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/ah37aa" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah37aa"
+                                style="@style/EditTextNum"
+                                android:hint="@string/ah37aa"
+                                android:maxLength="2"
+                                android:textColor="@android:color/black"
+                                app:defaultValue="00"
+                                app:maxValue="31"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/ah37ab" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah37ab"
+                                style="@style/EditTextNum"
+                                android:hint="@string/ah37ab"
+                                android:maxLength="2"
+                                android:textColor="@android:color/black"
+                                app:maxValue="12"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/ah37ac" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah37ac"
+                                style="@style/EditTextNum"
+                                android:hint="@string/ah37ac"
+                                android:maxLength="4"
+                                android:textColor="@android:color/black"
+                                app:maxValue="0"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/e10698"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/dkn"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- ah37a  Edittext   -->
+            <!--<androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah37a"
                 style="@style/cardView">
 
@@ -518,7 +618,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>-->
 
             <!-- ah38  Radio   -->
             <androidx.cardview.widget.CardView
