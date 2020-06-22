@@ -2658,7 +2658,9 @@
     <string name="ah2a">Yes</string>
     <string name="ah2b">No</string>
     <string name="ah3">How Many More Years Of Education Do You Expect To Complete?</string>
+    <string name="ah3a">Year</string>
     <string name="ah4">How Old Were You When You Left The School/College</string>
+    <string name="ah4a">Age</string>
     <string name="ah5">Is The School, College That You Attend(Ed) A Government Or Private Institute?</string>
     <string name="ah5a">Government</string>
     <string name="ah5b">Private</string>
@@ -2676,7 +2678,7 @@
     <string name="ah7g">Has To Perform / Share House- Hold Chores</string>
     <string name="ah7h">Refuse To Answer</string>
     <string name="ah7x">Other (Specify)</string>
-    <string name="ahe1title">Employment:</string>
+    <string name="ahemtitle">Employment:</string>
     <string name="ah8">Have You Done Any Work?</string>
     <string name="ah8a">Yes Independently</string>
     <string name="ah8b">Yes With Parents</string>
@@ -3040,6 +3042,7 @@
     <string name="ah51d">Separated</string>
     <string name="ah51e">Never Married</string>
     <string name="ah52">How Old Was Your Husband /Wife On His Last Birthday? (Completed Years)</string>
+    <string name="ah52a">Age</string>
     <string name="ah53">Did You Have A Say In Choosing Your Husband/Wife?</string>
     <string name="ah53a">Yes</string>
     <string name="ah53b">No</string>
@@ -3057,8 +3060,11 @@
     <string name="ah57a">No. Of Children</string>
     <string name="ah57b">No Children</string>
     <string name="ah58">How Many Times You Got Pregnant?</string>
+    <string name="ah58a">Number</string>
     <string name="ah59">How Many Still Birth/Miscarriage/Abortions You Got?</string>
+    <string name="ah59a">Number</string>
     <string name="ah60">How Many Children Would You Ideally Like To Have?</string>
+    <string name="ah60a">Number</string>
 
     <string name='Q_ah59'>ah59</string>
     <string name='Q_ah0title'>ah0title</string>
