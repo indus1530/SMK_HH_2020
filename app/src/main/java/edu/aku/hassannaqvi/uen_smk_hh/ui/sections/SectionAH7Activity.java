@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -14,6 +15,7 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh7Binding;
+import edu.aku.hassannaqvi.uen_smk_hh.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionAH7Activity extends AppCompatActivity {
@@ -47,6 +49,12 @@ public class SectionAH7Activity extends AppCompatActivity {
         });*/
 
 
+        bi.ah57b.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.fldGrpSecAH701);
+            }
+        });
+
     }
 
     public void BtnContinue() {
@@ -58,7 +66,7 @@ public class SectionAH7Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionKActivity.class));
+                startActivity(new Intent(this, bi.ah51e.isChecked() ? EndingActivity.class : SectionKActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

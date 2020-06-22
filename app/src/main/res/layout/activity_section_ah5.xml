@@ -1,4 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -228,13 +229,17 @@
                             style="@style/radiobutton"
                             android:text="@string/ah36a" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah36ax"
                             style="@style/EditTextNum"
                             android:hint="@string/ah36a"
                             android:tag="ah36a"
                             android:text='@{ah36a.checked? ah36ax.getText().toString() : ""}'
-                            android:visibility='@{ah36a.checked? View.VISIBLE : View.GONE}' />
+                            android:maxLength="2"
+                            android:visibility='@{ah36a.checked? View.VISIBLE : View.GONE}'
+                            app:maxValue="5"
+                            app:minValue="3"
+                            app:type="range" />
 
                         <RadioButton
                             android:id="@+id/ah36b"

@@ -478,79 +478,90 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- ah57b  Radio   -->
-            <!--<androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVah57b"
-                style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/fldGrpSecAH701"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility='@{ah57b.checked? View.GONE : View.VISIBLE}'>
 
-                    <TextView
+                <!-- ah57b  Radio   -->
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVah57b"
+                    style="@style/cardView">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/ah57b" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>-->
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-            <!-- ah58  Input-Numeric   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVah58"
-                style="@style/cardView">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/ah57b" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- ah58  Input-Numeric   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVah58"
+                    style="@style/cardView">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/ah58" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/ah58"
-                        style="@style/EditTextNum"
-                        android:hint="@string/ah58"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="100"
-                        app:minValue="0"
-                        app:type="range" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/ah58" />
 
-                </LinearLayout>
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah58"
+                            style="@style/EditTextNum"
+                            android:hint="@string/ah58"
+                            android:inputType="number"
+                            app:mask="##"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            app:type="range" />
 
-            </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
-            <!-- ah 59  Input-Numeric   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVah59"
-                style="@style/cardView">
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- ah 59  Input-Numeric   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVah59"
+                    style="@style/cardView">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/ah59" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/ah59"
-                        style="@style/EditTextNum"
-                        android:hint="@string/ah59"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="100"
-                        app:minValue="0"
-                        app:type="range" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/ah59" />
 
-                </LinearLayout>
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah59"
+                            style="@style/EditTextNum"
+                            android:hint="@string/ah59"
+                            android:inputType="number"
+                            app:mask="##"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            app:type="range" />
 
-            </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
 
             <!-- ah60  Input-Numeric   -->
             <androidx.cardview.widget.CardView
