@@ -14,17 +14,12 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.List;
-
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionLBinding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
-
-import static edu.aku.hassannaqvi.uen_smk_hh.ui.list_activity.FamilyMembersListActivity.mainVModel;
 
 public class SectionLActivity extends AppCompatActivity {
 
@@ -73,9 +68,10 @@ public class SectionLActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                List<FamilyMembersContract> lstU5 = mainVModel.getChildLstU5().getValue();
+                /*List<FamilyMembersContract> lstU5 = mainVModel.getChildLstU5().getValue();
                 Class nextClass = lstU5 != null ? lstU5.size() > 0 ? SectionI1Activity.class : SectionMActivity.class : SectionMActivity.class;
-                startActivity(new Intent(this, nextClass));
+                startActivity(new Intent(this, nextClass));*/
+                startActivity(new Intent(this, SectionMActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

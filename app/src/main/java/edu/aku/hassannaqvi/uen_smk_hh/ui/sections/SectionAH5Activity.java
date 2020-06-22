@@ -13,7 +13,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
+import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh5Binding;
+import edu.aku.hassannaqvi.uen_smk_hh.utils.JSONUtils;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionAH5Activity extends AppCompatActivity {
@@ -71,36 +75,55 @@ public class SectionAH5Activity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-
-        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SH1, MainApp.kish.getsH1());
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SAH2, MainApp.child.getsAH2());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }*/
-
-        return true;
+        }
     }
 
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
 
+        json.put("ah33a", bi.ah33a.isChecked() ? "1" : "-1");
+        json.put("ah33b", bi.ah33b.isChecked() ? "2" : "-1");
+        json.put("ah33c", bi.ah33c.isChecked() ? "3" : "-1");
+        json.put("ah33d", bi.ah33d.isChecked() ? "98" : "-1");
+
         json.put("ah34", bi.ah34a.isChecked() ? "1"
                 : bi.ah34b.isChecked() ? "2"
                 : bi.ah34c.isChecked() ? "98"
                 : "-1");
 
+        json.put("ah35a", bi.ah35a.isChecked() ? "1" : "-1");
+        json.put("ah35b", bi.ah35b.isChecked() ? "2" : "-1");
+        json.put("ah35c", bi.ah35c.isChecked() ? "3" : "-1");
+        json.put("ah35d", bi.ah35d.isChecked() ? "4" : "-1");
+        json.put("ah35e", bi.ah35e.isChecked() ? "5" : "-1");
+        json.put("ah35f", bi.ah35f.isChecked() ? "6" : "-1");
+        json.put("ah35g", bi.ah35g.isChecked() ? "7" : "-1");
+        json.put("ah35h", bi.ah35h.isChecked() ? "8" : "-1");
+        json.put("ah35i", bi.ah35i.isChecked() ? "9" : "-1");
+        json.put("ah35j", bi.ah35j.isChecked() ? "10" : "-1");
+
         json.put("ah36", bi.ah36a.isChecked() ? "1"
                 : bi.ah36b.isChecked() ? "2"
                 : "-1");
-
         json.put("ah36ax", bi.ah36ax.getText().toString());
 
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.child.getsAH2()), json);
 
-//        MainApp.kish.setsH1(String.valueOf(json));
+            MainApp.child.setsAH2(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private boolean formValidation() {

@@ -406,7 +406,7 @@ public class SectionI1Activity extends AppCompatActivity {
         json.put("i126d", bi.i126d.isChecked() ? "4" : "0");
         json.put("i126e", bi.i126e.isChecked() ? "5" : "0");
 
-        MainApp.child.setsI1(String.valueOf(json));
+ //       MainApp.child.setsI1(String.valueOf(json));
 
 
     }

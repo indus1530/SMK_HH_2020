@@ -15,11 +15,8 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
-import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionJ02Binding;
-import edu.aku.hassannaqvi.uen_smk_hh.utils.JSONUtils;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionJ02Activity extends AppCompatActivity {
@@ -111,14 +108,15 @@ public class SectionJ02Activity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SJ, MainApp.child.getsJ());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+        return true;
     }
 
     private void SaveDraft() throws JSONException {
@@ -161,14 +159,14 @@ public class SectionJ02Activity extends AppCompatActivity {
         json.put("j10417m", bi.j10417m.getText().toString());
         json.put("j10417y", bi.j10417y.getText().toString());
 
-        try {
+        /*try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.child.getsJ()), json);
 
             MainApp.child.setsJ(String.valueOf(json_merge));
 
         } catch (JSONException e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 

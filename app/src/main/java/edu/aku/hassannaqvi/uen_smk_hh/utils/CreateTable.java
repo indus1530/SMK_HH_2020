@@ -150,9 +150,9 @@ public final class CreateTable {
             + SingleChild.COLUMN_DEVICEID + " TEXT,"
             + SingleChild.COLUMN_FORMDATE + " TEXT,"
             + SingleChild.COLUMN_USER + " TEXT,"
-            + SingleChild.COLUMN_SI1 + " TEXT,"
-            + SingleChild.COLUMN_SI2 + " TEXT,"
-            + SingleChild.COLUMN_SJ + " TEXT,"
+            + SingleChild.COLUMN_SAH1 + " TEXT,"
+            + SingleChild.COLUMN_SAH2 + " TEXT,"
+            + SingleChild.COLUMN_SAH3 + " TEXT,"
             + SingleChild.COLUMN_DEVICETAGID + " TEXT,"
             + SingleChild.COLUMN_SYNCED + " TEXT,"
             + SingleChild.COLUMN_SYNCED_DATE + " TEXT );";

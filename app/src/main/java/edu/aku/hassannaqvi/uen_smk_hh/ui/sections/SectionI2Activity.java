@@ -20,9 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
-import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionI2Binding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
@@ -199,14 +197,15 @@ public class SectionI2Activity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SI2, MainApp.child.getsI2());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+        return true;
     }
 
     private void SaveDraft() throws JSONException {
@@ -381,7 +380,7 @@ public class SectionI2Activity extends AppCompatActivity {
         json.put("i226f", bi.i226f.isChecked() ? "6" : "0");
 
 
-        MainApp.child.setsI2(String.valueOf(json));
+        //    MainApp.child.setsI2(String.valueOf(json));
     }
 
     private boolean formValidation() {
