@@ -97,21 +97,28 @@
 
                     <RadioGroup
                         android:id="@+id/ah50"
-                        style="@style/radiogroup">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/ah50a"
                             style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah50a" />
 
                         <RadioButton
                             android:id="@+id/ah50b"
                             style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah50b" />
 
                         <RadioButton
                             android:id="@+id/ah50c"
                             style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah50c" />
 
                     </RadioGroup>
