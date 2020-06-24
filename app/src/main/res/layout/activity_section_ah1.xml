@@ -367,12 +367,12 @@
                         <CheckBox
                             android:id="@+id/ah796"
                             style="@style/checkbox"
-                            android:text="@string/ah7x" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/ah796x"
                             style="@style/EditTextAlpha"
-                            android:hint="@string/ah7x"
+                            android:hint="@string/specify"
                             android:tag="ah796"
                             android:text='@{ah796.checked? ah796x.getText().toString() : ""}'
                             android:visibility='@{ah796.checked? View.VISIBLE : View.GONE}' />

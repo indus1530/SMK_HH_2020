@@ -637,7 +637,7 @@
 
                         <TextView
                             style="@style/i_textviewhint"
-                            android:text="@string/ah22x" />
+                            android:text="@string/other" />
 
                         <RadioGroup
                             android:id="@+id/ah2204"
@@ -670,7 +670,7 @@
                         <EditText
                             android:id="@+id/ah2296x"
                             style="@style/EditTextAlpha"
-                            android:hint="@string/ah22x"
+                            android:hint="@string/specify"
                             android:tag="ah2204a"
                             android:text='@{ah2204a.checked? ah2296x.getText().toString() : ""}'
                             android:visibility='@{ah2204a.checked? View.VISIBLE : View.GONE}' />
