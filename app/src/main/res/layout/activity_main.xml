@@ -2,7 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <data>
 
         <import type="android.view.View" />
@@ -45,12 +44,10 @@
             android:textStyle="bold"
             android:visibility="gone" />
 
-
         <ScrollView
             android:id="@+id/activity_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,7 +57,6 @@
                 android:paddingTop="50dp"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin">
-
 
                 <TextView
                     android:id="@+id/lblMainMenu"
@@ -100,7 +96,6 @@
                             android:textSize="20sp"
                             android:typeface="monospace" />
 
-
                     </LinearLayout>
 
                     <TextView
@@ -116,7 +111,6 @@
                         android:typeface="monospace" />
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -147,11 +141,10 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:textSize="30sp" />
+
                         </RelativeLayout>
 
-
                     </androidx.cardview.widget.CardView>
-
 
                 </LinearLayout>
 
@@ -159,7 +152,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
 
                     <LinearLayout
                         android:id="@+id/layout2"
@@ -178,13 +170,13 @@
                             android:layout_weight="1"
                             android:clickable="true"
                             android:foreground="?android:attr/selectableItemBackground"
-                            android:onClick="@{() -> callback.syncServer()}">
+                            android:onClick="@{() -> callback.syncServer()}"
+                            android:visibility="gone">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp">
-
 
                                 <ImageView
                                     android:layout_width="?attr/actionBarSize"
@@ -223,7 +215,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp">
 
-
                                 <ImageView
                                     android:layout_width="?attr/actionBarSize"
                                     android:layout_height="?attr/actionBarSize"
@@ -244,7 +235,6 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
 
                     </LinearLayout>
 
@@ -273,7 +263,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp">
 
-
                                 <ImageView
                                     android:layout_width="?attr/actionBarSize"
                                     android:layout_height="?attr/actionBarSize"
@@ -296,6 +285,7 @@
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -338,10 +328,10 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
 
         </ScrollView>
+
     </LinearLayout>
 
 </layout>
