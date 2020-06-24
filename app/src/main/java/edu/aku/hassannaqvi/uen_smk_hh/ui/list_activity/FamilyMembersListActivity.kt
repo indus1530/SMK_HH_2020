@@ -90,7 +90,8 @@ class FamilyMembersListActivity : AppCompatActivity() {
 
                                     MainApp.pragnantWoman = mainVModel.getAllWomenName()
 
-                                    MainApp.selectedKishMWRA = mainVModel.mwraChildU5Lst.value?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), mainVModel.mwraChildU5Lst.value!!.size) - 1)
+                                    val mwraChildU5 = mainVModel.mwraChildU5Lst.value
+                                    MainApp.selectedKishMWRA = mwraChildU5?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), mwraChildU5.size) - 1)
 
                                     if (MainApp.selectedKishMWRA != null) {
                                         val childLst = mainVModel.getAllChildrenOfSelMWRA(MainApp.selectedKishMWRA.serialno.toInt())
@@ -99,6 +100,9 @@ class FamilyMembersListActivity : AppCompatActivity() {
                                                     childLst.size) - 1]
                                         }
                                     }
+
+                                    val adolData = mainVModel.adolsLst.value
+                                    MainApp.selectedKishAdols = adolData?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), adolData.size) - 1)
 
                                     finish()
                                     startActivity(Intent(this, if (bi.contentScroll.mwra.text.toString().toInt() > 0) SectionE1Activity::class.java else SectionE3Activity::class.java))

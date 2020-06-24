@@ -17,12 +17,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AreasContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AreasContract.singleAreas;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.SingleRandomHH;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract.SingleChild;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract.EnumBlockTable;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
@@ -705,7 +705,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
-    public Long addChild(ChildContract childContract) {
+    public Long addChild(AdolscentContract childContract) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
@@ -713,20 +713,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
 //        values.put(MWRATable._ID, mwra.get_ID());
-        values.put(SingleChild.COLUMN__UUID, childContract.get_UUID());
-        values.put(SingleChild.COLUMN_DEVICEID, childContract.getDeviceId());
-        values.put(SingleChild.COLUMN_FORMDATE, childContract.getFormDate());
-        values.put(SingleChild.COLUMN_USER, childContract.getUser());
-        values.put(SingleChild.COLUMN_SAH1, childContract.getsAH1());
-        values.put(SingleChild.COLUMN_SAH2, childContract.getsAH2());
-        values.put(SingleChild.COLUMN_SAH3, childContract.getsAH3());
-        values.put(SingleChild.COLUMN_DEVICETAGID, childContract.getDevicetagID());
+        values.put(SingleAdolscent.COLUMN__UUID, childContract.get_UUID());
+        values.put(SingleAdolscent.COLUMN_DEVICEID, childContract.getDeviceId());
+        values.put(SingleAdolscent.COLUMN_FORMDATE, childContract.getFormDate());
+        values.put(SingleAdolscent.COLUMN_USER, childContract.getUser());
+        values.put(SingleAdolscent.COLUMN_SAH1, childContract.getsAH1());
+        values.put(SingleAdolscent.COLUMN_SAH2, childContract.getsAH2());
+        values.put(SingleAdolscent.COLUMN_SAH3, childContract.getsAH3());
+        values.put(SingleAdolscent.COLUMN_DEVICETAGID, childContract.getDevicetagID());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                SingleChild.TABLE_NAME,
+                SingleAdolscent.TABLE_NAME,
                 null,
                 values);
         return newRowId;
@@ -1284,25 +1284,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allFC;
     }
 
-    public Collection<ChildContract> getUnsyncedChildForms() {
+    public Collection<AdolscentContract> getUnsyncedChildForms() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                SingleChild._ID,
-                SingleChild.COLUMN_UID,
-                SingleChild.COLUMN__UUID,
-                SingleChild.COLUMN_DEVICEID,
-                SingleChild.COLUMN_FORMDATE,
-                SingleChild.COLUMN_USER,
-                SingleChild.COLUMN_SAH1,
-                SingleChild.COLUMN_SAH2,
-                SingleChild.COLUMN_SAH3,
-                SingleChild.COLUMN_DEVICETAGID,
+                SingleAdolscent._ID,
+                SingleAdolscent.COLUMN_UID,
+                SingleAdolscent.COLUMN__UUID,
+                SingleAdolscent.COLUMN_DEVICEID,
+                SingleAdolscent.COLUMN_FORMDATE,
+                SingleAdolscent.COLUMN_USER,
+                SingleAdolscent.COLUMN_SAH1,
+                SingleAdolscent.COLUMN_SAH2,
+                SingleAdolscent.COLUMN_SAH3,
+                SingleAdolscent.COLUMN_DEVICETAGID,
 
         };
 
 
-        String whereClause = SingleChild.COLUMN_SYNCED + " is null";
+        String whereClause = SingleAdolscent.COLUMN_SYNCED + " is null";
 
         String[] whereArgs = null;
 
@@ -1310,12 +1310,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
 
         String orderBy =
-                SingleChild._ID + " ASC";
+                SingleAdolscent._ID + " ASC";
 
-        Collection<ChildContract> allFC = new ArrayList<ChildContract>();
+        Collection<AdolscentContract> allFC = new ArrayList<AdolscentContract>();
         try {
             c = db.query(
-                    SingleChild.TABLE_NAME,  // The table to query
+                    SingleAdolscent.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -1324,7 +1324,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     orderBy                    // The sort order
             );
             while (c.moveToNext()) {
-                ChildContract fc = new ChildContract();
+                AdolscentContract fc = new AdolscentContract();
                 allFC.add(fc.hydrate(c));
             }
         } finally {
@@ -1621,10 +1621,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(column, value);
 
-        String selection = SingleChild._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.child.get_ID())};
+        String selection = SingleAdolscent._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.adolscent.get_ID())};
 
-        return db.update(SingleChild.TABLE_NAME,
+        return db.update(SingleAdolscent.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1682,15 +1682,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(SingleChild.COLUMN_SYNCED, true);
-        values.put(SingleChild.COLUMN_SYNCED_DATE, new Date().toString());
+        values.put(SingleAdolscent.COLUMN_SYNCED, true);
+        values.put(SingleAdolscent.COLUMN_SYNCED_DATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = SingleChild._ID + " = ?";
+        String where = SingleAdolscent._ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                SingleChild.TABLE_NAME,
+                SingleAdolscent.TABLE_NAME,
                 values,
                 where,
                 whereArgs);

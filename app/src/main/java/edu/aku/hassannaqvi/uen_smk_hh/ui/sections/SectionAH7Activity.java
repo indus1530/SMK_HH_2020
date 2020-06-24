@@ -14,7 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh7Binding;
@@ -70,7 +70,7 @@ public class SectionAH7Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SAH3, MainApp.child.getsAH3());
+        int updcount = db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH3, MainApp.adolscent.getsAH3());
         if (updcount == 1) {
             return true;
         } else {
@@ -136,9 +136,9 @@ public class SectionAH7Activity extends AppCompatActivity {
         json.put("ah60", bi.ah60.getText().toString());
 
         try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.child.getsAH3()), json);
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH3()), json);
 
-            MainApp.child.setsAH3(String.valueOf(json_merge));
+            MainApp.adolscent.setsAH3(String.valueOf(json_merge));
 
         } catch (JSONException e) {
             e.printStackTrace();

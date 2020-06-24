@@ -6,7 +6,7 @@ import android.provider.BaseColumns;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ChildContract {
+public class AdolscentContract {
 
 
     private String _ID = "";
@@ -42,17 +42,17 @@ public class ChildContract {
     * */
 
 
-    public ChildContract hydrate(Cursor cursor) {
-        this._ID = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN__ID));
-        this.UID = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_UID));
-        this._UUID = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN__UUID));
-        this.deviceId = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_DEVICEID));
-        this.formDate = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_FORMDATE));
-        this.user = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_USER));
-        this.sAH1 = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_SAH1));
-        this.sAH2 = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_SAH2));
-        this.sAH3 = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_SAH3));
-        this.devicetagID = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_DEVICETAGID));
+    public AdolscentContract hydrate(Cursor cursor) {
+        this._ID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN__ID));
+        this.UID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_UID));
+        this._UUID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN__UUID));
+        this.deviceId = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_DEVICEID));
+        this.formDate = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_FORMDATE));
+        this.user = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_USER));
+        this.sAH1 = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_SAH1));
+        this.sAH2 = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_SAH2));
+        this.sAH3 = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_SAH3));
+        this.devicetagID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_DEVICETAGID));
 
         return this;
 
@@ -61,23 +61,23 @@ public class ChildContract {
     public JSONObject toJSONObject() throws JSONException {
 
         JSONObject json = new JSONObject();
-        json.put(SingleChild.COLUMN__ID, this._ID == null ? JSONObject.NULL : this._ID);
-        json.put(SingleChild.COLUMN_UID, this.UID == null ? JSONObject.NULL : this.UID);
-        json.put(SingleChild.COLUMN__UUID, this._UUID == null ? JSONObject.NULL : this._UUID);
-        json.put(SingleChild.COLUMN_DEVICEID, this.deviceId == null ? JSONObject.NULL : this.deviceId);
-        json.put(SingleChild.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
-        json.put(SingleChild.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
+        json.put(SingleAdolscent.COLUMN__ID, this._ID == null ? JSONObject.NULL : this._ID);
+        json.put(SingleAdolscent.COLUMN_UID, this.UID == null ? JSONObject.NULL : this.UID);
+        json.put(SingleAdolscent.COLUMN__UUID, this._UUID == null ? JSONObject.NULL : this._UUID);
+        json.put(SingleAdolscent.COLUMN_DEVICEID, this.deviceId == null ? JSONObject.NULL : this.deviceId);
+        json.put(SingleAdolscent.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
+        json.put(SingleAdolscent.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
 
         if (this.sAH1 != null && !this.sAH1.equals("")) {
-            json.put(SingleChild.COLUMN_SAH1, this.sAH1.equals("") ? JSONObject.NULL : new JSONObject(this.sAH1));
+            json.put(SingleAdolscent.COLUMN_SAH1, this.sAH1.equals("") ? JSONObject.NULL : new JSONObject(this.sAH1));
         }
         if (this.sAH2 != null && !this.sAH2.equals("")) {
-            json.put(SingleChild.COLUMN_SAH2, this.sAH2.equals("") ? JSONObject.NULL : new JSONObject(this.sAH2));
+            json.put(SingleAdolscent.COLUMN_SAH2, this.sAH2.equals("") ? JSONObject.NULL : new JSONObject(this.sAH2));
         }
         if (this.sAH3 != null && !this.sAH3.equals("")) {
-            json.put(SingleChild.COLUMN_SAH3, this.sAH3.equals("") ? JSONObject.NULL : new JSONObject(this.sAH3));
+            json.put(SingleAdolscent.COLUMN_SAH3, this.sAH3.equals("") ? JSONObject.NULL : new JSONObject(this.sAH3));
         }
-        json.put(SingleChild.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
+        json.put(SingleAdolscent.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
 
         return json;
 
@@ -179,7 +179,7 @@ public class ChildContract {
         this.synced_date = synced_date;
     }
 
-    public static abstract class SingleChild implements BaseColumns {
+    public static abstract class SingleAdolscent implements BaseColumns {
 
         public static final String TABLE_NAME = "child_table";
         public static final String COLUMN__ID = "_id";

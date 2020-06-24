@@ -14,7 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh6Binding;
@@ -81,7 +81,7 @@ public class SectionAH6Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SAH3, MainApp.child.getsAH3());
+        int updcount = db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH3, MainApp.adolscent.getsAH3());
         if (updcount == 1) {
             return true;
         } else {
@@ -233,7 +233,7 @@ public class SectionAH6Activity extends AppCompatActivity {
                 : "-1");
 
 
-        MainApp.child.setsAH3(String.valueOf(json));
+        MainApp.adolscent.setsAH3(String.valueOf(json));
     }
 
     private boolean formValidation() {

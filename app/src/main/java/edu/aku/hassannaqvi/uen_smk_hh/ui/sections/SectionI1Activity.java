@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
@@ -198,11 +198,11 @@ public class SectionI1Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long rowID = db.addChild(MainApp.child);
+        long rowID = db.addChild(MainApp.adolscent);
         if (rowID > 0) {
-            MainApp.child.set_ID(String.valueOf(rowID));
-            MainApp.child.setUID(MainApp.child.getDeviceId() + MainApp.child.get_ID());
-            db.updatesChildColumn(ChildContract.SingleChild.COLUMN_UID, MainApp.child.getUID());
+            MainApp.adolscent.set_ID(String.valueOf(rowID));
+            MainApp.adolscent.setUID(MainApp.adolscent.getDeviceId() + MainApp.adolscent.get_ID());
+            db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_UID, MainApp.adolscent.getUID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -213,12 +213,12 @@ public class SectionI1Activity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        MainApp.child = new ChildContract();
-        MainApp.child.set_UUID(MainApp.fc.get_UID());
-        MainApp.child.setDeviceId(MainApp.appInfo.getDeviceID());
-        MainApp.child.setDevicetagID(MainApp.fc.getDevicetagID());
-        MainApp.child.setFormDate(MainApp.fc.getFormDate());
-        MainApp.child.setUser(MainApp.fc.getUser());
+        MainApp.adolscent = new AdolscentContract();
+        MainApp.adolscent.set_UUID(MainApp.fc.get_UID());
+        MainApp.adolscent.setDeviceId(MainApp.appInfo.getDeviceID());
+        MainApp.adolscent.setDevicetagID(MainApp.fc.getDevicetagID());
+        MainApp.adolscent.setFormDate(MainApp.fc.getFormDate());
+        MainApp.adolscent.setUser(MainApp.fc.getUser());
 
 
         JSONObject json = new JSONObject();

@@ -18,6 +18,9 @@ class MainVModel : ViewModel() {
     var mwraChildU5Lst = MutableLiveData<MutableList<FamilyMembersContract>>()
         private set
 
+    var adolsLst = MutableLiveData<MutableList<FamilyMembersContract>>()
+        private set
+
     var checkedItems = MutableLiveData<MutableList<Int>>()
         private set
 
@@ -72,6 +75,14 @@ class MainVModel : ViewModel() {
             lst = mutableListOf()
         lst.add(item)
         mwraLst.value = lst
+    }
+
+    fun setAdols(item: FamilyMembersContract) {
+        var lst = adolsLst.value
+        if (lst.isNullOrEmpty())
+            lst = mutableListOf()
+        lst.add(item)
+        adolsLst.value = lst
     }
 
     fun getMemberInfo(index: Int): FamilyMembersContract? {

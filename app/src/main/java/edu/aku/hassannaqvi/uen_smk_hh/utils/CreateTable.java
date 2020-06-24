@@ -1,7 +1,7 @@
 package edu.aku.hassannaqvi.uen_smk_hh.utils;
 
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.SingleRandomHH;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract.SingleChild;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
@@ -143,19 +143,19 @@ public final class CreateTable {
             + SingleMWRAPRE.COLUMN_SYNCED + " TEXT,"
             + SingleMWRAPRE.COLUMN_SYNCED_DATE + " TEXT );";
 
-    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + SingleChild.TABLE_NAME + "("
-            + SingleChild._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + SingleChild.COLUMN_UID + " TEXT,"
-            + SingleChild.COLUMN__UUID + " TEXT,"
-            + SingleChild.COLUMN_DEVICEID + " TEXT,"
-            + SingleChild.COLUMN_FORMDATE + " TEXT,"
-            + SingleChild.COLUMN_USER + " TEXT,"
-            + SingleChild.COLUMN_SAH1 + " TEXT,"
-            + SingleChild.COLUMN_SAH2 + " TEXT,"
-            + SingleChild.COLUMN_SAH3 + " TEXT,"
-            + SingleChild.COLUMN_DEVICETAGID + " TEXT,"
-            + SingleChild.COLUMN_SYNCED + " TEXT,"
-            + SingleChild.COLUMN_SYNCED_DATE + " TEXT );";
+    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + SingleAdolscent.TABLE_NAME + "("
+            + SingleAdolscent._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + SingleAdolscent.COLUMN_UID + " TEXT,"
+            + SingleAdolscent.COLUMN__UUID + " TEXT,"
+            + SingleAdolscent.COLUMN_DEVICEID + " TEXT,"
+            + SingleAdolscent.COLUMN_FORMDATE + " TEXT,"
+            + SingleAdolscent.COLUMN_USER + " TEXT,"
+            + SingleAdolscent.COLUMN_SAH1 + " TEXT,"
+            + SingleAdolscent.COLUMN_SAH2 + " TEXT,"
+            + SingleAdolscent.COLUMN_SAH3 + " TEXT,"
+            + SingleAdolscent.COLUMN_DEVICETAGID + " TEXT,"
+            + SingleAdolscent.COLUMN_SYNCED + " TEXT,"
+            + SingleAdolscent.COLUMN_SYNCED_DATE + " TEXT );";
 
 
     public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("

@@ -32,7 +32,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.adapter.SyncListAdapter;
 import edu.aku.hassannaqvi.uen_smk_hh.adapter.UploadListAdapter;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
@@ -172,9 +172,9 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Child",
                     "updateSyncedChildForms",
-                    ChildContract.class,
+                    AdolscentContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
-                    ChildContract.SingleChild.TABLE_NAME,
+                    AdolscentContract.SingleAdolscent.TABLE_NAME,
                     db.getUnsyncedChildForms(), 1, uploadListAdapter, uploadlist
             ).execute();
 

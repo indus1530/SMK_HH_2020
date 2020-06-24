@@ -14,7 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh1Binding;
@@ -29,6 +29,10 @@ public class SectionAH1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah1);
         bi.setCallback(this);
+
+        bi.txtLbl.setText(new StringBuilder(MainApp.selectedKishAdols.getName().toUpperCase()).append("\n")
+                .append("Serial:")
+                .append(MainApp.selectedKishAdols.getSerialno()));
 
         setupSkips();
 
@@ -47,8 +51,6 @@ public class SectionAH1Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVah3);
             }
         }));
-
-
     }
 
     public void BtnContinue() {
@@ -74,7 +76,7 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SAH1, MainApp.child.getsAH1());
+        int updcount = db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH1, MainApp.adolscent.getsAH1());
         if (updcount == 1) {
             return true;
         } else {
@@ -85,7 +87,21 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
+        MainApp.adolscent = new AdolscentContract();
+        MainApp.adolscent.set_UUID(MainApp.fc.get_UID());
+        MainApp.adolscent.setDeviceId(MainApp.appInfo.getDeviceID());
+        MainApp.adolscent.setDevicetagID(MainApp.fc.getDevicetagID());
+        MainApp.adolscent.setFormDate(MainApp.fc.getFormDate());
+        MainApp.adolscent.setUser(MainApp.fc.getUser());
+
         JSONObject json = new JSONObject();
+        json.put("fm_uid", MainApp.selectedKishAdols.getUid());
+        json.put("fm_serial", MainApp.selectedKishAdols.getSerialno());
+        json.put("fm_name", MainApp.selectedKishAdols.getName());
+        json.put("hhno", MainApp.fc.getHhno());
+        json.put("cluster_no", MainApp.fc.getClusterCode());
+        json.put("_luid", MainApp.fc.getLuid());
+        json.put("appversion", MainApp.appInfo.getAppVersion());
 
         json.put("ah1", bi.ah1a.isChecked() ? "11"
                 : bi.ah1b.isChecked() ? "12"
@@ -129,7 +145,7 @@ public class SectionAH1Activity extends AppCompatActivity {
         json.put("ah796x", bi.ah796x.getText().toString());
 
 
-        MainApp.child.setsAH1(String.valueOf(json));
+        MainApp.adolscent.setsAH1(String.valueOf(json));
     }
 
     private boolean formValidation() {

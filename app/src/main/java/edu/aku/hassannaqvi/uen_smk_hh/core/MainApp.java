@@ -28,7 +28,7 @@ import com.jakewharton.threetenabp.AndroidThreeTen;
 import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
@@ -77,7 +77,8 @@ public class MainApp extends Application {
     public static Boolean admin = false;
     public static FormsContract fc;
     public static KishMWRAContract kish;
-    public static ChildContract child;
+    public static AdolscentContract adolscent;
+    public static FamilyMembersContract selectedKishAdols;
     public static FamilyMembersContract selectedKishMWRA;
     public static FamilyMembersContract indexKishMWRAChild;
     public static Pair<List<Integer>, List<String>> selectedMWRAChildLst;

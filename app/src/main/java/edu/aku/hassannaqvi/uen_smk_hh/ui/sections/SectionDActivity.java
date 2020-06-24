@@ -256,7 +256,8 @@ public class SectionDActivity extends AppCompatActivity {
             if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) < 49 && motherFMC.getAvailable().equals("1"))
                 mainVModel.setMwraChildU5(motherFMC);
         }
-
+        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) < 19 && bi.d115a.isChecked())
+            mainVModel.setAdols(fmc);
     }
 
     private boolean formValidation() {
