@@ -25,7 +25,7 @@ public class MWRAContract implements Parcelable {
             return new MWRAContract[size];
         }
     };
-    private String projectName = "uen_mdLine20";
+    private String projectName = "uen_smk";
     private String _ID = "";
     private String UID = "";
     private String _UUID = "";

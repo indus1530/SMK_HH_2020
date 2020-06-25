@@ -12,9 +12,9 @@ import org.json.JSONObject;
 
 public class FormsContract {
 
-    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.uen_midline";
+    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.uen_smk";
     public static final String PATH_FORMS = "forms";
-    private final String projectName = "uen_mdline2020";
+    private final String projectName = "uen_smk";
     private String _ID = "";
     private String _UID = "";
     private String formType = "";
