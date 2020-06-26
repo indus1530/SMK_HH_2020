@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +19,6 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh7Binding;
-import edu.aku.hassannaqvi.uen_smk_hh.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.JSONUtils;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
@@ -45,6 +45,14 @@ public class SectionAH7Activity extends AppCompatActivity {
             }
         });
 
+        bi.ah51.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.ah51e.getId()) {
+                Clear.clearAllFields(bi.fldGrpAH52);
+                bi.fldGrpAH52.setVisibility(View.GONE);
+            } else
+                bi.fldGrpAH52.setVisibility(View.VISIBLE);
+        });
+
     }
 
     public void BtnContinue() {
@@ -56,7 +64,7 @@ public class SectionAH7Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, bi.ah51e.isChecked() ? EndingActivity.class : SectionKActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionKActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -70,7 +78,7 @@ public class SectionAH7Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH3, MainApp.adolscent.getsAH3());
+        int updcount = db.updatesAdolsColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH3, MainApp.adolscent.getsAH3());
         if (updcount == 1) {
             return true;
         } else {

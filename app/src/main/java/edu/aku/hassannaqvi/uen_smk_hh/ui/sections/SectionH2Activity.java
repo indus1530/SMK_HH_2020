@@ -19,7 +19,6 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionH2Binding;
-import edu.aku.hassannaqvi.uen_smk_hh.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionH2Activity extends AppCompatActivity {
@@ -188,10 +187,10 @@ public class SectionH2Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
 
-                Class<?> nextActivity = EndingActivity.class;
-                if (MainApp.selectedKishAdols == null) nextActivity = SectionAH1Activity.class;
+                Class<?> nextActivity = SectionKActivity.class;
+                if (MainApp.selectedKishAdols != null) nextActivity = SectionAH1Activity.class;
                 finish();
-                startActivity(new Intent(this, nextActivity).putExtra("complete", true));
+                startActivity(new Intent(this, nextActivity));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

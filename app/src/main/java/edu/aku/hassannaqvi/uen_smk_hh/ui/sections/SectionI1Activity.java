@@ -202,7 +202,7 @@ public class SectionI1Activity extends AppCompatActivity {
         if (rowID > 0) {
             MainApp.adolscent.set_ID(String.valueOf(rowID));
             MainApp.adolscent.setUID(MainApp.adolscent.getDeviceId() + MainApp.adolscent.get_ID());
-            db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_UID, MainApp.adolscent.getUID());
+            db.updatesAdolsColumn(AdolscentContract.SingleAdolscent.COLUMN_UID, MainApp.adolscent.getUID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

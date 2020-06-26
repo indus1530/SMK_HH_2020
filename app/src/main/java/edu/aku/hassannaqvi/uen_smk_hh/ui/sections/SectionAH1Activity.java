@@ -76,7 +76,7 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH1, MainApp.adolscent.getsAH1());
+        int updcount = db.updatesAdolsColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH1, MainApp.adolscent.getsAH1());
         if (updcount == 1) {
             return true;
         } else {

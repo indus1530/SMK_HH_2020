@@ -1612,7 +1612,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //Generic update ChildColumn
-    public int updatesChildColumn(String column, String value) {
+    public int updatesAdolsColumn(String column, String value) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         ContentValues values = new ContentValues();
