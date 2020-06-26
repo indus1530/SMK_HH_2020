@@ -76,8 +76,11 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesAdolsColumn(AdolscentContract.SingleAdolscent.COLUMN_SAH1, MainApp.adolscent.getsAH1());
-        if (updcount == 1) {
+        long rowID = db.addChild(MainApp.adolscent);
+        if (rowID > 0) {
+            MainApp.adolscent.set_ID(String.valueOf(rowID));
+            MainApp.adolscent.setUID(MainApp.adolscent.getDeviceId() + MainApp.adolscent.get_ID());
+            db.updatesAdolsColumn(AdolscentContract.SingleAdolscent.COLUMN_UID, MainApp.adolscent.getUID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
