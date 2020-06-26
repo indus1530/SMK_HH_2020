@@ -145,7 +145,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                 case "BLRandom":
 
                     if (args[0] != null && !args[0].equals("")) {
-                        if (Integer.valueOf(args[0]) > 0) {
+                        if (Integer.parseInt(args[0]) > 0) {
                             urlConnection.setRequestMethod("POST");
                             urlConnection.setDoOutput(true);
                             urlConnection.setDoInput(true);
