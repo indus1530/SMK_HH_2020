@@ -494,7 +494,7 @@
                             android:inputType="number"
                             android:text='@{ah57b.checked ? "" : ah57a.getText().toString() }'
                             app:mask="##"
-                            app:maxValue="100"
+                            app:maxValue="7"
                             app:minValue="0"
                             app:type="range" />
 
@@ -554,7 +554,7 @@
                                 android:hint="@string/ah58"
                                 android:inputType="number"
                                 app:mask="##"
-                                app:maxValue="100"
+                                app:maxValue="7"
                                 app:minValue="0"
                                 app:type="range" />
 

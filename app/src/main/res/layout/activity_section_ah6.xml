@@ -494,7 +494,7 @@
                                 android:maxLength="2"
                                 android:textColor="@android:color/black"
                                 app:defaultValue="00"
-                                app:maxValue="31"
+                                app:maxValue="29"
                                 app:minValue="1"
                                 app:type="range" />
 
@@ -516,8 +516,8 @@
                                 android:hint="@string/ah37ab"
                                 android:maxLength="2"
                                 android:textColor="@android:color/black"
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="11"
+                                app:minValue="0"
                                 app:type="range" />
 
                         </LinearLayout>
