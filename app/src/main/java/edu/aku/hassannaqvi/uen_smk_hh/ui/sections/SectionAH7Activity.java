@@ -53,6 +53,13 @@ public class SectionAH7Activity extends AppCompatActivity {
                 bi.fldGrpAH52.setVisibility(View.VISIBLE);
         });
 
+
+        /*bi.ah54a.setMaxvalue(CONSTANTS.MAXYEAR1);
+        bi.ah54a.setMinvalue(CONSTANTS.MINYEAR1);*/
+
+        /*bi.ah57a.setMaxvalue(CONSTANTS.MAXYEAR1);
+        bi.ah57a.setMinvalue(CONSTANTS.MINYEAR1);*/
+
     }
 
     public void BtnContinue() {

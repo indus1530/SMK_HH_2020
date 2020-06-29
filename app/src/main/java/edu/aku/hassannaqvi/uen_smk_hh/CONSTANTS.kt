@@ -23,6 +23,9 @@ class CONSTANTS {
         const val MWRA_INFO = "mwra"
         const val SYNC_LOGIN = "sync_login"
 
+        const val MINYEAR1 = 2002 //Hamza correction
+        const val MAXYEAR1 = 2020
+
 
     }
 }

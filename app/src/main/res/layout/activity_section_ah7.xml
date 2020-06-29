@@ -339,9 +339,10 @@
                             android:hint="@string/ah54a"
                             android:inputType="number"
                             android:text='@{ah54b.checked ? "" : ah54a.getText().toString() }'
+                            android:maxLength="2"
                             app:mask="##"
-                            app:maxValue="7"
-                            app:minValue="0"
+                            app:maxValue="19"
+                            app:minValue="10"
                             app:type="range" />
 
                         <CheckBox
@@ -491,9 +492,10 @@
                             android:hint="@string/ah57a"
                             android:inputType="number"
                             android:text='@{ah57b.checked ? "" : ah57a.getText().toString() }'
+                            android:maxLength="2"
                             app:mask="##"
-                            app:maxValue="7"
-                            app:minValue="0"
+                            app:maxValue="19"
+                            app:minValue="10"
                             app:type="range" />
 
                         <CheckBox

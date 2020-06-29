@@ -13,6 +13,7 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
@@ -54,6 +55,10 @@ public class SectionAH6Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpSecAH601);
             }
         }));
+
+
+        bi.ah37ac.setMaxvalue(CONSTANTS.MAXYEAR1);
+        bi.ah37ac.setMinvalue(CONSTANTS.MINYEAR1);
 
 
     }
