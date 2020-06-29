@@ -2,6 +2,10 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +17,6 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
@@ -32,6 +35,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         setupSkips();
+        setUIComponent();
 
     }
 
@@ -57,9 +61,62 @@ public class SectionAH6Activity extends AppCompatActivity {
         }));
 
 
-        bi.ah37ac.setMaxvalue(CONSTANTS.MAXYEAR1);
-        bi.ah37ac.setMinvalue(CONSTANTS.MINYEAR1);
+//        bi.ah37ac.setMaxvalue(CONSTANTS.MAXYEAR1);
+//        bi.ah37ac.setMinvalue(CONSTANTS.MINYEAR1);
 
+
+    }
+
+    private void setUIComponent() {
+
+        /*bi.ah37ac.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+                if (Objects.requireNonNull(bi.ah37ac.getText()).hashCode() == s.hashCode()) {
+                    if (Integer.parseInt(bi.ah37ac.getText().toString()) < 14) {
+                        bi.fldGrpSecAH602.setVisibility(View.GONE);
+                        Clear.clearAllFields(bi.fldGrpSecAH602);
+                    } else {
+                        bi.fldGrpSecAH602.setVisibility(View.VISIBLE);
+                    }
+                }
+
+            }
+        });*/
+
+
+        bi.ah37ac.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (TextUtils.isEmpty(bi.ah37ac.getText())) return;
+                if (Integer.parseInt(bi.ah37ac.getText().toString()) < 14 || Integer.parseInt(bi.ah37ac.getText().toString()) > 19) {
+                    bi.fldGrpSecAH602.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.fldGrpSecAH602);
+                } else {
+                    bi.fldGrpSecAH602.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
 
     }
 
