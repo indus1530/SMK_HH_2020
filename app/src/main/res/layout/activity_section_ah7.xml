@@ -328,29 +328,27 @@
                             style="@style/i_textview"
                             android:text="@string/ah54" />
 
-                        <RadioGroup
-                            android:id="@+id/ah54"
-                            style="@style/radiogroup">
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:text="@string/ah54a" />
 
-                            <RadioButton
-                                android:id="@+id/ah54a"
-                                style="@style/radiobutton"
-                                android:text="@string/ah54a" />
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah54a"
+                            style="@style/EditTextNum"
+                            android:enabled='@{ah54b.checked ? false : true }'
+                            android:hint="@string/ah54a"
+                            android:inputType="number"
+                            android:text='@{ah54b.checked ? "" : ah54a.getText().toString() }'
+                            app:mask="##"
+                            app:maxValue="7"
+                            app:minValue="0"
+                            app:type="range" />
 
-                            <EditText
-                                android:id="@+id/ah54ax"
-                                style="@style/EditTextNum"
-                                android:hint="@string/ah54a"
-                                android:tag="ah54a"
-                                android:text='@{ah54a.checked? ah54ax.getText().toString() : ""}'
-                                android:visibility='@{ah54a.checked? View.VISIBLE : View.GONE}' />
-
-                            <RadioButton
-                                android:id="@+id/ah54b"
-                                style="@style/radiobutton"
-                                android:text="@string/ah54b" />
-
-                        </RadioGroup>
+                        <CheckBox
+                            android:id="@+id/ah54b"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/ah54b" />
 
                     </LinearLayout>
 

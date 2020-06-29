@@ -13,12 +13,10 @@
             type="edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionE3Activity" />
     </data>
 
-
     <ScrollView
         style="@style/i_scrollview"
         android:layoutDirection="rtl"
         android:textDirection="rtl">
-
 
         <LinearLayout
             android:id="@+id/fldGrpSectionE3"
@@ -27,7 +25,6 @@
             android:orientation="vertical">
 
             <!-- e116_title  Title   -->
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe116_title"
                 style="@style/cardView">
@@ -91,7 +88,6 @@
                 android:orientation="vertical"
                 android:visibility="@{e116a.checked ? View.VISIBLE : View.GONE}">
 
-
                 <!-- e117  Input   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe117"
@@ -117,7 +113,9 @@
                             app:type="range" />
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
 
@@ -146,6 +144,6 @@
 
         </LinearLayout>
 
-
     </ScrollView>
+
 </layout>

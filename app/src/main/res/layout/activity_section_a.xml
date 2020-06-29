@@ -97,7 +97,6 @@
                             android:gravity="center"
                             android:text="@string/a105" />
 
-
                         <TextView
                             android:id="@+id/a104"
                             style="@style/i_textview"
@@ -129,7 +128,6 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:text="@string/a106" />
-
 
                         <TextView
                             android:id="@+id/a105"
@@ -163,7 +161,6 @@
                             android:gravity="center"
                             android:text="@string/a107" />
 
-
                         <TextView
                             android:id="@+id/a106"
                             style="@style/i_textview"
@@ -195,7 +192,6 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:text="@string/a108" />
-
 
                         <TextView
                             android:id="@+id/a107"
@@ -449,7 +445,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
 
             </LinearLayout>
 

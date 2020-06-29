@@ -49,6 +49,7 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="@color/dullBlack" />
+
     </LinearLayout>
 
     <LinearLayout
