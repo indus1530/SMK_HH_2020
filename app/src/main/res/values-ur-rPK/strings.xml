@@ -275,11 +275,22 @@
     <string name="e111x"> دیگر (وضاحت کریں) </string>
 
     <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
-    <string name="e112a"> گھر </string>
-    <string name="e112b"> سرکاری مرکز صحت </string>
-    <string name="e112c"> نجی مرکز صحت </string>
-    <string name="e112d"> رفاہی ادارہ </string>
-    <string name="e112e"> مرکز صحت جاتے ہوئے راستے میں </string>
+    <string name="e112a">گهر </string>
+    <string name="e112h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="e112b">تربیتی/ سول ہسپتال </string>
+    <string name="e112c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="e112d">دیہی صحت مرکز </string>
+    <string name="e112e">بنیادی صحت مرکز </string>
+    <string name="e112f">ماں اور بچے کا صحت مرکز </string>
+    <string name="e112g">زچگی گھر  </string>
+    <string name="e112h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="e112h2"> خانگی ہسپتال </string>
+    <string name="e112i"> خانگی ہسپتال </string>
+    <string name="e112j"> خانگی کلینک </string>
+    <string name="e112k"> خانگی زچگی گھر </string>
+    <string name="e112l"> این جی او صحت مرکز </string>
+    <string name="e112m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="e11296">دیگر (وضاحت کریں) </string>
 
     <string name="e113"> E113:\t اگر مردہ پیدائش یا پیدائش سے پہلے اسقاط حمل ہوگیا تھا: تو یہ حمل کس مہینے اور سال میں ختم ہوا تھا ؟ </string>
 

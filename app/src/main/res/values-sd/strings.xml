@@ -290,12 +290,23 @@
     <string name="e111g"> بخار </string>
     <string name="e111x"> ٻيو ڪجھ (وضاحت ڪريو) </string>
 
-    <string name="e112"> E112:\t (نالو) ڪٿي وفات ڪري ويو ؟ </string>
-    <string name="e112a"> گھر ۾ </string>
-    <string name="e112b"> سرڪاري صحت مرڪز </string>
-    <string name="e112c"> پرائيويٽ صحت مرڪز </string>
-    <string name="e112d"> اين جي او (NGO) صحت مرڪز </string>
-    <string name="e112e"> صحت مرڪز ڏانھن ويندي رستي ۾ </string>
+    <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
+    <string name="e112a">گهر </string>
+    <string name="e112h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="e112b">تربيتي/سول اسپتال </string>
+    <string name="e112c">ضلعي/تعلقي اسپتال </string>
+    <string name="e112d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="e112e">بينادي صحت مرڪز </string>
+    <string name="e112f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="e112g">ويم گهر  </string>
+    <string name="e112h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="e112h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="e112i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="e112j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="e112k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="e112l"> اين جي او صحت مرڪز </string>
+    <string name="e112m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="e11296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="e113"> E113:\t جيڪڏھن ٻار مئل ڄائو يا حمل ضايع ٿيو ته اھو حمل ڪھڙي مھيني / سال ۾ ختم ٿيو ؟ </string>
 

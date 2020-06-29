@@ -356,7 +356,17 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e112c.isChecked() ? "3"
                 : bi.e112d.isChecked() ? "4"
                 : bi.e112e.isChecked() ? "5"
+                : bi.e112f.isChecked() ? "6"
+                : bi.e112g.isChecked() ? "7"
+                : bi.e112h.isChecked() ? "8"
+                : bi.e112i.isChecked() ? "9"
+                : bi.e112j.isChecked() ? "10"
+                : bi.e112k.isChecked() ? "11"
+                : bi.e112l.isChecked() ? "12"
+                : bi.e112m.isChecked() ? "13"
+                : bi.e11296.isChecked() ? "96"
                 : "0");
+        json.put("e11296x", bi.e11296x.getText().toString());
 
         json.put("e113m", bi.e113m.getText().toString());
         json.put("e113y", bi.e113y.getText().toString());
