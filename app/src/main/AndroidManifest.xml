@@ -22,7 +22,7 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-        <activity android:name=".ui.sections.SectionUN"></activity>
+
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -144,6 +144,10 @@
         <activity
             android:name=".ui.sections.SectionKActivity"
             android:label="@string/tkheading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionUNActivity"
+            android:label="@string/unttitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionLActivity"

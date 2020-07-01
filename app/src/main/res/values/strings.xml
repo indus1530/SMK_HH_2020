@@ -30,6 +30,7 @@
     <string name="tnheading"> SECTION N: WATER AND SANITATION </string>
     <string name="toheading"> SECTION O: HANDWASHING </string>
     <string name="ah0title"> SECTION AH: ADOLESCENT HEALTH</string>
+    <string name="unttitle">UNMET NEED</string>
 
     <string name="splashText">Supporting Women and Girls in Pakistan Scaling Up\n
     Empowerment and Care  Strategies  to Address Health and Survival\n
@@ -3113,28 +3114,27 @@
     <string name="ah60">AH60:\t آپ کے خیال میں کتنے بچے ہونے چاہئیں؟</string>
     <string name="ah60a">تعداد</string>
 
-    <string name="unttitle">پورے نہ ہونے والی ضروریات</string>
-    <string name="un01">کیا آپ حمل سے ہونا چاہتی تھی؟ ہیں؟</string>
+    <string name="un01">UN01:\t کیا آپ حمل سے ہونا چاہتی تھی؟ ہیں؟</string>
     <string name="un01a">ہاں</string>
     <string name="un01b">نہیں</string>
-    <string name="un02">کیا آپ بعد میں بچہ چاہتی تھی یا بلکل ہی بچہ نہیں چاہتی تھی؟</string>
+    <string name="un02">UN02:\t کیا آپ بعد میں بچہ چاہتی تھی یا بلکل ہی بچہ نہیں چاہتی تھی؟</string>
     <string name="un02a">بعد میں</string>
     <string name="un02b">بلکل نہیں چاہتی</string>
-    <string name="un03">میں اب مستقبل کے بارے میں آپ سے پوچھوں گی کیا آپ اور بچے چاہتی ہیں یا آپ اور  بچے نہیں چاہتیں۔</string>
+    <string name="un03">UN03:\t میں اب مستقبل کے بارے میں آپ سے پوچھوں گی کیا آپ اور بچے چاہتی ہیں یا آپ اور  بچے نہیں چاہتیں۔</string>
     <string name="un03a">اور بچہ چاہتی ہوں</string>
     <string name="un03b">اور نہیں</string>
     <string name="un03c">میں دوبارہ حمل سے نہیں ہو سکتی</string>
     <string name="un03d">ابھی فیصلہ نہیں کیا / معلوم نہیں</string>
-    <string name="un04">اگلے بچے کی پیدائش  کے لئے آپ کتنا وقفہ دیں گی؟</string>
+    <string name="un04">UN04:\t اگلے بچے کی پیدائش  کے لئے آپ کتنا وقفہ دیں گی؟</string>
     <string name="un04a">مہینہ</string>
     <string name="un04b">سال</string>
     <string name="un04c">فوراً وقفہ نہیں</string>
     <string name="un04d">دوبارہ حمل سے نہیں ہوسکتی</string>
-    <string name="un05">کیا آپ اس وقت حمل کے لئے جسمانی طور پہ تیار ہیں؟</string>
+    <string name="un05">UN05:\t کیا آپ اس وقت حمل کے لئے جسمانی طور پہ تیار ہیں؟</string>
     <string name="un05a">ہاں</string>
     <string name="un05b">نہیں</string>
     <string name="un05c">معلوم نہیں</string>
-    <string name="un06">آپ کو کیوں لگتا ہے کہ آپ جسمانی طور پہ تیار / اس قابل نہیں؟</string>
+    <string name="un06">UN06:\t آپ کو کیوں لگتا ہے کہ آپ جسمانی طور پہ تیار / اس قابل نہیں؟</string>
     <string name="un06a">کبھی کبھار یا  رجوع نہ کرنا</string>
     <string name="un06b">اختتام حیض</string>
     <string name="un06c">کبھی حیض نہیں ہوئے</string>
@@ -3144,7 +3144,7 @@
     <string name="un06g">ماں کا دودھ پلانا</string>
     <string name="un06h">عمر زیادہ ہے</string>
     <string name="un06x">دیگر</string>
-    <string name="un07">آخر بار ماہواری/ حیض کب ہوئے؟</string>
+    <string name="un07">UN07:\t آخر بار ماہواری/ حیض کب ہوئے؟</string>
     <string name="un07a">دن پہلے</string>
     <string name="un07b">ہفتے پہلے</string>
     <string name="un07c">مہینے پہلے</string>
