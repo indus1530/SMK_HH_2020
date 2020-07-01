@@ -3077,6 +3077,45 @@
     <string name="ah60">How Many Children Would You Ideally Like To Have?</string>
     <string name="ah60a">Number</string>
 
+    <string name="unttitle">UNMET NEED</string>
+    <string name="un01">Now I would like to talk about your last pregnancy. Did you want to get pregnant at that/this time? (include current pregnant)</string>
+    <string name="un01a">Yes</string>
+    <string name="un01b">No</string>
+    <string name="un02">Did you want to have baby later on or did you not want any (more) children?</string>
+    <string name="un02a">Later</string>
+    <string name="un02b">No more</string>
+    <string name="un03">Now I would like to ask some questions about the future. Would you like to have another child, or would you prefer not to have any (more) children&gt;</string>
+    <string name="un03a">Have another child</string>
+    <string name="un03b">No more /None</string>
+    <string name="un03c">Says she cannot get pregnant</string>
+    <string name="un03d">Undecided/Don’t know</string>
+    <string name="un04">How long would you like to wait before the birth of (another child)?</string>
+    <string name="un04a">Months</string>
+    <string name="un04b">Years</string>
+    <string name="un04c">Does not want to wait (soon/now)</string>
+    <string name="un04d">SAYs she cannot get pregnant</string>
+    <string name="un05">Do You think you are physically able to get pregnant at this time?</string>
+    <string name="un05a">Yes</string>
+    <string name="un05b">No</string>
+    <string name="un05c">Dont know</string>
+    <string name="un06">Why do you think you are not able physically able to get pregnant?</string>
+    <string name="un06a">Infrequent Sex/no sex</string>
+    <string name="un06b">Menopausal</string>
+    <string name="un06c">Never menstruated</string>
+    <string name="un06d">Hysterectomy (surgical removal of uterus)</string>
+    <string name="un06e">Has been tryingto get pregnant for 2 years or more without result</string>
+    <string name="un06f">Postpartum amenorrheic</string>
+    <string name="un06g">Breastfeeding</string>
+    <string name="un06h">Too old</string>
+    <string name="un06x">Other</string>
+    <string name="un07">When your last menstrual period start?</string>
+    <string name="un07a">Days ago</string>
+    <string name="un07b">Weeks ago</string>
+    <string name="un07c">Months ago</string>
+    <string name="un07d">Years ago</string>
+    <string name="un07e">Before last birth</string>
+
+
     <string name='Q_ah59'>ah59</string>
     <string name='Q_ah0title'>ah0title</string>
     <string name='Q_ah1'>ah1</string>
@@ -3184,6 +3223,14 @@
     <string name='Q_ahhwtitle'>ahhwtitle</string>
     <string name='Q_ahmtitle'>ahmtitle</string>
     <string name='Q_ahnktitle'>ahnktitle</string>
+    <string name='Q_un01'>un01</string>
+    <string name='Q_un02'>un02</string>
+    <string name='Q_un03'>un03</string>
+    <string name='Q_un04'>un04</string>
+    <string name='Q_un05'>un05</string>
+    <string name='Q_un06'>un06</string>
+    <string name='Q_un07'>un07</string>
+    <string name='Q_unttitle'>unttitle</string>
 
 
     <string name="end_interview"> End </string>
