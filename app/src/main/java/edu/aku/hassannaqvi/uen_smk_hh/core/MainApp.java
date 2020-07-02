@@ -32,6 +32,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.UnmetContract;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.CountAlertDialogLayoutBinding;
 import edu.aku.hassannaqvi.uen_smk_hh.ui.other.EndingActivity;
 import kotlin.Pair;
@@ -78,6 +79,7 @@ public class MainApp extends Application {
     public static FormsContract fc;
     public static KishMWRAContract kish;
     public static AdolscentContract adolscent;
+    public static UnmetContract unmet;
     public static FamilyMembersContract selectedKishAdols;
     public static FamilyMembersContract selectedKishMWRA;
     public static FamilyMembersContract indexKishMWRAChild;

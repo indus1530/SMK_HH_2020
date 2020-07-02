@@ -9,6 +9,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract.SingleKishMWRA;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRAContract.MWRATable;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRA_PREContract.SingleMWRAPRE;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MortalityContract.SingleMortality;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.UnmetContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.UsersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.VersionAppContract;
 
@@ -156,6 +157,18 @@ public final class CreateTable {
             + SingleAdolscent.COLUMN_DEVICETAGID + " TEXT,"
             + SingleAdolscent.COLUMN_SYNCED + " TEXT,"
             + SingleAdolscent.COLUMN_SYNCED_DATE + " TEXT );";
+
+    public static final String SQL_CREATE_UNMET_TABLE = "CREATE TABLE " + UnmetContract.SingleUnmet.TABLE_NAME + "("
+            + UnmetContract.SingleUnmet._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + UnmetContract.SingleUnmet.COLUMN_UID + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN__UUID + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_DEVICEID + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_FORMDATE + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_USER + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_SUN + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_DEVICETAGID + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_SYNCED + " TEXT,"
+            + UnmetContract.SingleUnmet.COLUMN_SYNCED_DATE + " TEXT );";
 
 
     public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
