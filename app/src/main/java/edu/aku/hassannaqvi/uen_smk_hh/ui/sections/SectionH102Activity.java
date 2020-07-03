@@ -303,13 +303,6 @@ public class SectionH102Activity extends AppCompatActivity {
                                 bi.h12796.isChecked() ? "96" : "0");
         json.put("f13196x", bi.h12796x.getText().toString());
 
-
-
-
-
-
-
-
         json.put("h128", bi.h128a.isChecked() ? "1" :
                 bi.h128b.isChecked() ? "2" :
                         bi.h128c.isChecked() ? "3" :
