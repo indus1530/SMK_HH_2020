@@ -40,7 +40,7 @@ public class SectionGActivity extends AppCompatActivity {
     private void setCoronaFields() {
 
         if (!MainApp.selectedKishMWRA.isCoronaCase()) {
-            bi.g102f.setVisibility(View.GONE);
+            //  bi.g102f.setVisibility(View.GONE);
 
             bi.g103j.setVisibility(View.GONE);
             bi.g103k.setVisibility(View.GONE);
@@ -255,6 +255,14 @@ public class SectionGActivity extends AppCompatActivity {
                 : bi.g102d.isChecked() ? "4"
                 : bi.g102e.isChecked() ? "5"
                 : bi.g102f.isChecked() ? "6"
+                : bi.g102g.isChecked() ? "7"
+                : bi.g102h.isChecked() ? "8"
+                : bi.g102i.isChecked() ? "9"
+                : bi.g102j.isChecked() ? "10"
+                : bi.g102k.isChecked() ? "11"
+                : bi.g102l.isChecked() ? "12"
+                : bi.g102m.isChecked() ? "13"
+                : bi.g10296.isChecked() ? "96"
                 : "0");
 
         json.put("g103a", bi.g103a.isChecked() ? "1" : "0");
