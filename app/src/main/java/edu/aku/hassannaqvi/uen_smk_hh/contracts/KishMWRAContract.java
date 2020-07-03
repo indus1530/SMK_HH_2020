@@ -20,6 +20,7 @@ public class KishMWRAContract {
     private String sH1 = "";
     private String sH2 = "";
     private String sK = "";
+    private String sUN = "";
     private String sL = "";
     private String devicetagID = "";
     private String synced = "";
@@ -122,6 +123,14 @@ public class KishMWRAContract {
         this.sK = sK;
     }
 
+    public String getsUN() {
+        return sUN;
+    }
+
+    public void setsUN(String sUN) {
+        this.sUN = sUN;
+    }
+
     public String getsL() {
         return sL;
     }
@@ -167,6 +176,7 @@ public class KishMWRAContract {
         this.sH1 = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SH1));
         this.sH2 = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SH2));
         this.sK = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SK));
+        this.sUN = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SUN));
         this.sL = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SL));
         this.devicetagID = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_DEVICETAGID));
 
@@ -202,8 +212,11 @@ public class KishMWRAContract {
         if (!this.sK.equals("")) {
             json.put(SingleKishMWRA.COLUMN_SK, this.sK.equals("") ? JSONObject.NULL : new JSONObject(this.sK));
         }
+        if (!this.sUN.equals("")) {
+            json.put(SingleKishMWRA.COLUMN_SUN, this.sUN.equals("") ? JSONObject.NULL : new JSONObject(this.sUN));
+        }
         if (!this.sL.equals("")) {
-            json.put(SingleKishMWRA.COLUMN_SL, this.sF.equals("") ? JSONObject.NULL : new JSONObject(this.sL));
+            json.put(SingleKishMWRA.COLUMN_SL, this.sL.equals("") ? JSONObject.NULL : new JSONObject(this.sL));
         }
 
         json.put(SingleKishMWRA.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
@@ -228,6 +241,7 @@ public class KishMWRAContract {
         public static final String COLUMN_SH1 = "sh1";
         public static final String COLUMN_SH2 = "sh2";
         public static final String COLUMN_SK = "sk";
+        public static final String COLUMN_SUN = "sUN";
         public static final String COLUMN_SL = "sl";
         public static final String COLUMN_DEVICETAGID = "tagid";
         public static final String COLUMN_SYNCED = "synced";

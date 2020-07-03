@@ -15,7 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.UnmetContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionUnBinding;
@@ -96,13 +96,14 @@ public class SectionUNActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesAdolsColumn(UnmetContract.SingleUnmet.COLUMN_SUN, MainApp.unmet.getsUN());
+        int updcount = db.updatesAdolsColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SUN, MainApp.kish.getsUN());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -155,7 +156,7 @@ public class SectionUNActivity extends AppCompatActivity {
                 : bi.un07e.isChecked() ? "5"
                 : "-1");
 
-        MainApp.unmet.setsUN(String.valueOf(json));
+        MainApp.kish.setsUN(String.valueOf(json));
 
     }
 

@@ -39,7 +39,6 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.MortalityContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MortalityContract.SingleMortality;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.TalukasContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.UCsContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.UnmetContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.UsersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.VillagesContract;
@@ -56,7 +55,6 @@ import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MORTAL
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MWRAPRE_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MWRA_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_PSU_TABLE;
-import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_UNMET_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_USERS;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_VERSIONAPP;
 
@@ -93,7 +91,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_MWRA_TABLE);
         db.execSQL(SQL_CREATE_MWRAPRE_TABLE);
         db.execSQL(SQL_CREATE_CHILD_TABLE);
-        db.execSQL(SQL_CREATE_UNMET_TABLE);
         db.execSQL(SQL_CREATE_MORTALITY);
     }
 
@@ -669,6 +666,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(SingleKishMWRA.COLUMN_SH1, kishmwra.getsH1());
         values.put(SingleKishMWRA.COLUMN_SH2, kishmwra.getsH2());
         values.put(SingleKishMWRA.COLUMN_SK, kishmwra.getsK());
+        values.put(SingleKishMWRA.COLUMN_SUN, kishmwra.getsUN());
         values.put(SingleKishMWRA.COLUMN_SL, kishmwra.getsL());
         values.put(SingleKishMWRA.COLUMN_DEVICETAGID, kishmwra.getDevicetagID());
 
@@ -721,31 +719,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(SingleAdolscent.COLUMN_SAH2, childContract.getsAH2());
         values.put(SingleAdolscent.COLUMN_SAH3, childContract.getsAH3());
         values.put(SingleAdolscent.COLUMN_DEVICETAGID, childContract.getDevicetagID());
-
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                SingleAdolscent.TABLE_NAME,
-                null,
-                values);
-        return newRowId;
-    }
-
-    public Long addUnmet(UnmetContract childContract) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-//        values.put(MWRATable._ID, mwra.get_ID());
-        values.put(UnmetContract.SingleUnmet.COLUMN__UUID, childContract.get_UUID());
-        values.put(UnmetContract.SingleUnmet.COLUMN_DEVICEID, childContract.getDeviceId());
-        values.put(UnmetContract.SingleUnmet.COLUMN_FORMDATE, childContract.getFormDate());
-        values.put(UnmetContract.SingleUnmet.COLUMN_USER, childContract.getUser());
-        values.put(UnmetContract.SingleUnmet.COLUMN_SUN, childContract.getsUN());
-        values.put(UnmetContract.SingleUnmet.COLUMN_DEVICETAGID, childContract.getDevicetagID());
 
 
         // Insert the new row, returning the primary key value of the new row
@@ -1206,6 +1179,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 SingleKishMWRA.COLUMN_SH1,
                 SingleKishMWRA.COLUMN_SH2,
                 SingleKishMWRA.COLUMN_SK,
+                SingleKishMWRA.COLUMN_SUN,
                 SingleKishMWRA.COLUMN_SL,
                 SingleKishMWRA.COLUMN_DEVICETAGID,
         };
@@ -1350,58 +1324,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             );
             while (c.moveToNext()) {
                 AdolscentContract fc = new AdolscentContract();
-                allFC.add(fc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allFC;
-    }
-
-    public Collection<UnmetContract> getUnsyncedChildForm() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                UnmetContract.SingleUnmet._ID,
-                UnmetContract.SingleUnmet.COLUMN_UID,
-                UnmetContract.SingleUnmet.COLUMN__UUID,
-                UnmetContract.SingleUnmet.COLUMN_DEVICEID,
-                UnmetContract.SingleUnmet.COLUMN_FORMDATE,
-                UnmetContract.SingleUnmet.COLUMN_USER,
-                UnmetContract.SingleUnmet.COLUMN_SUN,
-                UnmetContract.SingleUnmet.COLUMN_DEVICETAGID,
-
-        };
-
-
-        String whereClause = UnmetContract.SingleUnmet.COLUMN_SYNCED + " is null";
-
-        String[] whereArgs = null;
-
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                UnmetContract.SingleUnmet._ID + " ASC";
-
-        Collection<UnmetContract> allFC = new ArrayList<UnmetContract>();
-        try {
-            c = db.query(
-                    UnmetContract.SingleUnmet.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                UnmetContract fc = new UnmetContract();
                 allFC.add(fc.hydrate(c));
             }
         } finally {
