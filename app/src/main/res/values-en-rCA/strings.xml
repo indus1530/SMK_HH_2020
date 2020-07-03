@@ -375,10 +375,22 @@
     <string name="f101y">Yes</string>
 
     <string name="f102"> F102:\t Where did you seek ANC checkup for last pregnancy ? </string>
-    <string name="f102a"> Government health facility </string>
-    <string name="f102b"> Private health facility </string>
-    <string name="f102c"> Health House (LHW)</string>
-    <string name="f102d"> Birth station (CMW)</string>
+    <string name="f102a"> Home </string>
+    <string name="f102h1"> Public medical sector </string>
+    <string name="f102b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="f102c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="f102d"> RURAL HC </string>
+    <string name="f102e"> BASIC HEALTH UNIT </string>
+    <string name="f102f"> Mother And child health centre </string>
+    <string name="f102g"> BIRTH STATION </string>
+    <string name="f102h"> HEALTH HOUSE </string>
+    <string name="f102h2"> Private medical sector </string>
+    <string name="f102i"> Private hospital </string>
+    <string name="f102j"> Private clinic </string>
+    <string name="f102k"> Private maternity home </string>
+    <string name="f102l"> NGO HEALTH FACILITY </string>
+    <string name="f102m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="f10296"> Other (specify) </string>
 
     <string name="f103"> F103:\t Who did ANC checkup during last pregnancy?  Probe: Anyone else ? </string>
     <string name="f103a"> Doctor </string>
@@ -572,9 +584,22 @@
 
 
     <string name="f131"> F131:\t Where did you seek care for the danger signs/problems you mentioned above during your pregnancy with {NAME} ? </string>
-    <string name="f131a"> Government health facility </string>
-    <string name="f131b"> Private health facility </string>
-    <string name="f131c"> NGO health facility </string>
+    <string name="f131a"> Home </string>
+    <string name="f131h1"> Public medical sector </string>
+    <string name="f131b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="f131c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="f131d"> RURAL HC </string>
+    <string name="f131e"> BASIC HEALTH UNIT </string>
+    <string name="f131f"> Mother And child health centre </string>
+    <string name="f131g"> BIRTH STATION </string>
+    <string name="f131h"> HEALTH HOUSE </string>
+    <string name="f131h2"> Private medical sector </string>
+    <string name="f131i"> Private hospital </string>
+    <string name="f131j"> Private clinic </string>
+    <string name="f131k"> Private maternity home </string>
+    <string name="f131l"> NGO HEALTH FACILITY </string>
+    <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="f13196"> Other (specify) </string>
 
     <string name="f132"> F132:\t Did your diet/eating habit change during the pregnancy with {NAME} ? </string>
     <string name="f132a"> Yes, more than usual </string>
@@ -603,12 +628,22 @@
     <string name="g101b"> No </string>
 
     <string name="g102"> G102:\t Where did {NAME}’s delivery take place? </string>
-    <string name="g102a"> At Home </string>
-    <string name="g102b"> Government Health Facility </string>
-    <string name="g102c"> Private health facility </string>
-    <string name="g102d"> NGO health facility </string>
-    <string name="g102e"> On the way to the health care Facility </string>
-    <string name="g102f"> Birth Station (CMW) </string>
+    <string name="g102a"> Home </string>
+    <string name="g102h1"> Public medical sector </string>
+    <string name="g102b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="g102c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="g102d"> RURAL HC </string>
+    <string name="g102e"> BASIC HEALTH UNIT </string>
+    <string name="g102f"> Mother And child health centre </string>
+    <string name="g102g"> BIRTH STATION </string>
+    <string name="g102h"> HEALTH HOUSE </string>
+    <string name="g102h2"> Private medical sector </string>
+    <string name="g102i"> Private hospital </string>
+    <string name="g102j"> Private clinic </string>
+    <string name="g102k"> Private maternity home </string>
+    <string name="g102l"> NGO HEALTH FACILITY </string>
+    <string name="g102m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="g10296"> Other (specify) </string>
 
     <string name="g103"> G103:\t Why didn’t you deliver {NAME} in a health facility ? </string>
     <string name="g103hint"> If delivery take place at home Probe to identify any other reason Record all mentioned. </string>
@@ -835,6 +870,7 @@
     <string name="h109f"> Ash </string>
     <string name="h109g"> Breast milk </string>
     <string name="h109h"> Nothing was applied </string>
+    <string name="h109i"> Yes applied but Not Remember </string>
 
     <string name="h110"> H110:\t Did {NAME} get skin to skin contact with mother after birth ? </string>
     <string name="h110a"> Yes </string>
@@ -929,9 +965,21 @@
 
     <string name="h127"> H127:\t Where was {NAME}’s, first health check-up conducted ? </string>
     <string name="h127a"> Home </string>
-    <string name="h127b"> Government health facility </string>
-    <string name="h127c"> Private health facility </string>
-    <string name="h127d"> NGO health facility </string>
+    <string name="h127h1"> Public medical sector </string>
+    <string name="h127b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="h127c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="h127d"> RURAL HC </string>
+    <string name="h127e"> BASIC HEALTH UNIT </string>
+    <string name="h127f"> Mother And child health centre </string>
+    <string name="h127g"> BIRTH STATION </string>
+    <string name="h127h"> HEALTH HOUSE </string>
+    <string name="h127h2"> Private medical sector </string>
+    <string name="h127i"> Private hospital </string>
+    <string name="h127j"> Private clinic </string>
+    <string name="h127k"> Private maternity home </string>
+    <string name="h127l"> NGO HEALTH FACILITY </string>
+    <string name="h127m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="h12796"> Other (specify) </string>
 
     <string name="h128"> H128:\t Who conducted {NAME}’s first health check-up ? </string>
     <string name="h128a"> Doctor </string>
@@ -1075,10 +1123,22 @@
     <string name="h203"> H203:\t How long after delivery was first health check-up conducted ? </string>
 
     <string name="h204"> H204:\t Where did you have the first health check-up after {name}’s birth ? </string>
-    <string name="h204a"> Government health facility </string>
-    <string name="h204b"> Private health facility </string>
-    <string name="h204c"> NGO health facility </string>
-    <string name="h204d"> Birth Station </string>
+    <string name="h204a"> Home </string>
+    <string name="h204h1"> Public medical sector </string>
+    <string name="h204b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="h204c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="h204d"> RURAL HC </string>
+    <string name="h204e"> BASIC HEALTH UNIT </string>
+    <string name="h204f"> Mother And child health centre </string>
+    <string name="h204g"> BIRTH STATION </string>
+    <string name="h204h"> HEALTH HOUSE </string>
+    <string name="h204h2"> Private medical sector </string>
+    <string name="h204i"> Private hospital </string>
+    <string name="h204j"> Private clinic </string>
+    <string name="h204k"> Private maternity home </string>
+    <string name="h204l"> NGO HEALTH FACILITY </string>
+    <string name="h204m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="h20496"> Other (specify) </string>
 
     <string name="h205"> H205:\t Who conducted your health check-up ? </string>
     <string name="h205a"> Doctor </string>

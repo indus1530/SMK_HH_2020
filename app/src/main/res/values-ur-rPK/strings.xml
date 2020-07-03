@@ -367,10 +367,22 @@
     <string name="f101ao"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنے ہوئے تھے) </string>
 
     <string name="f102"> F102:\t آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا ؟ </string>
-    <string name="f102a"> سرکاری مرکز صحت </string>
-    <string name="f102b"> نجی مرکز صحت </string>
-    <string name="f102c"> ہیلتھ ہائوس </string>
-    <string name="f102d"> میٹرنیٹی ہوم </string>
+    <string name="f102a">گهر </string>
+    <string name="f102h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="f102b">تربیتی/ سول ہسپتال </string>
+    <string name="f102c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="f102d">دیہی صحت مرکز </string>
+    <string name="f102e">بنیادی صحت مرکز </string>
+    <string name="f102f">ماں اور بچے کا صحت مرکز </string>
+    <string name="f102g">زچگی گھر  </string>
+    <string name="f102h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="f102h2"> خانگی ہسپتال </string>
+    <string name="f102i"> خانگی ہسپتال </string>
+    <string name="f102j"> خانگی کلینک </string>
+    <string name="f102k"> خانگی زچگی گھر </string>
+    <string name="f102l"> این جی او صحت مرکز </string>
+    <string name="f102m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="f10296">دیگر (وضاحت کریں) </string>
 
     <string name="f103"> F103:\t آخری حمل کے دوران پیدائش سے قبل معائنہ کس نے کیا تھا ؟ مزید پوچھیں: کوئی اور </string>
     <string name="f103a"> ڈاکٹر </string>
@@ -563,9 +575,22 @@
 
 
     <string name="f131"> F131:\t آپ (نام) کی پیدائش سے قبل حمل کے دوران پیش آنے والی اوپر بیان کی گئی علامات / مسائل کی دیکھ بھال کے لئے کہاں گئے تھے ؟ </string>
-    <string name="f131a"> سرکاری مرکز صحت </string>
-    <string name="f131b"> نجی مرکز صحت </string>
-    <string name="f131c"> رفاہی مرکز صحت </string>
+    <string name="f131a">گهر </string>
+    <string name="f131h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="f131b">تربیتی/ سول ہسپتال </string>
+    <string name="f131c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="f131d">دیہی صحت مرکز </string>
+    <string name="f131e">بنیادی صحت مرکز </string>
+    <string name="f131f">ماں اور بچے کا صحت مرکز </string>
+    <string name="f131g">زچگی گھر  </string>
+    <string name="f131h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="f131h2"> خانگی ہسپتال </string>
+    <string name="f131i"> خانگی ہسپتال </string>
+    <string name="f131j"> خانگی کلینک </string>
+    <string name="f131k"> خانگی زچگی گھر </string>
+    <string name="f131l"> این جی او صحت مرکز </string>
+    <string name="f131m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="f13196">دیگر (وضاحت کریں) </string>
 
     <string name="f132"> F132:\t کیا آپ نے (نام) کی پیدائش سے قبل حمل کے دوران اپنی غذا / کھانے پینے کی عادات میں تبدیلی کی تھی ؟ </string>
     <string name="f132a"> ہاں، معمول سے زیادہ </string>
@@ -593,12 +618,22 @@
     <string name="g101b"> نہیں </string>
 
     <string name="g102"> G102:\t (نام) کی پیدائش کہاں ہوئی تھی ؟ </string>
-    <string name="g102a"> گھر پر </string>
-    <string name="g102b"> سرکاری مرکز صحت </string>
-    <string name="g102c"> نجی مرکز صحت </string>
-    <string name="g102d"> رفاہی ادارہ یا مرکز صحت </string>
-    <string name="g102e"> مرکز صحت جاتے ہوئے راستے میں </string>
-    <string name="g102f"> میٹرنٹی ہوم </string>
+    <string name="g102a">گهر </string>
+    <string name="g102h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="g102b">تربیتی/ سول ہسپتال </string>
+    <string name="g102c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="g102d">دیہی صحت مرکز </string>
+    <string name="g102e">بنیادی صحت مرکز </string>
+    <string name="g102f">ماں اور بچے کا صحت مرکز </string>
+    <string name="g102g">زچگی گھر  </string>
+    <string name="g102h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="g102h2"> خانگی ہسپتال </string>
+    <string name="g102i"> خانگی ہسپتال </string>
+    <string name="g102j"> خانگی کلینک </string>
+    <string name="g102k"> خانگی زچگی گھر </string>
+    <string name="g102l"> این جی او صحت مرکز </string>
+    <string name="g102m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="g10296">دیگر (وضاحت کریں) </string>
 
     <string name="g103"> G103:\t آپ نے (نام) کی پیدائش مرکز صحت پر کیوں نہیں کروائی ؟ </string>
     <string name="g103hint"> اگر زچگی گھر میں ہوئی تھی۔ کسی اور وجہ کی نشاندہی کرنے کے لئے تحقیق کریں۔ بتائے گئے تمام جوابات ریکارڈ کریں۔ </string>
@@ -823,6 +858,7 @@
     <string name="h109f"> راکھ </string>
     <string name="h109g"> ماں کا دودھ </string>
     <string name="h109h"> کچھ بھی نہیں </string>
+    <string name="h109i"> لگایا تھا مگر یاد نہیں </string>
 
     <string name="h110"> H110:\t کیا (نام) کو پیدائش کے بعد ماں کے ساتھ جلد سے جلد ملاکر رکھا گیا تھا ؟ </string>
     <string name="h110a"> ہاں </string>
@@ -917,10 +953,22 @@
     <string name="h126e"> معلوم نہیں </string>
 
     <string name="h127"> H127:\t (نام) کا پہلی بار معائنہ کس جگہ کیا گیا تھا ؟ </string>
-    <string name="h127a"> گھر پر </string>
-    <string name="h127b"> سرکاری مرکز صحت میں </string>
-    <string name="h127c"> نجی مرکز صحت میں </string>
-    <string name="h127d"> رفاہی ادارے یا رفاہی مرکز صحت میں </string>
+    <string name="h127a">گهر </string>
+    <string name="h127h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="h127b">تربیتی/ سول ہسپتال </string>
+    <string name="h127c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="h127d">دیہی صحت مرکز </string>
+    <string name="h127e">بنیادی صحت مرکز </string>
+    <string name="h127f">ماں اور بچے کا صحت مرکز </string>
+    <string name="h127g">زچگی گھر  </string>
+    <string name="h127h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="h127h2"> خانگی ہسپتال </string>
+    <string name="h127i"> خانگی ہسپتال </string>
+    <string name="h127j"> خانگی کلینک </string>
+    <string name="h127k"> خانگی زچگی گھر </string>
+    <string name="h127l"> این جی او صحت مرکز </string>
+    <string name="h127m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="h12796">دیگر (وضاحت کریں) </string>
 
     <string name="h128"> H128:\t (نام) کا پہلی بار معائنہ کس نے کیا تھا ؟ </string>
     <string name="h128a"> ڈاکٹر </string>
@@ -1067,10 +1115,22 @@
     <string name="h203"> H203:\t زچگی کے کتنی دیر کے بعد آپ کا پہلا طبی معائنہ کیا گیا تھا ؟ </string>
 
     <string name="h204"> H204:\t (نام) کی پیدائش کے بعد آپ کا پہلا طبی معائنہ کہاں کیا گیا تھا ؟ </string>
-    <string name="h204a"> سرکاری مرکز صحت میں </string>
-    <string name="h204b"> نجی مرکز صحت میں </string>
-    <string name="h204c"> رفاہی ادارے یا رفاہی مرکز صحت میں </string>
-    <string name="h204d"> میٹرنٹی ہوم </string>
+    <string name="h204a">گهر </string>
+    <string name="h204h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="h204b">تربیتی/ سول ہسپتال </string>
+    <string name="h204c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="h204d">دیہی صحت مرکز </string>
+    <string name="h204e">بنیادی صحت مرکز </string>
+    <string name="h204f">ماں اور بچے کا صحت مرکز </string>
+    <string name="h204g">زچگی گھر  </string>
+    <string name="h204h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="h204h2"> خانگی ہسپتال </string>
+    <string name="h204i"> خانگی ہسپتال </string>
+    <string name="h204j"> خانگی کلینک </string>
+    <string name="h204k"> خانگی زچگی گھر </string>
+    <string name="h204l"> این جی او صحت مرکز </string>
+    <string name="h204m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="h20496">دیگر (وضاحت کریں) </string>
 
     <string name="h205"> H205:\t آپ کا پہلا طبی معائنہ کس نے کیا تھا ؟ </string>
     <string name="h205a"> ڈاکٹر </string>

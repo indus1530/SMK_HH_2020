@@ -384,10 +384,22 @@
     <string name="f101y"> ھا </string>
 
     <string name="f102"> F102:\t توھان (نالو) حمل دوران طبي معائنو (ANC)  ڪٿان ڪرايو ؟ </string>
-    <string name="f102a"> سرڪاري صحت مرڪز </string>
-    <string name="f102b"> پرائيويٽ صحت مرڪز </string>
-    <string name="f102c"> هيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="f102d"> (CMW) ويم گهر برٿ اسٽيشن  </string>
+    <string name="f102a">گهر </string>
+    <string name="f102h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="f102b">تربيتي/سول اسپتال </string>
+    <string name="f102c">ضلعي/تعلقي اسپتال </string>
+    <string name="f102d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="f102e">بينادي صحت مرڪز </string>
+    <string name="f102f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="f102g">ويم گهر  </string>
+    <string name="f102h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="f102h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="f102i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="f102j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="f102k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="f102l"> اين جي او صحت مرڪز </string>
+    <string name="f102m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="f10296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="f103"> F103:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڪنھن کان ڪرايو ؟ </string>
     <string name="f103a"> ڊاڪٽر </string>
@@ -578,9 +590,22 @@
 
 
     <string name="f131"> F131:\t توھان (نالو) حمل دوران مٿي ٻڌايل خطرناڪ علامتن / پيچيدگين جو علاج ڪٿان ڪرايو ؟ </string>
-    <string name="f131a"> سرڪاري صحت مرڪز </string>
-    <string name="f131b"> پرائيويٽ صحت مرڪز </string>
-    <string name="f131c"> صحت مرڪز (NGO) اين جي و </string>
+    <string name="f131a">گهر </string>
+    <string name="f131h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="f131b">تربيتي/سول اسپتال </string>
+    <string name="f131c">ضلعي/تعلقي اسپتال </string>
+    <string name="f131d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="f131e">بينادي صحت مرڪز </string>
+    <string name="f131f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="f131g">ويم گهر  </string>
+    <string name="f131h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="f131h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="f131i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="f131j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="f131k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="f131l"> اين جي او صحت مرڪز </string>
+    <string name="f131m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="f13196">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="f132"> F132:\t نالو) حمل دوران توھان پنھنجي کاڌ خوراڪ جي درجه بندي ڪئين ڪندا؟)</string>
     <string name="f132a"> معمول کان وڌيڪ </string>
@@ -608,12 +633,22 @@
     <string name="g101b"> نه </string>
 
     <string name="g102"> G102:\t نالو) جي ڊليوري ڪٿي ٿي؟)</string>
-    <string name="g102a"> گھر ۾</string>
-    <string name="g102b"> سرڪاري صحت مرڪز </string>
-    <string name="g102c"> پرائيويٽ صحت مرڪز </string>
-    <string name="g102d">  صحت مرڪز  (NGO)اين جي او</string>
-    <string name="g102e"> صحت مرڪز وڃڻ وقت رستي ۾ </string>
-    <string name="g102f"> پيدائش اسٽيشن (ڪميونٽي مڊوائف) </string>
+    <string name="g102a">گهر </string>
+    <string name="g102h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="g102b">تربيتي/سول اسپتال </string>
+    <string name="g102c">ضلعي/تعلقي اسپتال </string>
+    <string name="g102d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="g102e">بينادي صحت مرڪز </string>
+    <string name="g102f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="g102g">ويم گهر  </string>
+    <string name="g102h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="g102h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="g102i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="g102j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="g102k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="g102l"> اين جي او صحت مرڪز </string>
+    <string name="g102m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="g10296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="g103"> G103:\t توھان (نالو) ڊليوري صحت مرڪز تي ڇو نه ڪرائي ان جو ڇا سبب آھي؟</string>
     <string name="g103hint"> جيڪڏھن ويم گھر ۾ ٿيو هو- ڪنهن ٻي سبب جي نشاندهي ڪرڻ جي لاءِ پڇا ڪريو- ٻڌايل سڀني جوابن کي رڪارڊ ڪريو </string>
@@ -832,6 +867,7 @@
     <string name="h109f"> مٽي / کاڪ </string>
     <string name="h109g"> ماءُ جو کير </string>
     <string name="h109h"> ڪا به شي نه لڳائي وئي </string>
+    <string name="h109i"> مون درخواست ڏني آهي پر مون کي ياد ناهي </string>
 
     <string name="h110"> H110:\t ڇا (نالو) کي پيدائش کان پوءِ ماءُ جي ڇاتي سان لڳايو ويو ؟ </string>
     <string name="h110a"> ھا </string>
@@ -925,10 +961,22 @@
     <string name="h126e"> خبر نه آھي </string>
 
     <string name="h127"> H127:\t (نالو) ڊليوري کان پوءِ توھان پھريون طبي معائنو ڪٿان ڪرايو ؟ </string>
-    <string name="h127a"> گھر ۾ </string>
-    <string name="h127b"> سرڪاري صحت مرڪز </string>
-    <string name="h127c"> پرائيويٽ صحت مرڪز </string>
-    <string name="h127d">  صحت مرڪز (NGO)اين جي او </string>
+    <string name="h127a">گهر </string>
+    <string name="h127h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="h127b">تربيتي/سول اسپتال </string>
+    <string name="h127c">ضلعي/تعلقي اسپتال </string>
+    <string name="h127d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="h127e">بينادي صحت مرڪز </string>
+    <string name="h127f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="h127g">ويم گهر  </string>
+    <string name="h127h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="h127h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="h127i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="h127j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="h127k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="h127l"> اين جي او صحت مرڪز </string>
+    <string name="h127m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="h12796">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="h128"> H128:\t (نالو) ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو ؟ </string>
     <string name="h128a"> ڊاڪٽر </string>
@@ -1079,10 +1127,22 @@
     <string name="h203"> H203:\t ڊليوري کان پوءِ ڪيتري دير بعد توھان جو پھريون دفعو طبي معائنو ڪيو ويو؟</string>
 
     <string name="h204"> H204:\t ڊليوري کان پوءِ توھان پھريون طبي معائنو ڪٿان ڪرايو؟</string>
-    <string name="h204a"> سرڪاري صحت مرڪز </string>
-    <string name="h204b"> پرائيويٽ صحت مرڪز </string>
-    <string name="h204c"> اين جي او  (NGO)صحت مرڪز </string>
-    <string name="h204d"> پيدائش اسٽيشن </string>
+    <string name="h204a">گهر </string>
+    <string name="h204h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="h204b">تربيتي/سول اسپتال </string>
+    <string name="h204c">ضلعي/تعلقي اسپتال </string>
+    <string name="h204d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="h204e">بينادي صحت مرڪز </string>
+    <string name="h204f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="h204g">ويم گهر  </string>
+    <string name="h204h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="h204h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="h204i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="h204j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="h204k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="h204l"> اين جي او صحت مرڪز </string>
+    <string name="h204m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="h20496">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="h205"> H205:\t ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو؟</string>
     <string name="h205a"> ڊاڪٽر</string>
