@@ -292,16 +292,18 @@ public class SectionH102Activity extends AppCompatActivity {
                 bi.h127b.isChecked() ? "2" :
                         bi.h127c.isChecked() ? "3" :
                                 bi.h127d.isChecked() ? "4" :
-                                 bi.h127e.isChecked()?"5":
-                                 bi.h127f.isChecked()?"6":
-                                 bi.h127g.isChecked()?"7":
-                                 bi.h127h.isChecked()?"8":
-                                 bi.h127i.isChecked()?"9":
-                                 bi.h127k.isChecked()?"10":
-                                 bi.h127l.isChecked()?"11":
-                                 bi.h127m.isChecked()?"12":
-                                bi.h12796.isChecked() ? "96" : "0");
-        json.put("f13196x", bi.h12796x.getText().toString());
+                                        bi.h127e.isChecked() ? "5" :
+                                                bi.h127f.isChecked() ? "6" :
+                                                        bi.h127g.isChecked() ? "7" :
+                                                                bi.h127h.isChecked() ? "8" :
+                                                                        bi.h127i.isChecked() ? "9" :
+                                                                                bi.h127j.isChecked() ? "10" :
+                                                                                        bi.h127k.isChecked() ? "11" :
+                                                                                                bi.h127l.isChecked() ? "12" :
+                                                                                                        bi.h127m.isChecked() ? "13" :
+                                                                                                                bi.h12796.isChecked() ? "96" : "0");
+        json.put("h12796x", bi.h12796x.getText().toString());
+
 
         json.put("h128", bi.h128a.isChecked() ? "1" :
                 bi.h128b.isChecked() ? "2" :
