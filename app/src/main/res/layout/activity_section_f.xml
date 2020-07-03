@@ -204,6 +204,10 @@
                                 style="@style/checkbox"
                                 android:text="@string/f102a" />
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f102h1" />
+
                             <CheckBox
                                 android:id="@+id/f102b"
                                 style="@style/checkbox"
@@ -218,6 +222,68 @@
                                 android:id="@+id/f102d"
                                 style="@style/checkbox"
                                 android:text="@string/f102d" />
+
+                            <CheckBox
+                                android:id="@+id/f102e"
+                                style="@style/checkbox"
+                                android:text="@string/f102e" />
+
+                            <CheckBox
+                                android:id="@+id/f102f"
+                                style="@style/checkbox"
+                                android:text="@string/f102f" />
+
+                            <CheckBox
+                                android:id="@+id/f102g"
+                                style="@style/checkbox"
+                                android:text="@string/f102g" />
+
+                            <CheckBox
+                                android:id="@+id/f102h"
+                                style="@style/checkbox"
+                                android:text="@string/f102h" />
+
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f102h2" />
+
+                            <CheckBox
+                                android:id="@+id/f102i"
+                                style="@style/checkbox"
+                                android:text="@string/f102i" />
+
+                            <CheckBox
+                                android:id="@+id/f102j"
+                                style="@style/checkbox"
+                                android:text="@string/f102j" />
+
+                            <CheckBox
+                                android:id="@+id/f102k"
+                                style="@style/checkbox"
+                                android:text="@string/f102k" />
+
+                            <CheckBox
+                                android:id="@+id/f102l"
+                                style="@style/checkbox"
+                                android:text="@string/f102l" />
+
+                            <CheckBox
+                                android:id="@+id/f102m"
+                                style="@style/checkbox"
+                                android:text="@string/f102m" />
+
+                            <CheckBox
+                                android:id="@+id/f10296"
+                                style="@style/checkbox"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/f10296x"
+                                style="@style/EditTextAlpha"
+                                android:hint="@string/specify"
+                                android:tag="f10296"
+                                android:text='@{f10296.checked? f10296x.getText().toString() : ""}'
+                                android:visibility='@{f10296.checked? View.VISIBLE : View.GONE}' />
 
                         </LinearLayout>
 
