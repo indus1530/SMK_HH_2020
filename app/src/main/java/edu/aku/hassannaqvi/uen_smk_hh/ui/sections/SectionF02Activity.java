@@ -228,18 +228,18 @@ public class SectionF02Activity extends AppCompatActivity {
 
         f1.put("f131", bi.f131a.isChecked() ? "1" :
                 bi.f131b.isChecked() ? "2" :
-                        bi.f131c.isChecked() ? "3" :
-                                bi.f131d.isChecked() ? "4" :
-                                        bi.f131e.isChecked() ? "5" :
-                                                bi.f131f.isChecked() ? "6" :
-                                                        bi.f131g.isChecked() ? "7" :
-                                                                bi.f131h.isChecked() ? "8" :
-                                                                        bi.f131i.isChecked() ? "9" :
-                                                                                bi.f131j.isChecked() ? "10" :
-                                                                                        bi.f131k.isChecked() ? "11" :
-                                                                                                bi.f131l.isChecked() ? "12" :
-                                                                                                        bi.f131m.isChecked() ? "13" :
-                                                                                                                bi.f13196.isChecked() ? "96" : "0");
+                  bi.f131c.isChecked() ? "3" :
+                    bi.f131d.isChecked() ? "4" :
+                     bi.f131e.isChecked() ? "5" :
+                      bi.f131f.isChecked() ? "6" :
+                      bi.f131g.isChecked() ? "7" :
+                      bi.f131h.isChecked() ? "8" :
+                      bi.f131i.isChecked() ? "9" :
+                      bi.f131j.isChecked() ? "10" :
+                      bi.f131k.isChecked() ? "11" :
+                      bi.f131l.isChecked() ? "12" :
+                      bi.f131m.isChecked() ? "13" :
+                     bi.f13196.isChecked() ? "96" : "0");
         f1.put("f13196x", bi.f13196x.getText().toString());
 
 
