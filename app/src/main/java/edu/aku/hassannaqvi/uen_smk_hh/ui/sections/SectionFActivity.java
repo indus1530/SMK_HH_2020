@@ -161,6 +161,17 @@ public class SectionFActivity extends AppCompatActivity {
         json.put("f102b", bi.f102b.isChecked() ? "2" : "0");
         json.put("f102c", bi.f102c.isChecked() ? "3" : "0");
         json.put("f102d", bi.f102d.isChecked() ? "4" : "0");
+        json.put("f102e", bi.f102e.isChecked() ? "5" : "0");
+        json.put("f102f", bi.f102f.isChecked() ? "6" : "0");
+        json.put("f102g", bi.f102g.isChecked() ? "7" : "0");
+        json.put("f102h", bi.f102h.isChecked() ? "8" : "0");
+        json.put("f102i", bi.f102i.isChecked() ? "9" : "0");
+        json.put("f102j", bi.f102j.isChecked() ? "10" : "0");
+        json.put("f102k", bi.f102k.isChecked() ? "11" : "0");
+        json.put("f102l", bi.f102l.isChecked() ? "12" : "0");
+        json.put("f102m", bi.f102m.isChecked() ? "13" : "0");
+        json.put("f10296", bi.f10296.isChecked() ? "96" : "0");
+        json.put("f10296x", bi.f10296x.getText().toString());
 
         json.put("f103a", bi.f103a.isChecked() ? "1" : "0");
         json.put("f103b", bi.f103b.isChecked() ? "2" : "0");
