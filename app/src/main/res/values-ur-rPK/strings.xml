@@ -325,11 +325,22 @@
     <string name="e121x"> دیگر (وضاحت کریں) </string>
 
     <string name="e122"> E122:\t انتقال کا مقام </string>
-    <string name="e122a"> گھر پر </string>
-    <string name="e122b"> سرکاری مرکز صحت </string>
-    <string name="e122c"> نجی مرکز صحت </string>
-    <string name="e122d"> رفاہی ادارہ </string>
-    <string name="e122e"> مرکز صحت جاتے ہوئے راست میں </string>
+    <string name="e122a">گهر </string>
+    <string name="e122h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="e122b">تربیتی/ سول ہسپتال </string>
+    <string name="e122c">ضلعہ/تعلقہ ہسپتال </string>
+    <string name="e122d">دیہی صحت مرکز </string>
+    <string name="e122e">بنیادی صحت مرکز </string>
+    <string name="e122f">ماں اور بچے کا صحت مرکز </string>
+    <string name="e122g">زچگی گھر  </string>
+    <string name="e122h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="e122h2"> خانگی ہسپتال </string>
+    <string name="e122i"> خانگی ہسپتال </string>
+    <string name="e122j"> خانگی کلینک </string>
+    <string name="e122k"> خانگی زچگی گھر </string>
+    <string name="e122l"> این جی او صحت مرکز </string>
+    <string name="e122m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="e12296">دیگر (وضاحت کریں) </string>
 
 
     <!--  SECTION F -->

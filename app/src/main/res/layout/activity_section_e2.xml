@@ -652,7 +652,7 @@
                             <RadioButton
                                 android:id="@+id/e11296"
                                 style="@style/radiobutton"
-                                android:text="@string/e11296" />
+                                android:text="@string/other" />
 
                             <EditText
                                 android:id="@+id/e11296x"

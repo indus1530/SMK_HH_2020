@@ -127,11 +127,22 @@ public class SectionE4Activity extends AppCompatActivity {
 
         f1.put("e12196x", bi.e12196x.getText().toString());
 
-        f1.put("e122", bi.e122a.isChecked() ? "1" :
-                bi.e122b.isChecked() ? "2" :
-                        bi.e122c.isChecked() ? "3" :
-                                bi.e122d.isChecked() ? "4" :
-                                        bi.e122e.isChecked() ? "5" : "0");
+        f1.put("e122", bi.e122a.isChecked() ? "1"
+                : bi.e122b.isChecked() ? "2"
+                : bi.e122c.isChecked() ? "3"
+                : bi.e122d.isChecked() ? "4"
+                : bi.e122e.isChecked() ? "5"
+                : bi.e122f.isChecked() ? "6"
+                : bi.e122g.isChecked() ? "7"
+                : bi.e122h.isChecked() ? "8"
+                : bi.e122i.isChecked() ? "9"
+                : bi.e122j.isChecked() ? "10"
+                : bi.e122k.isChecked() ? "11"
+                : bi.e122l.isChecked() ? "12"
+                : bi.e122m.isChecked() ? "13"
+                : bi.e12296.isChecked() ? "96"
+                : "0");
+        f1.put("e12296x", bi.e12296x.getText().toString());
 
         morc.setsE3(String.valueOf(f1));
 

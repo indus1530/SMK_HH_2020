@@ -335,11 +335,22 @@
     <string name="e121x"> Others (specify) </string>
 
     <string name="e122"> E122:\t Place of death</string>
-    <string name="e122a"> At home </string>
-    <string name="e122b"> Government health facility </string>
-    <string name="e122c"> Private health facility </string>
-    <string name="e122d"> NGO health facility </string>
-    <string name="e122e"> On the way to the facility </string>
+    <string name="e122a"> Home </string>
+    <string name="e122h1"> Public medical sector </string>
+    <string name="e122b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="e122c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="e122d"> RURAL HC </string>
+    <string name="e122e"> BASIC HEALTH UNIT </string>
+    <string name="e122f"> Mother And child health centre </string>
+    <string name="e122g"> BIRTH STATION </string>
+    <string name="e122h"> HEALTH HOUSE </string>
+    <string name="e122h2"> Private medical sector </string>
+    <string name="e122i"> Private hospital </string>
+    <string name="e122j"> Private clinic </string>
+    <string name="e122k"> Private maternity home </string>
+    <string name="e122l"> NGO HEALTH FACILITY </string>
+    <string name="e122m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="e12296"> Other (specify) </string>
 
     <string name="f101"> F101:\t Did you see anyone for antenatal care during your last pregnancy with (name) ? </string>
 

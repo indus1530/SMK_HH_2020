@@ -341,11 +341,22 @@
     <string name="e121x"> (ٻيو ڪجھ (وضاحت ڪريو</string>
 
     <string name="e122"> E122:\t وفات جي جاءِ </string>
-    <string name="e122a"> گھر ۾</string>
-    <string name="e122b"> سرڪاري صحت مرڪز </string>
-    <string name="e122c"> پرائيوٽ (خانگي) صحت مرڪز </string>
-    <string name="e122d">  صحت مرڪز  (NGO)اين جي او </string>
-    <string name="e122e"> صحت مرڪز ڏانھن ويندي رستي ۾ </string>
+    <string name="e122a">گهر </string>
+    <string name="e122h1"> عوامي/سرڪاري اسپتالون </string>
+    <string name="e122b">تربيتي/سول اسپتال </string>
+    <string name="e122c">ضلعي/تعلقي اسپتال </string>
+    <string name="e122d">ڳوٺاڻو صحت مرڪز </string>
+    <string name="e122e">بينادي صحت مرڪز </string>
+    <string name="e122f">ماءُ ۽ ٻار جو صحت مرڪز </string>
+    <string name="e122g">ويم گهر  </string>
+    <string name="e122h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
+    <string name="e122h2"> نجي (پرائيويٽ) اسپتالون </string>
+    <string name="e122i"> نجي (پرائيويٽ) اسپتال </string>
+    <string name="e122j"> نجي (پرائيويٽ) ڪلينڪ </string>
+    <string name="e122k"> نجي (پرائيويٽ) ويم گهر </string>
+    <string name="e122l"> اين جي او صحت مرڪز </string>
+    <string name="e122m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
+    <string name="e12296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
 
     <!-- SECTION - F -->
