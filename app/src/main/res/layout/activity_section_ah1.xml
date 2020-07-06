@@ -193,7 +193,6 @@
                                 style="@style/EditTextNum"
                                 android:layout_width="match_parent"
                                 android:hint="@string/ah3"
-                                app:mask="##"
                                 app:maxValue="100"
                                 app:minValue="0"
                                 app:type="range" />
@@ -221,9 +220,8 @@
                                 style="@style/EditTextNum"
                                 android:layout_width="match_parent"
                                 android:hint="@string/ah4"
-                                app:mask="##"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:maxValue="18"
+                                app:minValue="5"
                                 app:type="range" />
 
                         </LinearLayout>

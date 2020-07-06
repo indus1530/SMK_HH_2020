@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -212,11 +213,14 @@
                             style="@style/i_textview"
                             android:text="@string/ah11" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah11a"
                             style="@style/EditTextNum"
                             android:layout_width="match_parent"
-                            android:hint="@string/ah11a" />
+                            android:hint="@string/ah11a"
+                            app:maxValue="18"
+                            app:minValue="5"
+                            app:type="range" />
 
                     </LinearLayout>
 
