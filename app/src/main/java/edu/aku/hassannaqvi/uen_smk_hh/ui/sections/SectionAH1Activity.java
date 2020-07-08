@@ -29,12 +29,11 @@ public class SectionAH1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah1);
         bi.setCallback(this);
+        setupSkips();
 
         bi.txtLbl.setText(new StringBuilder(MainApp.selectedKishAdols.getName().toUpperCase()).append("\n")
                 .append("Serial:")
                 .append(MainApp.selectedKishAdols.getSerialno()));
-
-        setupSkips();
 
     }
 
@@ -51,6 +50,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVah3);
             }
         }));
+
     }
 
     public void BtnContinue() {
@@ -98,6 +98,7 @@ public class SectionAH1Activity extends AppCompatActivity {
         MainApp.adolscent.setUser(MainApp.fc.getUser());
 
         JSONObject json = new JSONObject();
+
         json.put("fm_uid", MainApp.selectedKishAdols.getUid());
         json.put("fm_serial", MainApp.selectedKishAdols.getSerialno());
         json.put("fm_name", MainApp.selectedKishAdols.getName());
@@ -147,8 +148,8 @@ public class SectionAH1Activity extends AppCompatActivity {
         json.put("ah796", bi.ah796.isChecked() ? "96" : "-1");
         json.put("ah796x", bi.ah796x.getText().toString());
 
-
         MainApp.adolscent.setsAH1(String.valueOf(json));
+
     }
 
     private boolean formValidation() {

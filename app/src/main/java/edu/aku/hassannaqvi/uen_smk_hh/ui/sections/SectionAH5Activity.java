@@ -29,27 +29,11 @@ public class SectionAH5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah5);
         bi.setCallback(this);
-
         setupSkips();
 
     }
 
     private void setupSkips() {
-
-        //h102
-        /*bi.h102.setOnCheckedChangeListener((group, checkedId) -> {
-
-            if (checkedId != bi.h102a.getId()) {
-                bi.fldGrpCVh103.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh104.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVh103);
-                Clear.clearAllFields(bi.fldGrpCVh104);
-                bi.fldGrpCVh103.setVisibility(View.GONE);
-                bi.fldGrpCVh104.setVisibility(View.GONE);
-            }
-        });*/
-
 
     }
 
