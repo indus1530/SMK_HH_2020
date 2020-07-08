@@ -223,33 +223,28 @@
                         style="@style/i_textview"
                         android:text="@string/ah36" />
 
-                    <RadioGroup
-                        android:id="@+id/ah36"
-                        style="@style/radiogroup">
+                    <TextView
+                        style="@style/textView3Head"
+                        android:text="@string/ah36a" />
 
-                        <RadioButton
-                            android:id="@+id/ah36a"
-                            style="@style/radiobutton"
-                            android:text="@string/ah36a" />
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/ah36a"
+                        style="@style/EditTextNum"
+                        android:enabled='@{ah36b.checked ? false : true }'
+                        android:hint="@string/ah36a"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:text='@{ah36b.checked ? "" : ah36a.getText().toString() }'
+                        app:mask="#"
+                        app:maxValue="5"
+                        app:minValue="3"
+                        app:type="range" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah36ax"
-                            style="@style/EditTextNum"
-                            android:hint="@string/ah36a"
-                            android:tag="ah36a"
-                            android:text='@{ah36a.checked? ah36ax.getText().toString() : ""}'
-                            android:maxLength="2"
-                            android:visibility='@{ah36a.checked? View.VISIBLE : View.GONE}'
-                            app:maxValue="5"
-                            app:minValue="3"
-                            app:type="range" />
-
-                        <RadioButton
-                            android:id="@+id/ah36b"
-                            style="@style/radiobutton"
-                            android:text="@string/ah36b" />
-
-                    </RadioGroup>
+                    <CheckBox
+                        android:id="@+id/ah36b"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/ah36b" />
 
                 </LinearLayout>
 

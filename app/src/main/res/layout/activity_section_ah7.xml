@@ -147,7 +147,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            style="@style/textView3Head"
+                            style="@style/i_textviewhint"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:text="@string/ah50aaa" />
@@ -156,8 +156,7 @@
                             android:id="@+id/ah50aaa"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="1"
                             android:hint="@string/ah50aaa"
                             app:mask="##"
                             app:maxValue="100"
@@ -173,7 +172,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            style="@style/textView3Head"
+                            style="@style/i_textviewhint"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:text="@string/ah50aab" />
@@ -182,8 +181,7 @@
                             android:id="@+id/ah50aab"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="1"
                             android:hint="@string/ah50aab"
                             app:mask="##"
                             app:maxValue="100"
