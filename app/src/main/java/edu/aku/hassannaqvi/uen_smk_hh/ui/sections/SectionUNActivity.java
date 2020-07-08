@@ -96,7 +96,7 @@ public class SectionUNActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesAdolsColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SUN, MainApp.kish.getsUN());
+        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SUN, MainApp.kish.getsUN());
         if (updcount == 1) {
             return true;
         } else {
