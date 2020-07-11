@@ -52,7 +52,6 @@
                 android:visibility="gone" />
 
             <Button
-                android:enabled="false"
                 android:id="@+id/btnUpload"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
