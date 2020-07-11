@@ -29,27 +29,11 @@ public class SectionAH5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah5);
         bi.setCallback(this);
-
         setupSkips();
 
     }
 
     private void setupSkips() {
-
-        //h102
-        /*bi.h102.setOnCheckedChangeListener((group, checkedId) -> {
-
-            if (checkedId != bi.h102a.getId()) {
-                bi.fldGrpCVh103.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh104.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVh103);
-                Clear.clearAllFields(bi.fldGrpCVh104);
-                bi.fldGrpCVh103.setVisibility(View.GONE);
-                bi.fldGrpCVh104.setVisibility(View.GONE);
-            }
-        });*/
-
 
     }
 
@@ -110,10 +94,8 @@ public class SectionAH5Activity extends AppCompatActivity {
         json.put("ah35i", bi.ah35i.isChecked() ? "9" : "-1");
         json.put("ah35j", bi.ah35j.isChecked() ? "10" : "-1");
 
-        json.put("ah36", bi.ah36a.isChecked() ? "1"
-                : bi.ah36b.isChecked() ? "2"
-                : "-1");
-        json.put("ah36ax", bi.ah36ax.getText().toString());
+        json.put("ah36a", bi.ah36a.getText().toString());
+        json.put("ah36b", bi.ah36b.isChecked() ? "1" : "-1");
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH2()), json);

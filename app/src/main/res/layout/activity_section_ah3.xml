@@ -704,7 +704,6 @@
 
                 </androidx.cardview.widget.CardView>-->
 
-
                 <!-- ah23  DOB   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah23"
@@ -802,7 +801,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
 
                 <!-- ah23a  Input   -->
                 <!--<androidx.cardview.widget.CardView

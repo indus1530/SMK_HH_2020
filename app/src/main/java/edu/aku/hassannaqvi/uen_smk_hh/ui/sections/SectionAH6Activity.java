@@ -33,14 +33,12 @@ public class SectionAH6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah6);
         bi.setCallback(this);
-
         setupSkips();
         setUIComponent();
 
     }
 
     private void setupSkips() {
-
 
         bi.ah41.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah41a.getId()) {
@@ -60,40 +58,9 @@ public class SectionAH6Activity extends AppCompatActivity {
             }
         }));
 
-
-//        bi.ah37ac.setMaxvalue(CONSTANTS.MAXYEAR1);
-//        bi.ah37ac.setMinvalue(CONSTANTS.MINYEAR1);
-
-
     }
 
     private void setUIComponent() {
-
-        /*bi.ah37ac.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-                if (Objects.requireNonNull(bi.ah37ac.getText()).hashCode() == s.hashCode()) {
-                    if (Integer.parseInt(bi.ah37ac.getText().toString()) < 14) {
-                        bi.fldGrpSecAH602.setVisibility(View.GONE);
-                        Clear.clearAllFields(bi.fldGrpSecAH602);
-                    } else {
-                        bi.fldGrpSecAH602.setVisibility(View.VISIBLE);
-                    }
-                }
-
-            }
-        });*/
-
 
         bi.ah37ac.addTextChangedListener(new TextWatcher() {
             @Override
@@ -211,9 +178,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah370696x", bi.ah370696x.getText().toString());
 
         json.put("ah37aa", bi.ah37aa.getText().toString());
-
         json.put("ah37ab", bi.ah37ab.getText().toString());
-
         json.put("ah37ac", bi.ah37ac.getText().toString());
 
         json.put("ah38", bi.ah38a.isChecked() ? "1"
@@ -294,8 +259,8 @@ public class SectionAH6Activity extends AppCompatActivity {
                 : bi.ah48d.isChecked() ? "4"
                 : "-1");
 
-
         MainApp.adolscent.setsAH3(String.valueOf(json));
+
     }
 
     private boolean formValidation() {

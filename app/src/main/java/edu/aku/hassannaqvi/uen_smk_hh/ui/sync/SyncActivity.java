@@ -170,7 +170,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Child",
+                    "SingleAdolscent",
                     "updateSyncedChildForms",
                     AdolscentContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -185,7 +185,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "KISH MWRA",
+                    "SingleKishMWRA",
                     "updateSyncedKishMWRAForms",
                     MWRAContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -199,7 +199,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Pregnant MWRA",
+                    "SingleMWRAPRE",
                     "updateSyncedPregMWRAForms",
                     MWRA_PREContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -214,7 +214,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Mortality",
+                    "mortality",
                     "updateSyncedMortalityForms",
                     MortalityContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -230,7 +230,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Family Members",
+                    "SingleMember",
                     "updateSyncedFamilyMemForms",
                     MWRA_PREContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -245,7 +245,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "MWRA",
+                    "MWRATable",
                     "updateSyncedMWRAForms",
                     MWRA_PREContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,

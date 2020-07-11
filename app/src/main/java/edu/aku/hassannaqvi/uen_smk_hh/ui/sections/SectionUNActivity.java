@@ -31,6 +31,7 @@ public class SectionUNActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_un);
         bi.setCallback(this);
         setlistener();
+
     }
 
     private void setlistener() {
@@ -94,7 +95,6 @@ public class SectionUNActivity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SUN, MainApp.kish.getsUN());
         if (updcount == 1) {

@@ -31,13 +31,11 @@ public class SectionAH7Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah7);
         bi.setCallback(this);
-
         setupSkips();
 
     }
 
     private void setupSkips() {
-
 
         bi.ah57b.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
@@ -52,13 +50,6 @@ public class SectionAH7Activity extends AppCompatActivity {
             } else
                 bi.fldGrpAH52.setVisibility(View.VISIBLE);
         });
-
-
-        /*bi.ah54a.setMaxvalue(CONSTANTS.MAXYEAR1);
-        bi.ah54a.setMinvalue(CONSTANTS.MINYEAR1);*/
-
-        /*bi.ah57a.setMaxvalue(CONSTANTS.MAXYEAR1);
-        bi.ah57a.setMinvalue(CONSTANTS.MINYEAR1);*/
 
     }
 
@@ -108,7 +99,6 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("ah50aaa", bi.ah50aaa.getText().toString());
-
         json.put("ah50aab", bi.ah50aab.getText().toString());
 
         json.put("ah51", bi.ah51a.isChecked() ? "1"
@@ -135,12 +125,8 @@ public class SectionAH7Activity extends AppCompatActivity {
 
         json.put("ah56a", bi.ah56a.getText().toString());
 
-//        json.put("ah57", "-1");
-
         json.put("ah57a", bi.ah57a.getText().toString());
         json.put("ah57b", bi.ah57b.isChecked() ? "1" : "-1");
-
-//        json.put("ah57b", "-1");
 
         json.put("ah58", bi.ah58.getText().toString());
 

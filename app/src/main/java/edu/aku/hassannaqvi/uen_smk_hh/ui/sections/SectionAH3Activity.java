@@ -30,7 +30,6 @@ public class SectionAH3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ah3);
         bi.setCallback(this);
-
         setupSkips();
 
     }
@@ -79,10 +78,8 @@ public class SectionAH3Activity extends AppCompatActivity {
             }
         }));
 
-
         bi.ah23c.setMaxvalue(CONSTANTS.MAXYEAR1);
         bi.ah23c.setMinvalue(CONSTANTS.MINYEAR1);
-
 
     }
 
@@ -197,8 +194,6 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : "-1");
         json.put("ah2296x", bi.ah2296x.getText().toString());
 
-//        json.put("ah23", bi.ah23.getText().toString());
-
         json.put("ah23a", bi.ah23a.getText().toString());
         json.put("ah23b", bi.ah23b.getText().toString());
         json.put("ah23c", bi.ah23c.getText().toString());
@@ -285,8 +280,8 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah31e.isChecked() ? "5"
                 : "-1");
 
-
         MainApp.adolscent.setsAH2(String.valueOf(json));
+
     }
 
     private boolean formValidation() {
