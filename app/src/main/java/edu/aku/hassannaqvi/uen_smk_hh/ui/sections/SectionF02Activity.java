@@ -242,14 +242,25 @@ public class SectionF02Activity extends AppCompatActivity {
                                                                                                                 bi.f13196.isChecked() ? "96" : "0");
         f1.put("f13196x", bi.f13196x.getText().toString());
 
+        f1.put("f12801", bi.f12801a.isChecked() ? "1"
+                : bi.f12801b.isChecked() ? "2"
+                : "-1");
 
-        f1.put("f132", bi.f132a.isChecked() ? "1" :
-                bi.f132b.isChecked() ? "2" :
-                        bi.f132c.isChecked() ? "3" : "0");
+        f1.put("f13200", bi.f13200a.isChecked() ? "1"
+                : bi.f13200b.isChecked() ? "2"
+                : "-1");
 
-        f1.put("f133", bi.f133a.isChecked() ? "1" :
-                bi.f133b.isChecked() ? "2" :
-                        bi.f133c.isChecked() ? "3" : "0");
+        f1.put("f13201", bi.f13201a.isChecked() ? "1"
+                : bi.f13201b.isChecked() ? "2"
+                : "-1");
+
+        f1.put("f13300", bi.f13300a.isChecked() ? "1"
+                : bi.f13300b.isChecked() ? "2"
+                : "-1");
+
+        f1.put("f13301", bi.f13301a.isChecked() ? "1"
+                : bi.f13301b.isChecked() ? "2"
+                : "-1");
 
         f1.put("f134a", bi.f134a.isChecked() ? "1" : "0");
         f1.put("f134b", bi.f134b.isChecked() ? "2" : "0");

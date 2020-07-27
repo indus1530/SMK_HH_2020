@@ -89,6 +89,78 @@
 
                             </androidx.cardview.widget.CardView>-->
 
+                <!--j10100  Radio-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVj10100"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/j10100" />
+
+                        <RadioGroup
+                            android:id="@+id/j10100"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/j10100a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/j10100a" />
+
+                            <RadioButton
+                                android:id="@+id/j10100b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/j10100b" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--j10101  Radio-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVj10101"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/j10101" />
+
+                        <RadioGroup
+                            android:id="@+id/j10101"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/j10101a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/j10101a" />
+
+                            <RadioButton
+                                android:id="@+id/j10101b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/j10101b" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
                 <!-- j101  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVj101"

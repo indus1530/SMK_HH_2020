@@ -360,6 +360,7 @@
 
 
     <!-- SECTION - F -->
+
     <string name="f101"> F101:\t ڇا توھان (نالو) حمل دوران طبي معائنو (ANC) ڪرايو ؟ </string>
 
     <string name="f101a"> F101a:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڇو نه ڪرايو ؟ </string>
@@ -383,23 +384,23 @@
     <string name="f101n"> نه </string>
     <string name="f101y"> ھا </string>
 
-    <string name="f102"> F102:\t توھان (نالو) حمل دوران طبي معائنو (ANC)  ڪٿان ڪرايو ؟ </string>
-    <string name="f102a">گهر </string>
-    <string name="f102h1"> عوامي/سرڪاري اسپتالون </string>
-    <string name="f102b">تربيتي/سول اسپتال </string>
-    <string name="f102c">ضلعي/تعلقي اسپتال </string>
-    <string name="f102d">ڳوٺاڻو صحت مرڪز </string>
-    <string name="f102e">بينادي صحت مرڪز </string>
-    <string name="f102f">ماءُ ۽ ٻار جو صحت مرڪز </string>
-    <string name="f102g">ويم گهر  </string>
-    <string name="f102h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="f102h2"> نجي (پرائيويٽ) اسپتالون </string>
-    <string name="f102i"> نجي (پرائيويٽ) اسپتال </string>
-    <string name="f102j"> نجي (پرائيويٽ) ڪلينڪ </string>
-    <string name="f102k"> نجي (پرائيويٽ) ويم گهر </string>
-    <string name="f102l"> اين جي او صحت مرڪز </string>
-    <string name="f102m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
-    <string name="f10296">ٻيو ڪجھ (وضاحت ڪريو) </string>
+    <string name="f102"> F102:\t Place of death</string>
+    <string name="f102a"> Home </string>
+    <string name="f102h1"> Public medical sector </string>
+    <string name="f102b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="f102c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="f102d"> RURAL HC </string>
+    <string name="f102e"> BASIC HEALTH UNIT </string>
+    <string name="f102f"> Mother And child health centre </string>
+    <string name="f102g"> BIRTH STATION </string>
+    <string name="f102h"> HEALTH HOUSE </string>
+    <string name="f102h2"> Private medical sector </string>
+    <string name="f102i"> Private hospital </string>
+    <string name="f102j"> Private clinic </string>
+    <string name="f102k"> Private maternity home </string>
+    <string name="f102l"> NGO HEALTH FACILITY </string>
+    <string name="f102m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="f10296"> Other (specify) </string>
 
     <string name="f103"> F103:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڪنھن کان ڪرايو ؟ </string>
     <string name="f103a"> ڊاڪٽر </string>
@@ -451,7 +452,8 @@
     <string name="f111hint">  ڪارڊ ڏسي معلومات حاصل ڪريو  </string>
     <string name="f111hint1"> جيڪڏھن ھا ته ڇا مان اھو ڏسي سگھان ٿي ؟  </string>
     <string name="f111a"> (ھا (پرچي يا ڪارڊ ڏٺو ويو </string>
-    <string name="f111b"> (نه (پرچي يا ڪارڊ نه ڏٺو ويو </string>
+    <string name="f111b"> No (card or other document) </string>
+    <string name="f111c"> Not seen </string>
 
     <string name="f112"> F112:\t ڇا توھان (نالو) حمل دوران جھٽڪن کان بچاءُ وارا ٽڪا لڳرايا جيڪي ٻانھن جي مٿين حصي ۾ لڳندا آھن </string>
     <string name="f112a"> ھا </string>
@@ -518,6 +520,7 @@
     <string name="f1212e"> ڪرونا جو خوف / ڊپ </string>
     <string name="f1212f"> سماجي مفاصلو </string>
     <string name="f1212g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
+    <string name="f1212h"> Not Applicable </string>
 
     <string name="f122"> F122:\t توھان جي گذريل حمل جي دوران ليڊي ھيلٿ ورڪر (ايل ايڇ ڊبليو) ڪيترا دفعا توھان جي گھر جو دورو ڪيو؟</string>
 
@@ -529,7 +532,8 @@
     <string name="f123e"> ويم جي تياري لاءِ صلاح / مشورو </string>
     <string name="f123f"> آئرن فولڪ ايسڊ بابت مشورو </string>
     <string name="f123g"> حمل جي بابت خطرناڪ علامتن جي بابت معلومات ڏيڻ </string>
-    <string name="f123h"> ڪرونا جي بيماري جي احتياطي اپائن بابت معلومات </string>
+    <string name="f123h"> Contraceptive Supplies </string>
+    <string name="f123i"> Informed about precautions of Corona </string>
     <string name="f12396"> ٻيو ڪجھ وضاحت ڪريو </string>
 
     <string name="f124"> F124:\t نالو) حمل دوران، ڇا توھان کي خطرناڪ علامتن / پيچيدگين جي معلومات ڏني وئي؟)</string>
@@ -567,6 +571,11 @@
     <string name="f128e"> ٻار جي چر پر گھٽ ٿي وڃڻ</string>
     <string name="f128f"> (پيٽ ۾ سور (37 ھفتن کان گھٽ</string>
     <string name="f128g"> نه، مون کي ڪا نه پيچيدگي نه ٿي</string>
+
+    <string name="f128aa"> F129:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
+    <string name="f128aaa"> Agree </string>
+    <string name="f128aab"> Disagree </string>
+
     <string name="f129"> F129:\t ڇا توھان مٿي ٻڌايل خطرناڪ علامتن / پيچيدگين جو علاج ڪرايو؟</string>
     <string name="f129a"> ھا</string>
     <string name="f129b"> نه</string>
@@ -589,33 +598,49 @@
     <string name="f130o"> ڊاڪٽر معياري طريقيڪار تي عمل نه ڪري رھيو ھو ) ماسڪ / داستانه پاتل نه ھئا ( </string>
 
 
-    <string name="f131"> F131:\t توھان (نالو) حمل دوران مٿي ٻڌايل خطرناڪ علامتن / پيچيدگين جو علاج ڪٿان ڪرايو ؟ </string>
-    <string name="f131a">گهر </string>
-    <string name="f131h1"> عوامي/سرڪاري اسپتالون </string>
-    <string name="f131b">تربيتي/سول اسپتال </string>
-    <string name="f131c">ضلعي/تعلقي اسپتال </string>
-    <string name="f131d">ڳوٺاڻو صحت مرڪز </string>
-    <string name="f131e">بينادي صحت مرڪز </string>
-    <string name="f131f">ماءُ ۽ ٻار جو صحت مرڪز </string>
-    <string name="f131g">ويم گهر  </string>
-    <string name="f131h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="f131h2"> نجي (پرائيويٽ) اسپتالون </string>
-    <string name="f131i"> نجي (پرائيويٽ) اسپتال </string>
-    <string name="f131j"> نجي (پرائيويٽ) ڪلينڪ </string>
-    <string name="f131k"> نجي (پرائيويٽ) ويم گهر </string>
-    <string name="f131l"> اين جي او صحت مرڪز </string>
-    <string name="f131m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
-    <string name="f13196">ٻيو ڪجھ (وضاحت ڪريو) </string>
+    <string name="f131"> F131:\t Place of death</string>
+    <string name="f131a"> Home </string>
+    <string name="f131h1"> Public medical sector </string>
+    <string name="f131b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="f131c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="f131d"> RURAL HC </string>
+    <string name="f131e"> BASIC HEALTH UNIT </string>
+    <string name="f131f"> Mother And child health centre </string>
+    <string name="f131g"> BIRTH STATION </string>
+    <string name="f131h"> HEALTH HOUSE </string>
+    <string name="f131h2"> Private medical sector </string>
+    <string name="f131i"> Private hospital </string>
+    <string name="f131j"> Private clinic </string>
+    <string name="f131k"> Private maternity home </string>
+    <string name="f131l"> NGO HEALTH FACILITY </string>
+    <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="f13196"> Other (specify) </string>
 
-    <string name="f132"> F132:\t نالو) حمل دوران توھان پنھنجي کاڌ خوراڪ جي درجه بندي ڪئين ڪندا؟)</string>
-    <string name="f132a"> معمول کان وڌيڪ </string>
-    <string name="f132b"> معمول کان گھٽ </string>
-    <string name="f132c"> ساڳي رھي </string>
+    <string name="f132"> F132:\t Do you know that diet/eating habit change during pregnancy? </string>
+    <string name="f132y"> Yes </string>
+    <string name="f132n"> No </string>
 
-    <string name="f133"> F133:\t توھان جي (نالو) حمل دوران گھر ۾ ڪم ڪار جي درجه بند ڪئين ڪندا؟</string>
-    <string name="f133a"> معمول کان وڌيڪ </string>
-    <string name="f133b"> معمول کان گھٽ </string>
-    <string name="f133c"> ساڳي رھي </string>
+    <string name="f132a"> F132A:\t Do you think diet/eating habit should be changed during the pregnancy? </string>
+    <string name="f132aa"> Agree </string>
+    <string name="f132ab"> Disagree </string>
+
+    <string name="f132b"> F133:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
+    <string name="f132ba"> Yes, more than usual </string>
+    <string name="f132bb"> Yes, less than usual </string>
+    <string name="f132bc"> Remains Same </string>
+
+    <string name="f133"> F133:\t Do you know that nature of your household work (physical exertion) change during the pregnancy with {NAME} ? </string>
+    <string name="f133y"> Yes </string>
+    <string name="f133n"> No </string>
+
+    <string name="f133a"> F133:\t Do you think the nature of your household work (physical exertion) should be changed during the pregnancy with {NAME}? </string>
+    <string name="f133aa"> Agree </string>
+    <string name="f133ab"> Disagree </string>
+
+    <string name="f133b"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
+    <string name="f133ba"> Yes, more than usual </string>
+    <string name="f133bb"> Yes, less than usual </string>
+    <string name="f133bc"> Remains Same </string>
 
     <string name="f134"> F134:\t توھان (نالو) جي پيدائش لاءِ ڪھڙا اُپاءَ ورتا / تياريون ڪيون؟  جواب پڙھي ٻڌايو (ھڪ کان وڌيڪ جواب ٿي سگھن ٿا)</string>
     <string name="f134a"> ڊليوري ڪرائيندڙ جي چونڊ </string>
@@ -632,23 +657,23 @@
     <string name="g101a"> ھا</string>
     <string name="g101b"> نه </string>
 
-    <string name="g102"> G102:\t نالو) جي ڊليوري ڪٿي ٿي؟)</string>
-    <string name="g102a">گهر </string>
-    <string name="g102h1"> عوامي/سرڪاري اسپتالون </string>
-    <string name="g102b">تربيتي/سول اسپتال </string>
-    <string name="g102c">ضلعي/تعلقي اسپتال </string>
-    <string name="g102d">ڳوٺاڻو صحت مرڪز </string>
-    <string name="g102e">بينادي صحت مرڪز </string>
-    <string name="g102f">ماءُ ۽ ٻار جو صحت مرڪز </string>
-    <string name="g102g">ويم گهر  </string>
-    <string name="g102h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="g102h2"> نجي (پرائيويٽ) اسپتالون </string>
-    <string name="g102i"> نجي (پرائيويٽ) اسپتال </string>
-    <string name="g102j"> نجي (پرائيويٽ) ڪلينڪ </string>
-    <string name="g102k"> نجي (پرائيويٽ) ويم گهر </string>
-    <string name="g102l"> اين جي او صحت مرڪز </string>
-    <string name="g102m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
-    <string name="g10296">ٻيو ڪجھ (وضاحت ڪريو) </string>
+    <string name="g102"> G102:\t Where did {NAME}’s delivery take place?</string>
+    <string name="g102a"> Home </string>
+    <string name="g102h1"> Public medical sector </string>
+    <string name="g102b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="g102c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="g102d"> RURAL HC </string>
+    <string name="g102e"> BASIC HEALTH UNIT </string>
+    <string name="g102f"> Mother And child health centre </string>
+    <string name="g102g"> BIRTH STATION </string>
+    <string name="g102h"> HEALTH HOUSE </string>
+    <string name="g102h2"> Private medical sector </string>
+    <string name="g102i"> Private hospital </string>
+    <string name="g102j"> Private clinic </string>
+    <string name="g102k"> Private maternity home </string>
+    <string name="g102l"> NGO HEALTH FACILITY </string>
+    <string name="g102m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="g10296"> Other (specify) </string>
 
     <string name="g103"> G103:\t توھان (نالو) ڊليوري صحت مرڪز تي ڇو نه ڪرائي ان جو ڇا سبب آھي؟</string>
     <string name="g103hint"> جيڪڏھن ويم گھر ۾ ٿيو هو- ڪنهن ٻي سبب جي نشاندهي ڪرڻ جي لاءِ پڇا ڪريو- ٻڌايل سڀني جوابن کي رڪارڊ ڪريو </string>
@@ -866,8 +891,8 @@
     <string name="h109e"> ڪلوروھيزڊائن </string>
     <string name="h109f"> مٽي / کاڪ </string>
     <string name="h109g"> ماءُ جو کير </string>
-    <string name="h109h"> ڪا به شي نه لڳائي وئي </string>
-    <string name="h109i"> مون درخواست ڏني آهي پر مون کي ياد ناهي </string>
+    <string name="h109h"> Khol/Surma </string>
+    <string name="h109i"> Nothing was applied </string>
 
     <string name="h110"> H110:\t ڇا (نالو) کي پيدائش کان پوءِ ماءُ جي ڇاتي سان لڳايو ويو ؟ </string>
     <string name="h110a"> ھا </string>
@@ -876,10 +901,14 @@
 
     <string name="h111"> H111:\t (نالو) پيدائش کان پوءِ ڪيتري دير بعد ماءُ جي ڇاتي سان لڳايو ويو ؟ </string>
 
-    <string name="h112"> H112:\t نالو) پيدائش کان پوءِ ڪيتري دير بعد ماءُ جي ٿڃ پيتي ؟)</string>
-    <string name="h112a"> 1 ڪلاڪ کان به گھٽ </string>
-    <string name="h112b"> 1 ڪلاڪ کان وڌيڪ </string>
-    <string name="h112c"> 1 ڏينهن کان وڌيڪ </string>
+    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112y"> Yes </string>
+    <string name="h112n"> No </string>
+
+    <string name="h112"> H112:\t How long after birth {NAME} was breastfed ? </string>
+    <string name="h1121"> Less than 1 hour </string>
+    <string name="h1122"> More than 1 hour </string>
+    <string name="h1123"> More than 1 day </string>
 
     <string name="h113"> H113:\t ڇا توھان گھاٽو کير (ڪولسٽرم) خارج ڪيو جيڪو ڊليوري کان پوءِ جلدي ماءُ جي ڇاتي مان ايندو آھي ؟ </string>
     <string name="h113a"> ھا </string>
@@ -895,16 +924,20 @@
     <string name="h114g"> اھو ڳورو آھي (صحت لاءِ صحيح نه آھي) </string>
     <string name="h114h"> روايتي يا مذھبي سبب </string>
 
-    <string name="h115"> H115:\t گذريل 24 ڪلاڪن جي دوران (نالو) کي کائڻ / پيئڻ لاءِ ڇا ڏنو ويو ؟  (ھڪ کان وڌيڪ جواب ٿي سگھن ٿا) </string>
-    <string name="h115a"> (کير (ماءُ جي کير کان علاوه </string>
-    <string name="h115b"> سادو پاڻي </string>
-    <string name="h115c"> ماکي يا مٺو پاڻي </string>
-    <string name="h115d"> گھي، مکڻ </string>
-    <string name="h115e"> فروٽ جوس </string>
-    <string name="h115f"> فارمولا وارو کير </string>
-    <string name="h115g"> سائي چانھ / ڪاڙھو </string>
-    <string name="h115h"> صرف ماءُ جو کير </string>
-    <string name="h115i"> نيم ٺوس غذا </string>
+    <string name="h115"> H115:\t In the first 24 hours after delivery was {name] given anything to drink other than breast milk? </string>
+    <string name="h115y"> Yes </string>
+    <string name="h115n"> No </string>
+
+    <string name="h115a"> H115A:\t In the last 24 hours what was given to {NAME} to eat or drink ? </string>
+    <string name="h115aa"> Milk (other than breast milk) </string>
+    <string name="h115ab"> Plain water </string>
+    <string name="h115ac"> Honey or sugar water </string>
+    <string name="h115ad"> Ghee, butter </string>
+    <string name="h115ae"> Fruit juice </string>
+    <string name="h115af"> Infant formula </string>
+    <string name="h115ag"> Green tea </string>
+    <string name="h115ah"> Breast Milk </string>
+    <string name="h115ai"> Semi solid diet </string>
 
     <string name="h116"> H116:\t ڇا (نالو) صرف ماءُ جو کير پياريو ويو ؟ </string>
     <string name="h116hint"> صرف ماءُ جي کير مان مطلب آهي ته ٻار کي صرف ۽ صرف ماءُ جو کير پياريو ويو آهي ايستائين جو پاڻي جو ھڪ ڦڙو به نه، يا پاڻياٺ واري ڪا شي يا پيٽ جي سور جي دوا وغيرھ وغيرھ. </string>
@@ -960,23 +993,23 @@
     <string name="h126d"> پيدائش کان پوءِ 7 ڏينھن کان وڌيڪ </string>
     <string name="h126e"> خبر نه آھي </string>
 
-    <string name="h127"> H127:\t (نالو) ڊليوري کان پوءِ توھان پھريون طبي معائنو ڪٿان ڪرايو ؟ </string>
-    <string name="h127a">گهر </string>
-    <string name="h127h1"> عوامي/سرڪاري اسپتالون </string>
-    <string name="h127b">تربيتي/سول اسپتال </string>
-    <string name="h127c">ضلعي/تعلقي اسپتال </string>
-    <string name="h127d">ڳوٺاڻو صحت مرڪز </string>
-    <string name="h127e">بينادي صحت مرڪز </string>
-    <string name="h127f">ماءُ ۽ ٻار جو صحت مرڪز </string>
-    <string name="h127g">ويم گهر  </string>
-    <string name="h127h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="h127h2"> نجي (پرائيويٽ) اسپتالون </string>
-    <string name="h127i"> نجي (پرائيويٽ) اسپتال </string>
-    <string name="h127j"> نجي (پرائيويٽ) ڪلينڪ </string>
-    <string name="h127k"> نجي (پرائيويٽ) ويم گهر </string>
-    <string name="h127l"> اين جي او صحت مرڪز </string>
-    <string name="h127m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
-    <string name="h12796">ٻيو ڪجھ (وضاحت ڪريو) </string>
+    <string name="h127"> H127:\t Where was {NAME}’s, first health check-up conducted?</string>
+    <string name="h127a"> Home </string>
+    <string name="h127h1"> Public medical sector </string>
+    <string name="h127b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="h127c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="h127d"> RURAL HC </string>
+    <string name="h127e"> BASIC HEALTH UNIT </string>
+    <string name="h127f"> Mother And child health centre </string>
+    <string name="h127g"> BIRTH STATION </string>
+    <string name="h127h"> HEALTH HOUSE </string>
+    <string name="h127h2"> Private medical sector </string>
+    <string name="h127i"> Private hospital </string>
+    <string name="h127j"> Private clinic </string>
+    <string name="h127k"> Private maternity home </string>
+    <string name="h127l"> NGO HEALTH FACILITY </string>
+    <string name="h127m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="h12796"> Other (specify) </string>
 
     <string name="h128"> H128:\t (نالو) ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو ؟ </string>
     <string name="h128a"> ڊاڪٽر </string>
@@ -1044,7 +1077,7 @@
     <string name="h1321e"> ڪرونا جو خوف / ڊپ </string>
     <string name="h1321f"> سماجي مفاصلو </string>
     <string name="h1321g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
-
+    <string name="h1321h"> Not Applicable </string>
 
     <string name="h133"> H133:\t ليڊي ھيلٿ ورڪر جي دوري ڪرڻ جو مقصد ڇا ھو ؟ </string>
     <string name="h133a"> وزن/ قد جي ناپ </string>
@@ -1081,6 +1114,10 @@
     <string name="h136d"> (سي ايم ڊبليو (ڪميونٽي مڊوائف </string>
     <string name="h136e"> (ايل ايڇ ڊبليو (ليڊي ھيلٿ ورڪر </string>
     <string name="h136f"> دائي / ٽي بي اي </string>
+
+    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
+    <string name="h136aaa"> Agree </string>
+    <string name="h136aab"> Disagree </string>
 
     <string name="h137"> H137:\t (ڇا نئين ڄاول ٻار کي (بي سي جي)  جي ويڪسين لڳائي وئي ؟ (جيڪا اڪثر ڪري ٻانھن تي نشان ڇڏيندي آھي </string>
     <string name="h137a"> ھا </string>
@@ -1126,23 +1163,23 @@
 
     <string name="h203"> H203:\t ڊليوري کان پوءِ ڪيتري دير بعد توھان جو پھريون دفعو طبي معائنو ڪيو ويو؟</string>
 
-    <string name="h204"> H204:\t ڊليوري کان پوءِ توھان پھريون طبي معائنو ڪٿان ڪرايو؟</string>
-    <string name="h204a">گهر </string>
-    <string name="h204h1"> عوامي/سرڪاري اسپتالون </string>
-    <string name="h204b">تربيتي/سول اسپتال </string>
-    <string name="h204c">ضلعي/تعلقي اسپتال </string>
-    <string name="h204d">ڳوٺاڻو صحت مرڪز </string>
-    <string name="h204e">بينادي صحت مرڪز </string>
-    <string name="h204f">ماءُ ۽ ٻار جو صحت مرڪز </string>
-    <string name="h204g">ويم گهر  </string>
-    <string name="h204h">ھيلٿ ھائوس (ايل ايڇ ڊبليو) </string>
-    <string name="h204h2"> نجي (پرائيويٽ) اسپتالون </string>
-    <string name="h204i"> نجي (پرائيويٽ) اسپتال </string>
-    <string name="h204j"> نجي (پرائيويٽ) ڪلينڪ </string>
-    <string name="h204k"> نجي (پرائيويٽ) ويم گهر </string>
-    <string name="h204l"> اين جي او صحت مرڪز </string>
-    <string name="h204m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
-    <string name="h20496">ٻيو ڪجھ (وضاحت ڪريو) </string>
+    <string name="h204"> H204:\t Where did you have the first health check-up after {name}’s birth?</string>
+    <string name="h204a"> Home </string>
+    <string name="h204h1"> Public medical sector </string>
+    <string name="h204b"> TERTIARY/CIVIL HOSPITAL </string>
+    <string name="h204c"> DISTRICTHQ/TEHSIL HQ </string>
+    <string name="h204d"> RURAL HC </string>
+    <string name="h204e"> BASIC HEALTH UNIT </string>
+    <string name="h204f"> Mother And child health centre </string>
+    <string name="h204g"> BIRTH STATION </string>
+    <string name="h204h"> HEALTH HOUSE </string>
+    <string name="h204h2"> Private medical sector </string>
+    <string name="h204i"> Private hospital </string>
+    <string name="h204j"> Private clinic </string>
+    <string name="h204k"> Private maternity home </string>
+    <string name="h204l"> NGO HEALTH FACILITY </string>
+    <string name="h204m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="h20496"> Other (specify) </string>
 
     <string name="h205"> H205:\t ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو؟</string>
     <string name="h205a"> ڊاڪٽر</string>
@@ -1150,6 +1187,16 @@
     <string name="h205c"> نرس</string>
     <string name="h205d"> (سي ايم ڊبليو (ڪميونٽي مڊوائف</string>
     <string name="h205e"> دائي / ٽي بي اي </string>
+
+    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
+    <string name="h205aaa"> Counselling on nutrition </string>
+    <string name="h205aab"> Counselling on IYCF And breast feeding </string>
+    <string name="h205aac"> Counselling on family planning </string>
+    <string name="h205aad"> Assessment for complications </string>
+    <string name="h205aae"> Referral to Health Facility </string>
+    <string name="h205aaf"> Treatment for mother </string>
+    <string name="h205aag"> Nutrition supplies </string>
+    <string name="h205aah"> Contraceptive supplies </string>
 
     <string name="h206"> H206:\t ڇا توھان کي ڊليوري کان پوءِ ٿيندڙ خطرناڪ علامتن/پيچيدگين جي معلومات آھي؟</string>
     <string name="h206a"> ھا </string>
@@ -1174,6 +1221,10 @@
     <string name="h208e"> ( ايڇ ڊبليو (ليڊي ھيلٿ ورڪر</string>
     <string name="h208f"> دائي / ٽي بي اي </string>
 
+    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
+    <string name="h208aaa"> Agree </string>
+    <string name="h208aab"> Disagree </string>
+
     <string name="h209"> H209:\t ڇا ليڊي ھيلٿ ورڪر توھان جي ڊليوري کان پوءِ توھان جي گھر جو دورو ڪيو ؟ </string>
     <string name="h209a"> ھا </string>
     <string name="h209b"> نه </string>
@@ -1186,7 +1237,7 @@
     <string name="h2091e"> ڪرونا جو خوف / ڊپ </string>
     <string name="h2091f"> سماجي مفاصلو </string>
     <string name="h2091g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
-
+    <string name="h2091h"> Not Applicable </string>
 
     <string name="h210"> H210:\t ليڊي ھيلٿ ورڪر توھان جي گھر جودورو ڪڏھن ڪيو؟</string>
     <string name="h210a"> 24 ڪلاڪن جي اندر </string>
@@ -1603,6 +1654,7 @@
 
 
     <!-- SECTION - J -->
+
     <string name="j101"> J101:\t ڇا توھان وٽ ٽڪن وارو ڪارڊ موجود آھي؟ جيڪو سرڪاري صحت يا پرائيويٽ صحت مرڪز وارا ڏيندا آھن جنھن تي (نالو) ٽڪن جي معلومات لکيل ھوندي آھي. </string>
     <string name="j101hint"> جيڪڏهن ها ته آءٌ اهو ڏسي سگھان ٿي/ٿو؟ </string>
     <string name="j101hint1"> جڏھن توھان کي انٽرويو شروع ڪرڻ جي اجازت ملي ته جواب ڏيندڙ کي ڪارڊ کڻي اچڻ گھرجي </string>
@@ -2133,6 +2185,10 @@
     <string name="k101aam"> موبائل / سمارٽ فون </string>
     <string name="k101b"> نه </string>
 
+    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
+    <string name="k101aba"> Agree </string>
+    <string name="k101abb"> Disagree </string>
+
     <string name="k102"> K102:\t ڇا توھان ڪڏھن به حمل کي روڪڻ لاءِ ڪو طريقو استعمال ڪيو ؟ </string>
     <string name="k102a"> ھا </string>
     <string name="k102b"> نه </string>
@@ -2195,6 +2251,7 @@
     <string name="k1072e"> ڪرونا جو خوف / ڊپ </string>
     <string name="k1072f"> سماجي مفاصلو </string>
     <string name="k1072g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
+    <string name="k1072h">Not Applicable</string>
 
     <string name="k1081"> K108:\t ڇا ليڊي هيلٿ ورڪر صحت جي حوالي سان توھان ۽ توھان جي مڙس ڪا ميٽنگ ڪئي ؟ </string>
     <string name="k1081a"> ھا </string>
@@ -2595,15 +2652,16 @@
     <string name="m115j"> جانورن جا ڇيڻا </string>
     <string name="m115k"> گھر ۾ رڌ پچاءُ نه ڪندا آھيون </string>
 
-    <string name="m116"> M116:\t توھان گھر ۾ اڪثر ڪھڙي ٻولي ڳالھائيندا آھيو ؟ </string>
-    <string name="m116a"> اردو </string>
-    <string name="m116b"> پنجابي </string>
-    <string name="m116c"> سنڌي </string>
-    <string name="m116d"> بلوچي </string>
-    <string name="m116e"> سرائيڪي </string>
-    <string name="m116f"> برائھوي </string>
-    <string name="m116g"> لاسي </string>
-    <string name="m116h"> پشتو </string>
+    <string name="m116">M116:\t What language do you usually speak in your household ? </string>
+    <string name="m116a"> Urdu </string>
+    <string name="m116b"> Punjabi </string>
+    <string name="m116c"> Sindhi </string>
+    <string name="m116d"> Balochi </string>
+    <string name="m116e"> Siraiki </string>
+    <string name="m116f"> Barauhi </string>
+    <string name="m116g"> Laasi </string>
+    <string name="m116h"> Pashto </string>
+
 
     <string name="n101"> N101:\t توهان جي گھر ۾ پيئڻ جو پاڻي جو مکيه ذريعو ڪھڙو آهي ؟ </string>
     <string name="n101a"> گھر جي اندر پاڻي جي لائن اچي ٿي </string>
@@ -2786,7 +2844,13 @@
     <string name="ah2a">Yes</string>
     <string name="ah2b">No</string>
     <string name="ah3">How Many More Years Of Education Do You Expect To Complete?</string>
-    <string name="ah3a">Year</string>
+    <string name="ah3a">Primary(1-5)</string>
+    <string name="ah3b">Middle (6-8)</string>
+    <string name="ah3c">Secondary(9-10)</string>
+    <string name="ah3d">Intermediate</string>
+    <string name="ah3e">Under Graduate</string>
+    <string name="ah3f">Technical Training</string>
+    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
     <string name="ah4">How Old Were You When You Left The School/College</string>
     <string name="ah4a">Age</string>
     <string name="ah5">Is The School, College That You Attend(Ed) A Government Or Private Institute?</string>
@@ -2905,9 +2969,6 @@
     <string name="ah23b">Month</string>
     <string name="ah23c">Year</string>
     <string name="ah24">Have You Ever Experienced In Last 2 Months?</string>
-    <string name="ah2401">Respiratory Infections</string>
-    <string name="ah2401a">Yes</string>
-    <string name="ah2401b">No</string>
     <string name="ah2402">Diarrheal Diseases</string>
     <string name="ah2402a">Yes</string>
     <string name="ah2402b">No</string>
@@ -2938,6 +2999,9 @@
     <string name="ah24011">None Of The Above</string>
     <string name="ah24011a">Yes</string>
     <string name="ah24011b">No</string>
+    <string name="ah24a">Do you think it is important to seek care for the illness you experienced mentioned above?</string>
+    <string name="ah24aa">Agree</string>
+    <string name="ah24ab">Disagree</string>
     <string name="ah25">Did You Seek Care For The Above Mentioned Illness?</string>
     <string name="ah25a">Yes</string>
     <string name="ah25b">No</string>
@@ -2978,34 +3042,24 @@
     <string name="ah31e">At A Store/Shop</string>
     <string name="ahgntitle">Gender Norms</string>
     <string name="ah3201">Girls And Boys Should Be Treated Equally By Their Parents.</string>
-    <string name="ah3201a">Strongly Agree</string>
-    <string name="ah3201b">Agree</string>
-    <string name="ah3201e">Disagree</string>
-    <string name="ah3201d">Strongly Disagree</string>
+    <string name="ah3201a">Agree</string>
+    <string name="ah3201b">Disagree</string>
     <string name="ah3201c">Don’t Know</string>
     <string name="ah3202">It Is Important That Boys Have More Education Than Girls.</string>
-    <string name="ah3202a">Strongly Agree</string>
-    <string name="ah3202b">Agree</string>
-    <string name="ah3202c">Disagree</string>
-    <string name="ah3202d">Strongly Disagree</string>
-    <string name="ah3202e">Don’t Know</string>
+    <string name="ah3202a">Agree</string>
+    <string name="ah3202b">Disagree</string>
+    <string name="ah3202c">Don’t Know</string>
     <string name="ah3203">Girls Should Be Sent To School Only If They Are Not Needed To Help At Home.</string>
-    <string name="ah3203a">Strongly Agree</string>
-    <string name="ah3203b">Agree</string>
-    <string name="ah3203c">Disagree</string>
-    <string name="ah3203d">Strongly Disagree</string>
-    <string name="ah3203e">Don’t Know</string>
+    <string name="ah3203a">Agree</string>
+    <string name="ah3203b">Disagree</string>
+    <string name="ah3203c">Don’t Know</string>
     <string name="ah3204">Boys Should Not Have To Help With Household Tasks.</string>
-    <string name="ah3204a">Strongly Agree</string>
-    <string name="ah3204b">Agree</string>
-    <string name="ah3204c">Disagree</string>
-    <string name="ah3204d">Strongly Disagree</string>
-    <string name="ah3204e">Don’t Know</string>
+    <string name="ah3204a">Agree</string>
+    <string name="ah3204b">Disagree</string>
+    <string name="ah3204c">Don’t Know</string>
     <string name="ah3205">Girls And Boys Should Be Treated Equally By Their Teachers.</string>
-    <string name="ah3205a">Strongly Agree</string>
-    <string name="ah3205b">Agree</string>
-    <string name="ah3205e">Disagree</string>
-    <string name="ah3205d">Strongly Disagree</string>
+    <string name="ah3205a">Agree</string>
+    <string name="ah3205b">Disagree</string>
     <string name="ah3205c">Don’t Know</string>
     <string name="ahnktitle">Nutrition Knowledge:</string>
     <string name="ah33">What Foods Are A Good Source Of Iron? (Don’T Probe, Select All That Apply)</string>
@@ -3087,6 +3141,9 @@
     <string name="ah38">Do You Know About Reproductive Health?</string>
     <string name="ah38a">Yes</string>
     <string name="ah38b">No</string>
+    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
+    <string name="ah38aaa">Agree</string>
+    <string name="ah38aab">Disagree</string>
     <string name="ah39">At The Onset Of Puberty, What Types Of Changes Start To Occur? (Select As Many As Apply)</string>
     <string name="ah39a">Physical Changes</string>
     <string name="ah39b">Mental Changes</string>
@@ -3231,6 +3288,105 @@
     <string name="un07c">مہینے پہلے</string>
     <string name="un07d">سال مہینے</string>
     <string name="un07e">آخری پیدائش سے پہلے ہوئے تھے</string>
+
+
+    <!--kap changes by hamza...-->
+    <string name="f001">مرکزِ صحت میں حمل کی دیکھ بھال کی اہمیت، کیا آپ جانتی ہیں؟</string>
+    <string name="f001a">ہاں</string>
+    <string name="f001b">نہیں</string>
+    <string name="f002">کیا آپ سمجھتی ہیں کہ حمل کی دیکھ بھال  مرکزِصحت میں ضروری ہے؟</string>
+    <string name="f002a">متفق</string>
+    <string name="f002b">غیر متفق</string>
+    <string name="f12801">کیا آپ سمجھتی ہیں کہ حمل کے دوران خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
+    <string name="f12801a">متفق</string>
+    <string name="f12801b">غیر متفق</string>
+    <string name="f13200">کیا آپ جانتی ہیں حمل کے دوران کھانے پینے کی عادات تبدیل ہوتی ہیں؟</string>
+    <string name="f13200a">ہاں</string>
+    <string name="f13200b">نہیں</string>
+    <string name="f13201">کیا آپ سمجھتی ہیں کہ حمل کے دوران کھانے کی عادات تبدیل ہونی چاہئیں؟</string>
+    <string name="f13201a">متفق</string>
+    <string name="f13201b">غیر متفق</string>
+    <string name="f13300">کیا آپ جانتی ہیں کہ حمل کے دوران گھریلو کام کاج کی نوعیت  تبدیل ہوتی ہے؟</string>
+    <string name="f13300a">ہاں</string>
+    <string name="f13300b">نہیں</string>
+    <string name="f13301">کیا آپ سمجھتی ہیں کہ حمل کے دوران گھریلو کام کاج کی نوعیت  تبدیل ہونی چاہئیے؟</string>
+    <string name="f13301a">متفق</string>
+    <string name="f13301b">غیر متفق</string>
+    <string name="h10500">کیا آپ جانتی ہیں کہ نوزائیدہ کو پیدائش کے بعد خشک کرتے ہیں؟</string>
+    <string name="h10500a">ہاں</string>
+    <string name="h10500b">نہیں</string>
+    <string name="h10501">کیا آپ سمجھتی ہیں کہ نوزائیدہ کو پیدائش کے بعد خشک کرنا چاہئیے؟</string>
+    <string name="h10501a">مفق</string>
+    <string name="h10501b">غیر متفق</string>
+    <string name="h10800">کیا آپ جانتی ہیں کہ ناڑو کی دیکھ بھال کرنی ہوتی ہے؟</string>
+    <string name="h10800a">ہاں</string>
+    <string name="h10800b">نہیں</string>
+    <string name="h10801">کیا آپ ناڑو کی دیکھ بھال کی اہمیت سمجھتی ہیں؟</string>
+    <string name="h10801a">متفق</string>
+    <string name="h10801b">غیر متفق</string>
+    <string name="h10900">کیا آپ جانتی ہیں کہ ناڑو پہ کچھ لگاتے ہیں؟</string>
+    <string name="h10900a">ہاں</string>
+    <string name="h10900b">نہیں</string>
+    <string name="h10901">کیا آپ سمجھتی ہیں کہ ناڑو پہ کچھ لگانا چاہئیے؟</string>
+    <string name="h10901a">متفق</string>
+    <string name="h10901b">غیر متفق</string>
+    <string name="h11000">کیا آپ نوزائیدہ کو ماں کی جلد سے جلد ملانے کے عمل کو جانتی ہیں، پیدائش کے بعد ؟</string>
+    <string name="h11000a">ہاں</string>
+    <string name="h11000b">نہیں</string>
+    <string name="h11001">کیا آپ  نوزائیدہ کو ماں کی جلد سے جلد ملانے کی اہمیت کو سمجھتی ہیں  ؟</string>
+    <string name="h11001a">متفق</string>
+    <string name="h11001b">غیر متفق</string>
+    <string name="h11200">کیا آپ جانتی ہیں کہ بچے کو ما ں کا دودھ کب پلانا چاہئے؟</string>
+    <string name="h11200a">ہاں</string>
+    <string name="h11200b">نہیں</string>
+    <string name="h11201">کیا آپ بچے کو ماں کا دودھ جلد ی پلانے کی اہمیت سمجھتی ہیں؟</string>
+    <string name="h11201a">متفق</string>
+    <string name="h11201b">غیر متفق</string>
+    <string name="h11300">کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ(کلوسٹرم) کی اہمیت آپ  جانتی ہیں؟</string>
+    <string name="h11300a">ہاں</string>
+    <string name="h11300b">نہیں</string>
+    <string name="h11301">کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ(کلوسٹرم) نوزائیدہ کو دینا چاہئیے؟</string>
+    <string name="h11301a">متفق</string>
+    <string name="h11301b">غیر متفق</string>
+    <string name="h11500">کیا آپ نے صرف اور صرف ماں کا دودھ پلانے کے بارے میں جانتی ہیں؟</string>
+    <string name="h11500a">ہاں</string>
+    <string name="h11500b">نہیں</string>
+    <string name="h11501">کیا آپ سمجھتی ہیں کہ صرف اور صرف ماں کا دودھ پلانا ہی نوزائیدہ کے لئے ضروری ہے؟</string>
+    <string name="h11501a">متفق</string>
+    <string name="h11501b">غیر متفق</string>
+    <string name="h12500">کیا آپ نوزائیدہ  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h12500a">ہاں</string>
+    <string name="h12500b">نہیں</string>
+    <string name="h12501">کیا آپ نوزائیدہ  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h12501a">متفق</string>
+    <string name="h12501b">غیر متفق</string>
+    <string name="h13601">کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
+    <string name="h13601a">متفق</string>
+    <string name="h13601b">غیر متفق</string>
+    <string name="h20200">کیا آپ ماں کا   بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h20200a">ہاں</string>
+    <string name="h20200b">نہیں</string>
+    <string name="h20201">کیا آپ ماں کے  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h20201a">متفق</string>
+    <string name="h20201b">غیر متفق</string>
+    <string name="h20801">کیا آپ پیدائش کے بعد خطرناک علامات کے علاج کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h20801a">متفق</string>
+    <string name="h20801b">غیر متفق</string>
+    <string name="j10100">بچے کی صحت کے لئے کیا آپ حفاظتی ٹیکوں  کی اہمیت جانتی ہیں؟</string>
+    <string name="j10100a">ہاں</string>
+    <string name="j10100b">نہیں</string>
+    <string name="j10101">کیا آپ سمجھتی ہیں بچوں کو حفاظتی ٹیکے لگوانے چاہئیے؟</string>
+    <string name="j10101a">متفق</string>
+    <string name="j10101b">غیر متفق</string>
+    <string name="ah2401aa">کیا آپ مندرجہ بالابیماریوں کا علاج کروانا ضروری سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah2401aaa">متفق</string>
+    <string name="ah2401aab">غیر متفق</string>
+    <string name="ah3801">کیا آپ اس عمر میں  تولیدی صحت کے بارے میں جاننے  کی اہمیت کو سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah3801a">متفق</string>
+    <string name="ah3801b">غیر متفق</string>
+    <string name="k10101">کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="k10101a">متفق</string>
+    <string name="k10101b">غیر متفق</string>
 
 
     <string name='Q_ah59'>ah59</string>

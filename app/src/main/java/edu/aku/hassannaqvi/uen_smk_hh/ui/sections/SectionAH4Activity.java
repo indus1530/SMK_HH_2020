@@ -76,36 +76,26 @@ public class SectionAH4Activity extends AppCompatActivity {
         json.put("ah3201", bi.ah3201a.isChecked() ? "1"
                 : bi.ah3201b.isChecked() ? "2"
                 : bi.ah3201c.isChecked() ? "3"
-                : bi.ah3201d.isChecked() ? "4"
-                : bi.ah3201e.isChecked() ? "98"
                 : "-1");
 
         json.put("ah3202", bi.ah3202a.isChecked() ? "1"
                 : bi.ah3202b.isChecked() ? "2"
                 : bi.ah3202c.isChecked() ? "3"
-                : bi.ah3202d.isChecked() ? "4"
-                : bi.ah3202e.isChecked() ? "98"
                 : "-1");
 
         json.put("ah3203", bi.ah3203a.isChecked() ? "1"
                 : bi.ah3203b.isChecked() ? "2"
                 : bi.ah3203c.isChecked() ? "3"
-                : bi.ah3203d.isChecked() ? "4"
-                : bi.ah3203e.isChecked() ? "98"
                 : "-1");
 
         json.put("ah3204", bi.ah3204a.isChecked() ? "1"
                 : bi.ah3204b.isChecked() ? "2"
                 : bi.ah3204c.isChecked() ? "3"
-                : bi.ah3204d.isChecked() ? "4"
-                : bi.ah3204e.isChecked() ? "98"
                 : "-1");
 
         json.put("ah3205", bi.ah3205a.isChecked() ? "1"
                 : bi.ah3205b.isChecked() ? "2"
                 : bi.ah3205c.isChecked() ? "3"
-                : bi.ah3205d.isChecked() ? "4"
-                : bi.ah3205e.isChecked() ? "98"
                 : "-1");
 
         try {

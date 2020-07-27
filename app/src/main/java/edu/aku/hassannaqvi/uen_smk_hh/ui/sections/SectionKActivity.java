@@ -156,6 +156,10 @@ public class SectionKActivity extends AppCompatActivity {
         json.put("k101aal", bi.k101aal.isChecked() ? "12" : "0");
         json.put("k101aam", bi.k101aam.isChecked() ? "13" : "0");
 
+        json.put("k10101", bi.k10101a.isChecked() ? "1"
+                : bi.k10101b.isChecked() ? "2"
+                : "-1");
+
         json.put("k102", bi.k102a.isChecked() ? "1" :
                 bi.k102b.isChecked() ? "2" : "0");
 

@@ -124,7 +124,6 @@ public class SectionE2Activity extends AppCompatActivity {
                     bi.fldGrpCVe109.setVisibility(View.VISIBLE);
             }*/
 
-
             if (i == bi.e108b.getId()) {
                 bi.mainContainer2.setVisibility(View.VISIBLE);
                 bi.fldGrpCVe113.setVisibility(View.GONE);
@@ -133,15 +132,12 @@ public class SectionE2Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVe113);
                 Clear.clearAllFields(bi.fldGrpCVe114);
                 Clear.clearAllFields(bi.fldGrpCVe115);
-
                 bi.fldGrpCVd107.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVd107);
                 bi.fldGrpCVe109.setVisibility(View.VISIBLE);
             } else {
                 bi.mainContainer2.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.mainContainer2);
-
-
                 bi.fldGrpCVe113.setVisibility(View.VISIBLE);
                 bi.fldGrpCVe114.setVisibility(View.VISIBLE);
                 bi.fldGrpCVe115.setVisibility(View.VISIBLE);
@@ -150,19 +146,15 @@ public class SectionE2Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVe109);
             }
 
-
             if (bi.e105b.isChecked()
                     || bi.e105e.isChecked()
                     || bi.e105f.isChecked()) {
                 bi.mainContainer2.setVisibility(View.VISIBLE);
-
-
                 bi.fldGrpCVd107.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVd107);
                 bi.fldGrpCVe109.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVe109);
             }
-
 
         }));
 
@@ -293,6 +285,7 @@ public class SectionE2Activity extends AppCompatActivity {
         mwraPre.setUser(MainApp.fc.getUser());
 
         JSONObject json = new JSONObject();
+
         json.put("mw_uid", mwraContract.getUID());
         json.put("fm_serial", mwraContract.getFm_serial());
         json.put("fm_uid", mwraContract.getFmuid());
@@ -394,7 +387,6 @@ public class SectionE2Activity extends AppCompatActivity {
 
     }
 
-
     public void editTextImplementation(EditTextPicker[] editTextsArray) {
         if (editTextsArray.length != 3) return;
         EditTextPicker editTextPicker01 = editTextsArray[0];
@@ -457,7 +449,6 @@ public class SectionE2Activity extends AppCompatActivity {
 
             }
         });
-
 
     }
 

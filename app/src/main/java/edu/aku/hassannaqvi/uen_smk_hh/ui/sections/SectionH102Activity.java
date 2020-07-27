@@ -419,6 +419,18 @@ public class SectionH102Activity extends AppCompatActivity {
                                                                 bi.h137bb96.isChecked() ? "96" : "0");
         json.put("h137bb96x", bi.h137bb96x.getText().toString());
 
+        json.put("h12500", bi.h12500a.isChecked() ? "1"
+                : bi.h12500b.isChecked() ? "2"
+                : "-1");
+
+        json.put("h12501", bi.h12501a.isChecked() ? "1"
+                : bi.h12501b.isChecked() ? "2"
+                : "-1");
+
+        json.put("h13601", bi.h13601a.isChecked() ? "1"
+                : bi.h13601b.isChecked() ? "2"
+                : "-1");
+
         try {
             JSONObject s4_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.kish.getsH1()), json);
 

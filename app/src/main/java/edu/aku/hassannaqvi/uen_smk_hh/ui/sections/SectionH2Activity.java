@@ -386,6 +386,18 @@ public class SectionH2Activity extends AppCompatActivity {
                         bi.h223c.isChecked() ? "4" :
                                 bi.h223d.isChecked() ? "5" : "0");
 
+        json.put("h20200", bi.h20200a.isChecked() ? "1"
+                : bi.h20200b.isChecked() ? "2"
+                : "-1");
+
+        json.put("h20201", bi.h20201a.isChecked() ? "1"
+                : bi.h20201b.isChecked() ? "2"
+                : "-1");
+
+        json.put("h20801", bi.h20801a.isChecked() ? "1"
+                : bi.h20801b.isChecked() ? "2"
+                : "-1");
+
         MainApp.kish.setsH2(String.valueOf(json));
 
     }

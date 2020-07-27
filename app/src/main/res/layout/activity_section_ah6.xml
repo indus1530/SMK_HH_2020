@@ -661,6 +661,42 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <!--ah3801  Radio-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVah3801"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/ah3801" />
+
+                        <RadioGroup
+                            android:id="@+id/ah3801"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/ah3801a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/ah3801a" />
+
+                            <RadioButton
+                                android:id="@+id/ah3801b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/ah3801b" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
                 <!-- ah39  checkbox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah39"

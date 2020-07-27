@@ -374,7 +374,7 @@
     <string name="f101n">No</string>
     <string name="f101y">Yes</string>
 
-    <string name="f102"> F102:\t Where did you seek ANC checkup for last pregnancy ? </string>
+    <string name="f102"> F102:\t Place of death</string>
     <string name="f102a"> Home </string>
     <string name="f102h1"> Public medical sector </string>
     <string name="f102b"> TERTIARY/CIVIL HOSPITAL </string>
@@ -442,7 +442,8 @@
     <string name="f111hint"> If yes, ask: May I see it please ? </string>
     <string name="f111hint1"> If a card is presented, use it to assist with answers to the following questions. </string>
     <string name="f111a"> Yes (card or other document seen) </string>
-    <string name="f111b"> No (card or other document Not seen </string>
+    <string name="f111b"> No (card or other document) </string>
+    <string name="f111c"> Not seen </string>
 
     <string name="f112"> F112:\t When you were pregnant with (name), did you receive any injection in the arm or shoulder to prevent you and the baby from getting tetanus, that is, convulsions after birth ? </string>
     <string name="f112a"> Yes </string>
@@ -509,6 +510,7 @@
     <string name="f1212e"> I am afraid to contact with Corona </string>
     <string name="f1212f"> Social distancing </string>
     <string name="f1212g"> PPE not available at home </string>
+    <string name="f1212h"> Not Applicable </string>
 
 
     <string name="f122"> F122:\t How many times LHW visit, as part of your antenatal care during your last pregnancy ? </string>
@@ -521,7 +523,8 @@
     <string name="f123e"> Birth Preparedness counselling </string>
     <string name="f123f"> Provided IFA </string>
     <string name="f123g"> Informed about danger signs during pregnancy </string>
-    <string name="f123h"> Informed about precautions of Corona </string>
+    <string name="f123h"> Contraceptive Supplies </string>
+    <string name="f123i"> Informed about precautions of Corona </string>
     <string name="f12396"> Others specify </string>
 
 
@@ -561,6 +564,10 @@
     <string name="f128f"> Abdominal pain/cramps(&lt;37th weeks) </string>
     <string name="f128g"> No, I did not experience any danger sign </string>
 
+    <string name="f128aa"> F128A:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
+    <string name="f128aaa"> Agree </string>
+    <string name="f128aab"> Disagree </string>
+
     <string name="f129"> F129:\t Did you seek care for the danger signs/problems mentioned above ? </string>
     <string name="f129a"> Yes </string>
     <string name="f129b"> No </string>
@@ -583,7 +590,7 @@
     <string name="f130o"> Provider’s not following SOPS (Not wearing gloves and masks) </string>
 
 
-    <string name="f131"> F131:\t Where did you seek care for the danger signs/problems you mentioned above during your pregnancy with {NAME} ? </string>
+    <string name="f131"> F131:\t Place of death</string>
     <string name="f131a"> Home </string>
     <string name="f131h1"> Public medical sector </string>
     <string name="f131b"> TERTIARY/CIVIL HOSPITAL </string>
@@ -601,16 +608,6 @@
     <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="f13196"> Other (specify) </string>
 
-    <string name="f132"> F132:\t Did your diet/eating habit change during the pregnancy with {NAME} ? </string>
-    <string name="f132a"> Yes, more than usual </string>
-    <string name="f132b"> Yes, less than usual </string>
-    <string name="f132c"> Remains Same </string>
-
-    <string name="f133"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME} ? </string>
-    <string name="f133a"> Yes, more than usual </string>
-    <string name="f133b"> Yes, less than usual </string>
-    <string name="f133c"> Remains Same </string>
-
     <string name="f134"> F134:\t What preparedness measures did you take for {NAME}’s birth ? </string>
     <string name="f134a"> Selection of birth attendant </string>
     <string name="f134b"> Selection of health facility to go in case of complication </string>
@@ -627,7 +624,7 @@
     <string name="g101a"> Yes </string>
     <string name="g101b"> No </string>
 
-    <string name="g102"> G102:\t Where did {NAME}’s delivery take place? </string>
+    <string name="g102"> G102:\t Where did {NAME}’s delivery take place?</string>
     <string name="g102a"> Home </string>
     <string name="g102h1"> Public medical sector </string>
     <string name="g102b"> TERTIARY/CIVIL HOSPITAL </string>
@@ -869,8 +866,8 @@
     <string name="h109e"> Chlorhexdine </string>
     <string name="h109f"> Ash </string>
     <string name="h109g"> Breast milk </string>
-    <string name="h109h"> Nothing was applied </string>
-    <string name="h109i"> Yes applied but Not Remember </string>
+    <string name="h109h"> Khol/Surma </string>
+    <string name="h109i"> Nothing was applied </string>
 
     <string name="h110"> H110:\t Did {NAME} get skin to skin contact with mother after birth ? </string>
     <string name="h110a"> Yes </string>
@@ -879,10 +876,14 @@
 
     <string name="h111"> H111:\t How soon after birth, {NAME} was put on skin to skin contact with mother ? </string>
 
+    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112y"> Yes </string>
+    <string name="h112n"> No </string>
+
     <string name="h112"> H112:\t How long after birth {NAME} was breastfed ? </string>
-    <string name="h112a"> Less than 1 hour </string>
-    <string name="h112b"> More than 1 hour </string>
-    <string name="h112c"> More than 1 day </string>
+    <string name="h1121"> Less than 1 hour </string>
+    <string name="h1122"> More than 1 hour </string>
+    <string name="h1123"> More than 1 day </string>
 
     <string name="h113"> H113:\t Did you discard the thick milk (colostrum) that comes out of breast soon after delivery ? </string>
     <string name="h113a"> Yes </string>
@@ -898,16 +899,20 @@
     <string name="h114g"> It is heavy </string>
     <string name="h114h"> Cultural/Religious reason </string>
 
-    <string name="h115"> H115:\t In the last 24 hours what was given to {NAME} to eat or drink ? </string>
-    <string name="h115a"> Milk (other than breast milk) </string>
-    <string name="h115b"> Plain water </string>
-    <string name="h115c"> Honey or sugar water </string>
-    <string name="h115d"> Ghee, butter </string>
-    <string name="h115e"> Fruit juice </string>
-    <string name="h115f"> Infant formula </string>
-    <string name="h115g"> Green tea </string>
-    <string name="h115h"> Breast Milk </string>
-    <string name="h115i"> Semi solid diet </string>
+    <string name="h115"> H115:\t In the first 24 hours after delivery was {name] given anything to drink other than breast milk? </string>
+    <string name="h115y"> Yes </string>
+    <string name="h115n"> No </string>
+
+    <string name="h115a"> H115A:\t In the last 24 hours what was given to {NAME} to eat or drink ? </string>
+    <string name="h115aa"> Milk (other than breast milk) </string>
+    <string name="h115ab"> Plain water </string>
+    <string name="h115ac"> Honey or sugar water </string>
+    <string name="h115ad"> Ghee, butter </string>
+    <string name="h115ae"> Fruit juice </string>
+    <string name="h115af"> Infant formula </string>
+    <string name="h115ag"> Green tea </string>
+    <string name="h115ah"> Breast Milk </string>
+    <string name="h115ai"> Semi solid diet </string>
 
     <string name="h116"> H116:\t Did you breastfeed {NAME} ? </string>
     <string name="h116hint"> Exclusive breastfeeding is when a child is only fed breast milk, and not given anything else. This also includes water, or liquids for stomach pain etc. </string>
@@ -963,7 +968,7 @@
     <string name="h126d"> More than 7 days after birth </string>
     <string name="h126e"> Don’t know</string>
 
-    <string name="h127"> H127:\t Where was {NAME}’s, first health check-up conducted ? </string>
+    <string name="h127"> H127:\t Where was {NAME}’s, first health check-up conducted?</string>
     <string name="h127a"> Home </string>
     <string name="h127h1"> Public medical sector </string>
     <string name="h127b"> TERTIARY/CIVIL HOSPITAL </string>
@@ -1041,6 +1046,7 @@
     <string name="h1321e"> I am afraid to contact with Corona </string>
     <string name="h1321f"> Social distancing </string>
     <string name="h1321g"> PPE not available at home </string>
+    <string name="h1321h"> Not Applicable </string>
 
 
     <string name="h133"> H133:\t What is the purpose of LHW visit for new born ? </string>
@@ -1078,6 +1084,10 @@
     <string name="h136d"> Community Midwife </string>
     <string name="h136e"> LHW (Lady Health Worker) </string>
     <string name="h136f"> Dai/TBA (Traditional Birth Attendant) </string>
+
+    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
+    <string name="h136aaa"> Agree </string>
+    <string name="h136aab"> Disagree </string>
 
     <string name="h137"> H137:\t Did the new born got BCG vaccination? (Usually leaves scar at left arm or shoulder) </string>
     <string name="h137a"> Yes </string>
@@ -1122,7 +1132,7 @@
 
     <string name="h203"> H203:\t How long after delivery was first health check-up conducted ? </string>
 
-    <string name="h204"> H204:\t Where did you have the first health check-up after {name}’s birth ? </string>
+    <string name="h204"> H204:\t Where did you have the first health check-up after {name}’s birth?</string>
     <string name="h204a"> Home </string>
     <string name="h204h1"> Public medical sector </string>
     <string name="h204b"> TERTIARY/CIVIL HOSPITAL </string>
@@ -1147,6 +1157,17 @@
     <string name="h205d"> Community Midwife </string>
     <string name="h205e"> Dai/TBA (Traditional Birth Attendant) </string>
 
+    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
+    <string name="h205aaa"> Counselling on nutrition </string>
+    <string name="h205aab"> Counselling on IYCF And breast feeding </string>
+    <string name="h205aac"> Counselling on family planning </string>
+    <string name="h205aad"> Assessment for complications </string>
+    <string name="h205aae"> Referral to Health Facility </string>
+    <string name="h205aaf"> Treatment for mother </string>
+    <string name="h205aag"> Nutrition supplies </string>
+    <string name="h205aah"> Contraceptive supplies </string>
+
+
     <string name="h206"> H206:\t Did you know about danger signs/ problems after delivery ? </string>
     <string name="h206a"> Yes </string>
     <string name="h206b"> No </string>
@@ -1170,6 +1191,10 @@
     <string name="h208e"> LHW (Lady Health Worker) </string>
     <string name="h208f"> Dai/TBA (Traditional Birth Attendant) </string>
 
+    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
+    <string name="h208aaa"> Agree </string>
+    <string name="h208aab"> Disagree </string>
+
     <string name="h209"> H209:\t Did LHW visit you after delivery ? </string>
     <string name="h209a"> Yes </string>
     <string name="h209b"> No </string>
@@ -1182,6 +1207,7 @@
     <string name="h2091e"> I am afraid to contact with Corona </string>
     <string name="h2091f"> Social distancing </string>
     <string name="h2091g"> PPE not available at home </string>
+    <string name="h2091h"> Not Applicable </string>
 
 
     <string name="h210"> H210:\t When did she visit ? </string>
@@ -2131,6 +2157,11 @@
     <string name="k101aak">Outdoor sign/billboard</string>
     <string name="k101aal">Pamphalet/ Broucher</string>
     <string name="k101aam">Mobile/Smart Phone/TV</string>
+
+    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
+    <string name="k101aba"> Agree </string>
+    <string name="k101abb"> Disagree </string>
+
     <string name="k102">K102:\t Did you or your husband ever done something or used any method to delay or avoid getting pregnant?</string>
     <string name="k102a">Yes</string>
     <string name="k102b">No</string>
@@ -2187,6 +2218,7 @@
     <string name="k1072e">I am afraid to contact with Corona</string>
     <string name="k1072f"> Social distancing</string>
     <string name="k1072g">PPE not available at home</string>
+    <string name="k1072h">Not Applicable</string>
 
     <string name="k1081">K108:\t Did LHW organize Health Meetings for You and Your husband?</string>
     <string name="k1081a">Yes</string>
@@ -2740,7 +2772,13 @@
     <string name="ah2a">Yes</string>
     <string name="ah2b">No</string>
     <string name="ah3">How Many More Years Of Education Do You Expect To Complete?</string>
-    <string name="ah3a">Year</string>
+    <string name="ah3a">Primary(1-5)</string>
+    <string name="ah3b">Middle (6-8)</string>
+    <string name="ah3c">Secondary(9-10)</string>
+    <string name="ah3d">Intermediate</string>
+    <string name="ah3e">Under Graduate</string>
+    <string name="ah3f">Technical Training</string>
+    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
     <string name="ah4">How Old Were You When You Left The School/College</string>
     <string name="ah4a">Age</string>
     <string name="ah5">Is The School, College That You Attend(Ed) A Government Or Private Institute?</string>
@@ -2859,9 +2897,6 @@
     <string name="ah23b">Month</string>
     <string name="ah23c">Year</string>
     <string name="ah24">Have You Ever Experienced In Last 2 Months?</string>
-    <string name="ah2401">Respiratory Infections</string>
-    <string name="ah2401a">Yes</string>
-    <string name="ah2401b">No</string>
     <string name="ah2402">Diarrheal Diseases</string>
     <string name="ah2402a">Yes</string>
     <string name="ah2402b">No</string>
@@ -2892,6 +2927,9 @@
     <string name="ah24011">None Of The Above</string>
     <string name="ah24011a">Yes</string>
     <string name="ah24011b">No</string>
+    <string name="ah24a">Do you think it is important to seek care for the illness you experienced mentioned above?</string>
+    <string name="ah24aa">Agree</string>
+    <string name="ah24ab">Disagree</string>
     <string name="ah25">Did You Seek Care For The Above Mentioned Illness?</string>
     <string name="ah25a">Yes</string>
     <string name="ah25b">No</string>
@@ -2932,35 +2970,25 @@
     <string name="ah31e">At A Store/Shop</string>
     <string name="ahgntitle">Gender Norms</string>
     <string name="ah3201">Girls And Boys Should Be Treated Equally By Their Parents.</string>
-    <string name="ah3201a">Strongly Agree</string>
-    <string name="ah3201b">Agree</string>
-    <string name="ah3201c">Disagree</string>
-    <string name="ah3201d">Strongly Disagree</string>
-    <string name="ah3201e">Don’t Know</string>
+    <string name="ah3201a">Agree</string>
+    <string name="ah3201b">Disagree</string>
+    <string name="ah3201c">Don’t Know</string>
     <string name="ah3202">It Is Important That Boys Have More Education Than Girls.</string>
-    <string name="ah3202a">Strongly Agree</string>
-    <string name="ah3202b">Agree</string>
-    <string name="ah3202c">Disagree</string>
-    <string name="ah3202d">Strongly Disagree</string>
-    <string name="ah3202e">Don’t Know</string>
+    <string name="ah3202a">Agree</string>
+    <string name="ah3202b">Disagree</string>
+    <string name="ah3202c">Don’t Know</string>
     <string name="ah3203">Girls Should Be Sent To School Only If They Are Not Needed To Help At Home.</string>
-    <string name="ah3203a">Strongly Agree</string>
-    <string name="ah3203b">Agree</string>
-    <string name="ah3203c">Disagree</string>
-    <string name="ah3203d">Strongly Disagree</string>
-    <string name="ah3203e">Don’t Know</string>
+    <string name="ah3203a">Agree</string>
+    <string name="ah3203b">Disagree</string>
+    <string name="ah3203c">Don’t Know</string>
     <string name="ah3204">Boys Should Not Have To Help With Household Tasks.</string>
-    <string name="ah3204a">Strongly Agree</string>
-    <string name="ah3204b">Agree</string>
-    <string name="ah3204c">Disagree</string>
-    <string name="ah3204d">Strongly Disagree</string>
-    <string name="ah3204e">Don’t Know</string>
+    <string name="ah3204a">Agree</string>
+    <string name="ah3204b">Disagree</string>
+    <string name="ah3204c">Don’t Know</string>
     <string name="ah3205">Girls And Boys Should Be Treated Equally By Their Teachers.</string>
-    <string name="ah3205a">Strongly Agree</string>
-    <string name="ah3205b">Agree</string>
-    <string name="ah3205c">Disagree</string>
-    <string name="ah3205d">Strongly Disagree</string>
-    <string name="ah3205e">Don’t Know</string>
+    <string name="ah3205a">Agree</string>
+    <string name="ah3205b">Disagree</string>
+    <string name="ah3205c">Don’t Know</string>
     <string name="ahnktitle">Nutrition Knowledge:</string>
     <string name="ah33">What Foods Are A Good Source Of Iron? (Don’T Probe, Select All That Apply)</string>
     <string name="ah33a">Vegetables (Green Leafy, Carrot )</string>
@@ -3041,6 +3069,9 @@
     <string name="ah38">Do You Know About Reproductive Health?</string>
     <string name="ah38a">Yes</string>
     <string name="ah38b">No</string>
+    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
+    <string name="ah38aaa">Agree</string>
+    <string name="ah38aab">Disagree</string>
     <string name="ah39">At The Onset Of Puberty, What Types Of Changes Start To Occur? (Select As Many As Apply)</string>
     <string name="ah39a">Physical Changes</string>
     <string name="ah39b">Mental Changes</string>
@@ -3185,6 +3216,104 @@
     <string name="un07c">Months ago</string>
     <string name="un07d">Years ago</string>
     <string name="un07e">Before last birth</string>
+
+
+    <string name="f001">Do you know the importance of ANC visit at health facility?</string>
+    <string name="f001a">Yes</string>
+    <string name="f001b">No</string>
+    <string name="f002">Do you think ANC visits are important when you were pregnant?</string>
+    <string name="f002a">Agree</string>
+    <string name="f002b">Disagree</string>
+    <string name="f12801">Do you think it is important to seek care for the danger signs during pregnancy mentioned above?</string>
+    <string name="f12801a">Agree</string>
+    <string name="f12801b">Disagree</string>
+    <string name="f13200">Do you know that diet/eating habit change during pregnancy?</string>
+    <string name="f13200a">Yes</string>
+    <string name="f13200b">No</string>
+    <string name="f13201">Do you think diet/eating habit should be changed during the pregnancy?</string>
+    <string name="f13201a">Agree</string>
+    <string name="f13201b">Disagree</string>
+    <string name="f13300">Do you know that nature of your household work (physical exertion) change during the pregnancy with {NAME}?</string>
+    <string name="f13300a">Yes</string>
+    <string name="f13300b">No</string>
+    <string name="f13301">Do you think the nature of your household work (physical exertion) should be changed during the pregnancy with {NAME}?</string>
+    <string name="f13301a">Agree</string>
+    <string name="f13301b">Disagree</string>
+    <string name="h10500">Do you know that baby needs to get dry after delivery?</string>
+    <string name="h10500a">Yes</string>
+    <string name="h10500b">No</string>
+    <string name="h10501">Do you think it is important to dry the baby after delivery?</string>
+    <string name="h10501a">Agree</string>
+    <string name="h10501b">Disagree</string>
+    <string name="h10800">Do you know that umbilical cord of new born needs to be care?</string>
+    <string name="h10800a">Yes</string>
+    <string name="h10800b">No</string>
+    <string name="h10801">Do you think it is important to care the umbilical cord of new-born?</string>
+    <string name="h10801a">Agree</string>
+    <string name="h10801b">Disagree</string>
+    <string name="h10900">Do you know if anything was applied on umbilical cord?</string>
+    <string name="h10900a">Yes</string>
+    <string name="h10900b">No</string>
+    <string name="h10901">Do you think it is important to apply anything on umbilical cord?</string>
+    <string name="h10901a">Agree</string>
+    <string name="h10901b">Disagree</string>
+    <string name="h11000">Do you know if new born gets skin to skin contact with mother after birth?</string>
+    <string name="h11000a">Yes</string>
+    <string name="h11000b">No</string>
+    <string name="h11001">Do you think is it important for a newborn to get skin to skin contact with mother after birth?</string>
+    <string name="h11001a">Agree</string>
+    <string name="h11001b">Disagree</string>
+    <string name="h11200">Do you know when the baby should breastfed after birth?</string>
+    <string name="h11200a">Yes</string>
+    <string name="h11200b">No</string>
+    <string name="h11201">Do you think early breastfeeding is important for newborn?</string>
+    <string name="h11201a">Agree</string>
+    <string name="h11201b">Disagree</string>
+    <string name="h11300">Do you know the importance of thick milk (colostrum) that comes out of breast soon after delivery?</string>
+    <string name="h11300a">Yes</string>
+    <string name="h11300b">No</string>
+    <string name="h11301">Do you think that colostrum (think milk) should be given to newborn?</string>
+    <string name="h11301a">Agree</string>
+    <string name="h11301b">Disagree</string>
+    <string name="h11500">Do you know what is exclusive breast feeding?</string>
+    <string name="h11500a">Yes</string>
+    <string name="h11500b">No</string>
+    <string name="h11501">Do you think exclusive breast feeding is important for new born?</string>
+    <string name="h11501a">Agree</string>
+    <string name="h11501b">Disagree</string>
+    <string name="h12500">Do you know the importance of an early health check- up for new-born after birth?</string>
+    <string name="h12500a">Yes</string>
+    <string name="h12500b">No</string>
+    <string name="h12501">Do you think early health check-up is important for new-born after birth?</string>
+    <string name="h12501a">Agree</string>
+    <string name="h12501b">Disagree</string>
+    <string name="h13601">Do you think it is important to seek care for the danger signs for the new born?</string>
+    <string name="h13601a">Agree</string>
+    <string name="h13601b">Disagree</string>
+    <string name="h20200">Do you know that health check-up of a mother conduct at facility after delivery?</string>
+    <string name="h20200a">Yes</string>
+    <string name="h20200b">No</string>
+    <string name="h20201">Do you think it is important to conduct health check-up after you gave birth to {name}?</string>
+    <string name="h20201a">Agree</string>
+    <string name="h20201b">Disagree</string>
+    <string name="h20801">Do you think it is important to seek care for the danger signs after delivery?</string>
+    <string name="h20801a">Agree</string>
+    <string name="h20801b">Disagree</string>
+    <string name="j10100">Do you know the importance of vaccination for a child health?</string>
+    <string name="j10100a">Yes</string>
+    <string name="j10100b">No</string>
+    <string name="j10101">Do you think that vaccination is important for a child health?</string>
+    <string name="j10101a">Agree</string>
+    <string name="j10101b">Disagree</string>
+    <string name="ah2401aa">Do you think it is important to seek care for the illness you experienced mentioned above?</string>
+    <string name="ah2401aaa">Agree</string>
+    <string name="ah2401aab">Disagree</string>
+    <string name="ah3801">Do you think it is important to know about reproductive Health at your age?</string>
+    <string name="ah3801a">Agree</string>
+    <string name="ah3801b">Disagree</string>
+    <string name="k10101">Do you think it is important to use any family planning methods?</string>
+    <string name="k10101a">Agree</string>
+    <string name="k10101b">Disagree</string>
 
 
     <string name='Q_ah59'>ah59</string>

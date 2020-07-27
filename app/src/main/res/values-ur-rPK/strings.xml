@@ -344,6 +344,7 @@
 
 
     <!--  SECTION F -->
+
     <string name="f101"> F101:\t کیا آپ نے اپنے آخری حمل کے دوران (نام) کی پیدائش سے قبل حمل کی دیکھ بھال کے لئے کسی سے معائنہ یا چیک اپ کروایا تھا ؟ </string>
     <string name="f101n"> نہیں </string>
     <string name="f101y"> ہاں </string>
@@ -366,23 +367,23 @@
     <string name="f101an"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="f101ao"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنے ہوئے تھے) </string>
 
-    <string name="f102"> F102:\t آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا ؟ </string>
-    <string name="f102a">گهر </string>
+    <string name="f102"> F102:\t آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا؟ </string>
     <string name="f102h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="f102b">تربیتی/ سول ہسپتال </string>
-    <string name="f102c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="f102d">دیہی صحت مرکز </string>
-    <string name="f102e">بنیادی صحت مرکز </string>
-    <string name="f102f">ماں اور بچے کا صحت مرکز </string>
-    <string name="f102g">زچگی گھر  </string>
-    <string name="f102h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="f102a"> گھر </string>
+    <string name="f102b"> تربیتی/ سول ہسپتال </string>
+    <string name="f102c">     ضلعہ/تعلقہ ہسپتال</string>
+    <string name="f102d"> دیہی صحت مرکز </string>
+    <string name="f102e"> بنیادی صحت مرکز </string>
+    <string name="f102f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="f102g"> زچگی گھر </string>
+    <string name="f102h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="f102h2"> خانگی ہسپتال </string>
     <string name="f102i"> خانگی ہسپتال </string>
     <string name="f102j"> خانگی کلینک </string>
     <string name="f102k"> خانگی زچگی گھر </string>
     <string name="f102l"> این جی او صحت مرکز </string>
     <string name="f102m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="f10296">دیگر (وضاحت کریں) </string>
+    <string name="f10296"> دیگر (وضاحت کریں </string>
 
     <string name="f103"> F103:\t آخری حمل کے دوران پیدائش سے قبل معائنہ کس نے کیا تھا ؟ مزید پوچھیں: کوئی اور </string>
     <string name="f103a"> ڈاکٹر </string>
@@ -434,7 +435,8 @@
     <string name="f111hint"> اگر ہاں، تو پوچھیں: برائے مہربانی کیا میں اسے دیکھ سکتا/سکتی ہوں ؟ ۔ </string>
     <string name="f111hint1"> اگر کارڈ دکھا یا گیا ہے، تو مندرجہ زیل سوالات کے جوابات میں مدد کے لئے اس کا استعمال کریں </string>
     <string name="f111a"> ہاں  (کارڈ یا دیگر دستاویذ دیکھا دیں) </string>
-    <string name="f111b"> نہیں  (کارڈ یا دیگر دستاویز نہیں دکھائیں) </string>
+    <string name="f111b"> No (card or other document) </string>
+    <string name="f111c"> Not seen </string>
 
     <string name="f112"> F112:\t جب آپ (نام) کی پیدائش سے قبل حمل سے تھیں، تو کیا آپ نے خود کو یا بچے کو تشنج یا جھٹکوں کی بیماری سے بچانے کے لئے اپنے بازو یا کندھے میں تشنج سے بچائو کا حفاظتی ٹیکہ لگوایا تھا ؟ </string>
     <string name="f112a"> ہاں </string>
@@ -501,6 +503,7 @@
     <string name="f1212e"> کرونا کا ڈریا خوف </string>
     <string name="f1212f"> سماجی مفاصلا </string>
     <string name="f1212g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
+    <string name="f1212h"> Not Applicable </string>
 
 
     <string name="f122"> F122:\t گزشتہ حمل کےدوران آپ کےحمل کی دیکھ بھال کا ایک حصہ ہونے کےناتے،(ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکرنے کتنی بار آپکے گھرکادورہ کیاتھا؟ </string>
@@ -513,7 +516,8 @@
     <string name="f123e"> پیدائش سے پہلے تیاری کی مشاورت </string>
     <string name="f123f"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
     <string name="f123g"> زچگی کے دوران خطرناک علامات کی آگاہی دینا </string>
-    <string name="f123h"> کرونا کی احتیاطی تدابیر کے بارے میں معلومات </string>
+    <string name="f123h"> Contraceptive Supplies </string>
+    <string name="f123i"> Informed about precautions of Corona </string>
     <string name="f12396"> دیگر وضآحت کریں </string>
 
     <string name="f124"> F124:\t کیاآپ نے(نام)کی پیدائش سےقبل اپنےحمل کے دوران خطرناک علامات/مسائل کے بارے میں معلومات حاصل کی تھیں؟ </string>
@@ -552,6 +556,10 @@
     <string name="f128f"> پیٹ میں درد/ مڑور(37thہفتوں سے کم) </string>
     <string name="f128g"> نہیں، مجھے کوئی خطرناک علامات پیش نہیں آئیں </string>
 
+    <string name="f128aa"> F129:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
+    <string name="f128aaa"> Agree </string>
+    <string name="f128aab"> Disagree </string>
+
     <string name="f129"> F129:\t کیا آپ نے اوپر بیان کی گئیں خطرناک علامات /مسائل کی دیکھ بھال کے لئے علاج کروایا تھا؟ </string>
     <string name="f129a"> ہاں </string>
     <string name="f129b"> نہیں </string>
@@ -574,33 +582,49 @@
     <string name="f130o"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنے ہوئے تھے) </string>
 
 
-    <string name="f131"> F131:\t آپ (نام) کی پیدائش سے قبل حمل کے دوران پیش آنے والی اوپر بیان کی گئی علامات / مسائل کی دیکھ بھال کے لئے کہاں گئے تھے ؟ </string>
-    <string name="f131a">گهر </string>
+    <string name="f131"> F131:\t آپ(نام) کی پیدائش سے قبل حمل کے دوران پیش آنے والی اوپر بیان کی گئی علامات/مسائل کی دیکھ بھال کے لئے  کہاں گئے تھے؟ </string>
     <string name="f131h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="f131b">تربیتی/ سول ہسپتال </string>
-    <string name="f131c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="f131d">دیہی صحت مرکز </string>
-    <string name="f131e">بنیادی صحت مرکز </string>
-    <string name="f131f">ماں اور بچے کا صحت مرکز </string>
-    <string name="f131g">زچگی گھر  </string>
-    <string name="f131h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="f131a"> گھر </string>
+    <string name="f131b"> تربیتی/ سول ہسپتال </string>
+    <string name="f131c">     ضلعہ/تعلقہ ہسپتال</string>
+    <string name="f131d"> دیہی صحت مرکز </string>
+    <string name="f131e"> بنیادی صحت مرکز </string>
+    <string name="f131f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="f131g"> زچگی گھر </string>
+    <string name="f131h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="f131h2"> خانگی ہسپتال </string>
     <string name="f131i"> خانگی ہسپتال </string>
     <string name="f131j"> خانگی کلینک </string>
     <string name="f131k"> خانگی زچگی گھر </string>
     <string name="f131l"> این جی او صحت مرکز </string>
     <string name="f131m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="f13196">دیگر (وضاحت کریں) </string>
+    <string name="f13196"> دیگر (وضاحت کریں </string>
 
-    <string name="f132"> F132:\t کیا آپ نے (نام) کی پیدائش سے قبل حمل کے دوران اپنی غذا / کھانے پینے کی عادات میں تبدیلی کی تھی ؟ </string>
-    <string name="f132a"> ہاں، معمول سے زیادہ </string>
-    <string name="f132b"> ہاں، معمول سے کم </string>
-    <string name="f132c"> کوئی تبدیلی نہیں کی </string>
+    <string name="f132"> F132:\t Do you know that diet/eating habit change during pregnancy? </string>
+    <string name="f132y"> Yes </string>
+    <string name="f132n"> No </string>
 
-    <string name="f133"> F133:\t کیا آپ نے (نام) کی پیدائش سے قبل حمل کے دوران گھر کے کام کاج (جسمانی مشقت) میں کوئی تبدیلی کی تھی ؟ </string>
-    <string name="f133a"> ہاں، معمول سے زیادہ </string>
-    <string name="f133b"> ہاں، معمول سے کم </string>
-    <string name="f133c"> کوئی تبدیلی نہیں کی </string>
+    <string name="f132a"> F132A:\t Do you think diet/eating habit should be changed during the pregnancy? </string>
+    <string name="f132aa"> Agree </string>
+    <string name="f132ab"> Disagree </string>
+
+    <string name="f132b"> F133:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
+    <string name="f132ba"> Yes, more than usual </string>
+    <string name="f132bb"> Yes, less than usual </string>
+    <string name="f132bc"> Remains Same </string>
+
+    <string name="f133"> F133:\t Do you know that nature of your household work (physical exertion) change during the pregnancy with {NAME} ? </string>
+    <string name="f133y"> Yes </string>
+    <string name="f133n"> No </string>
+
+    <string name="f133a"> F133:\t Do you think the nature of your household work (physical exertion) should be changed during the pregnancy with {NAME}? </string>
+    <string name="f133aa"> Agree </string>
+    <string name="f133ab"> Disagree </string>
+
+    <string name="f133b"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
+    <string name="f133ba"> Yes, more than usual </string>
+    <string name="f133bb"> Yes, less than usual </string>
+    <string name="f133bc"> Remains Same </string>
 
     <string name="f134"> F134:\t (نام) کی پیدائش کے لئے آپ نے کیا اقدامات کئے تھے ؟ جوابات پڑھیں، ایک سے زیادہ جوابات آسکتے ہیں </string>
     <string name="f134a"> ڈاکٹر کا انتخاب </string>
@@ -617,23 +641,23 @@
     <string name="g101a"> ہاں </string>
     <string name="g101b"> نہیں </string>
 
-    <string name="g102"> G102:\t (نام) کی پیدائش کہاں ہوئی تھی ؟ </string>
-    <string name="g102a">گهر </string>
+    <string name="g102"> G102:\t (نام) کی پیدائش کہاں ہوئی تھی؟ </string>
     <string name="g102h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="g102b">تربیتی/ سول ہسپتال </string>
-    <string name="g102c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="g102d">دیہی صحت مرکز </string>
-    <string name="g102e">بنیادی صحت مرکز </string>
-    <string name="g102f">ماں اور بچے کا صحت مرکز </string>
-    <string name="g102g">زچگی گھر  </string>
-    <string name="g102h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="g102a"> گھر </string>
+    <string name="g102b"> تربیتی/ سول ہسپتال </string>
+    <string name="g102c">     ضلعہ/تعلقہ ہسپتال</string>
+    <string name="g102d"> دیہی صحت مرکز </string>
+    <string name="g102e"> بنیادی صحت مرکز </string>
+    <string name="g102f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="g102g"> زچگی گھر </string>
+    <string name="g102h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="g102h2"> خانگی ہسپتال </string>
     <string name="g102i"> خانگی ہسپتال </string>
     <string name="g102j"> خانگی کلینک </string>
     <string name="g102k"> خانگی زچگی گھر </string>
     <string name="g102l"> این جی او صحت مرکز </string>
     <string name="g102m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="g10296">دیگر (وضاحت کریں) </string>
+    <string name="g10296"> دیگر (وضاحت کریں </string>
 
     <string name="g103"> G103:\t آپ نے (نام) کی پیدائش مرکز صحت پر کیوں نہیں کروائی ؟ </string>
     <string name="g103hint"> اگر زچگی گھر میں ہوئی تھی۔ کسی اور وجہ کی نشاندہی کرنے کے لئے تحقیق کریں۔ بتائے گئے تمام جوابات ریکارڈ کریں۔ </string>
@@ -849,6 +873,7 @@
     <string name="h108c"> قینچی </string>
     <string name="h108d"> چُھری </string>
 
+
     <string name="h109"> H109:\t (نام) کی ناڑو پر کیا لگایا گیا تھا ؟ </string>
     <string name="h109a"> جانوروں کا فضلہ </string>
     <string name="h109b"> کسی قسم کا تیل </string>
@@ -867,10 +892,14 @@
 
     <string name="h111"> H111:\t (نام) کو پیدائش کے کتنی دیر بعدماں کے ساتھ جلد سے جلد ملاکر رکھا گیا تھا ؟ </string>
 
-    <string name="h112"> H112:\t (نام) کو پیدائش کے کتنی دیر بعد ماں کا دودھ پلایا گیا تھا ؟ </string>
-    <string name="h112a"> 1 گھنٹے سے بھی کم </string>
-    <string name="h112b"> 1 گھنٹے سے زیادہ </string>
-    <string name="h112c"> 1 دن سے زیادہ </string>
+    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112y"> ہاں </string>
+    <string name="h112n"> نہیں </string>
+
+    <string name="h112"> H112:\t (نام) کو پیدائش کے کتنی دیر بعدماں کا دودھ پلایا گیا تھا؟ </string>
+    <string name="h1121"> ایک گھنٹے سے کم </string>
+    <string name="h1122"> ایک گھنٹے سے زیادہ </string>
+    <string name="h1123"> ایک دن  سے زیادہ </string>
 
     <string name="h113"> H113:\t کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ (کلوسٹرم) کو ضائع کردیا گیا تھا ؟ </string>
     <string name="h113a"> ہاں </string>
@@ -886,16 +915,21 @@
     <string name="h114g"> وہ بہت بھاری ہوتاہے </string>
     <string name="h114h"> تہذیبی/ مذہبی وجوہات </string>
 
-    <string name="h115"> H115:\t  پچھلے 24 گھنٹوں میں (نام) کو کھانے پینے کے لئے کیا دیا گیا ؟ تمام پر نشان لگائیں جو لاگو ہوتے ہیں </string>
-    <string name="h115a"> دودھ (ماں کے دودھ کے علاوہ) </string>
-    <string name="h115b"> سادہ پانی </string>
-    <string name="h115c"> شہد یا شہد کا پانی </string>
-    <string name="h115d"> گھی، مکھن </string>
-    <string name="h115e"> پھلوں کا جوس </string>
-    <string name="h115f"> ڈبے والا دودھ (فارمولا ملک) </string>
-    <string name="h115g"> قہوہ، سبز چائے </string>
-    <string name="h115h"> ماں کا دودھ </string>
-    <string name="h115i"> نیم ٹھوس غذا </string>
+
+    <string name="h115"> H115:\t پیدائش کے 24 گھنٹے کے اندر ماں کے دودھ کے علاوہ کچھ اور پینے کو دیا گیا تھا؟ </string>
+    <string name="h115y"> ہاں </string>
+    <string name="h115n"> نہیں </string>
+
+    <string name="h115a"> H115A:\t (نام) کو پیدائش کے 24 گھنٹے کے اندر کیاکھانے پینے کو دیا  گیا تھا؟ </string>
+    <string name="h115aa">دودھ (ماں کے دودھ کے علاوہ)  </string>
+    <string name="h115ab"> سادہ پانی </string>
+    <string name="h115ac"> شہد یا شہد کا پانی </string>
+    <string name="h115ad"> گھی، مکھن </string>
+    <string name="h115ae"> پھلوں کا جوس </string>
+    <string name="h115af"> ڈبے والا دودھ (فارمولا ملک) </string>
+    <string name="h115ag"> قہوہ، سبز چائے </string>
+    <string name="h115ah"> ماں کا دودھ </string>
+    <string name="h115ai"> نیم ٹھوس غذا </string>
 
     <string name="h116"> H116:\t کیا آپ نے (نام) کو ماں کا دودھ پلوایا تھا ؟ </string>
     <string name="h116hint"> صرف ماں کے دودھ کا مطلب ہے کہ بچے کو صرف اور صرف ماں کا دودھ ہی پلایا گیا ہے اور کچھ بھی نہیں دیا گیا۔ اس میں پانی اور پیٹ درد کی دوا وغیرہ شامل ہیں۔ </string>
@@ -952,23 +986,23 @@
     <string name="h126d"> 7 دن سے زیادہ </string>
     <string name="h126e"> معلوم نہیں </string>
 
-    <string name="h127"> H127:\t (نام) کا پہلی بار معائنہ کس جگہ کیا گیا تھا ؟ </string>
-    <string name="h127a">گهر </string>
+    <string name="h127"> H127:\t (نام) کا پہلی بار معائنہ کس جگہ پر کیا گیا تھا؟ </string>
     <string name="h127h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="h127b">تربیتی/ سول ہسپتال </string>
-    <string name="h127c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="h127d">دیہی صحت مرکز </string>
-    <string name="h127e">بنیادی صحت مرکز </string>
-    <string name="h127f">ماں اور بچے کا صحت مرکز </string>
-    <string name="h127g">زچگی گھر  </string>
-    <string name="h127h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="h127a"> گھر </string>
+    <string name="h127b"> تربیتی/ سول ہسپتال </string>
+    <string name="h127c">     ضلعہ/تعلقہ ہسپتال</string>
+    <string name="h127d"> دیہی صحت مرکز </string>
+    <string name="h127e"> بنیادی صحت مرکز </string>
+    <string name="h127f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="h127g"> زچگی گھر </string>
+    <string name="h127h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="h127h2"> خانگی ہسپتال </string>
     <string name="h127i"> خانگی ہسپتال </string>
     <string name="h127j"> خانگی کلینک </string>
     <string name="h127k"> خانگی زچگی گھر </string>
     <string name="h127l"> این جی او صحت مرکز </string>
     <string name="h127m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="h12796">دیگر (وضاحت کریں) </string>
+    <string name="h12796"> دیگر (وضاحت کریں </string>
 
     <string name="h128"> H128:\t (نام) کا پہلی بار معائنہ کس نے کیا تھا ؟ </string>
     <string name="h128a"> ڈاکٹر </string>
@@ -1036,7 +1070,7 @@
     <string name="h1321e"> کرونا کا ڈر یا خوف </string>
     <string name="h1321f"> سماجی مفاصلا </string>
     <string name="h1321g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-
+    <string name="h1321h"> Not Applicable </string>
 
     <string name="h133"> H133:\t لیڈی ہیلتھ ورکر کا (نام) کی ولادت کے بعد آنے کا مقصد کیا تھا ؟ </string>
     <string name="h133a"> وزن کیا تھا </string>
@@ -1072,6 +1106,10 @@
     <string name="h136d"> سی ایم ڈبلیو (کمیونیٹی مڈوائف) </string>
     <string name="h136e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h136f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
+
+    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
+    <string name="h136aaa"> Agree </string>
+    <string name="h136aab"> Disagree </string>
 
     <string name="h137"> H137:\t کیا (نام) کو پیدائش کے بعد بی-سی-جی کا ٹیکہ لگا تھا ؟ (عموماً بائیں بازو پر ٹیکے کا داغ رہ جاتا ہے) </string>
     <string name="h137a"> ہاں </string>
@@ -1114,23 +1152,23 @@
 
     <string name="h203"> H203:\t زچگی کے کتنی دیر کے بعد آپ کا پہلا طبی معائنہ کیا گیا تھا ؟ </string>
 
-    <string name="h204"> H204:\t (نام) کی پیدائش کے بعد آپ کا پہلا طبی معائنہ کہاں کیا گیا تھا ؟ </string>
-    <string name="h204a">گهر </string>
+    <string name="h204"> H204:\t (نام) کی پیدائش کے بعد آپ کاپہلا طبی معائنہ کہاں  کیا گیا تھا؟ </string>
     <string name="h204h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="h204b">تربیتی/ سول ہسپتال </string>
-    <string name="h204c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="h204d">دیہی صحت مرکز </string>
-    <string name="h204e">بنیادی صحت مرکز </string>
-    <string name="h204f">ماں اور بچے کا صحت مرکز </string>
-    <string name="h204g">زچگی گھر  </string>
-    <string name="h204h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
+    <string name="h204a"> گھر </string>
+    <string name="h204b"> تربیتی/ سول ہسپتال </string>
+    <string name="h204c">     ضلعہ/تعلقہ ہسپتال</string>
+    <string name="h204d"> دیہی صحت مرکز </string>
+    <string name="h204e"> بنیادی صحت مرکز </string>
+    <string name="h204f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="h204g"> زچگی گھر </string>
+    <string name="h204h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="h204h2"> خانگی ہسپتال </string>
     <string name="h204i"> خانگی ہسپتال </string>
     <string name="h204j"> خانگی کلینک </string>
     <string name="h204k"> خانگی زچگی گھر </string>
     <string name="h204l"> این جی او صحت مرکز </string>
     <string name="h204m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="h20496">دیگر (وضاحت کریں) </string>
+    <string name="h20496"> دیگر (وضاحت کریں </string>
 
     <string name="h205"> H205:\t آپ کا پہلا طبی معائنہ کس نے کیا تھا ؟ </string>
     <string name="h205a"> ڈاکٹر </string>
@@ -1138,6 +1176,16 @@
     <string name="h205c"> نرس </string>
     <string name="h205d"> سی ایم ڈبلیو (کمیونیٹی مڈوائف) </string>
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
+
+    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
+    <string name="h205aaa"> Counselling on nutrition </string>
+    <string name="h205aab"> Counselling on IYCF And breast feeding </string>
+    <string name="h205aac"> Counselling on family planning </string>
+    <string name="h205aad"> Assessment for complications </string>
+    <string name="h205aae"> Referral to Health Facility </string>
+    <string name="h205aaf"> Treatment for mother </string>
+    <string name="h205aag"> Nutrition supplies </string>
+    <string name="h205aah"> Contraceptive supplies </string>
 
     <string name="h206"> H206:\t کیا آپ کو زچگی کے بعد کی خطرناک علامات / مسائل کے بارے میں معلومات ہے ؟ </string>
     <string name="h206a"> ہاں </string>
@@ -1162,6 +1210,10 @@
     <string name="h208e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h208f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
+    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
+    <string name="h208aaa"> Agree </string>
+    <string name="h208aab"> Disagree </string>
+
     <string name="h209"> H209:\t کیا لیڈی ہیلتھ ورکر نے زچگی کے بعد آپ کے پاس دورہ کیا تھا ؟ </string>
     <string name="h209a"> ہاں </string>
     <string name="h209b"> نہیں </string>
@@ -1174,7 +1226,7 @@
     <string name="h2091e"> کرونا کا ڈر یا خوف </string>
     <string name="h2091f"> سماجی مفاصلا </string>
     <string name="h2091g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-
+    <string name="h2091h"> Not Applicable </string>
 
     <string name="h210"> H210:\t اس نے کب دورہ کیا تھا ؟ </string>
     <string name="h210a"> چوبیس گھنٹوں کے اندر </string>
@@ -1593,6 +1645,7 @@
     <string name="i226d"> نمونیا کے علاج کے لیے مرکز صحت ریفر کیا </string>
     <string name="i226e"> گھریلو / فضائی آلودگی کے نقصانات کے بارے میں بتایا </string>
     <string name="i226f"> نمونیا کی خطرناک علامات کے بارے میں بتایا </string>
+
 
     <string name="j101"> کیا آپ کے پاس کسی سرکاری یا نجی مرکز صحت سے ملا ہوا حفاظتی ٹیکوں کا کارڈ موجود ہے جس میں بچہ / بچی (نام) کو لگنے والے حفاظتی ٹیکوں کا اندراج ہو ؟ J101:\t </string>
     <string name="j101hint"> اگر ہاں: تو برائے مہربانی کیا میں اسے دیکھ سکتا / سکتی ہوں ؟ </string>
@@ -2122,6 +2175,10 @@
     <string name="k101aal"> پمفلٹ / بروشر </string>
     <string name="k101aam"> موبائل فون / اسمارٹ فون </string>
 
+    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
+    <string name="k101aba"> Agree </string>
+    <string name="k101abb"> Disagree </string>
+
     <string name="k102"> K102:\t کیا آپ یا آپ کے شوہر نے حمل کو روکنے کے لئے کبھی کوئی مانع حمل طریقہ کا استعمال کیا ہے ؟ </string>
     <string name="k102a"> ہاں </string>
     <string name="k102b"> نہیں </string>
@@ -2184,6 +2241,7 @@
     <string name="k1072e"> کرونا کا ڈر یا خوف </string>
     <string name="k1072f"> سماجی مفاصلا </string>
     <string name="k1072g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
+    <string name="k1072h">Not Applicable</string>
 
     <string name="k1081"> K108:\t کیا (ایل ایچ ڈبلیو) نے آپ اور آپ کے شوہر کے ساتھ میٹنگ کا بندوبست کیا تھا ؟ </string>
     <string name="k1081a"> ہاں </string>
@@ -2591,7 +2649,7 @@
     <string name="m116c"> سندھی </string>
     <string name="m116d"> بلوچی </string>
     <string name="m116e"> سرائیکی </string>
-    <string name="m116f"> بروہی </string>
+    <string name="m116f"> بروہی</string>
     <string name="m116g"> لاسی </string>
     <string name="m116h"> پشتو </string>
 
@@ -2776,7 +2834,13 @@
     <string name="ah2a">ہاں</string>
     <string name="ah2b">نہیں</string>
     <string name="ah3">AH3:\t آپ مزید کتنے تعلیمی سال مکمل کر لیں گے؟</string>
-    <string name="ah3a">سال</string>
+    <string name="ah3a">Primary(1-5)</string>
+    <string name="ah3b">Middle (6-8)</string>
+    <string name="ah3c">Secondary(9-10)</string>
+    <string name="ah3d">Intermediate</string>
+    <string name="ah3e">Under Graduate</string>
+    <string name="ah3f">Technical Training</string>
+    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
     <string name="ah4">AH4:\t آپ کی عمر کیا تھی جب آپ نے اسکول/ کالج چھوڑا؟</string>
     <string name="ah4a">عمر</string>
     <string name="ah5">AH5:\t آپ کا اسکول سرکاری تھا یا نجی؟</string>
@@ -2895,9 +2959,6 @@
     <string name="ah23b">مہینہ</string>
     <string name="ah23c">سال</string>
     <string name="ah24">AH24:\t پچھلے دو مہینے میں مندرجہ ذیل میں سے آپ کوکوئی عارضہ لاحق ہوا ہے؟</string>
-    <string name="ah2401">سانس کی بیماری</string>
-    <string name="ah2401a">ہاں</string>
-    <string name="ah2401b">نہیں</string>
     <string name="ah2402">اسحال کی بیماری</string>
     <string name="ah2402a">ہاں</string>
     <string name="ah2402b">نہیں</string>
@@ -2928,6 +2989,9 @@
     <string name="ah24011">ان میں سے کچھ بھی نہیں</string>
     <string name="ah24011a">ہاں</string>
     <string name="ah24011b">نہیں</string>
+    <string name="ah24a">Do you think it is important to seek care for the illness you experienced mentioned above?</string>
+    <string name="ah24aa">Agree</string>
+    <string name="ah24ab">Disagree</string>
     <string name="ah25">AH25:\t مندرجہ بالا عارضہ کا علاج کروایا ہے؟</string>
     <string name="ah25a">ہاں</string>
     <string name="ah25b">نہیں</string>
@@ -2968,35 +3032,25 @@
     <string name="ah31e">دُکان پہ</string>
     <string name="ahgntitle">صنفی اقدار:</string>
     <string name="ah3201">AH3201:\t والدین کو چاہیے کہ لڑکا اور لڑکی کے ساتھ یکساں سلوک کریں</string>
-    <string name="ah3201a">بہت زیادہ اتفاق</string>
-    <string name="ah3201b">متفق</string>
-    <string name="ah3201c">غیر متفق</string>
-    <string name="ah3201d">بہت زیادہ اختلاف</string>
-    <string name="ah3201e">معلوم نہیں</string>
+    <string name="ah3201a">متفق</string>
+    <string name="ah3201b">غیر متفق</string>
+    <string name="ah3201c">معلوم نہیں</string>
     <string name="ah3202">AH3202:\t لڑکوں کو زیادہ تعلیم حاصل کرنی چاہئیے</string>
-    <string name="ah3202a">بہت زیادہ اتفاق</string>
-    <string name="ah3202b">متفق</string>
-    <string name="ah3202c">غیر متفق</string>
-    <string name="ah3202d">بہت زیادہ اختلاف</string>
-    <string name="ah3202e">معلوم نہیں</string>
+    <string name="ah3202a">متفق</string>
+    <string name="ah3202b">غیر متفق</string>
+    <string name="ah3202c">معلوم نہیں</string>
     <string name="ah3203">AH3203:\t لڑکیوں کو صرف اس وقت اسکول بھیجنا چاہئیے جب گھر کے کام میں ان کی ضرورت نہ ہو</string>
-    <string name="ah3203a">بہت زیادہ اتفاق</string>
-    <string name="ah3203b">متفق</string>
-    <string name="ah3203c">غیر متفق</string>
-    <string name="ah3203d">بہت زیادہ اختلاف</string>
-    <string name="ah3203e">معلوم نہیں</string>
+    <string name="ah3203a">متفق</string>
+    <string name="ah3203b">غیر متفق</string>
+    <string name="ah3203c">معلوم نہیں</string>
     <string name="ah3204">AH3204:\t لڑکوں کو گھر کے کام میں مدد نہیں کرنی چاہئیے</string>
-    <string name="ah3204a">بہت زیادہ اتفاق</string>
-    <string name="ah3204b">متفق</string>
-    <string name="ah3204c">غیر متفق</string>
-    <string name="ah3204d">بہت زیادہ اختلاف</string>
-    <string name="ah3204e">معلوم نہیں</string>
+    <string name="ah3204a">متفق</string>
+    <string name="ah3204b">غیر متفق</string>
+    <string name="ah3204c">معلوم نہیں</string>
     <string name="ah3205">AH3205:\t اساتذہ کو چائیے کہ لڑکے اور لڑکی کے ساتھ یکساں سلوک کریں</string>
-    <string name="ah3205a">بہت زیادہ اتفاق</string>
-    <string name="ah3205b">متفق</string>
-    <string name="ah3205c">غیر متفق</string>
-    <string name="ah3205d">بہت زیادہ اختلاف</string>
-    <string name="ah3205e">معلوم نہیں</string>
+    <string name="ah3205a">متفق</string>
+    <string name="ah3205b">غیر متفق</string>
+    <string name="ah3205c">معلوم نہیں</string>
     <string name="ahnktitle">غذائی معلومات</string>
     <string name="ah33">AH33:\t کون سے کھانے میں فولاد پایا جاتا ہے؟</string>
     <string name="ah33a">سبزیاں (ہری سبزی گاجر)</string>
@@ -3077,6 +3131,9 @@
     <string name="ah38">AH38:\t کیا آپ کو تولیدی صحت کے بارے میں جانتے ہیں؟</string>
     <string name="ah38a">ہاں</string>
     <string name="ah38b">نہیں</string>
+    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
+    <string name="ah38aaa">Agree</string>
+    <string name="ah38aab">Disagree</string>
     <string name="ah39">AH39:\t بلاغت کے وقت جسم کے خدرخال میں کیا تبدیلیاں آتی ہیں؟</string>
     <string name="ah39a">جسمانی تبدیلی</string>
     <string name="ah39b">ذہنی تبدیلی</string>
@@ -3221,6 +3278,106 @@
     <string name="un07c">مہینے پہلے</string>
     <string name="un07d">سال مہینے</string>
     <string name="un07e">آخری پیدائش سے پہلے ہوئے تھے</string>
+
+
+    <!--kap changes by hamza...-->
+    <string name="f001">مرکزِ صحت میں حمل کی دیکھ بھال کی اہمیت، کیا آپ جانتی ہیں؟</string>
+    <string name="f001a">ہاں</string>
+    <string name="f001b">نہیں</string>
+    <string name="f002">کیا آپ سمجھتی ہیں کہ حمل کی دیکھ بھال  مرکزِصحت میں ضروری ہے؟</string>
+    <string name="f002a">متفق</string>
+    <string name="f002b">غیر متفق</string>
+    <string name="f12801">کیا آپ سمجھتی ہیں کہ حمل کے دوران خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
+    <string name="f12801a">متفق</string>
+    <string name="f12801b">غیر متفق</string>
+    <string name="f13200">کیا آپ جانتی ہیں حمل کے دوران کھانے پینے کی عادات تبدیل ہوتی ہیں؟</string>
+    <string name="f13200a">ہاں</string>
+    <string name="f13200b">نہیں</string>
+    <string name="f13201">کیا آپ سمجھتی ہیں کہ حمل کے دوران کھانے کی عادات تبدیل ہونی چاہئیں؟</string>
+    <string name="f13201a">متفق</string>
+    <string name="f13201b">غیر متفق</string>
+    <string name="f13300">کیا آپ جانتی ہیں کہ حمل کے دوران گھریلو کام کاج کی نوعیت  تبدیل ہوتی ہے؟</string>
+    <string name="f13300a">ہاں</string>
+    <string name="f13300b">نہیں</string>
+    <string name="f13301">کیا آپ سمجھتی ہیں کہ حمل کے دوران گھریلو کام کاج کی نوعیت  تبدیل ہونی چاہئیے؟</string>
+    <string name="f13301a">متفق</string>
+    <string name="f13301b">غیر متفق</string>
+    <string name="h10500">کیا آپ جانتی ہیں کہ نوزائیدہ کو پیدائش کے بعد خشک کرتے ہیں؟</string>
+    <string name="h10500a">ہاں</string>
+    <string name="h10500b">نہیں</string>
+    <string name="h10501">کیا آپ سمجھتی ہیں کہ نوزائیدہ کو پیدائش کے بعد خشک کرنا چاہئیے؟</string>
+    <string name="h10501a">مفق</string>
+    <string name="h10501b">غیر متفق</string>
+    <string name="h10800">کیا آپ جانتی ہیں کہ ناڑو کی دیکھ بھال کرنی ہوتی ہے؟</string>
+    <string name="h10800a">ہاں</string>
+    <string name="h10800b">نہیں</string>
+    <string name="h10801">کیا آپ ناڑو کی دیکھ بھال کی اہمیت سمجھتی ہیں؟</string>
+    <string name="h10801a">متفق</string>
+    <string name="h10801b">غیر متفق</string>
+    <string name="h10900">کیا آپ جانتی ہیں کہ ناڑو پہ کچھ لگاتے ہیں؟</string>
+    <string name="h10900a">ہاں</string>
+    <string name="h10900b">نہیں</string>
+    <string name="h10901">کیا آپ سمجھتی ہیں کہ ناڑو پہ کچھ لگانا چاہئیے؟</string>
+    <string name="h10901a">متفق</string>
+    <string name="h10901b">غیر متفق</string>
+    <string name="h11000">کیا آپ نوزائیدہ کو ماں کی جلد سے جلد ملانے کے عمل کو جانتی ہیں، پیدائش کے بعد ؟</string>
+    <string name="h11000a">ہاں</string>
+    <string name="h11000b">نہیں</string>
+    <string name="h11001">کیا آپ  نوزائیدہ کو ماں کی جلد سے جلد ملانے کی اہمیت کو سمجھتی ہیں  ؟</string>
+    <string name="h11001a">متفق</string>
+    <string name="h11001b">غیر متفق</string>
+    <string name="h11200">کیا آپ جانتی ہیں کہ بچے کو ما ں کا دودھ کب پلانا چاہئے؟</string>
+    <string name="h11200a">ہاں</string>
+    <string name="h11200b">نہیں</string>
+    <string name="h11201">کیا آپ بچے کو ماں کا دودھ جلد ی پلانے کی اہمیت سمجھتی ہیں؟</string>
+    <string name="h11201a">متفق</string>
+    <string name="h11201b">غیر متفق</string>
+    <string name="h11300">کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ(کلوسٹرم) کی اہمیت آپ  جانتی ہیں؟</string>
+    <string name="h11300a">ہاں</string>
+    <string name="h11300b">نہیں</string>
+    <string name="h11301">کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ(کلوسٹرم) نوزائیدہ کو دینا چاہئیے؟</string>
+    <string name="h11301a">متفق</string>
+    <string name="h11301b">غیر متفق</string>
+    <string name="h11500">کیا آپ نے صرف اور صرف ماں کا دودھ پلانے کے بارے میں جانتی ہیں؟</string>
+    <string name="h11500a">ہاں</string>
+    <string name="h11500b">نہیں</string>
+    <string name="h11501">کیا آپ سمجھتی ہیں کہ صرف اور صرف ماں کا دودھ پلانا ہی نوزائیدہ کے لئے ضروری ہے؟</string>
+    <string name="h11501a">متفق</string>
+    <string name="h11501b">غیر متفق</string>
+    <string name="h12500">کیا آپ نوزائیدہ  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h12500a">ہاں</string>
+    <string name="h12500b">نہیں</string>
+    <string name="h12501">کیا آپ نوزائیدہ  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h12501a">متفق</string>
+    <string name="h12501b">غیر متفق</string>
+    <string name="h13601">کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
+    <string name="h13601a">متفق</string>
+    <string name="h13601b">غیر متفق</string>
+    <string name="h20200">کیا آپ ماں کا   بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h20200a">ہاں</string>
+    <string name="h20200b">نہیں</string>
+    <string name="h20201">کیا آپ ماں کے  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h20201a">متفق</string>
+    <string name="h20201b">غیر متفق</string>
+    <string name="h20801">کیا آپ پیدائش کے بعد خطرناک علامات کے علاج کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="h20801a">متفق</string>
+    <string name="h20801b">غیر متفق</string>
+    <string name="j10100">بچے کی صحت کے لئے کیا آپ حفاظتی ٹیکوں  کی اہمیت جانتی ہیں؟</string>
+    <string name="j10100a">ہاں</string>
+    <string name="j10100b">نہیں</string>
+    <string name="j10101">کیا آپ سمجھتی ہیں بچوں کو حفاظتی ٹیکے لگوانے چاہئیے؟</string>
+    <string name="j10101a">متفق</string>
+    <string name="j10101b">غیر متفق</string>
+    <string name="ah2401aa">کیا آپ مندرجہ بالابیماریوں کا علاج کروانا ضروری سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah2401aaa">متفق</string>
+    <string name="ah2401aab">غیر متفق</string>
+    <string name="ah3801">کیا آپ اس عمر میں  تولیدی صحت کے بارے میں جاننے  کی اہمیت کو سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah3801a">متفق</string>
+    <string name="ah3801b">غیر متفق</string>
+    <string name="k10101">کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟</string>
+    <string name="k10101a">متفق</string>
+    <string name="k10101b">غیر متفق</string>
+
 
     <string name='Q_ah59'>ah59</string>
     <string name='Q_ah0title'>ah0title</string>

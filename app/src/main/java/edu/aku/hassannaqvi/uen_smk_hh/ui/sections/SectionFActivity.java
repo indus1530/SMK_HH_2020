@@ -138,6 +138,14 @@ public class SectionFActivity extends AppCompatActivity {
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
 
+        json.put("f001", bi.f001a.isChecked() ? "1"
+                : bi.f001b.isChecked() ? "2"
+                : "-1");
+
+        json.put("f002", bi.f002a.isChecked() ? "1"
+                : bi.f002b.isChecked() ? "2"
+                : "-1");
+
         json.put("f101", bi.f101a.isChecked() ? "1" :
                 bi.f101b.isChecked() ? "2" : "0");
 

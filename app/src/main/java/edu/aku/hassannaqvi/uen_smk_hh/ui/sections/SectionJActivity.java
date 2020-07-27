@@ -206,6 +206,14 @@ public class SectionJActivity extends AppCompatActivity {
         /*json.put("j_res_fm_uid", res_child.getUid());
         json.put("j_res_fm_serial", res_child.getSerialno());*/
 
+        json.put("j10100", bi.j10100a.isChecked() ? "1"
+                : bi.j10100b.isChecked() ? "2"
+                : "-1");
+
+        json.put("j10101", bi.j10101a.isChecked() ? "1"
+                : bi.j10101b.isChecked() ? "2"
+                : "-1");
+
         json.put("j101", bi.j101a.isChecked() ? "1" :
                 bi.j101b.isChecked() ? "2" :
                         bi.j101c.isChecked() ? "3" : "0");

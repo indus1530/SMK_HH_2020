@@ -26,6 +26,84 @@
                 style="@style/textView3Head"
                 android:text="@string/d102" />
 
+            <!-- f001  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVf001"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/f001" />
+
+                    <RadioGroup
+                        android:id="@+id/f001"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/f001a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/f001b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- f002  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVf002"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/f002" />
+
+                    <RadioGroup
+                        android:id="@+id/f002"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/f002a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/f002a" />
+
+                        <RadioButton
+                            android:id="@+id/f002b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/f002b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
             <!-- f101  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVf101"
@@ -199,14 +277,14 @@
                             android:orientation="vertical"
                             android:tag="0">
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f102h1" />
+
                             <CheckBox
                                 android:id="@+id/f102a"
                                 style="@style/checkbox"
                                 android:text="@string/f102a" />
-
-                            <TextView
-                                style="@style/i_textviewhint"
-                                android:text="@string/f102h1" />
 
                             <CheckBox
                                 android:id="@+id/f102b"
@@ -238,14 +316,14 @@
                                 style="@style/checkbox"
                                 android:text="@string/f102g" />
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f102h2" />
+
                             <CheckBox
                                 android:id="@+id/f102h"
                                 style="@style/checkbox"
                                 android:text="@string/f102h" />
-
-                            <TextView
-                                style="@style/i_textviewhint"
-                                android:text="@string/f102h2" />
 
                             <CheckBox
                                 android:id="@+id/f102i"

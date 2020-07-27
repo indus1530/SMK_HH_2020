@@ -71,16 +71,6 @@
                             style="@style/radiobutton"
                             android:text="@string/ah3201c" />
 
-                        <RadioButton
-                            android:id="@+id/ah3201d"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3201d" />
-
-                        <RadioButton
-                            android:id="@+id/ah3201e"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3201e" />
-
                     </RadioGroup>
 
                 </LinearLayout>
@@ -119,16 +109,6 @@
                             android:id="@+id/ah3202c"
                             style="@style/radiobutton"
                             android:text="@string/ah3202c" />
-
-                        <RadioButton
-                            android:id="@+id/ah3202d"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3202d" />
-
-                        <RadioButton
-                            android:id="@+id/ah3202e"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3202e" />
 
                     </RadioGroup>
 
@@ -169,16 +149,6 @@
                             style="@style/radiobutton"
                             android:text="@string/ah3203c" />
 
-                        <RadioButton
-                            android:id="@+id/ah3203d"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3203d" />
-
-                        <RadioButton
-                            android:id="@+id/ah3203e"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3203e" />
-
                     </RadioGroup>
 
                 </LinearLayout>
@@ -218,16 +188,6 @@
                             style="@style/radiobutton"
                             android:text="@string/ah3204c" />
 
-                        <RadioButton
-                            android:id="@+id/ah3204d"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3204d" />
-
-                        <RadioButton
-                            android:id="@+id/ah3204e"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3204e" />
-
                     </RadioGroup>
 
                 </LinearLayout>
@@ -266,16 +226,6 @@
                             android:id="@+id/ah3205c"
                             style="@style/radiobutton"
                             android:text="@string/ah3205c" />
-
-                        <RadioButton
-                            android:id="@+id/ah3205d"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3205d" />
-
-                        <RadioButton
-                            android:id="@+id/ah3205e"
-                            style="@style/radiobutton"
-                            android:text="@string/ah3205e" />
 
                     </RadioGroup>
 
