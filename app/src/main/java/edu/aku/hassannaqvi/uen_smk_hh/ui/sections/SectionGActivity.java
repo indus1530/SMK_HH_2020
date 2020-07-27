@@ -148,9 +148,9 @@ public class SectionGActivity extends AppCompatActivity {
                 bi.fldGrpCVg121.setVisibility(View.VISIBLE);
             }*/
 
-            if (checkedId == bi.g119c.getId()) {
+            if (checkedId == bi.g119b.getId() || checkedId == bi.g119c.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVg120);
-            } else {
+            } else if (checkedId == bi.g119a.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVg121);
             }
         });

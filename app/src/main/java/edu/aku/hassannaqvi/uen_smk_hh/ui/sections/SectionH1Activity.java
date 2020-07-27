@@ -135,6 +135,15 @@ public class SectionH1Activity extends AppCompatActivity {
             }
         });
 
+        //h112
+        bi.h112.setOnCheckedChangeListener((radioGroup, i) -> {
+
+            if (i == bi.h112b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSecH01);
+                Clear.clearAllFields(bi.fldGrpSecH02);
+            }
+        });
+
 
     }
 

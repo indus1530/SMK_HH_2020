@@ -608,6 +608,16 @@
     <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="f13196"> Other (specify) </string>
 
+    <string name="f132"> F132:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
+    <string name="f132a"> Yes, more than usual </string>
+    <string name="f132b"> Yes, less than usual </string>
+    <string name="f132c"> Remains Same </string>
+
+    <string name="f133"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
+    <string name="f133a"> Yes, more than usual </string>
+    <string name="f133b"> Yes, less than usual </string>
+    <string name="f133c"> Remains Same </string>
+
     <string name="f134"> F134:\t What preparedness measures did you take for {NAME}’s birth ? </string>
     <string name="f134a"> Selection of birth attendant </string>
     <string name="f134b"> Selection of health facility to go in case of complication </string>

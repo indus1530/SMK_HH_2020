@@ -616,31 +616,15 @@
     <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="f13196"> Other (specify) </string>
 
-    <string name="f132"> F132:\t Do you know that diet/eating habit change during pregnancy? </string>
-    <string name="f132y"> Yes </string>
-    <string name="f132n"> No </string>
+    <string name="f132"> F132:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
+    <string name="f132a"> Yes, more than usual </string>
+    <string name="f132b"> Yes, less than usual </string>
+    <string name="f132c"> Remains Same </string>
 
-    <string name="f132a"> F132A:\t Do you think diet/eating habit should be changed during the pregnancy? </string>
-    <string name="f132aa"> Agree </string>
-    <string name="f132ab"> Disagree </string>
-
-    <string name="f132b"> F133:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
-    <string name="f132ba"> Yes, more than usual </string>
-    <string name="f132bb"> Yes, less than usual </string>
-    <string name="f132bc"> Remains Same </string>
-
-    <string name="f133"> F133:\t Do you know that nature of your household work (physical exertion) change during the pregnancy with {NAME} ? </string>
-    <string name="f133y"> Yes </string>
-    <string name="f133n"> No </string>
-
-    <string name="f133a"> F133:\t Do you think the nature of your household work (physical exertion) should be changed during the pregnancy with {NAME}? </string>
-    <string name="f133aa"> Agree </string>
-    <string name="f133ab"> Disagree </string>
-
-    <string name="f133b"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
-    <string name="f133ba"> Yes, more than usual </string>
-    <string name="f133bb"> Yes, less than usual </string>
-    <string name="f133bc"> Remains Same </string>
+    <string name="f133"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
+    <string name="f133a"> Yes, more than usual </string>
+    <string name="f133b"> Yes, less than usual </string>
+    <string name="f133c"> Remains Same </string>
 
     <string name="f134"> F134:\t توھان (نالو) جي پيدائش لاءِ ڪھڙا اُپاءَ ورتا / تياريون ڪيون؟  جواب پڙھي ٻڌايو (ھڪ کان وڌيڪ جواب ٿي سگھن ٿا)</string>
     <string name="f134a"> ڊليوري ڪرائيندڙ جي چونڊ </string>

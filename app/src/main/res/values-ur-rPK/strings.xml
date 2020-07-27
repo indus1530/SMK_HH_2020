@@ -600,31 +600,15 @@
     <string name="f131m"> راستے میں صحت مرکز جاتے وقت </string>
     <string name="f13196"> دیگر (وضاحت کریں </string>
 
-    <string name="f132"> F132:\t Do you know that diet/eating habit change during pregnancy? </string>
-    <string name="f132y"> Yes </string>
-    <string name="f132n"> No </string>
+    <string name="f132"> F132:\t کیا آپ نے(نام) کی پیدائش سے قبل حمل کے دوران اپنی غذا/کھانے پینے کی عادات میں تبدیلی کی تھی؟ </string>
+    <string name="f132a"> ہاں،معمول سے زیادہ </string>
+    <string name="f132b"> ہاں،معمول سے کم </string>
+    <string name="f132c"> کوئی تبدیلی نہیں کی </string>
 
-    <string name="f132a"> F132A:\t Do you think diet/eating habit should be changed during the pregnancy? </string>
-    <string name="f132aa"> Agree </string>
-    <string name="f132ab"> Disagree </string>
-
-    <string name="f132b"> F133:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>
-    <string name="f132ba"> Yes, more than usual </string>
-    <string name="f132bb"> Yes, less than usual </string>
-    <string name="f132bc"> Remains Same </string>
-
-    <string name="f133"> F133:\t Do you know that nature of your household work (physical exertion) change during the pregnancy with {NAME} ? </string>
-    <string name="f133y"> Yes </string>
-    <string name="f133n"> No </string>
-
-    <string name="f133a"> F133:\t Do you think the nature of your household work (physical exertion) should be changed during the pregnancy with {NAME}? </string>
-    <string name="f133aa"> Agree </string>
-    <string name="f133ab"> Disagree </string>
-
-    <string name="f133b"> F133:\t Did the nature of your household work (physical exertion) change during the pregnancy with {NAME}? </string>
-    <string name="f133ba"> Yes, more than usual </string>
-    <string name="f133bb"> Yes, less than usual </string>
-    <string name="f133bc"> Remains Same </string>
+    <string name="f133"> F133:\t کیا آپ نے(نام) کی پیدائش سے قبل حمل کے دوران گھر کے کام کاج (جسمانی مشقت)میں کوئی  تبدیلی کی تھی؟ </string>
+    <string name="f133a"> ہاں،معمول سے زیادہ </string>
+    <string name="f133b"> ہاں،معمول سے کم </string>
+    <string name="f133c"> کوئی تبدیلی نہیں کی </string>
 
     <string name="f134"> F134:\t (نام) کی پیدائش کے لئے آپ نے کیا اقدامات کئے تھے ؟ جوابات پڑھیں، ایک سے زیادہ جوابات آسکتے ہیں </string>
     <string name="f134a"> ڈاکٹر کا انتخاب </string>
