@@ -518,8 +518,8 @@
     <string name="f123e"> پیدائش سے پہلے تیاری کی مشاورت </string>
     <string name="f123f"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
     <string name="f123g"> زچگی کے دوران خطرناک علامات کی آگاہی دینا </string>
-    <string name="f123h"> Contraceptive Supplies </string>
-    <string name="f123i"> Informed about precautions of Corona </string>
+    <string name="f123h"> Contraceptive گولیاں فراہم کرن </string>
+    <string name="f123i"> کرونا کی وبا کی  احتیاطی تدابیر کےبارے میں معلومات </string>
     <string name="f12396"> دیگر وضآحت کریں </string>
 
     <string name="f124"> F124:\t کیاآپ نے(نام)کی پیدائش سےقبل اپنےحمل کے دوران خطرناک علامات/مسائل کے بارے میں معلومات حاصل کی تھیں؟ </string>
@@ -1579,11 +1579,11 @@
 
     <string name="i221"> I221:\t (نام) کی کھانسی، بخار اور سانس کی تیزی کا علاج کروانے پر کتنا خرچ آیا تھا ؟ </string>
 
-    <string name="i222"> کیا آپ کو نمونیا کی خطرناک علامات کے بارے میں معلوم ہے ؟َ I222:\t </string>
+    <string name="i222">I222:\t کیا آپ کو نمونیا کی خطرناک علامات کے بارے میں معلوم ہے ؟َ </string>
     <string name="i222a"> ہاں </string>
     <string name="i222b"> نہیں </string>
 
-    <string name="i223"> کیا آپ نمونیا کی خطرناک علامات کے بارے میں بتا سکتی ہیں ؟ I223:\t </string>
+    <string name="i223">I223:\t کیا آپ نمونیا کی خطرناک علامات کے بارے میں بتا سکتی ہیں ؟ </string>
     <string name="i223a"> پسلیاں چلنا </string>
     <string name="i223b"> کچھ بھی نہ پی سکنا </string>
     <string name="i223c"> مسلسل قے کرنا </string>
@@ -1592,7 +1592,7 @@
     <string name="i223f"> سینے میں خرخراہٹ کی آواز </string>
     <string name="i223g"> شدید غذائی کمی </string>
 
-    <string name="i224"> نمونیا کی خطرناک علامات کی معلومات آپ کو کس نے دی تھی ؟ سب پر نشان لگائیں جو لاگو ہوتے ہیں I224:\t </string>
+    <string name="i224">I224:\t  نمونیا کی خطرناک علامات کی معلومات آپ کو کس نے دی تھی ؟ سب پر نشان لگائیں جو لاگو ہوتے ہیں </string>
     <string name="i224a"> ڈاکٹر </string>
     <string name="i224b"> ایل ایچ وی(لیڈی ہیلتھ وزیٹر) </string>
     <string name="i224c"> نرس </string>
@@ -1613,7 +1613,7 @@
     <string name="i2252f"> سماجی مفاصلا </string>
     <string name="i2252g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
 
-    <string name="i226"> لیڈی ہیلتھ ورکر نے کیا خدمات فراہم کی تھیں ؟ I226:\t </string>
+    <string name="i226">I226:\t لیڈی ہیلتھ ورکر نے کیا خدمات فراہم کی تھیں ؟  </string>
     <string name="i226a"> ایموکسل ڈی-ٹی فراہم کیا تھا </string>
     <string name="i226b"> پیناڈول (دوا / سیرپ) دیا تھا </string>
     <string name="i226c"> اے-آر-آئی ٹائمر کی مدد سے بچہ کی سانس کی رفتار گنیں </string>

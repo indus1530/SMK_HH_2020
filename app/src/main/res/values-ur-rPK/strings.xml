@@ -2959,6 +2959,9 @@
     <string name="ah23b">مہینہ</string>
     <string name="ah23c">سال</string>
     <string name="ah24">AH24:\t پچھلے دو مہینے میں مندرجہ ذیل میں سے آپ کوکوئی عارضہ لاحق ہوا ہے؟</string>
+    <string name="ah2401">سانس کی بیماری</string>
+    <string name="ah2401a">ہاں</string>
+    <string name="ah2401b">نہیں</string>
     <string name="ah2402">اسحال کی بیماری</string>
     <string name="ah2402a">ہاں</string>
     <string name="ah2402b">نہیں</string>
