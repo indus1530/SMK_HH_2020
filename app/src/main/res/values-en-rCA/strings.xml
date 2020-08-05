@@ -607,9 +607,6 @@
     <string name="f131h2"> Private medical sector </string>
     <string name="f131i"> Private hospital </string>
     <string name="f131j"> Private clinic </string>
-    <string name="f131k"> Private maternity home </string>
-    <string name="f131l"> NGO HEALTH FACILITY </string>
-    <string name="f131m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="f13196"> Other (specify) </string>
 
     <string name="f132"> F132:\t Did your diet/eating habit change during the pregnancy with {NAME}?  </string>

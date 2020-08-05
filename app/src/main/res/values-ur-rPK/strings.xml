@@ -587,21 +587,18 @@
 
 
     <string name="f131"> F131:\t آپ(نام) کی پیدائش سے قبل حمل کے دوران پیش آنے والی اوپر بیان کی گئی علامات/مسائل کی دیکھ بھال کے لئے  کہاں گئے تھے؟ </string>
-    <string name="f131h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="f131a"> گھر </string>
-    <string name="f131b"> تربیتی/ سول ہسپتال </string>
-    <string name="f131c">     ضلعہ/تعلقہ ہسپتال</string>
-    <string name="f131d"> دیہی صحت مرکز </string>
-    <string name="f131e"> بنیادی صحت مرکز </string>
-    <string name="f131f"> ماں اور بچے کا صحت مرکز </string>
-    <string name="f131g"> زچگی گھر </string>
-    <string name="f131h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
-    <string name="f131h2"> خانگی ہسپتال </string>
-    <string name="f131i"> خانگی ہسپتال </string>
-    <string name="f131j"> خانگی کلینک </string>
-    <string name="f131k"> خانگی زچگی گھر </string>
-    <string name="f131l"> این جی او صحت مرکز </string>
-    <string name="f131m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="f131h1"> سرکاری مرکز صحت </string>
+    <string name="f131a"> سول ہسپتال / ٹرشری </string>
+    <string name="f131b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="f131c">رورل ہیلتھ سینٹر</string>
+    <string name="f131d"> بیسک ہیلتھ یونٹ </string>
+    <string name="f131e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="f131f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="f131h2"> نجی مرکز صحت </string>
+    <string name="f131g"> پراوٹ ہسپتال </string>
+    <string name="f131h">پرائوٹ کلینک</string>
+    <string name="f131i"> پرائوٹ میٹرنٹی ہوم </string>
+    <string name="f131j"> رفاہی ادارہ </string>
     <string name="f13196"> دیگر (وضاحت کریں </string>
 
     <string name="f132"> F132:\t کیا آپ نے(نام) کی پیدائش سے قبل حمل کے دوران اپنی غذا/کھانے پینے کی عادات میں تبدیلی کی تھی؟ </string>

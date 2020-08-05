@@ -174,6 +174,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <LinearLayout
                 android:id="@+id/fldGrp2223"
                 android:layout_width="match_parent"
@@ -504,7 +505,6 @@
              </LinearLayout>
 
 
-
             <!-- f128  CheckBox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVf128"
@@ -784,14 +784,14 @@
                             android:id="@+id/f131"
                             style="@style/radiogroup">
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f131h1" />
+
                             <RadioButton
                                 android:id="@+id/f131a"
                                 style="@style/radiobutton"
                                 android:text="@string/f131a" />
-
-                            <TextView
-                                style="@style/i_textviewhint"
-                                android:text="@string/f131h1" />
 
                             <RadioButton
                                 android:id="@+id/f131b"
@@ -818,6 +818,10 @@
                                 style="@style/radiobutton"
                                 android:text="@string/f131f" />
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/f131h2" />
+
                             <RadioButton
                                 android:id="@+id/f131g"
                                 style="@style/radiobutton"
@@ -828,10 +832,6 @@
                                 style="@style/radiobutton"
                                 android:text="@string/f131h" />
 
-                            <TextView
-                                style="@style/i_textviewhint"
-                                android:text="@string/f131h2" />
-
                             <RadioButton
                                 android:id="@+id/f131i"
                                 style="@style/radiobutton"
@@ -841,21 +841,6 @@
                                 android:id="@+id/f131j"
                                 style="@style/radiobutton"
                                 android:text="@string/f131j" />
-
-                            <RadioButton
-                                android:id="@+id/f131k"
-                                style="@style/radiobutton"
-                                android:text="@string/f131k" />
-
-                            <RadioButton
-                                android:id="@+id/f131l"
-                                style="@style/radiobutton"
-                                android:text="@string/f131l" />
-
-                            <RadioButton
-                                android:id="@+id/f131m"
-                                style="@style/radiobutton"
-                                android:text="@string/f131m" />
 
                             <RadioButton
                                 android:id="@+id/f13196"
@@ -878,44 +863,6 @@
 
             </LinearLayout>
 
-            <!-- f132  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVf132"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/f132" />
-
-                    <RadioGroup
-                        android:id="@+id/f132"
-                        style="@style/radiogroup">
-
-                        <RadioButton
-                            android:id="@+id/f132a"
-                            style="@style/radiobutton"
-                            android:text="@string/f132a" />
-
-                        <RadioButton
-                            android:id="@+id/f132b"
-                            style="@style/radiobutton"
-                            android:text="@string/f132b" />
-
-                        <RadioButton
-                            android:id="@+id/f132c"
-                            style="@style/radiobutton"
-                            android:text="@string/f132c" />
-
-                    </RadioGroup>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
             <!--f13200  Radio-->
             <androidx.cardview.widget.CardView
@@ -989,9 +936,9 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- f133  Radio   -->
+            <!-- f132  Radio   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVf133"
+                android:id="@+id/fldGrpCVf132"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1001,26 +948,26 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/f133" />
+                        android:text="@string/f132" />
 
                     <RadioGroup
-                        android:id="@+id/f133"
+                        android:id="@+id/f132"
                         style="@style/radiogroup">
 
                         <RadioButton
-                            android:id="@+id/f133a"
+                            android:id="@+id/f132a"
                             style="@style/radiobutton"
-                            android:text="@string/f133a" />
+                            android:text="@string/f132a" />
 
                         <RadioButton
-                            android:id="@+id/f133b"
+                            android:id="@+id/f132b"
                             style="@style/radiobutton"
-                            android:text="@string/f133b" />
+                            android:text="@string/f132b" />
 
                         <RadioButton
-                            android:id="@+id/f133c"
+                            android:id="@+id/f132c"
                             style="@style/radiobutton"
-                            android:text="@string/f133c" />
+                            android:text="@string/f132c" />
 
                     </RadioGroup>
 
@@ -1098,6 +1045,45 @@
                             android:text="@string/f13301b" />
                     </RadioGroup>
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- f133  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVf133"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/f133" />
+
+                    <RadioGroup
+                        android:id="@+id/f133"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/f133a"
+                            style="@style/radiobutton"
+                            android:text="@string/f133a" />
+
+                        <RadioButton
+                            android:id="@+id/f133b"
+                            style="@style/radiobutton"
+                            android:text="@string/f133b" />
+
+                        <RadioButton
+                            android:id="@+id/f133c"
+                            style="@style/radiobutton"
+                            android:text="@string/f133c" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- f134  CheckBox   -->
