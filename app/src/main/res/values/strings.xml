@@ -797,8 +797,9 @@
     <string name="g125"> G125:\t کیاآپ کے بچے کی پیدائش کے وقت ایل-ایچ-ڈبلیو موجود تھی ؟ </string>
     <string name="g125a"> ہاں </string>
     <string name="g125b"> نہیں </string>
+    <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
-    <string name="g1251"> لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا؟ G125a:\t </string>
+    <string name="g1251">G125a:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا؟ </string>
     <string name="g1251a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
     <string name="g1251b"> ایل ایچھ ڈبلیوکرونا کی وجہ سےوزٹ نہیں کرسکی </string>
     <string name="g1251c"> ایل ایچھ ڈبلیوآئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -806,6 +807,7 @@
     <string name="g1251e"> کرونا کا ڈریا خوف </string>
     <string name="g1251f"> سماجی مفاصلا </string>
     <string name="g1251g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
+    <string name="g1251h"> لاگو نہیں ہوتا </string>
 
 
     <string name="g126"> G126:\t کیا لیڈی ہیلتھ ورکر نے آپ کو صاف ڈیلوری کٹ فراہم کی تھی ؟ </string>

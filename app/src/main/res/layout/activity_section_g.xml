@@ -1022,7 +1022,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg120"
                     style="@style/cardView"
-                    android:visibility='@{g119b.checked || g119c.checked ? View.GONE : View.VISIBLE}'>
+                    android:visibility='@{g119a.checked || g119b.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1095,7 +1095,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg121"
                     style="@style/cardView"
-                    android:visibility='@{g119a.checked? View.GONE : View.VISIBLE}'>
+                    android:visibility='@{g119a.checked || g119b.checked ? View.GONE : View.VISIBLE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1399,6 +1399,13 @@
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/g125c"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/g125c" />
+
                         </RadioGroup>
 
                     </LinearLayout>
@@ -1429,18 +1436,23 @@
                             <CheckBox
                                 android:id="@+id/g1251a"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251a" />
 
                             <CheckBox
                                 android:id="@+id/g1251b"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251b" />
 
                             <CheckBox
                                 android:id="@+id/g1251c"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251c" />
-
 
                         </LinearLayout>
 
@@ -1454,22 +1466,36 @@
                             <CheckBox
                                 android:id="@+id/g1251d"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251d" />
 
                             <CheckBox
                                 android:id="@+id/g1251e"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251e" />
 
                             <CheckBox
                                 android:id="@+id/g1251f"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251f" />
 
                             <CheckBox
                                 android:id="@+id/g1251g"
                                 style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251g" />
+
+                            <CheckBox
+                                android:id="@+id/g1251h"
+                                style="@style/checkbox"
+                                android:tag="-1"
+                                android:text="@string/g1251h" />
 
                         </LinearLayout>
 

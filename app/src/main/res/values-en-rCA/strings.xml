@@ -805,6 +805,7 @@
     <string name="g125"> G125:\t Was LHW present at the time of your delivery ? </string>
     <string name="g125a"> Yes </string>
     <string name="g125b"> No </string>
+    <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
     <string name="g1251"> G125a:\t Reasons for not visiting LHW? </string>
     <string name="g1251a"> LHW usually don’t visit </string>
@@ -814,6 +815,7 @@
     <string name="g1251e"> I am afraid to contact with Corona </string>
     <string name="g1251f"> Social distancing </string>
     <string name="g1251g"> PPE not available at home </string>
+    <string name="g1251h"> لاگو نہیں ہوتا </string>
 
 
     <string name="g126"> G126:\t Did LHW provide you clean delivery kit ? </string>

@@ -801,6 +801,7 @@
     <string name="g125"> G125:\t نالو) ڇا ڊليوري جي وقت ليڊي ھيلٿ ورڪر موجود ھئي ؟)</string>
     <string name="g125a"> ھا </string>
     <string name="g125b"> نه </string>
+    <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
     <string name="g1251"> G125a:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="g1251a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي ؟ </string>
@@ -810,6 +811,7 @@
     <string name="g1251e"> ڪرونا جو خوف / ڊپ </string>
     <string name="g1251f"> سماجي مفاصلو </string>
     <string name="g1251g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
+    <string name="g1251h"> لاگو نہیں ہوتا </string>
 
 
     <string name="g126"> G126:\t ڇا ليڊي ھيلٿ ورڪر توھان کي ڪلين ڊليوري ڪٽ مھيا ڪئي ؟</string>

@@ -148,10 +148,10 @@ public class SectionGActivity extends AppCompatActivity {
                 bi.fldGrpCVg121.setVisibility(View.VISIBLE);
             }*/
 
-            if (checkedId == bi.g119b.getId() || checkedId == bi.g119c.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg120);
-            } else if (checkedId == bi.g119a.getId()) {
+            if (checkedId == bi.g119a.getId() || checkedId == bi.g119b.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVg121);
+            } else if (checkedId == bi.g119b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg120);
             }
         });
 
@@ -397,6 +397,7 @@ public class SectionGActivity extends AppCompatActivity {
 
         json.put("g125", bi.g125a.isChecked() ? "1"
                 : bi.g125b.isChecked() ? "2"
+                : bi.g125c.isChecked() ? "3"
                 : "0");
 
         json.put("g125aa", bi.g1251a.isChecked() ? "1" : "0");
@@ -406,6 +407,7 @@ public class SectionGActivity extends AppCompatActivity {
         json.put("g125ae", bi.g1251e.isChecked() ? "3b" : "0");
         json.put("g125af", bi.g1251f.isChecked() ? "3c" : "0");
         json.put("g125ag", bi.g1251g.isChecked() ? "3d" : "0");
+        json.put("g125ah", bi.g1251h.isChecked() ? "4" : "0");
 
         json.put("g126", bi.g126a.isChecked() ? "1" :
                 bi.g126b.isChecked() ? "2" :
