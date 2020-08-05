@@ -852,15 +852,17 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/g117a"
                                     style="@style/EditTextNum"
-                                    android:enabled="@{g11798.checked ? false : true}"
+
                                     android:hint="@string/days"
                                     android:maxLength="1"
-                                    android:text='@{g11798.checked ? "" : g117a.getText().toString()}'
+
                                     android:textColor="@android:color/black"
                                     app:defaultValue="0"
                                     app:maxValue="3"
                                     app:minValue="1"
                                     app:type="range" />
+                               <!-- android:enabled="@{g11798.checked ? false : true}"
+                                android:text='@{g11798.checked ? "" : g117a.getText().toString()}'-->
 
                             </LinearLayout>
 
@@ -877,15 +879,17 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/g117b"
                                     style="@style/EditTextNum"
-                                    android:enabled="@{g11798.checked ? false : true}"
+
                                     android:hint="@string/hours"
                                     android:maxLength="2"
-                                    android:text='@{g11798.checked ? "" : g117b.getText().toString()}'
+
                                     android:textColor="@android:color/black"
                                     app:defaultValue="00"
                                     app:maxValue="23"
                                     app:minValue="0"
                                     app:type="range" />
+                                <!--android:enabled="@{g11798.checked ? false : true}"
+                                android:text='@{g11798.checked ? "" : g117b.getText().toString()}'-->
 
                             </LinearLayout>
 
@@ -903,25 +907,27 @@
                                     android:id="@+id/g117c"
                                     style="@style/EditTextNum"
                                     android:digits="0123456789"
-                                    android:enabled="@{g11798.checked ? false : true}"
+
                                     android:hint="@string/minutes"
                                     android:maxLength="2"
-                                    android:text='@{g11798.checked ? "" : g117c.getText().toString()}'
+
                                     android:textColor="@android:color/black"
                                     app:defaultValue="00"
                                     app:maxValue="59"
                                     app:minValue="0"
                                     app:type="range" />
+                                <!--android:enabled="@{g11798.checked ? false : true}"
+                                android:text='@{g11798.checked ? "" : g117c.getText().toString()}'-->
 
                             </LinearLayout>
 
                         </LinearLayout>
 
-                        <CheckBox
+                        <!--<CheckBox
                             android:id="@+id/g11798"
                             style="@style/checkbox"
                             android:tag="-1"
-                            android:text="@string/dkn" />
+                            android:text="@string/dkn" />-->
 
                     </LinearLayout>
 
