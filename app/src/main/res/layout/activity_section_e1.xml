@@ -50,6 +50,33 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+                <!-- e10100  Input-Numeric   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVe10100"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/e10100" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/e10100"
+                            style="@style/EditTextNum"
+                            android:hint="@string/age"
+                            android:maxLength="2"
+                            app:maxValue="99"
+                            app:minValue="1"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
                 <!-- e101  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe101"
@@ -113,6 +140,33 @@
                                 android:hint="@string/num"
                                 android:maxLength="2"
                                 app:maxValue="30"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- e10201  Input-Numeric   -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fldGrpCVe10201"
+                        style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/i_textview"
+                                android:text="@string/e10201" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/e10201"
+                                style="@style/EditTextNum"
+                                android:hint="@string/age"
+                                android:maxLength="2"
+                                app:maxValue="99"
                                 app:minValue="1"
                                 app:type="range" />
 
