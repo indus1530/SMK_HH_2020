@@ -39,7 +39,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- ah49  CheckBox   -->
+            <!-- ah49  Input -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah49"
                 style="@style/cardView">
@@ -54,28 +54,62 @@
                         android:text="@string/ah49" />
 
                     <LinearLayout
-                        android:id="@+id/ah49check"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:tag="0">
+                        android:orientation="horizontal">
 
-                        <CheckBox
-                            android:id="@+id/ah49a"
-                            style="@style/checkbox"
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/ah49a" />
 
-                        <CheckBox
-                            android:id="@+id/ah49b"
-                            style="@style/checkbox"
-                            android:text="@string/ah49b" />
-
-                        <CheckBox
-                            android:id="@+id/ah49c"
-                            style="@style/checkbox"
-                            android:text="@string/ah49c" />
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah49a"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:enabled='@{ah49c.checked ? false : true }'
+                            android:hint="@string/year"
+                            android:text='@{ah49c.checked ? "" : ah49a.getText().toString() }'
+                            app:mask="##"
+                            app:maxValue="99"
+                            app:minValue="12"
+                            app:type="range" />
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/ah49b" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/ah49b"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:enabled='@{ah49c.checked ? false : true }'
+                            android:hint="@string/year"
+                            android:text='@{ah49c.checked ? "" : ah49b.getText().toString() }'
+                            app:mask="##"
+                            app:maxValue="99"
+                            app:minValue="12"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/ah49c"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/ah49c" />
 
                 </LinearLayout>
 
@@ -156,15 +190,14 @@
                             android:id="@+id/ah50aaa"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:hint="@string/ah50aaa"
+                            android:layout_weight="2"
+                            android:hint="@string/year"
                             app:mask="##"
                             app:maxValue="100"
                             app:minValue="0"
                             app:type="range" />
 
                     </LinearLayout>
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -181,8 +214,8 @@
                             android:id="@+id/ah50aab"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:hint="@string/ah50aab"
+                            android:layout_weight="2"
+                            android:hint="@string/year"
                             app:mask="##"
                             app:maxValue="100"
                             app:minValue="0"
@@ -265,10 +298,10 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah52"
                             style="@style/EditTextNum"
-                            android:hint="@string/ah52"
+                            android:hint="@string/year"
                             android:inputType="number"
                             app:mask="##"
-                            app:maxValue="100"
+                            app:maxValue="99"
                             app:minValue="0"
                             app:type="range" />
 
@@ -328,10 +361,6 @@
                         <TextView
                             style="@style/i_textview"
                             android:text="@string/ah54" />
-
-                        <TextView
-                            style="@style/textView3Head"
-                            android:text="@string/ah54a" />
 
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah54a"
@@ -448,26 +477,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- ah57  Radio   -->
-                <!--<androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVah57"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/ah57" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>-->
-
                 <!-- ah57a  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah57a"
@@ -481,10 +490,6 @@
                         <TextView
                             style="@style/i_textview"
                             android:text="@string/ah57" />
-
-                        <TextView
-                            style="@style/textView3Head"
-                            android:text="@string/ah57a" />
 
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/ah57a"
@@ -516,24 +521,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:visibility='@{ah57b.checked? View.GONE : View.VISIBLE}'>
-
-                    <!-- ah57b  Radio   -->
-                    <!--<androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVah57b"
-                        style="@style/cardView">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:layout_marginTop="12dp"
-                                android:text="@string/ah57b" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>-->
 
                     <!-- ah58  Input-Numeric   -->
                     <androidx.cardview.widget.CardView
@@ -583,7 +570,7 @@
                                 android:hint="@string/ah59"
                                 android:inputType="number"
                                 app:mask="##"
-                                app:maxValue="100"
+                                app:maxValue="7"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -614,7 +601,7 @@
                             android:hint="@string/ah60"
                             android:inputType="number"
                             app:mask="##"
-                            app:maxValue="100"
+                            app:maxValue="7"
                             app:minValue="0"
                             app:type="range" />
 

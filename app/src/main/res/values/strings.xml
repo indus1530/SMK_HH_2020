@@ -3190,7 +3190,7 @@
     <string name="ah48c">نجی ہسپتال</string>
     <string name="ah48d">یہ لا علاج مرض ہے</string>
     <string name="ahmtitle">ازدواجی زندگی</string>
-    <string name="ah49">AH49:\t سندھ میں شادی کی قانونی عمر کیا ہے؟</string>
+    <string name="ah49">AH49:\t آپ کے صوبے  میں شادی کی قانونی عمر کیا ہے؟</string>
     <string name="ah49a">لڑکوں کے لئے</string>
     <string name="ah49b">لڑکیوں کے لئے</string>
     <string name="ah49c">معلوم نہیں</string>
@@ -3209,10 +3209,10 @@
     <string name="ah51e">کبھی شادی نہیں ہوئی</string>
     <string name="ah52">AH52:\t آپ کے شوہر / بیوی کی عمر کیا ہے؟</string>
     <string name="ah52a">عمر</string>
-    <string name="ah53">AH53:\t کیا اپنا شریکِ حیات جینے میں رائے لی گئی تھی؟</string>
+    <string name="ah53">AH53:\t کیا  اپنا شریکِ حیات  منتخب کرنے  میں رائے لی گئی تھی؟</string>
     <string name="ah53a">ہاں</string>
     <string name="ah53b">نہیں</string>
-    <string name="ah54">AH54:\t آپ کی شادی کی عمر کیا ہے؟</string>
+    <string name="ah54">AH54:\t شادی کی وقت آپ کی عمر کیا تھی؟</string>
     <string name="ah54a">سال</string>
     <string name="ah54b">معلوم نہیں</string>
     <string name="ah55">AH55:\t شادی کے وقت اپنی عمر سے آپ مطمئن ہیں؟</string>
@@ -3220,7 +3220,7 @@
     <string name="ah55b">ہاں ٹھیک</string>
     <string name="ah55c">کافی دیر سے ہوئی</string>
     <string name="ah55d">جواب دینے سے انکار کر دیا</string>
-    <string name="ah56">AH56:\t آپ کو کیا لگتا ہے، بچے کس عمر ہونے میں ہونے چاہئیں؟</string>
+    <string name="ah56">AH56:\t آپ کے خیال میں بچے کس عمر ہونے  میں ہونے چاہئیں؟</string>
     <string name="ah56a">سال</string>
     <string name="ah57">AH57:\t آپ کے کتنے بچے ہیں؟</string>
     <string name="ah57a">تعداد</string>

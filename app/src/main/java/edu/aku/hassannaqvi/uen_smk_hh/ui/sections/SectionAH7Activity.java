@@ -89,8 +89,8 @@ public class SectionAH7Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("ah49a", bi.ah49a.isChecked() ? "1" : "-1");
-        json.put("ah49b", bi.ah49b.isChecked() ? "2" : "-1");
+        json.put("ah49a", bi.ah49a.getText().toString());
+        json.put("ah49b", bi.ah49b.getText().toString());
         json.put("ah49c", bi.ah49c.isChecked() ? "98" : "-1");
 
         json.put("ah50", bi.ah50a.isChecked() ? "1"
