@@ -33,7 +33,12 @@ public class SectionKActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         setlistener();
+        setupSkips();
+    }
 
+    private void setupSkips() {
+        bi.k101.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0102));
+        bi.k103.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0104));
     }
 
     private void setlistener() {
