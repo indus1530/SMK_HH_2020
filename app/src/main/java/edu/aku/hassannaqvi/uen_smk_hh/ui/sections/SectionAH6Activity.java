@@ -42,13 +42,26 @@ public class SectionAH6Activity extends AppCompatActivity {
 
         bi.ah41.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah41a.getId()) {
+                bi.fldGrpCVah42.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVah42);
+            } else {
+                bi.fldGrpCVah42.setVisibility(View.VISIBLE);
             }
         }));
 
+
         bi.ah42.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i != bi.ah42a.getId()) {
+            if (i == bi.ah42b.getId() || i == bi.ah42c.getId()) {
+                bi.fldGrpCVah43.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVah43);
+            } else {
+                bi.fldGrpCVah43.setVisibility(View.VISIBLE);
+            }
+        }));
+
+        bi.ah43.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah43a.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah44);
             }
         }));
 
@@ -177,7 +190,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah370696", bi.ah370696.isChecked() ? "96" : "-1");
         json.put("ah370696x", bi.ah370696x.getText().toString());
 
-        json.put("ah37aa", bi.ah37aa.getText().toString());
+        //    json.put("ah37aa", bi.ah37aa.getText().toString());
         json.put("ah37ab", bi.ah37ab.getText().toString());
         json.put("ah37ac", bi.ah37ac.getText().toString());
 

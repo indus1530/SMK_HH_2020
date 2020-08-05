@@ -477,7 +477,7 @@
                         style="@style/linearlayout_view_wt_bound"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                       <!-- <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -498,7 +498,7 @@
                                 app:minValue="1"
                                 app:type="range" />
 
-                        </LinearLayout>
+                        </LinearLayout>-->
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -564,63 +564,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility='@{ah45a.checked? View.VISIBLE : View.GONE}'>
-
-                <!-- ah37a  Edittext   -->
-                <!--<androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVah37a"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/i_textview"
-                            android:text="@string/ah37a" />
-
-                        <TextView
-                            style="@style/i_textviewhint"
-                            android:text="@string/ah37aa" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah37aa"
-                            style="@style/EditTextNum"
-                            android:hint="@string/ah37aa"
-                            app:mask="##"
-                            app:maxValue="29"
-                            app:minValue="0"
-                            app:type="range" />
-
-                        <TextView
-                            style="@style/i_textviewhint"
-                            android:text="@string/ah37ab" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah37ab"
-                            style="@style/EditTextNum"
-                            android:hint="@string/ah37ab"
-                            app:mask="##"
-                            app:maxValue="11"
-                            app:minValue="0"
-                            app:type="range" />
-
-                        <TextView
-                            style="@style/i_textviewhint"
-                            android:text="@string/ah37ac" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/ah37ac"
-                            style="@style/EditTextNum"
-                            android:hint="@string/ah37ac"
-                            app:mask="##"
-                            app:maxValue="19"
-                            app:minValue="1"
-                            app:type="range" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>-->
 
                 <!-- ah38  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -837,31 +780,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- ah40x  Input   -->
-                <!-- <androidx.cardview.widget.CardView
-                     android:id="@+id/fldGrpCVah40x"
-                     style="@style/cardView">
-
-                     <LinearLayout
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:orientation="vertical">
-
-                         <TextView
-                             android:layout_width="match_parent"
-                             android:layout_height="56dp"
-                             android:layout_marginTop="12dp"
-                             android:text="@string/ah40x" />
-
-                         <EditText
-                             android:id="@+id/ah40x"
-                             android:layout_width="match_parent"
-                             android:layout_height="56dp"
-                             android:layout_marginBottom="12dp"
-                             android:hint="@string/ah40x" />
-                     </LinearLayout>
-                 </androidx.cardview.widget.CardView>-->
-
                 <!-- ah40aa  Title   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah40aa"
@@ -926,13 +844,13 @@
                             <CheckBox
                                 android:id="@+id/ah40aai"
                                 style="@style/checkbox"
-                                android:text="@string/ah40aai" />
+                                android:text="@string/other" />
 
                             <EditText
                                 android:id="@+id/ah40aaix"
                                 style="@style/EditTextAlpha"
-                                android:hint="@string/ah40aai"
-                                android:tag="ah4096"
+                                android:hint="@string/specify"
+                                android:tag="ah40aai"
                                 android:text='@{ah40aai.checked? ah40aaix.getText().toString() : ""}'
                                 android:visibility='@{ah40aai.checked? View.VISIBLE : View.GONE}' />
 
@@ -991,8 +909,7 @@
                 <!-- ah42  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah42"
-                    style="@style/cardView"
-                    android:visibility='@{ah41a.checked? View.GONE : View.VISIBLE}'>
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1031,8 +948,7 @@
                 <!-- ah43  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah43"
-                    style="@style/cardView"
-                    android:visibility='@{ah42a.checked? View.VISIBLE : View.GONE}'>
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1071,7 +987,8 @@
                 <!-- ah44  checkbox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah44"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{ah43a.checked? View.GONE : View.VISIBLE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
