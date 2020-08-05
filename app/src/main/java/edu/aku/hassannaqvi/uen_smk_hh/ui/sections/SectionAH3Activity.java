@@ -54,12 +54,6 @@ public class SectionAH3Activity extends AppCompatActivity {
             }
         }));
 
-        bi.ah24011.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.ah24011a.getId()) {
-                Clear.clearAllFields(bi.fldGrpSecAH304);
-            }
-        }));
-
         bi.ah25.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah25b.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVah26);
@@ -232,9 +226,7 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah24010b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah24011", bi.ah24011a.isChecked() ? "1"
-                : bi.ah24011b.isChecked() ? "2"
-                : "-1");
+        json.put("ah24011", bi.ah24011a.isChecked() ? "1" : "-1");
 
         json.put("ah24011", "-1");
 
