@@ -237,7 +237,7 @@
                         android:text='@{ah36b.checked ? "" : ah36a.getText().toString() }'
                         app:mask="#"
                         app:maxValue="5"
-                        app:minValue="3"
+                        app:minValue="1"
                         app:type="range" />
 
                     <CheckBox
