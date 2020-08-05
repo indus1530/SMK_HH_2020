@@ -2634,13 +2634,11 @@
 
     <string name="m116"> M116:\t آپ کے گھر میں عام طور پر کونسی زبان بولی جاتی ہے ؟ </string>
     <string name="m116a"> اردو </string>
-    <string name="m116b"> پنجابی </string>
-    <string name="m116c"> سندھی </string>
-    <string name="m116d"> بلوچی </string>
-    <string name="m116e"> سرائیکی </string>
-    <string name="m116f"> بروہی</string>
-    <string name="m116g"> لاسی </string>
-    <string name="m116h"> پشتو </string>
+    <string name="m116b"> سندھی </string>
+    <string name="m116c"> خوار </string>
+    <string name="m116d"> شینا </string>
+    <string name="m116e"> بروشیسکی </string>
+    <string name="m116f">دیگر</string>
 
     <string name="n101"> N101:\t آپ کے گھرکے افراد کے لئے پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟ </string>
     <string name="n101a"> گھر کانلکا </string>

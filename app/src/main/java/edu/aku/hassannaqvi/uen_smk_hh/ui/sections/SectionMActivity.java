@@ -306,9 +306,8 @@ public class SectionMActivity extends AppCompatActivity {
                                         bi.m116d.isChecked() ? "4" :
                                                 bi.m116e.isChecked() ? "5" :
                                                         bi.m116f.isChecked() ? "6" :
-                                                                bi.m116g.isChecked() ? "7" :
-                                                                        bi.m116h.isChecked() ? "8" :
-                                                                                "0");
+                                                                "0");
+        json.put("m11696x", bi.m11696x.getText().toString());
 
         MainApp.fc.setsM(String.valueOf(json));
 

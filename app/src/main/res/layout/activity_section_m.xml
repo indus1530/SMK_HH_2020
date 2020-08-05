@@ -2159,15 +2159,13 @@
                             style="@style/radiobutton"
                             android:text="@string/m116f" />
 
-                        <RadioButton
-                            android:id="@+id/m116g"
-                            style="@style/radiobutton"
-                            android:text="@string/m116g" />
-
-                        <RadioButton
-                            android:id="@+id/m116h"
-                            style="@style/radiobutton"
-                            android:text="@string/m116h" />
+                        <EditText
+                            android:id="@+id/m11696x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="m116f"
+                            android:text='@{m116f.checked? m11696x.getText().toString() : ""}'
+                            android:visibility='@{m116f.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 
