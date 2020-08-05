@@ -2848,8 +2848,7 @@
     <string name="ah14">How Would You Say Your Health Is?</string>
     <string name="ah14a">Excellent</string>
     <string name="ah14b">Good</string>
-    <string name="ah14c">Fair</string>
-    <string name="ah14d">Poor</string>
+    <string name="ah14c">Poor</string>
     <string name="ah15">Are You On A Diet Or Doing Something To Lose Weight?</string>
     <string name="ah15a">No, My Weight Is Fine</string>
     <string name="ah15b">No, But I Should Lose Weight</string>
