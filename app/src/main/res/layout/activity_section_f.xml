@@ -281,10 +281,10 @@
                                 style="@style/i_textviewhint"
                                 android:text="@string/f102h1" />
 
-                            <CheckBox
+                          <!--  <CheckBox
                                 android:id="@+id/f102a"
                                 style="@style/checkbox"
-                                android:text="@string/f102a" />
+                                android:text="@string/f102a" />-->
 
                             <CheckBox
                                 android:id="@+id/f102b"
@@ -410,10 +410,10 @@
                                 style="@style/checkbox"
                                 android:text="@string/f103d" />
 
-                            <CheckBox
+                            <!--<CheckBox
                                 android:id="@+id/f103e"
                                 style="@style/checkbox"
-                                android:text="@string/f103e" />
+                                android:text="@string/f103e" />-->
 
                         </LinearLayout>
 
@@ -609,12 +609,12 @@
                                 android:layout_weight="1"
                                 android:text="@string/f108b" />
 
-                            <RadioButton
+                         <!--   <RadioButton
                                 android:id="@+id/f10898"
                                 style="@style/radiobutton"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
-                                android:text="@string/dkn" />
+                                android:text="@string/dkn" />-->
 
                         </RadioGroup>
 
@@ -676,21 +676,21 @@
                                 style="@style/EditTextNum"
                                 android:layout_width="0dp"
                                 android:layout_weight="2"
-                                android:enabled='@{f109b.checked? false : true}'
                                 android:hint="@string/f109a"
                                 android:maxLength="2"
-                                android:text='@{f109b.checked? "" : f109a.getText().toString()}'
                                 app:maxValue="10"
                                 app:minValue="1"
-                                app:type="range" />
+                                app:type="range"  />
+                               <!-- android:enabled='@{f109b.checked? false : true}'
+                                android:text='@{f109b.checked? "" : f109a.getText().toString()}'-->
 
-                            <CheckBox
+                         <!--   <CheckBox
                                 android:id="@+id/f109b"
                                 style="@style/checkbox"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:tag="-1"
-                                android:text="@string/dkn" />
+                                android:text="@string/dkn" />-->
 
                         </LinearLayout>
 
@@ -866,12 +866,12 @@
                             android:layout_weight="1"
                             android:text="@string/no" />
 
-                        <RadioButton
+                       <!-- <RadioButton
                             android:id="@+id/f112c"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/dkn" />
+                            android:text="@string/dkn" />-->
 
                     </RadioGroup>
 
@@ -904,21 +904,20 @@
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="2"
-                            android:enabled='@{f11398.checked ? false : true}'
                             android:hint="@string/f113a"
                             android:maxLength="1"
-                            android:text='@{f11398.checked? "" : f113.getText().toString()}'
                             app:maxValue="5"
                             app:minValue="1"
                             app:type="range" />
-
-                        <CheckBox
+                       <!-- android:enabled='@{f11398.checked ? false : true}'
+                        android:text='@{f11398.checked? "" : f113.getText().toString()}'-->
+                       <!-- <CheckBox
                             android:id="@+id/f11398"
                             style="@style/checkbox"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:tag="-1"
-                            android:text="@string/dkn" />
+                            android:text="@string/dkn" />-->
 
                     </LinearLayout>
 
@@ -1175,38 +1174,40 @@
                                 style="@style/EditTextNum"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
-                                android:enabled='@{f11898.checked? false : true}'
+
                                 android:hint="@string/f118a"
                                 android:maxLength="2"
-                                android:text='@{f11898.checked ? "" : f118a.getText().toString()}'
+
                                 android:textColor="@android:color/black"
                                 app:defaultValue="00"
                                 app:maxValue="9"
                                 app:minValue="1"
                                 app:type="range" />
+                            <!--android:enabled='@{f11898.checked? false : true}'
+                            android:text='@{f11898.checked ? "" : f118a.getText().toString()}'-->
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/f118b"
                                 style="@style/EditTextNum"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
-                                android:enabled='@{f11898.checked? false : true}'
                                 android:hint="@string/f118b"
                                 android:maxLength="2"
-                                android:text='@{f11898.checked ? "" : f118b.getText().toString()}'
                                 android:textColor="@android:color/black"
                                 app:defaultValue="00"
                                 app:maxValue="31"
                                 app:minValue="1"
                                 app:type="range" />
+                           <!-- android:enabled='@{f11898.checked? false : true}'
+                            android:text='@{f11898.checked ? "" : f118b.getText().toString()}'-->
 
-                            <CheckBox
+                          <!--  <CheckBox
                                 android:id="@+id/f11898"
                                 style="@style/checkbox"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:tag="-1"
-                                android:text="@string/dkn" />
+                                android:text="@string/dkn" />-->
 
                         </LinearLayout>
 
