@@ -64,6 +64,7 @@
     <string name="rupees"> روپيا </string>
     <string name="num"> نمبر </string>
     <string name="name"> نالو </string>
+    <string name="age"> عمر </string>
 
     <string name="total"> Total </string>
     <string name="mwra"> MWRA </string>
@@ -233,8 +234,11 @@
     <string name="e100"> E100:\t عورت جو نالو </string>
 
     <string name="e101"> E101:\t ڇا (عورت جو نالو) شادي کان پوءِ ڪڏھن به حمل سان ٿي </string>
+    <string name="e10100"> آپ کی شادی کے وقت عمر کیا تھی؟ (پہلی شادی کے وقت) E10100:\t </string>
+    <string name="e10201"> E10201:\t آپ کی کیا عمر تھی جب آپ پہلی بار حاملہ ہوئی تھی؟(میرا مطلب ہے کہ بلکل پہلی دفعہ چاہے وہ بچہ ابھی زندہ ہو یا نہیں، یا اس کے والد کے ساتھ آپ رہتی ہیں یا نہیں  ) </string>
 
     <string name="e102"> E102:\t  توھان شادي کان پوءِ ڪيترا دفعه حمل سان ٿيا آھيو ؟ </string>
+
     <string name="e101a"> ھا </string>
 
     <string name="e102a"> E102a:\t توھان ھن وقت حمل سان آھيو ؟ </string>
@@ -305,7 +309,6 @@
     <string name="e112j"> نجي (پرائيويٽ) ڪلينڪ </string>
     <string name="e112k"> نجي (پرائيويٽ) ويم گهر </string>
     <string name="e112l"> اين جي او صحت مرڪز </string>
-    <string name="e112m"> رستي ۾ صحت مرڪز ڏانھن ويندي </string>
     <string name="e11296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="e113"> E113:\t جيڪڏھن ٻار مئل ڄائو يا حمل ضايع ٿيو ته اھو حمل ڪھڙي مھيني / سال ۾ ختم ٿيو ؟ </string>
@@ -2890,8 +2893,7 @@
     <string name="ah14">How Would You Say Your Health Is?</string>
     <string name="ah14a">Excellent</string>
     <string name="ah14b">Good</string>
-    <string name="ah14c">Fair</string>
-    <string name="ah14d">Poor</string>
+    <string name="ah14c">Poor</string>
     <string name="ah15">Are You On A Diet Or Doing Something To Lose Weight?</string>
     <string name="ah15a">No, My Weight Is Fine</string>
     <string name="ah15b">No, But I Should Lose Weight</string>

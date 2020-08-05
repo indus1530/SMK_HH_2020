@@ -333,36 +333,50 @@
                             <CheckBox
                                 android:id="@+id/ah7a"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7a" />
 
                             <CheckBox
                                 android:id="@+id/ah7b"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7b" />
 
                             <CheckBox
                                 android:id="@+id/ah7c"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7c" />
 
                             <CheckBox
                                 android:id="@+id/ah7d"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7d" />
 
                             <CheckBox
                                 android:id="@+id/ah7e"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7e" />
 
                             <CheckBox
                                 android:id="@+id/ah7f"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7f" />
 
                             <CheckBox
                                 android:id="@+id/ah7g"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/ah7g" />
 
                             <CheckBox
@@ -373,6 +387,8 @@
                             <CheckBox
                                 android:id="@+id/ah796"
                                 style="@style/checkbox"
+                                android:checked="@{ah7h.checked ? false : false}"
+                                android:enabled="@{ah7h.checked ? true : false}"
                                 android:text="@string/other" />
 
                             <EditText

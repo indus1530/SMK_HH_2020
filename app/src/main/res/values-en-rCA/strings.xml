@@ -64,6 +64,7 @@
     <string name="rupees"> Rupees </string>
     <string name="num"> Number </string>
     <string name="name"> Name </string>
+    <string name="age"> Age </string>
 
     <string name="total"> Total </string>
     <string name="mwra"> MWRA </string>
@@ -226,11 +227,15 @@
 
     <string name="e100"> E100:\t Name Of Woman </string>
 
+    <string name="e10100"> آپ کی شادی کے وقت عمر کیا تھی؟ (پہلی شادی کے وقت) E10100:\t </string>
+
     <string name="e101"> E101:\t Have you ever been pregnant since your marriage ? </string>
     <string name="e101a"> Yes </string>
     <string name="e101b"> No </string>
 
     <string name="e102"> E102:\t How many times have you been pregnant since your marriage ? </string>
+
+    <string name="e10201"> E10201:\t آپ کی کیا عمر تھی جب آپ پہلی بار حاملہ ہوئی تھی؟(میرا مطلب ہے کہ بلکل پہلی دفعہ چاہے وہ بچہ ابھی زندہ ہو یا نہیں، یا اس کے والد کے ساتھ آپ رہتی ہیں یا نہیں  ) </string>
 
     <string name="e102a"> E102A:\t Are you currently pregnant ? </string>
     <string name="e102aa"> Yes </string>
@@ -299,7 +304,6 @@
     <string name="e112j"> Private clinic </string>
     <string name="e112k"> Private maternity home </string>
     <string name="e112l"> NGO HEALTH FACILITY </string>
-    <string name="e112m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="e11296"> Other (specify) </string>
 
     <string name="e113"> E113:\t If born dead or lost before birth: In what month and year did this pregnancy end? (MM/YYYY) </string>
@@ -2844,8 +2848,7 @@
     <string name="ah14">How Would You Say Your Health Is?</string>
     <string name="ah14a">Excellent</string>
     <string name="ah14b">Good</string>
-    <string name="ah14c">Fair</string>
-    <string name="ah14d">Poor</string>
+    <string name="ah14c">Poor</string>
     <string name="ah15">Are You On A Diet Or Doing Something To Lose Weight?</string>
     <string name="ah15a">No, My Weight Is Fine</string>
     <string name="ah15b">No, But I Should Lose Weight</string>

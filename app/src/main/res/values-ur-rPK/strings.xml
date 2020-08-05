@@ -63,6 +63,7 @@
     <string name="rupees"> روپے </string>
     <string name="num"> اعداد </string>
     <string name="name"> نام </string>
+    <string name="age"> عمر </string>
 
     <string name="total"> Total </string>
     <string name="mwra"> MWRA </string>
@@ -210,17 +211,21 @@
 
     <string name="d114"> گھر میں موجود 5 سال سے کم عمر بچوں کی مجموعئی تعداد D114:\t </string>
 
-    <string name="d115"> D115:\t کیا یہ شخص گھر پر موجود ہے ؟ </string>
-    <string name="d115a"> ہاں </string>
-    <string name="d115b"> نہیں </string>
+    <string name="d115"> D115:\t (10 to 19) (18 years,11 months,29 days) گھرانے میں بالغ/ نو عمر افراد کی مجموعی تعداد؟</string>
+    <string name="d115a"> لڑکے </string>
+    <string name="d115b"> لڑکیاں </string>
 
     <string name="e100"> خاتون کا نام:  E100:\t </string>
+
+    <string name="e10100"> آپ کی شادی کے وقت عمر کیا تھی؟ (پہلی شادی کے وقت) E10100:\t </string>
 
     <string name="e101"> کیا آپ کبھی شادی کے بعد سے حاملہ ہوئی ہیں ؟ E101:\t </string>
     <string name="e101a"> ہاں </string>
     <string name="e101b"> نہیں </string>
 
     <string name="e102"> E102:\t آپ اپنی شادی کے بعد سے کتنی بار حاملہ ہوئی ہیں ؟ </string>
+
+    <string name="e10201"> E10201:\t آپ کی کیا عمر تھی جب آپ پہلی بار حاملہ ہوئی تھی؟(میرا مطلب ہے کہ بلکل پہلی دفعہ چاہے وہ بچہ ابھی زندہ ہو یا نہیں، یا اس کے والد کے ساتھ آپ رہتی ہیں یا نہیں  ) </string>
 
     <string name="e102a"> E102a:\t کیا آپ اس وقت حاملہ ہیں ؟ </string>
     <string name="e102aa"> ہاں </string>
@@ -276,20 +281,19 @@
 
     <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
     <string name="e112a">گهر </string>
-    <string name="e112h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="e112b">تربیتی/ سول ہسپتال </string>
-    <string name="e112c">ضلعہ/تعلقہ ہسپتال </string>
-    <string name="e112d">دیہی صحت مرکز </string>
-    <string name="e112e">بنیادی صحت مرکز </string>
-    <string name="e112f">ماں اور بچے کا صحت مرکز </string>
-    <string name="e112g">زچگی گھر  </string>
-    <string name="e112h">ہیلتھ ہائوس (ایل ایچھ ڈبلیو) </string>
-    <string name="e112h2"> خانگی ہسپتال </string>
-    <string name="e112i"> خانگی ہسپتال </string>
-    <string name="e112j"> خانگی کلینک </string>
-    <string name="e112k"> خانگی زچگی گھر </string>
-    <string name="e112l"> این جی او صحت مرکز </string>
-    <string name="e112m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="e112h1"> سرکاری مرکز صحت </string>
+    <string name="e112b">سول ہسپتال / ٹرشری </string>
+    <string name="e112c">ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="e112d">رورل ہیلتھ سینٹر </string>
+    <string name="e112e">بیسک ہیلتھ یونٹ </string>
+    <string name="e112f">میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="e112g">برتھ اسٹیشن (کمیونٹی مڈوائف)  </string>
+    <string name="e112h2">نجی مرکز صحت </string>
+    <string name="e112h"> پرائیوٹ ہسپتال </string>
+    <string name="e112i"> پرائیوٹ کلینک</string>
+    <string name="e112j"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="e112k"> رفاہی ادارہ </string>
+    <string name="e112l"> راستے میں </string>
     <string name="e11296">دیگر (وضاحت کریں) </string>
 
     <string name="e113"> E113:\t اگر مردہ پیدائش یا پیدائش سے پہلے اسقاط حمل ہوگیا تھا: تو یہ حمل کس مہینے اور سال میں ختم ہوا تھا ؟ </string>
@@ -609,6 +613,7 @@
     <string name="f133a"> ہاں،معمول سے زیادہ </string>
     <string name="f133b"> ہاں،معمول سے کم </string>
     <string name="f133c"> کوئی تبدیلی نہیں کی </string>
+
 
     <string name="f134"> F134:\t (نام) کی پیدائش کے لئے آپ نے کیا اقدامات کئے تھے ؟ جوابات پڑھیں، ایک سے زیادہ جوابات آسکتے ہیں </string>
     <string name="f134a"> ڈاکٹر کا انتخاب </string>
@@ -2880,8 +2885,7 @@
     <string name="ah14">AH14:\t آپ کا اپنی صحت کے بارے میں کیا خیال ہے؟</string>
     <string name="ah14a">بہترین</string>
     <string name="ah14b">اچھی</string>
-    <string name="ah14c">بس ٹھیک</string>
-    <string name="ah14d">خراب</string>
+    <string name="ah14c">خراب</string>
     <string name="ah15">AH15:\t اپنا وزن کم کرنے کے لئے کیا آپ ڈائٹنگ یا کچھ اور طریقہ کرتے ہیں؟</string>
     <string name="ah15a">نہیں، میرا وزن ٹھیک ہے</string>
     <string name="ah15b">نہیں ، لیکن مجھے وزن کم کرنا چاہئیے</string>
