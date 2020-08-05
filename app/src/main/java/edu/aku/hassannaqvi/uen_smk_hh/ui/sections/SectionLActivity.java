@@ -71,7 +71,7 @@ public class SectionLActivity extends AppCompatActivity {
                 /*List<FamilyMembersContract> lstU5 = mainVModel.getChildLstU5().getValue();
                 Class nextClass = lstU5 != null ? lstU5.size() > 0 ? SectionI1Activity.class : SectionMActivity.class : SectionMActivity.class;
                 startActivity(new Intent(this, nextClass));*/
-                startActivity(new Intent(this, SectionMActivity.class));
+                startActivity(new Intent(this, SectionJActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
