@@ -103,6 +103,16 @@ public class SectionDActivity extends AppCompatActivity {
             bi.d109.setMinvalue(15);
         }
 
+        bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.d110a.getId()) {
+                Clear.clearAllFields(bi.d111f, false);
+                Clear.clearAllFields(bi.d111g, false);
+            } else {
+                Clear.clearAllFields(bi.d111f, true);
+                Clear.clearAllFields(bi.d111g, true);
+            }
+        }));
+
     }
 
     public void BtnContinue() {
@@ -484,6 +494,11 @@ public class SectionDActivity extends AppCompatActivity {
         if (calAge > 20) {
             Clear.clearAllFields(bi.d110, true);
             Clear.clearAllFields(bi.d111, true);
+
+        }
+
+        if (calAge < 16) {
+            Clear.clearAllFields(bi.d110g, false);
 
         }
 
