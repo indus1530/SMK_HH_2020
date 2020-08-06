@@ -32,62 +32,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <!--
-                            &lt;!&ndash; j100  Spinner   &ndash;&gt;
-                            <androidx.cardview.widget.CardView
-                                android:id="@+id/fldGrpCVd107"
-                                style="@style/cardView">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        style="@style/i_textview"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Child Name" />
-
-                                    <Spinner
-                                        android:id="@+id/j100"
-                                        style="@style/spinner"
-                                        android:layout_width="0dp"
-                                        android:layout_margin="10dp"
-                                        android:layout_weight="1" />
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-
-                            &lt;!&ndash; j100res  Spinner   &ndash;&gt;
-                            <androidx.cardview.widget.CardView
-                                android:id="@+id/respondentSpinner"
-                                style="@style/cardView"
-                                android:visibility="gone"
-                                tools:visibility="visible">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        style="@style/i_textview"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Respondent Name" />
-
-                                    <Spinner
-                                        android:id="@+id/j100res"
-                                        style="@style/spinner"
-                                        android:layout_width="0dp"
-                                        android:layout_margin="10dp"
-                                        android:layout_weight="1" />
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>-->
 
                 <!--j10100  Radio-->
                 <androidx.cardview.widget.CardView
@@ -254,6 +198,7 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:id="@+id/fldGrpSectionJ011"
@@ -1082,6 +1027,7 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"

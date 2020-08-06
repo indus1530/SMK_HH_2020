@@ -285,8 +285,7 @@ public class SectionH102Activity extends AppCompatActivity {
         json.put("h126", bi.h126a.isChecked() ? "1" :
                 bi.h126b.isChecked() ? "2" :
                         bi.h126c.isChecked() ? "3" :
-                                bi.h126d.isChecked() ? "4" :
-                                        bi.h12698.isChecked() ? "98" : "0");
+                                bi.h126d.isChecked() ? "4" : "0");
 
         json.put("h127", bi.h127a.isChecked() ? "1" :
                 bi.h127b.isChecked() ? "2" :
@@ -298,10 +297,7 @@ public class SectionH102Activity extends AppCompatActivity {
                                                                 bi.h127h.isChecked() ? "8" :
                                                                         bi.h127i.isChecked() ? "9" :
                                                                                 bi.h127j.isChecked() ? "10" :
-                                                                                        bi.h127k.isChecked() ? "11" :
-                                                                                                bi.h127l.isChecked() ? "12" :
-                                                                                                        bi.h127m.isChecked() ? "13" :
-                                                                                                                bi.h12796.isChecked() ? "96" : "0");
+                                                                                        bi.h12796.isChecked() ? "96" : "0");
         json.put("h12796x", bi.h12796x.getText().toString());
 
 
@@ -309,8 +305,7 @@ public class SectionH102Activity extends AppCompatActivity {
                 bi.h128b.isChecked() ? "2" :
                         bi.h128c.isChecked() ? "3" :
                                 bi.h128d.isChecked() ? "4" :
-                                        bi.h128e.isChecked() ? "5" :
-                                                bi.h128f.isChecked() ? "6" : "0");
+                                        bi.h128e.isChecked() ? "5" : "0");
 
         json.put("h129a", bi.h129aa.isChecked() ? "1" :
                 bi.h129ab.isChecked() ? "2" :

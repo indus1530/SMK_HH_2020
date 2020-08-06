@@ -872,15 +872,16 @@
     <string name="h108d"> Knife </string>
 
     <string name="h109"> H109:\t What was applied on umbilical cord of {NAME}?</string>
-    <string name="h109a"> Animal dung </string>
-    <string name="h109b"> Any type of oil </string>
-    <string name="h109c"> Dettol </string>
-    <string name="h109d"> Pyodine </string>
-    <string name="h109e"> Chlorhexdine </string>
-    <string name="h109f"> Ash </string>
-    <string name="h109g"> Breast milk </string>
-    <string name="h109h"> Khol/Surma </string>
-    <string name="h109i"> Nothing was applied </string>
+    <string name="h109a"> جانوروں کا فضلہ </string>
+    <string name="h109b"> کسی قسم کا تیل </string>
+    <string name="h109c"> ڈیٹول </string>
+    <string name="h109d"> پائیوڈین </string>
+    <string name="h109e"> کلورو ہیکسیڈین / مرہم  </string>
+    <string name="h109f"> راکھ </string>
+    <string name="h109g"> سُرمہ  </string>
+    <string name="h109h"> ماں کا دودھ </string>
+    <string name="h109i"> کچھ بھی نہیں </string>
+    <string name="h109j"> لگایا تھا مگر یاد نہیں </string>
 
     <string name="h110"> H110:\t Did {NAME} get skin to skin contact with mother after birth ? </string>
     <string name="h110a"> Yes </string>
@@ -994,9 +995,6 @@
     <string name="h127h2"> Private medical sector </string>
     <string name="h127i"> Private hospital </string>
     <string name="h127j"> Private clinic </string>
-    <string name="h127k"> Private maternity home </string>
-    <string name="h127l"> NGO HEALTH FACILITY </string>
-    <string name="h127m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="h12796"> Other (specify) </string>
 
     <string name="h128"> H128:\t Who conducted {NAME}’s first health check-up ? </string>
@@ -1004,8 +1002,7 @@
     <string name="h128b"> LHV (Lady Health Visitor) </string>
     <string name="h128c"> Nurse </string>
     <string name="h128d"> Community Midwife </string>
-    <string name="h128e"> LHW (Lady Health Worker) </string>
-    <string name="h128f"> Dai/TBA (Traditional Birth Attendant) </string>
+    <string name="h128e"> Dai/TBA (Traditional Birth Attendant) </string>
 
     <string name="h129"> H129:\t During the first health check-up, were any of the following done for {NAME} ? </string>
     <string name="h129a"> Examine the cord </string>
@@ -1158,9 +1155,6 @@
     <string name="h204h2"> Private medical sector </string>
     <string name="h204i"> Private hospital </string>
     <string name="h204j"> Private clinic </string>
-    <string name="h204k"> Private maternity home </string>
-    <string name="h204l"> NGO HEALTH FACILITY </string>
-    <string name="h204m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="h20496"> Other (specify) </string>
 
     <string name="h205"> H205:\t Who conducted your health check-up ? </string>
@@ -1179,6 +1173,7 @@
     <string name="h205aaf"> Treatment for mother </string>
     <string name="h205aag"> Nutrition supplies </string>
     <string name="h205aah"> Contraceptive supplies </string>
+    <string name="h205aai"> Contraceptive supplies </string>
 
 
     <string name="h206"> H206:\t Did you know about danger signs/ problems after delivery ? </string>
@@ -1277,19 +1272,19 @@
     <string name="h2161f"> PPE not available at home </string>
 
 
-    <string name="h217"> H217:\t What is the source of financial support for your MNCH related needs? </string>
-    <string name="h217a"> Family (husband or own resource) </string>
-    <string name="h217b"> Bank/Loan from organization </string>
-    <string name="h217c"> Community revolving fund </string>
-    <string name="h217d"> Borrowing from relative/friend </string>
-    <string name="h217e"> Selling assets </string>
-    <string name="h217f"> Medical insurance </string>
-    <string name="h217x"> Other (specify) </string>
+    <string name="h218"> H218:\t What is the source of financial support for your MNCH related needs? </string>
+    <string name="h218a"> Family (husband or own resource) </string>
+    <string name="h218b"> Bank/Loan from organization </string>
+    <string name="h218c"> Community revolving fund </string>
+    <string name="h218d"> Borrowing from relative/friend </string>
+    <string name="h218e"> Selling assets </string>
+    <string name="h218f"> Medical insurance </string>
+    <string name="h218x"> Other (specify) </string>
 
-    <string name="h218"> H218:\t Did you access any financial support for your last pregnancy or delivery ? </string>
-    <string name="h218a"> Yes </string>
-    <string name="h218b"> No </string>
-    <string name="h218c"> Don’t know about any such support </string>
+    <string name="h217"> H217:\t Did you access any financial support for your last pregnancy or delivery ? </string>
+    <string name="h217a"> Yes </string>
+    <string name="h217b"> No </string>
+    <string name="h217c"> Don’t know about any such support </string>
 
     <string name="h219"> H219:\t What was the source of the financial support for your last pregnancy or delivery ? </string>
     <string name="h219a"> Family (husband or own resource) </string>

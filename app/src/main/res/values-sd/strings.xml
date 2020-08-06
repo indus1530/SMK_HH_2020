@@ -870,15 +870,16 @@
     <string name="h108d"> چاقو</string>
 
     <string name="h109"> H109:\t (نالو) ناڙي کڻڻ کان پوءِ ان تي ڇا لڳايو ويو ؟  </string>
-    <string name="h109a"> جانور جو ڇيڻو </string>
-    <string name="h109b"> ڪنھن به قسم جو تيل </string>
-    <string name="h109c"> ڊيٽول </string>
-    <string name="h109d"> پائيوڊين </string>
-    <string name="h109e"> ڪلوروھيزڊائن </string>
-    <string name="h109f"> مٽي / کاڪ </string>
-    <string name="h109g"> ماءُ جو کير </string>
-    <string name="h109h"> Khol/Surma </string>
-    <string name="h109i"> Nothing was applied </string>
+    <string name="h109a"> جانوروں کا فضلہ </string>
+    <string name="h109b"> کسی قسم کا تیل </string>
+    <string name="h109c"> ڈیٹول </string>
+    <string name="h109d"> پائیوڈین </string>
+    <string name="h109e"> کلورو ہیکسیڈین / مرہم  </string>
+    <string name="h109f"> راکھ </string>
+    <string name="h109g"> سُرمہ  </string>
+    <string name="h109h"> ماں کا دودھ </string>
+    <string name="h109i"> کچھ بھی نہیں </string>
+    <string name="h109j"> لگایا تھا مگر یاد نہیں </string>
 
     <string name="h110"> H110:\t ڇا (نالو) کي پيدائش کان پوءِ ماءُ جي ڇاتي سان لڳايو ويو ؟ </string>
     <string name="h110a"> ھا </string>
@@ -992,9 +993,6 @@
     <string name="h127h2"> Private medical sector </string>
     <string name="h127i"> Private hospital </string>
     <string name="h127j"> Private clinic </string>
-    <string name="h127k"> Private maternity home </string>
-    <string name="h127l"> NGO HEALTH FACILITY </string>
-    <string name="h127m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="h12796"> Other (specify) </string>
 
     <string name="h128"> H128:\t (نالو) ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو ؟ </string>
@@ -1002,8 +1000,7 @@
     <string name="h128b"> (ايل ايڇ وي (ليڊي ھيلٿ وزيٽر </string>
     <string name="h128c"> نرس </string>
     <string name="h128d"> (سي ايم ڊبليو (ڪميونٽي مڊوائف </string>
-    <string name="h128e"> ايل ايڇ ڊبليو (ليڊي ھيلٿ ورڪر) </string>
-    <string name="h128f"> دائي / ٽي بي اي  </string>
+    <string name="h128e"> دائي / ٽي بي اي  </string>
 
     <string name="h129"> H129:\t (نالو) پھرئين معائني جي دوران، ڇا ھنن مان ڪو معائنو ٿيو ؟ </string>
 
@@ -1162,9 +1159,6 @@
     <string name="h204h2"> Private medical sector </string>
     <string name="h204i"> Private hospital </string>
     <string name="h204j"> Private clinic </string>
-    <string name="h204k"> Private maternity home </string>
-    <string name="h204l"> NGO HEALTH FACILITY </string>
-    <string name="h204m"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="h20496"> Other (specify) </string>
 
     <string name="h205"> H205:\t ڊليوري کان پوءِ توھان جو پھريون معائنو ڪنھن ڪيو؟</string>
@@ -1183,6 +1177,7 @@
     <string name="h205aaf"> Treatment for mother </string>
     <string name="h205aag"> Nutrition supplies </string>
     <string name="h205aah"> Contraceptive supplies </string>
+    <string name="h205aai"> Contraceptive supplies </string>
 
     <string name="h206"> H206:\t ڇا توھان کي ڊليوري کان پوءِ ٿيندڙ خطرناڪ علامتن/پيچيدگين جي معلومات آھي؟</string>
     <string name="h206a"> ھا </string>
@@ -1277,19 +1272,19 @@
     <string name="h2161e"> ڪرونا جي لاڪ ڊائون ڪري سواري نه ھئي </string>
     <string name="h2161f"> گهر ۾ حفاظتي سامان (ماسڪ / داستانه) موجود نه ھئا </string>
 
-    <string name="h217"> H217:\t ماءُ، نئين ڄاول ٻار ۽ ٻارن جي صحت جي ضرورتن جي لاءِ توھان وٽ مالي مدد جو ڪھڙو ذريعو آھي؟</string>
-    <string name="h217a"> (خاندان (مڙس/پنھنجو ذريعو</string>
-    <string name="h217b"> بئنڪ/تنظيم کان قرض </string>
-    <string name="h217c"> علائقائي مدد </string>
-    <string name="h217d"> مائٽ/دوست کان اوڌر</string>
-    <string name="h217e"> اثاثن جو وڪرو </string>
-    <string name="h217f"> ميڊيڪل انشورنس</string>
-    <string name="h217x"> (ٻيو ڪجھ (وضاحت ڪريو</string>
+    <string name="h218"> H218:\t ماءُ، نئين ڄاول ٻار ۽ ٻارن جي صحت جي ضرورتن جي لاءِ توھان وٽ مالي مدد جو ڪھڙو ذريعو آھي؟</string>
+    <string name="h218a"> (خاندان (مڙس/پنھنجو ذريعو</string>
+    <string name="h218b"> بئنڪ/تنظيم کان قرض </string>
+    <string name="h218c"> علائقائي مدد </string>
+    <string name="h218d"> مائٽ/دوست کان اوڌر</string>
+    <string name="h218e"> اثاثن جو وڪرو </string>
+    <string name="h218f"> ميڊيڪل انشورنس</string>
+    <string name="h218x"> (ٻيو ڪجھ (وضاحت ڪريو</string>
 
-    <string name="h218"> H218:\t ڇا گذريل حمل يا ڊليوري دوران توھانکي ڪنھن مالي مدد جي ضرورت پئي؟</string>
-    <string name="h218a"> ھا </string>
-    <string name="h218b"> نه</string>
-    <string name="h218c"> اھڙي سھڪار بابت خبر نه آھي </string>
+    <string name="h217"> H217:\t ڇا گذريل حمل يا ڊليوري دوران توھانکي ڪنھن مالي مدد جي ضرورت پئي؟</string>
+    <string name="h217a"> ھا </string>
+    <string name="h217b"> نه</string>
+    <string name="h217c"> اھڙي سھڪار بابت خبر نه آھي </string>
 
     <string name="h219"> H219:\t توھان جي گذريل حمل يا ڊليوري لاءِ توھان جي مالي مدد جو ذريعو ڪھڙو ھو؟</string>
     <string name="h219a"> (خاندان (مڙس/پنھنجو ذريعو</string>

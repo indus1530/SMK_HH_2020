@@ -867,11 +867,12 @@
     <string name="h109b"> کسی قسم کا تیل </string>
     <string name="h109c"> ڈیٹول </string>
     <string name="h109d"> پائیوڈین </string>
-    <string name="h109e"> کلورو ہیکسیڈین </string>
+    <string name="h109e"> کلورو ہیکسیڈین / مرہم  </string>
     <string name="h109f"> راکھ </string>
-    <string name="h109g"> ماں کا دودھ </string>
-    <string name="h109h"> کچھ بھی نہیں </string>
-    <string name="h109i"> لگایا تھا مگر یاد نہیں </string>
+    <string name="h109g"> سُرمہ  </string>
+    <string name="h109h"> ماں کا دودھ </string>
+    <string name="h109i"> کچھ بھی نہیں </string>
+    <string name="h109j"> لگایا تھا مگر یاد نہیں </string>
 
     <string name="h110"> H110:\t کیا (نام) کو پیدائش کے بعد ماں کے ساتھ جلد سے جلد ملاکر رکھا گیا تھا ؟ </string>
     <string name="h110a"> ہاں </string>
@@ -961,9 +962,9 @@
     <string name="h124e"> بہت چھوٹا </string>
     <string name="h124f"> معلوم نہیں </string>
 
-    <string name="h125"> H125:\t اب میں (نام) ولادت کے بعد کیئے گیئے صحت کے معائنے سے متعلق کچھ سوالات پوچھون گی۔ </string>
+    <string name="h125"> H125:\t (نام) کی پیدائش کے بعد، کیا کسی نے (نام) کی صحت کا معائنہ کیا تھا؟ </string>
 
-    <string name="h125hint"> (نام) کی پیدائش کے بعد، کیا کسی نے (نام) کی صحت کا معائنہ کیا تھا ؟ </string>
+    <string name="h125hint"> اب میں (نام) ولادت کے بعد کئے گئے صحت کے معائنے سے متعلق کچھ سوالات پوچھونگی </string>
     <string name="h125a"> ہاں </string>
     <string name="h125b"> نہیں </string>
 
@@ -975,21 +976,18 @@
     <string name="h126e"> معلوم نہیں </string>
 
     <string name="h127"> H127:\t (نام) کا پہلی بار معائنہ کس جگہ پر کیا گیا تھا؟ </string>
-    <string name="h127h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="h127a"> گھر </string>
-    <string name="h127b"> تربیتی/ سول ہسپتال </string>
-    <string name="h127c">     ضلعہ/تعلقہ ہسپتال</string>
-    <string name="h127d"> دیہی صحت مرکز </string>
-    <string name="h127e"> بنیادی صحت مرکز </string>
-    <string name="h127f"> ماں اور بچے کا صحت مرکز </string>
-    <string name="h127g"> زچگی گھر </string>
-    <string name="h127h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
-    <string name="h127h2"> خانگی ہسپتال </string>
-    <string name="h127i"> خانگی ہسپتال </string>
-    <string name="h127j"> خانگی کلینک </string>
-    <string name="h127k"> خانگی زچگی گھر </string>
-    <string name="h127l"> این جی او صحت مرکز </string>
-    <string name="h127m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="h127h1"> سرکاری مرکز صحت </string>
+    <string name="h127a"> سول ہسپتال / ٹرشری </string>
+    <string name="h127b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="h127c">رورل ہیلتھ سینٹر</string>
+    <string name="h127d"> بیسک ہیلتھ یونٹ </string>
+    <string name="h127e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="h127f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="h127h2"> نجی مرکز صحت </string>
+    <string name="h127g"> پرائیوٹ ہسپتال </string>
+    <string name="h127h"> پرائیوٹ کلینک</string>
+    <string name="h127i"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="h127j"> رفاہی ادارہ </string>
     <string name="h12796"> دیگر (وضاحت کریں </string>
 
     <string name="h128"> H128:\t (نام) کا پہلی بار معائنہ کس نے کیا تھا ؟ </string>
@@ -997,8 +995,7 @@
     <string name="h128b"> ایل ایچ وی (لیڈی ہیلتھ وزیٹر) </string>
     <string name="h128c"> نرس </string>
     <string name="h128d"> سی ایم ڈبلیو (کمیونیٹی مڈوائف) </string>
-    <string name="h128e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
-    <string name="h128f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
+    <string name="h128e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
     <string name="h129"> H129:\t پہلی بار صحت کے چیک اپ کے دوران، کیا (نام) کا مندرجہ زیل میں سے کوئی معائنہ ہوا تھا ؟ </string>
 
@@ -1141,21 +1138,18 @@
     <string name="h203"> H203:\t زچگی کے کتنی دیر کے بعد آپ کا پہلا طبی معائنہ کیا گیا تھا ؟ </string>
 
     <string name="h204"> H204:\t (نام) کی پیدائش کے بعد آپ کاپہلا طبی معائنہ کہاں  کیا گیا تھا؟ </string>
-    <string name="h204h1"> عوامی/ سرکاری ہسپتال </string>
-    <string name="h204a"> گھر </string>
-    <string name="h204b"> تربیتی/ سول ہسپتال </string>
-    <string name="h204c">     ضلعہ/تعلقہ ہسپتال</string>
-    <string name="h204d"> دیہی صحت مرکز </string>
-    <string name="h204e"> بنیادی صحت مرکز </string>
-    <string name="h204f"> ماں اور بچے کا صحت مرکز </string>
-    <string name="h204g"> زچگی گھر </string>
-    <string name="h204h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
-    <string name="h204h2"> خانگی ہسپتال </string>
-    <string name="h204i"> خانگی ہسپتال </string>
-    <string name="h204j"> خانگی کلینک </string>
-    <string name="h204k"> خانگی زچگی گھر </string>
-    <string name="h204l"> این جی او صحت مرکز </string>
-    <string name="h204m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="h204h1"> سرکاری مرکز صحت </string>
+    <string name="h204a"> سول ہسپتال / ٹرشری </string>
+    <string name="h204b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="h204c">رورل ہیلتھ سینٹر</string>
+    <string name="h204d"> بیسک ہیلتھ یونٹ </string>
+    <string name="h204e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="h204f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="h204h2"> نجی مرکز صحت </string>
+    <string name="h204g"> پرائیوٹ ہسپتال </string>
+    <string name="h204h"> پرائیوٹ کلینک</string>
+    <string name="h204i"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="h204j"> رفاہی ادارہ </string>
     <string name="h20496"> دیگر (وضاحت کریں </string>
 
     <string name="h205"> H205:\t آپ کا پہلا طبی معائنہ کس نے کیا تھا ؟ </string>
@@ -1165,15 +1159,16 @@
     <string name="h205d"> سی ایم ڈبلیو (کمیونیٹی مڈوائف) </string>
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
-    <string name="h205aaa"> Counselling on nutrition </string>
-    <string name="h205aab"> Counselling on IYCF And breast feeding </string>
-    <string name="h205aac"> Counselling on family planning </string>
-    <string name="h205aad"> Assessment for complications </string>
-    <string name="h205aae"> Referral to Health Facility </string>
-    <string name="h205aaf"> Treatment for mother </string>
-    <string name="h205aag"> Nutrition supplies </string>
-    <string name="h205aah"> Contraceptive supplies </string>
+    <string name="h205aa"> H205A:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
+    <string name="h205aaa"> صحت،غذائیت، صفائی کا مشورہ دینا </string>
+    <string name="h205aab"> ماں کو   صحیح طرح دودھ پلانے کا مشورہ  </string>
+    <string name="h205aac"> دیکھ بھال کے لئے مرکز صحت جانے کاحوالہ دینا </string>
+    <string name="h205aad"> پیچیدگیوں کا مشاہدہ </string>
+    <string name="h205aae"> خاندانی منصوبہ بندی کا مشورہ </string>
+    <string name="h205aaf"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
+    <string name="h205aag"> زچگی کے دوران خطرناک علامات کا علاج </string>
+    <string name="h205aah"> مانع حمل کی ادویات  فراہم کرنا </string>
+    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کےبارے میں معلومات  </string>
 
     <string name="h206"> H206:\t کیا آپ کو زچگی کے بعد کی خطرناک علامات / مسائل کے بارے میں معلومات ہے ؟ </string>
     <string name="h206a"> ہاں </string>
@@ -1269,19 +1264,19 @@
     <string name="h2161e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="h2161f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
 
-    <string name="h217"> H217:\t زچہ اور بچہ کی ضروریات کے لیئے مالی ذرائع کیا تھے ؟ </string>
-    <string name="h217a"> خاندان (شوہر یا اپنے وسائل) </string>
-    <string name="h217b"> بینک / آرگنائزیشن سے قرضہ </string>
-    <string name="h217c"> کمیونٹی کا فنڈ </string>
-    <string name="h217d"> رشتہ دار / دوست سے ادھار لینا </string>
-    <string name="h217e"> اثاثوں کی فروخت </string>
-    <string name="h217f"> طبی انشورنس </string>
-    <string name="h217x"> دیگر (وضاحت کریں) </string>
+    <string name="h218"> H218:\t زچہ اور بچہ کی ضروریات کے لیئے مالی ذرائع کیا تھے ؟ </string>
+    <string name="h218a"> خاندان (شوہر یا اپنے وسائل) </string>
+    <string name="h218b"> بینک / آرگنائزیشن سے قرضہ </string>
+    <string name="h218c"> کمیونٹی کا فنڈ </string>
+    <string name="h218d"> رشتہ دار / دوست سے ادھار لینا </string>
+    <string name="h218e"> اثاثوں کی فروخت </string>
+    <string name="h218f"> طبی انشورنس </string>
+    <string name="h218x"> دیگر (وضاحت کریں) </string>
 
-    <string name="h218"> H218:\t کیا آپ نے اپنے آخری حمل یا زچگی کے لئے مالی ذرائع حاصل کئے تھے ؟ </string>
-    <string name="h218a"> ہاں </string>
-    <string name="h218b"> نہیں </string>
-    <string name="h218c"> اس طرح کی مدد کے بارے میں نہیں جانتی </string>
+    <string name="h217"> H217:\t کیا آپ نے اپنے آخری حمل یا زچگی کے لئے مالی ذرائع حاصل کئے تھے ؟ </string>
+    <string name="h217a"> ہاں </string>
+    <string name="h217b"> نہیں </string>
+    <string name="h217c"> اس طرح کی مدد کے بارے میں نہیں جانتی </string>
 
     <string name="h219"> H219:\t آپ کے آخری حمل یا زچگی کے لئے مالی معاونت کا ذریعہ کیا تھا ؟ </string>
     <string name="h219a"> خاندان (شوہر یا اپنے وسائل) </string>

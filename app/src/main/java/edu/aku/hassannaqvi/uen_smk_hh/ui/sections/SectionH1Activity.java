@@ -230,9 +230,10 @@ public class SectionH1Activity extends AppCompatActivity {
                                 bi.h109d.isChecked() ? "4" :
                                         bi.h109e.isChecked() ? "5" :
                                                 bi.h109f.isChecked() ? "6" :
-                                                        bi.h109g.isChecked() ? "7" :
-                                                                bi.h109h.isChecked() ? "8" :
-                                                                        bi.h109i.isChecked() ? "9" : "0");
+                                                        bi.h109g.isChecked() ? "9" :
+                                                                bi.h109h.isChecked() ? "7" :
+                                                                        bi.h109i.isChecked() ? "8" :
+                                                                                bi.h109j.isChecked() ? "88" : "0");
 
         json.put("h110", bi.h110a.isChecked() ? "1" :
                 bi.h110b.isChecked() ? "2" :
