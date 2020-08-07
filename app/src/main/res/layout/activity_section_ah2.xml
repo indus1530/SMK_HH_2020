@@ -21,24 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ahetitle  Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVahetitle"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/ahemtitle" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
             <!-- ah8  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah8"

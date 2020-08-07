@@ -21,24 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ahdmtitle  Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVahdmtitle"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/ahdmtitle" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
             <!-- ah3701  Checkbox  -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah3701"

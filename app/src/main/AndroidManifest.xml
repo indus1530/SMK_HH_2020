@@ -95,31 +95,31 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH1Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahetitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH2Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahemtitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH3Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahhwtitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH4Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahgntitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH5Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahnktitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH6Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahdmtitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAH7Activity"
-            android:label="@string/ah0title"
+            android:label="@string/ahmtitle"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionI1Activity"

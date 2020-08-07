@@ -21,24 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ahmtitle  Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVahmtitle"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/textView3Head"
-                        android:text="@string/ahmtitle" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
             <!-- ah49  Input -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVah49"
