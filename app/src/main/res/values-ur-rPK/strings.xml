@@ -2170,7 +2170,7 @@
     <string name="k103a"> ہاں </string>
     <string name="k103b"> نہیں </string>
 
-    <string name="k104"> K104:\t آپ حمل میں وقفے کے لیے کونسا طریقہ استعمال کررہی ہیں ؟ اگر ایک سے زیادہ طریقہ کار ہو تو سب آپشن پر دائرہ لگائیں (تجویز نہ دیں) </string>
+    <string name="k104"> K104:\t آپ حمل میں وقفے کے لیے کونسا طریقہ استعمال کررہی ہیں / تھیں؟ اگر ایک سے زیادہ طریقہ کار ہو تو سب آپشن پر دائرہ لگائیں (تجویز نہ دیں) </string>
     <string name="k104a"> خواتین کی نس بندی </string>
     <string name="k104b"> مردوں کی نس بندی </string>
     <string name="k104c"> آئی یو ڈی </string>
@@ -2179,9 +2179,9 @@
     <string name="k104f"> گولیاں </string>
     <string name="k104g"> کنڈوم </string>
     <string name="k104h"> ایس ڈی ایم </string>
-    <string name="k104i"> دودھ پلانے کا طریقہ کار </string>
-    <string name="k104j"> ردھم کا طریقہ کار </string>
-    <string name="k104k"> باہر ڈسچارج ہونا </string>
+    <string name="k104i"> دودھ پلانے کا طریقہ کار (LAM)</string>
+    <string name="k104j"> ردھم کا طریقہ کار Rhythm method</string>
+    <string name="k104k">Withdrawal باہر ڈسچارج ہونا </string>
     <string name="k104l"> دیگر جدید طریقہ کار </string>
     <string name="k104m"> دیگرکوئی روایتی طریقہ کار </string>
 
@@ -2216,7 +2216,7 @@
     <string name="k1071a"> ہاں </string>
     <string name="k1071b"> نہیں </string>
 
-    <string name="k1072"> K107a:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="k1072"> K107a:\t لیڈی ہیلتھ ورکر نے کیوں نہیں مہیا کیا ؟ </string>
     <string name="k1072a"> ایل ایچھ ڈبلیو اکثر وزٹ پر نہیں آتی </string>
     <string name="k1072b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کرسکی </string>
     <string name="k1072c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -2224,9 +2224,9 @@
     <string name="k1072e"> کرونا کا ڈر یا خوف </string>
     <string name="k1072f"> سماجی مفاصلا </string>
     <string name="k1072g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-    <string name="k1072h">Not Applicable</string>
+    <string name="k1072h">لاگو نہیں ہوتا</string>
 
-    <string name="k1081"> K108:\t کیا (ایل ایچ ڈبلیو) نے آپ اور آپ کے شوہر کے ساتھ میٹنگ کا بندوبست کیا تھا ؟ </string>
+    <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو)نےآپ اور آپ کے شوہر  کے ساتھ میٹنگ کا بندوبست  کیا تھا ؟ </string>
     <string name="k1081a"> ہاں </string>
     <string name="k1081b"> نہیں </string>
     <string name="k1081c"> کمیونٹی میں عمومی میٹنگ </string>
@@ -2808,7 +2808,7 @@
     <string name="ah1f">انٹرمیڈیٹ</string>
     <string name="ah1g">آنڈر گریجویٹ</string>
     <string name="ah1h">ٹیکنیکل ٹریننگ</string>
-    <string name="ah1i">دینی تعلیم (حافذ/ حافذا)</string>
+    <string name="ah1i">دینی تعلیم ((حافظ/عالم))</string>
     <string name="ah1j">معلوم نہیں</string>
     <string name="ah1k">لاگو نہیں</string>
     <string name="ah2">AH2:\t کیا آپ ابھی اسکول / کالج جاتے ہیں؟</string>
@@ -3083,7 +3083,7 @@
     <string name="ah3703d">لاگو نہیں</string>
     <string name="ah3703f">انفرادی طور پہ</string>
     <string name="ah3703x">دیگر</string>
-    <string name="ah3704">AH3704:\t صحتِ سامہ کے بارے میں کون فیصلہ کرتا ہے؟</string>
+    <string name="ah3704">AH3704:\t صحتِ عامہ کے بارے میں کون فیصلہ کرتا ہے ؟</string>
     <string name="ah3704a">جواب دہندہ</string>
     <string name="ah3704b">والدین</string>
     <string name="ah3704c">خاوند / بیوی</string>

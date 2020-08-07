@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <!-- un01  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVun01"

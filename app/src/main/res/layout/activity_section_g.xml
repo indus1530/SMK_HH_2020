@@ -923,12 +923,6 @@
 
                         </LinearLayout>
 
-                        <!--<CheckBox
-                            android:id="@+id/g11798"
-                            style="@style/checkbox"
-                            android:tag="-1"
-                            android:text="@string/dkn" />-->
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
