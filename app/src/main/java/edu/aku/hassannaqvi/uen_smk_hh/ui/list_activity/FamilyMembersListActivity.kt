@@ -124,6 +124,7 @@ class FamilyMembersListActivity : AppCompatActivity() {
             ViewModelProviders.of(this)[MainVModel::class.java]
         }
         mainVModel.childLstU5.observe(this, Observer { item -> bi.contentScroll.under5.text = String.format("%02d", item.size) })
+        mainVModel.adolsLst.observe(this, Observer { item -> bi.contentScroll.adolescent.text = String.format("%02d", item.size) })
         mainVModel.mwraLst.observe(this, Observer { item -> bi.contentScroll.mwra.text = String.format("%02d", item.size) })
         mainVModel.familyMemLst.observe(this, Observer { item ->
             bi.contentScroll.total.text = String.format("%02d", item.size)
