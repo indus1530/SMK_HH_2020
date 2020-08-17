@@ -43,15 +43,15 @@ import kotlin.Pair;
 
 public class MainApp extends Application {
 
-    public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
-    //    public static final String _IP = "http://f38158";// .TEST server
-    public static final String _HOST_URL = MainApp._IP + "/uen_smk/api/";// .TEST server;
+    //    public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
+    public static final String _IP = "http://f38158";// .TEST server
+    public static final String _HOST_URL = MainApp._IP + "/smk/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
     private static final String LANGUAGE_CODE_UR = "ur";
     //    private static final String LANGUAGE_CODE_SD = "sd";
-    public static final String _UPDATE_URL = MainApp._IP + "/smk/app/smk/hfa/" + LANGUAGE_CODE_UR + "/";
+    public static final String _UPDATE_URL = MainApp._IP + "/smk/app/hfa/" + LANGUAGE_CODE_UR + "/";
     //public static final long MILLISECONDS_IN_5YEAR = (MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR + MILLISECONDS_IN_YEAR);
     private static final long MINIMUM_DISTANCE_CHANGE_FOR_UPDATES = 1; // in Meters
     private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000; // in Milliseconds
