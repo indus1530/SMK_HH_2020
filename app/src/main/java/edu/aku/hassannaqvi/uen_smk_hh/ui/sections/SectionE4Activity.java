@@ -67,7 +67,7 @@ public class SectionE4Activity extends AppCompatActivity {
                 } else {
                     noOfDeath = 0;
                     finish();
-                    List<FamilyMembersContract> lstU5 = mainVModel.getChildLstU5().getValue();
+                    List<FamilyMembersContract> lstU5 = mainVModel.getChildLstU2().getValue();
                     Class nextClass = lstU5 != null ? lstU5.size() > 0 ? SectionI1Activity.class : SectionMActivity.class : SectionMActivity.class;
                     startActivity(new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass));
                 }

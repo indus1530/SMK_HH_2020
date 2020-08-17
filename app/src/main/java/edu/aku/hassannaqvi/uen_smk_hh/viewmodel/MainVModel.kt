@@ -12,7 +12,7 @@ class MainVModel : ViewModel() {
     var mwraLst = MutableLiveData<MutableList<FamilyMembersContract>>()
         private set
 
-    var childLstU5 = MutableLiveData<MutableList<FamilyMembersContract>>()
+    var childLstU2 = MutableLiveData<MutableList<FamilyMembersContract>>()
         private set
 
     var mwraChildU5Lst = MutableLiveData<MutableList<FamilyMembersContract>>()
@@ -38,12 +38,12 @@ class MainVModel : ViewModel() {
         familyMemLst.value = lst
     }
 
-    fun setChildU5(item: FamilyMembersContract) {
-        var lst = childLstU5.value
+    fun setChildU2(item: FamilyMembersContract) {
+        var lst = childLstU2.value
         if (lst.isNullOrEmpty())
             lst = mutableListOf()
         lst.add(item)
-        childLstU5.value = lst
+        childLstU2.value = lst
     }
 
     fun setMwraChildU5(item: FamilyMembersContract) {
@@ -125,7 +125,7 @@ class MainVModel : ViewModel() {
     }
 
     fun getAllChildrenOfSelMWRA(mwraSerial: Int): List<FamilyMembersContract>? {
-        return childLstU5.value?.filter { it -> it.mother_serial.toInt() == mwraSerial }
+        return childLstU2.value?.filter { it -> it.mother_serial.toInt() == mwraSerial }
     }
 
 

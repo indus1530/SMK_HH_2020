@@ -69,6 +69,14 @@ public class SectionDActivity extends AppCompatActivity {
             bi.fldGrpSectionD01.setVisibility(View.VISIBLE);
             bi.fldGrpSectionD02.setVisibility(View.GONE);
             fmc = new FamilyMembersContract();
+            if (serial == 1) {
+                Clear.clearAllFields(bi.d103, false);
+                bi.d103a.setChecked(true);
+                bi.d109.setMinvalue(15);
+            } else if (serial == 2) {
+                Clear.clearAllFields(bi.d104, false);
+                bi.d104.check(MainApp.genderFlag == 1 ? bi.d104b.getId() : bi.d104a.getId());
+            }
         } else {
             bi.d102Name.setText(new StringBuilder(fmc.getName()));
             bi.d102Num.setText(new StringBuilder(fmc.getSerialno()));
@@ -95,12 +103,6 @@ public class SectionDActivity extends AppCompatActivity {
 
             bi.d106.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, menLst));
             bi.d107.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, womenLst));
-        }
-
-        if (serial == 1) {
-            Clear.clearAllFields(bi.d103, false);
-            bi.d103a.setChecked(true);
-            bi.d109.setMinvalue(15);
         }
 
         bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -177,9 +179,11 @@ public class SectionDActivity extends AppCompatActivity {
                     : bi.d103o.isChecked() ? "15"
                     : "0");
 
-            fmc.setGender(bi.d104a.isChecked() ? "1"
-                    : bi.d104b.isChecked() ? "2"
-                    : "0");
+            MainApp.genderFlag = bi.d104a.isChecked() ? 1
+                    : bi.d104b.isChecked() ? 2
+                    : 0;
+
+            fmc.setGender(String.valueOf(MainApp.genderFlag));
 
             fmc.setAge("-1");
 
@@ -260,8 +264,8 @@ public class SectionDActivity extends AppCompatActivity {
 
         if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) < 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
             mainVModel.setMWRA(fmc);
-        else if (Integer.parseInt(fmc.getAge()) < 5) {
-            mainVModel.setChildU5(fmc);
+        else if (Integer.parseInt(fmc.getAge()) < 2) {
+            mainVModel.setChildU2(fmc);
             if (motherFMC == null) return;
             if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) < 49 && motherFMC.getAvailable().equals("1"))
                 mainVModel.setMwraChildU5(motherFMC);

@@ -45,7 +45,7 @@ public class MainApp extends Application {
 
     public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
     //    public static final String _IP = "http://f38158";// .TEST server
-    public static final String _HOST_URL = MainApp._IP + "/uen_ml/api/";// .TEST server;
+    public static final String _HOST_URL = MainApp._IP + "/uen_smk/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
@@ -96,6 +96,7 @@ public class MainApp extends Application {
     public static String[] relationHHLst = {"Head of HH", "Wife/Husband", "Son/Daughters", "Son in law/Daughter in law", "Grand child", "Parents", "Parents in law",
             "Brother/Sister", "Brother in law/Sister in law", "Niece/Nephew", "Grand Parents", "Aunts/Uncle", "Adopted/Step child", "Domestic Servant", "Don’t Know"};
     protected static LocationManager locationManager;
+    public static int genderFlag = 0;
 
     public static void setItemClick(OnItemClick itemClick) {
         MainApp.itemClick = itemClick;
