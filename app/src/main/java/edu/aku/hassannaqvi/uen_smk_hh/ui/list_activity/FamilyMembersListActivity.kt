@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.Companion.SERIAL_EXTRA
@@ -17,7 +17,6 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp.openDialog
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivityFamilyMembersListBinding
-import edu.aku.hassannaqvi.uen_smk_hh.databinding.ItemMemListBinding
 import edu.aku.hassannaqvi.uen_smk_hh.otherClasses.KishGrid
 import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionDActivity
 import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionE1Activity
@@ -35,7 +34,6 @@ class FamilyMembersListActivity : AppCompatActivity() {
     private var memSelectedCounter = 0
     private lateinit var adapter: FamilyMemberListAdapter
     private lateinit var bi: ActivityFamilyMembersListBinding
-    private var viewHolder: ItemMemListBinding? = null
     private var currentFM: FamilyMembersContract? = null
     private lateinit var clickLst: MutableList<FamilyMembersContract>
 
@@ -90,7 +88,7 @@ class FamilyMembersListActivity : AppCompatActivity() {
 
                                     MainApp.pragnantWoman = mainVModel.getAllWomenName()
 
-                                    val mwraChildU5 = mainVModel.mwraChildU5Lst.value
+                                    val mwraChildU5 = mainVModel.mwraChildU2Lst.value
                                     MainApp.selectedKishMWRA = mwraChildU5?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), mwraChildU5.size) - 1)
 
                                     if (MainApp.selectedKishMWRA != null) {
@@ -101,7 +99,7 @@ class FamilyMembersListActivity : AppCompatActivity() {
                                         }
                                     }
 
-                                    val adolData = mainVModel.adolsLst.value
+                                    val adolData = mainVModel.adolsLst.value?.filter { it.available == "1" }
                                     MainApp.selectedKishAdols = adolData?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), adolData.size) - 1)
 
                                     finish()
@@ -121,10 +119,14 @@ class FamilyMembersListActivity : AppCompatActivity() {
 
     private fun settingValue() {
         mainVModel = this.run {
-            ViewModelProviders.of(this)[MainVModel::class.java]
+            ViewModelProvider(this).get(MainVModel::class.java)
         }
         mainVModel.childLstU2.observe(this, Observer { item -> bi.contentScroll.under5.text = String.format("%02d", item.size) })
-        mainVModel.adolsLst.observe(this, Observer { item -> bi.contentScroll.adolescent.text = String.format("%02d", item.size) })
+        mainVModel.adolsLst.observe(this, Observer { item ->
+            bi.contentScroll.adolescent.text = String.format("%02d", item.size)
+            bi.contentScroll.adolscentMale.text = String.format("%02d", item.filter { it.gender == "1" }.size)
+            bi.contentScroll.adolscentFemale.text = String.format("%02d", item.filter { it.gender == "2" }.size)
+        })
         mainVModel.mwraLst.observe(this, Observer { item -> bi.contentScroll.mwra.text = String.format("%02d", item.size) })
         mainVModel.familyMemLst.observe(this, Observer { item ->
             bi.contentScroll.total.text = String.format("%02d", item.size)
@@ -140,16 +142,11 @@ class FamilyMembersListActivity : AppCompatActivity() {
         adapter.setItemClicked { item, position ->
             openDialog(this, item)
             MainApp.setItemClick {
-
                 currentFM = item
-
                 startActivityForResult(Intent(this, SectionDActivity::class.java)
                         .putExtra(SERIAL_EXTRA, item.serialno.toInt()), CONSTANTS.MEMBER_ITEM)
-
             }
-
         }
-
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -171,7 +168,6 @@ class FamilyMembersListActivity : AppCompatActivity() {
         currentFM?.let {
             mainVModel.setCheckedItemValues(currentFM!!.serialno.toInt())
         }
-
     }
 
     private fun kishSelectedMWRA(sno: Int, size: Int): Int {

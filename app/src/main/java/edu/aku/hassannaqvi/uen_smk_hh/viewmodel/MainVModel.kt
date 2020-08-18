@@ -15,7 +15,7 @@ class MainVModel : ViewModel() {
     var childLstU2 = MutableLiveData<MutableList<FamilyMembersContract>>()
         private set
 
-    var mwraChildU5Lst = MutableLiveData<MutableList<FamilyMembersContract>>()
+    var mwraChildU2Lst = MutableLiveData<MutableList<FamilyMembersContract>>()
         private set
 
     var adolsLst = MutableLiveData<MutableList<FamilyMembersContract>>()
@@ -46,17 +46,17 @@ class MainVModel : ViewModel() {
         childLstU2.value = lst
     }
 
-    fun setMwraChildU5(item: FamilyMembersContract) {
-        var lst = mwraChildU5Lst.value
+    fun setMwraChildU2(item: FamilyMembersContract) {
+        var lst = mwraChildU2Lst.value
         if (lst.isNullOrEmpty()) {
             lst = mutableListOf()
             lst.add(item)
         } else {
-            val fmc = mwraChildU5Lst.value?.find { it.serialno.toInt() == item.serialno.toInt() }
+            val fmc = mwraChildU2Lst.value?.find { it.serialno.toInt() == item.serialno.toInt() }
             fmc?.let { lst.map { if (it.serialno.toInt() == fmc.serialno.toInt()) item else it } }
                     ?: lst.add(item)
         }
-        mwraChildU5Lst.value = lst
+        mwraChildU2Lst.value = lst
     }
 
     fun setCheckedItemValues(index: Int) {

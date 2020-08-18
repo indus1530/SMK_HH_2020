@@ -73,9 +73,6 @@ public class SectionDActivity extends AppCompatActivity {
                 Clear.clearAllFields(bi.d103, false);
                 bi.d103a.setChecked(true);
                 bi.d109.setMinvalue(15);
-            } else if (serial == 2) {
-                Clear.clearAllFields(bi.d104, false);
-                bi.d104.check(MainApp.genderFlag == 1 ? bi.d104b.getId() : bi.d104a.getId());
             }
         } else {
             bi.d102Name.setText(new StringBuilder(fmc.getName()));
@@ -114,6 +111,15 @@ public class SectionDActivity extends AppCompatActivity {
                 Clear.clearAllFields(bi.d111g, true);
             }
         }));
+
+        bi.d103.setOnCheckedChangeListener((radioGroup, i) -> {
+            if (i == bi.d103b.getId()) {
+                if (serial == 2) {
+                    Clear.clearAllFields(bi.d104, false);
+                    bi.d104.check(MainApp.genderFlag == 1 ? bi.d104b.getId() : bi.d104a.getId());
+                }
+            } else Clear.clearAllFields(bi.d104, true);
+        });
 
     }
 
@@ -268,9 +274,9 @@ public class SectionDActivity extends AppCompatActivity {
             mainVModel.setChildU2(fmc);
             if (motherFMC == null) return;
             if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) < 49 && motherFMC.getAvailable().equals("1"))
-                mainVModel.setMwraChildU5(motherFMC);
+                mainVModel.setMwraChildU2(motherFMC);
         }
-        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) < 19 && bi.d115a.isChecked() && bi.d105b.isChecked())
+        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) < 19 && bi.d105b.isChecked())
             mainVModel.setAdols(fmc);
     }
 

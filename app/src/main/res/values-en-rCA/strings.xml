@@ -3452,5 +3452,6 @@
     <string name="countYes"> Yes </string>
     <string name="countAlertMsg"> Are you sure to continue </string>
     <string name="adolescent">Adolescent</string>
+    <string name="zero_count">00</string>
 
 </resources>

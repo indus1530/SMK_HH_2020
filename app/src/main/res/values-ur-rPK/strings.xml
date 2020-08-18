@@ -211,9 +211,9 @@
 
     <string name="d114"> گھر میں موجود 5 سال سے کم عمر بچوں کی مجموعئی تعداد D114:\t </string>
 
-    <string name="d115"> D115:\t (10 to 19) (18 years,11 months,29 days) گھرانے میں بالغ/ نو عمر افراد کی مجموعی تعداد؟</string>
-    <string name="d115a"> لڑکے </string>
-    <string name="d115b"> لڑکیاں </string>
+    <string name="d115">  D115:\t کیا یہ شخص گھر پر موجود ہے ؟ </string>
+    <string name="d115a"> ہاں </string>
+    <string name="d115b"> نہیں </string>
 
     <string name="e100"> خاتون کا نام:  E100:\t </string>
 
@@ -3490,6 +3490,7 @@
     <string name="countYes"> جی ہاں </string>
     <string name="countAlertMsg"> یقینا! آپ جاری رکھنا چاہتے ہیں </string>
     <string name="adolescent">Adolescent</string>
+    <string name="zero_count">00</string>
 
 
 </resources>

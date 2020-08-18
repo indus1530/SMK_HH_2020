@@ -22,7 +22,6 @@ public class BLRandomContract {
     private String contact;
     private String selStructure;
     private String sno;
-    private String tabno;
 
     private String rndType;
     private String assignHH;
@@ -40,7 +39,7 @@ public class BLRandomContract {
         this.extension = jsonObject.getString(SingleRandomHH.COLUMN_FAMILY_EXT_CODE);
         this.extension = String.format("%03d", Integer.valueOf(this.extension));
 
-        this.tabno = jsonObject.getString(SingleRandomHH.COLUMN_TAB_NO);
+        String tabno = jsonObject.getString(SingleRandomHH.COLUMN_TAB_NO);
 
         this.hh = tabno + "-" + structure + "-" + extension;
         this.randomDT = jsonObject.getString(SingleRandomHH.COLUMN_RANDOMDT);
@@ -188,7 +187,7 @@ public class BLRandomContract {
         public static final String COLUMN_SNO_HH = "sno";
         public static final String COLUMN_TAB_NO = "tabNo";
 
-        public static String _URI = "ml_random.php";
+        public static String _URI = "bl_random.php";
     }
 
 }
