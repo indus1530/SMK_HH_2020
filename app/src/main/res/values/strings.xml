@@ -2824,6 +2824,7 @@
     <string name="ah3e">Under Graduate</string>
     <string name="ah3f">Technical Training</string>
     <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
+    <string name="ah3other">Other (Specify)</string>
     <string name="ah4">AH4:\t آپ کی عمر کیا تھی جب آپ نے اسکول/ کالج چھوڑا؟</string>
     <string name="ah4a">عمر</string>
     <string name="ah5">AH5:\t آپ کا اسکول سرکاری تھا یا نجی؟</string>

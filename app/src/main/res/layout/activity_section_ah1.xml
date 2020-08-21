@@ -170,14 +170,69 @@
                                 style="@style/i_textview"
                                 android:text="@string/ah3" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <!--request by hamza-->
+                            <!--<com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/ah3"
                                 style="@style/EditTextNum"
                                 android:layout_width="match_parent"
                                 android:hint="@string/ah3"
                                 app:maxValue="100"
                                 app:minValue="0"
-                                app:type="range" />
+                                app:type="range" />-->
+
+                            <RadioGroup
+                                android:id="@+id/ah3"
+                                style="@style/radiogroup">
+
+                                <RadioButton
+                                    android:id="@+id/ah3a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3a" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3b" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3c" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3d"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3d" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3e"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3e" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3f"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3f" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3g"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3g" />
+
+                                <RadioButton
+                                    android:id="@+id/ah3other"
+                                    style="@style/radiobutton"
+                                    android:text="@string/ah3other" />
+
+                                <EditText
+                                    android:id="@+id/ah3otherx"
+                                    style="@style/EditTextAlpha"
+                                    android:hint="@string/specify"
+                                    android:tag="ah796"
+                                    android:text='@{ah3other.checked? ah3otherx.getText().toString() : ""}'
+                                    android:visibility='@{ah3other.checked? View.VISIBLE : View.GONE}' />
+
+                            </RadioGroup>
 
                         </LinearLayout>
 

@@ -34,7 +34,6 @@ public class SectionAH1Activity extends AppCompatActivity {
         bi.txtLbl.setText(new StringBuilder(MainApp.selectedKishAdols.getName().toUpperCase()).append("\n")
                 .append("Serial:")
                 .append(MainApp.selectedKishAdols.getSerialno()));
-
     }
 
     private void setupSkips() {
@@ -48,6 +47,50 @@ public class SectionAH1Activity extends AppCompatActivity {
         bi.ah2.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.ah2b.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVah3);
+            }
+        }));
+
+        bi.ah1.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah1c.getId()) {
+                bi.ah3a.setEnabled(false);
+            }
+            else if (i == bi.ah1d.getId()){
+                bi.ah3a.setEnabled(false);
+                bi.ah3b.setEnabled(false);
+            }
+            else if (i == bi.ah1e.getId()){
+                bi.ah3a.setEnabled(false);
+                bi.ah3b.setEnabled(false);
+                bi.ah3c.setEnabled(false);
+            }
+            else if (i == bi.ah1f.getId()){
+                bi.ah3a.setEnabled(false);
+                bi.ah3b.setEnabled(false);
+                bi.ah3c.setEnabled(false);
+                bi.ah3d.setEnabled(false);
+            }
+            else if (i == bi.ah1g.getId()){
+                bi.ah3a.setEnabled(false);
+                bi.ah3b.setEnabled(false);
+                bi.ah3c.setEnabled(false);
+                bi.ah3d.setEnabled(false);
+                bi.ah3e.setEnabled(false);
+            }
+            else if (i == bi.ah1h.getId()){
+                bi.ah3a.setEnabled(false);
+                bi.ah3b.setEnabled(false);
+                bi.ah3c.setEnabled(false);
+                bi.ah3d.setEnabled(false);
+                bi.ah3e.setEnabled(false);
+                bi.ah3f.setEnabled(false);
+            }
+            else {
+                bi.ah3a.setEnabled(true);
+                bi.ah3b.setEnabled(true);
+                bi.ah3c.setEnabled(true);
+                bi.ah3d.setEnabled(true);
+                bi.ah3e.setEnabled(true);
+                bi.ah3f.setEnabled(true);
             }
         }));
 
@@ -124,7 +167,16 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : bi.ah2b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah3", bi.ah3.getText().toString());
+        json.put("ah3", bi.ah3a.isChecked() ? "11"
+                : bi.ah3b.isChecked() ? "12"
+                : bi.ah3c.isChecked() ? "13"
+                : bi.ah3d.isChecked() ? "14"
+                : bi.ah3e.isChecked() ? "15"
+                : bi.ah3f.isChecked() ? "16"
+                : bi.ah3g.isChecked() ? "17"
+                : bi.ah3other.isChecked() ? "96"
+                : "-1");
+        json.put("ah3otherx", bi.ah3otherx.getText().toString().trim().isEmpty() ? "-1" : bi.ah3otherx.getText().toString());
 
         json.put("ah4", bi.ah4.getText().toString());
 
