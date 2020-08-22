@@ -50,6 +50,7 @@
 
 
                     <EditText
+                        android:layout_margin="10sp"
                         android:id="@+id/a101"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
@@ -227,6 +228,7 @@
                             android:orientation="horizontal">
 
                             <com.edittextpicker.aliazaz.EditTextPicker
+                                android:layout_margin="10sp"
                                 android:id="@+id/a112"
                                 style="@style/textInput"
                                 android:layout_width="0dp"
