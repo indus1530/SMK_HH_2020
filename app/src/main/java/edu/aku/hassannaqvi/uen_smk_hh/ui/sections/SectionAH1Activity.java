@@ -52,6 +52,14 @@ public class SectionAH1Activity extends AppCompatActivity {
 
         bi.ah1.setOnCheckedChangeListener(((radioGroup, i) -> {
             bi.ah3.clearCheck();
+
+            bi.ah3a.setEnabled(true);
+            bi.ah3b.setEnabled(true);
+            bi.ah3c.setEnabled(true);
+            bi.ah3d.setEnabled(true);
+            bi.ah3e.setEnabled(true);
+            bi.ah3f.setEnabled(true);
+
             if (i == bi.ah1c.getId()) {
                 bi.ah3a.setEnabled(false);
             } else if (i == bi.ah1d.getId()) {
@@ -79,13 +87,6 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.ah3d.setEnabled(false);
                 bi.ah3e.setEnabled(false);
                 bi.ah3f.setEnabled(false);
-            } else {
-                bi.ah3a.setEnabled(true);
-                bi.ah3b.setEnabled(true);
-                bi.ah3c.setEnabled(true);
-                bi.ah3d.setEnabled(true);
-                bi.ah3e.setEnabled(true);
-                bi.ah3f.setEnabled(true);
             }
         }));
 
