@@ -22,11 +22,13 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionAh6Binding;
+import edu.aku.hassannaqvi.uen_smk_hh.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionAH6Activity extends AppCompatActivity {
 
     ActivitySectionAh6Binding bi;
+    boolean ah37_flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,10 +88,12 @@ public class SectionAH6Activity extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(bi.ah37ac.getText())) return;
                 if (Integer.parseInt(bi.ah37ac.getText().toString()) >= 10 || Integer.parseInt(bi.ah37ac.getText().toString()) <= 13) {
+                    ah37_flag = false;
                     bi.fldGrpSecAH602.setVisibility(View.GONE);
                     Clear.clearAllFields(bi.fldGrpSecAH602);
                 } else {
                     bi.fldGrpSecAH602.setVisibility(View.VISIBLE);
+                    ah37_flag = true;
                 }
             }
 
@@ -100,7 +104,7 @@ public class SectionAH6Activity extends AppCompatActivity {
 
     }
 
-    public void BtnContinue() {
+    public void BtnContinue(boolean flag) {
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -109,7 +113,7 @@ public class SectionAH6Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionAH7Activity.class));
+                startActivity(new Intent(this, ah37_flag ? SectionAH7Activity.class : EndingActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
