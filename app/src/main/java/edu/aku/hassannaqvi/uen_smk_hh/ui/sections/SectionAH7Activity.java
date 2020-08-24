@@ -37,11 +37,13 @@ public class SectionAH7Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.ah57b.setOnCheckedChangeListener((compoundButton, b) -> {
-            if (b) {
-                Clear.clearAllFields(bi.fldGrpSecAH701);
-            }
-        });
+        bi.ah57b.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpSecAH701));
+//
+//        bi.ah57b.setOnCheckedChangeListener((compoundButton, b) -> {
+//            if (b) {
+//                Clear.clearAllFields(bi.fldGrpSecAH701);
+//            }
+//        });
 
         bi.ah51.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.ah51e.getId()) {
@@ -130,7 +132,8 @@ public class SectionAH7Activity extends AppCompatActivity {
 
         json.put("ah58", bi.ah58.getText().toString());
 
-        json.put("ah59", bi.ah59.getText().toString());
+        json.put("ah59", bi.ah59a.getText().toString());
+        json.put("ah59", bi.ah59b.isChecked() ? "1" : "-1");
 
         json.put("ah60", bi.ah60.getText().toString());
 
