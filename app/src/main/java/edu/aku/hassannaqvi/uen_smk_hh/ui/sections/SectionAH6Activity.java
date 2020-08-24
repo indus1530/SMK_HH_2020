@@ -104,7 +104,7 @@ public class SectionAH6Activity extends AppCompatActivity {
 
     }
 
-    public void BtnContinue(boolean flag) {
+    public void BtnContinue() {
         if (formValidation()) {
             try {
                 SaveDraft();
