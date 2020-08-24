@@ -459,28 +459,28 @@
                         style="@style/linearlayout_view_wt_bound"
                         android:orientation="horizontal">
 
-                       <!-- <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:orientation="vertical">
 
-                            <TextView
-                                style="@style/textView3Head"
-                                android:text="@string/ah37aa" />
+                             <TextView
+                                 style="@style/textView3Head"
+                                 android:text="@string/ah37aa" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/ah37aa"
-                                style="@style/EditTextNum"
-                                android:hint="@string/ah37aa"
-                                android:maxLength="2"
-                                android:textColor="@android:color/black"
-                                app:defaultValue="00"
-                                app:maxValue="29"
-                                app:minValue="1"
-                                app:type="range" />
+                             <com.edittextpicker.aliazaz.EditTextPicker
+                                 android:id="@+id/ah37aa"
+                                 style="@style/EditTextNum"
+                                 android:hint="@string/ah37aa"
+                                 android:maxLength="2"
+                                 android:textColor="@android:color/black"
+                                 app:defaultValue="00"
+                                 app:maxValue="29"
+                                 app:minValue="1"
+                                 app:type="range" />
 
-                        </LinearLayout>-->
+                         </LinearLayout>-->
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -540,13 +540,12 @@
             </androidx.cardview.widget.CardView>
 
 
+            <LinearLayout
+                android:id="@+id/fldGrpSecAH602"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-<!--                <LinearLayout-->
-<!--                    android:id="@+id/fldGrpSecAH602"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:visibility='@{ah45a.checked? View.VISIBLE : View.GONE}'>-->
                 <!-- ah38  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah38"
@@ -1232,7 +1231,7 @@
                 </LinearLayout>
 
 
-<!--            </LinearLayout>-->
+            </LinearLayout>
 
 
             <LinearLayout

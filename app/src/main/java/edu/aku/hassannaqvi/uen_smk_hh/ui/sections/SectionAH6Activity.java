@@ -85,7 +85,7 @@ public class SectionAH6Activity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
                 if (TextUtils.isEmpty(bi.ah37ac.getText())) return;
-                if (Integer.parseInt(bi.ah37ac.getText().toString()) < 14 || Integer.parseInt(bi.ah37ac.getText().toString()) > 19) {
+                if (Integer.parseInt(bi.ah37ac.getText().toString()) >= 10 || Integer.parseInt(bi.ah37ac.getText().toString()) <= 13) {
                     bi.fldGrpSecAH602.setVisibility(View.GONE);
                     Clear.clearAllFields(bi.fldGrpSecAH602);
                 } else {
