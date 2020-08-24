@@ -51,40 +51,35 @@ public class SectionAH1Activity extends AppCompatActivity {
         }));
 
         bi.ah1.setOnCheckedChangeListener(((radioGroup, i) -> {
+            bi.ah3.clearCheck();
             if (i == bi.ah1c.getId()) {
                 bi.ah3a.setEnabled(false);
-            }
-            else if (i == bi.ah1d.getId()){
+            } else if (i == bi.ah1d.getId()) {
                 bi.ah3a.setEnabled(false);
                 bi.ah3b.setEnabled(false);
-            }
-            else if (i == bi.ah1e.getId()){
+            } else if (i == bi.ah1e.getId()) {
                 bi.ah3a.setEnabled(false);
                 bi.ah3b.setEnabled(false);
                 bi.ah3c.setEnabled(false);
-            }
-            else if (i == bi.ah1f.getId()){
+            } else if (i == bi.ah1f.getId()) {
                 bi.ah3a.setEnabled(false);
                 bi.ah3b.setEnabled(false);
                 bi.ah3c.setEnabled(false);
                 bi.ah3d.setEnabled(false);
-            }
-            else if (i == bi.ah1g.getId()){
+            } else if (i == bi.ah1g.getId()) {
                 bi.ah3a.setEnabled(false);
                 bi.ah3b.setEnabled(false);
                 bi.ah3c.setEnabled(false);
                 bi.ah3d.setEnabled(false);
                 bi.ah3e.setEnabled(false);
-            }
-            else if (i == bi.ah1h.getId()){
+            } else if (i == bi.ah1h.getId()) {
                 bi.ah3a.setEnabled(false);
                 bi.ah3b.setEnabled(false);
                 bi.ah3c.setEnabled(false);
                 bi.ah3d.setEnabled(false);
                 bi.ah3e.setEnabled(false);
                 bi.ah3f.setEnabled(false);
-            }
-            else {
+            } else {
                 bi.ah3a.setEnabled(true);
                 bi.ah3b.setEnabled(true);
                 bi.ah3c.setEnabled(true);
