@@ -547,7 +547,7 @@
                                 android:text="@string/ah59" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/ah59"
+                                android:id="@+id/ah59a"
                                 style="@style/EditTextNum"
                                 android:hint="@string/ah59"
                                 android:inputType="number"
@@ -555,6 +555,12 @@
                                 app:maxValue="7"
                                 app:minValue="0"
                                 app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/ah59b"
+                                style="@style/checkbox"
+                                android:tag="-1"
+                                android:text="@string/ah59b" />
 
                         </LinearLayout>
 
