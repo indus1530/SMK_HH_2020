@@ -4,15 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
@@ -74,6 +73,10 @@ public class SectionAH3Activity extends AppCompatActivity {
 
         bi.ah23c.setMaxvalue(CONSTANTS.MAXYEAR1);
         bi.ah23c.setMinvalue(CONSTANTS.MINYEAR1);
+
+        bi.ah24011.setOnCheckedChangeListener((compoundButton, b) -> {
+            Clear.clearAllFields(bi.fldGrpCVah24a, !b);
+        });
 
     }
 
@@ -226,9 +229,7 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah24010b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah24011", bi.ah24011a.isChecked() ? "1" : "-1");
-
-        json.put("ah24011", "-1");
+        json.put("ah24011", bi.ah24011.isChecked() ? "1" : "-1");
 
         json.put("ah2401aa", bi.ah2401aaa.isChecked() ? "1"
                 : bi.ah2401aab.isChecked() ? "2"
