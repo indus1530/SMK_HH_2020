@@ -1079,13 +1079,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112a" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112a"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1100,13 +1104,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112b" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112b"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1121,13 +1129,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112c" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112c"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1142,13 +1154,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112d" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112d"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1163,13 +1179,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112e" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112e"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1184,13 +1204,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112f" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112f"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 
@@ -1205,13 +1229,17 @@
                             android:layout_weight="1"
                             android:text="@string/m112g" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/m112g"
                             style="@style/EditTextNum"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:inputType="number"
                             android:hint="##"
-                            android:maxLength="2" />
+                            app:mask="##"
+                            app:maxValue="20"
+                            app:minValue="1"
+                            app:type="range"/>
 
                     </LinearLayout>
 

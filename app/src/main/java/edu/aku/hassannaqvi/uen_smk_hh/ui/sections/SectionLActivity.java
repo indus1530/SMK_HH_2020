@@ -57,6 +57,8 @@ public class SectionLActivity extends AppCompatActivity {
             }
         }));
 
+        bi.l105.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVl106));
+
     }
 
     public void BtnContinue() {
