@@ -150,82 +150,82 @@ public class SectionF02Activity extends AppCompatActivity {
 
         f1.put("f121", bi.f121a.isChecked() ? "1"
                 : bi.f121b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         f1.put("f121a", bi.f1211a.isChecked() ? "1"
                 : bi.f1211b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
-        f1.put("f121ba", bi.f1212a.isChecked() ? "1" : "0");
-        f1.put("f121bb", bi.f1212b.isChecked() ? "2" : "0");
-        f1.put("f121bc", bi.f1212c.isChecked() ? "3" : "0");
-        f1.put("f121bd", bi.f1212d.isChecked() ? "3a" : "0");
-        f1.put("f121be", bi.f1212e.isChecked() ? "3b" : "0");
-        f1.put("f121bf", bi.f1212f.isChecked() ? "3c" : "0");
-        f1.put("f121bg", bi.f1212g.isChecked() ? "3d" : "0");
+        f1.put("f121ba", bi.f1212a.isChecked() ? "1" : "-1");
+        f1.put("f121bb", bi.f1212b.isChecked() ? "2" : "-1");
+        f1.put("f121bc", bi.f1212c.isChecked() ? "3" : "-1");
+        f1.put("f121bd", bi.f1212d.isChecked() ? "3a" : "-1");
+        f1.put("f121be", bi.f1212e.isChecked() ? "3b" : "-1");
+        f1.put("f121bf", bi.f1212f.isChecked() ? "3c" : "-1");
+        f1.put("f121bg", bi.f1212g.isChecked() ? "3d" : "-1");
 
-        f1.put("f122", bi.f122.getText().toString());
+        f1.put("f122", bi.f122.getText().toString().trim().isEmpty() ? "-1" : bi.f122.getText().toString());
 
-        f1.put("f123a", bi.f123a.isChecked() ? "1" : "0");
-        f1.put("f123b", bi.f123b.isChecked() ? "2" : "0");
-        f1.put("f123c", bi.f123c.isChecked() ? "3" : "0");
-        f1.put("f123d", bi.f123d.isChecked() ? "4" : "0");
-        f1.put("f123e", bi.f123e.isChecked() ? "5" : "0");
-        f1.put("f123f", bi.f123f.isChecked() ? "6" : "0");
-        f1.put("f123g", bi.f123g.isChecked() ? "7" : "0");
-        f1.put("f123h", bi.f123h.isChecked() ? "8" : "0");
-        f1.put("f123i", bi.f123i.isChecked() ? "19" : "0");
-        f1.put("f12396", bi.f12396.isChecked() ? "96" : "0");
-        f1.put("f12396x", bi.f12396x.getText().toString());
+        f1.put("f123a", bi.f123a.isChecked() ? "1" : "-1");
+        f1.put("f123b", bi.f123b.isChecked() ? "2" : "-1");
+        f1.put("f123c", bi.f123c.isChecked() ? "3" : "-1");
+        f1.put("f123d", bi.f123d.isChecked() ? "4" : "-1");
+        f1.put("f123e", bi.f123e.isChecked() ? "5" : "-1");
+        f1.put("f123f", bi.f123f.isChecked() ? "6" : "-1");
+        f1.put("f123g", bi.f123g.isChecked() ? "7" : "-1");
+        f1.put("f123h", bi.f123h.isChecked() ? "8" : "-1");
+        f1.put("f123i", bi.f123i.isChecked() ? "19" : "-1");
+        f1.put("f12396", bi.f12396.isChecked() ? "96" : "-1");
+        f1.put("f12396x", bi.f12396x.getText().toString().trim().isEmpty() ? "-1" : bi.f12396x.getText().toString());
 
         f1.put("f124", bi.f124a.isChecked() ? "1" :
-                bi.f124b.isChecked() ? "2" : "0");
+                bi.f124b.isChecked() ? "2" : "-1");
 
-        f1.put("f125a", bi.f125a.isChecked() ? "1" : "0");
-        f1.put("f125b", bi.f125b.isChecked() ? "2" : "0");
-        f1.put("f125c", bi.f125c.isChecked() ? "3" : "0");
-        f1.put("f125d", bi.f125d.isChecked() ? "4" : "0");
-        f1.put("f125e", bi.f125e.isChecked() ? "5" : "0");
-        f1.put("f125f", bi.f125f.isChecked() ? "6" : "0");
+        f1.put("f125a", bi.f125a.isChecked() ? "1" : "-1");
+        f1.put("f125b", bi.f125b.isChecked() ? "2" : "-1");
+        f1.put("f125c", bi.f125c.isChecked() ? "3" : "-1");
+        f1.put("f125d", bi.f125d.isChecked() ? "4" : "-1");
+        f1.put("f125e", bi.f125e.isChecked() ? "5" : "-1");
+        f1.put("f125f", bi.f125f.isChecked() ? "6" : "-1");
 
-        f1.put("f126a", bi.f126a.isChecked() ? "1" : "0");
-        f1.put("f126b", bi.f126b.isChecked() ? "2" : "0");
-        f1.put("f126c", bi.f126c.isChecked() ? "3" : "0");
-        f1.put("f126d", bi.f126d.isChecked() ? "4" : "0");
-        f1.put("f126e", bi.f126e.isChecked() ? "5" : "0");
-        f1.put("f126f", bi.f126f.isChecked() ? "6" : "0");
-        f1.put("f126g", bi.f126g.isChecked() ? "7" : "0");
+        f1.put("f126a", bi.f126a.isChecked() ? "1" : "-1");
+        f1.put("f126b", bi.f126b.isChecked() ? "2" : "-1");
+        f1.put("f126c", bi.f126c.isChecked() ? "3" : "-1");
+        f1.put("f126d", bi.f126d.isChecked() ? "4" : "-1");
+        f1.put("f126e", bi.f126e.isChecked() ? "5" : "-1");
+        f1.put("f126f", bi.f126f.isChecked() ? "6" : "-1");
+        f1.put("f126g", bi.f126g.isChecked() ? "7" : "-1");
 
         f1.put("f127", bi.f127a.isChecked() ? "1" :
                 bi.f127b.isChecked() ? "2" :
-                        bi.f127c.isChecked() ? "3" : "0");
+                        bi.f127c.isChecked() ? "3" : "-1");
 
-        f1.put("f128a", bi.f128a.isChecked() ? "1" : "0");
-        f1.put("f128b", bi.f128b.isChecked() ? "2" : "0");
-        f1.put("f128c", bi.f128c.isChecked() ? "3" : "0");
-        f1.put("f128d", bi.f128d.isChecked() ? "4" : "0");
-        f1.put("f128e", bi.f128e.isChecked() ? "5" : "0");
-        f1.put("f128f", bi.f128f.isChecked() ? "6" : "0");
-        f1.put("f128g", bi.f128g.isChecked() ? "7" : "0");
+        f1.put("f128a", bi.f128a.isChecked() ? "1" : "-1");
+        f1.put("f128b", bi.f128b.isChecked() ? "2" : "-1");
+        f1.put("f128c", bi.f128c.isChecked() ? "3" : "-1");
+        f1.put("f128d", bi.f128d.isChecked() ? "4" : "-1");
+        f1.put("f128e", bi.f128e.isChecked() ? "5" : "-1");
+        f1.put("f128f", bi.f128f.isChecked() ? "6" : "-1");
+        f1.put("f128g", bi.f128g.isChecked() ? "7" : "-1");
 
         f1.put("f129", bi.f129a.isChecked() ? "1" :
-                bi.f129b.isChecked() ? "2" : "0");
+                bi.f129b.isChecked() ? "2" : "-1");
 
-        f1.put("f130a", bi.f130a.isChecked() ? "1" : "0");
-        f1.put("f130b", bi.f130b.isChecked() ? "2" : "0");
-        f1.put("f130c", bi.f130c.isChecked() ? "3" : "0");
-        f1.put("f130d", bi.f130d.isChecked() ? "4" : "0");
-        f1.put("f130e", bi.f130e.isChecked() ? "5" : "0");
-        f1.put("f130f", bi.f130f.isChecked() ? "6" : "0");
-        f1.put("f130g", bi.f130g.isChecked() ? "7" : "0");
-        f1.put("f130h", bi.f130h.isChecked() ? "8" : "0");
-        f1.put("f130i", bi.f130i.isChecked() ? "9" : "0");
-        f1.put("f130j", bi.f130j.isChecked() ? "10" : "0");
-        f1.put("f130k", bi.f130k.isChecked() ? "11" : "0");
-        f1.put("f130l", bi.f130l.isChecked() ? "12" : "0");
-        f1.put("f130m", bi.f130m.isChecked() ? "13" : "0");
-        f1.put("f130n", bi.f130n.isChecked() ? "14" : "0");
-        f1.put("f130o", bi.f130o.isChecked() ? "15" : "0");
+        f1.put("f130a", bi.f130a.isChecked() ? "1" : "-1");
+        f1.put("f130b", bi.f130b.isChecked() ? "2" : "-1");
+        f1.put("f130c", bi.f130c.isChecked() ? "3" : "-1");
+        f1.put("f130d", bi.f130d.isChecked() ? "4" : "-1");
+        f1.put("f130e", bi.f130e.isChecked() ? "5" : "-1");
+        f1.put("f130f", bi.f130f.isChecked() ? "6" : "-1");
+        f1.put("f130g", bi.f130g.isChecked() ? "7" : "-1");
+        f1.put("f130h", bi.f130h.isChecked() ? "8" : "-1");
+        f1.put("f130i", bi.f130i.isChecked() ? "9" : "-1");
+        f1.put("f130j", bi.f130j.isChecked() ? "10" : "-1");
+        f1.put("f130k", bi.f130k.isChecked() ? "11" : "-1");
+        f1.put("f130l", bi.f130l.isChecked() ? "12" : "-1");
+        f1.put("f130m", bi.f130m.isChecked() ? "13" : "-1");
+        f1.put("f130n", bi.f130n.isChecked() ? "14" : "-1");
+        f1.put("f130o", bi.f130o.isChecked() ? "15" : "-1");
 
         f1.put("f131", bi.f131a.isChecked() ? "1" :
                 bi.f131b.isChecked() ? "2" :
@@ -237,8 +237,9 @@ public class SectionF02Activity extends AppCompatActivity {
                                                                 bi.f131h.isChecked() ? "8" :
                                                                         bi.f131i.isChecked() ? "9" :
                                                                                 bi.f131j.isChecked() ? "10" :
-                                                                                        bi.f13196.isChecked() ? "96" : "0");
-        f1.put("f13196x", bi.f13196x.getText().toString());
+                                                                                        bi.f13196.isChecked() ? "96" : "-1");
+
+        f1.put("f13196x", bi.f13196x.getText().toString().trim().isEmpty() ? "-1" : bi.f13196x.getText().toString());
 
         f1.put("f12801", bi.f12801a.isChecked() ? "1"
                 : bi.f12801b.isChecked() ? "2"
@@ -247,7 +248,7 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f132", bi.f132a.isChecked() ? "1"
                 : bi.f132b.isChecked() ? "2"
                 : bi.f132c.isChecked() ? "3"
-                : "0");
+                : "-1");
 
         f1.put("f13200", bi.f13200a.isChecked() ? "1"
                 : bi.f13200b.isChecked() ? "2"
@@ -260,7 +261,7 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f133", bi.f133a.isChecked() ? "1"
                 : bi.f133b.isChecked() ? "2"
                 : bi.f133c.isChecked() ? "3"
-                : "0");
+                : "-1");
 
         f1.put("f13300", bi.f13300a.isChecked() ? "1"
                 : bi.f13300b.isChecked() ? "2"
@@ -270,20 +271,19 @@ public class SectionF02Activity extends AppCompatActivity {
                 : bi.f13301b.isChecked() ? "2"
                 : "-1");
 
-        f1.put("f134a", bi.f134a.isChecked() ? "1" : "0");
-        f1.put("f134b", bi.f134b.isChecked() ? "2" : "0");
-        f1.put("f134c", bi.f134c.isChecked() ? "3" : "0");
-        f1.put("f134d", bi.f134d.isChecked() ? "4" : "0");
-        f1.put("f134e", bi.f134e.isChecked() ? "5" : "0");
-        f1.put("f134f", bi.f134f.isChecked() ? "6" : "0");
-        f1.put("f134g", bi.f134g.isChecked() ? "7" : "0");
-        f1.put("f134h", bi.f134h.isChecked() ? "8" : "0");
+        f1.put("f134a", bi.f134a.isChecked() ? "1" : "-1");
+        f1.put("f134b", bi.f134b.isChecked() ? "2" : "-1");
+        f1.put("f134c", bi.f134c.isChecked() ? "3" : "-1");
+        f1.put("f134d", bi.f134d.isChecked() ? "4" : "-1");
+        f1.put("f134e", bi.f134e.isChecked() ? "5" : "-1");
+        f1.put("f134f", bi.f134f.isChecked() ? "6" : "-1");
+        f1.put("f134g", bi.f134g.isChecked() ? "7" : "-1");
+        f1.put("f134h", bi.f134h.isChecked() ? "8" : "-1");
 
         try {
+
             JSONObject s4_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.kish.getsF()), f1);
-
             MainApp.kish.setsF(String.valueOf(s4_merge));
-
         } catch (JSONException e) {
             e.printStackTrace();
         }

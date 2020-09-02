@@ -146,7 +146,6 @@ public class SectionE4Activity extends AppCompatActivity {
         f1.put("e12296x", bi.e12296x.getText().toString().trim().isEmpty() ? "-1" : bi.e12296x.getText().toString());
 
         morc.setsE3(String.valueOf(f1));
-
     }
 
     private boolean formValidation() {
