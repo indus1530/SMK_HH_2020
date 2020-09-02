@@ -177,13 +177,13 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
 
         json.put("e101", bi.e101a.isChecked() ? "1"
                 : bi.e101b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
-        json.put("e102", bi.e102.getText().toString());
+        json.put("e102", bi.e102.getText().toString().trim().isEmpty() ? "-1" : bi.e102.getText().toString());
 
         json.put("e102a", bi.e102aa.isChecked() ? "1"
                 : bi.e102ab.isChecked() ? "2"
-                : "0");
+                : "-1");
 
 
         // Deleting item in list

@@ -137,7 +137,6 @@ public class SectionAH1Activity extends AppCompatActivity {
         MainApp.adolscent.setUser(MainApp.fc.getUser());
 
         JSONObject json = new JSONObject();
-
         json.put("fm_uid", MainApp.selectedKishAdols.getUid());
         json.put("fm_serial", MainApp.selectedKishAdols.getSerialno());
         json.put("fm_name", MainApp.selectedKishAdols.getName());
@@ -174,7 +173,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : "-1");
         json.put("ah3otherx", bi.ah3otherx.getText().toString().trim().isEmpty() ? "-1" : bi.ah3otherx.getText().toString());
 
-        json.put("ah4", bi.ah4.getText().toString());
+        json.put("ah4", bi.ah4.getText().toString().trim().isEmpty() ? "-1" : bi.ah4.getText().toString());
 
         json.put("ah5", bi.ah5a.isChecked() ? "1"
                 : bi.ah5b.isChecked() ? "2"
@@ -194,7 +193,8 @@ public class SectionAH1Activity extends AppCompatActivity {
         json.put("ah7g", bi.ah7g.isChecked() ? "7" : "-1");
         json.put("ah7h", bi.ah7h.isChecked() ? "8" : "-1");
         json.put("ah796", bi.ah796.isChecked() ? "96" : "-1");
-        json.put("ah796x", bi.ah796x.getText().toString());
+
+        json.put("ah796x", bi.ah796x.getText().toString().trim().isEmpty() ? "-1" : bi.ah796x.getText().toString());
 
         MainApp.adolscent.setsAH1(String.valueOf(json));
 

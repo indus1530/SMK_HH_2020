@@ -109,11 +109,12 @@ public class SectionE4Activity extends AppCompatActivity {
         f1.put("counter", noOfDeath);
         f1.put("_luid", MainApp.fc.getLuid());
         f1.put("appversion", MainApp.appInfo.getAppVersion());
-        f1.put("e118", bi.e118.getText().toString());
-        f1.put("e119a", bi.e119a.getText().toString());
-        f1.put("e119b", bi.e119b.getText().toString());
-        f1.put("e119c", bi.e119c.getText().toString());
-        f1.put("e120", bi.e120.getText().toString());
+
+        f1.put("e118", bi.e118.getText().toString().trim().isEmpty() ? "-1" : bi.e118.getText().toString());
+        f1.put("e119a", bi.e119a.getText().toString().trim().isEmpty() ? "-1" : bi.e119a.getText().toString());
+        f1.put("e119b", bi.e119b.getText().toString().trim().isEmpty() ? "-1" : bi.e119b.getText().toString());
+        f1.put("e119c", bi.e119c.getText().toString().trim().isEmpty() ? "-1" : bi.e119c.getText().toString());
+        f1.put("e120", bi.e120.getText().toString().trim().isEmpty() ? "-1" : bi.e120.getText().toString());
 
         f1.put("e121", bi.e121a.isChecked() ? "1" :
                 bi.e121b.isChecked() ? "2" :
@@ -123,9 +124,9 @@ public class SectionE4Activity extends AppCompatActivity {
                                                 bi.e121f.isChecked() ? "6" :
                                                         bi.e121g.isChecked() ? "7" :
                                                                 bi.e121h.isChecked() ? "98" :
-                                                                        bi.e12196.isChecked() ? "96" : "0");
+                                                                        bi.e12196.isChecked() ? "96" : "-1");
 
-        f1.put("e12196x", bi.e12196x.getText().toString());
+        f1.put("e12196x", bi.e12196x.getText().toString().trim().isEmpty() ? "-1" : bi.e12196x.getText().toString());
 
         f1.put("e122", bi.e122a.isChecked() ? "1"
                 : bi.e122b.isChecked() ? "2"
@@ -141,8 +142,8 @@ public class SectionE4Activity extends AppCompatActivity {
                 : bi.e122l.isChecked() ? "12"
                 : bi.e122m.isChecked() ? "13"
                 : bi.e12296.isChecked() ? "96"
-                : "0");
-        f1.put("e12296x", bi.e12296x.getText().toString());
+                : "-1");
+        f1.put("e12296x", bi.e12296x.getText().toString().trim().isEmpty() ? "-1" : bi.e12296x.getText().toString());
 
         morc.setsE3(String.valueOf(f1));
 

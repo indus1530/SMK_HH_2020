@@ -91,8 +91,8 @@ public class SectionAH7Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("ah49a", bi.ah49a.getText().toString());
-        json.put("ah49b", bi.ah49b.getText().toString());
+        json.put("ah49a", bi.ah49a.getText().toString().trim().isEmpty() ? "-1" : bi.ah49a.getText().toString());
+        json.put("ah49b", bi.ah49b.getText().toString().trim().isEmpty() ? "-1" : bi.ah49b.getText().toString());
         json.put("ah49c", bi.ah49c.isChecked() ? "98" : "-1");
 
         json.put("ah50", bi.ah50a.isChecked() ? "1"
@@ -100,8 +100,8 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah50c.isChecked() ? "98"
                 : "-1");
 
-        json.put("ah50aaa", bi.ah50aaa.getText().toString());
-        json.put("ah50aab", bi.ah50aab.getText().toString());
+        json.put("ah50aaa", bi.ah50aaa.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aaa.getText().toString());
+        json.put("ah50aab", bi.ah50aab.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aab.getText().toString());
 
         json.put("ah51", bi.ah51a.isChecked() ? "1"
                 : bi.ah51b.isChecked() ? "2"
@@ -110,13 +110,13 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah51e.isChecked() ? "5"
                 : "-1");
 
-        json.put("ah52", bi.ah52.getText().toString());
+        json.put("ah52", bi.ah52.getText().toString().trim().isEmpty() ? "-1" : bi.ah52.getText().toString());
 
         json.put("ah53", bi.ah53a.isChecked() ? "1"
                 : bi.ah53b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah54a", bi.ah54a.getText().toString());
+        json.put("ah54a", bi.ah54a.getText().toString().trim().isEmpty() ? "-1" : bi.ah54a.getText().toString());
         json.put("ah54b", bi.ah54b.isChecked() ? "1" : "-1");
 
         json.put("ah55", bi.ah55a.isChecked() ? "1"
@@ -125,23 +125,22 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah55d.isChecked() ? "7"
                 : "-1");
 
-        json.put("ah56a", bi.ah56a.getText().toString());
+        json.put("ah56a", bi.ah56a.getText().toString().trim().isEmpty() ? "-1" : bi.ah56a.getText().toString());
 
-        json.put("ah57a", bi.ah57a.getText().toString());
+        json.put("ah57a", bi.ah57a.getText().toString().trim().isEmpty() ? "-1" : bi.ah57a.getText().toString());
         json.put("ah57b", bi.ah57b.isChecked() ? "1" : "-1");
 
-        json.put("ah58", bi.ah58.getText().toString());
+        json.put("ah58", bi.ah58.getText().toString().trim().isEmpty() ? "-1" : bi.ah58.getText().toString());
 
-        json.put("ah59", bi.ah59a.getText().toString());
+        json.put("ah59", bi.ah59a.getText().toString().trim().isEmpty() ? "-1" : bi.ah59a.getText().toString());
         json.put("ah59", bi.ah59b.isChecked() ? "1" : "-1");
 
-        json.put("ah60", bi.ah60.getText().toString());
+        json.put("ah60", bi.ah60.getText().toString().trim().isEmpty() ? "-1" : bi.ah60.getText().toString());
 
         try {
+
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH3()), json);
-
             MainApp.adolscent.setsAH3(String.valueOf(json_merge));
-
         } catch (JSONException e) {
             e.printStackTrace();
         }

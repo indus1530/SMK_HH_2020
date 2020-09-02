@@ -251,6 +251,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         dialog.findViewById(R.id.btnOk).setOnClickListener(view -> {
             clearContainer();
+            setChildSpinner();
             dialog.dismiss();
 
         });
@@ -300,7 +301,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         json.put("e104", bi.e104a.isChecked() ? "1"
                 : bi.e104b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         json.put("e105", bi.e105a.isChecked() ? "1"
                 : bi.e105b.isChecked() ? "2"
@@ -308,33 +309,33 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e105d.isChecked() ? "4"
                 : bi.e105e.isChecked() ? "5"
                 : bi.e105f.isChecked() ? "6"
-                : "0");
+                : "-1");
 
-        json.put("e106a", bi.e106a.getText().toString());
-        json.put("e106b", bi.e106b.getText().toString());
-        json.put("e106c", bi.e106c.getText().toString());
-        json.put("e10698", bi.e10698.isChecked() ? "1" : "0");
+        json.put("e106a", bi.e106a.getText().toString().trim().isEmpty() ? "-1" : bi.e106a.getText().toString());
+        json.put("e106b", bi.e106b.getText().toString().trim().isEmpty() ? "-1" : bi.e106b.getText().toString());
+        json.put("e106c", bi.e106c.getText().toString().trim().isEmpty() ? "-1" : bi.e106c.getText().toString());
+        json.put("e10698", bi.e10698.isChecked() ? "1" : "-1");
 
         json.put("e107", bi.e107a.isChecked() ? "1"
                 : bi.e107b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         json.put("e108", bi.e108a.isChecked() ? "1"
                 : bi.e108b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
-        json.put("e109", bi.e109.getText().toString());
+        json.put("e109", bi.e109.getText().toString().trim().isEmpty() ? "-1" : bi.e109.getText().toString());
 
-        if (bi.fldGrpCVd107.getVisibility() == View.VISIBLE && position != 1) {
+        if (bi.container1.getVisibility() == View.VISIBLE && position != 1) {
             json.put("ch_serial", fmc_child.getSerialno());
             json.put("ch_name", fmc_child.getName());
             json.put("ch_uid", fmc_child.getUid());
         }
 
-        json.put("e110a", bi.e110a.getText().toString());
-        json.put("e110b", bi.e110b.getText().toString());
-        json.put("e110c", bi.e110c.getText().toString());
-        json.put("e11098", bi.e11098.isChecked() ? "1" : "0");
+        json.put("e110a", bi.e110a.getText().toString().trim().isEmpty() ? "-1" : bi.e110a.getText().toString());
+        json.put("e110b", bi.e110b.getText().toString().trim().isEmpty() ? "-1" : bi.e110b.getText().toString());
+        json.put("e110c", bi.e110c.getText().toString().trim().isEmpty() ? "-1" : bi.e110c.getText().toString());
+        json.put("e11098", bi.e11098.isChecked() ? "1" : "-1");
 
         json.put("e111", bi.e111a.isChecked() ? "1"
                 : bi.e111b.isChecked() ? "2"
@@ -344,8 +345,8 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e111f.isChecked() ? "6"
                 : bi.e111g.isChecked() ? "7"
                 : bi.e11196.isChecked() ? "96"
-                : "0");
-        json.put("e11196x", bi.e11196x.getText().toString());
+                : "-1");
+        json.put("e11196x", bi.e11196x.getText().toString().trim().isEmpty() ? "-1" : bi.e11196x.getText().toString());
 
         json.put("e112", bi.e112a.isChecked() ? "1"
                 : bi.e112b.isChecked() ? "2"
@@ -360,17 +361,16 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e112k.isChecked() ? "11"
                 : bi.e112l.isChecked() ? "12"
                 : bi.e11296.isChecked() ? "96"
-                : "0");
-        json.put("e11296x", bi.e11296x.getText().toString());
+                : "-1");
+        json.put("e11296x", bi.e11296x.getText().toString().trim().isEmpty() ? "-1" : bi.e11296x.getText().toString());
 
-        json.put("e113m", bi.e113m.getText().toString());
-        json.put("e113y", bi.e113y.getText().toString());
-
-        json.put("e114", bi.e114.getText().toString());
+        json.put("e113m", bi.e113m.getText().toString().trim().isEmpty() ? "-1" : bi.e113m.getText().toString());
+        json.put("e113y", bi.e113y.getText().toString().trim().isEmpty() ? "-1" : bi.e113y.getText().toString());
+        json.put("e114", bi.e114.getText().toString().trim().isEmpty() ? "-1" : bi.e114.getText().toString());
 
         json.put("e115", bi.e115a.isChecked() ? "1"
                 : bi.e115b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         mwraPre.setsE2(String.valueOf(json));
 
@@ -382,7 +382,7 @@ public class SectionE2Activity extends AppCompatActivity {
         }
 
         // Deleting item in list
-        if (bi.fldGrpCVd107.getVisibility() == View.VISIBLE && position != 1) {
+        if (bi.container1.getVisibility() == View.VISIBLE && position != 1) {
             MainApp.selectedMWRAChildLst.getFirst().remove(position - 2);
             MainApp.selectedMWRAChildLst.getSecond().remove(position - 2);
         }

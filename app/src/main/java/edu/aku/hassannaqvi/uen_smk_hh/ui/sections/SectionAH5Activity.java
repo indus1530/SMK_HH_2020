@@ -94,12 +94,12 @@ public class SectionAH5Activity extends AppCompatActivity {
         json.put("ah35i", bi.ah35i.isChecked() ? "9" : "-1");
         json.put("ah35j", bi.ah35j.isChecked() ? "10" : "-1");
 
-        json.put("ah36a", bi.ah36a.getText().toString());
+        json.put("ah36a", bi.ah36a.getText().toString().trim().isEmpty() ? "-1" : bi.ah36a.getText().toString());
         json.put("ah36b", bi.ah36b.isChecked() ? "1" : "-1");
 
         try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH2()), json);
 
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH2()), json);
             MainApp.adolscent.setsAH2(String.valueOf(json_merge));
 
         } catch (JSONException e) {

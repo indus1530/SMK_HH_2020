@@ -99,8 +99,8 @@ public class SectionAH4Activity extends AppCompatActivity {
                 : "-1");
 
         try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH2()), json);
 
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH2()), json);
             MainApp.adolscent.setsAH2(String.valueOf(json_merge));
 
         } catch (JSONException e) {

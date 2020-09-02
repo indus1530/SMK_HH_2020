@@ -183,11 +183,11 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah2204b.isChecked() ? "2"
                 : bi.ah2204c.isChecked() ? "3"
                 : "-1");
-        json.put("ah2296x", bi.ah2296x.getText().toString());
 
-        json.put("ah23a", bi.ah23a.getText().toString());
-        json.put("ah23b", bi.ah23b.getText().toString());
-        json.put("ah23c", bi.ah23c.getText().toString());
+        json.put("ah2296x", bi.ah2296x.getText().toString().trim().isEmpty() ? "-1" : bi.ah2296x.getText().toString());
+        json.put("ah23a", bi.ah23a.getText().toString().trim().isEmpty() ? "-1" : bi.ah23a.getText().toString());
+        json.put("ah23b", bi.ah23b.getText().toString().trim().isEmpty() ? "-1" : bi.ah23b.getText().toString());
+        json.put("ah23c", bi.ah23c.getText().toString().trim().isEmpty() ? "-1" : bi.ah23c.getText().toString());
 
         json.put("ah2401", bi.ah2401a.isChecked() ? "1"
                 : bi.ah2401b.isChecked() ? "2"

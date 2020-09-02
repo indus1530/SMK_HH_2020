@@ -105,7 +105,7 @@ public class SectionAH2Activity extends AppCompatActivity {
                 : bi.ah10d.isChecked() ? "4"
                 : "-1");
 
-        json.put("ah11a", bi.ah11a.getText().toString());
+        json.put("ah11a", bi.ah11a.getText().toString().trim().isEmpty() ? "-1" : bi.ah11a.getText().toString());
 
         json.put("ah12", bi.ah12a.isChecked() ? "1"
                 : bi.ah12b.isChecked() ? "2"
@@ -125,8 +125,8 @@ public class SectionAH2Activity extends AppCompatActivity {
                 : "-1");
 
         try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH1()), json);
 
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.adolscent.getsAH1()), json);
             MainApp.adolscent.setsAH1(String.valueOf(json_merge));
 
         } catch (JSONException e) {

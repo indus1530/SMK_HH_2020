@@ -183,14 +183,13 @@ public class SectionDActivity extends AppCompatActivity {
                     : bi.d103m.isChecked() ? "13"
                     : bi.d103n.isChecked() ? "14"
                     : bi.d103o.isChecked() ? "15"
-                    : "0");
+                    : "-1");
 
             MainApp.genderFlag = bi.d104a.isChecked() ? 1
                     : bi.d104b.isChecked() ? 2
-                    : 0;
+                    : -1;
 
             fmc.setGender(String.valueOf(MainApp.genderFlag));
-
             fmc.setAge("-1");
 
             // Update in ViewModel
@@ -203,30 +202,32 @@ public class SectionDActivity extends AppCompatActivity {
                 : bi.d105b.isChecked() ? "2"
                 : bi.d105c.isChecked() ? "3"
                 : bi.d105d.isChecked() ? "4"
-                : "0");
+                : "-1");
 
         JSONObject sd = new JSONObject();
-
-//        sd.put("formdate", MainApp.fc.getFormDate());
+        //sd.put("formdate", MainApp.fc.getFormDate());
         sd.put("username", MainApp.fc.getUser());
         sd.put("deviceid", MainApp.appInfo.getDeviceID());
         sd.put("tagid", MainApp.fc.getDevicetagID());
         sd.put("appversion", MainApp.appInfo.getAppVersion());
         sd.put("_luid", MainApp.fc.getLuid());
-
         sd.put("d106", fatherSerial);
         fmc.setfName(bi.d106.getSelectedItem().toString());
-
         fmc.setMother_name(bi.d107.getSelectedItem().toString());
         sd.put("d107", motherSerial);
         fmc.setMother_serial(motherSerial);
 
-        sd.put("d108a", bi.d108a.getText().toString());
-        sd.put("d108b", bi.d108b.getText().toString());
-        sd.put("d108c", bi.d108c.getText().toString());
-        sd.put("d109", bi.d109.getText().toString());
+        //sd.put("d108a", bi.d108a.getText().toString());
+        //sd.put("d108b", bi.d108b.getText().toString());
+        //sd.put("d108c", bi.d108c.getText().toString());
+        //sd.put("d109", bi.d109.getText().toString());
+        sd.put("d108a", bi.d108a.getText().toString().trim().isEmpty() ? "-1" : bi.d108a.getText().toString());
+        sd.put("d108b", bi.d108b.getText().toString().trim().isEmpty() ? "-1" : bi.d108b.getText().toString());
+        sd.put("d108c", bi.d108c.getText().toString().trim().isEmpty() ? "-1" : bi.d108c.getText().toString());
+        sd.put("d109",  bi.d109.getText().toString().trim().isEmpty() ? "-1" :  bi.d109.getText().toString());
+
         fmc.setAge(bi.d109.getText().toString());
-        fmc.setMonthfm(bi.d109a.getText().toString().trim().isEmpty() ? "0" : bi.d109a.getText().toString());
+        fmc.setMonthfm(bi.d109a.getText().toString().trim().isEmpty() ? "-1" : bi.d109a.getText().toString());
 
         sd.put("d110", bi.d110a.isChecked() ? "0"
                 : bi.d110b.isChecked() ? "1"
@@ -241,7 +242,7 @@ public class SectionDActivity extends AppCompatActivity {
                 : bi.d110k.isChecked() ? "10"
                 : bi.d110l.isChecked() ? "98"
                 : bi.d110m.isChecked() ? "99"
-                : "0");
+                : "-1");
 
         sd.put("d111", bi.d111a.isChecked() ? "1"
                 : bi.d111b.isChecked() ? "2"
@@ -253,15 +254,15 @@ public class SectionDActivity extends AppCompatActivity {
                 : bi.d111h.isChecked() ? "8"
                 : bi.d111i.isChecked() ? "9"
                 : bi.d111j.isChecked() ? "99"
-                : "0");
+                : "-1");
 
         sd.put("d115", bi.d115a.isChecked() ? "1"
                 : bi.d115b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         fmc.setAvailable(bi.d115a.isChecked() ? "1"
                 : bi.d115b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         fmc.setsD(String.valueOf(sd));
 
@@ -371,7 +372,7 @@ public class SectionDActivity extends AppCompatActivity {
                 bi.d109.setText(null);
                 if (!bi.d108a.isRangeTextValidate() || !bi.d108b.isRangeTextValidate() || !bi.d108c.isRangeTextValidate())
                     return;
-                if (bi.d108a.getText().toString().equals("00") && bi.d108b.getText().toString().equals("00") && bi.d108c.getText().toString().equals("00")) {
+                if (bi.d108a.getText().toString().equals("00") && bi.d108b.getText().toString().equals("00") && bi.d108c.getText().toString().equals("0000")) {
                     bi.d109a.setEnabled(true);
                     bi.d109.setEnabled(true);
                     dtFlag = true;
