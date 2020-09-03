@@ -176,6 +176,9 @@ public class SectionH2Activity extends AppCompatActivity {
             }
         });
 
+        //h217
+        bi.h217.setOnCheckedChangeListener((radiogroup, i) -> Clear.clearAllFields(bi.fldGrpsecH201));
+
     }
 
     public void BtnContinue() {
