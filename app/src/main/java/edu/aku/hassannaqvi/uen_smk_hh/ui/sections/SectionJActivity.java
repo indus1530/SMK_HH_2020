@@ -216,50 +216,42 @@ public class SectionJActivity extends AppCompatActivity {
 
         json.put("j101", bi.j101a.isChecked() ? "1" :
                 bi.j101b.isChecked() ? "2" :
-                        bi.j101c.isChecked() ? "3" : "0");
+                        bi.j101c.isChecked() ? "3" : "-1");
 
         json.put("j102", bi.j102a.isChecked() ? "1" :
-                bi.j102b.isChecked() ? "2" : "0");
+                bi.j102b.isChecked() ? "2" : "-1");
 
-        json.put("j103d", bi.j103d.isChecked() ? "98" : "0");
-        json.put("j103a", bi.j103a.getText().toString());
-        json.put("j103b", bi.j103b.getText().toString());
-        json.put("j103c", bi.j103c.getText().toString());
+        json.put("j103d", bi.j103d.isChecked() ? "98" : "-1");
 
-        json.put("j10401d", bi.j10401d.getText().toString());
-        json.put("j10401m", bi.j10401m.getText().toString());
-        json.put("j10401y", bi.j10401y.getText().toString());
-
-        json.put("j10402d", bi.j10402d.getText().toString());
-        json.put("j10402m", bi.j10402m.getText().toString());
-        json.put("j10402y", bi.j10402y.getText().toString());
-
-        json.put("j10403d", bi.j10403d.getText().toString());
-        json.put("j10403m", bi.j10403m.getText().toString());
-        json.put("j10403y", bi.j10403y.getText().toString());
-
-        json.put("j10404d", bi.j10404d.getText().toString());
-        json.put("j10404m", bi.j10404m.getText().toString());
-        json.put("j10404y", bi.j10404y.getText().toString());
-
-        json.put("j10405d", bi.j10405d.getText().toString());
-        json.put("j10405m", bi.j10405m.getText().toString());
-        json.put("j10405y", bi.j10405y.getText().toString());
-
-        json.put("j10406d", bi.j10406d.getText().toString());
-        json.put("j10406m", bi.j10406m.getText().toString());
-        json.put("j10406y", bi.j10406y.getText().toString());
-
-        json.put("j10407d", bi.j10407d.getText().toString());
-        json.put("j10407m", bi.j10407m.getText().toString());
-        json.put("j10407y", bi.j10407y.getText().toString());
-
-        json.put("j10408d", bi.j10408d.getText().toString());
-        json.put("j10408m", bi.j10408m.getText().toString());
-        json.put("j10408y", bi.j10408y.getText().toString());
+        json.put("j103a", bi.j103a.getText().toString().trim().isEmpty() ? "-1" : bi.j103a.getText().toString());
+        json.put("j103b", bi.j103b.getText().toString().trim().isEmpty() ? "-1" : bi.j103b.getText().toString());
+        json.put("j103c", bi.j103c.getText().toString().trim().isEmpty() ? "-1" : bi.j103c.getText().toString());
+        json.put("j10401d", bi.j10401d.getText().toString().trim().isEmpty() ? "-1" : bi.j10401d.getText().toString());
+        json.put("j10401m", bi.j10401m.getText().toString().trim().isEmpty() ? "-1" : bi.j10401m.getText().toString());
+        json.put("j10401y", bi.j10401y.getText().toString().trim().isEmpty() ? "-1" : bi.j10401y.getText().toString());
+        json.put("j10402d", bi.j10402d.getText().toString().trim().isEmpty() ? "-1" : bi.j10402d.getText().toString());
+        json.put("j10402m", bi.j10402m.getText().toString().trim().isEmpty() ? "-1" : bi.j10402m.getText().toString());
+        json.put("j10402y", bi.j10402y.getText().toString().trim().isEmpty() ? "-1" : bi.j10402y.getText().toString());
+        json.put("j10403d", bi.j10403d.getText().toString().trim().isEmpty() ? "-1" : bi.j10403d.getText().toString());
+        json.put("j10403m", bi.j10403m.getText().toString().trim().isEmpty() ? "-1" : bi.j10403m.getText().toString());
+        json.put("j10403y", bi.j10403y.getText().toString().trim().isEmpty() ? "-1" : bi.j10403y.getText().toString());
+        json.put("j10404d", bi.j10404d.getText().toString().trim().isEmpty() ? "-1" : bi.j10404d.getText().toString());
+        json.put("j10404m", bi.j10404m.getText().toString().trim().isEmpty() ? "-1" : bi.j10404m.getText().toString());
+        json.put("j10404y", bi.j10404y.getText().toString().trim().isEmpty() ? "-1" : bi.j10404y.getText().toString());
+        json.put("j10405d", bi.j10405d.getText().toString().trim().isEmpty() ? "-1" : bi.j10405d.getText().toString());
+        json.put("j10405m", bi.j10405m.getText().toString().trim().isEmpty() ? "-1" : bi.j10405m.getText().toString());
+        json.put("j10405y", bi.j10405y.getText().toString().trim().isEmpty() ? "-1" : bi.j10405y.getText().toString());
+        json.put("j10406d", bi.j10406d.getText().toString().trim().isEmpty() ? "-1" : bi.j10406d.getText().toString());
+        json.put("j10406m", bi.j10406m.getText().toString().trim().isEmpty() ? "-1" : bi.j10406m.getText().toString());
+        json.put("j10406y", bi.j10406y.getText().toString().trim().isEmpty() ? "-1" : bi.j10406y.getText().toString());
+        json.put("j10407d", bi.j10407d.getText().toString().trim().isEmpty() ? "-1" : bi.j10407d.getText().toString());
+        json.put("j10407m", bi.j10407m.getText().toString().trim().isEmpty() ? "-1" : bi.j10407m.getText().toString());
+        json.put("j10407y", bi.j10407y.getText().toString().trim().isEmpty() ? "-1" : bi.j10407y.getText().toString());
+        json.put("j10408d", bi.j10408d.getText().toString().trim().isEmpty() ? "-1" : bi.j10408d.getText().toString());
+        json.put("j10408m", bi.j10408m.getText().toString().trim().isEmpty() ? "-1" : bi.j10408m.getText().toString());
+        json.put("j10408y", bi.j10408y.getText().toString().trim().isEmpty() ? "-1" : bi.j10408y.getText().toString());
 
         //    MainApp.child.setsJ(String.valueOf(json));
-
     }
 
     private boolean formValidation() {

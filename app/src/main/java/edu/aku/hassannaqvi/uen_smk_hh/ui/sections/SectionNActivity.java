@@ -110,7 +110,7 @@ public class SectionNActivity extends AppCompatActivity {
                                                                                                         bi.n101l.isChecked() ? "12" :
                                                                                                                 bi.n101m.isChecked() ? "13" :
                                                                                                                         bi.n101n.isChecked() ? "14" :
-                                                                                                                                "0");
+                                                                                                                                "-1");
         json.put("n102",
                 bi.n102a.isChecked() ? "1" :
                         bi.n102b.isChecked() ? "2" :
@@ -126,16 +126,14 @@ public class SectionNActivity extends AppCompatActivity {
                                                                                                         bi.n102l.isChecked() ? "12" :
                                                                                                                 bi.n102m.isChecked() ? "13" :
                                                                                                                         bi.n102n.isChecked() ? "14" :
-                                                                                                                                "0");
+                                                                                                                                "-1");
         json.put("n103",
                 bi.n103a.isChecked() ? "1" :
                         bi.n103b.isChecked() ? "2" :
                                 bi.n103c.isChecked() ? "3" :
-                                        "0");
+                                        "-1");
 
-        json.put("n104",
-                bi.n10498.isChecked() ? "98" :
-                        bi.n104.getText().toString());
+        json.put("n104", bi.n10498.isChecked() ? "98" : bi.n104.getText().toString());
 
         json.put("n105",
                 bi.n105a.isChecked() ? "1" :
@@ -144,32 +142,32 @@ public class SectionNActivity extends AppCompatActivity {
                                         bi.n105d.isChecked() ? "4" :
                                                 bi.n105e.isChecked() ? "5" :
                                                         bi.n105f.isChecked() ? "98" :
-                                                                "0");
+                                                                "-1");
 
         json.put("n106",
                 bi.n106a.isChecked() ? "1" :
                         bi.n106b.isChecked() ? "2" :
-                                "0");
+                                "-1");
 
         json.put("n107",
                 bi.n107a.isChecked() ? "1" :
                         bi.n107b.isChecked() ? "2" :
                                 bi.n10798.isChecked() ? "98" :
-                                        "0");
+                                        "-1");
 
         json.put("n108",
                 bi.n108a.isChecked() ? "1" :
                         bi.n108b.isChecked() ? "2" :
                                 bi.n10898.isChecked() ? "98" :
-                                        "0");
+                                        "-1");
 
-        json.put("n109a", bi.n109a.isChecked() ? "1" : "0");
-        json.put("n109b", bi.n109b.isChecked() ? "2" : "0");
-        json.put("n109c", bi.n109c.isChecked() ? "3" : "0");
-        json.put("n109d", bi.n109d.isChecked() ? "4" : "0");
-        json.put("n109e", bi.n109e.isChecked() ? "5" : "0");
-        json.put("n109f", bi.n109f.isChecked() ? "6" : "0");
-        json.put("n109g", bi.n109g.isChecked() ? "7" : "0");
+        json.put("n109a", bi.n109a.isChecked() ? "1" : "-1");
+        json.put("n109b", bi.n109b.isChecked() ? "2" : "-1");
+        json.put("n109c", bi.n109c.isChecked() ? "3" : "-1");
+        json.put("n109d", bi.n109d.isChecked() ? "4" : "-1");
+        json.put("n109e", bi.n109e.isChecked() ? "5" : "-1");
+        json.put("n109f", bi.n109f.isChecked() ? "6" : "-1");
+        json.put("n109g", bi.n109g.isChecked() ? "7" : "-1");
 
         json.put("n110",
                 bi.n110a.isChecked() ? "1" :
@@ -183,26 +181,25 @@ public class SectionNActivity extends AppCompatActivity {
                                                                                 bi.n110i.isChecked() ? "9" :
                                                                                         bi.n110j.isChecked() ? "10" :
                                                                                                 bi.n110k.isChecked() ? "11" :
-                                                                                                        "0");
+                                                                                                        "-1");
         json.put("n111",
                 bi.n111a.isChecked() ? "1" :
                         bi.n111b.isChecked() ? "2" :
                                 bi.n11198.isChecked() ? "98" :
-                                        "0");
+                                        "-1");
 
         json.put("n112",
                 bi.n112a.isChecked() ? "1" :
                         bi.n112b.isChecked() ? "2" :
-                                "0");
+                                "-1");
 
         json.put("n113",
                 bi.n113a.isChecked() ? "1" :
                         bi.n113b.isChecked() ? "2" :
                                 bi.n11398.isChecked() ? "98" :
-                                        "0");
+                                        "-1");
 
         MainApp.fc.setsN(String.valueOf(json));
-
     }
 
     private boolean formValidation() {

@@ -93,42 +93,42 @@ public class SectionOActivity extends AppCompatActivity {
                         bi.o101b.isChecked() ? "2" :
                                 bi.o101c.isChecked() ? "3" :
                                         bi.o10196.isChecked() ? "96" :
-                                                "0");
-        json.put("o10196x", bi.o10196x.getText().toString());
+                                                "-1");
+
+        json.put("o10196x", bi.o10196x.getText().toString().trim().isEmpty() ? "-1" : bi.o10196x.getText().toString());
 
         json.put("o102",
                 bi.o102a.isChecked() ? "1" :
                         bi.o102b.isChecked() ? "2" :
-                                "0");
+                                "-1");
 
         json.put("o103",
                 bi.o103a.isChecked() ? "1" :
                         bi.o103b.isChecked() ? "2" :
-                                "0");
+                                "-1");
 
-        json.put("o104a", bi.o104a.isChecked() ? "1" : "0");
-        json.put("o104b", bi.o104b.isChecked() ? "2" : "0");
-        json.put("o104c", bi.o104c.isChecked() ? "3" : "0");
-        json.put("o104d", bi.o104d.isChecked() ? "4" : "0");
-        json.put("o10497", bi.o10497.isChecked() ? "97" : "0");
+        json.put("o104a", bi.o104a.isChecked() ? "1" : "-1");
+        json.put("o104b", bi.o104b.isChecked() ? "2" : "-1");
+        json.put("o104c", bi.o104c.isChecked() ? "3" : "-1");
+        json.put("o104d", bi.o104d.isChecked() ? "4" : "-1");
+        json.put("o10497", bi.o10497.isChecked() ? "97" : "-1");
         /*f1.put("o104xt", bi.o104xt.getText().toString());*/
 
         json.put("o105", bi.o105a.isChecked() ? "1"
                 : bi.o105b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
         json.put("o106", bi.o106a.isChecked() ? "1"
                 : bi.o106b.isChecked() ? "2"
-                : "0");
+                : "-1");
 
-        json.put("o107a", bi.o107a.isChecked() ? "1" : "0");
-        json.put("o107b", bi.o107b.isChecked() ? "2" : "0");
-        json.put("o107c", bi.o107c.isChecked() ? "3" : "0");
-        json.put("o107d", bi.o107d.isChecked() ? "4" : "0");
-        json.put("o10797", bi.o10797.isChecked() ? "97" : "0");
+        json.put("o107a", bi.o107a.isChecked() ? "1" : "-1");
+        json.put("o107b", bi.o107b.isChecked() ? "2" : "-1");
+        json.put("o107c", bi.o107c.isChecked() ? "3" : "-1");
+        json.put("o107d", bi.o107d.isChecked() ? "4" : "-1");
+        json.put("o10797", bi.o10797.isChecked() ? "97" : "-1");
 
         MainApp.fc.setsO(String.valueOf(json));
-
     }
 
     private boolean formValidation() {
