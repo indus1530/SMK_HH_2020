@@ -455,6 +455,13 @@
                             app:minValue="0"
                             app:type="range" />
 
+                        <CheckBox
+                            android:id="@+id/ah56b"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/ah56b" />
+
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
