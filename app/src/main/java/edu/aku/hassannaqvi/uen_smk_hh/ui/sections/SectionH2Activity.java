@@ -85,11 +85,14 @@ public class SectionH2Activity extends AppCompatActivity {
             if (checkedId == bi.h206a.getId()) {
                 bi.fldGrpCVh207.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh208.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh20801.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVh207);
                 Clear.clearAllFields(bi.fldGrpCVh208);
+                Clear.clearAllFields(bi.fldGrpCVh20801);
                 bi.fldGrpCVh207.setVisibility(View.GONE);
                 bi.fldGrpCVh208.setVisibility(View.GONE);
+                bi.fldGrpCVh20801.setVisibility(View.GONE);
             }
         });
 
