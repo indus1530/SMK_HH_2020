@@ -68,13 +68,16 @@ public class SectionH2Activity extends AppCompatActivity {
                 bi.fldGrpCVh203.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh204.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh205.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh205aa.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVh203);
                 Clear.clearAllFields(bi.fldGrpCVh204);
                 Clear.clearAllFields(bi.fldGrpCVh205);
+                Clear.clearAllFields(bi.fldGrpCVh205aa);
                 bi.fldGrpCVh203.setVisibility(View.GONE);
                 bi.fldGrpCVh204.setVisibility(View.GONE);
                 bi.fldGrpCVh205.setVisibility(View.GONE);
+                bi.fldGrpCVh205aa.setVisibility(View.GONE);
             }
         });
 
