@@ -129,8 +129,8 @@ public class SectionUNActivity extends AppCompatActivity {
                 : bi.un04c.isChecked() ? "3"
                 : bi.un04d.isChecked() ? "4"
                 : "-1");
-        json.put("un04ax", bi.un04ax.getText().toString());
-        json.put("un04bx", bi.un04bx.getText().toString());
+        json.put("un04ax", bi.un04ax.getText().toString().trim().isEmpty() ? "-1" : bi.un04ax.getText().toString());
+        json.put("un04bx", bi.un04bx.getText().toString().trim().isEmpty() ? "-1" : bi.un04bx.getText().toString());
 
         json.put("un05", bi.un05a.isChecked() ? "1"
                 : bi.un05b.isChecked() ? "2"
@@ -147,7 +147,7 @@ public class SectionUNActivity extends AppCompatActivity {
                 : bi.un06h.isChecked() ? "8"
                 : bi.un0696.isChecked() ? "96"
                 : "-1");
-        json.put("un0696x", bi.un0696x.getText().toString());
+        json.put("un0696x", bi.un0696x.getText().toString().trim().isEmpty() ? "-1" : bi.un0696x.getText().toString());
 
         json.put("un07", bi.un07a.isChecked() ? "1"
                 : bi.un07b.isChecked() ? "2"
@@ -157,7 +157,6 @@ public class SectionUNActivity extends AppCompatActivity {
                 : "-1");
 
         MainApp.kish.setsUN(String.valueOf(json));
-
     }
 
     private boolean formValidation() {
