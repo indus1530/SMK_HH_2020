@@ -68,13 +68,16 @@ public class SectionH2Activity extends AppCompatActivity {
                 bi.fldGrpCVh203.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh204.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh205.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh205aa.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVh203);
                 Clear.clearAllFields(bi.fldGrpCVh204);
                 Clear.clearAllFields(bi.fldGrpCVh205);
+                Clear.clearAllFields(bi.fldGrpCVh205aa);
                 bi.fldGrpCVh203.setVisibility(View.GONE);
                 bi.fldGrpCVh204.setVisibility(View.GONE);
                 bi.fldGrpCVh205.setVisibility(View.GONE);
+                bi.fldGrpCVh205aa.setVisibility(View.GONE);
             }
         });
 
@@ -85,11 +88,14 @@ public class SectionH2Activity extends AppCompatActivity {
             if (checkedId == bi.h206a.getId()) {
                 bi.fldGrpCVh207.setVisibility(View.VISIBLE);
                 bi.fldGrpCVh208.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh20801.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVh207);
                 Clear.clearAllFields(bi.fldGrpCVh208);
+                Clear.clearAllFields(bi.fldGrpCVh20801);
                 bi.fldGrpCVh207.setVisibility(View.GONE);
                 bi.fldGrpCVh208.setVisibility(View.GONE);
+                bi.fldGrpCVh20801.setVisibility(View.GONE);
             }
         });
 
@@ -175,6 +181,9 @@ public class SectionH2Activity extends AppCompatActivity {
 
             }
         });
+
+        //h217
+        bi.h217.setOnCheckedChangeListener((radiogroup, i) -> Clear.clearAllFields(bi.fldGrpsecH201));
 
     }
 
