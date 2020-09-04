@@ -1287,52 +1287,54 @@
     <string name="h2161e"> ڪرونا جي لاڪ ڊائون ڪري سواري نه ھئي </string>
     <string name="h2161f"> گهر ۾ حفاظتي سامان (ماسڪ / داستانه) موجود نه ھئا </string>
 
-    <string name="h218"> H218:\t ماءُ، نئين ڄاول ٻار ۽ ٻارن جي صحت جي ضرورتن جي لاءِ توھان وٽ مالي مدد جو ڪھڙو ذريعو آھي؟</string>
+    <string name="h217"> H217:\t ڇا گذريل حمل يا ڊليوري دوران توھانکي ڪنھن مالي مدد جي ضرورت پئي؟</string>
+    <string name="h217a"> ھا </string>
+    <string name="h217b"> نه</string>
+    <string name="h217c"> اھڙي سھڪار بابت خبر نه آھي </string>
+
+    <!--<string name="h218"> H218:\t ماءُ، نئين ڄاول ٻار ۽ ٻارن جي صحت جي ضرورتن جي لاءِ توھان وٽ مالي مدد جو ڪھڙو ذريعو آھي؟</string>
     <string name="h218a"> (خاندان (مڙس/پنھنجو ذريعو</string>
     <string name="h218b"> بئنڪ/تنظيم کان قرض </string>
     <string name="h218c"> علائقائي مدد </string>
     <string name="h218d"> مائٽ/دوست کان اوڌر</string>
     <string name="h218e"> اثاثن جو وڪرو </string>
     <string name="h218f"> ميڊيڪل انشورنس</string>
-    <string name="h218x"> (ٻيو ڪجھ (وضاحت ڪريو</string>
+    <string name="h218x"> (ٻيو ڪجھ (وضاحت ڪريو</string>-->
 
-    <string name="h217"> H217:\t ڇا گذريل حمل يا ڊليوري دوران توھانکي ڪنھن مالي مدد جي ضرورت پئي؟</string>
-    <string name="h217a"> ھا </string>
-    <string name="h217b"> نه</string>
-    <string name="h217c"> اھڙي سھڪار بابت خبر نه آھي </string>
+    <string name="h218"> H218:\t توھان جي گذريل حمل يا ڊليوري لاءِ توھان جي مالي مدد جو ذريعو ڪھڙو ھو؟</string>
+    <string name="h218a"> (خاندان (مڙس/پنھنجو ذريعو</string>
+    <string name="h218b"> بئنڪ/تنظيم کان قرض </string>
+    <string name="h218c"> علائقائي مدد </string>
+    <string name="h218d"> مائٽ دوست کان اوڌر</string>
+    <string name="h218e"> اثاثن جو وڪرو </string>
+    <string name="h218f"> ميڊيڪل انشورنس</string>
+    <string name="h218x"> ٻيو ڪجھ وضاحت ڪريو </string>
 
-    <string name="h219"> H219:\t توھان جي گذريل حمل يا ڊليوري لاءِ توھان جي مالي مدد جو ذريعو ڪھڙو ھو؟</string>
-    <string name="h219a"> (خاندان (مڙس/پنھنجو ذريعو</string>
-    <string name="h219b"> بئنڪ/تنظيم کان قرض </string>
-    <string name="h219c"> علائقائي مدد </string>
-    <string name="h219d"> مائٽ دوست کان اوڌر</string>
-    <string name="h219e"> اثاثن جو وڪرو </string>
-    <string name="h219f"> ميڊيڪل انشورنس</string>
-    <string name="h219x"> ٻيو ڪجھ وضاحت ڪريو </string>
+    <string name="h219"> H219:\t مالي مدد گھڻو ڪري ڪھڙي سبب تي استعمال ڪئي وئي؟</string>
+    <string name="h219a"> سواري </string>
+    <string name="h219b"> حمل دوران سارسنڀال </string>
+    <string name="h219c"> ڊليوري/وڏو آپريشن </string>
+    <string name="h219d"> ايمرجنسي (ھنگامي صورتحال) لاءِ </string>
+    <string name="h219e"> ڊليوري کان پوءِ جي سارسنڀال </string>
+    <string name="h219f"> نئين ڄاول ٻار ۽ 5 سالن گھٽ عمر واري ٻار جي صحت لاءِ </string>
+    <string name="h219x"> (ٻيو ڪجھ (وضاحت ڪريو </string>
 
-    <string name="h220"> H220:\t مالي مدد گھڻو ڪري ڪھڙي سبب تي استعمال ڪئي وئي؟</string>
-    <string name="h220a"> سواري </string>
-    <string name="h220b"> حمل دوران سارسنڀال </string>
-    <string name="h220c"> ڊليوري/وڏو آپريشن </string>
-    <string name="h220d"> ايمرجنسي (ھنگامي صورتحال) لاءِ </string>
-    <string name="h220e"> ڊليوري کان پوءِ جي سارسنڀال </string>
-    <string name="h220f"> نئين ڄاول ٻار ۽ 5 سالن گھٽ عمر واري ٻار جي صحت لاءِ </string>
-    <string name="h220x"> (ٻيو ڪجھ (وضاحت ڪريو </string>
+    <string name="h220"> H220:\t اڄ تائين، ڇا توھان ورتل قرض جو ڪجھ حصو يا مڪمل قرض واپس ادا ڪيو آھي؟</string>
+    <string name="h220a"> مڪمل </string>
+    <string name="h220b"> ڪجھ حصو </string>
+    <string name="h220c"> اڃا تائين ڪجھ به واپس نه ڪيو آھي </string>
 
-    <string name="h221"> H221:\t اڄ تائين، ڇا توھان ورتل قرض جو ڪجھ حصو يا مڪمل قرض واپس ادا ڪيو آھي؟</string>
-    <string name="h221a"> مڪمل </string>
-    <string name="h221b"> ڪجھ حصو </string>
-    <string name="h221c"> اڃا تائين ڪجھ به واپس نه ڪيو آھي </string>
-    <string name="h222"> H222:\t ھن قرض کي واپس ڪرڻ لاءِ توھان ڪھڙي حڪمت عملي استعمال ڪئي؟</string>
+    <string name="h221"> H221:\t ھن قرض کي واپس ڪرڻ لاءِ توھان ڪھڙي حڪمت عملي استعمال ڪئي؟</string>
+    <string name="h221a"> گھر جي آمدني مان </string>
+    <string name="h221b"> اثاثا وڪرو ڪرڻ </string>
+    <string name="h221c"> ڪنھن ٻئي وٽان قرض کڻڻ </string>
+    <string name="h221d"> چندو/فنڊ </string>
+
+    <string name="h222"> H222:\t ھن قرض جي ڪجھ حصي کي واپس ڪرڻ لاءِ توھان ڪھڙي حمڪت عملي استعمال ڪئي؟</string>
     <string name="h222a"> گھر جي آمدني مان </string>
     <string name="h222b"> اثاثا وڪرو ڪرڻ </string>
     <string name="h222c"> ڪنھن ٻئي وٽان قرض کڻڻ </string>
-    <string name="h222d"> چندو/فنڊ </string>
-    <string name="h223"> H223:\t ھن قرض جي ڪجھ حصي کي واپس ڪرڻ لاءِ توھان ڪھڙي حمڪت عملي استعمال ڪئي؟</string>
-    <string name="h223a"> گھر جي آمدني مان </string>
-    <string name="h223b"> اثاثا وڪرو ڪرڻ </string>
-    <string name="h223c"> ڪنھن ٻئي وٽان قرض کڻڻ </string>
-    <string name="h223d"> چندو / فنڊ </string>
+    <string name="h222d"> چندو / فنڊ </string>
 
 
     <string name="i1_diarrhea"> ھاڻي آءٌ توھان کان توھان جي 5 سالن کان گھٽ عمر اري ٻار جي صحت بابت سوال ڪندس جنھن کي گذريل ٻن ھفتن دوران دست يا ساھ کڻڻ ۾ تڪيلف ٿي ھجي </string>

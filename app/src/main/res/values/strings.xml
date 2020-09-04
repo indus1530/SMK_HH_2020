@@ -1279,7 +1279,21 @@
     <string name="h2161e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="h2161f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
 
-    <string name="h218"> H218:\t زچہ اور بچہ کی ضروریات کے لیئے مالی ذرائع کیا تھے ؟ </string>
+    <string name="h217"> H217:\t کیا آپ نے اپنے آخری حمل یا زچگی کے لئے مالی ذرائع حاصل کئے تھے ؟ </string>
+    <string name="h217a"> ہاں </string>
+    <string name="h217b"> نہیں </string>
+    <string name="h217c"> اس طرح کی مدد کے بارے میں نہیں جانتی </string>
+
+    <!--<string name="h218"> H218:\t زچہ اور بچہ کی ضروریات کے لیئے مالی ذرائع کیا تھے ؟ </string>
+    <string name="h218a"> خاندان (شوہر یا اپنے وسائل) </string>
+    <string name="h218b"> بینک / آرگنائزیشن سے قرضہ </string>
+    <string name="h218c"> کمیونٹی کا فنڈ </string>
+    <string name="h218d"> رشتہ دار / دوست سے ادھار لینا </string>
+    <string name="h218e"> اثاثوں کی فروخت </string>
+    <string name="h218f"> طبی انشورنس </string>
+    <string name="h218x"> دیگر (وضاحت کریں) </string>-->
+
+    <string name="h218"> H218:\t آپ کے آخری حمل یا زچگی کے لئے مالی معاونت کا ذریعہ کیا تھا ؟ </string>
     <string name="h218a"> خاندان (شوہر یا اپنے وسائل) </string>
     <string name="h218b"> بینک / آرگنائزیشن سے قرضہ </string>
     <string name="h218c"> کمیونٹی کا فنڈ </string>
@@ -1288,45 +1302,31 @@
     <string name="h218f"> طبی انشورنس </string>
     <string name="h218x"> دیگر (وضاحت کریں) </string>
 
-    <string name="h217"> H217:\t کیا آپ نے اپنے آخری حمل یا زچگی کے لئے مالی ذرائع حاصل کئے تھے ؟ </string>
-    <string name="h217a"> ہاں </string>
-    <string name="h217b"> نہیں </string>
-    <string name="h217c"> اس طرح کی مدد کے بارے میں نہیں جانتی </string>
-
-    <string name="h219"> H219:\t آپ کے آخری حمل یا زچگی کے لئے مالی معاونت کا ذریعہ کیا تھا ؟ </string>
-    <string name="h219a"> خاندان (شوہر یا اپنے وسائل) </string>
-    <string name="h219b"> بینک / آرگنائزیشن سے قرضہ </string>
-    <string name="h219c"> کمیونٹی کا فنڈ </string>
-    <string name="h219d"> رشتہ دار / دوست سے ادھار لینا </string>
-    <string name="h219e"> اثاثوں کی فروخت </string>
-    <string name="h219f"> طبی انشورنس </string>
+    <string name="h219"> H219:\t اس مالی معاونت کے زیادہ تر حصے کو کس مقصد کے لئے استعمال کیا گیا تھا ؟ </string>
+    <string name="h219a"> ٹرانسپورٹ </string>
+    <string name="h219b"> حمل کی دیکھ بھال </string>
+    <string name="h219c"> زچگی / آپریشن </string>
+    <string name="h219d"> ایمرجنسی </string>
+    <string name="h219e"> پیدائش کے بعد کی دیکھ بھال </string>
+    <string name="h219f"> نو زائیدہ یا 5 سال سے کم عمر بچے کی صحت </string>
     <string name="h219x"> دیگر (وضاحت کریں) </string>
 
-    <string name="h220"> H220:\t اس مالی معاونت کے زیادہ تر حصے کو کس مقصد کے لئے استعمال کیا گیا تھا ؟ </string>
-    <string name="h220a"> ٹرانسپورٹ </string>
-    <string name="h220b"> حمل کی دیکھ بھال </string>
-    <string name="h220c"> زچگی / آپریشن </string>
-    <string name="h220d"> ایمرجنسی </string>
-    <string name="h220e"> پیدائش کے بعد کی دیکھ بھال </string>
-    <string name="h220f"> نو زائیدہ یا 5 سال سے کم عمر بچے کی صحت </string>
-    <string name="h220x"> دیگر (وضاحت کریں) </string>
+    <string name="h220"> H220:\t آج تک، کیا آپ نے قرض کی مکمل یا جزوی رقم واپس کر دی ہے ؟ </string>
+    <string name="h220a"> مکمل </string>
+    <string name="h220b"> جزوی </string>
+    <string name="h220c"> ابھی تک کچھ بھی ادا نہیں کیا </string>
 
-    <string name="h221"> H221:\t آج تک، کیا آپ نے قرض کی مکمل یا جزوی رقم واپس کر دی ہے ؟ </string>
-    <string name="h221a"> مکمل </string>
-    <string name="h221b"> جزوی </string>
-    <string name="h221c"> ابھی تک کچھ بھی ادا نہیں کیا </string>
+    <string name="h221"> H221:\t قرض کی رقم واپس ادا کر نے کا طریقہ کار کیا تھا ؟ </string>
+    <string name="h221a"> گھر کی ماہانہ آمدنی کے مخصوص حصہ سے قرض کی ادائیگی </string>
+    <string name="h221b"> اثاثوں کی فروخت </string>
+    <string name="h221c"> کسی اور سے مزید قرض لے کر </string>
+    <string name="h221d"> چندہ / فنڈ اکھٹا کرنا </string>
 
-    <string name="h222"> H222:\t قرض کی رقم واپس ادا کر نے کا طریقہ کار کیا تھا ؟ </string>
+    <string name="h222"> H222:\t وہ کونسی حکمت عملی ہے جس کے ذریعے قرض کے بقیہ حصے کی ادائیگی کی جائے گی ؟ </string>
     <string name="h222a"> گھر کی ماہانہ آمدنی کے مخصوص حصہ سے قرض کی ادائیگی </string>
     <string name="h222b"> اثاثوں کی فروخت </string>
     <string name="h222c"> کسی اور سے مزید قرض لے کر </string>
     <string name="h222d"> چندہ / فنڈ اکھٹا کرنا </string>
-
-    <string name="h223"> H223:\t وہ کونسی حکمت عملی ہے جس کے ذریعے قرض کے بقیہ حصے کی ادائیگی کی جائے گی ؟ </string>
-    <string name="h223a"> گھر کی ماہانہ آمدنی کے مخصوص حصہ سے قرض کی ادائیگی </string>
-    <string name="h223b"> اثاثوں کی فروخت </string>
-    <string name="h223c"> کسی اور سے مزید قرض لے کر </string>
-    <string name="h223d"> چندہ / فنڈ اکھٹا کرنا </string>
 
 
     <!--  SECTION I1  -->

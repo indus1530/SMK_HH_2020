@@ -90,6 +90,14 @@ public class SectionAH1Activity extends AppCompatActivity {
             }
         }));
 
+
+
+        bi.ah796.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.ah2b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVah3);
+            }
+        }));
+
     }
 
     public void BtnContinue() {
@@ -145,15 +153,15 @@ public class SectionAH1Activity extends AppCompatActivity {
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
 
-        json.put("ah1", bi.ah1a.isChecked() ? "11"
-                : bi.ah1b.isChecked() ? "12"
-                : bi.ah1c.isChecked() ? "13"
-                : bi.ah1d.isChecked() ? "14"
-                : bi.ah1e.isChecked() ? "15"
-                : bi.ah1f.isChecked() ? "16"
-                : bi.ah1g.isChecked() ? "17"
-                : bi.ah1h.isChecked() ? "18"
-                : bi.ah1i.isChecked() ? "19"
+        json.put("ah1", bi.ah1a.isChecked() ? "1"
+                : bi.ah1b.isChecked() ? "2"
+                : bi.ah1c.isChecked() ? "3"
+                : bi.ah1d.isChecked() ? "4"
+                : bi.ah1e.isChecked() ? "5"
+                : bi.ah1f.isChecked() ? "6"
+                : bi.ah1g.isChecked() ? "7"
+                : bi.ah1h.isChecked() ? "8"
+                : bi.ah1i.isChecked() ? "9"
                 : bi.ah1j.isChecked() ? "98"
                 : bi.ah1k.isChecked() ? "99"
                 : "-1");
@@ -162,13 +170,13 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : bi.ah2b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah3", bi.ah3a.isChecked() ? "11"
-                : bi.ah3b.isChecked() ? "12"
-                : bi.ah3c.isChecked() ? "13"
-                : bi.ah3d.isChecked() ? "14"
-                : bi.ah3e.isChecked() ? "15"
-                : bi.ah3f.isChecked() ? "16"
-                : bi.ah3g.isChecked() ? "17"
+        json.put("ah3", bi.ah3a.isChecked() ? "2"
+                : bi.ah3b.isChecked() ? "3"
+                : bi.ah3c.isChecked() ? "4"
+                : bi.ah3d.isChecked() ? "5"
+                : bi.ah3e.isChecked() ? "6"
+                : bi.ah3f.isChecked() ? "7"
+                : bi.ah3g.isChecked() ? "8"
                 : bi.ah3other.isChecked() ? "96"
                 : "-1");
         json.put("ah3otherx", bi.ah3otherx.getText().toString().trim().isEmpty() ? "-1" : bi.ah3otherx.getText().toString());

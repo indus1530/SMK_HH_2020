@@ -1394,21 +1394,6 @@
                             android:text="@string/h220c" />
 
                         <RadioButton
-                            android:id="@+id/h220d"
-                            style="@style/radiobutton"
-                            android:text="@string/h220d" />
-
-                        <RadioButton
-                            android:id="@+id/h220e"
-                            style="@style/radiobutton"
-                            android:text="@string/h220e" />
-
-                        <RadioButton
-                            android:id="@+id/h220f"
-                            style="@style/radiobutton"
-                            android:text="@string/h220f" />
-
-                        <RadioButton
                             android:id="@+id/h22096"
                             style="@style/radiobutton"
                             android:text="@string/other" />

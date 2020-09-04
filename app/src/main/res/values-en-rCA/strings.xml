@@ -1286,7 +1286,21 @@
     <string name="h2161f"> PPE not available at home </string>
 
 
-    <string name="h218"> H218:\t What is the source of financial support for your MNCH related needs? </string>
+    <string name="h217"> H217:\t Did you access any financial support for your last pregnancy or delivery ? </string>
+    <string name="h217a"> Yes </string>
+    <string name="h217b"> No </string>
+    <string name="h217c"> Don’t know about any such support </string>
+
+    <!--<string name="h218"> H218:\t What is the source of financial support for your MNCH related needs? </string>
+    <string name="h218a"> Family (husband or own resource) </string>
+    <string name="h218b"> Bank/Loan from organization </string>
+    <string name="h218c"> Community revolving fund </string>
+    <string name="h218d"> Borrowing from relative/friend </string>
+    <string name="h218e"> Selling assets </string>
+    <string name="h218f"> Medical insurance </string>
+    <string name="h218x"> Other (specify) </string>-->
+
+    <string name="h218"> H218:\t What was the source of the financial support for your last pregnancy or delivery ? </string>
     <string name="h218a"> Family (husband or own resource) </string>
     <string name="h218b"> Bank/Loan from organization </string>
     <string name="h218c"> Community revolving fund </string>
@@ -1295,45 +1309,31 @@
     <string name="h218f"> Medical insurance </string>
     <string name="h218x"> Other (specify) </string>
 
-    <string name="h217"> H217:\t Did you access any financial support for your last pregnancy or delivery ? </string>
-    <string name="h217a"> Yes </string>
-    <string name="h217b"> No </string>
-    <string name="h217c"> Don’t know about any such support </string>
-
-    <string name="h219"> H219:\t What was the source of the financial support for your last pregnancy or delivery ? </string>
-    <string name="h219a"> Family (husband or own resource) </string>
-    <string name="h219b"> Bank/Loan from organization </string>
-    <string name="h219c"> Community revolving fund </string>
-    <string name="h219d"> Borrowing from relative/friend </string>
-    <string name="h219e"> Selling assets </string>
-    <string name="h219f"> Medical insurance </string>
+    <string name="h219"> H219:\t For what purpose the majority of this financial support was utilized ? </string>
+    <string name="h219a"> Transport </string>
+    <string name="h219b"> Antenatal care </string>
+    <string name="h219c"> Delivery/C-section </string>
+    <string name="h219d"> Emergency </string>
+    <string name="h219e"> Post natal care </string>
+    <string name="h219f"> Neonatal or under 5 child health </string>
     <string name="h219x"> Other (specify) </string>
 
-    <string name="h220"> H220:\t For what purpose the majority of this financial support was utilized ? </string>
-    <string name="h220a"> Transport </string>
-    <string name="h220b"> Antenatal care </string>
-    <string name="h220c"> Delivery/C-section </string>
-    <string name="h220d"> Emergency </string>
-    <string name="h220e"> Post natal care </string>
-    <string name="h220f"> Neonatal or under 5 child health </string>
-    <string name="h220x"> Other (specify) </string>
+    <string name="h220"> H220:\t To date, have you paid back the full or partial loan amount ? </string>
+    <string name="h220a"> Fully </string>
+    <string name="h220b"> Partially </string>
+    <string name="h220c"> Haven’t paid anything back yet </string>
 
-    <string name="h221"> H221:\t To date, have you paid back the full or partial loan amount ? </string>
-    <string name="h221a"> Fully </string>
-    <string name="h221b"> Partially </string>
-    <string name="h221c"> Haven’t paid anything back yet </string>
+    <string name="h221"> H221:\t What were the methods of repayment that you used to pay back this loan ? </string>
+    <string name="h221a"> Sufficient HH income to pay back </string>
+    <string name="h221b"> Selling assets </string>
+    <string name="h221c"> Borrowing another loan from someone </string>
+    <string name="h221d"> Donations/fund raising </string>
 
-    <string name="h222"> H222:\t What were the methods of repayment that you used to pay back this loan ? </string>
+    <string name="h222"> H222:\t What is the strategy through which the remaining portion of the loan will be paid back ? </string>
     <string name="h222a"> Sufficient HH income to pay back </string>
     <string name="h222b"> Selling assets </string>
     <string name="h222c"> Borrowing another loan from someone </string>
     <string name="h222d"> Donations/fund raising </string>
-
-    <string name="h223"> H223:\t What is the strategy through which the remaining portion of the loan will be paid back ? </string>
-    <string name="h223a"> Sufficient HH income to pay back </string>
-    <string name="h223b"> Selling assets </string>
-    <string name="h223c"> Borrowing another loan from someone </string>
-    <string name="h223d"> Donations/fund raising </string>
 
 
     <string name="i1_diarrhea">Now I would like to ask you some questions related to diarrhea and Acute Respiratory Infection (ARI) about less than 5 years of age children in your household during last two weeks.</string>
