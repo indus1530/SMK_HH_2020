@@ -555,9 +555,23 @@
     <string name="f126g"> TV/Radio/News Paper/Mobile </string>
 
     <string name="f127"> F127:\t Where did the health care provider tell you to go in case you notice danger signs/problems during pregnancy with {NAME} ? </string>
-    <string name="f127a"> Government health facility </string>
-    <string name="f127b"> Private health facility </string>
-    <string name="f127c"> NGO health facility </string>
+
+    <string name="f127h1"> Government health facility </string>
+    <string name="f127h2"> Private health facility </string>
+    <string name="f127h3"> NGO health facility </string>
+
+
+    <string name="f127a"> Civil Hospital/Tertiary </string>
+    <string name="f127b"> District Head Quarter/Tehsil Head Quarter </string>
+    <string name="f127c"> Rural Health Center </string>
+    <string name="f127d"> Basic Health Unit </string>
+    <string name="f127e"> Maternal and Child Health Center </string>
+    <string name="f127f"> Birth Station (Community Midwife) </string>
+    <string name="f127g"> Health House (Lady Health Worker) </string>
+    <string name="f127h"> Private Hospital </string>
+    <string name="f127i"> Private Clinic </string>
+    <string name="f127j"> Private Maternity Home </string>
+    <string name="f127k"> NGO Health Facility </string>
 
     <string name="f128"> F128:\t What danger signs/problems did you experience during pregnancy with {NAME} ? </string>
     <string name="f128a"> Vaginal bleeding </string>

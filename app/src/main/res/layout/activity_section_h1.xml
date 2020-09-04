@@ -372,9 +372,10 @@
                             android:id="@+id/h106"
                             style="@style/EditTextNum"
                             android:hint="@string/minutes"
-                            android:maxLength="1"
-                            app:maxValue="5"
+                            android:maxLength="2"
+                            app:maxValue="2"
                             app:minValue="0"
+                            app:defaultValue="88"
                             app:type="range" />
 
                     </LinearLayout>
@@ -689,7 +690,7 @@
                             <RadioButton
                                 android:id="@+id/h109j"
                                 style="@style/radiobutton"
-                                android:text="@string/h109i" />
+                                android:text="@string/h109j" />
 
                         </RadioGroup>
 
@@ -1401,10 +1402,10 @@
                                     style="@style/radiobutton"
                                     android:text="@string/h116b" />
 
-                                <RadioButton
+                                <!--<RadioButton
                                     android:id="@+id/h116c"
                                     style="@style/radiobutton"
-                                    android:text="@string/h116c" />
+                                    android:text="@string/h116c" />-->
 
                             </RadioGroup>
 
@@ -1431,7 +1432,7 @@
                                 style="@style/EditTextNum"
                                 android:hint="@string/month"
                                 android:maxLength="1"
-                                app:maxValue="6"
+                                app:maxValue="7"
                                 app:minValue="1"
                                 app:type="range" />
 

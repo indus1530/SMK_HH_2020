@@ -106,12 +106,7 @@ public class SectionF02Activity extends AppCompatActivity {
 
             if (i == bi.f129a.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVf130);
-            }
-        }));
-
-        bi.f129.setOnCheckedChangeListener(((radioGroup, i) -> {
-
-            if (i == bi.f129b.getId()) {
+            } else if (i == bi.f129b.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVf131);
             }
         }));
@@ -163,6 +158,7 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f121be", bi.f1212e.isChecked() ? "3b" : "-1");
         f1.put("f121bf", bi.f1212f.isChecked() ? "3c" : "-1");
         f1.put("f121bg", bi.f1212g.isChecked() ? "3d" : "-1");
+        f1.put("f121bh", bi.f1212h.isChecked() ? "4" : "-1");
 
         f1.put("f122", bi.f122.getText().toString().trim().isEmpty() ? "-1" : bi.f122.getText().toString());
 
@@ -197,8 +193,17 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f126g", bi.f126g.isChecked() ? "7" : "-1");
 
         f1.put("f127", bi.f127a.isChecked() ? "1" :
-                bi.f127b.isChecked() ? "2" :
-                        bi.f127c.isChecked() ? "3" : "-1");
+                            bi.f127b.isChecked() ? "2" :
+                            bi.f127c.isChecked() ? "3" :
+                            bi.f127d.isChecked() ? "4" :
+                            bi.f127e.isChecked() ? "5" :
+                            bi.f127f.isChecked() ? "6" :
+                            bi.f127g.isChecked() ? "7" :
+                            bi.f127h.isChecked() ? "8" :
+                            bi.f127i.isChecked() ? "9" :
+                            bi.f127j.isChecked() ? "10" :
+                            bi.f127k.isChecked() ? "11" :
+                                "-1");
 
         f1.put("f128a", bi.f128a.isChecked() ? "1" : "-1");
         f1.put("f128b", bi.f128b.isChecked() ? "2" : "-1");

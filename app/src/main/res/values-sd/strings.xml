@@ -523,7 +523,7 @@
     <string name="f1212e"> ڪرونا جو خوف / ڊپ </string>
     <string name="f1212f"> سماجي مفاصلو </string>
     <string name="f1212g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
-    <string name="f1212h"> Not Applicable </string>
+    <string name="f1212h"> لاڳو نه ٿو ٿئي </string>
 
     <string name="f122"> F122:\t توھان جي گذريل حمل جي دوران ليڊي ھيلٿ ورڪر (ايل ايڇ ڊبليو) ڪيترا دفعا توھان جي گھر جو دورو ڪيو؟</string>
 
@@ -562,9 +562,24 @@
     <string name="f126g"> ٽيليويزن/ريڊيو/اخبار </string>
 
     <string name="f127"> F127:\t توھان کي صحت جي ڪارڪن ٻڌايو ته  (نالو) حمل جي پيچيدگين ٿيڻ  دوران ڪيڏانھن وڃڻ گھرجي؟ </string>
-    <string name="f127a"> سرڪاري صحت مرڪز </string>
-    <string name="f127b"> پرائيويٽ صحت مرڪز </string>
-    <string name="f127c">  صحت مرڪز  (NGO)اين جي او </string>
+
+
+    <string name="f127h1"> سرڪاري صحت مرڪز </string>
+    <string name="f127h2"> پرائيويٽ صحت مرڪز </string>
+    <string name="f127h3"> اين جي او صحت مرڪز </string>
+
+    <string name="f127a">  ٽرشري / سول اسپتال </string>
+    <string name="f127b">  ضلعي اسپتال / تعلقي اسپتال </string>
+    <string name="f127c">  ڳوٺاڻو صحت مرڪز (رورل ھيلٿ سينٽر) </string>
+    <string name="f127d">  بنيادي صحت مرڪز  </string>
+    <string name="f127e">  ماءُ ۽ ٻار جي صحت جو مرڪز </string>
+    <string name="f127f">  ويم گهر </string>
+    <string name="f127g">  ھيلٿ ھائوس </string>
+    <string name="f127h">  خانگي (پرائيوٽ) اسپتال </string>
+    <string name="f127i">  خانگي (پرائيوٽ) ڪلينڪ </string>
+    <string name="f127j">  خانگي (پرائيوٽ) ويم گهر </string>
+    <string name="f127k">  اين جي او صحت مرڪز </string>
+
 
     <string name="f128"> F128:\t توھان کي (نالو) حمل جي دوران ڪھڙيون خطرناڪ علامتون/پيچيدگيون ٿيون؟ (ھڪ کان وڌيڪ جواب ٿي سگھن ٿا)</string>
     <string name="f128a"> شرم گاھ مان رت اچڻ </string>

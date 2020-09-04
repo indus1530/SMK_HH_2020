@@ -1393,13 +1393,6 @@
                                 android:layout_weight="1"
                                 android:text="@string/no" />
 
-                            <RadioButton
-                                android:id="@+id/g125c"
-                                style="@style/radiobutton"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:text="@string/g125c" />
-
                         </RadioGroup>
 
                     </LinearLayout>

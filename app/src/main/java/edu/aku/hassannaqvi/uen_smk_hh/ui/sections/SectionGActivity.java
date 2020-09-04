@@ -398,7 +398,6 @@ public class SectionGActivity extends AppCompatActivity {
 
         json.put("g125", bi.g125a.isChecked() ? "1"
                 : bi.g125b.isChecked() ? "2"
-                : bi.g125c.isChecked() ? "3"
                 : "-1");
 
         json.put("g125aa", bi.g1251a.isChecked() ? "1" : "-1");

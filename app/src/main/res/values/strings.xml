@@ -509,7 +509,7 @@
     <string name="f1212e"> کرونا کا ڈریا خوف </string>
     <string name="f1212f"> سماجی مفاصلا </string>
     <string name="f1212g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-    <string name="f1212h"> Not Applicable </string>
+    <string name="f1212h"> لاگو نہیں ہوتا </string>
 
 
     <string name="f122"> F122:\t گزشتہ حمل کےدوران آپ کےحمل کی دیکھ بھال کا ایک حصہ ہونے کےناتے،(ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکرنے کتنی بار آپکے گھر کا دورہ کیا تھا؟ </string>
@@ -549,9 +549,22 @@
     <string name="f126g"> ٹی وی/ریڈیو/اخبار/موبائل </string>
 
     <string name="f127"> F127:\t آپ کو صحت کی سہولیات فراہم کرنے والے نے کسی بھی خطرناک علامات/مسائل پیش آنے کی صورت میں کہاں جانے کو کہا تھا؟ </string>
-    <string name="f127a"> سرکاری مرکز صحت </string>
-    <string name="f127b"> نجی مرکز صحت </string>
-    <string name="f127c"> رفاہی مرکز صحت </string>
+
+    <string name="f127h1"> سرکاری مرکز صحت </string>
+    <string name="f127h2"> نجی مرکز صحت </string>
+    <string name="f127h3"> اين جي او صحت مرڪز </string>
+
+    <string name="f127a"> سول ہسپتال / ٹرشری </string>
+    <string name="f127b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="f127c"> رورل ہیلتھ سینٹر </string>
+    <string name="f127d"> بیسک ہیلتھ یونٹ </string>
+    <string name="f127e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="f127f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="f127g"> ہیلتھ ہاؤس ( لیڈی ہیلتھ ورکر) </string>
+    <string name="f127h"> پراوٹ ہسپتال </string>
+    <string name="f127i"> پرائوٹ کلینک </string>
+    <string name="f127j"> پرائوٹ میٹرنٹی ہوم </string>
+    <string name="f127k"> رفاہی ادارہ </string>
 
     <string name="f128"> F128:\t آپ کو(نام) کی پیدائش سے قبل حمل کے دوران کونسی علامات/مسائل درپیش آئے تھے؟ (ایک سے زیادہ جوابات آ سکتے ہیں) </string>
     <string name="f128a"> شرم گاہ سے خون کا اخراج </string>
@@ -1040,7 +1053,7 @@
     <string name="h1311d"> سماجی مفاصلہ </string>
     <string name="h1311e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="h1311f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
-    <string name="h1311g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
+    <string name="h1311g"> کارکنان صحت احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
 
     <string name="h132"> H132:\t کیا نوزائیدہ کی پیدائش کے بعد ایل ایچ ڈبلیو نے دورہ کیا تھا ؟ </string>
     <string name="h132a"> ہاں </string>
@@ -3315,7 +3328,7 @@
     <string name="h11200">H11200:\t کیا آپ جانتی ہیں کہ بچے کو ما ں کا دودھ کب پلانا چاہئے؟</string>
     <string name="h11200a">ہاں</string>
     <string name="h11200b">نہیں</string>
-    <string name="h11201">H112001:\t کیا آپ بچے کو ماں کا دودھ جلد ی پلانے کی اہمیت سمجھتی ہیں؟</string>
+    <string name="h11201">H11201:\t کیا آپ بچے کو ماں کا دودھ جلد ی پلانے کی اہمیت سمجھتی ہیں؟</string>
     <string name="h11201a">متفق</string>
     <string name="h11201b">غیر متفق</string>
     <string name="h11300">H11300:\t کیا زچگی کے بعد آنے والے ماں کے گاڑھے دودھ(کلوسٹرم) کی اہمیت آپ  جانتی ہیں؟</string>

@@ -137,6 +137,11 @@
                             style="@style/checkbox"
                             android:text="@string/f1212c" />
 
+                        <CheckBox
+                            android:id="@+id/f1212h"
+                            style="@style/checkbox"
+                            android:text="@string/f1212h" />
+
 
                     </LinearLayout>
 
@@ -202,8 +207,8 @@
                             android:hint="@string/num"
                             android:maxLength="2"
                             app:defaultValue="00"
-                            app:maxValue="24"
-                            app:minValue="1"
+                            app:maxValue="20"
+                            app:minValue="0"
                             app:type="range" />
 
                     </LinearLayout>
@@ -482,6 +487,10 @@
                             android:id="@+id/f127"
                             style="@style/radiogroup">
 
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/f127h1" />
+
                             <RadioButton
                                 android:id="@+id/f127a"
                                 style="@style/radiobutton"
@@ -497,88 +506,135 @@
                                 style="@style/radiobutton"
                                 android:text="@string/f127c" />
 
+                            <RadioButton
+                                android:id="@+id/f127d"
+                                style="@style/radiobutton"
+                                android:text="@string/f127d" />
+
+                            <RadioButton
+                                android:id="@+id/f127e"
+                                style="@style/radiobutton"
+                                android:text="@string/f127e" />
+
+                            <RadioButton
+                                android:id="@+id/f127f"
+                                style="@style/radiobutton"
+                                android:text="@string/f127f" />
+
+                            <RadioButton
+                                android:id="@+id/f127g"
+                                style="@style/radiobutton"
+                                android:text="@string/f127g" />
+
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/f127h2" />
+
+                            <RadioButton
+                                android:id="@+id/f127h"
+                                style="@style/radiobutton"
+                                android:text="@string/f127h" />
+
+                            <RadioButton
+                                android:id="@+id/f127i"
+                                style="@style/radiobutton"
+                                android:text="@string/f127i" />
+
+                            <RadioButton
+                                android:id="@+id/f127j"
+                                style="@style/radiobutton"
+                                android:text="@string/f127j" />
+
+                            <TextView
+                                style="@style/textView3Head"
+                                android:text="@string/f127h3" />
+
+                            <RadioButton
+                                android:id="@+id/f127k"
+                                style="@style/radiobutton"
+                                android:text="@string/f127k" />
+
                         </RadioGroup>
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-            </LinearLayout>
 
-
-            <!-- f128  CheckBox   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVf128"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/f128" />
+                <!-- f128  CheckBox   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVf128"
+                    style="@style/cardView">
 
                     <LinearLayout
-                        android:id="@+id/f128check"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:tag="0">
+                        android:orientation="vertical">
 
-                        <CheckBox
-                            android:id="@+id/f128a"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128a" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/f128" />
 
-                        <CheckBox
-                            android:id="@+id/f128b"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128b" />
+                        <LinearLayout
+                            android:id="@+id/f128check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="0">
 
-                        <CheckBox
-                            android:id="@+id/f128c"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128c" />
+                            <CheckBox
+                                android:id="@+id/f128a"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128a" />
 
-                        <CheckBox
-                            android:id="@+id/f128d"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128d" />
+                            <CheckBox
+                                android:id="@+id/f128b"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128b" />
 
-                        <CheckBox
-                            android:id="@+id/f128e"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128e" />
+                            <CheckBox
+                                android:id="@+id/f128c"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128c" />
 
-                        <CheckBox
-                            android:id="@+id/f128f"
-                            style="@style/checkbox"
-                            android:checked="@{f128g.checked ? false : false}"
-                            android:enabled="@{f128g.checked ? false : true}"
-                            android:text="@string/f128f" />
+                            <CheckBox
+                                android:id="@+id/f128d"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128d" />
 
-                        <CheckBox
-                            android:id="@+id/f128g"
-                            style="@style/checkbox"
-                            android:text="@string/f128g" />
+                            <CheckBox
+                                android:id="@+id/f128e"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128e" />
+
+                            <CheckBox
+                                android:id="@+id/f128f"
+                                style="@style/checkbox"
+                                android:checked="@{f128g.checked ? false : false}"
+                                android:enabled="@{f128g.checked ? false : true}"
+                                android:text="@string/f128f" />
+
+                            <CheckBox
+                                android:id="@+id/f128g"
+                                style="@style/checkbox"
+                                android:text="@string/f128g" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
-
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/fldGrp2532"
