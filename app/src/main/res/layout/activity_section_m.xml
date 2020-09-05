@@ -1085,10 +1085,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1110,10 +1110,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1135,10 +1135,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1160,10 +1160,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1185,10 +1185,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1210,10 +1210,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
@@ -1235,10 +1235,10 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:inputType="number"
-                            android:hint="##"
-                            app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            android:hint="###"
+                            app:mask="###"
+                            app:maxValue="999"
+                            app:minValue="0"
                             app:type="range"/>
 
                     </LinearLayout>
