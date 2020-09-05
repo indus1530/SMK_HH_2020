@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -90,14 +91,14 @@ public class SectionAH1Activity extends AppCompatActivity {
             }
         }));
 
-
-
-        bi.ah796.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.ah2b.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVah3);
+        bi.ah796.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked)
+                bi.ah796x.setVisibility(View.VISIBLE);
+            else {
+                Clear.clearAllFields(bi.ah796x);
+                bi.ah796x.setVisibility(View.GONE);
             }
-        }));
-
+        });
     }
 
     public void BtnContinue() {
