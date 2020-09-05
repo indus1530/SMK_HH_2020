@@ -55,8 +55,8 @@
                             android:hint="@string/year"
                             android:text='@{ah49c.checked ? "" : ah49a.getText().toString() }'
                             app:mask="##"
-                            app:maxValue="99"
-                            app:minValue="14"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                     </LinearLayout>
@@ -81,8 +81,8 @@
                             android:hint="@string/year"
                             android:text='@{ah49c.checked ? "" : ah49b.getText().toString() }'
                             app:mask="##"
-                            app:maxValue="99"
-                            app:minValue="14"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                     </LinearLayout>
@@ -175,8 +175,8 @@
                             android:layout_weight="2"
                             android:hint="@string/year"
                             app:mask="##"
-                            app:maxValue="99"
-                            app:minValue="14"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                     </LinearLayout>
@@ -199,8 +199,8 @@
                             android:layout_weight="2"
                             android:hint="@string/year"
                             app:mask="##"
-                            app:maxValue="99"
-                            app:minValue="14"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                     </LinearLayout>
@@ -283,8 +283,8 @@
                             android:hint="@string/year"
                             android:inputType="number"
                             app:mask="##"
-                            app:maxValue="99"
-                            app:minValue="15"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                     </LinearLayout>
@@ -451,8 +451,8 @@
                             android:hint="@string/ah56a"
                             android:inputType="number"
                             app:mask="##"
-                            app:maxValue="20"
-                            app:minValue="1"
+                            app:maxValue="50"
+                            app:minValue="10"
                             app:type="range" />
 
                         <CheckBox
