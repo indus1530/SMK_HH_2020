@@ -1328,6 +1328,7 @@
     <string name="h221b"> Selling assets </string>
     <string name="h221c"> Borrowing another loan from someone </string>
     <string name="h221d"> Donations/fund raising </string>
+    <string name="h221x"> Other (specify) </string>
 
     <string name="h222"> H222:\t What is the strategy through which the remaining portion of the loan will be paid back ? </string>
     <string name="h222a"> Sufficient HH income to pay back </string>

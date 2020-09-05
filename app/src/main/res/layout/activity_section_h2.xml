@@ -1393,7 +1393,7 @@
                             style="@style/radiobutton"
                             android:text="@string/h220c" />
 
-                        <RadioButton
+                        <!--<RadioButton
                             android:id="@+id/h22096"
                             style="@style/radiobutton"
                             android:text="@string/other" />
@@ -1404,7 +1404,7 @@
                             android:hint="@string/specify"
                             android:tag="h22096"
                             android:text='@{h22096.checked? h22096x.getText().toString() : ""}'
-                            android:visibility='@{h22096.checked? View.VISIBLE : View.GONE}' />
+                            android:visibility='@{h22096.checked? View.VISIBLE : View.GONE}' />-->
 
                     </RadioGroup>
 
@@ -1445,15 +1445,33 @@
                             style="@style/radiobutton"
                             android:text="@string/h221c" />
 
+                        <RadioButton
+                            android:id="@+id/h221d"
+                            style="@style/radiobutton"
+                            android:text="@string/h221d" />
+
+                        <RadioButton
+                            android:id="@+id/h22196"
+                            style="@style/radiobutton"
+                            android:text="@string/other" />
+
+                        <EditText
+                            android:id="@+id/h22196x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="h22196"
+                            android:text='@{h22196.checked? h22196x.getText().toString() : ""}'
+                            android:visibility='@{h22196.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <!-- h222  Radio   -->
+            <!-- h223  Radio   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh222"
+                android:id="@+id/fldGrpCVh223"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1488,63 +1506,6 @@
                             android:id="@+id/h222d"
                             style="@style/radiobutton"
                             android:text="@string/h222d" />
-
-                        <RadioButton
-                            android:id="@+id/h22296"
-                            style="@style/radiobutton"
-                            android:text="@string/other" />
-
-                        <EditText
-                            android:id="@+id/h22296x"
-                            style="@style/EditTextAlpha"
-                            android:hint="@string/specify"
-                            android:tag="h22296"
-                            android:text='@{h22296.checked? h22296x.getText().toString() : ""}'
-                            android:visibility='@{h22296.checked? View.VISIBLE : View.GONE}' />
-
-                    </RadioGroup>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- h223  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVh223"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/h223" />
-
-                    <RadioGroup
-                        android:id="@+id/h223"
-                        style="@style/radiogroup">
-
-                        <RadioButton
-                            android:id="@+id/h223a"
-                            style="@style/radiobutton"
-                            android:text="@string/h223a" />
-
-                        <RadioButton
-                            android:id="@+id/h223b"
-                            style="@style/radiobutton"
-                            android:text="@string/h223b" />
-
-                        <RadioButton
-                            android:id="@+id/h223c"
-                            style="@style/radiobutton"
-                            android:text="@string/h223c" />
-
-                        <RadioButton
-                            android:id="@+id/h223d"
-                            style="@style/radiobutton"
-                            android:text="@string/h223d" />
 
                     </RadioGroup>
 

@@ -1321,6 +1321,7 @@
     <string name="h221b"> اثاثوں کی فروخت </string>
     <string name="h221c"> کسی اور سے مزید قرض لے کر </string>
     <string name="h221d"> چندہ / فنڈ اکھٹا کرنا </string>
+    <string name="h221x"> دیگر (وضاحت کریں) </string>
 
     <string name="h222"> H222:\t وہ کونسی حکمت عملی ہے جس کے ذریعے قرض کے بقیہ حصے کی ادائیگی کی جائے گی ؟ </string>
     <string name="h222a"> گھر کی ماہانہ آمدنی کے مخصوص حصہ سے قرض کی ادائیگی </string>
