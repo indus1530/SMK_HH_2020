@@ -847,22 +847,23 @@
 
                                 <TextView
                                     style="@style/textView3Head"
-                                    android:text="@string/days" />
+                                    android:text="@string/minutes" />
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/g117a"
+                                    android:id="@+id/g117c"
                                     style="@style/EditTextNum"
+                                    android:digits="0123456789"
 
-                                    android:hint="@string/days"
-                                    android:maxLength="1"
+                                    android:hint="@string/minutes"
+                                    android:maxLength="2"
 
                                     android:textColor="@android:color/black"
-                                    app:defaultValue="0"
-                                    app:maxValue="3"
-                                    app:minValue="1"
+                                    app:defaultValue="00"
+                                    app:maxValue="59"
+                                    app:minValue="0"
                                     app:type="range" />
-                               <!-- android:enabled="@{g11798.checked ? false : true}"
-                                android:text='@{g11798.checked ? "" : g117a.getText().toString()}'-->
+                                <!--android:enabled="@{g11798.checked ? false : true}"
+                                android:text='@{g11798.checked ? "" : g117c.getText().toString()}'-->
 
                             </LinearLayout>
 
@@ -901,23 +902,20 @@
 
                                 <TextView
                                     style="@style/textView3Head"
-                                    android:text="@string/minutes" />
+                                    android:text="@string/days" />
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/g117c"
+                                    android:id="@+id/g117a"
                                     style="@style/EditTextNum"
-                                    android:digits="0123456789"
-
-                                    android:hint="@string/minutes"
-                                    android:maxLength="2"
-
+                                    android:hint="@string/days"
+                                    android:maxLength="1"
                                     android:textColor="@android:color/black"
-                                    app:defaultValue="00"
-                                    app:maxValue="59"
-                                    app:minValue="0"
+                                    app:defaultValue="0"
+                                    app:maxValue="3"
+                                    app:minValue="1"
                                     app:type="range" />
-                                <!--android:enabled="@{g11798.checked ? false : true}"
-                                android:text='@{g11798.checked ? "" : g117c.getText().toString()}'-->
+                                <!-- android:enabled="@{g11798.checked ? false : true}"
+                                 android:text='@{g11798.checked ? "" : g117a.getText().toString()}'-->
 
                             </LinearLayout>
 

@@ -80,8 +80,7 @@ public class SectionH2Activity extends AppCompatActivity {
                 bi.fldGrpCVh205aa.setVisibility(View.GONE);
             }
         });
-
-
+        
         //h206
         bi.h206.setOnCheckedChangeListener((group, checkedId) -> {
 
