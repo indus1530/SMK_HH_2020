@@ -170,7 +170,7 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f123f", bi.f123f.isChecked() ? "6" : "-1");
         f1.put("f123g", bi.f123g.isChecked() ? "7" : "-1");
         f1.put("f123h", bi.f123h.isChecked() ? "8" : "-1");
-        f1.put("f123i", bi.f123i.isChecked() ? "19" : "-1");
+        f1.put("f123i", bi.f123i.isChecked() ? "9" : "-1");
         f1.put("f12396", bi.f12396.isChecked() ? "96" : "-1");
         f1.put("f12396x", bi.f12396x.getText().toString().trim().isEmpty() ? "-1" : bi.f12396x.getText().toString());
 
