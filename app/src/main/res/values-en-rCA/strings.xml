@@ -2231,7 +2231,7 @@
     <string name="k105g">Pharmacy, Chemist</string>
     <string name="k105h">Friend/Relative</string>
     <string name="k105i">Dai/TBA</string>
-    <string name="k106">K106:\t Reasons for not using any family planning method? Select all that apply</string>
+    <string name="k106">K106:\t Reasons for not using/discontinue any family planning method? Select all that apply</string>
     <string name="k106a">Side effects of contraceptives</string>
     <string name="k106b">Want Pregnancy</string>
     <string name="k106c">Want to have Son</string>
@@ -2241,7 +2241,7 @@
     <string name="k106g">Current method was not affordable</string>
     <string name="k106h">Opposition from spouse</string>
     <string name="k106x">Other (specify)</string>
-    <string name="k1071">K107:\t Did (LHW ) she provide Contraceptive pills/ Tell other Contraceptive Options</string>
+    <string name="k1071">K107:\t Did LHW  provide Contraceptive pills or Tell other Contraceptive Options</string>
     <string name="k1071a">Yes</string>
     <string name="k1071b">No</string>
 
@@ -2255,7 +2255,7 @@
     <string name="k1072g">PPE not available at home</string>
     <string name="k1072h">Not Applicable</string>
 
-    <string name="k1081">K108:\t Did LHW organize Health Meetings for You and Your husband?</string>
+    <string name="k1081">K108:\t Did LHW organize sessions  for You and Your husband?</string>
     <string name="k1081a">Yes</string>
     <string name="k1081b">No</string>
     <string name="k1081c">General meeting for Community</string>
@@ -3233,7 +3233,7 @@
     <string name="ah60a">Number</string>
 
     <string name="unttitle">UNMET NEED</string>
-    <string name="un01">Now I would like to talk about your last pregnancy. Did you want to get pregnant at that/this time? (include current pregnant)</string>
+    <string name="un01">Now I would like to talk about your last pregnancy. Did you want to get pregnant at that  time ?</string>
     <string name="un01a">Yes</string>
     <string name="un01b">No</string>
     <string name="un02">Did you want to have baby later on or did you not want any (more) children?</string>
@@ -3242,13 +3242,13 @@
     <string name="un03">Now I would like to ask some questions about the future. Would you like to have another child, or would you prefer not to have any (more) children&gt;</string>
     <string name="un03a">Have another child</string>
     <string name="un03b">No more /None</string>
-    <string name="un03c">Says she cannot get pregnant</string>
+    <string name="un03c">She cannot get pregnant</string>
     <string name="un03d">Undecided/Don’t know</string>
     <string name="un04">How long would you like to wait before the birth of (another child)?</string>
     <string name="un04a">Months</string>
     <string name="un04b">Years</string>
     <string name="un04c">Does not want to wait (soon/now)</string>
-    <string name="un04d">SAYs she cannot get pregnant</string>
+    <string name="un04d">cannot get pregnant</string>
     <string name="un05">Do You think you are physically able to get pregnant at this time?</string>
     <string name="un05a">Yes</string>
     <string name="un05b">No</string>
@@ -3263,7 +3263,7 @@
     <string name="un06g">Breastfeeding</string>
     <string name="un06h">Too old</string>
     <string name="un06x">Other</string>
-    <string name="un07">When your last menstrual period start?</string>
+    <string name="un07">When did you had your last menstrual period ?</string>
     <string name="un07a">Days ago</string>
     <string name="un07b">Weeks ago</string>
     <string name="un07c">Months ago</string>
