@@ -39,6 +39,7 @@ public class SectionF02Activity extends AppCompatActivity {
     private void setCoronaFields() {
 
         if (!MainApp.selectedKishMWRA.isCoronaCase()) {
+
             bi.fldGrpCVf1211.setVisibility(View.GONE);
             bi.fldGrpCVf1212.setVisibility(View.GONE);
 
@@ -94,12 +95,11 @@ public class SectionF02Activity extends AppCompatActivity {
         });
 
         bi.f1212c.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked)
-                bi.f1212check03.setVisibility(View.VISIBLE);
-            else {
-                Clear.clearAllFields(bi.f1212check03);
-                bi.f1212check03.setVisibility(View.GONE);
-            }
+            if (!isChecked)
+                Clear.clearAllFields(bi.f1212d);
+                Clear.clearAllFields(bi.f1212e);
+                Clear.clearAllFields(bi.f1212f);
+                Clear.clearAllFields(bi.f1212g);
         });
 
         bi.f129.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -154,11 +154,11 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f121ba", bi.f1212a.isChecked() ? "1" : "-1");
         f1.put("f121bb", bi.f1212b.isChecked() ? "2" : "-1");
         f1.put("f121bc", bi.f1212c.isChecked() ? "3" : "-1");
-        f1.put("f121bd", bi.f1212d.isChecked() ? "3a" : "-1");
-        f1.put("f121be", bi.f1212e.isChecked() ? "3b" : "-1");
-        f1.put("f121bf", bi.f1212f.isChecked() ? "3c" : "-1");
-        f1.put("f121bg", bi.f1212g.isChecked() ? "3d" : "-1");
-        f1.put("f121bh", bi.f1212h.isChecked() ? "4" : "-1");
+        f1.put("f121bd", bi.f1212d.isChecked() ? "4" : "-1");
+        f1.put("f121be", bi.f1212e.isChecked() ? "5" : "-1");
+        f1.put("f121bf", bi.f1212f.isChecked() ? "6" : "-1");
+        f1.put("f121bg", bi.f1212g.isChecked() ? "7" : "-1");
+        f1.put("f121bh", bi.f1212h.isChecked() ? "8" : "-1");
 
         f1.put("f122", bi.f122.getText().toString().trim().isEmpty() ? "-1" : bi.f122.getText().toString());
 

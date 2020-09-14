@@ -95,35 +95,30 @@
                             <RadioButton
                                 android:id="@+id/e105a"
                                 style="@style/radiobutton"
-                                android:checked="@{e104a.checked ? false : false}"
                                 android:enabled="@{e104a.checked ? true : false}"
                                 android:text="@string/e105a" />
 
                             <RadioButton
                                 android:id="@+id/e105b"
                                 style="@style/radiobutton"
-                                android:checked="@{e104a.checked ? false : false}"
                                 android:enabled="@{e104a.checked ? true : false}"
                                 android:text="@string/e105b" />
 
                             <RadioButton
                                 android:id="@+id/e105c"
                                 style="@style/radiobutton"
-                                android:checked="@{e104b.checked ? false : false}"
                                 android:enabled="@{e104b.checked ? true : false}"
                                 android:text="@string/e105c" />
 
                             <RadioButton
                                 android:id="@+id/e105d"
                                 style="@style/radiobutton"
-                                android:checked="@{e104b.checked ? false : false}"
                                 android:enabled="@{e104b.checked ? true : false}"
                                 android:text="@string/e105d" />
 
                             <RadioButton
                                 android:id="@+id/e105e"
                                 style="@style/radiobutton"
-                                android:checked="@{e104b.checked ? false : false}"
                                 android:enabled="@{e104b.checked ? true : false}"
                                 android:text="@string/e105e" />
 
@@ -535,11 +530,6 @@
                                 android:text="@string/e111f" />
 
                             <RadioButton
-                                android:id="@+id/e111g"
-                                style="@style/radiobutton"
-                                android:text="@string/e111g" />
-
-                            <RadioButton
                                 android:id="@+id/e11196"
                                 style="@style/radiobutton"
                                 android:text="@string/other" />
@@ -551,6 +541,88 @@
                                 android:tag="e11196"
                                 android:text='@{e11196.checked? e11196x.getText().toString() : ""}'
                                 android:visibility='@{e11196.checked? View.VISIBLE : View.GONE}' />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- e11101  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVe11101"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/e11101" />
+
+                        <RadioGroup
+                            android:id="@+id/e11101"
+                            style="@style/radiogroup">
+
+                            <RadioButton
+                                android:id="@+id/e11101a"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101a" />
+
+                            <RadioButton
+                                android:id="@+id/e11101b"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101b" />
+
+                            <RadioButton
+                                android:id="@+id/e11101c"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101c" />
+
+                            <RadioButton
+                                android:id="@+id/e11101d"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101d" />
+
+                            <RadioButton
+                                android:id="@+id/e11101e"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101e" />
+
+                            <RadioButton
+                                android:id="@+id/e11101f"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101f" />
+
+                            <RadioButton
+                                android:id="@+id/e11101g"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101g" />
+
+                            <RadioButton
+                                android:id="@+id/e11101h"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101h" />
+
+                            <RadioButton
+                                android:id="@+id/e11101i"
+                                style="@style/radiobutton"
+                                android:text="@string/e11101i" />
+
+                            <RadioButton
+                                android:id="@+id/e1110196"
+                                style="@style/radiobutton"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/e1110196x"
+                                style="@style/EditTextAlpha"
+                                android:hint="@string/specify"
+                                android:tag="e11196"
+                                android:text='@{e1110196.checked? e1110196x.getText().toString() : ""}'
+                                android:visibility='@{e1110196.checked? View.VISIBLE : View.GONE}' />
 
                         </RadioGroup>
 

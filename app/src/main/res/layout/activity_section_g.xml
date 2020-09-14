@@ -1439,6 +1439,44 @@
                                 android:enabled="@{g1251h.checked ? false : true}"
                                 android:text="@string/g1251c" />
 
+                            <CheckBox
+                                android:id="@+id/g1251d"
+                                style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
+                                android:text="@string/g1251d"
+                                android:visibility='@{g1251c.checked? View.VISIBLE : View.GONE}'/>
+
+                            <CheckBox
+                                android:id="@+id/g1251e"
+                                style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
+                                android:text="@string/g1251e"
+                                android:visibility='@{g1251c.checked? View.VISIBLE : View.GONE}' />
+
+                            <CheckBox
+                                android:id="@+id/g1251f"
+                                style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
+                                android:text="@string/g1251f"
+                                android:visibility='@{g1251c.checked? View.VISIBLE : View.GONE}' />
+
+                            <CheckBox
+                                android:id="@+id/g1251g"
+                                style="@style/checkbox"
+                                android:checked="@{g1251h.checked ? false : false}"
+                                android:enabled="@{g1251h.checked ? false : true}"
+                                android:text="@string/g1251g"
+                                android:visibility='@{g1251c.checked? View.VISIBLE : View.GONE}' />
+
+                            <CheckBox
+                                android:id="@+id/g1251h"
+                                style="@style/checkbox"
+                                android:tag="-1"
+                                android:text="@string/g1251h" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1448,39 +1486,7 @@
                             android:orientation="vertical"
                             android:tag="0">
 
-                            <CheckBox
-                                android:id="@+id/g1251d"
-                                style="@style/checkbox"
-                                android:checked="@{g1251h.checked ? false : false}"
-                                android:enabled="@{g1251h.checked ? false : true}"
-                                android:text="@string/g1251d" />
 
-                            <CheckBox
-                                android:id="@+id/g1251e"
-                                style="@style/checkbox"
-                                android:checked="@{g1251h.checked ? false : false}"
-                                android:enabled="@{g1251h.checked ? false : true}"
-                                android:text="@string/g1251e" />
-
-                            <CheckBox
-                                android:id="@+id/g1251f"
-                                style="@style/checkbox"
-                                android:checked="@{g1251h.checked ? false : false}"
-                                android:enabled="@{g1251h.checked ? false : true}"
-                                android:text="@string/g1251f" />
-
-                            <CheckBox
-                                android:id="@+id/g1251g"
-                                style="@style/checkbox"
-                                android:checked="@{g1251h.checked ? false : false}"
-                                android:enabled="@{g1251h.checked ? false : true}"
-                                android:text="@string/g1251g" />
-
-                            <CheckBox
-                                android:id="@+id/g1251h"
-                                style="@style/checkbox"
-                                android:tag="-1"
-                                android:text="@string/g1251h" />
 
                         </LinearLayout>
 

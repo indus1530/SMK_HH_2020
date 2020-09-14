@@ -19,6 +19,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 
@@ -34,6 +35,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.viewmodel.MainVModel;
 import kotlin.Pair;
 
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.SERIAL_EXTRA;
+import static edu.aku.hassannaqvi.uen_smk_hh.utils.DateUtils.minusYearFromCurrent;
 
 public class SectionDActivity extends AppCompatActivity {
 
@@ -53,7 +55,7 @@ public class SectionDActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d);
         bi.setCallback(this);
-
+        bi.d108c.setMaxvalue(Calendar.getInstance().get(Calendar.YEAR));
         setUIComponent();
         setListeners();
     }
@@ -70,9 +72,9 @@ public class SectionDActivity extends AppCompatActivity {
             bi.fldGrpSectionD02.setVisibility(View.GONE);
             fmc = new FamilyMembersContract();
             if (serial == 1) {
+
                 Clear.clearAllFields(bi.d103, false);
                 bi.d103a.setChecked(true);
-                bi.d109.setMinvalue(15);
             }
         } else {
             bi.d102Name.setText(new StringBuilder(fmc.getName()));
@@ -102,7 +104,7 @@ public class SectionDActivity extends AppCompatActivity {
             bi.d107.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, womenLst));
         }
 
-        bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
+        /*bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.d110a.getId()) {
                 Clear.clearAllFields(bi.d111f, false);
                 Clear.clearAllFields(bi.d111g, false);
@@ -110,7 +112,7 @@ public class SectionDActivity extends AppCompatActivity {
                 Clear.clearAllFields(bi.d111f, true);
                 Clear.clearAllFields(bi.d111g, true);
             }
-        }));
+        }));*/
 
         bi.d103.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i == bi.d103b.getId()) {
@@ -224,9 +226,9 @@ public class SectionDActivity extends AppCompatActivity {
         sd.put("d108a", bi.d108a.getText().toString().trim().isEmpty() ? "-1" : bi.d108a.getText().toString());
         sd.put("d108b", bi.d108b.getText().toString().trim().isEmpty() ? "-1" : bi.d108b.getText().toString());
         sd.put("d108c", bi.d108c.getText().toString().trim().isEmpty() ? "-1" : bi.d108c.getText().toString());
-        sd.put("d109",  bi.d109.getText().toString().trim().isEmpty() ? "-1" :  bi.d109.getText().toString());
+        sd.put("d109", bi.d109.getText().toString().trim().isEmpty() ? "-1" : bi.d109.getText().toString());
 
-        fmc.setAge(bi.d109.getText().toString());
+        fmc.setAge(bi.d109.getText().toString().trim().isEmpty() ? "-1" : bi.d109.getText().toString());
         fmc.setMonthfm(bi.d109a.getText().toString().trim().isEmpty() ? "-1" : bi.d109a.getText().toString());
 
         sd.put("d110", bi.d110a.isChecked() ? "0"
@@ -269,12 +271,12 @@ public class SectionDActivity extends AppCompatActivity {
         // Update in ViewModel
         mainVModel.updateFamilyMembers(fmc);
 
-        if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) < 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
+        if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
             mainVModel.setMWRA(fmc);
         else if (Integer.parseInt(fmc.getAge()) < 2) {
             mainVModel.setChildU2(fmc);
             if (motherFMC == null) return;
-            if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) < 49 && motherFMC.getAvailable().equals("1"))
+            if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) <= 49 && motherFMC.getAvailable().equals("1"))
                 mainVModel.setMwraChildU2(motherFMC);
         }
         if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) < 19 && bi.d105b.isChecked())
@@ -401,7 +403,7 @@ public class SectionDActivity extends AppCompatActivity {
         });
 
         bi.d105.setOnCheckedChangeListener((group, checkedId) -> {
-            if (fmc.getGender().equals("2") && !bi.d105b.isChecked())
+            if (fmc.getGender().equals("2"))
                 bi.d111a.setEnabled(true);
             else {
                 bi.d111a.setEnabled(false);
@@ -433,13 +435,25 @@ public class SectionDActivity extends AppCompatActivity {
 
     private void personInfoFunctionality(int calAge) {
 
+        if (fmc.getSerialno().equals("1")) {
+            Clear.clearAllFields(bi.d103, false);
+            bi.d103a.setChecked(true);
+            bi.d109.setMinvalue(15);
+            bi.d108c.setMaxvalue(minusYearFromCurrent(-15));
+        }
+
+        if (fmc.getRelHH().equals("2")) {
+            bi.d109.setMinvalue(15);
+            bi.d108c.setMaxvalue(minusYearFromCurrent(-15));
+        }
+
         if (calAge > 0) bi.fldGrpSectionD03.setVisibility(View.VISIBLE);
         else {
             Clear.clearAllFields(bi.fldGrpSectionD03);
             bi.fldGrpSectionD03.setVisibility(View.GONE);
         }
 
-        if (calAge >= 10)
+        if (calAge >= 13)
             bi.fldGrpCVd105.setVisibility(View.VISIBLE);
         else {
             bi.d105.clearCheck();
@@ -449,70 +463,125 @@ public class SectionDActivity extends AppCompatActivity {
         Clear.clearAllFields(bi.d110, false);
         Clear.clearAllFields(bi.d111, false);
 
-        if (calAge > 0 && calAge <= 2) {
+        if (calAge == 1) {
+
             bi.d110a.setEnabled(true);
-            bi.d110b.setEnabled(true);
+            bi.d110l.setEnabled(true);
             bi.d110m.setEnabled(true);
+
+            if (fmc.getGender().equals("2")) {
+                bi.d111a.setEnabled(true);
+            } else {
+                bi.d111a.setEnabled(false);
+                bi.d111a.setChecked(false);
+            }
+
             bi.d111j.setEnabled(true);
-            bi.d111g.setEnabled(true);
         }
 
-        if (calAge > 2 && calAge <= 5) {
+        if (calAge > 1 && calAge <= 7) {
+
             bi.d110a.setEnabled(true);
             bi.d110b.setEnabled(true);
             bi.d110c.setEnabled(true);
+            bi.d110l.setEnabled(true);
             bi.d110m.setEnabled(true);
+
+            if (fmc.getGender().equals("2")) {
+                bi.d111a.setEnabled(true);
+            } else {
+                bi.d111a.setEnabled(false);
+                bi.d111a.setChecked(false);
+            }
+
             bi.d111g.setEnabled(true);
             bi.d111j.setEnabled(true);
         }
 
-        if (calAge > 5 && calAge <= 10) {
+        if (calAge > 7 && calAge <= 15) {
+
             bi.d110a.setEnabled(true);
+            bi.d110b.setEnabled(true);
+            bi.d110c.setEnabled(true);
             bi.d110d.setEnabled(true);
             bi.d110e.setEnabled(true);
-            bi.d110l.setEnabled(true);
-            bi.d110m.setEnabled(true);
-            bi.d111g.setEnabled(true);
-            bi.d111j.setEnabled(true);
-
-            bi.d110b.setEnabled(true);
-            bi.d110c.setEnabled(true);
-        }
-
-        if (calAge > 10 && calAge <= 20) {
-            bi.d110a.setEnabled(true);
-            bi.d110e.setEnabled(true);
             bi.d110f.setEnabled(true);
-            bi.d110g.setEnabled(true);
-            bi.d110j.setEnabled(true);
-            bi.d110k.setEnabled(true);
             bi.d110l.setEnabled(true);
-            bi.d110m.setEnabled(true);
-            bi.d111a.setEnabled(true);
+
+            if (fmc.getGender().equals("2")) {
+                bi.d111a.setEnabled(true);
+            } else {
+                bi.d111a.setEnabled(false);
+                bi.d111a.setChecked(false);
+            }
+
             bi.d111b.setEnabled(true);
             bi.d111c.setEnabled(true);
             bi.d111d.setEnabled(true);
             bi.d111e.setEnabled(true);
             bi.d111g.setEnabled(true);
             bi.d111h.setEnabled(true);
-            bi.d111j.setEnabled(true);
+        }
 
-            bi.d110d.setEnabled(true);
+        if (calAge > 15 && calAge <= 20) {
+
+            bi.d110a.setEnabled(true);
             bi.d110b.setEnabled(true);
             bi.d110c.setEnabled(true);
+            bi.d110d.setEnabled(true);
+            bi.d110e.setEnabled(true);
+            bi.d110f.setEnabled(true);
+            bi.d110g.setEnabled(true);
+            bi.d110h.setEnabled(true);
+            bi.d110l.setEnabled(true);
+
+            if (fmc.getGender().equals("2")) {
+                bi.d111a.setEnabled(true);
+            } else {
+                bi.d111a.setEnabled(false);
+                bi.d111a.setChecked(false);
+            }
+
+            bi.d111b.setEnabled(true);
+            bi.d111c.setEnabled(true);
+            bi.d111d.setEnabled(true);
+            bi.d111e.setEnabled(true);
+            bi.d111f.setEnabled(true);
+            bi.d111g.setEnabled(true);
+            bi.d111h.setEnabled(true);
         }
 
         if (calAge > 20) {
-            Clear.clearAllFields(bi.d110, true);
-            Clear.clearAllFields(bi.d111, true);
 
+            bi.d110a.setEnabled(true);
+            bi.d110b.setEnabled(true);
+            bi.d110c.setEnabled(true);
+            bi.d110d.setEnabled(true);
+            bi.d110e.setEnabled(true);
+            bi.d110f.setEnabled(true);
+            bi.d110g.setEnabled(true);
+            bi.d110h.setEnabled(true);
+            bi.d110i.setEnabled(true);
+            bi.d110j.setEnabled(true);
+            bi.d110k.setEnabled(true);
+            bi.d110l.setEnabled(true);
+
+            if (fmc.getGender().equals("2")) {
+                bi.d111a.setEnabled(true);
+            } else {
+                bi.d111a.setEnabled(false);
+                bi.d111a.setChecked(false);
+            }
+
+            bi.d111b.setEnabled(true);
+            bi.d111c.setEnabled(true);
+            bi.d111d.setEnabled(true);
+            bi.d111e.setEnabled(true);
+            bi.d111f.setEnabled(true);
+            bi.d111g.setEnabled(true);
+            bi.d111h.setEnabled(true);
+            bi.d111i.setEnabled(true);
         }
-
-        if (calAge < 16) {
-            Clear.clearAllFields(bi.d110g, false);
-
-        }
-
     }
 
     @Override

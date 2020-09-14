@@ -111,7 +111,7 @@
     <string name="b102"> Longitude (Example:67.009939) </string>
 
 
-    <string name="c101"> C101:\t کیا رضامندی لی گئی تھی ؟ </string>
+    <string name="c101"> C101:\t کیارضامندی حاصل کی گئی تھی؟ </string>
     <string name="c101a"> زبانی اجازت نامہ </string>
     <string name="c101aa"> جی ہاں </string>
     <string name="c101ab"> نہیں </string>
@@ -269,15 +269,27 @@
     <string name="e110b"> مہینے </string>
     <string name="e110c"> سال </string>
 
-    <string name="e111"> E111:\t (نام) کے انتقال کی کیا وجوہات تھیں ؟  </string>
+    <string name="e111"> E111:\t  بچے کی مردہ پیدائش کی وجہ کیا تھی؟ </string>
     <string name="e111a"> 37 ہفتوں سے قبل پیدائش (قبل از وقت پیدائش) </string>
-    <string name="e111b"> سانس لینے میں دشواری </string>
-    <string name="e111c"> انفیکشن (سیپسس) </string>
-    <string name="e111d"> نمونیا </string>
-    <string name="e111e"> جھٹکے </string>
-    <string name="e111f"> ڈائریا </string>
-    <string name="e111g"> بخار </string>
+    <string name="e111b"> ہائی بلڈ پریشر </string>
+    <string name="e111c"> شدید انیمیا </string>
+    <string name="e111d"> پیدائش کا صدمہ (سر میں چوٹ) </string>
+    <string name="e111e"> انفیکشن </string>
+    <string name="e111f"> Cord Prolapsed </string>
     <string name="e111x"> دیگر (وضاحت کریں) </string>
+
+
+    <string name="e11101"> E111A:\t نام کے انتقال کی کیا وجوہات تھیں؟ </string>
+    <string name="e11101a"> Premature Birth </string>
+    <string name="e11101b"> Low Birth Weight </string>
+    <string name="e11101c"> سانس لینے میں دشواری </string>
+    <string name="e11101d"> Congenital Abnormality </string>
+    <string name="e11101e"> انفیکشن (سیپسس) </string>
+    <string name="e11101f"> نمونيا </string>
+    <string name="e11101g"> جھٹکے </string>
+    <string name="e11101h"> دست </string>
+    <string name="e11101i"> بخار </string>
+    <string name="e11101x"> دیگر (وضاحت کریں) </string>
 
     <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
     <string name="e112a">گهر </string>
@@ -922,7 +934,7 @@
     <string name="h115y"> ہاں </string>
     <string name="h115n"> نہیں </string>
 
-    <string name="h115a"> H115A:\t (نام) کو پیدائش کے 24 گھنٹے کے اندر کیاکھانے پینے کو دیا  گیا تھا؟ </string>
+    <string name="h115a"> H115A:\t (نام) کو پیدائش کے 24 گھنٹے کے اندر کیا پینے کو دیا  گیا تھا؟ </string>
     <string name="h115aa">دودھ (ماں کے دودھ کے علاوہ)  </string>
     <string name="h115ab"> سادہ پانی </string>
     <string name="h115ac"> شہد یا شہد کا پانی </string>
@@ -1256,6 +1268,7 @@
     <string name="h214c"> ہاں حصہ لیا تھا </string>
     <string name="h214d"> کبھی حصہ نہیں لیا </string>
     <string name="h214e"> کرونا کی وجہ سے مٹینگ نہیں ہوئی </string>
+    <string name="h214f"> لاگو نہیں ہوتا </string>
 
     <string name="h215"> H215:\t غریب اور پسماندہ لوگوں کی صحت کے لیئے معاشی مدد کا ذرائع کیا ہے ؟ </string>
     <string name="h215a"> سماجی ادارہ </string>
@@ -2862,13 +2875,17 @@
     <string name="ah8a">جی اپنا کام کیا ہے</string>
     <string name="ah8b">جی اپنے والدین کے ساتھ</string>
     <string name="ah8c">نہیں</string>
+
     <string name="ah9">AH9:\t آپ کا کیا پیشہ ہے؟ جو کام آپ زیادہ تر کرتے ہیں؟</string>
     <string name="ah9a">ذراعت</string>
     <string name="ah9b">گھریلو کام</string>
     <string name="ah9c">غیر ہنر مند مزدور</string>
     <string name="ah9d">ہنر مند مزدور</string>
     <string name="ah9e">صرف خاندان کے لیے کام</string>
-    <string name="ah9f">طالب علم</string>
+    <string name="ah9f"> سیلز اور خدمات </string>
+    <string name="ah9g"> پروفیشنل </string>
+    <string name="ah9h">طالب علم</string>
+
     <string name="ah10">AH10:\t اس نوکری کی تنخواہ ملنی ہے آپ کو؟</string>
     <string name="ah10a">نقد</string>
     <string name="ah10b">اناج / کائنڈ</string>
@@ -2922,7 +2939,8 @@
     <string name="ah20">AH20:\t وہ آپ کے ساتھ رہتے ہیں؟</string>
     <string name="ah20a">ہاں</string>
     <string name="ah20b">نہیں</string>
-    <string name="ah21">AH21:\t اپنے بہن بھائیوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
+
+    <string name="ah21">AH21a:\t اپنے بہن بھائیوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
     <string name="ah21a">بہت آسان</string>
     <string name="ah21b">آسان</string>
     <string name="ah21c">متوسط(بس آسان)</string>
@@ -2930,6 +2948,17 @@
     <string name="ah21e">بہت مشکل</string>
     <string name="ah21f">کبھی بات نہیں کی ان سے</string>
     <string name="ah21g">میں صرف اپنے دوستوں سے بات کرتا / کرتی ہوں</string>
+
+
+    <string name="ah2101">AH21b:\t اپنے دوستوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
+    <string name="ah2101a">بہت آسان</string>
+    <string name="ah2101b">آسان</string>
+    <string name="ah2101c">متوسط(بس آسان)</string>
+    <string name="ah2101d">مشکل</string>
+    <string name="ah2101e">بہت مشکل</string>
+    <string name="ah2101f">کبھی بات نہیں کی ان سے</string>
+    <string name="ah2101g">میں صرف اپنے دوستوں سے بات کرتا / کرتی ہوں</string>
+
     <string name="ah22">AH22:\t کیا آپ کو مندرجہ ذیل میں کوئی عادت ہے؟ اگر سب جوابات نہیں اور کبھی نہیں ہیں</string>
     <string name="ah22a">ہاں</string>
     <string name="ah22b">نہیں</string>
@@ -3354,7 +3383,7 @@
     <string name="h13601">کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
     <string name="h13601a">متفق</string>
     <string name="h13601b">غیر متفق</string>
-    <string name="h20200">کیا آپ ماں کا   بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h20200">کیا آپ / ماں بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
     <string name="h20200a">ہاں</string>
     <string name="h20200b">نہیں</string>
     <string name="h20201">کیا آپ ماں کے  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>

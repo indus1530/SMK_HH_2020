@@ -70,32 +70,56 @@ public class SectionE2Activity extends AppCompatActivity {
                 .append("Pregnancies Total: ").append(noOfPreCounter).append(" out of ").append(MainApp.noOfPragnencies));
         bi.btnNext.setText(noOfPreCounter == MainApp.noOfPragnencies ? getString(R.string.nextSection) : getString(R.string.nextPregnancy));
 
+        bi.e104.setOnCheckedChangeListener((radioGroup, i) -> {
+            bi.e105.clearCheck();
+        });
+
         bi.e105.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             MainApp.twinFlag = i == bi.e105c.getId();
-            if (i == bi.e105b.getId()
-                    || i == bi.e105e.getId()
-                    || i == bi.e105f.getId()) {
 
-                bi.fldGrpCVd108.setVisibility(View.GONE);
-                bi.fldGrpCVe108.setVisibility(View.GONE);
-                bi.fldGrpCVd107.setVisibility(View.GONE);
-                bi.fldGrpCVe107.setVisibility(View.GONE);
-                bi.fldGrpCVe110.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVd108);
-                Clear.clearAllFields(bi.fldGrpCVe108);
-                Clear.clearAllFields(bi.fldGrpCVd107);
-                Clear.clearAllFields(bi.fldGrpCVe107);
-                Clear.clearAllFields(bi.fldGrpCVe110);
+            if (i == bi.e105b.getId() || i == bi.e105d.getId() || i == bi.e105e.getId()) {
+
+                Clear.clearAllFields(bi.container1);
+                bi.container1.setVisibility(View.GONE);
+
                 bi.mainContainer2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe111.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe112.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe113.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe114.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe115.setVisibility(View.VISIBLE);
+
+                Clear.clearAllFields(bi.fldGrpCVe110);
+                bi.fldGrpCVe110.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVe11101);
+                bi.fldGrpCVe11101.setVisibility(View.GONE);
+
+            } else if (i == bi.e105f.getId()) {
+
+                Clear.clearAllFields(bi.container1);
+                bi.container1.setVisibility(View.GONE);
+
+                bi.mainContainer2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe113.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe114.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe115.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVe110.setVisibility(View.GONE);
+                bi.fldGrpCVe111.setVisibility(View.GONE);
+                bi.fldGrpCVe11101.setVisibility(View.GONE);
+                bi.fldGrpCVe112.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVe110);
+                Clear.clearAllFields(bi.fldGrpCVe111);
+                Clear.clearAllFields(bi.fldGrpCVe11101);
+                Clear.clearAllFields(bi.fldGrpCVe112);
+
             } else {
-                bi.fldGrpCVd108.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe108.setVisibility(View.VISIBLE);
-                bi.fldGrpCVd107.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe107.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe110.setVisibility(View.VISIBLE);
-                bi.mainContainer2.setVisibility(View.GONE);
+
+                bi.container1.setVisibility(View.VISIBLE);
+
                 Clear.clearAllFields(bi.mainContainer2);
+                bi.mainContainer2.setVisibility(View.GONE);
             }
 
         }));
@@ -103,58 +127,64 @@ public class SectionE2Activity extends AppCompatActivity {
 
         bi.e108.setOnCheckedChangeListener(((radioGroup, i) -> {
 
-            /*if (i == bi.e108a.getId()) {
-                bi.mainContainer2.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe109.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVe109);
-                bi.fldGrpCVd107.setVisibility(View.VISIBLE);
-            } else {
-                bi.mainContainer2.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe113.setVisibility(View.GONE);
-                bi.fldGrpCVe114.setVisibility(View.GONE);
-                bi.fldGrpCVe115.setVisibility(View.GONE);
-                bi.fldGrpCVd107.setVisibility(View.GONE);
-
-                Clear.clearAllFields(bi.fldGrpCVe113);
-                Clear.clearAllFields(bi.fldGrpCVe114);
-                Clear.clearAllFields(bi.fldGrpCVe115);
-                Clear.clearAllFields(bi.fldGrpCVd107);
-
-                if (!(bi.e105b.isChecked() || bi.e105e.isChecked() || bi.e105f.isChecked()))
-                    bi.fldGrpCVe109.setVisibility(View.VISIBLE);
-            }*/
-
             if (i == bi.e108b.getId()) {
+
                 bi.mainContainer2.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe113.setVisibility(View.GONE);
-                bi.fldGrpCVe114.setVisibility(View.GONE);
-                bi.fldGrpCVe115.setVisibility(View.GONE);
+                bi.fldGrpCVe110.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe11101.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe112.setVisibility(View.VISIBLE);
+
+                Clear.clearAllFields(bi.fldGrpCVe111);
                 Clear.clearAllFields(bi.fldGrpCVe113);
                 Clear.clearAllFields(bi.fldGrpCVe114);
                 Clear.clearAllFields(bi.fldGrpCVe115);
-                bi.fldGrpCVd107.setVisibility(View.GONE);
+                bi.fldGrpCVe111.setVisibility(View.GONE);
+                bi.fldGrpCVe113.setVisibility(View.GONE);
+                bi.fldGrpCVe114.setVisibility(View.GONE);
+                bi.fldGrpCVe115.setVisibility(View.GONE);
+
+                bi.container1.setVisibility(View.VISIBLE);
                 Clear.clearAllFields(bi.fldGrpCVd107);
+                bi.fldGrpCVd107.setVisibility(View.GONE);
+
+                bi.fldGrpCVe107.setVisibility(View.VISIBLE);
+                bi.fldGrpCVd108.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe108.setVisibility(View.VISIBLE);
                 bi.fldGrpCVe109.setVisibility(View.VISIBLE);
+
             } else {
-                bi.mainContainer2.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.mainContainer2);
-                bi.fldGrpCVe113.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe114.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe115.setVisibility(View.VISIBLE);
-                bi.fldGrpCVd107.setVisibility(View.VISIBLE);
-                bi.fldGrpCVe109.setVisibility(View.GONE);
+
+                bi.container1.setVisibility(View.VISIBLE);
                 Clear.clearAllFields(bi.fldGrpCVe109);
+                bi.fldGrpCVe109.setVisibility(View.GONE);
+
+                bi.fldGrpCVd107.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe107.setVisibility(View.VISIBLE);
+                bi.fldGrpCVd108.setVisibility(View.VISIBLE);
+                bi.fldGrpCVe108.setVisibility(View.VISIBLE);
+
+                Clear.clearAllFields(bi.mainContainer2);
+                bi.mainContainer2.setVisibility(View.GONE);
             }
 
-            if (bi.e105b.isChecked()
-                    || bi.e105e.isChecked()
-                    || bi.e105f.isChecked()) {
+            /*if (bi.e105b.isChecked() || bi.e105e.isChecked()) {
+
                 bi.mainContainer2.setVisibility(View.VISIBLE);
+
                 bi.fldGrpCVd107.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVd107);
                 bi.fldGrpCVe109.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVe109);
-            }
+
+            } else if (bi.e105f.isChecked()) {
+
+                bi.mainContainer2.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVd107.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVd107);
+                bi.fldGrpCVe109.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVe109);
+            }*/
 
         }));
 
@@ -250,15 +280,16 @@ public class SectionE2Activity extends AppCompatActivity {
         dialog.getWindow().setAttributes(params);
 
         dialog.findViewById(R.id.btnOk).setOnClickListener(view -> {
+
             clearContainer();
             setChildSpinner();
             dialog.dismiss();
-
         });
 
     }
 
     private void clearContainer() {
+
         Clear.clearAllFields(bi.container1);
         Clear.clearAllFields(bi.mainContainer2);
         bi.e104015.setVisibility(View.GONE);
@@ -343,10 +374,23 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e111d.isChecked() ? "4"
                 : bi.e111e.isChecked() ? "5"
                 : bi.e111f.isChecked() ? "6"
-                : bi.e111g.isChecked() ? "7"
                 : bi.e11196.isChecked() ? "96"
                 : "-1");
         json.put("e11196x", bi.e11196x.getText().toString().trim().isEmpty() ? "-1" : bi.e11196x.getText().toString());
+
+
+        json.put("e11101", bi.e11101a.isChecked() ? "1"
+                : bi.e11101b.isChecked() ? "2"
+                : bi.e11101c.isChecked() ? "3"
+                : bi.e11101d.isChecked() ? "4"
+                : bi.e11101e.isChecked() ? "5"
+                : bi.e11101f.isChecked() ? "6"
+                : bi.e11101g.isChecked() ? "7"
+                : bi.e11101h.isChecked() ? "8"
+                : bi.e11101i.isChecked() ? "9"
+                : bi.e1110196.isChecked() ? "96"
+                : "-1");
+        json.put("e1110196x", bi.e1110196x.getText().toString().trim().isEmpty() ? "-1" : bi.e1110196x.getText().toString());
 
         json.put("e112", bi.e112a.isChecked() ? "1"
                 : bi.e112b.isChecked() ? "2"

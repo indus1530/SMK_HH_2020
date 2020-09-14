@@ -95,11 +95,6 @@
                             <RadioButton
                                 android:id="@+id/ah1j"
                                 style="@style/radiobutton"
-                                android:text="@string/ah1j" />
-
-                            <RadioButton
-                                android:id="@+id/ah1k"
-                                style="@style/radiobutton"
                                 android:text="@string/ah1k" />
 
                         </RadioGroup>

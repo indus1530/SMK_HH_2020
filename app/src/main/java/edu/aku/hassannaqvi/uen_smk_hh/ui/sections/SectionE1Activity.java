@@ -129,7 +129,8 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
                 if (MainApp.pragnantWoman.getFirst().size() > 0) {
                     next = new Intent(SectionE1Activity.this, SectionE1Activity.class);
                 } else {
-                    next = new Intent(SectionE1Activity.this, SectionE3Activity.class);
+                    Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionKActivity.class;
+                    next = new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass);
                 }
             }
             finish();
@@ -172,6 +173,7 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
 
+        // xml e101
         json.put("e100", bi.womanSpinner.getSelectedItem().toString());
         mwra.setMwra_name(bi.womanSpinner.getSelectedItem().toString());
 

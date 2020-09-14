@@ -115,7 +115,6 @@ public class DateUtils {
     public static int getAgeInYears(int year) {
         Calendar cal = Calendar.getInstance();
         int currentYear = cal.get(Calendar.YEAR);
-
         return currentYear - year;
     }
 
@@ -203,5 +202,12 @@ public class DateUtils {
         cal.add(Calendar.YEAR, year);
         cal.add(Calendar.MONTH, month);
         return new SimpleDateFormat(format).format(cal.getTime()); //"dd-MM-yyyy HH:mm"
+    }
+
+    public static int minusYearFromCurrent(int yearBack) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(cal.getTime());
+        cal.add(Calendar.YEAR, yearBack);
+        return cal.get(Calendar.YEAR);
     }
 }

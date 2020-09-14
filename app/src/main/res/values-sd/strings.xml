@@ -126,7 +126,7 @@
 
 
     <!-- SECTION - C -->
-    <string name="c101"> C101:\t ڇا اجازت ورتي وئي </string>
+    <string name="c101"> C101:\t ڇا اجازت ورتي وئي؟ </string>
 
     <string name="c101a"> C101a:\t زباني اجازت نامو </string>
     <string name="c101aa"> ها </string>
@@ -284,15 +284,27 @@
     <string name="e110b"> مھينو </string>
     <string name="e110c"> سال </string>
 
-    <string name="e111"> E111:\t (نالو) جي وفات جو سبب ڇا ھو ؟ </string>
+    <string name="e111"> E111:\t اڃا تائين جيئرن جو سبب ڇا هو؟ </string>
     <string name="e111a"> وقت کان اڳي پيدائش (37 ھفتن کان پھريان) </string>
-    <string name="e111b"> ساھ کڻڻ ۾ تڪليف </string>
-    <string name="e111c"> انفيڪشن </string>
-    <string name="e111d"> نمونيا </string>
-    <string name="e111e"> پيدائشي جھٽڪا لڳڻ </string>
-    <string name="e111f"> دست </string>
-    <string name="e111g"> بخار </string>
+    <string name="e111b"> هائپر ٽائونشن </string>
+    <string name="e111c"> شديد انيميا </string>
+    <string name="e111d"> پيدائش جو صدمو (سر جي زخم) </string>
+    <string name="e111e"> انفيڪشن </string>
+    <string name="e111f"> Cord Prolapsed </string>
     <string name="e111x"> ٻيو ڪجھ (وضاحت ڪريو) </string>
+
+
+    <string name="e11101"> E111A:\t ٻار جو نالو فوت ٿيڻ جو سبب ڇا ھو؟ </string>
+    <string name="e11101a"> Premature Birth </string>
+    <string name="e11101b"> Low Birth Weight </string>
+    <string name="e11101c"> ساھ کڻڻ ۾ تڪليف </string>
+    <string name="e11101d"> Congenital Abnormality </string>
+    <string name="e11101e"> انفیکشن (سیپسس) </string>
+    <string name="e11101f"> نمونيا </string>
+    <string name="e11101g"> پيدائشي جھٽڪا لڳڻ </string>
+    <string name="e11101h"> دست </string>
+    <string name="e11101i"> بخار </string>
+    <string name="e11101x"> ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
     <string name="e112a">گهر </string>
@@ -930,7 +942,7 @@
     <string name="h115y"> Yes </string>
     <string name="h115n"> No </string>
 
-    <string name="h115a"> H115A:\t In the last 24 hours what was given to {NAME} to eat or drink ? </string>
+    <string name="h115a"> H115A:\t In the first 24 hours what was given to {NAME} to drink? </string>
     <string name="h115aa"> Milk (other than breast milk) </string>
     <string name="h115ab"> Plain water </string>
     <string name="h115ac"> Honey or sugar water </string>
@@ -1266,6 +1278,7 @@
     <string name="h214c"> ھا، شموليت ڪئي آھي </string>
     <string name="h214d"> ڪڏھن به شموليت نه ڪئي آھي </string>
     <string name="h214e"> ڪرونا جي ڪري مٽينگ / گڏجاڻي نه ٿي سگهي </string>
+    <string name="h214f"> لاڳو نه ٿو ٿئي </string>
 
     <string name="h215"> H215:\t ڇا توھان جي علائقي ۾ ماڻھن جو سھڪار ڪرڻ لاءِ ڪا حڪمت عملي ٺھيل آھي جيڪا عورتن ۽ ٻارن جي صحت جو خرچ برداشت نه ٿا ڪري سگھن انھن لاءِ ڪھڙو طريقيڪار آھي ؟</string>
     <string name="h215a"> اين جي او </string>
@@ -2873,13 +2886,17 @@
     <string name="ah8a">Yes Independently</string>
     <string name="ah8b">Yes With Parents</string>
     <string name="ah8c">No</string>
+
     <string name="ah9">What Is Your Occupation? That Is What Kind Of Work You Mainly Do?</string>
     <string name="ah9a">Agriculture</string>
     <string name="ah9b">Domestic Work</string>
     <string name="ah9c">Unskilled Manual Labour</string>
     <string name="ah9d">Skilled Manual Labour</string>
     <string name="ah9e">Work For Family Only</string>
-    <string name="ah9f">Student</string>
+    <string name="ah9f">Sales and services</string>
+    <string name="ah9g">Professional</string>
+    <string name="ah9h">Student</string>
+
     <string name="ah10">Are You Paid For This Job?</string>
     <string name="ah10a">Cash</string>
     <string name="ah10b">Kind</string>
@@ -2933,6 +2950,7 @@
     <string name="ah20">Does They Live In The Same Household As You?</string>
     <string name="ah20a">Yes</string>
     <string name="ah20b">No</string>
+
     <string name="ah21">Do You Find It Difficult Or Easy To Talk With Siblings About Your Important Health Related Matters.</string>
     <string name="ah21a">Very Easy</string>
     <string name="ah21b">Easy</string>
@@ -2941,6 +2959,17 @@
     <string name="ah21e">Very Difficult</string>
     <string name="ah21f">Never Talk To Them</string>
     <string name="ah21g">I Only Talk With My Friend</string>
+
+
+    <string name="ah2101">Do you find it difficult or easy to talk with friends about your important health related matters?</string>
+    <string name="ah2101a">Very Easy</string>
+    <string name="ah2101b">Easy</string>
+    <string name="ah2101c">Average</string>
+    <string name="ah2101d">Difficult</string>
+    <string name="ah2101e">Very Difficult</string>
+    <string name="ah2101f">Never Talk To Them</string>
+    <string name="ah2101g">I Only Talk With My Friend</string>
+
     <string name="ah22">Do You Currently Have Any Of These Habits? (It Also Include “Ever” Having These Habits)</string>
     <string name="ah22a">Yes</string>
     <string name="ah22b">No</string>
@@ -3226,7 +3255,7 @@
     <string name="ah51c">Divorced</string>
     <string name="ah51d">Separated</string>
     <string name="ah51e">Never Married</string>
-    <string name="ah52">How Old Was Your Husband /Wife On His Last Birthday? (Completed Years)</string>
+    <string name="ah52">What is the age of your husband/wife? (completed years)</string>
     <string name="ah52a">Age</string>
     <string name="ah53">Did You Have A Say In Choosing Your Husband/Wife?</string>
     <string name="ah53a">Yes</string>
@@ -3365,7 +3394,7 @@
     <string name="h13601">کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟</string>
     <string name="h13601a">متفق</string>
     <string name="h13601b">غیر متفق</string>
-    <string name="h20200">کیا آپ ماں کا   بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
+    <string name="h20200">کیا آپ کا بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کے بارے میں جانتی ہیں؟</string>
     <string name="h20200a">ہاں</string>
     <string name="h20200b">نہیں</string>
     <string name="h20201">کیا آپ ماں کے  بچے کی پیدائش کے بعد  پہلے معائنے کی اہمیت کو سمجھتی ہیں؟</string>

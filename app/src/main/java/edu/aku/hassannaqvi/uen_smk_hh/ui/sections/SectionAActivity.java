@@ -148,28 +148,13 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
         json.put("hhheadpresent", bi.checkHHHeadpresent.isChecked() ? "1" : "2");
         ////////////////////////////////////////////////////////////////////////////////
 
-        //json.put("hhheadpresentnew", bi.newHHheadname.getText().toString());
         json.put("hhheadpresentnew", bi.newHHheadname.getText().toString().trim().isEmpty() ? "-1" : bi.newHHheadname.getText().toString());
-
-        //json.put("a104", bi.a104.getText().toString());
         json.put("a104", bi.a104.getText().toString().trim().isEmpty() ? "-1" : bi.a104.getText().toString());
-
-        //json.put("a105", bi.a105.getText().toString());
         json.put("a105", bi.a105.getText().toString().trim().isEmpty() ? "-1" : bi.a105.getText().toString());
-
-        //json.put("a106", bi.a106.getText().toString());
         json.put("a106", bi.a106.getText().toString().trim().isEmpty() ? "-1" : bi.a106.getText().toString());
-
-        //json.put("a107", bi.a107.getText().toString());
         json.put("a107", bi.a107.getText().toString().trim().isEmpty() ? "-1" : bi.a107.getText().toString());
-
-        //json.put("a109", bi.a109.getText().toString());
         json.put("a109", bi.a109.getText().toString().trim().isEmpty() ? "-1" : bi.a109.getText().toString());
-
-        //json.put("a110", bi.a110.getText().toString());
         json.put("a110", bi.a110.getText().toString().trim().isEmpty() ? "-1" : bi.a110.getText().toString());
-
-        //json.put("a111", bi.a111.getText().toString());
         json.put("a111", bi.a111.getText().toString().trim().isEmpty() ? "-1" : bi.a111.getText().toString());
 
         json.put("c101a", bi.c101aa.isChecked() ? "1"

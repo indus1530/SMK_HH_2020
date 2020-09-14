@@ -279,15 +279,26 @@
     <string name="e110b"> Months </string>
     <string name="e110c"> Years </string>
 
-    <string name="e111"> E111:\t What was the reason for {NAME}’s death ? </string>
+    <string name="e111"> E111:\t What was the reason for stillbirth? </string>
     <string name="e111a"> Birth before 37 weeks (Preterm) </string>
-    <string name="e111b"> Difficulty in breathing (Birth Asphyxia) </string>
-    <string name="e111c"> Infection (Sepsis) </string>
-    <string name="e111d"> Pneumonia </string>
-    <string name="e111e"> Convulsion </string>
-    <string name="e111f"> Diarrhea </string>
-    <string name="e111g"> Fever </string>
-    <string name="e111x"> Other (specify) </string>
+    <string name="e111b"> Hypertension </string>
+    <string name="e111c"> Severe Anemia </string>
+    <string name="e111d"> Birth trauma(head injury) </string>
+    <string name="e111e"> Infection (sepsis) </string>
+    <string name="e111f"> Cord Prolapsed </string>
+    <string name="e111x"> Other Specify </string>
+
+    <string name="e11101"> E111A:\t What was the reason for {NAME}’s death? </string>
+    <string name="e11101a"> Premature Birth </string>
+    <string name="e11101b"> Low Birth Weight </string>
+    <string name="e11101c"> Difficulty in breathing (Birth Asphyxia) </string>
+    <string name="e11101d"> Congenital Abnormality </string>
+    <string name="e11101e"> Infection (sepsis) </string>
+    <string name="e11101f"> Pneumonia </string>
+    <string name="e11101g"> Convulsion </string>
+    <string name="e11101h"> Diarrhea </string>
+    <string name="e11101i"> Fever </string>
+    <string name="e11101x"> Other (specify) </string>
 
     <string name="e112"> E112:\t Where did {Name} die?  </string>
     <string name="e112a"> Home </string>
@@ -403,7 +414,7 @@
     <string name="f103d"> CMW (Community Midwife) </string>
     <string name="f103e"> LHW (Lady Health Worker) </string>
 
-    <string name="f104"> F104:\t How far is the health facility where you usually receive antenatal check-up(s) during last pregnancy, from your home ? </string>
+    <string name="f104"> F104:\t How far is the health facility where you usually received antenatal check-up(s) during last pregnancy, from your home ? </string>
 
     <string name="f105"> F105:\t How do you usually travel to the health facility, where you usually receive antenatal check-up(s) during pregnancy with {NAME}?</string>
     <string name="f105a"> Walk </string>
@@ -931,7 +942,7 @@
     <string name="h115y"> Yes </string>
     <string name="h115n"> No </string>
 
-    <string name="h115a"> H115A:\t In the last 24 hours what was given to {NAME} to eat or drink ? </string>
+    <string name="h115a"> H115A:\t In the first 24 hours what was given to {NAME} to drink? </string>
     <string name="h115aa"> Milk (other than breast milk) </string>
     <string name="h115ab"> Plain water </string>
     <string name="h115ac"> Honey or sugar water </string>
@@ -1101,7 +1112,7 @@
     <string name="h135i"> Not crying </string>
     <string name="h135j"> Don’t Know </string>
 
-    <string name="h136"> H136:\t Who informed your regarding danger signs for the new born ? </string>
+    <string name="h136"> H136:\t Who informed you regarding danger signs for the new born? </string>
     <string name="h136a"> Doctor </string>
     <string name="h136b"> LHV (Lady Health Visitor) </string>
     <string name="h136c"> Nurse </string>
@@ -1264,6 +1275,7 @@
     <string name="h214c"> Yes Participated </string>
     <string name="h214d"> Never participated </string>
     <string name="h214e"> LHW not organizing group discussions due to Corona </string>
+    <string name="h214f"> Not Applicable </string>
 
     <string name="h215"> H215:\t What are the financial assistance mechanisms for supporting health care for poor and underprivileged ? </string>
     <string name="h215a"> NGO </string>
@@ -2825,13 +2837,17 @@
     <string name="ah8a">Yes Independently</string>
     <string name="ah8b">Yes With Parents</string>
     <string name="ah8c">No</string>
+
     <string name="ah9">What Is Your Occupation? That Is What Kind Of Work You Mainly Do?</string>
     <string name="ah9a">Agriculture</string>
     <string name="ah9b">Domestic Work</string>
     <string name="ah9c">Unskilled Manual Labour</string>
     <string name="ah9d">Skilled Manual Labour</string>
     <string name="ah9e">Work For Family Only</string>
-    <string name="ah9f">Student</string>
+    <string name="ah9f">Sales and services</string>
+    <string name="ah9g">Professional</string>
+    <string name="ah9h">Student</string>
+
     <string name="ah10">Are You Paid For This Job?</string>
     <string name="ah10a">Cash</string>
     <string name="ah10b">Kind</string>
@@ -2885,6 +2901,7 @@
     <string name="ah20">Does They Live In The Same Household As You?</string>
     <string name="ah20a">Yes</string>
     <string name="ah20b">No</string>
+
     <string name="ah21">Do You Find It Difficult Or Easy To Talk With Siblings About Your Important Health Related Matters.</string>
     <string name="ah21a">Very Easy</string>
     <string name="ah21b">Easy</string>
@@ -2893,6 +2910,16 @@
     <string name="ah21e">Very Difficult</string>
     <string name="ah21f">Never Talk To Them</string>
     <string name="ah21g">I Only Talk With My Friend</string>
+
+    <string name="ah2101">Do you find it difficult or easy to talk with friends about your important health related matters?</string>
+    <string name="ah2101a">Very Easy</string>
+    <string name="ah2101b">Easy</string>
+    <string name="ah2101c">Average</string>
+    <string name="ah2101d">Difficult</string>
+    <string name="ah2101e">Very Difficult</string>
+    <string name="ah2101f">Never Talk To Them</string>
+    <string name="ah2101g">I Only Talk With My Friend</string>
+
     <string name="ah22">Do You Currently Have Any Of These Habits? (It Also Include “Ever” Having These Habits)</string>
     <string name="ah22a">Yes</string>
     <string name="ah22b">No</string>
@@ -3178,7 +3205,7 @@
     <string name="ah51c">Divorced</string>
     <string name="ah51d">Separated</string>
     <string name="ah51e">Never Married</string>
-    <string name="ah52">How Old Was Your Husband /Wife On His Last Birthday? (Completed Years)</string>
+    <string name="ah52">What is the age of your husband/wife? (completed years)</string>
     <string name="ah52a">Age</string>
     <string name="ah53">Did You Have A Say In Choosing Your Husband/Wife?</string>
     <string name="ah53a">Yes</string>
@@ -3316,7 +3343,7 @@
     <string name="h13601">Do you think it is important to seek care for the danger signs for the new born?</string>
     <string name="h13601a">Agree</string>
     <string name="h13601b">Disagree</string>
-    <string name="h20200">Do you know that health check-up of a mother conduct at facility after delivery?</string>
+    <string name="h20200">Do you know the importance of health check-up of a mother conduct at facility after delivery?</string>
     <string name="h20200a">Yes</string>
     <string name="h20200b">No</string>
     <string name="h20201">Do you think it is important to conduct health check-up after you gave birth to {name}?</string>

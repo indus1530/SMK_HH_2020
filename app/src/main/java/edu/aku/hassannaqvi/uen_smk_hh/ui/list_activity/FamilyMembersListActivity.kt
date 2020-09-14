@@ -18,9 +18,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp.openDialog
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivityFamilyMembersListBinding
 import edu.aku.hassannaqvi.uen_smk_hh.otherClasses.KishGrid
-import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionDActivity
-import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionE1Activity
-import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.SectionE3Activity
+import edu.aku.hassannaqvi.uen_smk_hh.ui.sections.*
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util
 import edu.aku.hassannaqvi.uen_smk_hh.viewmodel.MainVModel
 import kotlinx.android.synthetic.main.activity_family_members_list.*
@@ -103,7 +101,9 @@ class FamilyMembersListActivity : AppCompatActivity() {
                                     MainApp.selectedKishAdols = adolData?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), adolData.size) - 1)
 
                                     finish()
-                                    startActivity(Intent(this, if (bi.contentScroll.mwra.text.toString().toInt() > 0) SectionE1Activity::class.java else SectionE3Activity::class.java))
+                                    val nextClass: Class<*> = if (MainApp.selectedKishAdols != null) SectionAH1Activity::class.java else SectionKActivity::class.java
+                                    val next = if (MainApp.selectedKishMWRA != null) SectionFActivity::class.java else nextClass
+                                    startActivity(Intent(this, if (bi.contentScroll.mwra.text.toString().toInt() > 0) SectionE1Activity::class.java else next))
                                 }
                                 else -> Util.openEndActivity(this)
                             }

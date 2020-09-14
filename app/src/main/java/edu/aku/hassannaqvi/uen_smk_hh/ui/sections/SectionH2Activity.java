@@ -332,6 +332,7 @@ public class SectionH2Activity extends AppCompatActivity {
                 : bi.h214c.isChecked() ? "3"
                 : bi.h214d.isChecked() ? "4"
                 : bi.h214e.isChecked() ? "5"
+                : bi.h214f.isChecked() ? "6"
                 : "-1");
 
         json.put("h215", bi.h215a.isChecked() ? "1"

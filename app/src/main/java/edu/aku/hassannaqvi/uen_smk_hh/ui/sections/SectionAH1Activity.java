@@ -163,8 +163,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : bi.ah1g.isChecked() ? "7"
                 : bi.ah1h.isChecked() ? "8"
                 : bi.ah1i.isChecked() ? "9"
-                : bi.ah1j.isChecked() ? "98"
-                : bi.ah1k.isChecked() ? "99"
+                : bi.ah1j.isChecked() ? "99"
                 : "-1");
 
         json.put("ah2", bi.ah2a.isChecked() ? "1"
