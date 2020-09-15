@@ -15,6 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
@@ -40,12 +41,10 @@ public class SectionH102Activity extends AppCompatActivity {
     private void setCoronaFields() {
 
         if (!MainApp.selectedKishMWRA.isCoronaCase()) {
+
             bi.fldGrpCVh1311.setVisibility(View.GONE);
-
             bi.h133i.setVisibility(View.GONE);
-
             bi.fldGrpCVh137aa.setVisibility(View.GONE);
-
         }
     }
 
@@ -250,7 +249,7 @@ public class SectionH102Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SH1, MainApp.kish.getsH1());
+        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SH1, MainApp.child.getsH1());
         if (updcount == 1) {
             return true;
         } else {
@@ -429,8 +428,8 @@ public class SectionH102Activity extends AppCompatActivity {
 
         try {
 
-            JSONObject s4_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.kish.getsH1()), json);
-            MainApp.kish.setsH1(String.valueOf(s4_merge));
+            JSONObject s4_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.child.getsH1()), json);
+            MainApp.child.setsH1(String.valueOf(s4_merge));
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -43,6 +43,7 @@ public class AdolscentContract {
 
 
     public AdolscentContract hydrate(Cursor cursor) {
+
         this._ID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN__ID));
         this.UID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_UID));
         this._UUID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN__UUID));
@@ -55,7 +56,6 @@ public class AdolscentContract {
         this.devicetagID = cursor.getString(cursor.getColumnIndex(SingleAdolscent.COLUMN_DEVICETAGID));
 
         return this;
-
     }
 
     public JSONObject toJSONObject() throws JSONException {
@@ -181,7 +181,7 @@ public class AdolscentContract {
 
     public static abstract class SingleAdolscent implements BaseColumns {
 
-        public static final String TABLE_NAME = "child_table";
+        public static final String TABLE_NAME = "adolescent_health";
         public static final String COLUMN__ID = "_id";
         public static final String COLUMN_UID = "_uid";
         public static final String COLUMN__UUID = "_uuid";

@@ -16,6 +16,8 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionJBinding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
@@ -187,15 +189,15 @@ public class SectionJActivity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
+
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SJ, MainApp.child.getsJ());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }*/
-        return true;
+        }
     }
 
     private void SaveDraft() throws JSONException {
@@ -251,7 +253,7 @@ public class SectionJActivity extends AppCompatActivity {
         json.put("j10408m", bi.j10408m.getText().toString().trim().isEmpty() ? "-1" : bi.j10408m.getText().toString());
         json.put("j10408y", bi.j10408y.getText().toString().trim().isEmpty() ? "-1" : bi.j10408y.getText().toString());
 
-        //    MainApp.child.setsJ(String.valueOf(json));
+        MainApp.child.setsJ(String.valueOf(json));
     }
 
     private boolean formValidation() {

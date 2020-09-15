@@ -15,6 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
@@ -171,7 +172,7 @@ public class SectionH1Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SH1, MainApp.kish.getsH1());
+        long updcount = db.addChild(MainApp.child);
         if (updcount == 1) {
             return true;
         } else {
@@ -338,7 +339,7 @@ public class SectionH1Activity extends AppCompatActivity {
                 : bi.h11501b.isChecked() ? "2"
                 : "-1");
 
-        MainApp.kish.setsH1(String.valueOf(json));
+        MainApp.child.setsH1(String.valueOf(json));
     }
 
     private boolean formValidation() {

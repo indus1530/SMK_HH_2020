@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.uen_smk_hh.utils;
 
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.SingleRandomHH;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
@@ -111,7 +112,6 @@ public final class CreateTable {
             + SingleKishMWRA.COLUMN_USER + " TEXT,"
             + SingleKishMWRA.COLUMN_SF + " TEXT,"
             + SingleKishMWRA.COLUMN_SG + " TEXT,"
-            + SingleKishMWRA.COLUMN_SH1 + " TEXT,"
             + SingleKishMWRA.COLUMN_SH2 + " TEXT,"
             + SingleKishMWRA.COLUMN_SK + " TEXT,"
             + SingleKishMWRA.COLUMN_SUN + " TEXT,"
@@ -144,7 +144,7 @@ public final class CreateTable {
             + SingleMWRAPRE.COLUMN_SYNCED + " TEXT,"
             + SingleMWRAPRE.COLUMN_SYNCED_DATE + " TEXT );";
 
-    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + SingleAdolscent.TABLE_NAME + "("
+    public static final String SQL_CREATE_ADOLSCENT_TABLE = "CREATE TABLE " + SingleAdolscent.TABLE_NAME + "("
             + SingleAdolscent._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + SingleAdolscent.COLUMN_UID + " TEXT,"
             + SingleAdolscent.COLUMN__UUID + " TEXT,"
@@ -158,6 +158,18 @@ public final class CreateTable {
             + SingleAdolscent.COLUMN_SYNCED + " TEXT,"
             + SingleAdolscent.COLUMN_SYNCED_DATE + " TEXT );";
 
+    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + ChildContract.SingleChild.TABLE_NAME + "("
+            + ChildContract.SingleChild._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + ChildContract.SingleChild.COLUMN_UID + " TEXT,"
+            + ChildContract.SingleChild.COLUMN__UUID + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_DEVICEID + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_FORMDATE + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_USER + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_SH1 + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_SJ + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_DEVICETAGID + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_SYNCED + " TEXT,"
+            + ChildContract.SingleChild.COLUMN_SYNCED_DATE + " TEXT );";
 
     public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
             + SingleMortality._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"

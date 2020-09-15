@@ -124,7 +124,7 @@ public class SectionAH1Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long rowID = db.addChild(MainApp.adolscent);
+        long rowID = db.addAdolscent(MainApp.adolscent);
         if (rowID > 0) {
             MainApp.adolscent.set_ID(String.valueOf(rowID));
             MainApp.adolscent.setUID(MainApp.adolscent.getDeviceId() + MainApp.adolscent.get_ID());

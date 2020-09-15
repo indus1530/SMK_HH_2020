@@ -139,7 +139,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3701c", bi.ah3701c.isChecked() ? "3" : "-1");
         json.put("ah3701d", bi.ah3701d.isChecked() ? "4" : "-1");
         json.put("ah3701e", bi.ah3701e.isChecked() ? "5" : "-1");
-        json.put("ah3701f", bi.ah3701f.isChecked() ? "6" : "-1");
         json.put("ah370196", bi.ah370196.isChecked() ? "96" : "-1");
         json.put("ah370196x", bi.ah370196x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370196x.getText().toString());
 

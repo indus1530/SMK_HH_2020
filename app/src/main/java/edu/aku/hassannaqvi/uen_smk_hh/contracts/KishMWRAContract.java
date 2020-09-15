@@ -17,7 +17,6 @@ public class KishMWRAContract {
     private String user = ""; // Interviewer
     private String sF = "";
     private String sG = "";
-    private String sH1 = "";
     private String sH2 = "";
     private String sK = "";
     private String sUN = "";
@@ -99,14 +98,6 @@ public class KishMWRAContract {
         this.sG = sG;
     }
 
-    public String getsH1() {
-        return sH1;
-    }
-
-    public void setsH1(String sH1) {
-        this.sH1 = sH1;
-    }
-
     public String getsH2() {
         return sH2;
     }
@@ -173,7 +164,6 @@ public class KishMWRAContract {
         this.user = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_USER));
         this.sF = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SF));
         this.sG = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SG));
-        this.sH1 = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SH1));
         this.sH2 = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SH2));
         this.sK = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SK));
         this.sUN = cursor.getString(cursor.getColumnIndex(SingleKishMWRA.COLUMN_SUN));
@@ -202,9 +192,6 @@ public class KishMWRAContract {
         }
         if (!this.sG.equals("")) {
             json.put(SingleKishMWRA.COLUMN_SG, this.sG.equals("") ? JSONObject.NULL : new JSONObject(this.sG));
-        }
-        if (!this.sH1.equals("")) {
-            json.put(SingleKishMWRA.COLUMN_SH1, this.sH1.equals("") ? JSONObject.NULL : new JSONObject(this.sH1));
         }
         if (!this.sH2.equals("")) {
             json.put(SingleKishMWRA.COLUMN_SH2, this.sH2.equals("") ? JSONObject.NULL : new JSONObject(this.sH2));
@@ -238,7 +225,6 @@ public class KishMWRAContract {
         public static final String COLUMN_USER = "username";
         public static final String COLUMN_SF = "sf";
         public static final String COLUMN_SG = "sg";
-        public static final String COLUMN_SH1 = "sh1";
         public static final String COLUMN_SH2 = "sh2";
         public static final String COLUMN_SK = "sk";
         public static final String COLUMN_SUN = "sUN";

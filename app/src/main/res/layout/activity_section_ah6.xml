@@ -68,11 +68,6 @@
                             android:text="@string/ah3701e" />
 
                         <CheckBox
-                            android:id="@+id/ah3701f"
-                            style="@style/checkbox"
-                            android:text="@string/ah3701f" />
-
-                        <CheckBox
                             android:id="@+id/ah370196"
                             style="@style/checkbox"
                             android:text="@string/ah3701x" />
