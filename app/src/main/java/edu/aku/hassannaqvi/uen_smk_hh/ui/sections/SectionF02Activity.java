@@ -62,6 +62,8 @@ public class SectionF02Activity extends AppCompatActivity {
         bi.f121.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             if (i != bi.f121a.getId()) {
+
+                Clear.clearAllFields(bi.fldGrpCVf1211);
                 Clear.clearAllFields(bi.fldGrp2223);
             }
 
@@ -95,11 +97,31 @@ public class SectionF02Activity extends AppCompatActivity {
         });
 
         bi.f1212c.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (!isChecked)
+
+            if (!isChecked) {
+
                 Clear.clearAllFields(bi.f1212d);
                 Clear.clearAllFields(bi.f1212e);
                 Clear.clearAllFields(bi.f1212f);
                 Clear.clearAllFields(bi.f1212g);
+
+                bi.f1212d.setVisibility(View.GONE);
+                bi.f1212e.setVisibility(View.GONE);
+                bi.f1212f.setVisibility(View.GONE);
+                bi.f1212g.setVisibility(View.GONE);
+
+            } else {
+
+                bi.f1212d.setVisibility(View.VISIBLE);
+                bi.f1212e.setVisibility(View.VISIBLE);
+                bi.f1212f.setVisibility(View.VISIBLE);
+                bi.f1212g.setVisibility(View.VISIBLE);
+            }
+
+        });
+
+        bi.f1212h.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            Clear.Companion.clearAllFields(bi.f1212check, !isChecked);
         });
 
         bi.f129.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -193,17 +215,17 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f126g", bi.f126g.isChecked() ? "7" : "-1");
 
         f1.put("f127", bi.f127a.isChecked() ? "1" :
-                            bi.f127b.isChecked() ? "2" :
-                            bi.f127c.isChecked() ? "3" :
-                            bi.f127d.isChecked() ? "4" :
-                            bi.f127e.isChecked() ? "5" :
-                            bi.f127f.isChecked() ? "6" :
-                            bi.f127g.isChecked() ? "7" :
-                            bi.f127h.isChecked() ? "8" :
-                            bi.f127i.isChecked() ? "9" :
-                            bi.f127j.isChecked() ? "10" :
-                            bi.f127k.isChecked() ? "11" :
-                                "-1");
+                bi.f127b.isChecked() ? "2" :
+                        bi.f127c.isChecked() ? "3" :
+                                bi.f127d.isChecked() ? "4" :
+                                        bi.f127e.isChecked() ? "5" :
+                                                bi.f127f.isChecked() ? "6" :
+                                                        bi.f127g.isChecked() ? "7" :
+                                                                bi.f127h.isChecked() ? "8" :
+                                                                        bi.f127i.isChecked() ? "9" :
+                                                                                bi.f127j.isChecked() ? "10" :
+                                                                                        bi.f127k.isChecked() ? "11" :
+                                                                                                "-1");
 
         f1.put("f128a", bi.f128a.isChecked() ? "1" : "-1");
         f1.put("f128b", bi.f128b.isChecked() ? "2" : "-1");

@@ -172,11 +172,30 @@ public class SectionGActivity extends AppCompatActivity {
 
         //g1251
         bi.g1251c.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (!isChecked)
+            if (!isChecked) {
+
                 Clear.clearAllFields(bi.g1251d);
                 Clear.clearAllFields(bi.g1251e);
                 Clear.clearAllFields(bi.g1251f);
                 Clear.clearAllFields(bi.g1251g);
+
+                bi.g1251d.setVisibility(View.GONE);
+                bi.g1251e.setVisibility(View.GONE);
+                bi.g1251f.setVisibility(View.GONE);
+                bi.g1251g.setVisibility(View.GONE);
+
+            } else {
+
+                bi.g1251d.setVisibility(View.VISIBLE);
+                bi.g1251e.setVisibility(View.VISIBLE);
+                bi.g1251f.setVisibility(View.VISIBLE);
+                bi.g1251g.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        bi.g1251h.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            Clear.Companion.clearAllFields(bi.g1251check, !isChecked);
         });
 
 
