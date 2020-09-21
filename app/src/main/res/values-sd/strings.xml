@@ -822,7 +822,7 @@
     <string name="g124l"> سڄي جسم تي سوڄ </string>
     <string name="g124m"> شديد الٽي يا آت اچڻ</string>
 
-    <string name="g12401"> G12401:\t Did you experience any danger signs/problems during labour and delivery? </string>
+    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
     <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
@@ -1145,7 +1145,7 @@
     <string name="h136aaa"> Agree </string>
     <string name="h136aab"> Disagree </string>
 
-    <string name="h13602"> H13602:\t Did your new-born experience any danger signs/problems? </string>
+    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
     <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
@@ -1158,7 +1158,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1266,7 +1266,7 @@
     <string name="h208aaa"> Agree </string>
     <string name="h208aab"> Disagree </string>
 
-    <string name="h20802"> H20802:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -1277,7 +1277,7 @@
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
     <string name="h20802i"> معلوم نہیں </string>
 
-    <string name="h20803"> H20803:\t Did you seek care of above experience danger sign /problems after delivery? </string>
+    <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> ہاں </string>
     <string name="h20803b"> نہیں </string>
 
