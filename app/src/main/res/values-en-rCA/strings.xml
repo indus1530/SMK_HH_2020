@@ -824,6 +824,22 @@
     <string name="g124l"> Generalized edema </string>
     <string name="g124m"> Severe nausea or vomiting </string>
 
+    <string name="g12401"> G12401:\t Did you experience any danger signs/problems during labour and delivery? </string>
+    <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="g12401a"> Vaginal bleeding </string>
+    <string name="g12401b"> Convulsions/fits </string>
+    <string name="g12401c"> Severe headaches </string>
+    <string name="g12401d"> Blurred vision </string>
+    <string name="g12401e"> Fever and too weak to get out of bed </string>
+    <string name="g12401f"> Severe abdominal pain </string>
+    <string name="g12401g"> Fast or difficult breathing </string>
+    <string name="g12401h"> Prolonged labour (defined as &gt; 12 hours of regular strong contractions) </string>
+    <string name="g12401i"> Retained placenta </string>
+    <string name="g12401j"> Foul smelling vaginal discharge green or brown water </string>
+    <string name="g12401k"> High blood pressure </string>
+    <string name="g12401l"> Generalized edema </string>
+    <string name="g12401m"> Severe nausea or vomiting </string>
+
     <string name="g125"> G125:\t Was LHW present at the time of your delivery ? </string>
     <string name="g125a"> Yes </string>
     <string name="g125b"> No </string>
@@ -1124,6 +1140,23 @@
     <string name="h136aaa"> Agree </string>
     <string name="h136aab"> Disagree </string>
 
+    <string name="h13602"> H13602:\t Did your new-born experience any danger signs/problems? </string>
+    <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="h13602a"> Convulsions/fits </string>
+    <string name="h13602b"> Movement only when stimulated or no movement, even when stimulated </string>
+    <string name="h13602c"> Not feeding well </string>
+    <string name="h13602d"> Fever </string>
+    <string name="h13602e"> Difficult/fast breathing </string>
+    <string name="h13602f"> Lethargy/unconsciousness </string>
+    <string name="h13602g"> Yellow or pale color on skin eyes </string>
+    <string name="h13602h"> Low birth weight </string>
+    <string name="h13602i"> Not crying </string>
+    <string name="h13602j"> Don’t Know </string>
+
+    <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603a"> Yes </string>
+    <string name="h13603b"> No </string>
+
     <string name="h137"> H137:\t Did the new born got BCG vaccination? (Usually leaves scar at left arm or shoulder) </string>
     <string name="h137a"> Yes </string>
     <string name="h137b"> No </string>
@@ -1227,6 +1260,21 @@
     <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
     <string name="h208aaa"> Agree </string>
     <string name="h208aab"> Disagree </string>
+
+    <string name="h20802"> H20802:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802a"> High Fever, lower abdominal pain or foul smelling discharge (infection) </string>
+    <string name="h20802b"> Severe headache, blurred vision, high blood pressure </string>
+    <string name="h20802c"> Convulsions or fits (eclampsia) </string>
+    <string name="h20802d"> Heavy vaginal bleeding (PPH) </string>
+    <string name="h20802e"> Urinary or fecal incontinence (obstetric fistula)</string>
+    <string name="h20802f"> Extreme tiredness, Anemia</string>
+    <string name="h20802g"> Anxiety or depression (puerperal psychosis)</string>
+    <string name="h20802h"> Breast problems (engorgement, sore, cracked bleeding or inverted nipples)</string>
+    <string name="h20802i"> Don’t Know</string>
+
+    <string name="h20803"> H20803:\t Did you seek care of above experience danger sign /problems after delivery? </string>
+    <string name="h20803a"> Yes </string>
+    <string name="h20803b"> No </string>
 
     <string name="h209"> H209:\t Did LHW visit you after delivery ? </string>
     <string name="h209a"> Yes </string>

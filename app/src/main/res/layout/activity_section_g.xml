@@ -1358,6 +1358,102 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <!-- g12401  CheckBox   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg12401"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/g12401" />
+
+                        <TextView
+                            style="@style/i_textviewhint"
+                            android:text="@string/g12401hint" />
+
+                        <LinearLayout
+                            android:id="@+id/g12401check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="0">
+
+                            <CheckBox
+                                android:id="@+id/g12401a"
+                                style="@style/checkbox"
+                                android:text="@string/g12401a" />
+
+                            <CheckBox
+                                android:id="@+id/g12401b"
+                                style="@style/checkbox"
+                                android:text="@string/g12401b" />
+
+                            <CheckBox
+                                android:id="@+id/g12401c"
+                                style="@style/checkbox"
+                                android:text="@string/g12401c" />
+
+                            <CheckBox
+                                android:id="@+id/g12401d"
+                                style="@style/checkbox"
+                                android:text="@string/g12401d" />
+
+                            <CheckBox
+                                android:id="@+id/g12401e"
+                                style="@style/checkbox"
+                                android:text="@string/g12401e" />
+
+                            <CheckBox
+                                android:id="@+id/g12401f"
+                                style="@style/checkbox"
+                                android:text="@string/g12401f" />
+
+                            <CheckBox
+                                android:id="@+id/g12401g"
+                                style="@style/checkbox"
+                                android:text="@string/g12401g" />
+
+                            <CheckBox
+                                android:id="@+id/g12401h"
+                                style="@style/checkbox"
+                                android:text="@string/g12401h" />
+
+                            <CheckBox
+                                android:id="@+id/g12401i"
+                                style="@style/checkbox"
+                                android:text="@string/g12401i" />
+
+                            <CheckBox
+                                android:id="@+id/g12401j"
+                                style="@style/checkbox"
+                                android:text="@string/g12401j" />
+
+                            <CheckBox
+                                android:id="@+id/g12401k"
+                                style="@style/checkbox"
+                                android:text="@string/g12401k" />
+
+                            <CheckBox
+                                android:id="@+id/g12401l"
+                                style="@style/checkbox"
+                                android:text="@string/g12401l" />
+
+                            <CheckBox
+                                android:id="@+id/g12401m"
+                                style="@style/checkbox"
+                                android:text="@string/g12401m" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
                 <!-- g125  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg125"

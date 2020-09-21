@@ -817,6 +817,22 @@
     <string name="g124l"> پورے جسم پر سوجن </string>
     <string name="g124m"> شدید متلی اور الٹیاں </string>
 
+    <string name="g12401"> G124a:\t Did you experience any danger signs/problems during labour and delivery? </string>
+    <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="g12401a"> شرمگاہ سے خون آنا </string>
+    <string name="g12401b"> دورے/جھٹکے </string>
+    <string name="g12401c"> شدید سر درد </string>
+    <string name="g12401d"> دھندلا پن </string>
+    <string name="g12401e"> بخار اور شدید کمزوری </string>
+    <string name="g12401f"> شدید پیٹ میں درد </string>
+    <string name="g12401g"> تیز سانس چلنا یا سانس لینے میں دشواری </string>
+    <string name="g12401h"> طویل دورانیہ(12 گھنٹے سے زیادہ  دردزہ کا دورانیہ) </string>
+    <string name="g12401i"> آنول نال سے متعلق پیچیدگیاں </string>
+    <string name="g12401j"> بدبودار ہرے یا کتھئی رنگ کے پانی کا اخراج </string>
+    <string name="g12401k"> بلند فشار خون </string>
+    <string name="g12401l"> پورے جسم پر سوجن </string>
+    <string name="g12401m"> شدید متلی اور الٹیاں </string>
+
     <string name="g125"> G125:\t کیاآپ کے بچے کی پیدائش کے وقت ایل-ایچ-ڈبلیو موجود تھی ؟ </string>
     <string name="g125a"> ہاں </string>
     <string name="g125b"> نہیں </string>
@@ -1122,6 +1138,23 @@
     <string name="h136aaa"> Agree </string>
     <string name="h136aab"> Disagree </string>
 
+    <string name="h13602"> H13602:\t Did your new-born experience any danger signs/problems? </string>
+    <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="h13602a"> جھٹکے / دورے پڑنا </string>
+    <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
+    <string name="h13602c"> ماں کا دودھ صحیح سے نہ پینا </string>
+    <string name="h13602d"> بخار </string>
+    <string name="h13602e"> سانس لینے میں دشوارے یا سانس کی تیز رفتار </string>
+    <string name="h13602f"> سست یا نڈھال ہونا </string>
+    <string name="h13602g"> جسم یا آنکھوں کی پپلی رنگت یا پیلاپن </string>
+    <string name="h13602h"> پیدائش کم وزن </string>
+    <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
+    <string name="h13602j"> معلوم نہیں </string>
+
+    <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603a"> ہاں </string>
+    <string name="h13603b"> نہیں </string>
+
     <string name="h137"> H137:\t کیا (نام) کو پیدائش کے بعد بی-سی-جی کا ٹیکہ لگا تھا ؟ (عموماً بائیں بازو پر ٹیکے کا داغ رہ جاتا ہے) </string>
     <string name="h137a"> ہاں </string>
     <string name="h137b"> نہیں </string>
@@ -1223,6 +1256,21 @@
     <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
     <string name="h208aaa"> Agree </string>
     <string name="h208aab"> Disagree </string>
+
+    <string name="h20802"> H20802:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
+    <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
+    <string name="h20802c"> جھٹکے / دورے پڑنا </string>
+    <string name="h20802d"> شرمگاہ سے خون کا اخراج </string>
+    <string name="h20802e"> پیشاب کا نہ رکنا </string>
+    <string name="h20802f"> شدید تقاہت، خون کی کمی </string>
+    <string name="h20802g"> ڈپریشن (puerperal psychosis) </string>
+    <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
+    <string name="h20802i"> معلوم نہیں </string>
+
+    <string name="h20803"> H20803:\t Did you seek care of above experience danger sign /problems after delivery? </string>
+    <string name="h20803a"> ہاں </string>
+    <string name="h20803b"> نہیں </string>
 
     <string name="h209"> H209:\t کیا لیڈی ہیلتھ ورکر نے زچگی کے بعد آپ کے پاس دورہ کیا تھا ؟ </string>
     <string name="h209a"> ہاں </string>
