@@ -1242,7 +1242,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!--h13601  Radio-->
+                <!-- h13601  Radio-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVh13601"
                     style="@style/cardView">
@@ -1274,8 +1274,128 @@
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:text="@string/h13601b" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- h13602  CheckBox   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVh13602"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/h13602" />
+
+                        <LinearLayout
+                            android:id="@+id/h13602check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="0">
+
+                            <CheckBox
+                                android:id="@+id/h13602a"
+                                style="@style/checkbox"
+                                android:text="@string/h13602a" />
+
+                            <CheckBox
+                                android:id="@+id/h13602b"
+                                style="@style/checkbox"
+                                android:text="@string/h13602b" />
+
+                            <CheckBox
+                                android:id="@+id/h13602c"
+                                style="@style/checkbox"
+                                android:text="@string/h13602c" />
+
+                            <CheckBox
+                                android:id="@+id/h13602d"
+                                style="@style/checkbox"
+                                android:text="@string/h13602d" />
+
+                            <CheckBox
+                                android:id="@+id/h13602e"
+                                style="@style/checkbox"
+                                android:text="@string/h13602e" />
+
+                            <CheckBox
+                                android:id="@+id/h13602f"
+                                style="@style/checkbox"
+                                android:text="@string/h13602f" />
+
+                            <CheckBox
+                                android:id="@+id/h13602g"
+                                style="@style/checkbox"
+                                android:text="@string/h13602g" />
+
+                            <CheckBox
+                                android:id="@+id/h13602h"
+                                style="@style/checkbox"
+                                android:text="@string/h13602h" />
+
+                            <CheckBox
+                                android:id="@+id/h13602i"
+                                style="@style/checkbox"
+                                android:text="@string/h13602i" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/h1360298"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/dkn" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- h13603  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVh13603"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/h13603" />
+
+                        <RadioGroup
+                            android:id="@+id/h13603"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/h13603a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/h13603b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- h137  Radio   -->
@@ -1498,6 +1618,7 @@
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"

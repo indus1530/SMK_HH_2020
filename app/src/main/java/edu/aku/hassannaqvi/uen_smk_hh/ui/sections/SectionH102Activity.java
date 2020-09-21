@@ -16,7 +16,6 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionH102Binding;
@@ -385,6 +384,24 @@ public class SectionH102Activity extends AppCompatActivity {
         json.put("h136e", bi.h136e.isChecked() ? "5" : "-1");
         json.put("h136f", bi.h136f.isChecked() ? "6" : "-1");
 
+        json.put("h13601", bi.h13601a.isChecked() ? "1"
+                : bi.h13601b.isChecked() ? "2"
+                : "-1");
+
+        json.put("h13602a", bi.h13602a.isChecked() ? "1" : "-1");
+        json.put("h13602b", bi.h13602b.isChecked() ? "2" : "-1");
+        json.put("h13602c", bi.h13602c.isChecked() ? "3" : "-1");
+        json.put("h13602d", bi.h13602d.isChecked() ? "4" : "-1");
+        json.put("h13602e", bi.h13602e.isChecked() ? "5" : "-1");
+        json.put("h13602f", bi.h13602f.isChecked() ? "6" : "-1");
+        json.put("h13602g", bi.h13602g.isChecked() ? "7" : "-1");
+        json.put("h13602h", bi.h13602h.isChecked() ? "8" : "-1");
+        json.put("h13602i", bi.h13602i.isChecked() ? "9" : "-1");
+        json.put("h1360298", bi.h1360298.isChecked() ? "98" : "-1");
+
+        json.put("h13603", bi.h13603a.isChecked() ? "1" :
+                bi.h13603b.isChecked() ? "2" : "-1");
+
         json.put("h137", bi.h137a.isChecked() ? "1" :
                 bi.h137b.isChecked() ? "2" : "-1");
 
@@ -420,10 +437,6 @@ public class SectionH102Activity extends AppCompatActivity {
 
         json.put("h12501", bi.h12501a.isChecked() ? "1"
                 : bi.h12501b.isChecked() ? "2"
-                : "-1");
-
-        json.put("h13601", bi.h13601a.isChecked() ? "1"
-                : bi.h13601b.isChecked() ? "2"
                 : "-1");
 
         try {
