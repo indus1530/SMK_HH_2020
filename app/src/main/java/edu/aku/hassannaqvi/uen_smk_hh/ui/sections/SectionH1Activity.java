@@ -198,6 +198,14 @@ public class SectionH1Activity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
+
+        MainApp.child = new ChildContract();
+        MainApp.child.set_UUID(MainApp.fc.get_UID());
+        MainApp.child.setDeviceId(MainApp.appInfo.getDeviceID());
+        MainApp.child.setDevicetagID(MainApp.fc.getDevicetagID());
+        MainApp.child.setFormDate(MainApp.fc.getFormDate());
+        MainApp.child.setUser(MainApp.fc.getUser());
+
         JSONObject json = new JSONObject();
 
         /*json.put("h101", bi.h101a.isChecked() ? "1" :

@@ -170,9 +170,9 @@ public class ChildContract {
     public static abstract class SingleChild implements BaseColumns {
 
         public static final String TABLE_NAME = "child_table";
-        public static final String COLUMN__ID = "_id";
-        public static final String COLUMN_UID = "_uid";
-        public static final String COLUMN__UUID = "_uuid";
+        public static final String COLUMN__ID = "_id"; // autoincreament
+        public static final String COLUMN_UID = "_uid"; // unique identifier
+        public static final String COLUMN__UUID = "_uuid"; // unique form identifier
         public static final String COLUMN_DEVICEID = "deviceid";
         public static final String COLUMN_FORMDATE = "formdate";
         public static final String COLUMN_USER = "username";
