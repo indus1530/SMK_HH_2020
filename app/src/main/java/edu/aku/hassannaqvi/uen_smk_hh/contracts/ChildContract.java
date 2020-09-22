@@ -131,8 +131,8 @@ public class ChildContract {
         return sH1;
     }
 
-    public void setsH1(String sAH1) {
-        this.sH1 = sAH1;
+    public void setsH1(String sH1) {
+        this.sH1 = sH1;
     }
 
     public String getsJ() {

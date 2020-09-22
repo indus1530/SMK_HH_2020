@@ -15,6 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
@@ -184,7 +185,10 @@ public class SectionH1Activity extends AppCompatActivity {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         long updcount = db.addChild(MainApp.child);
-        if (updcount == 1) {
+        if (updcount > 0) {
+            MainApp.child.set_ID(String.valueOf(updcount));
+            MainApp.child.setUID(MainApp.child.getDeviceId() + MainApp.child.get_ID());
+            db.updatesChildColumn(ChildContract.SingleChild.COLUMN_UID, MainApp.child.getUID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

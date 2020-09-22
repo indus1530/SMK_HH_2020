@@ -753,7 +753,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                SingleAdolscent.TABLE_NAME,
+                ChildContract.SingleChild.TABLE_NAME,
                 null,
                 values);
         return newRowId;
