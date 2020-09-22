@@ -503,7 +503,7 @@ public class SectionE2Activity extends AppCompatActivity {
         if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE2))
             return false;
 
-        if (bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
+        if (bi.container1.getVisibility() == View.VISIBLE) {
             if (!imFlag) {
                 Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
                 return false;
