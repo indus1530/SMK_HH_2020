@@ -63,7 +63,6 @@ public class SectionKActivity extends AppCompatActivity {
 
             if (b) {
                 bi.fldGrpCVk106.setVisibility(View.VISIBLE);
-                Clear.clearAllFields(bi.fldGrpCVk106);
                 bi.k105aab.setText(null);
                 bi.k105aaa.setText(null);
                 bi.k105aab.setEnabled(false);
