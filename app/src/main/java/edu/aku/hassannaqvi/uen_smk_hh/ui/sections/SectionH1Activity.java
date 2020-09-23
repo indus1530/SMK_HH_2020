@@ -15,9 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionH1Binding;
@@ -149,7 +147,7 @@ public class SectionH1Activity extends AppCompatActivity {
         });
 
         //h112
-        bi.h112.setOnCheckedChangeListener((radioGroup, i) -> {
+        bi.h112aa.setOnCheckedChangeListener((radioGroup, i) -> {
 
             if (i == bi.h112b.getId()) {
                 Clear.clearAllFields(bi.fldGrpSecH01);

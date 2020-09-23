@@ -270,8 +270,11 @@
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:text="@string/h12501b" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- h125  Radio   -->
