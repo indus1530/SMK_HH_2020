@@ -182,10 +182,13 @@ public class SectionH2Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
 
-                Class<?> nextActivity = SectionKActivity.class;
+                /*Class<?> nextActivity = SectionJActivity.class;
                 if (MainApp.selectedKishAdols != null) nextActivity = SectionAH1Activity.class;
+                startActivity(new Intent(this, nextActivity));*/
+
                 finish();
-                startActivity(new Intent(this, nextActivity));
+                startActivity(new Intent(this, SectionKActivity.class));
+
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

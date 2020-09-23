@@ -107,7 +107,7 @@ public class SectionAH6Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, ah37_flag ? SectionAH7Activity.class : EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, ah37_flag ? SectionAH7Activity.class : SectionMActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
