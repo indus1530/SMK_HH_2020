@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,9 +44,20 @@ public class SectionAH2Activity extends AppCompatActivity {
         }));
 
         bi.ah12.setOnCheckedChangeListener(((radioGroup, i) -> {
+
             if (i == bi.ah12a.getId()) {
-                Clear.clearAllFields(bi.fldGrpSecAH202);
+
+                Clear.clearAllFields(bi.fldGrpCVah13);
+                bi.fldGrpCVah13.setVisibility(View.GONE);
+                bi.fldGrpCVah13aa.setVisibility(View.VISIBLE);
+
+            } else {
+
+                Clear.clearAllFields(bi.fldGrpCVah13aa);
+                bi.fldGrpCVah13aa.setVisibility(View.GONE);
+                bi.fldGrpCVah13.setVisibility(View.VISIBLE);
             }
+
         }));
 
     }

@@ -1159,7 +1159,7 @@
     <string name="h137a"> ہاں </string>
     <string name="h137b"> نہیں </string>
 
-    <string name="h1371"> H137c:\t کیا آپ (نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے ؟ </string>
+    <string name="h1371"> H137a:\t نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے؟) </string>
     <string name="h1371a"> اتنا اہم نہیں تھا </string>
     <string name="h1371b"> ہسپتال کرونا کی وجہ سے بند تھا </string>
     <string name="h1371c"> کرونا کا ڈریا خوف </string>
@@ -1169,14 +1169,14 @@
     <string name="h1371g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
 
 
-    <string name="h137aa"> H137a:\t (نام) کو بی سی جی کا ٹیکہ کہاں سے لگوایا تھا ؟ </string>
+    <string name="h137aa"> H137b:\t نام) کو بی سی جی کا ٹیکہ کہاں سے لگوایا تھا؟) </string>
     <string name="h137aaa"> سرکاری صحت کی سہولت </string>
     <string name="h137aab"> نجی صحت کی سہولت </string>
     <string name="h137aac"> ای پی آئی سینٹر(EPI) </string>
     <string name="h137aad"> کمیونٹی میں موجود ماں اور بچے کی صحت کا سینٹر </string>
     <string name="h137aae"> رفاہی ادارے کی سہولت NGO </string>
 
-    <string name="h137bb"> H137b:\t (نام) کو حفاظتی ٹیکے کس نے لگائے تھے ؟ </string>
+    <string name="h137bb"> H137c:\t نام) کو حفاظتی ٹیکے کس نے لگائے تھے؟) </string>
     <string name="h137bba"> ڈاکٹر </string>
     <string name="h137bbb"> لیڈی ہیلتھ ورکر </string>
     <string name="h137bbc"> لیڈی ہیلتھ وزیٹر </string>

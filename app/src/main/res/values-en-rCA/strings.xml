@@ -1161,7 +1161,7 @@
     <string name="h137a"> Yes </string>
     <string name="h137b"> No </string>
 
-    <string name="h1371"> H137C:\t Reasons for not getting vaccination? </string>
+    <string name="h1371"> H137A:\t Reasons for not getting vaccination? </string>
     <string name="h1371a"> It is usually not necessary </string>
     <string name="h1371b"> Facility closed due to Corona </string>
     <string name="h1371c"> Fear to contact with Corona </string>
@@ -1171,14 +1171,14 @@
     <string name="h1371g"> Provider’s not following SOPS (Not wearing gloves and masks) </string>
 
 
-    <string name="h137aa"> H137A:\t Where (Name) received vaccination for BCG ? </string>
+    <string name="h137aa"> H137B:\t Where (Name) received vaccination for BCG? </string>
     <string name="h137aaa"> Government Facility </string>
     <string name="h137aab"> Private Facility </string>
     <string name="h137aac"> EPI Centre </string>
     <string name="h137aad"> Community Mother and Child health Centre </string>
     <string name="h137aae"> NGO facility </string>
 
-    <string name="h137bb"> H137B:\t Who gave vaccination to (Name)?</string>
+    <string name="h137bb"> H137C:\t Who gave vaccination to (Name)?</string>
     <string name="h137bba"> Doctor </string>
     <string name="h137bbb"> LHW </string>
     <string name="h137bbc"> LHV </string>

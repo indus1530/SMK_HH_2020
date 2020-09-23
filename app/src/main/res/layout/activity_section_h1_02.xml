@@ -926,8 +926,7 @@
                 <!-- h1321  CheckBox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVh1321"
-                    style="@style/cardView"
-                    android:visibility="@{h132b.checked ? View.VISIBLE : View.GONE}">
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
