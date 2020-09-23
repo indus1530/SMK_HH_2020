@@ -17,6 +17,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionJ02Binding;
+import edu.aku.hassannaqvi.uen_smk_hh.utils.JSONUtils;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
 public class SectionJ02Activity extends AppCompatActivity {
@@ -158,6 +159,15 @@ public class SectionJ02Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }*/
+
+        try {
+
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.child.getsJ()), json);
+            MainApp.child.setsJ(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 

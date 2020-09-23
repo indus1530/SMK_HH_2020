@@ -76,7 +76,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         bi.e105.setOnCheckedChangeListener(((radioGroup, i) -> {
 
-            MainApp.twinFlag = i == bi.e105c.getId();
+            MainApp.twinFlag = i == bi.e105c.getId() || i == bi.e105d.getId() || i == bi.e105e.getId();
 
             if (i == bi.e105b.getId() || i == bi.e105d.getId() || i == bi.e105e.getId()) {
 
@@ -420,7 +420,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         // Update Corona Check
         if (MainApp.selectedKishMWRA.getSerialno().equals(mwraContract.getFm_serial()) && !MainApp.selectedKishMWRA.isCoronaCase()) {
-            if (bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
+            if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
                 MainApp.selectedKishMWRA.setCoronaCase(Integer.parseInt(bi.e106c.getText().toString()) == 2020);
             }
         }
@@ -503,14 +503,14 @@ public class SectionE2Activity extends AppCompatActivity {
         if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE2))
             return false;
 
-        if (bi.container1.getVisibility() == View.VISIBLE) {
+        if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
             if (!imFlag) {
                 Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
                 return false;
             }
         }
 
-        if (!(bi.e105b.isChecked() || bi.e105e.isChecked() || bi.e105f.isChecked() || bi.e108a.isChecked()))
+        if (!(bi.e105b.isChecked() || bi.e105e.isChecked() || bi.e105f.isChecked() || bi.e108a.isChecked()) && bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVe108.getVisibility() == View.VISIBLE)
             if ((Integer.parseInt(bi.e110a.getText().toString()) == 0 && Integer.parseInt(bi.e110b.getText().toString()) == 0 && Integer.parseInt(bi.e110c.getText().toString()) == 0)) {
                 Toast.makeText(this, "Invalid Date of Death!", Toast.LENGTH_SHORT).show();
                 return false;
