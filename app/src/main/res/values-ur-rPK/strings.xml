@@ -508,8 +508,9 @@
     <string name="f121b"> نہیں </string>
 
     <string name="f1211"> F121a:\t کیا گزشتہ حمل کے دوران (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا ؟ </string>
-    <string name="f1211a"> Yes </string>
-    <string name="f1211b"> No </string>
+    <string name="f1211a"> ہاں </string>
+    <string name="f1211b"> نہیں </string>
+    <string name="f1211c"> لاگو نہیں ہے </string>
 
     <string name="f1212"> F121b:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="f1212a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>

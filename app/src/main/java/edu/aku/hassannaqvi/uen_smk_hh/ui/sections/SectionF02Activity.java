@@ -171,6 +171,7 @@ public class SectionF02Activity extends AppCompatActivity {
 
         f1.put("f121a", bi.f1211a.isChecked() ? "1"
                 : bi.f1211b.isChecked() ? "2"
+                : bi.f1211c.isChecked() ? "3"
                 : "-1");
 
         f1.put("f121ba", bi.f1212a.isChecked() ? "1" : "-1");

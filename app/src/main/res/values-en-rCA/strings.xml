@@ -516,6 +516,7 @@
     <string name="f1211"> Did LHW visit your household during your last pregnancy in CORONA LOCKDOWN? Probe for Yes </string>
     <string name="f1211a"> Yes </string>
     <string name="f1211b"> No </string>
+    <string name="f1211c"> None </string>
 
     <string name="f1212"> Reasons for not visiting LHW? </string>
     <string name="f1212a"> LHW usually don’t visit </string>
