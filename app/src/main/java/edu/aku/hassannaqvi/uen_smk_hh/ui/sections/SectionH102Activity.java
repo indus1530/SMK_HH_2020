@@ -230,14 +230,19 @@ public class SectionH102Activity extends AppCompatActivity {
         bi.h13598.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
                 Clear.clearAllFields(bi.h135check, false);
-                bi.h135check.setTag("-1");
             } else {
                 Clear.clearAllFields(bi.h135check, true);
-                bi.h135check.setTag("0");
             }
         });
 
-
+        //h13598
+        bi.h1360298.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.h13602check, false);
+            } else {
+                Clear.clearAllFields(bi.h13602check, true);
+            }
+        });
     }
 
     public void BtnContinue() {

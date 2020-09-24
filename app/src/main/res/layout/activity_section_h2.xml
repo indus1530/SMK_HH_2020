@@ -426,56 +426,57 @@
                         style="@style/i_textview"
                         android:text="@string/h205aa" />
 
-                    <RadioGroup
+
+                    <CheckBox
                         android:id="@+id/h205aa"
-                        style="@style/radiogroup">
+                        style="@style/checkbox"
+                        android:text="@string/h205aaa" />
 
-                        <RadioButton
-                            android:id="@+id/h205aaa"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aaa" />
+                    <CheckBox
+                        android:id="@+id/h205ab"
+                        style="@style/checkbox"
+                        android:text="@string/h205aab" />
 
-                        <RadioButton
-                            android:id="@+id/h205aab"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aab" />
+                    <CheckBox
+                        android:id="@+id/h205ac"
+                        style="@style/checkbox"
+                        android:text="@string/h205aac" />
 
-                        <RadioButton
-                            android:id="@+id/h205aac"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aac" />
+                    <CheckBox
+                        android:id="@+id/h205ad"
+                        style="@style/checkbox"
+                        android:text="@string/h205aad" />
 
-                        <RadioButton
-                            android:id="@+id/h205aad"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aad" />
+                    <CheckBox
+                        android:id="@+id/h205ae"
+                        style="@style/checkbox"
+                        android:text="@string/h205aae" />
 
-                        <RadioButton
-                            android:id="@+id/h205aae"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aae" />
+                    <CheckBox
+                        android:id="@+id/h205af"
+                        style="@style/checkbox"
+                        android:text="@string/h205aaf" />
 
-                        <RadioButton
-                            android:id="@+id/h205aaf"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aaf" />
+                    <CheckBox
+                        android:id="@+id/h205ag"
+                        style="@style/checkbox"
+                        android:text="@string/h205aag" />
 
-                        <RadioButton
-                            android:id="@+id/h205aag"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aag" />
+                    <CheckBox
+                        android:id="@+id/h205ah"
+                        style="@style/checkbox"
+                        android:text="@string/h205aah" />
 
-                        <RadioButton
-                            android:id="@+id/h205aah"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aah" />
+                    <CheckBox
+                        android:id="@+id/h205a96"
+                        style="@style/checkbox"
+                        android:text="@string/h205aai" />
 
-                        <RadioButton
-                            android:id="@+id/h205aai"
-                            style="@style/radiobutton"
-                            android:text="@string/h205aai" />
-
-                    </RadioGroup>
+                    <EditText
+                        android:id="@+id/h21596x"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/specify"
+                        android:tag="@string/h205aai" />
 
                 </LinearLayout>
 

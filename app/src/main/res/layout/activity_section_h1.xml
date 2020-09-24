@@ -373,10 +373,17 @@
                         style="@style/EditTextNum"
                         android:hint="@string/minutes"
                         android:maxLength="1"
-                        app:defaultValue="88"
                         app:maxValue="2"
-                        app:minValue="0"
+                        app:minValue="1"
                         app:type="range" />
+
+                    <CheckBox
+                        android:id="@+id/h10698"
+                        style="@style/checkbox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:tag="-1"
+                        android:text="@string/dkn" />
 
                 </LinearLayout>
 
@@ -1426,11 +1433,25 @@
                             android:text="@string/h117" />
 
                         <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/h117"
+                            android:id="@+id/h117a"
                             style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:hint="@string/month"
                             android:maxLength="1"
                             app:maxValue="7"
+                            app:minValue="0"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/h117b"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/days"
+                            android:maxLength="2"
+                            app:defaultValue="00"
+                            app:maxValue="31"
                             app:minValue="1"
                             app:type="range" />
 

@@ -70,10 +70,8 @@ public class SectionFActivity extends AppCompatActivity {
         bi.f11097.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
                 Clear.clearAllFields(bi.f110check, false);
-                bi.f110check.setTag("-1");
             } else {
                 Clear.clearAllFields(bi.f110check, true);
-                bi.f110check.setTag("0");
             }
         });
 

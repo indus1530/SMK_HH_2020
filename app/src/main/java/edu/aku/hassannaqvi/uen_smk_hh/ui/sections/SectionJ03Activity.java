@@ -221,10 +221,8 @@ public class SectionJ03Activity extends AppCompatActivity {
         bi.j12398.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
                 Clear.clearAllFields(bi.j123check, false);
-                bi.j123check.setTag("-1");
             } else {
                 Clear.clearAllFields(bi.j123check, true);
-                bi.j123check.setTag("0");
             }
         });
 

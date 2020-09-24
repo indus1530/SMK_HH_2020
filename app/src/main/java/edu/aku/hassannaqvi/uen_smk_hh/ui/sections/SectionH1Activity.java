@@ -81,6 +81,16 @@ public class SectionH1Activity extends AppCompatActivity {
         });
 
 
+        //h10698
+        bi.h10698.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                bi.h106.setText(null);
+                bi.h106.setEnabled(false);
+            } else {
+                bi.h106.setEnabled(true);
+            }
+        });
+
         //h110
         bi.h110.setOnCheckedChangeListener((group, checkedId) -> {
 
@@ -290,7 +300,8 @@ public class SectionH1Activity extends AppCompatActivity {
         json.put("h116", bi.h116a.isChecked() ? "1" :
                 bi.h116b.isChecked() ? "2" : "-1");
 
-        json.put("h117", bi.h117.getText().toString().trim().isEmpty() ? "-1" : bi.h117.getText().toString());
+        json.put("h117a", bi.h117a.getText().toString().trim().isEmpty() ? "-1" : bi.h117a.getText().toString());
+        json.put("h117b", bi.h117b.getText().toString().trim().isEmpty() ? "-1" : bi.h117b.getText().toString());
 
         json.put("h118", bi.h118a.isChecked() ? "1" :
                 bi.h118b.isChecked() ? "2" : "-1");
