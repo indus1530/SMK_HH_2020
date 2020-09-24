@@ -751,6 +751,11 @@
                             style="@style/checkbox"
                             android:text="@string/h20802h" />
 
+                        <CheckBox
+                            android:id="@+id/h20802i"
+                            style="@style/checkbox"
+                            android:text="@string/h20802i" />
+
                     </LinearLayout>
 
                     <CheckBox
@@ -1342,9 +1347,9 @@
 
 
             <LinearLayout
+                android:id="@+id/fldGrpsecH201"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/fldGrpsecH201"
                 android:orientation="vertical"
                 android:visibility='@{h217a.checked ? View.VISIBLE : View.GONE}'>
 

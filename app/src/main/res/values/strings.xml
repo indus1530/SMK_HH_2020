@@ -1221,15 +1221,15 @@
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
     <string name="h205aa"> H205A:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
-    <string name="h205aaa"> صحت،غذائیت، صفائی کا مشورہ دینا </string>
+    <string name="h205aaa"> صحت، غذائیت، صفائی کا مشورہ دینا </string>
     <string name="h205aab"> ماں کو   صحیح طرح دودھ پلانے کا مشورہ  </string>
-    <string name="h205aac"> دیکھ بھال کے لئے مرکز صحت جانے کاحوالہ دینا </string>
+    <string name="h205aac"> خاندانی منصوبہ بندی کا مشورہ </string>
     <string name="h205aad"> پیچیدگیوں کا مشاہدہ </string>
-    <string name="h205aae"> خاندانی منصوبہ بندی کا مشورہ </string>
+    <string name="h205aae"> دیکھ بھال کے لئے مرکز صحت جانے کا حوالہ دینا</string>
     <string name="h205aaf"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
     <string name="h205aag"> زچگی کے دوران خطرناک علامات کا علاج </string>
     <string name="h205aah"> مانع حمل کی ادویات  فراہم کرنا </string>
-    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کےبارے میں معلومات  </string>
+    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کے بارے میں معلومات  </string>
 
     <string name="h206"> H206:\t کیا آپ کو زچگی کے بعد کی خطرناک علامات / مسائل کے بارے میں معلومات ہے ؟ </string>
     <string name="h206a"> ہاں </string>
@@ -1267,7 +1267,7 @@
     <string name="h20802f"> شدید تقاہت، خون کی کمی </string>
     <string name="h20802g"> ڈپریشن (puerperal psychosis) </string>
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
-    <string name="h20802i"> معلوم نہیں </string>
+    <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> ہاں </string>
@@ -1283,7 +1283,7 @@
     <string name="h2091c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
     <string name="h2091d"> ایل ایچھ ڈبلیو نے ماسک نہیں پہنا ہوا تھا </string>
     <string name="h2091e"> کرونا کا ڈر یا خوف </string>
-    <string name="h2091f"> سماجی مفاصلا </string>
+    <string name="h2091f"> سماجی مفاصلہ </string>
     <string name="h2091g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="h2091h"> Not Applicable </string>
 

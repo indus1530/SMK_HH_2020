@@ -99,17 +99,24 @@ public class SectionH2Activity extends AppCompatActivity {
         //h206
         bi.h206.setOnCheckedChangeListener((group, checkedId) -> {
 
-            if (checkedId == bi.h206a.getId()) {
-                bi.fldGrpCVh207.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh208.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh20801.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVh207);
-                Clear.clearAllFields(bi.fldGrpCVh208);
-                Clear.clearAllFields(bi.fldGrpCVh20801);
+            if (checkedId == bi.h206b.getId()) {
                 bi.fldGrpCVh207.setVisibility(View.GONE);
                 bi.fldGrpCVh208.setVisibility(View.GONE);
-                bi.fldGrpCVh20801.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVh207);
+                Clear.clearAllFields(bi.fldGrpCVh208);
+            } else {
+                bi.fldGrpCVh207.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh208.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //h20802i
+        bi.h20802i.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                bi.fldGrpCVh20803.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVh20803);
+            } else {
+                bi.fldGrpCVh20803.setVisibility(View.VISIBLE);
             }
         });
 
@@ -180,7 +187,6 @@ public class SectionH2Activity extends AppCompatActivity {
 
         //h217
         bi.h217.setOnCheckedChangeListener((radiogroup, i) -> Clear.clearAllFields(bi.fldGrpsecH201));
-
 
         //h220
         bi.h220.setOnCheckedChangeListener((group, checkedId) -> {
@@ -328,7 +334,8 @@ public class SectionH2Activity extends AppCompatActivity {
         json.put("h20802f", bi.h20802f.isChecked() ? "6" : "-1");
         json.put("h20802g", bi.h20802g.isChecked() ? "7" : "-1");
         json.put("h20802h", bi.h20802h.isChecked() ? "8" : "-1");
-        json.put("h20802i", bi.h2080298.isChecked() ? "98" : "-1");
+        json.put("h20802i", bi.h20802i.isChecked() ? "9" : "-1");
+        json.put("h2080298", bi.h2080298.isChecked() ? "98" : "-1");
 
         json.put("h20803", bi.h20803a.isChecked() ? "1"
                 : bi.h20803b.isChecked() ? "2"
@@ -400,7 +407,7 @@ public class SectionH2Activity extends AppCompatActivity {
         json.put("h217", bi.h217a.isChecked() ? "1" :
                 bi.h217b.isChecked() ? "2" :
                         bi.h21798.isChecked() ? "98" : "-1");
-        
+
 
         json.put("h218", bi.h218a.isChecked() ? "1" :
                 bi.h218b.isChecked() ? "2" :
