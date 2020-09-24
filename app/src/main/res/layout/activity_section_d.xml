@@ -762,8 +762,11 @@
                                     android:id="@+id/d110m"
                                     style="@style/radiobutton"
                                     android:text="@string/d110m" />
+
                             </RadioGroup>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
 
                     <!-- d111  Radio   -->
