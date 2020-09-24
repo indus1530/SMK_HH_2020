@@ -770,67 +770,65 @@
                             style="@style/i_textview"
                             android:text="@string/ah40aa" />
 
-                        <LinearLayout
-                            android:id="@+id/AH40aacheck"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:tag="0">
+                        <RadioGroup
+                            android:id="@+id/AH40aa"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aaa"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aaa" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aab"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aab" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aac"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aac" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aad"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aad" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aae"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aae" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aaf"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aaf" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aag"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aag" />
 
-                            <CheckBox
+                            <RadioButton
                                 android:id="@+id/ah40aah"
-                                style="@style/checkbox"
+                                style="@style/radiobutton"
                                 android:text="@string/ah40aah" />
 
-                            <CheckBox
-                                android:id="@+id/ah40aai"
-                                style="@style/checkbox"
+                            <RadioButton
+                                android:id="@+id/ah40aa96"
+                                style="@style/radiobutton"
                                 android:text="@string/other" />
 
                             <EditText
-                                android:id="@+id/ah40aaix"
+                                android:id="@+id/ah40aa96x"
                                 style="@style/EditTextAlpha"
                                 android:hint="@string/specify"
-                                android:tag="ah40aai"
-                                android:text='@{ah40aai.checked? ah40aaix.getText().toString() : ""}'
-                                android:visibility='@{ah40aai.checked? View.VISIBLE : View.GONE}' />
+                                android:tag="ah40aa96"
+                                android:text='@{ah40aa96.checked? ah40aa96x.getText().toString() : ""}'
+                                android:visibility='@{ah40aa96.checked? View.VISIBLE : View.GONE}' />
 
-                        </LinearLayout>
+                        </RadioGroup>
 
                     </LinearLayout>
 
