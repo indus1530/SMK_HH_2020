@@ -4,14 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
@@ -65,8 +66,8 @@ public class SectionAH3Activity extends AppCompatActivity {
             }
         }));
 
-        bi.ah3003.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i != bi.ah3003a.getId()) {
+        bi.ah3001.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i != bi.ah3001a.getId() || i != bi.ah3002a.getId() || i != bi.ah3003a.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVah31);
             }
         }));
