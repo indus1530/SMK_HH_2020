@@ -816,8 +816,8 @@
     <string name="g124l"> پورے جسم پر سوجن </string>
     <string name="g124m"> شدید متلی اور الٹیاں </string>
 
-    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
-    <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="g12401"> G124A:\t آپ کو  درد زہ اور بچے کی پیدائش کے دوران ہونے والے خطرناک   علامات/مسائل  درپیش آئے تھے ؟  </string>
+    <string name="g12401hint"> (ایک سے زیادہ جوابات آ سکتے ہیں) </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
     <string name="g12401c"> شدید سر درد </string>
@@ -1134,12 +1134,12 @@
     <string name="h136e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h136f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
-    <string name="h136aaa"> Agree </string>
-    <string name="h136aab"> Disagree </string>
+    <string name="h136aa"> H136A:\t کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟  </string>
+    <string name="h136aaa"> متفق </string>
+    <string name="h136aab"> غیر متفق </string>
 
-    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
-    <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="h13602"> H136B:\t کیا آپ  کے نوزائیدہ  کو کوئی خطرناک علامت یا مسائل درپیش آئے ؟ </string>
+    <string name="h13602hint"> جلدی نہ کریں۔ بتائی گئی تمام علامات پر نشان لگائیں، لیکن کوئی تجویز نہ دیں۔</string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
     <string name="h13602c"> ماں کا دودھ صحیح سے نہ پینا </string>
@@ -1151,7 +1151,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H136C:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1251,11 +1251,11 @@
     <string name="h208e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h208f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
-    <string name="h208aaa"> Agree </string>
-    <string name="h208aab"> Disagree </string>
+    <string name="h208aa"> H208A:\t کیا آپ پیدائش کے بعد خطرناک علامات کے علاج کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="h208aaa"> متفق </string>
+    <string name="h208aab"> غیر متفق </string>
 
-    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H208B:\t  تمام پر نشان لگائیں جو لاگو ہوتے ہیں. کیا آپ کو  زچگی  کے بعد  کوئی خطرناک علامات پیش آئی ؟</string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -2234,9 +2234,9 @@
     <string name="k101aal"> پمفلٹ / بروشر </string>
     <string name="k101aam"> موبائل فون / اسمارٹ فون </string>
 
-    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
-    <string name="k101aba"> Agree </string>
-    <string name="k101abb"> Disagree </string>
+    <string name="k101ab"> K101B:\t کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="k101aba"> متفق </string>
+    <string name="k101abb"> غیر متفق </string>
 
     <string name="k102"> K102:\t کیا آپ یا آپ کے شوہر نے حمل کو روکنے کے لئے کبھی کوئی مانع حمل طریقہ کا استعمال کیا ہے ؟ </string>
     <string name="k102a"> ہاں </string>
@@ -3207,9 +3207,9 @@
     <string name="ah38">AH38:\t کیا آپ کو تولیدی صحت کے بارے میں جانتے ہیں؟</string>
     <string name="ah38a">ہاں</string>
     <string name="ah38b">نہیں</string>
-    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
-    <string name="ah38aaa">Agree</string>
-    <string name="ah38aab">Disagree</string>
+    <string name="ah38aa">AH38A:\t کیا آپ اس عمر میں  تولیدی صحت کے بارے میں جاننے  کی اہمیت کو سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah38aaa">متفق</string>
+    <string name="ah38aab">غیر متفق</string>
     <string name="ah39">AH39:\t بلاغت کے وقت جسم کے خدرخال میں کیا تبدیلیاں آتی ہیں؟</string>
     <string name="ah39a">جسمانی تبدیلی</string>
     <string name="ah39b">ذہنی تبدیلی</string>
