@@ -497,6 +497,7 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -506,7 +507,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{k105aac.checked? View.GONE : View.VISIBLE}'>
+                android:visibility='@{k105aac.checked? View.VISIBLE : View.GONE}'>
 
 
                 <!-- k106  CheckBox   -->
@@ -588,6 +589,7 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
             <!-- k1071  Radio   -->
