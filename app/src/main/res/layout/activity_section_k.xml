@@ -502,6 +502,7 @@
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:id="@+id/llk0105"
                 android:layout_width="match_parent"
@@ -591,6 +592,7 @@
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
 
             <!-- k1071  Radio   -->
             <androidx.cardview.widget.CardView
