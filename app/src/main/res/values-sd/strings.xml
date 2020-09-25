@@ -202,7 +202,7 @@
     <string name="d110h"> ماسٽر </string>
     <string name="d110i"> پي ايڇ ڊي </string>
     <string name="d110j"> ڊپلومه (آءِ ٽي / اليڪٽرڪ / ميڪنڪ / سول) </string>
-    <string name="d110k"> اسلامي تعليم (حافظ / عالم) </string>
+    <string name="d110k"> مزہبی تعلیم (حافظ/عالم/ عالمہ) </string>
     <string name="d110l"> خبر نه آھي </string>
     <string name="d110m"> لاڳو نه ٿو ٿئي </string>
 
@@ -526,6 +526,7 @@
     <string name="f1211"> F121a:\t توھان جي گذريل حمل دوران ليڊي ھيلٿ ورڪر (ايل ايڇ ڊبليو) ڪورونا جي لاڪ ڊائون ۾ توھان جي گھر جو دورو ڪيو ؟ </string>
     <string name="f1211a"> ھا </string>
     <string name="f1211b"> نه </string>
+    <string name="f1211c"> لاگو نہیں ہے </string>
 
     <string name="f1212"> F121b:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="f1212a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي </string>
@@ -1103,7 +1104,7 @@
     <string name="h1321e"> ڪرونا جو خوف / ڊپ </string>
     <string name="h1321f"> سماجي مفاصلو </string>
     <string name="h1321g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
-    <string name="h1321h"> Not Applicable </string>
+    <string name="h1321h"> لاگو نہیں  </string>
 
     <string name="h133"> H133:\t ليڊي ھيلٿ ورڪر جي دوري ڪرڻ جو مقصد ڇا ھو ؟ </string>
     <string name="h133a"> وزن/ قد جي ناپ </string>
@@ -1275,7 +1276,7 @@
     <string name="h20802f"> شدید تقاہت، خون کی کمی </string>
     <string name="h20802g"> ڈپریشن (puerperal psychosis) </string>
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
-    <string name="h20802i"> معلوم نہیں </string>
+    <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> ہاں </string>
@@ -2895,7 +2896,7 @@
     <string name="ah1f">Intermediate</string>
     <string name="ah1g">Under Graduate</string>
     <string name="ah1h">Technical Training</string>
-    <string name="ah1i">Religious Education (Hafiz/Aalim)</string>
+    <string name="ah1i">Religious Education (Hafiz/Aalim/Aalima)</string>
     <string name="ah1j">Don’t Know</string>
     <string name="ah1k">Not Applicable</string>
     <string name="ah2">Are You Currently Attending School/College</string>
@@ -2908,7 +2909,7 @@
     <string name="ah3d">Intermediate</string>
     <string name="ah3e">Under Graduate</string>
     <string name="ah3f">Technical Training</string>
-    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
+    <string name="ah3g">Religious Education (Hafiz/Aalim/Aalima)</string>
     <string name="ah3other">Other (Specify)</string>
     <string name="ah4">How Old Were You When You Left The School/College</string>
     <string name="ah4a">Age</string>

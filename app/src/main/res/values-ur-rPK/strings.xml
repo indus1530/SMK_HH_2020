@@ -186,7 +186,7 @@
     <string name="d110h"> ماسٹرز </string>
     <string name="d110i"> پی ایچ ڈی </string>
     <string name="d110j"> ڈپلوما (آئی ٹی / الیکٹریکل، مکینیکل، سول) </string>
-    <string name="d110k"> مزہبی تعلیم (حافظ / عالم) </string>
+    <string name="d110k"> مزہبی تعلیم (حافظ/عالم/ عالمہ) </string>
     <string name="d110l"> معلوم نہیں </string>
     <string name="d110m"> لاگو نہیں ہوتا </string>
 
@@ -508,8 +508,9 @@
     <string name="f121b"> نہیں </string>
 
     <string name="f1211"> F121a:\t کیا گزشتہ حمل کے دوران (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا ؟ </string>
-    <string name="f1211a"> Yes </string>
-    <string name="f1211b"> No </string>
+    <string name="f1211a"> ہاں </string>
+    <string name="f1211b"> نہیں </string>
+    <string name="f1211c"> لاگو نہیں ہے </string>
 
     <string name="f1212"> F121b:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="f1212a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
@@ -815,8 +816,8 @@
     <string name="g124l"> پورے جسم پر سوجن </string>
     <string name="g124m"> شدید متلی اور الٹیاں </string>
 
-    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
-    <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="g12401"> G124A:\t آپ کو  درد زہ اور بچے کی پیدائش کے دوران ہونے والے خطرناک   علامات/مسائل  درپیش آئے تھے ؟  </string>
+    <string name="g12401hint"> (ایک سے زیادہ جوابات آ سکتے ہیں) </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
     <string name="g12401c"> شدید سر درد </string>
@@ -850,7 +851,7 @@
     <string name="g126"> G126:\t کیا لیڈی ہیلتھ ورکر نے آپ کو صاف ڈیلوری کٹ فراہم کی تھی ؟ </string>
     <string name="g126a"> ہاں </string>
     <string name="g126b"> نہیں </string>
-    <string name="g126c"> معلوم نہیں </string>
+    <string name="g126c"> لاگو نہیں </string>
 
     <string name="g127"> G127:\t کیا لیڈی ہیلتھ ورکر نے آپ کو ڈیلوری کٹ کے استعمال کے بارے میں بتایا تھا ؟ </string>
     <string name="g127a"> ہاں </string>
@@ -1096,7 +1097,7 @@
     <string name="h1321e"> کرونا کا ڈر یا خوف </string>
     <string name="h1321f"> سماجی مفاصلا </string>
     <string name="h1321g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-    <string name="h1321h"> Not Applicable </string>
+    <string name="h1321h"> لاگو نہیں  </string>
 
     <string name="h133"> H133:\t لیڈی ہیلتھ ورکر کا (نام) کی ولادت کے بعد آنے کا مقصد کیا تھا ؟ </string>
     <string name="h133a"> وزن کیا تھا </string>
@@ -1133,12 +1134,12 @@
     <string name="h136e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h136f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
-    <string name="h136aaa"> Agree </string>
-    <string name="h136aab"> Disagree </string>
+    <string name="h136aa"> H136A:\t کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟  </string>
+    <string name="h136aaa"> متفق </string>
+    <string name="h136aab"> غیر متفق </string>
 
-    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
-    <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="h13602"> H136B:\t کیا آپ  کے نوزائیدہ  کو کوئی خطرناک علامت یا مسائل درپیش آئے ؟ </string>
+    <string name="h13602hint"> جلدی نہ کریں۔ بتائی گئی تمام علامات پر نشان لگائیں، لیکن کوئی تجویز نہ دیں۔</string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
     <string name="h13602c"> ماں کا دودھ صحیح سے نہ پینا </string>
@@ -1150,7 +1151,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H136C:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1217,15 +1218,15 @@
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
     <string name="h205aa"> H205A:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
-    <string name="h205aaa"> صحت،غذائیت، صفائی کا مشورہ دینا </string>
+    <string name="h205aaa"> صحت، غذائیت، صفائی کا مشورہ دینا </string>
     <string name="h205aab"> ماں کو   صحیح طرح دودھ پلانے کا مشورہ  </string>
-    <string name="h205aac"> دیکھ بھال کے لئے مرکز صحت جانے کاحوالہ دینا </string>
+    <string name="h205aac"> خاندانی منصوبہ بندی کا مشورہ </string>
     <string name="h205aad"> پیچیدگیوں کا مشاہدہ </string>
-    <string name="h205aae"> خاندانی منصوبہ بندی کا مشورہ </string>
+    <string name="h205aae"> دیکھ بھال کے لئے مرکز صحت جانے کا حوالہ دینا</string>
     <string name="h205aaf"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
     <string name="h205aag"> زچگی کے دوران خطرناک علامات کا علاج </string>
     <string name="h205aah"> مانع حمل کی ادویات  فراہم کرنا </string>
-    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کےبارے میں معلومات  </string>
+    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کے بارے میں معلومات  </string>
 
     <string name="h206"> H206:\t کیا آپ کو زچگی کے بعد کی خطرناک علامات / مسائل کے بارے میں معلومات ہے ؟ </string>
     <string name="h206a"> ہاں </string>
@@ -1250,11 +1251,11 @@
     <string name="h208e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h208f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
-    <string name="h208aaa"> Agree </string>
-    <string name="h208aab"> Disagree </string>
+    <string name="h208aa"> H208A:\t کیا آپ پیدائش کے بعد خطرناک علامات کے علاج کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="h208aaa"> متفق </string>
+    <string name="h208aab"> غیر متفق </string>
 
-    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H208B:\t  تمام پر نشان لگائیں جو لاگو ہوتے ہیں. کیا آپ کو  زچگی  کے بعد  کوئی خطرناک علامات پیش آئی ؟</string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -1263,7 +1264,7 @@
     <string name="h20802f"> شدید تقاہت، خون کی کمی </string>
     <string name="h20802g"> ڈپریشن (puerperal psychosis) </string>
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
-    <string name="h20802i"> معلوم نہیں </string>
+    <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> ہاں </string>
@@ -1279,7 +1280,7 @@
     <string name="h2091c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
     <string name="h2091d"> ایل ایچھ ڈبلیو نے ماسک نہیں پہنا ہوا تھا </string>
     <string name="h2091e"> کرونا کا ڈر یا خوف </string>
-    <string name="h2091f"> سماجی مفاصلا </string>
+    <string name="h2091f"> سماجی مفاصلہ </string>
     <string name="h2091g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="h2091h"> Not Applicable </string>
 
@@ -2233,9 +2234,9 @@
     <string name="k101aal"> پمفلٹ / بروشر </string>
     <string name="k101aam"> موبائل فون / اسمارٹ فون </string>
 
-    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
-    <string name="k101aba"> Agree </string>
-    <string name="k101abb"> Disagree </string>
+    <string name="k101ab"> K101B:\t کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="k101aba"> متفق </string>
+    <string name="k101abb"> غیر متفق </string>
 
     <string name="k102"> K102:\t کیا آپ یا آپ کے شوہر نے حمل کو روکنے کے لئے کبھی کوئی مانع حمل طریقہ کا استعمال کیا ہے ؟ </string>
     <string name="k102a"> ہاں </string>
@@ -2301,10 +2302,10 @@
     <string name="k1072g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="k1072h">لاگو نہیں ہوتا</string>
 
-    <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو)نےآپ اور آپ کے شوہر  کے ساتھ میٹنگ کا بندوبست  کیا تھا ؟ </string>
+    <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو) کے سیشن میں آپ اور آپ کے شوہر   نے شمولیت کی تھی؟ </string>
     <string name="k1081a"> ہاں </string>
     <string name="k1081b"> نہیں </string>
-    <string name="k1081c"> کمیونٹی میں عمومی میٹنگ </string>
+    <string name="k1081c"> لاگو نہیں </string>
 
     <string name="k1082"> K108a:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="k1082a"> اتنا اہم نہیں تھا </string>
@@ -2883,21 +2884,21 @@
     <string name="ah1f">انٹرمیڈیٹ</string>
     <string name="ah1g">آنڈر گریجویٹ</string>
     <string name="ah1h">ٹیکنیکل ٹریننگ</string>
-    <string name="ah1i">دینی تعلیم ((حافظ/عالم))</string>
+    <string name="ah1i">دینی تعلیم ((حافظ/عالم/عالمہ))</string>
     <string name="ah1j">معلوم نہیں</string>
     <string name="ah1k">لاگو نہیں</string>
     <string name="ah2">AH2:\t کیا آپ ابھی اسکول / کالج جاتے ہیں؟</string>
     <string name="ah2a">ہاں</string>
     <string name="ah2b">نہیں</string>
     <string name="ah3">AH3:\t آپ مزید کتنے تعلیمی سال مکمل کر لیں گے؟</string>
-    <string name="ah3a">Primary(1-5)</string>
-    <string name="ah3b">Middle (6-8)</string>
-    <string name="ah3c">Secondary(9-10)</string>
-    <string name="ah3d">Intermediate</string>
-    <string name="ah3e">Under Graduate</string>
-    <string name="ah3f">Technical Training</string>
-    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
-    <string name="ah3other">Other (Specify)</string>
+    <string name="ah3a">پرائمری(1-5)</string>
+    <string name="ah3b">مڈل (8-6)</string>
+    <string name="ah3c">سیکنڈری (10-9)</string>
+    <string name="ah3d">انٹرمیڈیٹ</string>
+    <string name="ah3e">آنڈر گریجویٹ</string>
+    <string name="ah3f">ٹیکنیکل ٹریننگ</string>
+    <string name="ah3g">دینی تعلیم ((حافظ/ حافظہ /عالم / عالمہ))</string>
+    <string name="ah3other"> دیگر وضاحت کریں</string>
     <string name="ah4">AH4:\t آپ کی عمر کیا تھی جب آپ نے اسکول/ کالج چھوڑا؟</string>
     <string name="ah4a">عمر</string>
     <string name="ah5">AH5:\t آپ کا اسکول سرکاری تھا یا نجی؟</string>
@@ -3206,9 +3207,9 @@
     <string name="ah38">AH38:\t کیا آپ کو تولیدی صحت کے بارے میں جانتے ہیں؟</string>
     <string name="ah38a">ہاں</string>
     <string name="ah38b">نہیں</string>
-    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
-    <string name="ah38aaa">Agree</string>
-    <string name="ah38aab">Disagree</string>
+    <string name="ah38aa">AH38A:\t کیا آپ اس عمر میں  تولیدی صحت کے بارے میں جاننے  کی اہمیت کو سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah38aaa">متفق</string>
+    <string name="ah38aab">غیر متفق</string>
     <string name="ah39">AH39:\t بلاغت کے وقت جسم کے خدرخال میں کیا تبدیلیاں آتی ہیں؟</string>
     <string name="ah39a">جسمانی تبدیلی</string>
     <string name="ah39b">ذہنی تبدیلی</string>
@@ -3265,8 +3266,8 @@
     <string name="ah46b">نہیں ہے</string>
     <string name="ah46c">معلوم نہیں</string>
     <string name="ah47">AH47:\t کیا ( HIV /AIDS)کا مریض ہر وقت بیمار لگتا ہے</string>
-    <string name="ah47a">جی ہے</string>
-    <string name="ah47b">نہیں ہے</string>
+    <string name="ah47a">جی</string>
+    <string name="ah47b">نہیں</string>
     <string name="ah47c">معلوم نہیں</string>
     <string name="ah48">AH48:\t اگر کسی کو AIDS / HIV ہے تو وہ کہاں سے علاج کروائے؟</string>
     <string name="ah48a">فارمیسی</string>

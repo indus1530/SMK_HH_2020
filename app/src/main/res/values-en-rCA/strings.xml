@@ -198,7 +198,7 @@
     <string name="d110h"> Masters </string>
     <string name="d110i"> PhD </string>
     <string name="d110j"> Diploma (IT/Electric,Mechanical,civil) </string>
-    <string name="d110k"> Religious Education (Hafiz/Aalim) </string>
+    <string name="d110k"> Religious Education (Hafiz/Aalim/Aalima) </string>
     <string name="d110l"> Don\'t Know </string>
     <string name="d110m"> Not Applicable </string>
 
@@ -516,6 +516,7 @@
     <string name="f1211"> Did LHW visit your household during your last pregnancy in CORONA LOCKDOWN? Probe for Yes </string>
     <string name="f1211a"> Yes </string>
     <string name="f1211b"> No </string>
+    <string name="f1211c"> None </string>
 
     <string name="f1212"> Reasons for not visiting LHW? </string>
     <string name="f1212a"> LHW usually don’t visit </string>
@@ -1270,7 +1271,7 @@
     <string name="h20802f"> Extreme tiredness, Anemia</string>
     <string name="h20802g"> Anxiety or depression (puerperal psychosis)</string>
     <string name="h20802h"> Breast problems (engorgement, sore, cracked bleeding or inverted nipples)</string>
-    <string name="h20802i"> Don’t Know</string>
+     <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> Yes </string>
@@ -2846,7 +2847,7 @@
     <string name="ah1f">Intermediate</string>
     <string name="ah1g">Under Graduate</string>
     <string name="ah1h">Technical Training</string>
-    <string name="ah1i">Religious Education (Hafiz/Aalim)</string>
+    <string name="ah1i">Religious Education (Hafiz/Aalim/Aalima)</string>
     <string name="ah1j">Don’t Know</string>
     <string name="ah1k">Not Applicable</string>
     <string name="ah2">Are You Currently Attending School/College</string>
@@ -2859,7 +2860,7 @@
     <string name="ah3d">Intermediate</string>
     <string name="ah3e">Under Graduate</string>
     <string name="ah3f">Technical Training</string>
-    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
+    <string name="ah3g">Religious Education (Hafiz/Aalim/Aalima)</string>
     <string name="ah3other">Other (Specify)</string>
     <string name="ah4">How Old Were You When You Left The School/College</string>
     <string name="ah4a">Age</string>

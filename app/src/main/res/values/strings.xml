@@ -70,7 +70,6 @@
     <string name="mwra"> MWRA </string>
     <string name="under2">Child Under 2</string>
 
-
     <string name="taheading"> SECTION A: HH Identification </string>
     <string name="a101"> کلسٹر نمبر </string>
     <string name="a101a"> یہ معلومات ضلعی بنیاد پر بنائی گئی گاؤں کی فہرست پر مبنی ہوں گی۔ ہر انٹرویو کرنے والے کو جس علاقے کا وہ دورہ کرے گا کلسٹرز کی ایک فہرست دی جائے گی اور انٹرویو شروع کرنے سے پہلے اسی فہرست سے یہ معلومات درج کی جائیں گی۔ </string>
@@ -110,7 +109,6 @@
 
     <string name="b101"> Latitude (Example: 24.861462) </string>
     <string name="b102"> Longitude (Example:67.009939) </string>
-
 
     <string name="c101"> C101:\t کیارضامندی حاصل کی گئی تھی؟ </string>
     <string name="c101a"> زبانی اجازت نامہ </string>
@@ -187,10 +185,9 @@
     <string name="d110h"> ماسٹرز </string>
     <string name="d110i"> پی ایچ ڈی </string>
     <string name="d110j"> ڈپلوما (آئی ٹی / الیکٹریکل، مکینیکل، سول) </string>
-    <string name="d110k"> مزہبی تعلیم (حافظ / عالم) </string>
+    <string name="d110k"> مزہبی تعلیم (حافظ/عالم/ عالمہ) </string>
     <string name="d110l"> معلوم نہیں </string>
     <string name="d110m"> لاگو نہیں ہوتا </string>
-
 
     <string name="d111"> D111\t پیشہ: (نام) کا پیشہ کیا ہے۔ </string>
     <string name="d111x"> 2 سال سے کم عمر بچے کے لئے یہ سوال نہیں کھلے گا اور خودکار نظام کے تحت ‘NA’ کوڈ ظاہر ہو جائیگا۔ </string>
@@ -204,7 +201,6 @@
     <string name="d111h"> بے روزگار </string>
     <string name="d111i"> ریٹائرڈ </string>
     <string name="d111j"> لاگو نہیں ہوتا </string>
-
 
     <string name="d112"> D112:\t گھرانے کے افراد کی مجموعئی تعداد ؟ </string>
 
@@ -278,7 +274,6 @@
     <string name="e111e"> انفیکشن </string>
     <string name="e111f"> Cord Prolapsed </string>
     <string name="e111x"> دیگر (وضاحت کریں) </string>
-
 
     <string name="e11101"> E111A:\t نام کے انتقال کی کیا وجوہات تھیں؟ </string>
     <string name="e11101a"> Premature Birth </string>
@@ -361,7 +356,6 @@
 
 
     <!--  SECTION F -->
-
     <string name="f101"> F101:\t کیا آپ نے اپنے آخری حمل کے دوران (نام) کی پیدائش سے قبل حمل کی دیکھ بھال کے لئے کسی سے معائنہ یا چیک اپ کروایا تھا ؟ </string>
     <string name="f101n"> نہیں </string>
     <string name="f101y"> ہاں </string>
@@ -401,7 +395,6 @@
     <string name="f102l"> این جی او صحت مرکز </string>
     <string name="f102m"> راستے میں صحت مرکز جاتے وقت </string>
     <string name="f10296"> دیگر (وضاحت کریں </string>
-
 
     <string name="f103"> F103:\t آخری حمل کے دوران پیدائش سے قبل معائنہ کس نے کیا تھا ؟ مزید پوچھیں: کوئی اور </string>
     <string name="f103a"> ڈاکٹر </string>
@@ -510,8 +503,9 @@
     <string name="f121b"> نہیں </string>
 
     <string name="f1211"> F121a:\t کیا گزشتہ حمل کے دوران (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا ؟ </string>
-    <string name="f1211a"> Yes </string>
-    <string name="f1211b"> No </string>
+    <string name="f1211a"> ہاں </string>
+    <string name="f1211b"> نہیں </string>
+    <string name="f1211c"> لاگو نہیں ہے </string>
 
     <string name="f1212"> F121b:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="f1212a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
@@ -522,7 +516,6 @@
     <string name="f1212f"> سماجی مفاصلا </string>
     <string name="f1212g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="f1212h"> لاگو نہیں ہوتا </string>
-
 
     <string name="f122"> F122:\t گزشتہ حمل کےدوران آپ کےحمل کی دیکھ بھال کا ایک حصہ ہونے کےناتے،(ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکرنے کتنی بار آپکے گھر کا دورہ کیا تھا؟ </string>
 
@@ -612,7 +605,6 @@
     <string name="f130n"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="f130o"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنے ہوئے تھے) </string>
 
-
     <string name="f131"> F131:\t آپ(نام) کی پیدائش سے قبل حمل کے دوران پیش آنے والی اوپر بیان کی گئی علامات/مسائل کی دیکھ بھال کے لئے  کہاں گئے تھے؟ </string>
     <string name="f131h1"> سرکاری مرکز صحت </string>
     <string name="f131a"> سول ہسپتال / ٹرشری </string>
@@ -627,7 +619,6 @@
     <string name="f131i"> پرائوٹ میٹرنٹی ہوم </string>
     <string name="f131j"> رفاہی ادارہ </string>
     <string name="f13196"> دیگر (وضاحت کریں </string>
-
 
     <string name="f132"> F132:\t کیا آپ نے(نام) کی پیدائش سے قبل حمل کے دوران اپنی غذا/کھانے پینے کی عادات میں تبدیلی کی تھی؟ </string>
     <string name="f132a"> ہاں،معمول سے زیادہ </string>
@@ -817,8 +808,8 @@
     <string name="g124l"> پورے جسم پر سوجن </string>
     <string name="g124m"> شدید متلی اور الٹیاں </string>
 
-    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
-    <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="g12401"> G124A:\t آپ کو  درد زہ اور بچے کی پیدائش کے دوران ہونے والے خطرناک   علامات/مسائل  درپیش آئے تھے ؟  </string>
+    <string name="g12401hint"> (ایک سے زیادہ جوابات آ سکتے ہیں) </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
     <string name="g12401c"> شدید سر درد </string>
@@ -848,11 +839,10 @@
     <string name="g1251g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="g1251h"> لاگو نہیں ہوتا </string>
 
-
     <string name="g126"> G126:\t کیا لیڈی ہیلتھ ورکر نے آپ کو صاف ڈیلوری کٹ فراہم کی تھی ؟ </string>
     <string name="g126a"> ہاں </string>
     <string name="g126b"> نہیں </string>
-    <string name="g126c"> معلوم نہیں </string>
+    <string name="g126c"> لاگو نہیں  </string>
 
     <string name="g127"> G127:\t کیا لیڈی ہیلتھ ورکر نے آپ کو ڈیلوری کٹ کے استعمال کے بارے میں بتایا تھا ؟ </string>
     <string name="g127a"> ہاں </string>
@@ -1031,7 +1021,6 @@
     <string name="h127j"> رفاہی ادارہ </string>
     <string name="h12796"> دیگر (وضاحت کریں </string>
 
-
     <string name="h128"> H128:\t (نام) کا پہلی بار معائنہ کس نے کیا تھا ؟ </string>
     <string name="h128a"> ڈاکٹر </string>
     <string name="h128b"> ایل ایچ وی (لیڈی ہیلتھ وزیٹر) </string>
@@ -1088,7 +1077,6 @@
     <string name="h132b"> نہیں </string>
     <string name="h132c"> زچگی کسی اور علاقہ میں ہوئی تھی </string>
 
-
     <string name="h1321"> H132a:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="h1321a"> ایل ایچھ ڈبلیو اکثر وزٹ پر نہیں آتی </string>
     <string name="h1321b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کرسکی </string>
@@ -1097,7 +1085,7 @@
     <string name="h1321e"> کرونا کا ڈر یا خوف </string>
     <string name="h1321f"> سماجی مفاصلا </string>
     <string name="h1321g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
-    <string name="h1321h"> Not Applicable </string>
+    <string name="h1321h"> لاگو نہیں </string>
 
     <string name="h133"> H133:\t لیڈی ہیلتھ ورکر کا (نام) کی ولادت کے بعد آنے کا مقصد کیا تھا ؟ </string>
     <string name="h133a"> وزن کیا تھا </string>
@@ -1134,12 +1122,12 @@
     <string name="h136e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h136f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
-    <string name="h136aaa"> Agree </string>
-    <string name="h136aab"> Disagree </string>
+    <string name="h136aa"> H136A:\t کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟  </string>
+    <string name="h136aaa"> متفق </string>
+    <string name="h136aab"> غیر متفق </string>
 
-    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
-    <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
+    <string name="h13602"> H136B:\t کیا آپ  کے نوزائیدہ  کو کوئی خطرناک علامت یا مسائل درپیش آئے ؟ </string>
+    <string name="h13602hint"> جلدی نہ کریں۔ بتائی گئی تمام علامات پر نشان لگائیں، لیکن کوئی تجویز نہ دیں۔</string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
     <string name="h13602c"> ماں کا دودھ صحیح سے نہ پینا </string>
@@ -1151,7 +1139,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H136C:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1167,7 +1155,6 @@
     <string name="h1371e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="h1371f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="h1371g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
-
 
     <string name="h137aa"> H137b:\t نام) کو بی سی جی کا ٹیکہ کہاں سے لگوایا تھا؟) </string>
     <string name="h137aaa"> سرکاری صحت کی سہولت </string>
@@ -1185,7 +1172,6 @@
     <string name="h137bbf"> کمیونٹی ہیلتھ ورکر </string>
     <string name="h137bbg"> ڈسپینسر / کمپائونڈر </string>
     <string name="h137bbx"> دیگر (وضاحت کریں) </string>
-
 
     <string name="th2heading"> SECTION H: POSTNATAL CARE </string>
     <string name="h201"> H201:\t اگر (نام) کی پیدائش مرکز صحت میں ہوئی تھی تو پیدائش کے بعد آپ کتنا عرصہ مرکزِ صحت میں رہی تھیں ؟ </string>
@@ -1220,15 +1206,15 @@
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
     <string name="h205aa"> H205A:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
-    <string name="h205aaa"> صحت،غذائیت، صفائی کا مشورہ دینا </string>
+    <string name="h205aaa"> صحت، غذائیت، صفائی کا مشورہ دینا </string>
     <string name="h205aab"> ماں کو   صحیح طرح دودھ پلانے کا مشورہ  </string>
-    <string name="h205aac"> دیکھ بھال کے لئے مرکز صحت جانے کاحوالہ دینا </string>
+    <string name="h205aac"> خاندانی منصوبہ بندی کا مشورہ </string>
     <string name="h205aad"> پیچیدگیوں کا مشاہدہ </string>
-    <string name="h205aae"> خاندانی منصوبہ بندی کا مشورہ </string>
+    <string name="h205aae"> دیکھ بھال کے لئے مرکز صحت جانے کا حوالہ دینا</string>
     <string name="h205aaf"> فولاد یا آئرن کی گولیاں فراہم کرنا </string>
     <string name="h205aag"> زچگی کے دوران خطرناک علامات کا علاج </string>
     <string name="h205aah"> مانع حمل کی ادویات  فراہم کرنا </string>
-    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کےبارے میں معلومات  </string>
+    <string name="h205aai"> کرونا کی وبا کی  احتیاطی تدابیر کے بارے میں معلومات  </string>
 
     <string name="h206"> H206:\t کیا آپ کو زچگی کے بعد کی خطرناک علامات / مسائل کے بارے میں معلومات ہے ؟ </string>
     <string name="h206a"> ہاں </string>
@@ -1253,11 +1239,11 @@
     <string name="h208e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h208f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h208aa"> H208A:\t Did LHW visit you after delivery ? </string>
-    <string name="h208aaa"> Agree </string>
-    <string name="h208aab"> Disagree </string>
+    <string name="h208aa"> H208A:\t کیا آپ پیدائش کے بعد خطرناک علامات کے علاج کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="h208aaa"> متفق </string>
+    <string name="h208aab"> غیر متفق </string>
 
-    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H208B:\t  تمام پر نشان لگائیں جو لاگو ہوتے ہیں. کیا آپ کو  زچگی  کے بعد  کوئی خطرناک علامات پیش آئی ؟</string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -1266,7 +1252,7 @@
     <string name="h20802f"> شدید تقاہت، خون کی کمی </string>
     <string name="h20802g"> ڈپریشن (puerperal psychosis) </string>
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
-    <string name="h20802i"> معلوم نہیں </string>
+    <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
     <string name="h20803a"> ہاں </string>
@@ -1282,7 +1268,7 @@
     <string name="h2091c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
     <string name="h2091d"> ایل ایچھ ڈبلیو نے ماسک نہیں پہنا ہوا تھا </string>
     <string name="h2091e"> کرونا کا ڈر یا خوف </string>
-    <string name="h2091f"> سماجی مفاصلا </string>
+    <string name="h2091f"> سماجی مفاصلہ </string>
     <string name="h2091g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="h2091h"> Not Applicable </string>
 
@@ -1303,7 +1289,6 @@
     <string name="h211h"> دودھ پلانے کے فوائد </string>
     <string name="h211i"> خاندانی منصوبہ بندی کے بارے میں مشورہ </string>
     <string name="h211j"> کرونا کی وبا کی احتیاطی تدابیر کے بارے میں معلومات </string>
-
 
     <string name="h212"> H212:\t لیڈی ہیلتھ ورکر نے آپ کے گھر کے دورے میں کتنا وقت گزارا ؟ </string>
 
@@ -1425,7 +1410,6 @@
     <string name="i106j"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="i106k"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے  </string>
     <string name="i106l"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
-
 
     <string name="i107"> I107:\t آپ نے (نام) کی دستوں کی بیماری کا علاج کہاں سے کروایا تھا ؟ </string>
     <string name="i107a"> سرکاری مرکز صحت میں </string>
@@ -2234,9 +2218,9 @@
     <string name="k101aal"> پمفلٹ / بروشر </string>
     <string name="k101aam"> موبائل فون / اسمارٹ فون </string>
 
-    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
-    <string name="k101aba"> Agree </string>
-    <string name="k101abb"> Disagree </string>
+    <string name="k101ab"> K101B:\t کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="k101aba"> متفق </string>
+    <string name="k101abb"> غیر متفق </string>
 
     <string name="k102"> K102:\t کیا آپ یا آپ کے شوہر نے حمل کو روکنے کے لئے کبھی کوئی مانع حمل طریقہ کا استعمال کیا ہے ؟ </string>
     <string name="k102a"> ہاں </string>
@@ -2302,10 +2286,10 @@
     <string name="k1072g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="k1072h">لاگو نہیں ہوتا</string>
 
-    <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو)نےآپ اور آپ کے شوہر  کے ساتھ میٹنگ کا بندوبست  کیا تھا ؟ </string>
+    <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو) کے سیشن میں آپ اور آپ کے شوہر   نے شمولیت کی تھی؟ </string>
     <string name="k1081a"> ہاں </string>
     <string name="k1081b"> نہیں </string>
-    <string name="k1081c"> کمیونٹی میں عمومی میٹنگ </string>
+    <string name="k1081c"> لاگو نہیں </string>
 
     <string name="k1082"> K108a:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="k1082a"> اتنا اہم نہیں تھا </string>
@@ -2316,11 +2300,11 @@
     <string name="k1082f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="k1082g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا ( ماسک اور دستانے نہیں پہنے ہوئے تھے ) </string>
 
-
     <string name="k109"> K109:\t کیا آپ اپنے علاقہ میں گھر کے قریب کسی لیڈی ہیلتھ ورکر \'ہیلتھ ہاؤس\' کے بارے میں جانتی ہیں ؟ </string>
     <string name="k109a"> ہاں </string>
     <string name="k109ab"> نہیں </string>
 
+    <!--  SECTION-L  -->
     <string name="l101"> L101:\t کیا آپ کے پاس اپنا ذاتی موبائل فون ہے ؟ </string>
     <string name="l101a"> ہاں </string>
     <string name="l101b"> نہیں </string>
@@ -2337,7 +2321,6 @@
     <string name="l1022e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="l1022f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="l1022g"> دیگر افراد احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
-
 
     <string name="l103"> L103:\t آپ نے آخری سات دنوں میں کوئی کام نہیں کیا، کیا آپ اپنی بیماری ، زچگی یا چھٹیوں کی وجہ سے یا دیگر کسی اور وجہ سے کسی کاروبار اور نوکری وغیرہ سے غیر حاضر ہیں ؟ </string>
     <string name="l103a"> ہاں </string>
@@ -2466,7 +2449,6 @@
     <string name="l117b"> نہیں </string>
     <string name="l117c"> دونوں مل کے </string>
     <string name="l117x"> دیگر (وضاحت کریں) </string>
-
 
     <!--  SECTION-M  -->
     <string name="m101"> M101:\t کیا عام طور پر کھانا گھر پر پکایا جاتاہے، کسی مختلف عمارت میں یا پھر گھر سے باہر ؟ </string>
@@ -2710,7 +2692,7 @@
     <string name="m116e"> بروشیسکی </string>
     <string name="m116f">دیگر</string>
 
-
+    <!--  SECTION-N  -->
     <string name="n101"> N101:\t آپ کے گھرکے افراد کے لئے پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟ </string>
     <string name="n101a"> گھر کانلکا </string>
     <string name="n101a_title"> میونسپل کمیٹی کا پانی کاکنکشن </string>
@@ -2822,6 +2804,7 @@
     <string name="n113b"> دس یا اس سے زیادہ گھرانے </string>
     <string name="n113c"> معلوم نہیں </string>
 
+    <!--  SECTION-O  -->
     <string name="o101"> O101:\t ہم جاننا چاہیں گے کہ گھر والے ہاتھ دھونے کے لیے کن جگہوں کا استعمال کرتے ہیں۔ کیا آپ مجھے وہ جگہ دیکھا سکتی ہیں جہاں آپ کے گھر والے عموماً ہاتھ دھوتے ہیں؟ </string>
     <string name="o101a"> مشاہدہ کیا </string>
     <string name="o101b"> رہائش گاہ پلاٹ /صحن میں موجود نہیں </string>
@@ -2873,7 +2856,7 @@
     <string name="o108h"> کرونا کی بیماری کی وجہ سے جواب نہیں ملا </string>
     <string name="o108x"> دیگر (وضاحت کریں) </string>
 
-
+    <!--  SECTION-AH  -->
     <!--<string name="ah0title">سیکشن: بالغ افراد کے صحت</string>-->
     <string name="ahetitle">تعلیم</string>
     <string name="ah1">AH1:\t تعلیم</string>
@@ -2885,30 +2868,36 @@
     <string name="ah1f">انٹرمیڈیٹ</string>
     <string name="ah1g">آنڈر گریجویٹ</string>
     <string name="ah1h">ٹیکنیکل ٹریننگ</string>
-    <string name="ah1i">دینی تعلیم ((حافظ/عالم))</string>
+    <string name="ah1i">دینی تعلیم ((حافظ/عالم/عالمہ))</string>
     <string name="ah1j">معلوم نہیں</string>
     <string name="ah1k">لاگو نہیں</string>
+
     <string name="ah2">AH2:\t کیا آپ ابھی اسکول / کالج جاتے ہیں؟</string>
     <string name="ah2a">ہاں</string>
     <string name="ah2b">نہیں</string>
+
     <string name="ah3">AH3:\t آپ مزید کتنے تعلیمی سال مکمل کر لیں گے؟</string>
-    <string name="ah3a">Primary(1-5)</string>
-    <string name="ah3b">Middle (6-8)</string>
-    <string name="ah3c">Secondary(9-10)</string>
-    <string name="ah3d">Intermediate</string>
-    <string name="ah3e">Under Graduate</string>
-    <string name="ah3f">Technical Training</string>
-    <string name="ah3g">Religious Education (Hafiz/Aalim)</string>
-    <string name="ah3other">Other (Specify)</string>
+    <string name="ah3a">پرائمری(1-5)</string>
+    <string name="ah3b">مڈل (8-6)</string>
+    <string name="ah3c">سیکنڈری (10-9)</string>
+    <string name="ah3d">انٹرمیڈیٹ</string>
+    <string name="ah3e">آنڈر گریجویٹ</string>
+    <string name="ah3f">ٹیکنیکل ٹریننگ</string>
+    <string name="ah3g">دینی تعلیم ((حافظ/ حافظہ /عالم / عالمہ))</string>
+    <string name="ah3other"> دیگر وضاحت کریں</string>
+
     <string name="ah4">AH4:\t آپ کی عمر کیا تھی جب آپ نے اسکول/ کالج چھوڑا؟</string>
     <string name="ah4a">عمر</string>
+
     <string name="ah5">AH5:\t آپ کا اسکول سرکاری تھا یا نجی؟</string>
     <string name="ah5a">سرکاری</string>
     <string name="ah5b">نجی</string>
+
     <string name="ah6">AH6:\t جس اسکول میں آپ جاتے تھے وہ (آپشن پڑھ کے بتائیں)</string>
     <string name="ah6a">مخلوط تھا</string>
     <string name="ah6b">صرف لڑکوں کا تھا</string>
     <string name="ah6c">صرف لڑکیوں کا تھا</string>
+
     <string name="ah7">AH7:\t تعلیم حاصل نہ کرنے کی وجوہات کیا ہیں؟ ایک سے زیادہ جوابات</string>
     <string name="ah7a">میری فیملی نہیں چاہتی کہ میں اسکول جاؤں</string>
     <string name="ah7b">میرے گاؤں میں لڑکیاں اسکول نہیں جاتیں۔</string>
@@ -2919,6 +2908,7 @@
     <string name="ah7g">گھر کے کام کاج کرنے ہوتے ہیں</string>
     <string name="ah7h">جوابات دینے سے منع کر دیا</string>
     <string name="ah7x">دیگر وجہ (وضاحت)</string>
+
     <string name="ahemtitle">روزگار</string>
     <string name="ah8">AH8:\t کیا آپ نے کبھی کام کیا ہے؟</string>
     <string name="ah8a">جی اپنا کام کیا ہے</string>
@@ -2940,11 +2930,13 @@
     <string name="ah10b">اناج / کائنڈ</string>
     <string name="ah10c">نقد اور اناج دونوں</string>
     <string name="ah10d">کچھ نہیں ملتا</string>
+
     <string name="ah11">AH11:\t جب آپ نے کام شروع کیا آپ کی عمر کیا تھی؟</string>
     <string name="ah11a">عمر</string>
     <string name="ah12">AH12:\t ابھی بھی کام کر رہے ہیں؟</string>
     <string name="ah12a">ہاں</string>
     <string name="ah12b">نہیں</string>
+
     <string name="ah13">AH13:\t آپ کام ڈھونڈ رہے ہیں؟</string>
     <string name="ah13a">ہاں</string>
     <string name="ah13b">نہیں</string>
@@ -2955,25 +2947,30 @@
     <string name="ah13ab">AH13b:\t آپ کی کوئی سیاسی وابستگی ہے؟</string>
     <string name="ah13aba">ہاں</string>
     <string name="ah13abb">نہیں</string>
+
     <string name="ahhwtitle">Health And Well-Being:</string>
     <string name="ah14">AH14:\t آپ کا اپنی صحت کے بارے میں کیا خیال ہے؟</string>
     <string name="ah14a">بہترین</string>
     <string name="ah14b">اچھی</string>
     <string name="ah14c">خراب</string>
+
     <string name="ah15">AH15:\t اپنا وزن کم کرنے کے لئے کیا آپ ڈائٹنگ یا کچھ اور طریقہ کرتے ہیں؟</string>
     <string name="ah15a">نہیں، میرا وزن ٹھیک ہے</string>
     <string name="ah15b">نہیں ، لیکن مجھے وزن کم کرنا چاہئیے</string>
     <string name="ah15c">نہیں، کیونکہ میں بہت دبلا / دبلی ہوں</string>
     <string name="ah15d">ہاں</string>
     <string name="ah15e">لوگ کہتے ہیں مجھے وزن کم نہیں کرنا چاہئیے</string>
+
     <string name="ah16">AH16:\t آپ کی والدین حیات ہیں؟</string>
     <string name="ah16a">نہیں</string>
     <string name="ah16b">جی دونوں حیات ہیں</string>
     <string name="ah16c">صرف والد زندہ ہیں</string>
     <string name="ah16d">صرف والدہ زندہ ہیں</string>
+
     <string name="ah17">AH17:\t وہ آپ کے ساتھ ہی رہتے ہیں؟</string>
     <string name="ah17a">ہاں</string>
     <string name="ah17b">نہیں</string>
+
     <string name="ah18">AH18:\t اپنے والدین / (جو بھی حیات ہیں) ان سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
     <string name="ah18a">بہت آسان</string>
     <string name="ah18b">آسان</string>
@@ -2982,9 +2979,11 @@
     <string name="ah18e">بہت مشکل</string>
     <string name="ah18f">کبھی بات نہیں کی ان سے</string>
     <string name="ah18g">میں صرف اپنے دوستوں سے بات کرتا / کرتی ہوں</string>
+
     <string name="ah19">AH19:\t کیا آپ کی بہن بھائی ہیں؟</string>
     <string name="ah19a">ہاں</string>
     <string name="ah19b">نہیں</string>
+
     <string name="ah20">AH20:\t وہ آپ کے ساتھ رہتے ہیں؟</string>
     <string name="ah20a">ہاں</string>
     <string name="ah20b">نہیں</string>
@@ -2997,7 +2996,6 @@
     <string name="ah21e">بہت مشکل</string>
     <string name="ah21f">کبھی بات نہیں کی ان سے</string>
     <string name="ah21g">میں صرف اپنے دوستوں سے بات کرتا / کرتی ہوں</string>
-
 
     <string name="ah2101">AH21b:\t اپنے دوستوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
     <string name="ah2101a">بہت آسان</string>
@@ -3028,10 +3026,12 @@
     <string name="ah2204a">ہاں</string>
     <string name="ah2204b">نہیں</string>
     <string name="ah2204c">کبھی نہیں</string>
+
     <string name="ah23">AH23:\t یہ عادت کب سے؟</string>
     <string name="ah23a">دن</string>
     <string name="ah23b">مہینہ</string>
     <string name="ah23c">سال</string>
+
     <string name="ah24">AH24:\t پچھلے دو مہینے میں مندرجہ ذیل میں سے آپ کوکوئی عارضہ لاحق ہوا ہے؟</string>
     <string name="ah2401">سانس کی بیماری</string>
     <string name="ah2401a">ہاں</string>
@@ -3069,25 +3069,31 @@
     <string name="ah24a">Do you think it is important to seek care for the illness you experienced mentioned above?</string>
     <string name="ah24aa">Agree</string>
     <string name="ah24ab">Disagree</string>
+
     <string name="ah25">AH25:\t مندرجہ بالا عارضہ کا علاج کروایا ہے؟</string>
     <string name="ah25a">ہاں</string>
     <string name="ah25b">نہیں</string>
+
     <string name="ah26">AH26:\t آپ نے علاج کہاں کروایا؟</string>
     <string name="ah26a">سرکاری مرکز صحت</string>
     <string name="ah26b">نجی مرکز صحت</string>
     <string name="ah26c">رفاہی ادارہ</string>
+
     <string name="ah27">AH27:\t کوئی دوا استعمال کر رہے ہیں؟</string>
     <string name="ah27a">ہاں</string>
     <string name="ah27b">نہیں</string>
+
     <string name="ah28">AH28:\tدوا کس نے تجویز کی ؟ </string>
     <string name="ah28a">ڈاکٹر نے</string>
     <string name="ah28b">کوئی اور میڈیکل کے تعلق رکھنے والے</string>
     <string name="ah28c">کسی نے تجویز نہیں کی دوا خود استعمال کی</string>
+
     <string name="ah29">AH29:\t کیا آپ ورزش کرتے ہیں؟ (جسمانی سر گرمی جیسے سائیکلنگ، چہل قدمی اور دیگر کھیل)</string>
     <string name="ah29a">ہاں، روزانہ 1 گھنٹہ یا اس سے زیادہ</string>
     <string name="ah29b">ہاں، 1 گھنٹے سے کم</string>
     <string name="ah29c">ہاں، اکثر (کم از کم 3 دفعہ ہفتے میں)</string>
     <string name="ah29d">نہیں</string>
+
     <string name="ah30">AH30:\t کیا آپ کے پاس</string>
     <string name="ah3001">موبائل ہے</string>
     <string name="ah3001a">ہاں</string>
@@ -3101,12 +3107,14 @@
     <string name="ah3003a">ہاں</string>
     <string name="ah3003b">نہیں</string>
     <string name="ah3003c">کبھی نہیں</string>
+
     <string name="ah31">AH31:\t آپ نے انٹرنٹ کی سہولت کہاں استعمال کی؟</string>
     <string name="ah31a">گھر پہ</string>
     <string name="ah31b">اسکول میں</string>
     <string name="ah31c">دوست کے گھر</string>
     <string name="ah31d">رشتہ دار کے گھر</string>
     <string name="ah31e">دُکان پہ</string>
+
     <string name="ahgntitle">صنفی اقدار:</string>
     <string name="ah3201">AH3201:\t والدین کو چاہیے کہ لڑکا اور لڑکی کے ساتھ یکساں سلوک کریں</string>
     <string name="ah3201a">متفق</string>
@@ -3128,16 +3136,19 @@
     <string name="ah3205a">متفق</string>
     <string name="ah3205b">غیر متفق</string>
     <string name="ah3205c">معلوم نہیں</string>
+
     <string name="ahnktitle">غذائی معلومات</string>
     <string name="ah33">AH33:\t کون سے کھانے میں فولاد پایا جاتا ہے؟</string>
     <string name="ah33a">سبزیاں (ہری سبزی گاجر)</string>
     <string name="ah33b">پھل (سیب، کیلا)</string>
     <string name="ah33c">فولاد سپلیمنٹ</string>
     <string name="ah33d">معلوم نہیں</string>
+
     <string name="ah34">AH34:\t کیا کھانے کے بعد چائے چست و توانا رکھتی ہے؟</string>
     <string name="ah34a">ہاں</string>
     <string name="ah34b">نہیں</string>
     <string name="ah34c">معلوم نہیں</string>
+
     <string name="ah35">AH35:\t روزانہ کی غذا میں مثالی طور پر کیا کیا شامل ہونا چاہئیے؟</string>
     <string name="ah35a">پھل</string>
     <string name="ah35b">سبزی</string>
@@ -3149,9 +3160,11 @@
     <string name="ah35h">چکنا</string>
     <string name="ah35i">چاول</string>
     <string name="ah35j">روٹی / پراٹھا / چپاتی</string>
+
     <string name="ah36">AH36:\t دن میں کتنی دفعہ کھانا کھاتے ہیں؟</string>
     <string name="ah36a">کتنی بار</string>
     <string name="ah36b">معلوم نہیں</string>
+
     <string name="ahdmtitle">فیصلہ کرنے کی صلاحیت:</string>
     <string name="ah3701">AH3701:\t کون فیصلہ کرتا ہے کہ آپ کیا کھائیں گے؟</string>
     <string name="ah3701a">جواب دہندہ</string>
@@ -3205,18 +3218,21 @@
     <string name="ah37aa">دن</string>
     <string name="ah37ab">مہینے</string>
     <string name="ah37ac">سال</string>
+
     <string name="ah38">AH38:\t کیا آپ کو تولیدی صحت کے بارے میں جانتے ہیں؟</string>
     <string name="ah38a">ہاں</string>
     <string name="ah38b">نہیں</string>
-    <string name="ah38aa">Do you think it is important to know about reproductive Health at your age?</string>
-    <string name="ah38aaa">Agree</string>
-    <string name="ah38aab">Disagree</string>
+    <string name="ah38aa">AH38A:\t کیا آپ اس عمر میں  تولیدی صحت کے بارے میں جاننے  کی اہمیت کو سمجھتے / سمجھتی ہیں؟</string>
+    <string name="ah38aaa">متفق</string>
+    <string name="ah38aab">غیر متفق</string>
+
     <string name="ah39">AH39:\t بلاغت کے وقت جسم کے خدرخال میں کیا تبدیلیاں آتی ہیں؟</string>
     <string name="ah39a">جسمانی تبدیلی</string>
     <string name="ah39b">ذہنی تبدیلی</string>
     <string name="ah39c">معاشرتی ماحولیاتی تبدیلیاں</string>
     <string name="ah39d">کوئی تبدیلی نہیں آئی</string>
     <string name="ah39x">دیگر (وضاحت کریں)</string>
+
     <string name="ah40">AH40:\t آپ کو مندرجہ بالا معلومات کس ذریعے سے ملی؟</string>
     <string name="ah40a">استاد/ استانی</string>
     <string name="ah40b">والدین</string>
@@ -3237,17 +3253,21 @@
     <string name="ah40aag">کتاب/بروشرز/پوسٹرز/پمفلٹ</string>
     <string name="ah40aah">انٹرنیٹ/موبائل</string>
     <string name="ah40aai">کم از کم ایک جواب ضرور دیں</string>
+
     <string name="ah41">AH41:\t آپ کے خیال میں تولیدی صحت کے بارے میں نشست / اجلاس / بات چیت ہونی چاہئیے؟</string>
     <string name="ah41a">ہاں</string>
     <string name="ah41b">نہیں</string>
     <string name="ah41c">معلوم نہیں</string>
+
     <string name="ah42">AH42:\t کیا رازداری کو ملحوظ رکھتے ہوئے تولیدی صحت کے بارے میں بات چیت ہونی چاہئیے؟</string>
     <string name="ah42a">ہاں ہونی چاہئیں</string>
     <string name="ah42b">نہیں اس طرح کی بات چیت کبھی نہیں ہونی چاہئے</string>
     <string name="ah42c">معلوم نہیں</string>
+
     <string name="ah43">AH43:\t آپ نے کبھی ایسی نشست میں حصہ لیا ہے؟</string>
     <string name="ah43a">ہاں</string>
     <string name="ah43b">نہیں</string>
+
     <string name="ah44">AH44:\t تولیدی صحت کے بارے میں نشست / بات چیت میں حصہ نہ لینے کی وجوہات کیا ہیں؟</string>
     <string name="ah44a">مذہبی وجوہات</string>
     <string name="ah44b">خاندان / کلچر میں اجازت نہیں</string>
@@ -3258,28 +3278,34 @@
     <string name="ah44g">وہ پیسے لیتے ہیں</string>
     <string name="ah44h">وہ نشست / فیسیلٹی گھر سے دور ہے</string>
     <string name="ah44i">ہیلتھ فیسلٹی میں پرائیوسی نہیں</string>
+
     <string name="ah45">AH45:\t آپ نے HIV /AIDS کے بارے میں سُنا ہے؟</string>
     <string name="ah45a">جی سنا ہے</string>
     <string name="ah45b">نہیں سنا</string>
     <string name="ah45c">معلوم نہیں</string>
+
     <string name="ah46">AH46:\t کیا آپ کو مالوم ھے کہ ( HIV /AIDS) کا کیا علاج ھے</string>
     <string name="ah46a">جی ہے</string>
     <string name="ah46b">نہیں ہے</string>
     <string name="ah46c">معلوم نہیں</string>
+
     <string name="ah47">AH47:\t کیا ( HIV /AIDS)کا مریض ہر وقت بیمار لگتا ہے</string>
-    <string name="ah47a">جی ہے</string>
-    <string name="ah47b">نہیں ہے</string>
+    <string name="ah47a">جی</string>
+    <string name="ah47b">نہیں</string>
     <string name="ah47c">معلوم نہیں</string>
+
     <string name="ah48">AH48:\t اگر کسی کو AIDS / HIV ہے تو وہ کہاں سے علاج کروائے؟</string>
     <string name="ah48a">فارمیسی</string>
     <string name="ah48b">سرکاری ہسپتال</string>
     <string name="ah48c">نجی ہسپتال</string>
     <string name="ah48d">یہ لا علاج مرض ہے</string>
+
     <string name="ahmtitle">ازدواجی زندگی</string>
     <string name="ah49">AH49:\t آپ کے صوبے  میں شادی کی قانونی عمر کیا ہے؟</string>
     <string name="ah49a">لڑکوں کے لئے</string>
     <string name="ah49b">لڑکیوں کے لئے</string>
     <string name="ah49c">معلوم نہیں</string>
+
     <string name="ah50">AH50:\t کیا اٹھارہ سال سے کم عمر کی شادی کے لئے قانون ہے؟</string>
     <string name="ah50a">ہاں</string>
     <string name="ah50b">نہیں</string>
@@ -3287,59 +3313,75 @@
     <string name="ah50aa">AH50a:\t لڑکے اور لڑکی کو کس عمر میں شادی کرنی چاہئیے؟</string>
     <string name="ah50aaa">لڑکوں کے لئے</string>
     <string name="ah50aab">لڑکیوں کے لئے</string>
+
     <string name="ah51">AH51:\t آپ کی موجودہ ازدواجی حیثیت کیا ہے؟</string>
     <string name="ah51a">شادی شدہ</string>
     <string name="ah51b">بیوہ /رنڈوا</string>
     <string name="ah51c">طلاق یافتہ</string>
     <string name="ah51d">علیحدگی</string>
     <string name="ah51e">کبھی شادی نہیں ہوئی</string>
+
     <string name="ah52">AH52:\t آپ کے شوہر / بیوی کی عمر کیا ہے؟</string>
     <string name="ah52a">عمر</string>
+
     <string name="ah53">AH53:\t کیا  اپنا شریکِ حیات  منتخب کرنے  میں رائے لی گئی تھی؟</string>
     <string name="ah53a">ہاں</string>
     <string name="ah53b">نہیں</string>
+
     <string name="ah54">AH54:\t شادی کی وقت آپ کی عمر کیا تھی؟</string>
     <string name="ah54a">سال</string>
     <string name="ah54b">معلوم نہیں</string>
+
     <string name="ah55">AH55:\t شادی کے وقت اپنی عمر سے آپ مطمئن ہیں؟</string>
     <string name="ah55a">کافی جلدی ہوئی</string>
     <string name="ah55b">ہاں ٹھیک</string>
     <string name="ah55c">کافی دیر سے ہوئی</string>
     <string name="ah55d">جواب دینے سے انکار کر دیا</string>
+
     <string name="ah56">AH56:\t آپ کے خیال میں بچے کس عمر ہونے  میں ہونے چاہئیں؟</string>
     <string name="ah56a">سال</string>
     <string name="ah56b">شادی کے فورآٓبعد</string>
+
     <string name="ah57">AH57:\t آپ کے کتنے بچے ہیں؟</string>
     <string name="ah57a">تعداد</string>
     <string name="ah57b">کوئی بچہ نہیں</string>
+
     <string name="ah58">AH58:\t آپ کتنی دفعہ حاملہ ہوئی ہیں؟</string>
     <string name="ah58a">تعداد</string>
+
     <string name="ah59">AH59:\t آپ کے کتنے حمل ضائع ہوئے ہیں</string>
     <string name="ah59a">تعداد</string>
     <string name="ah59b">کوئی نہیں</string>
+
     <string name="ah60">AH60:\t آپ کے خیال میں کتنے بچے ہونے چاہئیں؟</string>
     <string name="ah60a">تعداد</string>
 
+    <!--  SECTION-UN  -->
     <string name="un01">UN01:\t کیا آپ حمل سے ہونا چاہتی تھی؟ ہیں؟</string>
     <string name="un01a">ہاں</string>
     <string name="un01b">نہیں</string>
+
     <string name="un02">UN02:\t کیا آپ بعد میں بچہ چاہتی تھی یا بلکل ہی بچہ نہیں چاہتی تھی؟</string>
     <string name="un02a">بعد میں</string>
     <string name="un02b">بلکل نہیں چاہتی</string>
+
     <string name="un03">UN03:\t میں اب مستقبل کے بارے میں آپ سے پوچھوں گی کیا آپ اور بچے چاہتی ہیں یا آپ اور  بچے نہیں چاہتیں۔</string>
     <string name="un03a">اور بچہ چاہتی ہوں</string>
     <string name="un03b">اور نہیں</string>
     <string name="un03c">میں دوبارہ حمل سے نہیں ہو سکتی</string>
     <string name="un03d">ابھی فیصلہ نہیں کیا / معلوم نہیں</string>
+
     <string name="un04">UN04:\t اگلے بچے کی پیدائش  کے لئے آپ کتنا وقفہ دیں گی؟</string>
     <string name="un04a">مہینہ</string>
     <string name="un04b">سال</string>
     <string name="un04c">فوراً وقفہ نہیں</string>
     <string name="un04d">دوبارہ حمل سے نہیں ہوسکتی</string>
+
     <string name="un05">UN05:\t کیا آپ اس وقت حمل کے لئے جسمانی طور پہ تیار ہیں؟</string>
     <string name="un05a">ہاں</string>
     <string name="un05b">نہیں</string>
     <string name="un05c">معلوم نہیں</string>
+
     <string name="un06">UN06:\t آپ کو کیوں لگتا ہے کہ آپ جسمانی طور پہ تیار / اس قابل نہیں؟</string>
     <string name="un06a">کبھی کبھار یا  رجوع نہ کرنا</string>
     <string name="un06b">اختتام حیض</string>
@@ -3350,6 +3392,7 @@
     <string name="un06g">ماں کا دودھ پلانا</string>
     <string name="un06h">عمر زیادہ ہے</string>
     <string name="un06x">دیگر</string>
+
     <string name="un07">UN07:\t آخر بار ماہواری/ حیض کب ہوئے؟</string>
     <string name="un07a">دن پہلے</string>
     <string name="un07b">ہفتے پہلے</string>
@@ -3573,7 +3616,6 @@
     <string name='Q_un07'>un07</string>
     <string name='Q_unttitle'>unttitle</string>
 
-
     <string name="end_interview"> ختم </string>
     <string name="start_interview"> انٹرویو شروع کریں </string>
     <string name="nextSection"> اگلا </string>
@@ -3586,6 +3628,5 @@
     <string name="countAlertMsg"> یقینا! آپ جاری رکھنا چاہتے ہیں </string>
     <string name="adolescent">Adolescent</string>
     <string name="zero_count">00</string>
-
 
 </resources>
