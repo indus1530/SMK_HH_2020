@@ -368,22 +368,33 @@
                         style="@style/i_textview"
                         android:text="@string/h106" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/h106"
-                        style="@style/EditTextNum"
-                        android:hint="@string/minutes"
-                        android:maxLength="1"
-                        app:maxValue="2"
-                        app:minValue="1"
-                        app:type="range" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                    <CheckBox
-                        android:id="@+id/h10698"
-                        style="@style/checkbox"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:tag="-1"
-                        android:text="@string/dkn" />
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/h106"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:enabled='@{h10698.checked? false : true}'
+                            android:hint="@string/minutes"
+                            android:maxLength="1"
+                            android:text='@{h10698.checked? "" : h106.getText().toString()}'
+                            app:maxValue="2"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <CheckBox
+                            android:id="@+id/h10698"
+                            style="@style/checkbox"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:tag="-1"
+                            android:text="@string/dkn" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -1435,8 +1446,6 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/h117a"
                             style="@style/EditTextNum"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:hint="@string/month"
                             android:maxLength="1"
                             app:maxValue="7"
@@ -1446,8 +1455,6 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/h117b"
                             style="@style/EditTextNum"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:hint="@string/days"
                             android:maxLength="2"
                             app:defaultValue="00"

@@ -16,6 +16,8 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionJ03Binding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.JSONUtils;
@@ -250,15 +252,15 @@ public class SectionJ03Activity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
+
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SJ, MainApp.child.getsJ());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }*/
-        return true;
+        }
     }
 
     private void SaveDraft() throws JSONException {

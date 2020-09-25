@@ -88,12 +88,8 @@ public class SectionH2Activity extends AppCompatActivity {
 
         //h205a96
         bi.h205a96.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked)
-                bi.h21596x.setVisibility(View.VISIBLE);
-            else {
-                Clear.clearAllFields(bi.h21596x);
-                bi.h21596x.setVisibility(View.GONE);
-            }
+            if (!isChecked)
+                Clear.clearAllFields(bi.h205a96x);
         });
 
         //h206
@@ -292,6 +288,7 @@ public class SectionH2Activity extends AppCompatActivity {
         json.put("h205af", bi.h205af.isChecked() ? "6" : "-1");
         json.put("h205ag", bi.h205ag.isChecked() ? "7" : "-1");
         json.put("h205ah", bi.h205ah.isChecked() ? "8" : "-1");
+        json.put("h205ai", bi.h205ai.isChecked() ? "9" : "-1");
         json.put("h205a96", bi.h205a96.isChecked() ? "96" : "-1");
 
         json.put("h20596x", bi.h21896x.getText().toString().trim().isEmpty() ? "-1" : bi.h21896x.getText().toString());

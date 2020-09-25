@@ -40,7 +40,7 @@ public class SectionAH1Activity extends AppCompatActivity {
     private void setupSkips() {
 
         bi.ah1.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.ah1a.getId()) {
+            if (i == bi.ah1a.getId() || i == bi.ah1j.getId()) {
                 Clear.clearAllFields(bi.fldGrpSecAH101);
             }
         }));

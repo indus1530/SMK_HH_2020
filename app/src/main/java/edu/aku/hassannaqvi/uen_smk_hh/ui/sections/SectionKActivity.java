@@ -38,7 +38,7 @@ public class SectionKActivity extends AppCompatActivity {
 
     private void setupSkips() {
         bi.k103.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0104));
-        bi.k105.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0105));
+        //bi.k105.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0105));
     }
 
     private void setlistener() {
@@ -55,7 +55,13 @@ public class SectionKActivity extends AppCompatActivity {
             if (i == bi.k102b.getId()) {
                 Clear.clearAllFields(bi.fldGrpk1022);
             }
+        }));
 
+        bi.k103.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.k103b.getId()) {
+                Clear.clearAllFields(bi.llk0104);
+            }
         }));
 
 
@@ -184,17 +190,16 @@ public class SectionKActivity extends AppCompatActivity {
         json.put("k104l", bi.k104l.isChecked() ? "12" : "-1");
         json.put("k104m", bi.k104m.isChecked() ? "13" : "-1");
 
-        json.put("k105",
-                bi.k105a.isChecked() ? "1" :
-                        bi.k105b.isChecked() ? "2" :
-                                bi.k105c.isChecked() ? "3" :
-                                        bi.k105d.isChecked() ? "4" :
-                                                bi.k105e.isChecked() ? "5" :
-                                                        bi.k105f.isChecked() ? "6" :
-                                                                bi.k105g.isChecked() ? "7" :
-                                                                        bi.k105h.isChecked() ? "8" :
-                                                                                bi.k105i.isChecked() ? "9" :
-                                                                                        "-1");
+
+        json.put("k105a", bi.k105a.isChecked() ? "1" : "-1");
+        json.put("k105b", bi.k105b.isChecked() ? "2" : "-1");
+        json.put("k105c", bi.k105c.isChecked() ? "3" : "-1");
+        json.put("k105d", bi.k105d.isChecked() ? "4" : "-1");
+        json.put("k105e", bi.k105e.isChecked() ? "5" : "-1");
+        json.put("k105f", bi.k105f.isChecked() ? "6" : "-1");
+        json.put("k105g", bi.k105g.isChecked() ? "7" : "-1");
+        json.put("k105h", bi.k105h.isChecked() ? "8" : "-1");
+        json.put("k105i", bi.k105i.isChecked() ? "9" : "-1");
 
 
         json.put("k105aaa", bi.k105aaa.getText().toString().trim().isEmpty() ? "-1" : bi.k105aaa.getText().toString());

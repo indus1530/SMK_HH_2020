@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.validatorcrawler.aliazaz.Clear;
@@ -75,6 +76,23 @@ public class SectionAH3Activity extends AppCompatActivity {
         bi.ah23c.setMinvalue(CONSTANTS.MINYEAR1);
 
         bi.ah24011.setOnCheckedChangeListener((compoundButton, b) -> {
+
+            if (b) {
+
+                Clear.clearAllFields(bi.fldGrpCVah2401a);
+                Clear.clearAllFields(bi.fldGrpCVah25);
+                Clear.clearAllFields(bi.fldGrpCVah26);
+                bi.fldGrpCVah2401a.setVisibility(View.GONE);
+                bi.fldGrpCVah25.setVisibility(View.GONE);
+                bi.fldGrpCVah26.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVah2401a.setVisibility(View.VISIBLE);
+                bi.fldGrpCVah25.setVisibility(View.VISIBLE);
+                bi.fldGrpCVah26.setVisibility(View.VISIBLE);
+            }
+
             Clear.clearAllFields(bi.fldGrpCVah24a, !b);
         });
 

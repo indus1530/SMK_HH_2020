@@ -468,15 +468,20 @@
                         android:text="@string/h205aah" />
 
                     <CheckBox
+                        android:id="@+id/h205ai"
+                        style="@style/checkbox"
+                        android:text="@string/h205aai" />
+
+                    <CheckBox
                         android:id="@+id/h205a96"
                         style="@style/checkbox"
                         android:text="@string/h205aai" />
 
                     <EditText
-                        android:id="@+id/h21596x"
+                        android:id="@+id/h205a96x"
                         style="@style/EditTextAlpha"
                         android:hint="@string/specify"
-                        android:tag="@string/h205aai" />
+                        android:visibility='@{h205a96.checked ? View.VISIBLE : View.GONE}'/>
 
                 </LinearLayout>
 

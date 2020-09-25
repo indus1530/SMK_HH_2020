@@ -55,20 +55,32 @@ public class SectionUNActivity extends AppCompatActivity {
         }));
 
         bi.un03.setOnCheckedChangeListener(((radioGroup, i) -> {
+
             if (i == bi.un03b.getId() || i == bi.un03d.getId()) {
+
                 Clear.clearAllFields(bi.fldGrpCVun04);
                 Clear.clearAllFields(bi.fldGrpCVun05);
                 Clear.clearAllFields(bi.fldGrpCVun06);
                 bi.fldGrpCVun04.setVisibility(View.GONE);
                 bi.fldGrpCVun05.setVisibility(View.GONE);
                 bi.fldGrpCVun06.setVisibility(View.GONE);
+
             } else if (i == bi.un03c.getId()) {
+
                 bi.fldGrpCVun06.setVisibility(View.VISIBLE);
+
+                Clear.clearAllFields(bi.fldGrpCVun04);
+                Clear.clearAllFields(bi.fldGrpCVun05);
+                bi.fldGrpCVun04.setVisibility(View.GONE);
+                bi.fldGrpCVun05.setVisibility(View.GONE);
+
             } else {
+
                 bi.fldGrpCVun04.setVisibility(View.VISIBLE);
                 bi.fldGrpCVun05.setVisibility(View.VISIBLE);
                 bi.fldGrpCVun06.setVisibility(View.VISIBLE);
             }
+
         }));
 
     }

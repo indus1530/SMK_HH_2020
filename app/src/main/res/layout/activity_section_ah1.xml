@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility='@{ah1a.checked? View.GONE : View.VISIBLE}'>
+                    android:visibility='@{ah1a.checked || ah1j.checked? View.GONE : View.VISIBLE}'>
 
                     <!-- ah2  Radio   -->
                     <androidx.cardview.widget.CardView
