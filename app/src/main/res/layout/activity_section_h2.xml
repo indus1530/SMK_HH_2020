@@ -917,6 +917,12 @@
                             style="@style/checkbox"
                             android:text="@string/h2091g" />
 
+                        <CheckBox
+                            android:id="@+id/h2091h"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/h2091h" />
+
                     </LinearLayout>
 
                 </LinearLayout>

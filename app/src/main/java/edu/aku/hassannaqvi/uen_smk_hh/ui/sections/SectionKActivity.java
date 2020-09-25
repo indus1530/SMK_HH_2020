@@ -110,6 +110,12 @@ public class SectionKActivity extends AppCompatActivity {
             }
         });
 
+
+        bi.k1072h.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            Clear.Companion.clearAllFields(bi.k1072check, !isChecked);
+            Clear.Companion.clearAllFields(bi.k1072check03, !isChecked);
+        });
+
     }
 
     public void BtnContinue() {

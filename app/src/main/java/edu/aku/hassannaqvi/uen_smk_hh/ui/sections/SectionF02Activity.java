@@ -120,6 +120,29 @@ public class SectionF02Activity extends AppCompatActivity {
 
         });
 
+        //g1251
+        bi.f1212c.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (!isChecked) {
+
+                Clear.clearAllFields(bi.f1212d);
+                Clear.clearAllFields(bi.f1212e);
+                Clear.clearAllFields(bi.f1212f);
+                Clear.clearAllFields(bi.f1212g);
+
+                bi.f1212d.setVisibility(View.GONE);
+                bi.f1212e.setVisibility(View.GONE);
+                bi.f1212f.setVisibility(View.GONE);
+                bi.f1212g.setVisibility(View.GONE);
+
+            } else {
+
+                bi.f1212d.setVisibility(View.VISIBLE);
+                bi.f1212e.setVisibility(View.VISIBLE);
+                bi.f1212f.setVisibility(View.VISIBLE);
+                bi.f1212g.setVisibility(View.VISIBLE);
+            }
+        });
+
         bi.f1212h.setOnCheckedChangeListener((buttonView, isChecked) -> {
             Clear.Companion.clearAllFields(bi.f1212check, !isChecked);
         });

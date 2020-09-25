@@ -150,6 +150,32 @@ public class SectionH2Activity extends AppCompatActivity {
             }
         });
 
+        bi.h2091h.setOnCheckedChangeListener((buttonView, isChecked) -> {
+
+            if (!isChecked) {
+
+                Clear.clearAllFields(bi.h2091d);
+                Clear.clearAllFields(bi.h2091e);
+                Clear.clearAllFields(bi.h2091f);
+                Clear.clearAllFields(bi.h2091g);
+
+                bi.h2091d.setVisibility(View.GONE);
+                bi.h2091e.setVisibility(View.GONE);
+                bi.h2091f.setVisibility(View.GONE);
+                bi.h2091g.setVisibility(View.GONE);
+
+            } else {
+
+                bi.h2091d.setVisibility(View.VISIBLE);
+                bi.h2091e.setVisibility(View.VISIBLE);
+                bi.h2091f.setVisibility(View.VISIBLE);
+                bi.h2091g.setVisibility(View.VISIBLE);
+            }
+
+            Clear.Companion.clearAllFields(bi.h2091check, !isChecked);
+
+        });
+
         //h20798
         bi.h20798.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
@@ -344,10 +370,11 @@ public class SectionH2Activity extends AppCompatActivity {
         json.put("h209aa", bi.h2091a.isChecked() ? "1" : "-1");
         json.put("h209ab", bi.h2091b.isChecked() ? "2" : "-1");
         json.put("h209ac", bi.h2091c.isChecked() ? "3" : "-1");
-        json.put("h209ad", bi.h2091d.isChecked() ? "3a" : "-1");
-        json.put("h209ae", bi.h2091e.isChecked() ? "3b" : "-1");
-        json.put("h209af", bi.h2091f.isChecked() ? "3c" : "-1");
-        json.put("h209ag", bi.h2091g.isChecked() ? "3d" : "-1");
+        json.put("h209ad", bi.h2091d.isChecked() ? "4" : "-1");
+        json.put("h209ae", bi.h2091e.isChecked() ? "5" : "-1");
+        json.put("h209af", bi.h2091f.isChecked() ? "6" : "-1");
+        json.put("h209ag", bi.h2091g.isChecked() ? "7" : "-1");
+        json.put("h209ah", bi.h2091h.isChecked() ? "8" : "-1");
 
         json.put("h210", bi.h210a.isChecked() ? "1" :
                 bi.h210b.isChecked() ? "2" :

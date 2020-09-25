@@ -696,6 +696,12 @@
 
                     </LinearLayout>
 
+                    <CheckBox
+                        android:id="@+id/k1072h"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/k1072h" />
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
