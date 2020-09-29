@@ -273,14 +273,16 @@ public class SectionDActivity extends AppCompatActivity {
 
         if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
             mainVModel.setMWRA(fmc);
-        else if (Integer.parseInt(fmc.getAge()) < 2) {
+        else if (Integer.parseInt(fmc.getAge()) < 5) {
             mainVModel.setChildU2(fmc);
             if (motherFMC == null) return;
             if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) <= 49 && motherFMC.getAvailable().equals("1"))
                 mainVModel.setMwraChildU2(motherFMC);
         }
-        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) < 19 && bi.d105b.isChecked())
+        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) <= 19 && bi.d105b.isChecked()) {
+
             mainVModel.setAdols(fmc);
+        }
     }
 
     private boolean formValidation() {
@@ -453,7 +455,7 @@ public class SectionDActivity extends AppCompatActivity {
             bi.fldGrpSectionD03.setVisibility(View.GONE);
         }
 
-        if (calAge >= 13)
+        if (calAge >= 10)
             bi.fldGrpCVd105.setVisibility(View.VISIBLE);
         else {
             bi.d105.clearCheck();
