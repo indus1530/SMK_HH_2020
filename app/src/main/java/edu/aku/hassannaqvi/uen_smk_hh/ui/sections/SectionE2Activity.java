@@ -76,7 +76,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         bi.e105.setOnCheckedChangeListener(((radioGroup, i) -> {
 
-            MainApp.twinFlag = i == bi.e105c.getId() || i == bi.e105d.getId() || i == bi.e105e.getId();
+            MainApp.twinFlag = i == bi.e105c.getId() || i == bi.e105d.getId();
 
             if (i == bi.e105b.getId() || i == bi.e105d.getId() || i == bi.e105e.getId()) {
 

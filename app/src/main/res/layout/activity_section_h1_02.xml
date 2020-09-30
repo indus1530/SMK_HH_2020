@@ -191,11 +191,6 @@
                                 style="@style/radiobutton"
                                 android:text="@string/h124e" />
 
-                            <RadioButton
-                                android:id="@+id/h12498"
-                                style="@style/radiobutton"
-                                android:text="@string/dkn" />
-
                         </RadioGroup>
 
                     </LinearLayout>
@@ -992,12 +987,12 @@
                                 style="@style/checkbox"
                                 android:text="@string/h1321g" />
 
-                            <CheckBox
-                                android:id="@+id/h1321h"
-                                style="@style/checkbox"
-                                android:text="@string/h1321h" />
-
                         </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/h1321h"
+                            style="@style/checkbox"
+                            android:text="@string/h1321h"/>
 
                     </LinearLayout>
 

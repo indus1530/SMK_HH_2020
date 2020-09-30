@@ -142,9 +142,13 @@ public class SectionH2Activity extends AppCompatActivity {
         });
 
         bi.h2091c.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked)
+            if (isChecked) {
                 bi.h2091check03.setVisibility(View.VISIBLE);
-            else {
+                bi.h2091d.setEnabled(true);
+                bi.h2091e.setEnabled(true);
+                bi.h2091f.setEnabled(true);
+                bi.h2091g.setEnabled(true);
+            } else {
                 Clear.clearAllFields(bi.h2091check03);
                 bi.h2091check03.setVisibility(View.GONE);
             }
@@ -152,28 +156,30 @@ public class SectionH2Activity extends AppCompatActivity {
 
         bi.h2091h.setOnCheckedChangeListener((buttonView, isChecked) -> {
 
-            if (!isChecked) {
+            if (isChecked) {
 
-                Clear.clearAllFields(bi.h2091d);
-                Clear.clearAllFields(bi.h2091e);
-                Clear.clearAllFields(bi.h2091f);
-                Clear.clearAllFields(bi.h2091g);
+                bi.h2091a.setChecked(false);
+                bi.h2091b.setChecked(false);
+                bi.h2091c.setChecked(false);
+                bi.h2091d.setChecked(false);
+                bi.h2091e.setChecked(false);
+                bi.h2091f.setChecked(false);
+                bi.h2091g.setChecked(false);
 
-                bi.h2091d.setVisibility(View.GONE);
-                bi.h2091e.setVisibility(View.GONE);
-                bi.h2091f.setVisibility(View.GONE);
-                bi.h2091g.setVisibility(View.GONE);
+                bi.h2091a.setEnabled(false);
+                bi.h2091b.setEnabled(false);
+                bi.h2091c.setEnabled(false);
+                bi.h2091d.setEnabled(false);
+                bi.h2091e.setEnabled(false);
+                bi.h2091f.setEnabled(false);
+                bi.h2091g.setEnabled(false);
 
             } else {
 
-                bi.h2091d.setVisibility(View.VISIBLE);
-                bi.h2091e.setVisibility(View.VISIBLE);
-                bi.h2091f.setVisibility(View.VISIBLE);
-                bi.h2091g.setVisibility(View.VISIBLE);
+                bi.h2091a.setEnabled(true);
+                bi.h2091b.setEnabled(true);
+                bi.h2091c.setEnabled(true);
             }
-
-            Clear.Companion.clearAllFields(bi.h2091check, !isChecked);
-
         });
 
         //h20798

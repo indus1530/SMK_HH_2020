@@ -339,6 +339,16 @@ public class SectionDActivity extends AppCompatActivity {
 
     private void setListeners() {
 
+        //D110a
+        bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.d110a.getId()) {
+                bi.d111f.setEnabled(false);
+                bi.d111g.setEnabled(false);
+            }
+
+        }));
+
         EditText[] txtListener = new EditText[]{bi.d108a, bi.d108b};
         for (EditText txtItem : txtListener) {
 
@@ -489,13 +499,14 @@ public class SectionDActivity extends AppCompatActivity {
             bi.d110l.setEnabled(true);
             bi.d110m.setEnabled(true);
 
-            if (fmc.getGender().equals("2")) {
+            /*if (fmc.getGender().equals("2")) {
                 bi.d111a.setEnabled(true);
             } else {
                 bi.d111a.setEnabled(false);
                 bi.d111a.setChecked(false);
-            }
+            }*/
 
+            //bi.d111g.setEnabled(true);
             bi.d111g.setEnabled(true);
             bi.d111j.setEnabled(true);
         }

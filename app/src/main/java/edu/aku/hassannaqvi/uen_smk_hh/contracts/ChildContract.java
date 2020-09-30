@@ -43,15 +43,15 @@ public class ChildContract {
 
     public ChildContract hydrate(Cursor cursor) {
 
-        this._ID         = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN__ID));
-        this.UID         = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_UID));
-        this._UUID       = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN__UUID));
-        this.deviceId    = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_DEVICEID));
-        this.formDate    = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_FORMDATE));
-        this.user        = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_USER));
-        this.sH1         = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_SH1));
-        this.sJ          = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_SJ));
-        this.devicetagID = cursor.getString(cursor.getColumnIndex(SingleChild.COLUMN_DEVICETAGID));
+        this._ID         = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN__ID));
+        this.UID         = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_UID));
+        this._UUID       = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN__UUID));
+        this.deviceId    = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_DEVICEID));
+        this.formDate    = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_FORMDATE));
+        this.user        = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_USER));
+        this.sH1         = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_SH1));
+        this.sJ          = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_SJ));
+        this.devicetagID = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_DEVICETAGID));
 
         return this;
     }
@@ -59,22 +59,22 @@ public class ChildContract {
     public JSONObject toJSONObject() throws JSONException {
 
         JSONObject json = new JSONObject();
-        json.put(SingleChild.COLUMN__ID, this._ID == null ? JSONObject.NULL : this._ID);
-        json.put(SingleChild.COLUMN_UID, this.UID == null ? JSONObject.NULL : this.UID);
-        json.put(SingleChild.COLUMN__UUID, this._UUID == null ? JSONObject.NULL : this._UUID);
-        json.put(SingleChild.COLUMN_DEVICEID, this.deviceId == null ? JSONObject.NULL : this.deviceId);
-        json.put(SingleChild.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
-        json.put(SingleChild.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
+        json.put(ChildTable.COLUMN__ID, this._ID == null ? JSONObject.NULL : this._ID);
+        json.put(ChildTable.COLUMN_UID, this.UID == null ? JSONObject.NULL : this.UID);
+        json.put(ChildTable.COLUMN__UUID, this._UUID == null ? JSONObject.NULL : this._UUID);
+        json.put(ChildTable.COLUMN_DEVICEID, this.deviceId == null ? JSONObject.NULL : this.deviceId);
+        json.put(ChildTable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
+        json.put(ChildTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
 
         if (this.sH1 != null && !this.sH1.equals("")) {
-            json.put(SingleChild.COLUMN_SH1, this.sH1.equals("") ? JSONObject.NULL : new JSONObject(this.sH1));
+            json.put(ChildTable.COLUMN_SH1, this.sH1.equals("") ? JSONObject.NULL : new JSONObject(this.sH1));
         }
 
         if (this.sJ != null && !this.sJ.equals("")) {
-            json.put(SingleChild.COLUMN_SJ, this.sJ.equals("") ? JSONObject.NULL : new JSONObject(this.sJ));
+            json.put(ChildTable.COLUMN_SJ, this.sJ.equals("") ? JSONObject.NULL : new JSONObject(this.sJ));
         }
 
-        json.put(SingleChild.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
+        json.put(ChildTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
 
         return json;
     }
@@ -167,7 +167,7 @@ public class ChildContract {
         this.synced_date = synced_date;
     }
 
-    public static abstract class SingleChild implements BaseColumns {
+    public static abstract class ChildTable implements BaseColumns {
 
         public static final String TABLE_NAME = "child_table";
         public static final String COLUMN__ID = "_id"; // autoincreament

@@ -34,6 +34,8 @@ public class SectionKActivity extends AppCompatActivity {
 
         setlistener();
         setupSkips();
+
+        bi.fldGrpCVk106.setVisibility(View.VISIBLE);
     }
 
     private void setupSkips() {

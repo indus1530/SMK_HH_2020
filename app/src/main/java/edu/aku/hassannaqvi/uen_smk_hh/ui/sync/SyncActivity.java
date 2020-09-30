@@ -33,6 +33,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.adapter.SyncListAdapter;
 import edu.aku.hassannaqvi.uen_smk_hh.adapter.UploadListAdapter;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
@@ -171,11 +172,11 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             new SyncAllData(
                     this,
                     "SingleAdolscent",
-                    "updateSyncedChildForms",
+                    "updateSyncedAdolsForms",
                     AdolscentContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     AdolscentContract.SingleAdolscent.TABLE_NAME,
-                    db.getUnsyncedChildForms(), 1, uploadListAdapter, uploadlist
+                    db.getUnsyncedAdolscentForms(), 1, uploadListAdapter, uploadlist
             ).execute();
 
             if (uploadlistActivityCreated) {
@@ -207,7 +208,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedPregMWRA(), 3, uploadListAdapter, uploadlist
             ).execute();
 
-            if (uploadlistActivityCreated) {
+            /*if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
                 uploadlist.add(uploadmodel);
@@ -220,7 +221,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     MortalityContract.SingleMortality.TABLE_NAME,
                     db.getUnsyncedMortality(), 4, uploadListAdapter, uploadlist
-            ).execute();
+            ).execute();*/
 
 
             if (uploadlistActivityCreated) {
@@ -235,7 +236,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MWRA_PREContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FamilyMembersContract.SingleMember.TABLE_NAME,
-                    db.getAllFamilyMembersForms(), 5, uploadListAdapter, uploadlist
+                    db.getAllFamilyMembersForms(), 4, uploadListAdapter, uploadlist
             ).execute();
 
             if (uploadlistActivityCreated) {
@@ -250,7 +251,22 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MWRA_PREContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     MWRAContract.MWRATable.TABLE_NAME,
-                    db.getUnsyncedMWRA(), 6, uploadListAdapter, uploadlist
+                    db.getUnsyncedMWRA(), 5, uploadListAdapter, uploadlist
+            ).execute();
+
+            if (uploadlistActivityCreated) {
+                uploadmodel = new SyncModel();
+                uploadmodel.setstatusID(0);
+                uploadlist.add(uploadmodel);
+            }
+            new SyncAllData(
+                    this,
+                    "ChildTable",
+                    "updateSyncedChildForms",
+                    ChildContract.class,
+                    MainApp._HOST_URL + MainApp._SERVER_URL,
+                    ChildContract.ChildTable.TABLE_NAME,
+                    db.getUnsyncedChildsForms(), 6, uploadListAdapter, uploadlist
             ).execute();
 
 

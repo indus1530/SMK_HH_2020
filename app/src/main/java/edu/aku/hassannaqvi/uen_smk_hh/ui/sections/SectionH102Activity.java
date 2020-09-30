@@ -134,21 +134,31 @@ public class SectionH102Activity extends AppCompatActivity {
 
             if (i == bi.h132a.getId()) {
 
+
                 bi.fldGrpCVh133.setVisibility(View.VISIBLE);
-                Clear.clearAllFields(bi.fldGrpCVh1321);
-                bi.fldGrpCVh1321.setVisibility(View.GONE);
+
+                if (MainApp.selectedKishMWRA.isCoronaCase()) {
+                    Clear.clearAllFields(bi.fldGrpCVh1321);
+                    bi.fldGrpCVh1321.setVisibility(View.GONE);
+                }
 
             } else if (i == bi.h132b.getId()) {
 
-                bi.fldGrpCVh1321.setVisibility(View.VISIBLE);
+                if (MainApp.selectedKishMWRA.isCoronaCase()) {
+                    bi.fldGrpCVh1321.setVisibility(View.VISIBLE);
+                }
                 Clear.clearAllFields(bi.fldGrpCVh133);
                 bi.fldGrpCVh133.setVisibility(View.GONE);
 
             } else {
 
-                Clear.clearAllFields(bi.fldGrpCVh1321);
+                if (MainApp.selectedKishMWRA.isCoronaCase()) {
+
+                    Clear.clearAllFields(bi.fldGrpCVh1321);
+                    bi.fldGrpCVh1321.setVisibility(View.GONE);
+                }
+
                 Clear.clearAllFields(bi.fldGrpCVh133);
-                bi.fldGrpCVh1321.setVisibility(View.GONE);
                 bi.fldGrpCVh133.setVisibility(View.GONE);
             }
 
@@ -202,7 +212,7 @@ public class SectionH102Activity extends AppCompatActivity {
         });
 
         //h132
-        bi.h132.setOnCheckedChangeListener((group, checkedId) -> {
+        /*bi.h132.setOnCheckedChangeListener((group, checkedId) -> {
 
             if (checkedId == bi.h132a.getId()) {
                 if (MainApp.selectedKishMWRA.isCoronaCase())
@@ -214,7 +224,7 @@ public class SectionH102Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVh133);
                 bi.fldGrpCVh133.setVisibility(View.GONE);
             }
-        });
+        });*/
 
         //h1321
         bi.h1321c.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -230,11 +240,17 @@ public class SectionH102Activity extends AppCompatActivity {
 
             if (!isChecked) {
 
+                Clear.clearAllFields(bi.h1321a);
+                Clear.clearAllFields(bi.h1321b);
+                Clear.clearAllFields(bi.h1321c);
                 Clear.clearAllFields(bi.h1321d);
                 Clear.clearAllFields(bi.h1321e);
                 Clear.clearAllFields(bi.h1321f);
                 Clear.clearAllFields(bi.h1321g);
 
+                bi.h1321a.setVisibility(View.GONE);
+                bi.h1321b.setVisibility(View.GONE);
+                bi.h1321c.setVisibility(View.GONE);
                 bi.h1321d.setVisibility(View.GONE);
                 bi.h1321e.setVisibility(View.GONE);
                 bi.h1321f.setVisibility(View.GONE);
@@ -242,13 +258,14 @@ public class SectionH102Activity extends AppCompatActivity {
 
             } else {
 
+                bi.h1321a.setVisibility(View.VISIBLE);
+                bi.h1321b.setVisibility(View.VISIBLE);
+                bi.h1321c.setVisibility(View.VISIBLE);
                 bi.h1321d.setVisibility(View.VISIBLE);
                 bi.h1321e.setVisibility(View.VISIBLE);
                 bi.h1321f.setVisibility(View.VISIBLE);
                 bi.h1321g.setVisibility(View.VISIBLE);
             }
-
-            Clear.Companion.clearAllFields(bi.h1321check, !isChecked);
         });
 
         //h13598
@@ -294,7 +311,7 @@ public class SectionH102Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SH1, MainApp.child.getsH1());
+        int updcount = db.updatesChildColumn(ChildContract.ChildTable.COLUMN_SH1, MainApp.child.getsH1());
         if (updcount == 1) {
             return true;
         } else {
@@ -319,8 +336,7 @@ public class SectionH102Activity extends AppCompatActivity {
                 bi.h124b.isChecked() ? "2" :
                         bi.h124c.isChecked() ? "3" :
                                 bi.h124d.isChecked() ? "4" :
-                                        bi.h124e.isChecked() ? "5" :
-                                                bi.h12498.isChecked() ? "98" : "-1");
+                                        bi.h124e.isChecked() ? "5" : "-1");
 
         json.put("h125", bi.h125a.isChecked() ? "1" :
                 bi.h125b.isChecked() ? "2" : "-1");

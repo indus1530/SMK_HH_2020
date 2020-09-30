@@ -25,6 +25,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 public class SectionJ02Activity extends AppCompatActivity {
 
     ActivitySectionJ02Binding bi;
+    int totalMonth = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +67,8 @@ public class SectionJ02Activity extends AppCompatActivity {
         bi.j10417y.setMinvalue(CONSTANTS.MINYEAR_IM);
 
         //Immunization visibility
-        int totalMonth = (Integer.valueOf(MainApp.indexKishMWRAChild.getAge()) * 12) + Integer.valueOf(MainApp.indexKishMWRAChild.getMonthfm());
+        //totalMonth = (Integer.valueOf(MainApp.indexKishMWRAChild.getAge()) * 12) + Integer.valueOf(MainApp.indexKishMWRAChild.getMonthfm());
+        totalMonth = (Integer.parseInt(MainApp.indexKishMWRAChild.getAge()) * 12) + Integer.parseInt(MainApp.indexKishMWRAChild.getMonthfm());
 
         if (totalMonth > 2) {
             bi.fldGrpCVj10409.setVisibility(View.VISIBLE);
@@ -113,7 +115,7 @@ public class SectionJ02Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesChildColumn(ChildContract.SingleChild.COLUMN_SJ, MainApp.child.getsJ());
+        int updcount = db.updatesChildColumn(ChildContract.ChildTable.COLUMN_SJ, MainApp.child.getsJ());
         if (updcount == 1) {
             return true;
         } else {

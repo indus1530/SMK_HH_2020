@@ -475,7 +475,7 @@
                     <CheckBox
                         android:id="@+id/h205a96"
                         style="@style/checkbox"
-                        android:text="@string/h205aai" />
+                        android:text="@string/specify" />
 
                     <EditText
                         android:id="@+id/h205a96x"
@@ -917,13 +917,13 @@
                             style="@style/checkbox"
                             android:text="@string/h2091g" />
 
-                        <CheckBox
-                            android:id="@+id/h2091h"
-                            style="@style/checkbox"
-                            android:tag="-1"
-                            android:text="@string/h2091h" />
-
                     </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/h2091h"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/h2091h" />
 
                 </LinearLayout>
 

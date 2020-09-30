@@ -158,18 +158,18 @@ public final class CreateTable {
             + SingleAdolscent.COLUMN_SYNCED + " TEXT,"
             + SingleAdolscent.COLUMN_SYNCED_DATE + " TEXT );";
 
-    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + ChildContract.SingleChild.TABLE_NAME + "("
-            + ChildContract.SingleChild._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + ChildContract.SingleChild.COLUMN_UID + " TEXT,"
-            + ChildContract.SingleChild.COLUMN__UUID + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_DEVICEID + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_FORMDATE + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_USER + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_SH1 + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_SJ + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_DEVICETAGID + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_SYNCED + " TEXT,"
-            + ChildContract.SingleChild.COLUMN_SYNCED_DATE + " TEXT );";
+    public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + ChildContract.ChildTable.TABLE_NAME + "("
+            + ChildContract.ChildTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + ChildContract.ChildTable.COLUMN_UID + " TEXT,"
+            + ChildContract.ChildTable.COLUMN__UUID + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_DEVICEID + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_FORMDATE + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_USER + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_SH1 + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_SJ + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_DEVICETAGID + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_SYNCED + " TEXT,"
+            + ChildContract.ChildTable.COLUMN_SYNCED_DATE + " TEXT );";
 
     public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
             + SingleMortality._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"

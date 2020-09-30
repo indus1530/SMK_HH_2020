@@ -741,19 +741,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
 //        values.put(MWRATable._ID, mwra.get_ID());
-        values.put(ChildContract.SingleChild.COLUMN__UUID, childContract.get_UUID());
-        values.put(ChildContract.SingleChild.COLUMN_DEVICEID, childContract.getDeviceId());
-        values.put(ChildContract.SingleChild.COLUMN_FORMDATE, childContract.getFormDate());
-        values.put(ChildContract.SingleChild.COLUMN_USER, childContract.getUser());
-        values.put(ChildContract.SingleChild.COLUMN_SH1, childContract.getsH1());
-        values.put(ChildContract.SingleChild.COLUMN_SJ, childContract.getsJ());
-        values.put(ChildContract.SingleChild.COLUMN_DEVICETAGID, childContract.getDevicetagID());
+        values.put(ChildContract.ChildTable.COLUMN__UUID, childContract.get_UUID());
+        values.put(ChildContract.ChildTable.COLUMN_DEVICEID, childContract.getDeviceId());
+        values.put(ChildContract.ChildTable.COLUMN_FORMDATE, childContract.getFormDate());
+        values.put(ChildContract.ChildTable.COLUMN_USER, childContract.getUser());
+        values.put(ChildContract.ChildTable.COLUMN_SH1, childContract.getsH1());
+        values.put(ChildContract.ChildTable.COLUMN_SJ, childContract.getsJ());
+        values.put(ChildContract.ChildTable.COLUMN_DEVICETAGID, childContract.getDevicetagID());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                ChildContract.SingleChild.TABLE_NAME,
+                ChildContract.ChildTable.TABLE_NAME,
                 null,
                 values);
         return newRowId;
@@ -1364,26 +1364,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allFC;
     }
 
-
-
-    public Collection<ChildContract> getUnsyncedChildForms() {
+    public Collection<ChildContract> getUnsyncedChildsForms() {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                ChildContract.SingleChild._ID,
-                ChildContract.SingleChild.COLUMN_UID,
-                ChildContract.SingleChild.COLUMN__UUID,
-                ChildContract.SingleChild.COLUMN_DEVICEID,
-                ChildContract.SingleChild.COLUMN_FORMDATE,
-                ChildContract.SingleChild.COLUMN_USER,
-                ChildContract.SingleChild.COLUMN_SH1,
-                ChildContract.SingleChild.COLUMN_SJ,
-                ChildContract.SingleChild.COLUMN_DEVICETAGID,
+                ChildContract.ChildTable._ID,
+                ChildContract.ChildTable.COLUMN_UID,
+                ChildContract.ChildTable.COLUMN__UUID,
+                ChildContract.ChildTable.COLUMN_DEVICEID,
+                ChildContract.ChildTable.COLUMN_FORMDATE,
+                ChildContract.ChildTable.COLUMN_USER,
+                ChildContract.ChildTable.COLUMN_SH1,
+                ChildContract.ChildTable.COLUMN_SJ,
+                ChildContract.ChildTable.COLUMN_DEVICETAGID,
         };
 
 
-        String whereClause = ChildContract.SingleChild.COLUMN_SYNCED + " is null";
+        String whereClause = ChildContract.ChildTable.COLUMN_SYNCED + " is null";
 
         String[] whereArgs = null;
 
@@ -1391,12 +1389,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
 
         String orderBy =
-                ChildContract.SingleChild._ID + " ASC";
+                ChildContract.ChildTable._ID + " ASC";
 
         Collection<ChildContract> allFC = new ArrayList<ChildContract>();
         try {
             c = db.query(
-                    ChildContract.SingleChild.TABLE_NAME,  // The table to query
+                    ChildContract.ChildTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -1719,10 +1717,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(column, value);
 
-        String selection = ChildContract.SingleChild._ID + " =? ";
+        String selection = ChildContract.ChildTable._ID + " =? ";
         String[] selectionArgs = {String.valueOf(MainApp.child.get_ID())};
 
-        return db.update(ChildContract.SingleChild.TABLE_NAME,
+        return db.update(ChildContract.ChildTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1775,7 +1773,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void updateSyncedChildForms(String id) {
+    public void updateSyncedAdolsForms(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
@@ -1871,6 +1869,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void updateSyncedMWRAForms(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(MWRATable.COLUMN_SYNCED, true);
+        values.put(MWRATable.COLUMN_SYNCED_DATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = MWRATable._ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                MWRATable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedChildForms(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column

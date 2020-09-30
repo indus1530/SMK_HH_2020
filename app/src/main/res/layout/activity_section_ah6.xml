@@ -770,55 +770,57 @@
                             style="@style/i_textview"
                             android:text="@string/ah40aa" />
 
-                        <RadioGroup
-                            android:id="@+id/AH40aa"
-                            style="@style/radiogroup"
-                            android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/ah40aa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="0">
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aaa"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aaa" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aab"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aab" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aac"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aac" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aad"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aad" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aae"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aae" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aaf"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aaf" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aag"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aag" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aah"
-                                style="@style/radiobutton"
+                                style="@style/checkbox"
                                 android:text="@string/ah40aah" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/ah40aa96"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
+                                style="@style/checkbox"
+                                android:text="@string/specify" />
 
                             <EditText
                                 android:id="@+id/ah40aa96x"
@@ -828,7 +830,7 @@
                                 android:text='@{ah40aa96.checked? ah40aa96x.getText().toString() : ""}'
                                 android:visibility='@{ah40aa96.checked? View.VISIBLE : View.GONE}' />
 
-                        </RadioGroup>
+                        </LinearLayout>
 
                     </LinearLayout>
 

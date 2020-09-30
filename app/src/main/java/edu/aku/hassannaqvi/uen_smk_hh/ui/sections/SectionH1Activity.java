@@ -196,7 +196,7 @@ public class SectionH1Activity extends AppCompatActivity {
         if (updcount > 0) {
             MainApp.child.set_ID(String.valueOf(updcount));
             MainApp.child.setUID(MainApp.child.getDeviceId() + MainApp.child.get_ID());
-            db.updatesChildColumn(ChildContract.SingleChild.COLUMN_UID, MainApp.child.getUID());
+            db.updatesChildColumn(ChildContract.ChildTable.COLUMN_UID, MainApp.child.getUID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
