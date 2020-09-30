@@ -22,7 +22,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscen
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AreasContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AreasContract.singleAreas;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.SingleRandomHH;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.RandomHH;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract.EnumBlockTable;
@@ -47,6 +47,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.VillagesContract.SingleVillage;
 
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.DATABASE_NAME;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.DATABASE_VERSION;
+import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_ADOLSCENT_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_BL_RANDOM;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_CHILD_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
@@ -58,7 +59,6 @@ import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MWRA_T
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_PSU_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_USERS;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_VERSIONAPP;
-import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_ADOLSCENT_TABLE;
 
 
 /**
@@ -192,7 +192,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void syncBLRandom(JSONArray BLlist) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(SingleRandomHH.TABLE_NAME, null, null);
+        db.delete(RandomHH.TABLE_NAME, null, null);
         try {
             JSONArray jsonArray = BLlist;
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -203,19 +203,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 ContentValues values = new ContentValues();
 
-                values.put(SingleRandomHH.COLUMN_ID, Vc.get_ID());
-                values.put(SingleRandomHH.COLUMN_LUID, Vc.getLUID());
-                values.put(SingleRandomHH.COLUMN_STRUCTURE_NO, Vc.getStructure());
-                values.put(SingleRandomHH.COLUMN_FAMILY_EXT_CODE, Vc.getExtension());
-                values.put(SingleRandomHH.COLUMN_HH, Vc.getHh());
-                values.put(SingleRandomHH.COLUMN_ENUM_BLOCK_CODE, Vc.getSubVillageCode());
-                values.put(SingleRandomHH.COLUMN_RANDOMDT, Vc.getRandomDT());
-                values.put(SingleRandomHH.COLUMN_HH_HEAD, Vc.getHhhead());
-                values.put(SingleRandomHH.COLUMN_CONTACT, Vc.getContact());
-                values.put(SingleRandomHH.COLUMN_HH_SELECTED_STRUCT, Vc.getSelStructure());
-                values.put(SingleRandomHH.COLUMN_SNO_HH, Vc.getSno());
+                values.put(RandomHH.COLUMN_ID, Vc.get_ID());
+                values.put(RandomHH.COLUMN_LUID, Vc.getLUID());
+                values.put(RandomHH.COLUMN_STRUCTURE_NO, Vc.getStructure());
+                values.put(RandomHH.COLUMN_FAMILY_EXT_CODE, Vc.getExtension());
+                values.put(RandomHH.COLUMN_HH, Vc.getHh());
+                values.put(RandomHH.COLUMN_ENUM_BLOCK_CODE, Vc.getSubVillageCode());
+                values.put(RandomHH.COLUMN_RANDOMDT, Vc.getRandomDT());
+                values.put(RandomHH.COLUMN_HH_HEAD, Vc.getHhhead());
+                values.put(RandomHH.COLUMN_CONTACT, Vc.getContact());
+                values.put(RandomHH.COLUMN_HH_SELECTED_STRUCT, Vc.getSelStructure());
+                values.put(RandomHH.COLUMN_SNO_HH, Vc.getSno());
 
-                db.insert(SingleRandomHH.TABLE_NAME, null, values);
+                db.insert(RandomHH.TABLE_NAME, null, values);
             }
         } catch (Exception e) {
         } finally {
@@ -513,7 +513,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void syncUser(JSONArray userlist) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(UsersContract.singleUser.TABLE_NAME, null, null);
+        db.delete(UsersContract.UsersTable.TABLE_NAME, null, null);
         try {
             JSONArray jsonArray = userlist;
             for (int i = 0; i < jsonArray.length(); i++) {
@@ -524,11 +524,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 user.Sync(jsonObjectUser);
                 ContentValues values = new ContentValues();
 
-                values.put(UsersContract.singleUser.ROW_USERNAME, user.getUserName());
-                values.put(UsersContract.singleUser.ROW_PASSWORD, user.getPassword());
-                values.put(UsersContract.singleUser.DIST_ID, user.getDIST_ID());
+                values.put(UsersContract.UsersTable.ROW_USERNAME, user.getUserName());
+                values.put(UsersContract.UsersTable.ROW_PASSWORD, user.getPassword());
+                values.put(UsersContract.UsersTable.DIST_ID, user.getDIST_ID());
 //                values.put(singleUser.REGION_DSS, user.getREGION_DSS());
-                db.insert(UsersContract.singleUser.TABLE_NAME, null, values);
+                db.insert(UsersContract.UsersTable.TABLE_NAME, null, values);
             }
 
 
@@ -542,13 +542,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean Login(String username, String password) throws SQLException {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor mCursor = db.rawQuery("SELECT * FROM " + UsersContract.singleUser.TABLE_NAME + " WHERE " + UsersContract.singleUser.ROW_USERNAME + "=? AND " + UsersContract.singleUser.ROW_PASSWORD + "=?", new String[]{username, password});
+        Cursor mCursor = db.rawQuery("SELECT * FROM " + UsersContract.UsersTable.TABLE_NAME + " WHERE " + UsersContract.UsersTable.ROW_USERNAME + "=? AND " + UsersContract.UsersTable.ROW_PASSWORD + "=?", new String[]{username, password});
         if (mCursor != null) {
 
             if (mCursor.getCount() > 0) {
 
                 if (mCursor.moveToFirst()) {
-                    MainApp.DIST_ID = mCursor.getString(mCursor.getColumnIndex(UsersContract.singleUser.DIST_ID));
+                    MainApp.DIST_ID = mCursor.getString(mCursor.getColumnIndex(UsersContract.UsersTable.DIST_ID));
                 }
                 return true;
             }
@@ -1508,31 +1508,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                SingleRandomHH.COLUMN_ID,
-                SingleRandomHH.COLUMN_LUID,
-                SingleRandomHH.COLUMN_STRUCTURE_NO,
-                SingleRandomHH.COLUMN_FAMILY_EXT_CODE,
-                SingleRandomHH.COLUMN_HH,
-                SingleRandomHH.COLUMN_ENUM_BLOCK_CODE,
-                SingleRandomHH.COLUMN_RANDOMDT,
-                SingleRandomHH.COLUMN_HH_SELECTED_STRUCT,
-                SingleRandomHH.COLUMN_CONTACT,
-                SingleRandomHH.COLUMN_HH_HEAD,
-                SingleRandomHH.COLUMN_SNO_HH
+                RandomHH.COLUMN_ID,
+                RandomHH.COLUMN_LUID,
+                RandomHH.COLUMN_STRUCTURE_NO,
+                RandomHH.COLUMN_FAMILY_EXT_CODE,
+                RandomHH.COLUMN_HH,
+                RandomHH.COLUMN_ENUM_BLOCK_CODE,
+                RandomHH.COLUMN_RANDOMDT,
+                RandomHH.COLUMN_HH_SELECTED_STRUCT,
+                RandomHH.COLUMN_CONTACT,
+                RandomHH.COLUMN_HH_HEAD,
+                RandomHH.COLUMN_SNO_HH
         };
 
-        String whereClause = SingleRandomHH.COLUMN_ENUM_BLOCK_CODE + "=? AND " + SingleRandomHH.COLUMN_HH + "=?";
+        String whereClause = RandomHH.COLUMN_ENUM_BLOCK_CODE + "=? AND " + RandomHH.COLUMN_HH + "=?";
         String[] whereArgs = new String[]{subAreaCode, hh};
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                SingleRandomHH.COLUMN_ID + " ASC";
+                RandomHH.COLUMN_ID + " ASC";
 
         BLRandomContract allBL = null;
         try {
             c = db.query(
-                    SingleRandomHH.TABLE_NAME,  // The table to query
+                    RandomHH.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause

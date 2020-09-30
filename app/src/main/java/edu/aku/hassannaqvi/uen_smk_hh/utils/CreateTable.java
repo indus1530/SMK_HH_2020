@@ -1,7 +1,7 @@
 package edu.aku.hassannaqvi.uen_smk_hh.utils;
 
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.SingleRandomHH;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.RandomHH;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
@@ -50,11 +50,11 @@ public final class CreateTable {
             + FormsContract.FormsTable.COLUMN_SYNCED_DATE + " TEXT"
             + " );";
 
-    public static final String SQL_CREATE_USERS = "CREATE TABLE " + UsersContract.singleUser.TABLE_NAME + "("
-            + UsersContract.singleUser._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + UsersContract.singleUser.ROW_USERNAME + " TEXT,"
-            + UsersContract.singleUser.ROW_PASSWORD + " TEXT,"
-            + UsersContract.singleUser.DIST_ID + " TEXT"
+    public static final String SQL_CREATE_USERS = "CREATE TABLE " + UsersContract.UsersTable.TABLE_NAME + "("
+            + UsersContract.UsersTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + UsersContract.UsersTable.ROW_USERNAME + " TEXT,"
+            + UsersContract.UsersTable.ROW_PASSWORD + " TEXT,"
+            + UsersContract.UsersTable.DIST_ID + " TEXT"
             + " );";
 
     public static final String SQL_CREATE_VERSIONAPP = "CREATE TABLE " + VersionAppContract.VersionAppTable.TABLE_NAME + " (" +
@@ -83,18 +83,18 @@ public final class CreateTable {
             + AreasContract.singleAreas.COLUMN_UC_CODE + " TEXT,"
             + AreasContract.singleAreas.COLUMN_AREA + " TEXT );";*/
 
-    public static final String SQL_CREATE_BL_RANDOM = "CREATE TABLE " + SingleRandomHH.TABLE_NAME + "("
-            + SingleRandomHH.COLUMN_ID + " TEXT,"
-            + SingleRandomHH.COLUMN_ENUM_BLOCK_CODE + " TEXT,"
-            + SingleRandomHH.COLUMN_LUID + " TEXT,"
-            + SingleRandomHH.COLUMN_HH + " TEXT,"
-            + SingleRandomHH.COLUMN_STRUCTURE_NO + " TEXT,"
-            + SingleRandomHH.COLUMN_FAMILY_EXT_CODE + " TEXT,"
-            + SingleRandomHH.COLUMN_HH_HEAD + " TEXT,"
-            + SingleRandomHH.COLUMN_CONTACT + " TEXT,"
-            + SingleRandomHH.COLUMN_HH_SELECTED_STRUCT + " TEXT,"
-            + SingleRandomHH.COLUMN_RANDOMDT + " TEXT,"
-            + SingleRandomHH.COLUMN_SNO_HH + " TEXT );";
+    public static final String SQL_CREATE_BL_RANDOM = "CREATE TABLE " + RandomHH.TABLE_NAME + "("
+            + RandomHH.COLUMN_ID + " TEXT,"
+            + RandomHH.COLUMN_ENUM_BLOCK_CODE + " TEXT,"
+            + RandomHH.COLUMN_LUID + " TEXT,"
+            + RandomHH.COLUMN_HH + " TEXT,"
+            + RandomHH.COLUMN_STRUCTURE_NO + " TEXT,"
+            + RandomHH.COLUMN_FAMILY_EXT_CODE + " TEXT,"
+            + RandomHH.COLUMN_HH_HEAD + " TEXT,"
+            + RandomHH.COLUMN_CONTACT + " TEXT,"
+            + RandomHH.COLUMN_HH_SELECTED_STRUCT + " TEXT,"
+            + RandomHH.COLUMN_RANDOMDT + " TEXT,"
+            + RandomHH.COLUMN_SNO_HH + " TEXT );";
 
     public static final String SQL_CREATE_PSU_TABLE = "CREATE TABLE " + EnumBlockContract.EnumBlockTable.TABLE_NAME + " (" +
             EnumBlockContract.EnumBlockTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
