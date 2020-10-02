@@ -254,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        unregisterReceiver(broadcastReceiver);
     }
 
     @Override
@@ -441,5 +441,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 }
