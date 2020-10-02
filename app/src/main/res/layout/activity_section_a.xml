@@ -233,20 +233,20 @@
                                 android:layout_width="0dp"
                                 android:layout_margin="10sp"
                                 android:layout_weight="1"
-                                android:hint="#-####-###"
+                                android:hint="####-###"
                                 android:inputType="textCapCharacters"
                                 android:textDirection="ltr"
-                                app:mask="#-####-###" />
+                                app:mask="####-###" />
 
                             <Button
                                 android:id="@+id/checkHHBtn2"
                                 style="@style/button"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/button_bg"
-                                android:onClick="@{() -> callback.BtnCheckHH()}"
-                                android:text="CHECK"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:background="@color/colorSecondary"
+                                android:onClick="@{callback::BtnCheckHH}"
+                                android:text="VALIDATE"
+                                android:textColor="@color/dullWhile" />
 
                         </LinearLayout>
 
@@ -334,13 +334,12 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Form Date" />
+                            android:text="@string/form_date" />
 
                         <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                             android:id="@+id/dtFilter"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="0dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:dateFormat="dd/MM/yyyy" />
                     </LinearLayout>

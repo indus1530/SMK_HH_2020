@@ -7,6 +7,8 @@ import android.provider.BaseColumns;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Locale;
+
 public class BLRandomContract {
 
     private static final String TAG = "BLRandom_CONTRACT";
@@ -22,7 +24,6 @@ public class BLRandomContract {
     private String contact;
     private String selStructure;
     private String sno;
-
     private String rndType;
     private String assignHH;
 
@@ -34,20 +35,16 @@ public class BLRandomContract {
         this.LUID = jsonObject.getString(RandomHH.COLUMN_LUID);
         this.subVillageCode = jsonObject.getString(RandomHH.COLUMN_ENUM_BLOCK_CODE);
         this.structure = jsonObject.getString(RandomHH.COLUMN_STRUCTURE_NO);
-        this.structure = String.format("%04d", Integer.valueOf(this.structure));
-
+        this.structure = String.format(Locale.getDefault(), "%04d", Integer.valueOf(this.structure));
         this.extension = jsonObject.getString(RandomHH.COLUMN_FAMILY_EXT_CODE);
-        this.extension = String.format("%03d", Integer.valueOf(this.extension));
-
-        String tabno = jsonObject.getString(RandomHH.COLUMN_TAB_NO);
-
-        this.hh = tabno + "-" + structure + "-" + extension;
+        this.extension = String.format(Locale.getDefault(), "%03d", Integer.valueOf(this.extension));
+//        String tabno = jsonObject.getString(RandomHH.COLUMN_TAB_NO);
+        this.hh = structure + "-" + extension;
         this.randomDT = jsonObject.getString(RandomHH.COLUMN_RANDOMDT);
         this.hhhead = jsonObject.getString(RandomHH.COLUMN_HH_HEAD);
         this.contact = jsonObject.getString(RandomHH.COLUMN_CONTACT);
         this.selStructure = jsonObject.getString(RandomHH.COLUMN_HH_SELECTED_STRUCT);
         this.sno = jsonObject.getString(RandomHH.COLUMN_SNO_HH);
-
         return this;
     }
 

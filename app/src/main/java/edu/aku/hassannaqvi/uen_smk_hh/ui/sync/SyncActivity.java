@@ -391,7 +391,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "Clusters", syncListAdapter, list).execute(distID);
+                    new GetAllData(mContext, "EnumBlock", syncListAdapter, list).execute(distID);
                     bi.noItem.setVisibility(View.GONE);
 
 //                   getting BL Random

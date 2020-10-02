@@ -218,7 +218,7 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
 
     }
 
-    public void BtnCheckHH() {
+    public void BtnCheckHH(View v) {
         if (!Validator.emptyTextBox(this, bi.a112)) return;
 
         bl = MainApp.appInfo.getDbHelper().getHHFromBLRandom(bi.a101.getText().toString(), bi.a112.getText().toString().toUpperCase());
