@@ -39,7 +39,6 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRAContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRA_PREContract;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.MortalityContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySyncBinding;
@@ -392,7 +391,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "EnumBlock", syncListAdapter, list).execute(distID);
+                    new GetAllData(mContext, "Clusters", syncListAdapter, list).execute(distID);
                     bi.noItem.setVisibility(View.GONE);
 
 //                   getting BL Random
