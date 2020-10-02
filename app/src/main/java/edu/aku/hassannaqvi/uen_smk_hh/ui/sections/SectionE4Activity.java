@@ -85,7 +85,7 @@ public class SectionE4Activity extends AppCompatActivity {
         morc.set_ID(String.valueOf(updcount));
         if (updcount > 0) {
             morc.setUID(morc.getDeviceId() + morc.get_ID());
-            db.updatesMortalityColumn(MortalityContract.SingleMortality.COLUMN_UID, morc.getUID(), morc);
+            //db.updatesMortalityColumn(MortalityContract.SingleMortality.COLUMN_UID, morc.getUID(), morc);
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

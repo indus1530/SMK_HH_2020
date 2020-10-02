@@ -321,6 +321,7 @@
     <string name="e112j"> نجي (پرائيويٽ) ڪلينڪ </string>
     <string name="e112k"> نجي (پرائيويٽ) ويم گهر </string>
     <string name="e112l"> اين جي او صحت مرڪز </string>
+    <string name="e112m"> صحت مرڪز ڏانھن ويندي رستي ۾ </string>
     <string name="e11296">ٻيو ڪجھ (وضاحت ڪريو) </string>
 
     <string name="e113"> E113:\t جيڪڏھن ٻار مئل ڄائو يا حمل ضايع ٿيو ته اھو حمل ڪھڙي مھيني / سال ۾ ختم ٿيو ؟ </string>
@@ -601,7 +602,8 @@
     <string name="f128d"> سوڄ ھٿن، پيرن ۽ منھن تي </string>
     <string name="f128e"> ٻار جي چر پر گھٽ ٿي وڃڻ</string>
     <string name="f128f"> (پيٽ ۾ سور (37 ھفتن کان گھٽ</string>
-    <string name="f128g"> نه، مون کي ڪا نه پيچيدگي نه ٿي</string>
+    <string name="f128g"> دورے/جھٹکے </string>
+    <string name="f128h"> نه، مون کي ڪا نه پيچيدگي نه ٿي</string>
 
     <string name="f128aa"> F129:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
     <string name="f128aaa"> Agree </string>

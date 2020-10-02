@@ -50,10 +50,10 @@
 
 
                     <EditText
-                        android:layout_margin="10sp"
                         android:id="@+id/a101"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
+                        android:layout_margin="10sp"
                         android:layout_weight="1"
                         android:hint="@string/a101"
                         android:maxLength="6" />
@@ -228,10 +228,10 @@
                             android:orientation="horizontal">
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:layout_margin="10sp"
                                 android:id="@+id/a112"
                                 style="@style/textInput"
                                 android:layout_width="0dp"
+                                android:layout_margin="10sp"
                                 android:layout_weight="1"
                                 android:hint="#-####-###"
                                 android:inputType="textCapCharacters"
@@ -317,6 +317,32 @@
                             android:maxLength="25"
                             android:text='@{checkHHHeadpresent.checked ? "" : newHHheadname.getText().toString()}' />
 
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- formdate   -->
+                <androidx.cardview.widget.CardView style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Form Date" />
+
+                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                            android:id="@+id/dtFilter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="0dp"
+                            android:layout_weight="1"
+                            app:dateFormat="dd/MM/yyyy" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

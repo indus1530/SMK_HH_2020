@@ -14,6 +14,9 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
@@ -215,6 +218,7 @@ public class SectionH1Activity extends AppCompatActivity {
         MainApp.child.setUser(MainApp.fc.getUser());
 
         JSONObject json = new JSONObject();
+        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
 
         /*json.put("h101", bi.h101a.isChecked() ? "1" :
                 bi.h101b.isChecked() ? "2" :

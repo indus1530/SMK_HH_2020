@@ -291,7 +291,7 @@
     <string name="e11101i"> بخار </string>
     <string name="e11101x"> دیگر (وضاحت کریں) </string>
 
-    <string name="e112"> E112:\t (نام) کا انتقال کہاں ہوا تھا ؟ </string>
+    <string name="e112"> E112:\t نام) کا انتقال کہاں ہوا تھا ؟) </string>
     <string name="e112a">گهر </string>
     <string name="e112h1"> سرکاری مرکز صحت </string>
     <string name="e112b">سول ہسپتال / ٹرشری </string>
@@ -300,13 +300,17 @@
     <string name="e112e">بیسک ہیلتھ یونٹ </string>
     <string name="e112f">میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
     <string name="e112g">برتھ اسٹیشن (کمیونٹی مڈوائف)  </string>
+    <string name="e112h">ھيلٿ ھائوس (ايل ايڇ ڊبليو)</string>
     <string name="e112h2">نجی مرکز صحت </string>
-    <string name="e112h"> پرائیوٹ ہسپتال </string>
-    <string name="e112i"> پرائیوٹ کلینک</string>
-    <string name="e112j"> پرائیوٹ میٹرنٹی ہوم </string>
-    <string name="e112k"> رفاہی ادارہ </string>
-    <string name="e112l"> راستے میں </string>
+    <string name="e112i"> پرائیوٹ ہسپتال </string>
+    <string name="e112j"> پرائیوٹ کلینک</string>
+    <string name="e112k"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="e112l"> رفاہی ادارہ </string>
+    <string name="e112m"> راستے میں </string>
     <string name="e11296">دیگر (وضاحت کریں) </string>
+
+
+
 
     <string name="e113"> E113:\t اگر مردہ پیدائش یا پیدائش سے پہلے اسقاط حمل ہوگیا تھا: تو یہ حمل کس مہینے اور سال میں ختم ہوا تھا ؟ </string>
 
@@ -584,7 +588,8 @@
     <string name="f128d"> ہاتھ/چہرے/پیر کی سوجن </string>
     <string name="f128e"> بچے کی حرکت کا کم ہون </string>
     <string name="f128f"> پیٹ میں درد/ مڑور(37thہفتوں سے کم) </string>
-    <string name="f128g"> نہیں، مجھے کوئی خطرناک علامات پیش نہیں آئیں </string>
+    <string name="f128g"> دورے/جھٹکے </string>
+    <string name="f128h"> نہیں، مجھے کوئی خطرناک علامات پیش نہیں آئیں </string>
 
     <string name="f128aa"> F129:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
     <string name="f128aaa"> Agree </string>

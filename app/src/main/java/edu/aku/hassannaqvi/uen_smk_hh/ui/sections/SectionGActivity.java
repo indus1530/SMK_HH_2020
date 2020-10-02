@@ -137,20 +137,22 @@ public class SectionGActivity extends AppCompatActivity {
         //g119
         bi.g119.setOnCheckedChangeListener((group, checkedId) -> {
 
-          /*  Clear.clearAllFields(bi.fldGrpCVg120);
+          /*
+          Clear.clearAllFields(bi.fldGrpCVg120);
             Clear.clearAllFields(bi.fldGrpCVg121);
             bi.fldGrpCVg120.setVisibility(View.GONE);
             bi.fldGrpCVg121.setVisibility(View.GONE);
 
-            if (checkedId == bi.g119a.getId()) {
+          if (checkedId == bi.g119a.getId()) {
                 bi.fldGrpCVg120.setVisibility(View.VISIBLE);
             } else {
                 bi.fldGrpCVg121.setVisibility(View.VISIBLE);
-            }*/
+            }
+            */
 
             if (checkedId == bi.g119a.getId() || checkedId == bi.g119b.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVg121);
-            } else if (checkedId == bi.g119b.getId()) {
+            } else if (checkedId == bi.g119c.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVg120);
             }
         });

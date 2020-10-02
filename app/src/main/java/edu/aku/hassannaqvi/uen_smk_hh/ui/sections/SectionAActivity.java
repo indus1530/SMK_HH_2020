@@ -45,6 +45,9 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
         db = MainApp.appInfo.getDbHelper();
 
         setUIComponent();
+
+        db.resetAll();
+        Toast.makeText(this, "Updated"+new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()), Toast.LENGTH_SHORT).show();
     }
 
     private void setUIComponent() {
@@ -124,7 +127,7 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
     private void SaveDraft() throws JSONException {
 
         MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setFormDate(bi.dtFilter.getText().toString());
         MainApp.fc.setUser(MainApp.userName);
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
@@ -135,6 +138,8 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
         MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
+
+        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
 
         json.put("imei", MainApp.IMEI);
         json.put("rndid", bl.get_ID());

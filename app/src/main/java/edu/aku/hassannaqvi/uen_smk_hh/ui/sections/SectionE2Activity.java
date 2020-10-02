@@ -23,7 +23,9 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
@@ -329,6 +331,7 @@ public class SectionE2Activity extends AppCompatActivity {
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
         json.put("counter", noOfPreCounter);
+        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
 
         json.put("e104", bi.e104a.isChecked() ? "1"
                 : bi.e104b.isChecked() ? "2"
@@ -404,6 +407,7 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e112j.isChecked() ? "10"
                 : bi.e112k.isChecked() ? "11"
                 : bi.e112l.isChecked() ? "12"
+                : bi.e112m.isChecked() ? "13"
                 : bi.e11296.isChecked() ? "96"
                 : "-1");
         json.put("e11296x", bi.e11296x.getText().toString().trim().isEmpty() ? "-1" : bi.e11296x.getText().toString());

@@ -17,7 +17,9 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
@@ -172,18 +174,22 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
         json.put("cluster_no", MainApp.fc.getClusterCode());
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
-
+        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         // xml e101
-        json.put("e100", bi.womanSpinner.getSelectedItem().toString());
+        json.put("mwra_name", bi.womanSpinner.getSelectedItem().toString());
         mwra.setMwra_name(bi.womanSpinner.getSelectedItem().toString());
 
-        json.put("e101", bi.e101a.isChecked() ? "1"
+        json.put("e001", bi.e10100.getText().toString().trim().isEmpty() ? "-1" : bi.e10100.getText().toString());
+
+        json.put("e002", bi.e101a.isChecked() ? "1"
                 : bi.e101b.isChecked() ? "2"
                 : "-1");
 
-        json.put("e102", bi.e102.getText().toString().trim().isEmpty() ? "-1" : bi.e102.getText().toString());
+        json.put("e003", bi.e102.getText().toString().trim().isEmpty() ? "-1" : bi.e102.getText().toString());
 
-        json.put("e102a", bi.e102aa.isChecked() ? "1"
+        json.put("e004", bi.e10201.getText().toString().trim().isEmpty() ? "-1" : bi.e10201.getText().toString());
+
+        json.put("e005", bi.e102aa.isChecked() ? "1"
                 : bi.e102ab.isChecked() ? "2"
                 : "-1");
 
@@ -197,7 +203,17 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
     }
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1);
+
+        if(!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1)) {
+            return false;
+        }
+
+        if(Integer.parseInt(bi.e10100.getText().toString()) > Integer.parseInt(bi.e10201.getText().toString())) {
+            Toast.makeText(this, "Age at marriage should not be greater than age at first pregnancy", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        return true;
     }
 
     public void BtnEnd() {

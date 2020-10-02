@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- e101  Spinner   -->
+                <!-- mwra_name Spinner   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe100"
                     style="@style/cardView">
@@ -38,7 +38,7 @@
 
                         <TextView
                             style="@style/i_textview"
-                            android:text="@string/e101" />
+                            android:text="@string/e100" />
 
                         <Spinner
                             android:id="@+id/womanSpinner"
@@ -50,7 +50,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- e10100  Input-Numeric   -->
+                <!-- E001  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe10100"
                     style="@style/cardView">
@@ -77,7 +77,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- e101  Radio   -->
+                <!-- E002  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe101"
                     style="@style/cardView">
@@ -120,7 +120,7 @@
                     android:orientation="vertical"
                     android:visibility='@{e101b.checked? View.GONE : View.VISIBLE}'>
 
-                    <!-- e102  Input-Numeric   -->
+                    <!-- E003  Input-Numeric   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVe102"
                         style="@style/cardView">
@@ -147,7 +147,7 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <!-- e10201  Input-Numeric   -->
+                    <!-- E004  Input-Numeric   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVe10201"
                         style="@style/cardView">
@@ -174,7 +174,7 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <!-- e102a  Radio   -->
+                    <!-- E005  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVe102a"
                         style="@style/cardView">

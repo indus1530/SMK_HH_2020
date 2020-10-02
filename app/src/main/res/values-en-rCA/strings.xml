@@ -301,21 +301,22 @@
     <string name="e11101x"> Other (specify) </string>
 
     <string name="e112"> E112:\t Where did {Name} die?  </string>
-    <string name="e112a"> Home </string>
-    <string name="e112h1"> Public medical sector </string>
-    <string name="e112b"> TERTIARY/CIVIL HOSPITAL </string>
-    <string name="e112c"> DISTRICTHQ/TEHSIL HQ </string>
-    <string name="e112d"> RURAL HC </string>
-    <string name="e112e"> BASIC HEALTH UNIT </string>
-    <string name="e112f"> Mother And child health centre </string>
-    <string name="e112g"> BIRTH STATION </string>
-    <string name="e112h"> HEALTH HOUSE </string>
-    <string name="e112h2"> Private medical sector </string>
-    <string name="e112i"> Private hospital </string>
-    <string name="e112j"> Private clinic </string>
-    <string name="e112k"> Private maternity home </string>
-    <string name="e112l"> NGO HEALTH FACILITY </string>
-    <string name="e11296"> Other (specify) </string>
+    <string name="e112a">Home</string>
+    <string name="e112h1">Public medical sector</string>
+    <string name="e112b">TERTIARY/CIVIL HOSPITAL</string>
+    <string name="e112c">DISTRICT HQ/TEHSIL HQ</string>
+    <string name="e112d">RURAL HC</string>
+    <string name="e112e">BASIC HEALTH UNIT</string>
+    <string name="e112f">Mother And child health centre</string>
+    <string name="e112g">BIRTH STATION</string>
+    <string name="e112h">HEALTH HOUSE</string>
+    <string name="e112h2">Private medical sector</string>
+    <string name="e112i">Private hospital</string>
+    <string name="e112j">Private clinic</string>
+    <string name="e112k">Private maternity home</string>
+    <string name="e112l">NGO HEALTH FACILITY</string>
+    <string name="e112m">On the way to health facility</string>
+    <string name="e11296">Other (specify)</string>
 
     <string name="e113"> E113:\t If born dead or lost before birth: In what month and year did this pregnancy end? (MM/YYYY) </string>
 
@@ -592,7 +593,8 @@
     <string name="f128d"> Swollen hands/face/feet </string>
     <string name="f128e"> Reduced fetal movement </string>
     <string name="f128f"> Abdominal pain/cramps(&lt;37th weeks) </string>
-    <string name="f128g"> No, I did not experience any danger sign </string>
+    <string name="f128g"> Fits </string>
+    <string name="f128h"> No, I did not experience any danger sign </string>
 
     <string name="f128aa"> F128A:\t Do you think it is important to seek care for the danger signs during pregnancy mentioned above? </string>
     <string name="f128aaa"> Agree </string>

@@ -85,8 +85,8 @@ public class SectionF02Activity extends AppCompatActivity {
             }
         }));
 
-        //f128g
-        bi.f128g.setOnCheckedChangeListener((compoundButton, b) -> {
+        //f128h
+        bi.f128h.setOnCheckedChangeListener((compoundButton, b) -> {
 
             if (b) {
                 Clear.clearAllFields(bi.fldGrp2532);
@@ -258,6 +258,7 @@ public class SectionF02Activity extends AppCompatActivity {
         f1.put("f128e", bi.f128e.isChecked() ? "5" : "-1");
         f1.put("f128f", bi.f128f.isChecked() ? "6" : "-1");
         f1.put("f128g", bi.f128g.isChecked() ? "7" : "-1");
+        f1.put("f128h", bi.f128h.isChecked() ? "8" : "-1");
 
         f1.put("f129", bi.f129a.isChecked() ? "1" :
                 bi.f129b.isChecked() ? "2" : "-1");

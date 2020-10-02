@@ -171,7 +171,7 @@ public final class CreateTable {
             + ChildContract.ChildTable.COLUMN_SYNCED + " TEXT,"
             + ChildContract.ChildTable.COLUMN_SYNCED_DATE + " TEXT );";
 
-    public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
+    /*public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
             + SingleMortality._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + SingleMortality.COLUMN_UID + " TEXT,"
             + SingleMortality.COLUMN__UUID + " TEXT,"
@@ -181,7 +181,7 @@ public final class CreateTable {
             + SingleMortality.COLUMN_SE3 + " TEXT,"
             + SingleMortality.COLUMN_DEVICETAGID + " TEXT,"
             + SingleMortality.COLUMN_SYNCED + " TEXT,"
-            + SingleMortality.COLUMN_SYNCED_DATE + " TEXT );";
+            + SingleMortality.COLUMN_SYNCED_DATE + " TEXT );";*/
 
 
     public static final String SQL_CREATE_FAMILY_MEMBERS = "CREATE TABLE " + FamilyMembersContract.SingleMember.TABLE_NAME + "("

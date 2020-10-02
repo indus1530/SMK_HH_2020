@@ -18,8 +18,10 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -214,6 +216,7 @@ public class SectionDActivity extends AppCompatActivity {
         sd.put("appversion", MainApp.appInfo.getAppVersion());
         sd.put("_luid", MainApp.fc.getLuid());
         sd.put("d106", fatherSerial);
+        sd.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fmc.setfName(bi.d106.getSelectedItem().toString());
         fmc.setMother_name(bi.d107.getSelectedItem().toString());
         sd.put("d107", motherSerial);
@@ -271,7 +274,27 @@ public class SectionDActivity extends AppCompatActivity {
         // Update in ViewModel
         mainVModel.updateFamilyMembers(fmc);
 
-        if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
+        if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) <= 49) {
+            if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) <= 14) {
+                mainVModel.setAdols(fmc);
+            } else if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 19) {
+                mainVModel.setAdols(fmc);
+                if(fmc.getGender().equals("2") && !bi.d105b.isChecked()) {
+                    mainVModel.setMWRA(fmc);
+                }
+            } else if (Integer.parseInt(fmc.getAge()) > 19 && fmc.getGender().equals("2") && !bi.d105b.isChecked()) {
+                mainVModel.setMWRA(fmc);
+            }
+        } else if (Integer.parseInt(fmc.getAge()) < 5) {
+            mainVModel.setChildU2(fmc);
+            if (motherFMC != null) {
+                if (Integer.parseInt(motherFMC.getAge()) >= 15 && Integer.parseInt(motherFMC.getAge()) <= 49 && motherFMC.getAvailable().equals("1")) {
+                    mainVModel.setMwraChildU2(motherFMC);
+                }
+            }
+        }
+
+        /*if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
             mainVModel.setMWRA(fmc);
         else if (Integer.parseInt(fmc.getAge()) < 5) {
             mainVModel.setChildU2(fmc);
@@ -280,12 +303,12 @@ public class SectionDActivity extends AppCompatActivity {
                 mainVModel.setMwraChildU2(motherFMC);
         }
         if (Integer.parseInt(fmc.getAge()) >= 10 && Integer.parseInt(fmc.getAge()) <= 19 && bi.d105b.isChecked()) {
-
             mainVModel.setAdols(fmc);
-        }
+        }*/
     }
 
     private boolean formValidation() {
+
         if (fmcFLAG) return Validator.emptyCheckingContainer(this, bi.fldGrpSectionD);
         else {
             if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionD))
@@ -302,6 +325,7 @@ public class SectionDActivity extends AppCompatActivity {
                 bi.d109.setError("Less then Parent Age");
                 return false;
             }
+
             return true;
         }
     }
@@ -342,9 +366,12 @@ public class SectionDActivity extends AppCompatActivity {
         //D110a
         bi.d110.setOnCheckedChangeListener(((radioGroup, i) -> {
 
-            if (i == bi.d110a.getId()) {
+            if (i == bi.d110a.getId() || i == bi.d110l.getId() || i == bi.d110m.getId()) {
                 bi.d111f.setEnabled(false);
                 bi.d111g.setEnabled(false);
+            } else {
+                bi.d111f.setEnabled(true);
+                bi.d111g.setEnabled(true);
             }
 
         }));
@@ -481,12 +508,12 @@ public class SectionDActivity extends AppCompatActivity {
             bi.d110l.setEnabled(true);
             bi.d110m.setEnabled(true);
 
-            if (fmc.getGender().equals("2")) {
+            /*if (fmc.getGender().equals("2")) {
                 bi.d111a.setEnabled(true);
             } else {
                 bi.d111a.setEnabled(false);
                 bi.d111a.setChecked(false);
-            }
+            }*/
 
             bi.d111j.setEnabled(true);
         }

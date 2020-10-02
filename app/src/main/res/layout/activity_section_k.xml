@@ -504,7 +504,6 @@
                 android:orientation="vertical"
                 android:visibility='@{!k105aac.checked? View.GONE : View.VISIBLE}'>
 
-
                 <!-- k106  CheckBox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVk106"

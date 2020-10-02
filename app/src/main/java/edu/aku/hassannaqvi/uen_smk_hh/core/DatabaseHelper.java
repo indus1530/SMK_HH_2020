@@ -53,7 +53,6 @@ import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_CHILD_
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_FORMS;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_KISH_TABLE;
-import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MORTALITY;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MWRAPRE_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_MWRA_TABLE;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.SQL_CREATE_PSU_TABLE;
@@ -93,7 +92,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_MWRA_TABLE);
         db.execSQL(SQL_CREATE_MWRAPRE_TABLE);
         db.execSQL(SQL_CREATE_CHILD_TABLE);
-        db.execSQL(SQL_CREATE_MORTALITY);
         db.execSQL(SQL_CREATE_ADOLSCENT_TABLE);
     }
 
@@ -1645,22 +1643,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
-    //Generic update MortalityColumn
-    public int updatesMortalityColumn(String column, String value, MortalityContract mortality) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = SingleMortality._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(mortality.get_ID())};
-
-        return db.update(SingleMortality.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
     //Generic update KishMWRAColumn
     public int updatesKishMWRAColumn(String column, String value) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -1811,25 +1793,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedMortalityForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(SingleMortality.COLUMN_SYNCED, true);
-        values.put(SingleMortality.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = SingleMortality._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                SingleMortality.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
     public void updateSyncedPregMWRAForms(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -1892,17 +1855,126 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(MWRATable.COLUMN_SYNCED, true);
-        values.put(MWRATable.COLUMN_SYNCED_DATE, new Date().toString());
+        values.put(ChildContract.ChildTable.COLUMN_SYNCED, true);
+        values.put(ChildContract.ChildTable.COLUMN_SYNCED_DATE, new Date().toString());
 
 // Which row to update, based on the title
         String where = MWRATable._ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                MWRATable.TABLE_NAME,
+                ChildContract.ChildTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
+    }
+
+    public void resetAll() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FormsTable.COLUMN_SYNCED, (byte[]) null);
+        values.put(FormsTable.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where = null;
+        String[] whereArgs = null;
+
+        int count = db.update(
+                FormsTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+
+
+
+        ContentValues values2 = new ContentValues();
+        values2.put(FamilyMembersContract.SingleMember.COLUMN_SYNCED, (byte[]) null);
+        values2.put(FamilyMembersContract.SingleMember.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where2 = null;
+        String[] whereArgs2 = null;
+
+        int count2 = db.update(
+                FamilyMembersContract.SingleMember.TABLE_NAME,
+                values2,
+                where2,
+                whereArgs2);
+
+
+        ContentValues values3 = new ContentValues();
+        values3.put(AdolscentContract.SingleAdolscent.COLUMN_SYNCED, (byte[]) null);
+        values3.put(AdolscentContract.SingleAdolscent.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where3 = null;
+        String[] whereArgs3 = null;
+
+        int count3 = db.update(
+                SingleAdolscent.TABLE_NAME,
+                values3,
+                where3,
+                whereArgs3);
+
+
+        ContentValues values4 = new ContentValues();
+        values4.put(ChildContract.ChildTable.COLUMN_SYNCED, (byte[]) null);
+        values4.put(ChildContract.ChildTable.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where4 = null;
+        String[] whereArgs4 = null;
+
+        int count4 = db.update(
+                ChildContract.ChildTable.TABLE_NAME,
+                values4,
+                where4,
+                whereArgs4);
+
+        ContentValues values5 = new ContentValues();
+        values5.put(KishMWRAContract.SingleKishMWRA.COLUMN_SYNCED, (byte[]) null);
+        values5.put(KishMWRAContract.SingleKishMWRA.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where5 = null;
+        String[] whereArgs5 = null;
+
+        int count5 = db.update(
+                KishMWRAContract.SingleKishMWRA.TABLE_NAME,
+                values5,
+                where5,
+                whereArgs5);
+
+
+        ContentValues values6 = new ContentValues();
+        values6.put(MWRATable.COLUMN_SYNCED, (byte[]) null);
+        values6.put(MWRATable.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where6 = null;
+        String[] whereArgs6 = null;
+
+        int count6 = db.update(
+                MWRATable.TABLE_NAME,
+                values6,
+                where6,
+                whereArgs6);
+
+        ContentValues values7 = new ContentValues();
+        values7.put(MWRA_PREContract.SingleMWRAPRE.COLUMN_SYNCED, (byte[]) null);
+        values7.put(MWRA_PREContract.SingleMWRAPRE.COLUMN_SYNCED_DATE, (byte[]) null);
+
+// Which row to update, based on the title
+        String where7 = null;
+        String[] whereArgs7 = null;
+
+        int count7 = db.update(
+                MWRA_PREContract.SingleMWRAPRE.TABLE_NAME,
+                values7,
+                where7,
+                whereArgs7);
     }
 }

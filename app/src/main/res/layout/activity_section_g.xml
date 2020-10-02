@@ -1014,7 +1014,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg120"
                     style="@style/cardView"
-                    android:visibility='@{g119a.checked ? View.VISIBLE : View.GONE}'>
+                    android:visibility='@{g119a.checked || g119b.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1087,7 +1087,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg121"
                     style="@style/cardView"
-                    android:visibility='@{g119b.checked || g119c.checked ? View.VISIBLE : View.GONE}'>
+                    android:visibility='@{g119c.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
