@@ -40,7 +40,7 @@ public class BLRandomContract {
         this.extension = String.format(Locale.getDefault(), "%03d", Integer.valueOf(this.extension));
 //        String tabno = jsonObject.getString(RandomHH.COLUMN_TAB_NO);
         this.hh = structure + "-" + extension;
-        this.randomDT = jsonObject.getString(RandomHH.COLUMN_RANDOMDT);
+        this.randomDT = jsonObject.getJSONObject(RandomHH.COLUMN_RANDOMDT).get("date").toString();
         this.hhhead = jsonObject.getString(RandomHH.COLUMN_HH_HEAD);
         this.contact = jsonObject.getString(RandomHH.COLUMN_CONTACT);
         this.selStructure = jsonObject.getString(RandomHH.COLUMN_HH_SELECTED_STRUCT);
