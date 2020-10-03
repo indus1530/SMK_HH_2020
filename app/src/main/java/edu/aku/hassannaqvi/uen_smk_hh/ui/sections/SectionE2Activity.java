@@ -478,14 +478,14 @@ public class SectionE2Activity extends AppCompatActivity {
                     txt02 = editTextPicker02.getText().toString();
                     txt03 = editTextPicker03.getText().toString();
                 } else return;
-                if (!editTextPicker01.isRangeTextValidate() || txt01.trim().equals("00") || !editTextPicker02.isRangeTextValidate() || !editTextPicker03.isRangeTextValidate())
+                if (!editTextPicker01.isRangeTextValidate() || !editTextPicker02.isRangeTextValidate() || !editTextPicker03.isRangeTextValidate())
                     return;
                 int day = txt01.equals("00") ? 15 : Integer.parseInt(txt01);
                 int month = Integer.parseInt(txt02);
                 int year = Integer.parseInt(txt03);
                 AgeModel age = DateRepository.Companion.getCalculatedAge(year, month, day);
                 if (age == null) {
-                    editTextPicker03.setError("Invalid date!!");
+                    editTextPicker03.setError("Invalid date");
                     imFlag = false;
                 } else {
                     imFlag = true;
@@ -509,14 +509,14 @@ public class SectionE2Activity extends AppCompatActivity {
 
         if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
             if (!imFlag) {
-                Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Invalid date", Toast.LENGTH_SHORT).show();
                 return false;
             }
         }
 
         if (!(bi.e105b.isChecked() || bi.e105e.isChecked() || bi.e105f.isChecked() || bi.e108a.isChecked()) && bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVe108.getVisibility() == View.VISIBLE)
             if ((Integer.parseInt(bi.e110a.getText().toString()) == 0 && Integer.parseInt(bi.e110b.getText().toString()) == 0 && Integer.parseInt(bi.e110c.getText().toString()) == 0)) {
-                Toast.makeText(this, "Invalid Date of Death!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Invalid Date of Death", Toast.LENGTH_SHORT).show();
                 return false;
             }
 
