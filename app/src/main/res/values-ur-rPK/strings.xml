@@ -369,7 +369,7 @@
     <string name="f101n"> نہیں </string>
     <string name="f101y"> ہاں </string>
 
-    <string name="f101a"> F101a:\t آپ نے اپنے آخری حمل کے دوران (نام) کی پیدائش سے قبل معائنہ کیوں نہیں کروایا تھا ؟ </string>
+    <string name="f101a"> F10101:\t آپ نے اپنے آخری حمل کے دوران (نام) کی پیدائش سے قبل معائنہ کیوں نہیں کروایا تھا ؟ </string>
     <string name="f101ahint"> ایک سے زیادہ جوابات آسکتے ہیں۔ </string>
     <string name="f101aa"> سواری نہیں تھی </string>
     <string name="f101ab"> ہسپتال کے عملے کا رویہ صحیح نہیں تھا </string>
@@ -511,12 +511,12 @@
     <string name="f121a"> ہاں </string>
     <string name="f121b"> نہیں </string>
 
-    <string name="f1211"> F121a:\t کیا گزشتہ حمل کے دوران (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا ؟ </string>
+    <string name="f1211"> F12101:\t کیا گزشتہ حمل کے دوران (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا ؟ </string>
     <string name="f1211a"> ہاں </string>
     <string name="f1211b"> نہیں </string>
     <string name="f1211c"> لاگو نہیں ہے </string>
 
-    <string name="f1212"> F121b:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="f1212"> F12102:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="f1212a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
     <string name="f1212b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کر سکی </string>
     <string name="f1212c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -821,7 +821,7 @@
     <string name="g124l"> پورے جسم پر سوجن </string>
     <string name="g124m"> شدید متلی اور الٹیاں </string>
 
-    <string name="g12401"> G124A:\t آپ کو  درد زہ اور بچے کی پیدائش کے دوران ہونے والے خطرناک   علامات/مسائل  درپیش آئے تھے ؟  </string>
+    <string name="g12401"> G12401:\t آپ کو  درد زہ اور بچے کی پیدائش کے دوران ہونے والے خطرناک   علامات/مسائل  درپیش آئے تھے ؟  </string>
     <string name="g12401hint"> (ایک سے زیادہ جوابات آ سکتے ہیں) </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
@@ -842,7 +842,7 @@
     <string name="g125b"> نہیں </string>
     <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
-    <string name="g1251"> لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا؟ </string>
+    <string name="g1251"> لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا؟  G12501:\t </string>
     <string name="g1251a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
     <string name="g1251b"> ایل ایچھ ڈبلیوکرونا کی وجہ سےوزٹ نہیں کرسکی </string>
     <string name="g1251c"> ایل ایچھ ڈبلیوآئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -928,7 +928,7 @@
 
     <string name="h111"> H111:\t (نام) کو پیدائش کے کتنی دیر بعدماں کے ساتھ جلد سے جلد ملاکر رکھا گیا تھا ؟ </string>
 
-    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112a"> H11202:\t Has {name} ever been breastfeed? </string>
     <string name="h112y"> ہاں </string>
     <string name="h112n"> نہیں </string>
 
@@ -956,7 +956,7 @@
     <string name="h115y"> ہاں </string>
     <string name="h115n"> نہیں </string>
 
-    <string name="h115a"> H115A:\t (نام) کو پیدائش کے 24 گھنٹے کے اندر کیا پینے کو دیا  گیا تھا؟ </string>
+    <string name="h115a"> H11502:\t (نام) کو پیدائش کے 24 گھنٹے کے اندر کیا پینے کو دیا  گیا تھا؟ </string>
     <string name="h115aa">دودھ (ماں کے دودھ کے علاوہ)  </string>
     <string name="h115ab"> سادہ پانی </string>
     <string name="h115ac"> شہد یا شہد کا پانی </string>
@@ -1079,7 +1079,7 @@
     <string name="h131a"> ہاں </string>
     <string name="h131b"> نہیں </string>
 
-    <string name="h1311"> H131a:\t یا آپ (نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے ؟ </string>
+    <string name="h1311"> H13101:\t یا آپ (نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے ؟ </string>
     <string name="h1311a"> اتنا اہم نہیں تھا </string>
     <string name="h1311b"> ہسپتال کرونا کی وجہ سے بند تھا </string>
     <string name="h1311c"> کرونا کا ڈر یا خوف </string>
@@ -1094,7 +1094,7 @@
     <string name="h132c"> زچگی کسی اور علاقہ میں ہوئی تھی </string>
 
 
-    <string name="h1321"> H132a:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="h1321"> H13201:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="h1321a"> ایل ایچھ ڈبلیو اکثر وزٹ پر نہیں آتی </string>
     <string name="h1321b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کرسکی </string>
     <string name="h1321c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -1139,11 +1139,11 @@
     <string name="h136e"> ایل ایچ ڈبلیو (لیڈی ہیلتھ ورکر) </string>
     <string name="h136f"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h136aa"> H136A:\t کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟  </string>
+    <string name="h136aa"> H13601:\t کیا آپ سمجھتی ہیں کہ نوزائیدہ کے خطرناک علامات کا علاج کروانا ضروری ہے؟  </string>
     <string name="h136aaa"> متفق </string>
     <string name="h136aab"> غیر متفق </string>
 
-    <string name="h13602"> H136B:\t کیا آپ  کے نوزائیدہ  کو کوئی خطرناک علامت یا مسائل درپیش آئے ؟ </string>
+    <string name="h13602"> H13602:\t کیا آپ  کے نوزائیدہ  کو کوئی خطرناک علامت یا مسائل درپیش آئے ؟ </string>
     <string name="h13602hint"> جلدی نہ کریں۔ بتائی گئی تمام علامات پر نشان لگائیں، لیکن کوئی تجویز نہ دیں۔</string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
@@ -1156,7 +1156,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H136C:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
+    <string name="h13603"> H13603:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1222,7 +1222,7 @@
     <string name="h205d"> سی ایم ڈبلیو (کمیونیٹی مڈوائف) </string>
     <string name="h205e"> دائی / ٹی بی اے (پیشہ ور زچگی کروانے والی) </string>
 
-    <string name="h205aa"> H205A:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
+    <string name="h205aa"> H20501:\t پہلے معائنے کا مقصد کیا تھا؟  </string>
     <string name="h205aaa"> صحت، غذائیت، صفائی کا مشورہ دینا </string>
     <string name="h205aab"> ماں کو   صحیح طرح دودھ پلانے کا مشورہ  </string>
     <string name="h205aac"> خاندانی منصوبہ بندی کا مشورہ </string>
@@ -1260,7 +1260,7 @@
     <string name="h208aaa"> متفق </string>
     <string name="h208aab"> غیر متفق </string>
 
-    <string name="h20802"> H208B:\t  تمام پر نشان لگائیں جو لاگو ہوتے ہیں. کیا آپ کو  زچگی  کے بعد  کوئی خطرناک علامات پیش آئی ؟</string>
+    <string name="h20802"> H20802:\t  تمام پر نشان لگائیں جو لاگو ہوتے ہیں. کیا آپ کو  زچگی  کے بعد  کوئی خطرناک علامات پیش آئی ؟</string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -1279,7 +1279,7 @@
     <string name="h209a"> ہاں </string>
     <string name="h209b"> نہیں </string>
 
-    <string name="h2091"> H209a:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="h2091"> H20901:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="h2091a"> ایل ایچھ ڈبلیو اکثر وزٹ پر نہیں آتی </string>
     <string name="h2091b"> ایل ایچھ ڈبلیوکرونا کی وجہ سے وزٹ نہیں کرسکی </string>
     <string name="h2091c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -1335,9 +1335,9 @@
     <string name="h216b"> نہیں </string>
     <string name="h216c"> کبھی سنا نہیں اس کے بارے میں </string>
 
-    <string name="h2161"> H216a:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="h2161"> H21601:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="h2161a"> اتنا اہم نہیں تھا </string>
-    <string name="h2161b"> ہسپتال کرونا کی وجہ سے بند تھا </string>
+    <string name="h2161b">  کورونا کی وجہ سے کوئی میٹنگ نہیں رکھی گی </string>
     <string name="h2161c"> کرونا کا ڈریا خوف </string>
     <string name="h2161d"> سماجی مفاصلہ </string>
     <string name="h2161e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
@@ -2993,7 +2993,7 @@
     <string name="ah20a">ہاں</string>
     <string name="ah20b">نہیں</string>
 
-    <string name="ah21">AH21a:\t اپنے بہن بھائیوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
+    <string name="ah21">AH2101:\t اپنے بہن بھائیوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
     <string name="ah21a">بہت آسان</string>
     <string name="ah21b">آسان</string>
     <string name="ah21c">متوسط(بس آسان)</string>
@@ -3003,7 +3003,7 @@
     <string name="ah21g">میں صرف اپنے دوستوں سے بات کرتا / کرتی ہوں</string>
 
 
-    <string name="ah2101">AH21b:\t اپنے دوستوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
+    <string name="ah2101">AH2102:\t اپنے دوستوں سے اپنی صحت کے بارے میں بات کرنا کیسا لگتا ہے؟</string>
     <string name="ah2101a">بہت آسان</string>
     <string name="ah2101b">آسان</string>
     <string name="ah2101c">متوسط(بس آسان)</string>

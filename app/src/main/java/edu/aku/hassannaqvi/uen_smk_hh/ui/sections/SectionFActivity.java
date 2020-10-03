@@ -150,21 +150,21 @@ public class SectionFActivity extends AppCompatActivity {
         json.put("f101", bi.f101a.isChecked() ? "1" :
                 bi.f101b.isChecked() ? "2" : "-1");
 
-        json.put("f101aa", bi.f101aa.isChecked() ? "1" : "-1");
-        json.put("f101ab", bi.f101ab.isChecked() ? "2" : "-1");
-        json.put("f101ac", bi.f101ac.isChecked() ? "3" : "-1");
-        json.put("f101ad", bi.f101ad.isChecked() ? "4" : "-1");
-        json.put("f101ae", bi.f101ae.isChecked() ? "5" : "-1");
-        json.put("f101af", bi.f101af.isChecked() ? "6" : "-1");
-        json.put("f101ag", bi.f101ag.isChecked() ? "7" : "-1");
-        json.put("f101ah", bi.f101ah.isChecked() ? "8" : "-1");
-        json.put("f101ai", bi.f101ai.isChecked() ? "9" : "-1");
-        json.put("f101aj", bi.f101aj.isChecked() ? "10" : "-1");
-        json.put("f101ak", bi.f101ak.isChecked() ? "11" : "-1");
-        json.put("f101al", bi.f101al.isChecked() ? "12" : "-1");
-        json.put("f101am", bi.f101am.isChecked() ? "13" : "-1");
-        json.put("f101an", bi.f101an.isChecked() ? "14" : "-1");
-        json.put("f101ao", bi.f101ao.isChecked() ? "15" : "-1");
+        json.put("f10101a", bi.f101aa.isChecked() ? "1" : "-1");
+        json.put("f10101b", bi.f101ab.isChecked() ? "2" : "-1");
+        json.put("f10101c", bi.f101ac.isChecked() ? "3" : "-1");
+        json.put("f10101d", bi.f101ad.isChecked() ? "4" : "-1");
+        json.put("f10101e", bi.f101ae.isChecked() ? "5" : "-1");
+        json.put("f10101f", bi.f101af.isChecked() ? "6" : "-1");
+        json.put("f10101g", bi.f101ag.isChecked() ? "7" : "-1");
+        json.put("f10101h", bi.f101ah.isChecked() ? "8" : "-1");
+        json.put("f10101i", bi.f101ai.isChecked() ? "9" : "-1");
+        json.put("f10101j", bi.f101aj.isChecked() ? "10" : "-1");
+        json.put("f10101k", bi.f101ak.isChecked() ? "11" : "-1");
+        json.put("f10101l", bi.f101al.isChecked() ? "12" : "-1");
+        json.put("f10101m", bi.f101am.isChecked() ? "13" : "-1");
+        json.put("f10101n", bi.f101an.isChecked() ? "14" : "-1");
+        json.put("f10101o", bi.f101ao.isChecked() ? "15" : "-1");
 
         /*json.put("f102a", bi.f102a.isChecked() ? "1" : "0");*/
         json.put("f102b", bi.f102b.isChecked() ? "2" : "-1");

@@ -379,7 +379,7 @@
 
     <string name="f101"> F101:\t ڇا توھان (نالو) حمل دوران طبي معائنو (ANC) ڪرايو ؟ </string>
 
-    <string name="f101a"> F101a:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڇو نه ڪرايو ؟ </string>
+    <string name="f101a"> F10101:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڇو نه ڪرايو ؟ </string>
     <string name="f101ahint"> هڪ کان وڌيڪ جواب ٿي سگھن ٿا </string>
     <string name="f101aa"> سواري نه ھئي </string>
     <string name="f101ab"> عملي جو غير مناسب رويو </string>
@@ -524,12 +524,12 @@
     <string name="f121a"> ھا </string>
     <string name="f121b"> نه </string>
 
-    <string name="f1211"> F121a:\t توھان جي گذريل حمل دوران ليڊي ھيلٿ ورڪر (ايل ايڇ ڊبليو) ڪورونا جي لاڪ ڊائون ۾ توھان جي گھر جو دورو ڪيو ؟ </string>
+    <string name="f1211"> F12101:\t توھان جي گذريل حمل دوران ليڊي ھيلٿ ورڪر (ايل ايڇ ڊبليو) ڪورونا جي لاڪ ڊائون ۾ توھان جي گھر جو دورو ڪيو ؟ </string>
     <string name="f1211a"> ھا </string>
     <string name="f1211b"> نه </string>
     <string name="f1211c"> لاگو نہیں ہے </string>
 
-    <string name="f1212"> F121b:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
+    <string name="f1212"> F12102:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="f1212a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي </string>
     <string name="f1212b"> ڪرونا جي لاڪ ڊائون ڪري دورو نه ڪيو </string>
     <string name="f1212c"> ليڊي ھيلٿ ورڪر آئي پر اسان ڪرونا جي ڪري اچڻ نه ڏنو </string>
@@ -825,7 +825,7 @@
     <string name="g124l"> سڄي جسم تي سوڄ </string>
     <string name="g124m"> شديد الٽي يا آت اچڻ</string>
 
-    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
+    <string name="g12401"> G12401:\t Did you experience any danger signs/problems during labour and delivery? </string>
     <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="g12401a"> شرمگاہ سے خون آنا </string>
     <string name="g12401b"> دورے/جھٹکے </string>
@@ -846,7 +846,7 @@
     <string name="g125b"> نه </string>
     <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
-    <string name="g1251"> G125a:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
+    <string name="g1251"> G12501:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="g1251a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي ؟ </string>
     <string name="g1251b"> ڪرونا جي لاڪ ڊائون ڪري دورو نه ڪيو </string>
     <string name="g1251c"> ليڊي ھيلٿ ورڪر آئي پر اسان ڪرونا جي ڪري اچڻ نه ڏنو </string>
@@ -934,7 +934,7 @@
 
     <string name="h111"> H111:\t (نالو) پيدائش کان پوءِ ڪيتري دير بعد ماءُ جي ڇاتي سان لڳايو ويو ؟ </string>
 
-    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112a"> H11202:\t Has {name} ever been breastfeed? </string>
     <string name="h112y"> Yes </string>
     <string name="h112n"> No </string>
 
@@ -961,7 +961,7 @@
     <string name="h115y"> Yes </string>
     <string name="h115n"> No </string>
 
-    <string name="h115a"> H115A:\t In the first 24 hours what was given to {NAME} to drink? </string>
+    <string name="h115a"> H11502:\t In the first 24 hours what was given to {NAME} to drink? </string>
     <string name="h115aa"> Milk (other than breast milk) </string>
     <string name="h115ab"> Plain water </string>
     <string name="h115ac"> Honey or sugar water </string>
@@ -1083,7 +1083,7 @@
     <string name="h131a"> ھا </string>
     <string name="h131b"> نه </string>
 
-    <string name="h1311"> H131a:\t (نالو) کي ٽڪا نه لڳرائڻ جو سبب ڇا ھو ؟ </string>
+    <string name="h1311"> H13101:\t (نالو) کي ٽڪا نه لڳرائڻ جو سبب ڇا ھو ؟ </string>
     <string name="h1311a"> اھيو ضروري نه آھي </string>
     <string name="h1311b"> ڪرونا جي ڪري اسپتال بند ھئي </string>
     <string name="h1311c"> ڪرونا جو خوف / ڊپ </string>
@@ -1098,7 +1098,7 @@
     <string name="h132b"> نه </string>
     <string name="h132c"> ڊليوري ڪنھن بي علائقي ۾ ٿي </string>
 
-    <string name="h1321"> H132a:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
+    <string name="h1321"> H13201:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="h1321a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي </string>
     <string name="h1321b"> ڪرونا جي الڪ ڊائون ڪري دورو نه ڪيو </string>
     <string name="h1321c"> ليڊي ھيلٿ ورڪر آئي پر اسان ڪرونا جي ڪري اچڻ نه ڏنو </string>
@@ -1144,11 +1144,11 @@
     <string name="h136e"> (ايل ايڇ ڊبليو (ليڊي ھيلٿ ورڪر </string>
     <string name="h136f"> دائي / ٽي بي اي </string>
 
-    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
+    <string name="h136aa"> H13601:\t Do you think early health check-up is important for new-born after birth? </string>
     <string name="h136aaa"> Agree </string>
     <string name="h136aab"> Disagree </string>
 
-    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
+    <string name="h13602"> H13602:\t Did your new-born experience any danger signs/problems? </string>
     <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="h13602a"> جھٹکے / دورے پڑنا </string>
     <string name="h13602b"> جسم کا ہلانے پر حرکت کرنا یا ہلائے جانے پر بھی حرکت نہیں کرنا </string>
@@ -1161,7 +1161,7 @@
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
     <string name="h13602j"> معلوم نہیں </string>
 
-    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
     <string name="h13603a"> ہاں </string>
     <string name="h13603b"> نہیں </string>
 
@@ -1231,7 +1231,7 @@
     <string name="h205d"> (سي ايم ڊبليو (ڪميونٽي مڊوائف</string>
     <string name="h205e"> دائي / ٽي بي اي </string>
 
-    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
+    <string name="h205aa"> H20501:\t Purpose of this check-up? </string>
     <string name="h205aaa"> Counselling on nutrition </string>
     <string name="h205aab"> Counselling on IYCF And breast feeding </string>
     <string name="h205aac"> Counselling on family planning </string>
@@ -1269,7 +1269,7 @@
     <string name="h208aaa"> Agree </string>
     <string name="h208aab"> Disagree </string>
 
-    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H20802:\t Did you experience any danger signs/problems that occur after delivery? </string>
     <string name="h20802a"> تیز بخار، پیٹ کے نچلے حصہ میں درد یا بدبودار پانی کا اخراج (انفیکشن) </string>
     <string name="h20802b"> شدید سر میں درد، نظر کا دھندلا پن، ہائی بلڈ پریشر </string>
     <string name="h20802c"> جھٹکے / دورے پڑنا </string>
@@ -1288,7 +1288,7 @@
     <string name="h209a"> ھا </string>
     <string name="h209b"> نه </string>
 
-    <string name="h2091"> H209a:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
+    <string name="h2091"> H20901:\t ليڊي ھيلٿ ورڪر جي دوري نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="h2091a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي </string>
     <string name="h2091b"> ڪرونا جي لاڪ ڊائون ڪري دورو نه ڪيو </string>
     <string name="h2091c"> ليڊي ھيلٿ ورڪر آئي پر اسان ڪرونا جي ڪري اچڻ نه ڏنو </string>
@@ -1343,7 +1343,7 @@
     <string name="h216b"> نه</string>
     <string name="h216c"> ان بابت ڪڏھن به نه ٻڌو آھي </string>
 
-    <string name="h2161"> H216a:\t ميٽنگ / گڏجاڻي ۾ شموليت نه ڪرڻ جو سبب ڇا ھو ؟ </string>
+    <string name="h2161"> H21601:\t ميٽنگ / گڏجاڻي ۾ شموليت نه ڪرڻ جو سبب ڇا ھو ؟ </string>
     <string name="h2161a"> اھيو ضروري نه آھي </string>
     <string name="h2161b"> ڪرونا جي ڪري نه ٿي سگھيو </string>
     <string name="h2161c"> ڪرونا جو خوف / ڊپ </string>

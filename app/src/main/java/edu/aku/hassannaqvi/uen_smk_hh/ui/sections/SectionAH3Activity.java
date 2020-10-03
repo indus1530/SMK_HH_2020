@@ -173,7 +173,7 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah20b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah21", bi.ah21a.isChecked() ? "1"
+        json.put("ah2101", bi.ah21a.isChecked() ? "1"
                 : bi.ah21b.isChecked() ? "2"
                 : bi.ah21c.isChecked() ? "3"
                 : bi.ah21d.isChecked() ? "4"
@@ -181,7 +181,7 @@ public class SectionAH3Activity extends AppCompatActivity {
                 : bi.ah21f.isChecked() ? "6"
                 : "-1");
 
-        json.put("ah2101", bi.ah2101a.isChecked() ? "1"
+        json.put("ah2102", bi.ah2101a.isChecked() ? "1"
                 : bi.ah2101b.isChecked() ? "2"
                 : bi.ah2101c.isChecked() ? "3"
                 : bi.ah2101d.isChecked() ? "4"

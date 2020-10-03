@@ -397,8 +397,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-
-
                 <!-- ah2101  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah2101"
@@ -452,8 +450,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-
 
             </LinearLayout>
 

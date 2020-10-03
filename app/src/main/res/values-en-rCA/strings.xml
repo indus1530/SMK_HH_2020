@@ -370,7 +370,7 @@
 
     <string name="f101"> F101:\t Did you see anyone for antenatal care during your last pregnancy with (name) ? </string>
 
-    <string name="f101a"> F101A:\t Why did you not go for antenatal check-up(s) during your pregnancy with {NAME} ? </string>
+    <string name="f101a"> F10101:\t Why did you not go for antenatal check-up(s) during your pregnancy with {NAME} ? </string>
     <string name="f101ahint"> Multiple responses allowed </string>
     <string name="f101aa"> No transportation </string>
     <string name="f101ab"> Poor attitude of staff </string>
@@ -827,7 +827,7 @@
     <string name="g124l"> Generalized edema </string>
     <string name="g124m"> Severe nausea or vomiting </string>
 
-    <string name="g12401"> G124A:\t Did you experience any danger signs/problems during labour and delivery? </string>
+    <string name="g12401"> G12401:\t Did you experience any danger signs/problems during labour and delivery? </string>
     <string name="g12401hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="g12401a"> Vaginal bleeding </string>
     <string name="g12401b"> Convulsions/fits </string>
@@ -848,7 +848,7 @@
     <string name="g125b"> No </string>
     <string name="g125c"> نہیں ، کرونا کی بیماری کی وجہ سے </string>
 
-    <string name="g1251"> G125a:\t Reasons for not visiting LHW? </string>
+    <string name="g1251"> G12501:\t Reasons for not visiting LHW? </string>
     <string name="g1251a"> LHW usually don’t visit </string>
     <string name="g1251b"> LHW didn’t visit in Lockdown due to Corona </string>
     <string name="g1251c"> LHW came but we didn’t allow her to enter in the home </string>
@@ -934,7 +934,7 @@
 
     <string name="h111"> H111:\t How soon after birth, {NAME} was put on skin to skin contact with mother ? </string>
 
-    <string name="h112a"> H112A:\t Has {name} ever been breastfeed? </string>
+    <string name="h112a"> H11202:\t Has {name} ever been breastfeed? </string>
     <string name="h112y"> Yes </string>
     <string name="h112n"> No </string>
 
@@ -961,7 +961,7 @@
     <string name="h115y"> Yes </string>
     <string name="h115n"> No </string>
 
-    <string name="h115a"> H115A:\t In the first 24 hours what was given to {NAME} to drink? </string>
+    <string name="h115a"> H11502:\t In the first 24 hours what was given to {NAME} to drink? </string>
     <string name="h115aa"> Milk (other than breast milk) </string>
     <string name="h115ab"> Plain water </string>
     <string name="h115ac"> Honey or sugar water </string>
@@ -1139,11 +1139,11 @@
     <string name="h136e"> LHW (Lady Health Worker) </string>
     <string name="h136f"> Dai/TBA (Traditional Birth Attendant) </string>
 
-    <string name="h136aa"> H136A:\t Do you think early health check-up is important for new-born after birth? </string>
+    <string name="h136aa"> H13601:\t Do you think early health check-up is important for new-born after birth? </string>
     <string name="h136aaa"> Agree </string>
     <string name="h136aab"> Disagree </string>
 
-    <string name="h13602"> H136B:\t Did your new-born experience any danger signs/problems? </string>
+    <string name="h13602"> H13602:\t Did your new-born experience any danger signs/problems? </string>
     <string name="h13602hint"> Circle all that are mentioned, but do not prompt with any suggestions. </string>
     <string name="h13602a"> Convulsions/fits </string>
     <string name="h13602b"> Movement only when stimulated or no movement, even when stimulated </string>
@@ -1156,7 +1156,7 @@
     <string name="h13602i"> Not crying </string>
     <string name="h13602j"> Don’t Know </string>
 
-    <string name="h13603"> H136C:\t Did you seek newborn care for the above experienced problems? </string>
+    <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
     <string name="h13603a"> Yes </string>
     <string name="h13603b"> No </string>
 
@@ -1225,7 +1225,7 @@
     <string name="h205d"> Community Midwife </string>
     <string name="h205e"> Dai/TBA (Traditional Birth Attendant) </string>
 
-    <string name="h205aa"> H205A:\t Purpose of this check-up? </string>
+    <string name="h205aa"> H20501:\t Purpose of this check-up? </string>
     <string name="h205aaa"> Counselling on nutrition </string>
     <string name="h205aab"> Counselling on IYCF And breast feeding </string>
     <string name="h205aac"> Counselling on family planning </string>
@@ -1264,7 +1264,7 @@
     <string name="h208aaa"> Agree </string>
     <string name="h208aab"> Disagree </string>
 
-    <string name="h20802"> H208B:\t Did you experience any danger signs/problems that occur after delivery? </string>
+    <string name="h20802"> H20802:\t Did you experience any danger signs/problems that occur after delivery? </string>
     <string name="h20802a"> High Fever, lower abdominal pain or foul smelling discharge (infection) </string>
     <string name="h20802b"> Severe headache, blurred vision, high blood pressure </string>
     <string name="h20802c"> Convulsions or fits (eclampsia) </string>
