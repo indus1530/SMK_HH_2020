@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -35,6 +37,26 @@ public class SectionAH5Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
+        bi.ah33d.setOnCheckedChangeListener(((radioGroup, isChecked) -> {
+
+
+            if (isChecked) {
+
+                bi.ah33a.setChecked(false);
+                bi.ah33a.setEnabled(false);
+                bi.ah33b.setChecked(false);
+                bi.ah33b.setEnabled(false);
+                bi.ah33c.setChecked(false);
+                bi.ah33c.setEnabled(false);
+
+            } else {
+
+                bi.ah33a.setEnabled(true);
+                bi.ah33b.setEnabled(true);
+                bi.ah33c.setEnabled(true);
+            }
+
+        }));
     }
 
     public void BtnContinue() {

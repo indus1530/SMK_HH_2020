@@ -14,9 +14,9 @@
         style="@style/linearlayout_view_wt_bound"
         android:orientation="vertical">
 
-        <TextView
+        <!--<TextView
             android:id="@+id/txtLbl"
-            style="@style/textView3Head" />
+            style="@style/textView3Head" />-->
 
         <ScrollView
             style="@style/i_scrollview"
@@ -28,6 +28,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <!-- Select Adolescent Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVd106"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="Select Adolescent" />
+
+                        <Spinner
+                            android:id="@+id/adolescent"
+                            style="@style/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
                 <!-- ah1  Radio   -->
                 <androidx.cardview.widget.CardView

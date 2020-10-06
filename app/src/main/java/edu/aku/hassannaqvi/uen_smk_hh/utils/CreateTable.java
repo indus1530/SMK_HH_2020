@@ -15,9 +15,9 @@ import edu.aku.hassannaqvi.uen_smk_hh.contracts.VersionAppContract;
 
 public final class CreateTable {
 
-    public static final String DATABASE_NAME = "uen_smk.db";
-    public static final String DB_NAME = "uen_smk.db";
-    public static final String PROJECT_NAME = "DMU-UENSMK";
+    public static final String DATABASE_NAME = "smk_bl.db";
+    public static final String DB_NAME = "smk_bl.db";
+    public static final String PROJECT_NAME = "DMU-SMK/BL";
     public static final int DATABASE_VERSION = 1;
 
     public static final String SQL_CREATE_FORMS = "CREATE TABLE "
@@ -196,6 +196,8 @@ public final class CreateTable {
             FamilyMembersContract.SingleMember.COLUMN_RELATION_HH + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_AGE + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_MONTH_FM + " TEXT," +
+            FamilyMembersContract.SingleMember.COLUMN_DAY_FM + " TEXT," +
+            FamilyMembersContract.SingleMember.AGE_IN_DAYS + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_MOTHER_NAME + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_MOTHER_SERIAL + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_GENDER + " TEXT," +

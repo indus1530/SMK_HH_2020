@@ -47,7 +47,8 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
         setUIComponent();
 
         db.resetAll();
-        Toast.makeText(this, "Updated"+new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Updated: " + new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()), Toast.LENGTH_SHORT).show();
+
     }
 
     private void setUIComponent() {
@@ -143,7 +144,7 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
 
         json.put("imei", MainApp.IMEI);
         json.put("rndid", bl.get_ID());
-        json.put("luid", bl.getLUID());
+        json.put("_luid", bl.getLUID());
         json.put("randDT", bl.getRandomDT());
         json.put("hh03", bl.getStructure());
         json.put("hh07", bl.getExtension());
@@ -179,41 +180,43 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
         }
     }
 
-    public void BtnCheckCluster() {
+    public void BtnCheckCluster(View v) {
 
         if (!Validator.emptyTextBox(this, bi.a101)) return;
-        boolean loginFlag;
+
         if (bi.a101.getText().toString().length() != 6) {
             Toast.makeText(this, "Invalid Cluster length!!", Toast.LENGTH_SHORT).show();
             return;
         }
-        /*int cluster = Integer.parseInt(bi.a101.getText().toString().substring(3, 6));
-        if (cluster < 500) {
+
+        boolean loginFlag;
+        String subCluster = bi.a101.getText().toString();
+        int cluster = Integer.parseInt(subCluster.substring(subCluster.length() - 3));
+        if (cluster < 900) {
             loginFlag = !(MainApp.userName.equals("test1234") || MainApp.userName.equals("dmu@aku") || MainApp.userName.substring(0, 4).equals("user"));
         } else {
             loginFlag = MainApp.userName.equals("test1234") || MainApp.userName.equals("dmu@aku") || MainApp.userName.substring(0, 4).equals("user");
         }
-        if (!loginFlag) {
-            Toast.makeText(this, "Can't proceed test cluster for current user!!", Toast.LENGTH_SHORT).show();
-            return;
-        }*/
+        if (loginFlag) {
+            EnumBlockContract enumBlockContract = db.getEnumBlock(bi.a101.getText().toString());
+            if (enumBlockContract != null) {
+                String selected = enumBlockContract.getGeoarea();
+                if (!selected.equals("")) {
 
-        EnumBlockContract enumBlockContract = db.getEnumBlock(bi.a101.getText().toString());
-        if (enumBlockContract != null) {
-            String selected = enumBlockContract.getGeoarea();
-            if (!selected.equals("")) {
+                    String[] selSplit = selected.split("\\|");
 
-                String[] selSplit = selected.split("\\|");
+                    bi.fldGrpSectionA01.setVisibility(View.VISIBLE);
+                    bi.a104.setText(selSplit[0]);
+                    bi.a105.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
+                    bi.a106.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
+                    bi.a107.setText(selSplit[3]);
 
-                bi.fldGrpSectionA01.setVisibility(View.VISIBLE);
-                bi.a104.setText(selSplit[0]);
-                bi.a105.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
-                bi.a106.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
-                bi.a107.setText(selSplit[3]);
-
+                }
+            } else {
+                Toast.makeText(this, "Sorry cluster not found!!", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "Sorry cluster not found!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Can't proceed test cluster for current user!!", Toast.LENGTH_SHORT).show();
         }
 
     }

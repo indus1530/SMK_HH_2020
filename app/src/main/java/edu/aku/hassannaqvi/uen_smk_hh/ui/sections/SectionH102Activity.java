@@ -236,37 +236,11 @@ public class SectionH102Activity extends AppCompatActivity {
             }
         });
 
+
         bi.h1321h.setOnCheckedChangeListener((buttonView, isChecked) -> {
-
-            if (!isChecked) {
-
-                Clear.clearAllFields(bi.h1321a);
-                Clear.clearAllFields(bi.h1321b);
-                Clear.clearAllFields(bi.h1321c);
-                Clear.clearAllFields(bi.h1321d);
-                Clear.clearAllFields(bi.h1321e);
-                Clear.clearAllFields(bi.h1321f);
-                Clear.clearAllFields(bi.h1321g);
-
-                bi.h1321a.setVisibility(View.GONE);
-                bi.h1321b.setVisibility(View.GONE);
-                bi.h1321c.setVisibility(View.GONE);
-                bi.h1321d.setVisibility(View.GONE);
-                bi.h1321e.setVisibility(View.GONE);
-                bi.h1321f.setVisibility(View.GONE);
-                bi.h1321g.setVisibility(View.GONE);
-
-            } else {
-
-                bi.h1321a.setVisibility(View.VISIBLE);
-                bi.h1321b.setVisibility(View.VISIBLE);
-                bi.h1321c.setVisibility(View.VISIBLE);
-                bi.h1321d.setVisibility(View.VISIBLE);
-                bi.h1321e.setVisibility(View.VISIBLE);
-                bi.h1321f.setVisibility(View.VISIBLE);
-                bi.h1321g.setVisibility(View.VISIBLE);
-            }
+            Clear.Companion.clearAllFields(bi.h1321check, !isChecked);
         });
+
 
         //h13598
         bi.h13598.setOnCheckedChangeListener((compoundButton, b) -> {
@@ -468,22 +442,14 @@ public class SectionH102Activity extends AppCompatActivity {
         json.put("h137", bi.h137a.isChecked() ? "1" :
                 bi.h137b.isChecked() ? "2" : "-1");
 
-        json.put("h1371", bi.h1371a.isChecked() ? "1" :
-                bi.h1371b.isChecked() ? "2" :
-                        bi.h1371c.isChecked() ? "3" :
-                                bi.h1371d.isChecked() ? "4" :
-                                        bi.h1371e.isChecked() ? "5" :
-                                                bi.h1371f.isChecked() ? "6" :
-                                                        bi.h1371g.isChecked() ? "7"
-                                                                : "-1");
 
-        json.put("h137aa", bi.h137aaa.isChecked() ? "1" :
+        json.put("h13701", bi.h137aaa.isChecked() ? "1" :
                 bi.h137aab.isChecked() ? "2" :
                         bi.h137aac.isChecked() ? "3" :
                                 bi.h137aad.isChecked() ? "4" :
                                         bi.h137aae.isChecked() ? "5" : "-1");
 
-        json.put("h137bb", bi.h137bba.isChecked() ? "1" :
+        json.put("h13702", bi.h137bba.isChecked() ? "1" :
                 bi.h137bbb.isChecked() ? "2" :
                         bi.h137bbc.isChecked() ? "3" :
                                 bi.h137bbd.isChecked() ? "4" :
@@ -492,7 +458,16 @@ public class SectionH102Activity extends AppCompatActivity {
                                                         bi.h137bbg.isChecked() ? "7" :
                                                                 bi.h137bb96.isChecked() ? "96" : "-1");
 
-        json.put("h137bb96x", bi.h137bb96x.getText().toString().trim().isEmpty() ? "-1" : bi.h137bb96x.getText().toString());
+        json.put("h1370296x", bi.h137bb96x.getText().toString().trim().isEmpty() ? "-1" : bi.h137bb96x.getText().toString());
+
+        json.put("h13703", bi.h1371a.isChecked() ? "1" :
+                bi.h1371b.isChecked() ? "2" :
+                        bi.h1371c.isChecked() ? "3" :
+                                bi.h1371d.isChecked() ? "4" :
+                                        bi.h1371e.isChecked() ? "5" :
+                                                bi.h1371f.isChecked() ? "6" :
+                                                        bi.h1371g.isChecked() ? "7"
+                                                                : "-1");
 
         json.put("h12500", bi.h12500a.isChecked() ? "1"
                 : bi.h12500b.isChecked() ? "2"

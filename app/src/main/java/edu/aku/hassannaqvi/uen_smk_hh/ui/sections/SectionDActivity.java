@@ -33,6 +33,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionDBinding;
 import edu.aku.hassannaqvi.uen_smk_hh.datecollection.AgeModel;
 import edu.aku.hassannaqvi.uen_smk_hh.datecollection.DateRepository;
 import edu.aku.hassannaqvi.uen_smk_hh.ui.list_activity.FamilyMembersListActivity;
+import edu.aku.hassannaqvi.uen_smk_hh.utils.DateUtils;
 import edu.aku.hassannaqvi.uen_smk_hh.viewmodel.MainVModel;
 import kotlin.Pair;
 
@@ -51,6 +52,8 @@ public class SectionDActivity extends AppCompatActivity {
     private Pair<List<Integer>, List<String>> womenSLst;
     private FamilyMembersContract motherFMC, fatheFMC;
     private String motherSerial, fatherSerial;
+    private DatabaseHelper db;
+    long ageInDays;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,12 +120,18 @@ public class SectionDActivity extends AppCompatActivity {
         }));*/
 
         bi.d103.setOnCheckedChangeListener((radioGroup, i) -> {
+
             if (i == bi.d103b.getId()) {
+
                 if (serial == 2) {
+
                     Clear.clearAllFields(bi.d104, false);
                     bi.d104.check(MainApp.genderFlag == 1 ? bi.d104b.getId() : bi.d104a.getId());
+
                 }
+
             } else Clear.clearAllFields(bi.d104, true);
+
         });
 
     }
@@ -230,9 +239,39 @@ public class SectionDActivity extends AppCompatActivity {
         sd.put("d108b", bi.d108b.getText().toString().trim().isEmpty() ? "-1" : bi.d108b.getText().toString());
         sd.put("d108c", bi.d108c.getText().toString().trim().isEmpty() ? "-1" : bi.d108c.getText().toString());
         sd.put("d109", bi.d109.getText().toString().trim().isEmpty() ? "-1" : bi.d109.getText().toString());
+        sd.put("d109a", bi.d109a.getText().toString().trim().isEmpty() ? "-1" : bi.d109a.getText().toString());
+        sd.put("d109b", bi.d109b.getText().toString().trim().isEmpty() ? "-1" : bi.d109b.getText().toString());
+
+        //int ageInDays = MonthsToDays(Integer.parseInt(bi.d109.getText().toString()), Integer.parseInt(bi.d109a.getText().toString())) + Integer.parseInt(bi.d109b.getText().toString());
+        //sd.put("ageInDays", ageInDays);
 
         fmc.setAge(bi.d109.getText().toString().trim().isEmpty() ? "-1" : bi.d109.getText().toString());
         fmc.setMonthfm(bi.d109a.getText().toString().trim().isEmpty() ? "-1" : bi.d109a.getText().toString());
+        fmc.setDayfm(bi.d109b.getText().toString().trim().isEmpty() ? "-1" : bi.d109b.getText().toString());
+
+        String years, months, days;
+
+        if (bi.d108a.getText().toString() != "00") {
+            days = bi.d108a.getText().toString();
+        } else {
+            days = "00";
+        }
+        if (bi.d108b.getText().toString() != "00") {
+            months = bi.d108b.getText().toString();
+        } else {
+            months = "00";
+        }
+        if (bi.d108c.getText().toString() != "00") {
+            years = bi.d108c.getText().toString();
+        } else {
+            years = "00";
+        }
+
+        String dob = days + "-" + months + "-" + years;
+
+        ageInDays = DateUtils.ageInDaysByDOB(dob);
+
+        fmc.setAgeInDays(ageInDays > 0 ? String.valueOf(ageInDays).trim() : "0");
 
         sd.put("d110", bi.d110a.isChecked() ? "0"
                 : bi.d110b.isChecked() ? "1"
@@ -279,7 +318,7 @@ public class SectionDActivity extends AppCompatActivity {
                 mainVModel.setAdols(fmc);
             } else if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 19) {
                 mainVModel.setAdols(fmc);
-                if(fmc.getGender().equals("2") && !bi.d105b.isChecked()) {
+                if (fmc.getGender().equals("2") && !bi.d105b.isChecked()) {
                     mainVModel.setMWRA(fmc);
                 }
             } else if (Integer.parseInt(fmc.getAge()) > 19 && fmc.getGender().equals("2") && !bi.d105b.isChecked()) {
@@ -292,6 +331,8 @@ public class SectionDActivity extends AppCompatActivity {
                     mainVModel.setMwraChildU2(motherFMC);
                 }
             }
+
+            //Toast.makeText(this, ""+mainVModel, Toast.LENGTH_LONG).show();
         }
 
         /*if (Integer.parseInt(fmc.getAge()) >= 15 && Integer.parseInt(fmc.getAge()) <= 49 && fmc.getGender().equals("2") && !bi.d105b.isChecked())
@@ -325,7 +366,6 @@ public class SectionDActivity extends AppCompatActivity {
                 bi.d109.setError("Less then Parent Age");
                 return false;
             }
-
             return true;
         }
     }
@@ -389,6 +429,7 @@ public class SectionDActivity extends AppCompatActivity {
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
                     bi.d109.setText(null);
                     bi.d109a.setText(null);
+                    bi.d109b.setText(null);
                 }
 
                 @Override
@@ -407,14 +448,18 @@ public class SectionDActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                dtFlag = false;
                 bi.d109a.setEnabled(false);
                 bi.d109a.setText(null);
+                bi.d109b.setEnabled(false);
+                bi.d109b.setText(null);
                 bi.d109.setEnabled(false);
                 bi.d109.setText(null);
                 if (!bi.d108a.isRangeTextValidate() || !bi.d108b.isRangeTextValidate() || !bi.d108c.isRangeTextValidate())
                     return;
                 if (bi.d108a.getText().toString().equals("00") && bi.d108b.getText().toString().equals("00") && bi.d108c.getText().toString().equals("0000")) {
                     bi.d109a.setEnabled(true);
+                    bi.d109b.setEnabled(true);
                     bi.d109.setEnabled(true);
                     dtFlag = true;
                     return;
@@ -431,6 +476,7 @@ public class SectionDActivity extends AppCompatActivity {
                 }
                 dtFlag = true;
                 bi.d109a.setText(String.valueOf(age.getMonth()));
+                bi.d109b.setText(String.valueOf(age.getDay()));
                 bi.d109.setText(String.valueOf(age.getYear()));
 
             }
@@ -635,4 +681,16 @@ public class SectionDActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(this, "Press top back button.", Toast.LENGTH_SHORT).show();
     }
+
+    /*public long calculateAgeInDays(int days, int months, int years) {
+
+        Calendar thatDay = Calendar.getInstance();
+        thatDay.set(Calendar.DAY_OF_MONTH, days);
+        thatDay.set(Calendar.MONTH, months);
+        thatDay.set(Calendar.YEAR, years);
+        Calendar today = Calendar.getInstance();
+        long diff = today.getTimeInMillis() - thatDay.getTimeInMillis();
+
+        return diff / (24 * 60 * 60 * 1000);
+    }*/
 }

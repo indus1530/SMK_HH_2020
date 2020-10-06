@@ -90,9 +90,7 @@ public class SectionF02Activity extends AppCompatActivity {
 
             if (b) {
                 Clear.clearAllFields(bi.fldGrp2532);
-                bi.fldGrp2532.setVisibility(View.GONE);
-            } else
-                bi.fldGrp2532.setVisibility(View.VISIBLE);
+            }
 
         });
 

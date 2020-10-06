@@ -101,8 +101,8 @@ class FamilyMembersListActivity : AppCompatActivity() {
                                     MainApp.selectedKishAdols = adolData?.get(kishSelectedMWRA(intent.getIntExtra("sno", 0), adolData.size) - 1)
 
                                     finish()
-                                    val nextClass: Class<*> = if (MainApp.selectedKishAdols != null) SectionAH1Activity::class.java else SectionKActivity::class.java
-                                    val next = if (MainApp.selectedKishMWRA != null) SectionFActivity::class.java else nextClass
+                                    val nextClass: Class<*> = if (MainApp.selectedKishMWRA != null) SectionFActivity::class.java else SectionMActivity::class.java
+                                    val next = if (MainApp.selectedKishAdols != null) SectionAH1Activity::class.java else nextClass
                                     startActivity(Intent(this, if (bi.contentScroll.mwra.text.toString().toInt() > 0) SectionE1Activity::class.java else next))
                                 }
                                 else -> Util.openEndActivity(this)

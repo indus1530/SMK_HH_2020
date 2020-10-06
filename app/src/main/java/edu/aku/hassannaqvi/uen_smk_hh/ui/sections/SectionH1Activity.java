@@ -110,19 +110,23 @@ public class SectionH1Activity extends AppCompatActivity {
         bi.h113.setOnCheckedChangeListener((group, checkedId) -> {
 
             if (checkedId == bi.h113a.getId()) {
+
                 bi.fldGrpCVh114.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh11500.setVisibility(View.VISIBLE);
-                bi.fldGrpCVh11501.setVisibility(View.VISIBLE);
+
+                /*bi.fldGrpCVh11500.setVisibility(View.VISIBLE);
+                bi.fldGrpCVh11501.setVisibility(View.VISIBLE);*/
 
             } else {
 
                 Clear.clearAllFields(bi.fldGrpCVh114);
-                Clear.clearAllFields(bi.fldGrpCVh11500);
-                Clear.clearAllFields(bi.fldGrpCVh11501);
+
+                /*Clear.clearAllFields(bi.fldGrpCVh11500);
+                Clear.clearAllFields(bi.fldGrpCVh11501);*/
 
                 bi.fldGrpCVh114.setVisibility(View.GONE);
-                bi.fldGrpCVh11500.setVisibility(View.GONE);
-                bi.fldGrpCVh11501.setVisibility(View.GONE);
+
+                /*bi.fldGrpCVh11500.setVisibility(View.GONE);
+                bi.fldGrpCVh11501.setVisibility(View.GONE);*/
             }
         });
 
@@ -317,7 +321,7 @@ public class SectionH1Activity extends AppCompatActivity {
                         bi.h120c.isChecked() ? "3" :
                                 bi.h120d.isChecked() ? "4" :
                                         bi.h120e.isChecked() ? "5" :
-                                                bi.h12098.isChecked() ? "98" : "-1");
+                                                bi.h12088.isChecked() ? "88" : "-1");
 
         json.put("h10500", bi.h10500a.isChecked() ? "1"
                 : bi.h10500b.isChecked() ? "2"

@@ -83,7 +83,7 @@ public class SectionAH6Activity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (TextUtils.isEmpty(bi.ah37ac.getText())) return;
-                if (Integer.parseInt(bi.ah37ac.getText().toString()) >= 10 && Integer.parseInt(bi.ah37ac.getText().toString()) <= 13) {
+                if (Integer.parseInt(bi.ah37ac.getText().toString()) > 14) {
                     ah37_flag = true;
                     bi.fldGrpSecAH602.setVisibility(View.GONE);
                     Clear.clearAllFields(bi.fldGrpSecAH602);
@@ -148,7 +148,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3702c", bi.ah3702c.isChecked() ? "3" : "-1");
         json.put("ah3702d", bi.ah3702d.isChecked() ? "4" : "-1");
         json.put("ah3702e", bi.ah3702e.isChecked() ? "5" : "-1");
-        json.put("ah3702f", bi.ah3702f.isChecked() ? "6" : "-1");
         json.put("ah370296", bi.ah370296.isChecked() ? "96" : "-1");
         json.put("ah370296x", bi.ah370296x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370296x.getText().toString());
 
@@ -157,7 +156,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3703c", bi.ah3703c.isChecked() ? "3" : "-1");
         json.put("ah3703d", bi.ah3703d.isChecked() ? "4" : "-1");
         json.put("ah3703e", bi.ah3703e.isChecked() ? "5" : "-1");
-        json.put("ah3703f", bi.ah3703f.isChecked() ? "6" : "-1");
         json.put("ah370396", bi.ah370396.isChecked() ? "96" : "-1");
         json.put("ah370396x", bi.ah370396x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370396x.getText().toString());
 
@@ -166,7 +164,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3704c", bi.ah3704c.isChecked() ? "3" : "-1");
         json.put("ah3704d", bi.ah3704d.isChecked() ? "4" : "-1");
         json.put("ah3704e", bi.ah3704e.isChecked() ? "5" : "-1");
-        json.put("ah3704f", bi.ah3704f.isChecked() ? "6" : "-1");
         json.put("ah370496", bi.ah370496.isChecked() ? "96" : "-1");
         json.put("ah370496x", bi.ah370496x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370496x.getText().toString());
 
@@ -175,7 +172,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3705c", bi.ah3705c.isChecked() ? "3" : "-1");
         json.put("ah3705d", bi.ah3705d.isChecked() ? "4" : "-1");
         json.put("ah3705e", bi.ah3705e.isChecked() ? "5" : "-1");
-        json.put("ah3705f", bi.ah3705f.isChecked() ? "6" : "-1");
         json.put("ah370596", bi.ah370596.isChecked() ? "96" : "-1");
         json.put("ah370596x", bi.ah370596x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370596x.getText().toString());
 
@@ -184,7 +180,6 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah3706c", bi.ah3706c.isChecked() ? "3" : "-1");
         json.put("ah3706d", bi.ah3706d.isChecked() ? "4" : "-1");
         json.put("ah3706e", bi.ah3706e.isChecked() ? "5" : "-1");
-        json.put("ah3706f", bi.ah3706f.isChecked() ? "6" : "-1");
         json.put("ah370696", bi.ah370696.isChecked() ? "96" : "-1");
         json.put("ah370696x", bi.ah370696x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370696x.getText().toString());
 
@@ -218,7 +213,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah4096", bi.ah4096.isChecked() ? "96" : "-1");
         json.put("ah4096x", bi.ah4096x.getText().toString().trim().isEmpty() ? "-1" : bi.ah4096x.getText().toString());
 
-        json.put("ah40aa", bi.ah40aaa.isChecked() ? "1"
+        json.put("ah4001", bi.ah40aaa.isChecked() ? "1"
                 : bi.ah40aab.isChecked() ? "2"
                 : bi.ah40aac.isChecked() ? "3"
                 : bi.ah40aad.isChecked() ? "4"
@@ -228,7 +223,7 @@ public class SectionAH6Activity extends AppCompatActivity {
                 : bi.ah40aah.isChecked() ? "8"
                 : bi.ah40aa96.isChecked() ? "96" : "-1");
 
-        json.put("ah40aaa", bi.ah40aaa.isChecked() ? "1" : "-1");
+        /*json.put("ah40aaa", bi.ah40aaa.isChecked() ? "1" : "-1");
         json.put("ah40aab", bi.ah40aab.isChecked() ? "2" : "-1");
         json.put("ah40aac", bi.ah40aac.isChecked() ? "3" : "-1");
         json.put("ah40aad", bi.ah40aad.isChecked() ? "4" : "-1");
@@ -236,7 +231,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah40aaf", bi.ah40aaf.isChecked() ? "6" : "-1");
         json.put("ah40aag", bi.ah40aag.isChecked() ? "7" : "-1");
         json.put("ah40aah", bi.ah40aah.isChecked() ? "8" : "-1");
-        json.put("ah40aa96", bi.ah40aa96.isChecked() ? "96" : "-1");
+        json.put("ah40aa96", bi.ah40aa96.isChecked() ? "96" : "-1");*/
 
         json.put("ah40aa96x", bi.ah40aa96x.getText().toString().trim().isEmpty() ? "-1" : bi.ah40aa96x.getText().toString());
 

@@ -1,8 +1,11 @@
 package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +18,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract;
@@ -27,6 +32,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 public class SectionFActivity extends AppCompatActivity {
 
     ActivitySectionFBinding bi;
+    private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,51 @@ public class SectionFActivity extends AppCompatActivity {
 
         setUIComponent();
         setCoronaFields();
+
+        //MainApp.kish.set_UUID(MainApp.fc.get_UID());
+
+        //Toast.makeText(this, "Form : " + MainApp.fc.get_UID(), Toast.LENGTH_SHORT).show();
+
+        //bi.formNo.setText(MainApp.fc.get_UID());
+
+        db = MainApp.appInfo.getDbHelper();
+        List<String> mwras = db.getMWRAS(MainApp.fc.get_UID());
+        bi.mwra.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, mwras));
+        bi.mwra.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+                if(!(bi.mwra.getSelectedItem().toString() == "....")) {
+
+                    // your code here
+                    String merged_value = bi.mwra.getSelectedItem().toString();
+                    String[] merged_value_sep = merged_value.split(":");
+
+                    //Toast.makeText(getApplicationContext(), "Value1: " + merged_value_sep[0], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "Value2: " + merged_value_sep[1], Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // your code here
+            }
+
+        });
+
+        /*if (cursor.getCount() > 0) {
+
+            cursor.moveToFirst();
+
+            for (int i = 0; i < cursor.getCount(); i++) {
+
+                Toast.makeText(this, "Serial No: " + cursor.getString(cursor.getColumnIndex("serial_no")), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Serial No: " + cursor.getString(cursor.getColumnIndex("name")), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Serial No: " + MainApp.fc.get_UID(), Toast.LENGTH_SHORT).show();
+
+                cursor.moveToNext();
+            }
+        }*/
     }
 
     private void setCoronaFields() {
@@ -53,10 +104,10 @@ public class SectionFActivity extends AppCompatActivity {
 
     void setUIComponent() {
 
-        bi.f101Name.setText(new StringBuilder(MainApp.selectedKishMWRA.getName().toUpperCase()).append("\n")
+        /*bi.f101Name.setText(new StringBuilder(MainApp.selectedKishMWRA.getName().toUpperCase()).append("\n")
                 .append(getResources().getString(R.string.d101))
                 .append(":")
-                .append(MainApp.selectedKishMWRA.getSerialno()));
+                .append(MainApp.selectedKishMWRA.getSerialno()));*/
 
         bi.f101.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.f101a.getId()) {
@@ -132,7 +183,9 @@ public class SectionFActivity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
         json.put("fm_uid", MainApp.selectedKishMWRA.getUid());
-        json.put("fm_serial", MainApp.selectedKishMWRA.getSerialno());
+        //json.put("fm_serial", MainApp.selectedKishMWRA.getSerialno());
+        json.put("fm_serial", bi.mwra.getSelectedItem().toString().split(":")[0].trim());
+        json.put("kishmwra_name", bi.mwra.getSelectedItem().toString().split(":")[1].trim());
         json.put("hhno", MainApp.fc.getHhno());
         json.put("cluster_no", MainApp.fc.getClusterCode());
         json.put("_luid", MainApp.fc.getLuid());

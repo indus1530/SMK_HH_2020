@@ -3,6 +3,8 @@ package edu.aku.hassannaqvi.uen_smk_hh.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +18,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
@@ -27,6 +30,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 public class SectionAH1Activity extends AppCompatActivity {
 
     ActivitySectionAh1Binding bi;
+    private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +39,34 @@ public class SectionAH1Activity extends AppCompatActivity {
         bi.setCallback(this);
         setupSkips();
 
-        bi.txtLbl.setText(new StringBuilder(MainApp.selectedKishAdols.getName().toUpperCase()).append("\n")
+        /*bi.txtLbl.setText(new StringBuilder(MainApp.selectedKishAdols.getName().toUpperCase()).append("\n")
                 .append("Serial:")
-                .append(MainApp.selectedKishAdols.getSerialno()));
+                .append(MainApp.selectedKishAdols.getSerialno()));*/
+
+        db = MainApp.appInfo.getDbHelper();
+        List<String> adolescents = db.getAdolescent(MainApp.fc.get_UID());
+        bi.adolescent.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, adolescents));
+        bi.adolescent.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+                if(!(bi.adolescent.getSelectedItem().toString() == "....")) {
+
+                    // your code here
+                    String merged_value = bi.adolescent.getSelectedItem().toString();
+                    String[] merged_value_sep = merged_value.split(":");
+
+                    Toast.makeText(getApplicationContext(), "Value1: " + merged_value_sep[0], Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Value2: " + merged_value_sep[1], Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // your code here
+            }
+
+        });
     }
 
     private void setupSkips() {
@@ -152,8 +181,8 @@ public class SectionAH1Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
         json.put("fm_uid", MainApp.selectedKishAdols.getUid());
-        json.put("fm_serial", MainApp.selectedKishAdols.getSerialno());
-        json.put("fm_name", MainApp.selectedKishAdols.getName());
+        json.put("fm_serial", bi.adolescent.getSelectedItem().toString().split(":")[0].trim());
+        json.put("fm_name", bi.adolescent.getSelectedItem().toString().split(":")[1].trim());
         json.put("hhno", MainApp.fc.getHhno());
         json.put("cluster_no", MainApp.fc.getClusterCode());
         json.put("_luid", MainApp.fc.getLuid());

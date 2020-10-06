@@ -213,6 +213,7 @@
     <string name="d115b"> نہیں </string>
 
     <string name="e100"> خاتون کا نام:  E100:\t </string>
+    <string name="mwra_name"> خاتون کا نام:</string>
 
     <string name="e10100">E10100:\t (آپ کی شادی کے وقت عمر کیا تھی؟ (پہلی شادی کے وقت </string>
 
@@ -269,13 +270,13 @@
     <string name="e111"> E111:\t  بچے کی مردہ پیدائش کی وجہ کیا تھی؟ </string>
     <string name="e111a"> 37 ہفتوں سے قبل پیدائش (قبل از وقت پیدائش) </string>
     <string name="e111b"> ہائی بلڈ پریشر </string>
-    <string name="e111c"> شدید انیمیا </string>
-    <string name="e111d"> پیدائش کا صدمہ (سر میں چوٹ) </string>
+    <string name="e111c"> خون کی کمی  </string>
+    <string name="e111d"> پیدائشی انجری (سر پہ چوٹ) </string>
     <string name="e111e"> انفیکشن </string>
-    <string name="e111f"> Cord Prolapsed </string>
+    <string name="e111f"> ناڑو کا گرنا </string>
     <string name="e111x"> دیگر (وضاحت کریں) </string>
 
-    <string name="e11101"> E111A:\t نام کے انتقال کی کیا وجوہات تھیں؟ </string>
+    <string name="e11101"> E11101:\t نام کے انتقال کی کیا وجوہات تھیں؟ </string>
     <string name="e11101a"> Premature Birth </string>
     <string name="e11101b"> Low Birth Weight </string>
     <string name="e11101c"> سانس لینے میں دشواری </string>
@@ -508,7 +509,7 @@
     <string name="f1211b"> نہیں </string>
     <string name="f1211c"> لاگو نہیں ہے </string>
 
-    <string name="f1212"> F121b:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="f1212"> F12102:\t لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="f1212a">  ایل ایچھ ڈبلیو اکثر وزت پر نہیں آتی </string>
     <string name="f1212b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کر سکی </string>
     <string name="f1212c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -1149,23 +1150,14 @@
     <string name="h137a"> ہاں </string>
     <string name="h137b"> نہیں </string>
 
-    <string name="h1371"> H137a:\t نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے؟) </string>
-    <string name="h1371a"> اتنا اہم نہیں تھا </string>
-    <string name="h1371b"> ہسپتال کرونا کی وجہ سے بند تھا </string>
-    <string name="h1371c"> کرونا کا ڈریا خوف </string>
-    <string name="h1371d"> سماجی مفاصلہ </string>
-    <string name="h1371e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
-    <string name="h1371f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
-    <string name="h1371g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
-
-    <string name="h137aa"> H137b:\t نام) کو بی سی جی کا ٹیکہ کہاں سے لگوایا تھا؟) </string>
+    <string name="h137aa"> H13701:\t نام) کو بی سی جی کا ٹیکہ کہاں سے لگوایا تھا؟) </string>
     <string name="h137aaa"> سرکاری صحت کی سہولت </string>
     <string name="h137aab"> نجی صحت کی سہولت </string>
     <string name="h137aac"> ای پی آئی سینٹر(EPI) </string>
     <string name="h137aad"> کمیونٹی میں موجود ماں اور بچے کی صحت کا سینٹر </string>
     <string name="h137aae"> رفاہی ادارے کی سہولت NGO </string>
 
-    <string name="h137bb"> H137c:\t نام) کو حفاظتی ٹیکے کس نے لگائے تھے؟) </string>
+    <string name="h137bb"> H13702:\t نام) کو حفاظتی ٹیکے کس نے لگائے تھے؟) </string>
     <string name="h137bba"> ڈاکٹر </string>
     <string name="h137bbb"> لیڈی ہیلتھ ورکر </string>
     <string name="h137bbc"> لیڈی ہیلتھ وزیٹر </string>
@@ -1174,6 +1166,15 @@
     <string name="h137bbf"> کمیونٹی ہیلتھ ورکر </string>
     <string name="h137bbg"> ڈسپینسر / کمپائونڈر </string>
     <string name="h137bbx"> دیگر (وضاحت کریں) </string>
+
+    <string name="h1371"> H13703:\t نام) کو حفاظتی ٹیکے کیوں نہیں لگوائے؟) </string>
+    <string name="h1371a"> اتنا اہم نہیں تھا </string>
+    <string name="h1371b"> ہسپتال کرونا کی وجہ سے بند تھا </string>
+    <string name="h1371c"> کرونا کا ڈریا خوف </string>
+    <string name="h1371d"> سماجی مفاصلہ </string>
+    <string name="h1371e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
+    <string name="h1371f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
+    <string name="h1371g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے) </string>
 
     <string name="th2heading"> SECTION H: POSTNATAL CARE </string>
     <string name="h201"> H201:\t اگر (نام) کی پیدائش مرکز صحت میں ہوئی تھی تو پیدائش کے بعد آپ کتنا عرصہ مرکزِ صحت میں رہی تھیں ؟ </string>
@@ -2293,7 +2294,7 @@
     <string name="k1081b"> نہیں </string>
     <string name="k1081c"> لاگو نہیں </string>
 
-    <string name="k1082"> K108a:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
+    <string name="k1082"> K10801:\t شمولیت نہیں کرنے کا سبب کیا تھا ؟ </string>
     <string name="k1082a"> اتنا اہم نہیں تھا </string>
     <string name="k1082b"> ہسپتال  کرونا کی وجہ سے بند تھا </string>
     <string name="k1082c"> کرونا کا ڈریا خوف </string>
@@ -2301,6 +2302,7 @@
     <string name="k1082e"> کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی </string>
     <string name="k1082f"> حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے </string>
     <string name="k1082g"> ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا ( ماسک اور دستانے نہیں پہنے ہوئے تھے ) </string>
+    <string name="k1082h"> لاگو نہیں </string>
 
     <string name="k109"> K109:\t کیا آپ اپنے علاقہ میں گھر کے قریب کسی لیڈی ہیلتھ ورکر \'ہیلتھ ہاؤس\' کے بارے میں جانتی ہیں ؟ </string>
     <string name="k109a"> ہاں </string>
@@ -3077,9 +3079,22 @@
     <string name="ah25b">نہیں</string>
 
     <string name="ah26">AH26:\t آپ نے علاج کہاں کروایا؟</string>
-    <string name="ah26a">سرکاری مرکز صحت</string>
-    <string name="ah26b">نجی مرکز صحت</string>
-    <string name="ah26c">رفاہی ادارہ</string>
+
+    <string name="ah26h1"> سرکاری مرکز صحت </string>
+    <string name="ah26h2"> نجی مرکز صحت </string>
+    <string name="ah26h3"> رفاہی ادارہ </string>
+
+    <string name="ah26a"> سول ہسپتال / ٹرشری </string>
+    <string name="ah26b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="ah26c"> رورل ہیلتھ سینٹر </string>
+    <string name="ah26d"> بیسک ہیلتھ یونٹ </string>
+    <string name="ah26e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="ah26f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="ah26g"> پراوٹ ہسپتال </string>
+    <string name="ah26h"> پرائوٹ کلینک </string>
+    <string name="ah26i"> پرائوٹ میٹرنٹی ہوم </string>
+    <string name="ah26j"> رفاہی ادارہ </string>
+
 
     <string name="ah27">AH27:\t کوئی دوا استعمال کر رہے ہیں؟</string>
     <string name="ah27a">ہاں</string>
@@ -3245,7 +3260,7 @@
     <string name="ah40g">کتاب/بروشرز/پوسٹرز/پمفلٹ</string>
     <string name="ah40h">انٹرنیٹ/موبائل</string>
     <string name="ah40x">دیگر</string>
-    <string name="ah40aa">AH40a:\t آپ کے لئے کون سا ذریعہ بہتر ہے؟</string>
+    <string name="ah40aa">AH4001:\t آپ کے لئے کون سا ذریعہ بہتر ہے؟</string>
     <string name="ah40aaa">استاد/ استانی</string>
     <string name="ah40aab">والدین</string>
     <string name="ah40aac">بہن بھائی</string>

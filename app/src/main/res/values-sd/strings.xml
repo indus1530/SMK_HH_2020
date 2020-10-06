@@ -232,6 +232,7 @@
 
     <!-- SECTION - E -->
     <string name="e100"> E100:\t عورت جو نالو </string>
+    <string name="mwra_name"> عورت جو نالو:</string>
 
     <string name="e101"> E101:\t ڇا (عورت جو نالو) شادي کان پوءِ ڪڏھن به حمل سان ٿي </string>
     <string name="e10100"> آپ کی شادی کے وقت عمر کیا تھی؟ (پہلی شادی کے وقت) E10100:\t </string>
@@ -294,7 +295,7 @@
     <string name="e111x"> ٻيو ڪجھ (وضاحت ڪريو) </string>
 
 
-    <string name="e11101"> E111A:\t ٻار جو نالو فوت ٿيڻ جو سبب ڇا ھو؟ </string>
+    <string name="e11101"> E11101:\t ٻار جو نالو فوت ٿيڻ جو سبب ڇا ھو؟ </string>
     <string name="e11101a"> Premature Birth </string>
     <string name="e11101b"> Low Birth Weight </string>
     <string name="e11101c"> ساھ کڻڻ ۾ تڪليف </string>
@@ -1169,7 +1170,7 @@
     <string name="h137a"> ھا </string>
     <string name="h137b"> نه </string>
 
-    <string name="h1371"> H137a:\t نالو) کي ٽڪو نه لڳرائڻ جو سبب ڇا ھو؟) </string>
+    <string name="h1371"> H13701:\t نالو) کي ٽڪو نه لڳرائڻ جو سبب ڇا ھو؟) </string>
     <string name="h1371a"> اھيو ضروري نه آھي </string>
     <string name="h1371b"> ڪرونا جي ڪري اسپتال بند ھئي </string>
     <string name="h1371c"> ڪرونا جو خوف / ڊپ </string>
@@ -1179,14 +1180,14 @@
     <string name="h1371g"> ڊاڪٽر معياري طريقيڪار تي عمل نه ڪري رھيو ھو (ماسڪ / داستانه پھريل نه ھئا </string>
 
 
-    <string name="h137aa"> H137b:\t نئين ڄاول ٻار کي (بي سي جي) جي ويڪسين ڪٿان لڳرائي وئي؟ </string>
+    <string name="h137aa"> H13702:\t نئين ڄاول ٻار کي (بي سي جي) جي ويڪسين ڪٿان لڳرائي وئي؟ </string>
     <string name="h137aaa"> سرڪاري صحت مرڪز</string>
     <string name="h137aab"> پرائيويٽ صحت مرڪز</string>
     <string name="h137aac"> ٽڪن وارو مرڪز </string>
     <string name="h137aad"> ماءُ ۽ ٻار جو صحت مرڪز</string>
     <string name="h137aae"> اين جي او صحت مرڪز</string>
 
-    <string name="h137bb"> H137c:\t نالو) کي حفاظتي ٽڪا ڪنهن لڳايا؟)</string>
+    <string name="h137bb"> H13703:\t نالو) کي حفاظتي ٽڪا ڪنهن لڳايا؟)</string>
     <string name="h137bba"> ڊاڪٽر</string>
     <string name="h137bbb"> (ايل ايڇ ڊبليو (ليڊي ھيلٿ ورڪر</string>
     <string name="h137bbc"> (ايل ايڇ وي (ليڊي ھيلٿ وزيٽر</string>
@@ -2321,7 +2322,7 @@
     <string name="k1081b"> نه </string>
     <string name="k1081c"> ڳوٺ وارن سان معمول مطابق ميٽنگ </string>
 
-    <string name="k1082"> K108a:\t مٽينگ / گڏجاڻي نه ڪرڻ جو سبب ڇا ھو ؟ </string>
+    <string name="k1082"> K10801:\t مٽينگ / گڏجاڻي نه ڪرڻ جو سبب ڇا ھو ؟ </string>
     <string name="k1082a"> ايترو ضروري نه آھي </string>
     <string name="k1082b"> ڪرونا جي ڪري نه ٿي سگھيو </string>
     <string name="k1082c"> ڪرونا جو خوف / ڊپ </string>
@@ -2329,6 +2330,7 @@
     <string name="k1082e"> ڪرونا جي الڪ ڊائون ڪري سواري نه ھئي </string>
     <string name="k1082f"> گهر ۾ حفاظتي سامان)ماسڪ/داستانه( موجود نه ھئا </string>
     <string name="k1082g"> ليڊي ھليٿ ورڪر معياري طريقيڪار تي عمل نه ڪري رھي ھئي )ماسڪ/داستانه پاتل نه ھئا( </string>
+    <string name="k1082h"> لاڳو نه ٿو ٿئي </string>
 
     <string name="k109"> K109:\t ڇا توھان کي ليڊي هيلٿ ورڪر جي هيلٿ هائوس جي باري ۾ خبر آھي جيڪو توھان جي علائقي ۾ يا ان جي ويجھو موجود آھي ؟ </string>
     <string name="k109a"> ھا </string>
@@ -3085,10 +3087,24 @@
     <string name="ah25">Did You Seek Care For The Above Mentioned Illness?</string>
     <string name="ah25a">Yes</string>
     <string name="ah25b">No</string>
+
     <string name="ah26">Where Did You Seek Care?</string>
-    <string name="ah26a">Government Hospital</string>
-    <string name="ah26b">Private Hospital</string>
-    <string name="ah26c">Ngo Health Facility</string>
+    <string name="ah26h1"> سرکاری مرکز صحت </string>
+    <string name="ah26h2"> نجی مرکز صحت </string>
+    <string name="ah26h3"> رفاہی ادارہ </string>
+
+    <string name="ah26a"> سول ہسپتال / ٹرشری </string>
+    <string name="ah26b"> ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر </string>
+    <string name="ah26c"> رورل ہیلتھ سینٹر </string>
+    <string name="ah26d"> بیسک ہیلتھ یونٹ </string>
+    <string name="ah26e"> میٹرنل اینڈ چائیلڈ ہیلتھ سینٹر </string>
+    <string name="ah26f"> برتھ اسٹیشن (کمیونٹی مڈوائف) </string>
+    <string name="ah26g"> پراوٹ ہسپتال </string>
+    <string name="ah26h"> پرائوٹ کلینک </string>
+    <string name="ah26i"> پرائوٹ میٹرنٹی ہوم </string>
+    <string name="ah26j"> رفاہی ادارہ </string>
+
+
     <string name="ah27">Did You Take Any Medications?</string>
     <string name="ah27a">Yes</string>
     <string name="ah27b">No</string>

@@ -34,13 +34,10 @@ public class SectionKActivity extends AppCompatActivity {
 
         setlistener();
         setupSkips();
-
-        bi.llk0105.setVisibility(View.VISIBLE);
-        bi.fldGrpCVk106.setVisibility(View.VISIBLE);
     }
 
     private void setupSkips() {
-        bi.k103.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0104));
+        //bi.k103.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0104));
         //bi.k105.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llk0105));
     }
 
@@ -72,17 +69,17 @@ public class SectionKActivity extends AppCompatActivity {
 
             if (b) {
                 bi.fldGrpCVk106.setVisibility(View.VISIBLE);
-                bi.k105aab.setText(null);
-                bi.k105aaa.setText(null);
-                bi.k105aab.setEnabled(false);
                 bi.k105aaa.setEnabled(false);
+                bi.k105aaa.setText(null);
+                bi.k105aab.setText(null);
+                bi.k105aab.setEnabled(false);
             } else {
                 bi.fldGrpCVk106.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVk106);
-                bi.k105aab.setText(null);
                 bi.k105aaa.setText(null);
-                bi.k105aab.setEnabled(true);
                 bi.k105aaa.setEnabled(true);
+                bi.k105aab.setEnabled(true);
+                bi.k105aab.setText(null);
             }
         });
 
@@ -243,13 +240,14 @@ public class SectionKActivity extends AppCompatActivity {
                 : bi.k1081c.isChecked() ? "3"
                 : "-1");
 
-        json.put("k108a", bi.k1082a.isChecked() ? "1"
+        json.put("k10801", bi.k1082a.isChecked() ? "1"
                 : bi.k1082b.isChecked() ? "2"
                 : bi.k1082c.isChecked() ? "3"
                 : bi.k1082d.isChecked() ? "4"
                 : bi.k1082e.isChecked() ? "5"
                 : bi.k1082f.isChecked() ? "6"
                 : bi.k1082g.isChecked() ? "7"
+                : bi.k1082h.isChecked() ? "8"
                 : "-1");
 
         json.put("k109", bi.k109a.isChecked() ? "1" :

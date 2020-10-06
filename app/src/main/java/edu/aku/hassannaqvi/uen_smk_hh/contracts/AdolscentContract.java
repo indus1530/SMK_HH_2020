@@ -181,7 +181,7 @@ public class AdolscentContract {
 
     public static abstract class SingleAdolscent implements BaseColumns {
 
-        public static final String TABLE_NAME = "adolescent_health";
+        public static final String TABLE_NAME = "adolescent";
         public static final String COLUMN__ID = "_id";
         public static final String COLUMN_UID = "_uid";
         public static final String COLUMN__UUID = "_uuid";

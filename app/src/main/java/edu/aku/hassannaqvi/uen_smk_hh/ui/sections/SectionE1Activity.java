@@ -204,14 +204,16 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
 
     private boolean formValidation() {
 
-        if(!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1)) {
+        if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1)) {
             return false;
         }
 
-        if(Integer.parseInt(bi.e10100.getText().toString()) > Integer.parseInt(bi.e10201.getText().toString())) {
-            Toast.makeText(this, "Age at marriage should not be greater than age at first pregnancy", Toast.LENGTH_SHORT).show();
-            return false;
-        }
+        /*if(bi.fldGrpCVe102.getVisibility() == View.VISIBLE && bi.e102.getVisibility() == View.VISIBLE && !bi.e102.getText().toString().trim().isEmpty()) {
+            if (Integer.parseInt(bi.e10100.getText().toString()) > Integer.parseInt(bi.e10201.getText().toString())) {
+                Toast.makeText(this, "Age at marriage should not be greater than age at first pregnancy", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        }*/
 
         return true;
     }

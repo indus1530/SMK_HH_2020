@@ -1581,7 +1581,7 @@
                             android:text="@string/h120e" />
 
                         <RadioButton
-                            android:id="@+id/h12098"
+                            android:id="@+id/h12088"
                             style="@style/radiobutton"
                             android:text="@string/h120f" />
 

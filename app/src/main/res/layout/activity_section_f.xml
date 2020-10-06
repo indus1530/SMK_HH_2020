@@ -21,10 +21,39 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <!--<TextView
+                android:id="@+id/formNo"
+                style="@style/textView3Head"/>-->
+
+            <!--<TextView
                 android:id="@+id/f101Name"
                 style="@style/textView3Head"
-                android:text="@string/d102" />
+                android:text="@string/d102" />-->
+
+            <!-- Select WRA with youngest child Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVd106"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/mwra_name" />
+
+                    <Spinner
+                        android:id="@+id/mwra"
+                        style="@style/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <!-- f001  Radio   -->
             <androidx.cardview.widget.CardView

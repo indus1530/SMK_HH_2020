@@ -473,6 +473,7 @@ public class SectionE2Activity extends AppCompatActivity {
                 String txt01, txt02, txt03;
                 editTextPicker01.setEnabled(true);
                 editTextPicker02.setEnabled(true);
+                imFlag = false;
                 if (!TextUtils.isEmpty(editTextPicker01.getText()) && !TextUtils.isEmpty(editTextPicker02.getText()) && !TextUtils.isEmpty(editTextPicker03.getText())) {
                     txt01 = editTextPicker01.getText().toString();
                     txt02 = editTextPicker02.getText().toString();

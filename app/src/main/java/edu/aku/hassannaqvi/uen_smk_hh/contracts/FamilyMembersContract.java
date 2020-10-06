@@ -19,6 +19,8 @@ public class FamilyMembersContract {
     private String relHH;
     private String age;
     private String monthfm;
+    private String dayfm;
+    private String AID;
     private String mother_name;
     private String mother_serial;
     private String gender;
@@ -47,6 +49,8 @@ public class FamilyMembersContract {
         this.relHH = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_RELATION_HH));
         this.age = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_AGE));
         this.monthfm = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_MONTH_FM));
+        this.dayfm = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_DAY_FM));
+        this.AID = cursor.getString(cursor.getColumnIndex(SingleMember.AGE_IN_DAYS));
         this.mother_name = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_MOTHER_NAME));
         this.mother_serial = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_MOTHER_SERIAL));
         this.gender = cursor.getString(cursor.getColumnIndex(SingleMember.COLUMN_GENDER));
@@ -70,6 +74,8 @@ public class FamilyMembersContract {
         json.put(SingleMember.COLUMN_RELATION_HH, this.relHH == null ? JSONObject.NULL : this.relHH);
         json.put(SingleMember.COLUMN_AGE, this.age == null ? JSONObject.NULL : this.age);
         json.put(SingleMember.COLUMN_MONTH_FM, this.monthfm == null ? JSONObject.NULL : this.monthfm);
+        json.put(SingleMember.COLUMN_DAY_FM, this.dayfm == null ? JSONObject.NULL : this.dayfm);
+        json.put(SingleMember.AGE_IN_DAYS, this.AID == null ? JSONObject.NULL : this.AID);
         json.put(SingleMember.COLUMN_MOTHER_NAME, this.mother_name == null ? JSONObject.NULL : this.mother_name);
         json.put(SingleMember.COLUMN_MOTHER_SERIAL, this.mother_serial == null ? JSONObject.NULL : this.mother_serial);
         json.put(SingleMember.COLUMN_GENDER, this.gender == null ? JSONObject.NULL : this.gender);
@@ -178,6 +184,22 @@ public class FamilyMembersContract {
         this.monthfm = monthfm;
     }
 
+    public String getDayfm() {
+        return dayfm;
+    }
+
+    public void setDayfm(String dayfm) {
+        this.dayfm = dayfm;
+    }
+
+    public String getAgeInDays() {
+        return AID;
+    }
+
+    public void setAgeInDays(String AID) {
+        this.AID = AID;
+    }
+
     public String getMother_name() {
         return mother_name;
     }
@@ -243,6 +265,8 @@ public class FamilyMembersContract {
         public static final String COLUMN_FORMDATE = "formdate";
         public static final String COLUMN_AGE = "age";
         public static final String COLUMN_MONTH_FM = "monthfm";
+        public static final String COLUMN_DAY_FM = "dayfm";
+        public static final String AGE_IN_DAYS = "ageInDays";
         public static final String COLUMN_CLUSTERNO = "clusterno";
         public static final String COLUMN_HHNO = "hhno";
         public static final String COLUMN_RELATION_HH = "relHH";

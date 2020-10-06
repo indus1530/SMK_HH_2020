@@ -8,6 +8,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -16,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
@@ -612,6 +614,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(SingleMember.COLUMN_RELATION_HH, fmc.getRelHH());
         values.put(SingleMember.COLUMN_AGE, fmc.getAge());
         values.put(SingleMember.COLUMN_MONTH_FM, fmc.getMonthfm());
+        values.put(SingleMember.COLUMN_DAY_FM, fmc.getDayfm());
+        values.put(SingleMember.AGE_IN_DAYS, fmc.getAgeInDays());
         values.put(SingleMember.COLUMN_MOTHER_NAME, fmc.getMother_name());
         values.put(SingleMember.COLUMN_MOTHER_SERIAL, fmc.getMother_serial());
         values.put(FamilyMembersContract.SingleMember.COLUMN_GENDER, fmc.getGender());
@@ -1976,5 +1980,45 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values7,
                 where7,
                 whereArgs7);
+    }
+
+    public List<String> getMWRAS(String _uuid) {
+
+        //Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+
+        List<String> mwras = new ArrayList<String>();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select distinct m.mother_serial as mother_serial, m.mother_name as mother_name from familymembers m where CAST(m.ageInDays as int) = (select min(CAST(ageInDays as int)) from familymembers where _uuid = m._uuid and mother_serial = m.mother_serial and mother_name = m.mother_name) AND m._uuid = '" + _uuid + "' AND m.mother_serial != '97' AND CAST(m.mother_serial as int) > 0",null);
+        mwras.add("....");
+        if(res.moveToFirst()) {
+            do {
+                mwras.add(res.getString(res.getColumnIndex("mother_serial")) + ":" + res.getString(res.getColumnIndex("mother_name")));
+            } while (res.moveToNext());
+        }
+
+        res.close();
+        db.close();
+        return mwras;
+    }
+
+    public List<String> getAdolescent(String _uuid) {
+
+        //Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+
+        List<String> mwras = new ArrayList<String>();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select distinct serial_no, name from familymembers where _uuid = '" + _uuid + "' AND CAST(ageInDays as int) >= 3650 AND CAST(ageInDays as int) <= 6935",null);
+        mwras.add("....");
+        if(res.moveToFirst()) {
+            do {
+                mwras.add(res.getString(res.getColumnIndex("serial_no")) + ":" + res.getString(res.getColumnIndex("name")));
+            } while (res.moveToNext());
+        }
+
+        res.close();
+        db.close();
+        return mwras;
     }
 }

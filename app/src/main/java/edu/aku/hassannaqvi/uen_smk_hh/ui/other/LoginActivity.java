@@ -188,9 +188,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         sharedPref = getSharedPreferences("dss01", MODE_PRIVATE);
         editor = sharedPref.edit();
 
-        if (sharedPref.getBoolean("flag", false)) {
+//        if (sharedPref.getBoolean("flag", false)) {
 
-            String dt = sharedPref.getString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()));
+            String dt = sharedPref.getString("dt", "");
 
             if (!dt.equals(new SimpleDateFormat("dd-MM-yy").format(new Date()))) {
                 editor.putString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()));
@@ -237,7 +237,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             } else {
                 Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
             }
-        }
+//        }
 
     }
 

@@ -18,7 +18,7 @@
     <application
         android:name=".core.MainApp"
         android:allowBackup="true"
-        android:icon="@drawable/uenlogo"
+        android:icon="@drawable/smk_hh_logo"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
