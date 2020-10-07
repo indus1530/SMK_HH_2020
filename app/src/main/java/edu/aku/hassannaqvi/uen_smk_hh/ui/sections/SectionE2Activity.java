@@ -255,7 +255,7 @@ public class SectionE2Activity extends AppCompatActivity {
                             startActivity(new Intent(SectionE2Activity.this, SectionE1Activity.class));
                         } else {
                             finish();
-                            Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionKActivity.class;
+                            Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionMActivity.class;
                             startActivity(new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass));
 
                             //    startActivity(new Intent(SectionE2Activity.this, SectionE3Activity.class));

@@ -33,10 +33,14 @@ import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +51,9 @@ import androidx.core.app.ActivityCompat;
 import com.github.amlcurran.showcaseview.ShowcaseView;
 import com.github.amlcurran.showcaseview.targets.Target;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
+import com.validatorcrawler.aliazaz.Validator;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -55,25 +62,34 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.DistrictContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.AppInfo;
 import edu.aku.hassannaqvi.uen_smk_hh.core.DatabaseHelper;
 import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.ui.sync.SyncActivity;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
+import kotlin.Pair;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
 
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.MINIMUM_DISTANCE_CHANGE_FOR_UPDATES;
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.MINIMUM_TIME_BETWEEN_UPDATES;
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.MY_PERMISSIONS_REQUEST_READ_CONTACTS;
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.MY_PERMISSIONS_REQUEST_READ_PHONE_STATE;
 import static edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS.TWO_MINUTES;
+import static edu.aku.hassannaqvi.uen_smk_hh.repository.SplashRepositoryKt.populatingSpinners;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.DATABASE_NAME;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.DB_NAME;
 import static edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable.PROJECT_NAME;
@@ -100,17 +116,19 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     TextView txtinstalldate;
     @BindView(R.id.email_sign_in_button)
     AppCompatButton mEmailSignInButton;
-
     @BindView(R.id.syncData)
     ImageButton syncData;
-
+    ArrayAdapter<String> provinceAdapter;
+    @BindView(R.id.spinnerProvince)
+    Spinner spinnerProvince;
+    @BindView(R.id.spinners)
+    LinearLayout spinners;
+    @BindView(R.id.spinnerDistrict)
+    Spinner spinnerDistrict;
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
-
     String DirectoryName;
-
     DatabaseHelper db;
-
     private UserLoginTask mAuthTask = null;
 
     @Override
@@ -156,12 +174,12 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             return false;
         });
 
-
         mEmailSignInButton.setOnClickListener(view -> attemptLogin());
+
+        setListeners();
 
         db = new DatabaseHelper(this);
 //        DB backup
-
         dbBackup();
     }
 
@@ -190,53 +208,53 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
 //        if (sharedPref.getBoolean("flag", false)) {
 
-            String dt = sharedPref.getString("dt", "");
+        String dt = sharedPref.getString("dt", "");
 
-            if (!dt.equals(new SimpleDateFormat("dd-MM-yy").format(new Date()))) {
-                editor.putString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()));
-                editor.apply();
-            }
+        if (!dt.equals(new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date()))) {
+            editor.putString("dt", new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date()));
+            editor.apply();
+        }
 
-            File folder = new File(Environment.getExternalStorageDirectory() + File.separator + PROJECT_NAME);
-            boolean success = true;
+        File folder = new File(Environment.getExternalStorageDirectory() + File.separator + PROJECT_NAME);
+        boolean success = true;
+        if (!folder.exists()) {
+            success = folder.mkdirs();
+        }
+        if (success) {
+
+            DirectoryName = folder.getPath() + File.separator + sharedPref.getString("dt", "");
+            folder = new File(DirectoryName);
             if (!folder.exists()) {
                 success = folder.mkdirs();
             }
             if (success) {
 
-                DirectoryName = folder.getPath() + File.separator + sharedPref.getString("dt", "");
-                folder = new File(DirectoryName);
-                if (!folder.exists()) {
-                    success = folder.mkdirs();
-                }
-                if (success) {
+                try {
+                    File dbFile = new File(this.getDatabasePath(DATABASE_NAME).getPath());
+                    FileInputStream fis = new FileInputStream(dbFile);
+                    String outFileName = DirectoryName + File.separator + DB_NAME;
+                    // Open the empty db as the output stream
+                    OutputStream output = new FileOutputStream(outFileName);
 
-                    try {
-                        File dbFile = new File(this.getDatabasePath(DATABASE_NAME).getPath());
-                        FileInputStream fis = new FileInputStream(dbFile);
-                        String outFileName = DirectoryName + File.separator + DB_NAME;
-                        // Open the empty db as the output stream
-                        OutputStream output = new FileOutputStream(outFileName);
-
-                        // Transfer bytes from the inputfile to the outputfile
-                        byte[] buffer = new byte[1024];
-                        int length;
-                        while ((length = fis.read(buffer)) > 0) {
-                            output.write(buffer, 0, length);
-                        }
-                        // Close the streams
-                        output.flush();
-                        output.close();
-                        fis.close();
-                    } catch (IOException e) {
-                        Log.e("dbBackup:", e.getMessage());
+                    // Transfer bytes from the inputfile to the outputfile
+                    byte[] buffer = new byte[1024];
+                    int length;
+                    while ((length = fis.read(buffer)) > 0) {
+                        output.write(buffer, 0, length);
                     }
-
+                    // Close the streams
+                    output.flush();
+                    output.close();
+                    fis.close();
+                } catch (IOException e) {
+                    Log.e("dbBackup:", e.getMessage());
                 }
 
-            } else {
-                Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
             }
+
+        } else {
+            Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
+        }
 //        }
 
     }
@@ -299,8 +317,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             // form field with an error.
             focusView.requestFocus();
         } else {
-            // Show a progress spinner, and kick off a background task to
-            // perform the user login attempt.
+            if (!Validator.emptyCheckingContainer(this, spinners))
+                return;
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
@@ -749,6 +767,67 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        callingCoroutine();
+    }
+
+    private void setListeners() {
+        provinceAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, SplashscreenActivity.provinces);
+        spinnerProvince.setAdapter(provinceAdapter);
+        spinnerProvince.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) return;
+                List<String> districts = new ArrayList<>(Collections.singletonList("...."));
+                for (Map.Entry<String, Pair<String, DistrictContract>> entry : SplashscreenActivity.districtsMap.entrySet()) {
+                    if (entry.getValue().getFirst().equals(spinnerProvince.getSelectedItem().toString()))
+                        districts.add(entry.getKey());
+                }
+                spinnerDistrict.setAdapter(new ArrayAdapter<>(LoginActivity.this, android.R.layout.simple_list_item_1
+                        , districts));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinnerDistrict.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) return;
+                MainApp.DIST_ID = Objects.requireNonNull(SplashscreenActivity.districtsMap.get(spinnerDistrict.getSelectedItem().toString())).getSecond().getDist_id();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    private void callingCoroutine() {
+        //To call coroutine here
+        populatingSpinners(this, provinceAdapter, new SplashscreenActivity.Continuation<Unit>() {
+            @Override
+            public void resume(Unit value) {
+
+            }
+
+            @Override
+            public void resumeWithException(@NotNull Throwable exception) {
+
+            }
+
+            @NotNull
+            @Override
+            public CoroutineContext getContext() {
+                return null;
+            }
+        });
+    }
 
 }
 

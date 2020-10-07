@@ -22,7 +22,7 @@
             android:id="@+id/testing"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/ticker_red"
+            android:background="@color/red"
             android:elevation="6dp"
             android:gravity="center"
             android:keepScreenOn="true"

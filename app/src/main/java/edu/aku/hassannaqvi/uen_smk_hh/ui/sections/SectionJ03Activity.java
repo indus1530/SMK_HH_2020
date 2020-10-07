@@ -241,7 +241,7 @@ public class SectionJ03Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionMActivity.class));
+//                startActivity(new Intent(this, SectionMActivity.class));
                 Class<?> nextActivity = SectionMActivity.class;
                 if (MainApp.selectedKishAdols != null) nextActivity = SectionAH1Activity.class;
                 startActivity(new Intent(this, nextActivity));

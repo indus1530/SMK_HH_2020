@@ -131,7 +131,7 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
                 if (MainApp.pragnantWoman.getFirst().size() > 0) {
                     next = new Intent(SectionE1Activity.this, SectionE1Activity.class);
                 } else {
-                    Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionKActivity.class;
+                    Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionMActivity.class;
                     next = new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass);
                 }
             }
@@ -204,9 +204,7 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
 
     private boolean formValidation() {
 
-        if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1)) {
-            return false;
-        }
+        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionE1);
 
         /*if(bi.fldGrpCVe102.getVisibility() == View.VISIBLE && bi.e102.getVisibility() == View.VISIBLE && !bi.e102.getText().toString().trim().isEmpty()) {
             if (Integer.parseInt(bi.e10100.getText().toString()) > Integer.parseInt(bi.e10201.getText().toString())) {
@@ -214,8 +212,6 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
                 return false;
             }
         }*/
-
-        return true;
     }
 
     public void BtnEnd() {

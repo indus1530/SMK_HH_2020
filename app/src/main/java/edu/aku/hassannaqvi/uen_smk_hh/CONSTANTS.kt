@@ -28,5 +28,10 @@ class CONSTANTS {
         const val MAXYEAR1 = 2020
 
 
+        //Login Result Code
+        const val LOGIN_RESULT_CODE = 10101
+        const val LOGIN_SPLASH_FLAG = "splash_flag"
+
+
     }
 }

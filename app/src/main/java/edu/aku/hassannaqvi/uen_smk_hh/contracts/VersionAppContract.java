@@ -18,9 +18,9 @@ public class VersionAppContract {
     }
 
     public VersionAppContract Sync(JSONObject jsonObject) throws JSONException {
-        this.versioncode = jsonObject.getJSONObject(VersionAppTable.COLUMN_VERSION_PATH).getString(VersionAppTable.COLUMN_VERSION_CODE);
+        this.versioncode = jsonObject.getString(VersionAppTable.COLUMN_VERSION_CODE);
         this.pathname = jsonObject.getString(VersionAppTable.COLUMN_PATH_NAME);
-        this.versionname = jsonObject.getJSONObject(VersionAppTable.COLUMN_VERSION_PATH).getString(VersionAppTable.COLUMN_VERSION_NAME);
+        this.versionname = jsonObject.getString(VersionAppTable.COLUMN_VERSION_NAME);
         return this;
     }
 
@@ -58,10 +58,10 @@ public class VersionAppContract {
     public static abstract class VersionAppTable implements BaseColumns {
 
         public static final String TABLE_NAME = "versionApp";
-        public static final String COLUMN_VERSION_PATH = "apkData";
+        public static final String COLUMN_VERSION_PATH = "elements";
         public static final String COLUMN_VERSION_CODE = "versionCode";
         public static final String COLUMN_VERSION_NAME = "versionName";
-        public static final String COLUMN_PATH_NAME = "path";
+        public static final String COLUMN_PATH_NAME = "outputFile";
 
         public static final String _URI = "output.json";
     }

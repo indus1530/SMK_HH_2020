@@ -27,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
@@ -293,10 +294,10 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
 
         if (sharedPref.getBoolean("flag", false)) {
 
-            String dt = sharedPref.getString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()));
+            String dt = sharedPref.getString("dt", new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date()));
 
-            if (!dt.equals(new SimpleDateFormat("dd-MM-yy").format(new Date()))) {
-                editor.putString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()));
+            if (!dt.equals(new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date()))) {
+                editor.putString("dt", new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date()));
                 editor.apply();
             }
 
@@ -366,44 +367,28 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         @Override
         protected String doInBackground(Boolean... booleans) {
             runOnUiThread(() -> {
-
                 if (booleans[0]) {
-//                  getting Users!!
-                    if (listActivityCreated) {
-                        model = new SyncModel();
-                        model.setstatusID(0);
-                        list.add(model);
+                    String[] downloadTables = {"User", "VersionApp", "District"};
+                    for (String item : downloadTables) {
+                        if (listActivityCreated) {
+                            model = new SyncModel();
+                            model.setstatusID(0);
+                            list.add(model);
+                        }
+                        new GetAllData(mContext, item, syncListAdapter, list).execute();
                     }
-                    new GetAllData(mContext, "User", syncListAdapter, list).execute();
-
-//                    Getting App Version
-                    if (listActivityCreated) {
-                        model = new SyncModel();
-                        model.setstatusID(0);
-                        list.add(model);
-                    }
-                    new GetAllData(mContext, "VersionApp", syncListAdapter, list).execute();
-
                 } else {
-
-                    if (listActivityCreated) {
-                        model = new SyncModel();
-                        model.setstatusID(0);
-                        list.add(model);
+                    String[] downloadTables = {"EnumBlock", "BLRandom", "District"};
+                    for (String item : downloadTables) {
+                        if (listActivityCreated) {
+                            model = new SyncModel();
+                            model.setstatusID(0);
+                            list.add(model);
+                        }
+                        new GetAllData(mContext, item, syncListAdapter, list).execute(distID);
+                        bi.noItem.setVisibility(View.GONE);
                     }
-                    new GetAllData(mContext, "EnumBlock", syncListAdapter, list).execute(distID);
-                    bi.noItem.setVisibility(View.GONE);
-
-//                   getting BL Random
-                    if (listActivityCreated) {
-                        model = new SyncModel();
-                        model.setstatusID(0);
-                        list.add(model);
-                    }
-                    new GetAllData(mContext, "BLRandom", syncListAdapter, list).execute(distID);
-
                 }
-
                 listActivityCreated = false;
             });
 

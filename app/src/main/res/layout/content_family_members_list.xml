@@ -50,7 +50,7 @@
                         android:gravity="center"
                         android:text="@string/zero_count"
                         android:textAllCaps="false"
-                        android:textColor="@color/green"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -81,7 +81,7 @@
                         android:gravity="center"
                         android:text="@string/zero_count"
                         android:textAllCaps="false"
-                        android:textColor="@color/green"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -112,7 +112,7 @@
                         android:gravity="center"
                         android:text="@string/zero_count"
                         android:textAllCaps="false"
-                        android:textColor="@color/green"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -170,7 +170,7 @@
                             android:gravity="center"
                             android:text="@string/zero_count"
                             android:textAllCaps="false"
-                            android:textColor="@color/green"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -201,7 +201,7 @@
                             android:gravity="center"
                             android:text="@string/zero_count"
                             android:textAllCaps="false"
-                            android:textColor="@color/green"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="20sp" />
 
                     </LinearLayout>
@@ -232,7 +232,7 @@
                             android:gravity="center"
                             android:text="@string/zero_count"
                             android:textAllCaps="false"
-                            android:textColor="@color/green"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="20sp" />
 
                     </LinearLayout>

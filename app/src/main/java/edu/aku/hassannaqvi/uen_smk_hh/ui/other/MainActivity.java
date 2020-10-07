@@ -35,15 +35,12 @@ import androidx.databinding.DataBindingUtil;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 import edu.aku.hassannaqvi.uen_smk_hh.R;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.AreasContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.uen_smk_hh.core.AndroidDatabaseManager;
@@ -57,7 +54,7 @@ import edu.aku.hassannaqvi.uen_smk_hh.utils.CreateTable;
 public class MainActivity extends AppCompatActivity {
 
     static File file;
-    private final String TAG = "MainActivity";
+    private static final String TAG = "MainActivity";
     ActivityMainBinding bi;
     String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
     String dtToday1 = new SimpleDateFormat("dd-MMM-yyyy").format(new Date());
@@ -65,10 +62,6 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences.Editor editor;
     AlertDialog.Builder builder;
     String m_Text = "";
-    ProgressDialog mProgressDialog;
-    ArrayList<String> lablesAreas;
-    Collection<AreasContract> AreasList;
-    Map<String, String> AreasMap;
     SharedPreferences sharedPrefDownload;
     SharedPreferences.Editor editorDownload;
     DownloadManager downloadManager;

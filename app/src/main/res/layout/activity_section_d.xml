@@ -63,10 +63,10 @@
                             <TextView
                                 android:id="@+id/d101"
                                 style="@style/i_textview"
-                                android:background="@color/pink_100"
+                                android:background="@color/colorCreamsub"
                                 android:gravity="center"
                                 android:text="@string/num"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/white" />
 
                         </LinearLayout>
 
@@ -311,10 +311,10 @@
                             <TextView
                                 android:id="@+id/d102Name"
                                 style="@style/i_textview"
-                                android:background="@color/pink_100"
+                                android:background="@color/colorCreamsub"
                                 android:gravity="center"
                                 android:text="@string/name"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/white" />
 
                         </LinearLayout>
 
@@ -334,10 +334,10 @@
                             <TextView
                                 android:id="@+id/d102Num"
                                 style="@style/i_textview"
-                                android:background="@color/pink_100"
+                                android:background="@color/colorCreamsub"
                                 android:gravity="center"
                                 android:text="@string/num"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/white" />
 
                         </LinearLayout>
 

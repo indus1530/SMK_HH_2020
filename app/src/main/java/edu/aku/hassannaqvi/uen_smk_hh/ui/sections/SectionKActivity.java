@@ -21,6 +21,8 @@ import edu.aku.hassannaqvi.uen_smk_hh.core.MainApp;
 import edu.aku.hassannaqvi.uen_smk_hh.databinding.ActivitySectionKBinding;
 import edu.aku.hassannaqvi.uen_smk_hh.utils.Util;
 
+import static edu.aku.hassannaqvi.uen_smk_hh.core.MainApp.kish;
+
 public class SectionKActivity extends AppCompatActivity {
 
     ActivitySectionKBinding bi;
@@ -122,14 +124,14 @@ public class SectionKActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
+                if (UpdateDB()) {
+                    finish();
+                    startActivity(new Intent(this, SectionUNActivity.class));
+                } else {
+                    Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
-            }
-            if (UpdateDB()) {
-                finish();
-                startActivity(new Intent(this, SectionUNActivity.class));
-            } else {
-                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -140,9 +142,8 @@ public class SectionKActivity extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SK, MainApp.kish.getsK());
+        int updcount = db.updatesKishMWRAColumn(KishMWRAContract.SingleKishMWRA.COLUMN_SK, kish.getsK());
         if (updcount == 1) {
             return true;
         } else {
@@ -253,7 +254,7 @@ public class SectionKActivity extends AppCompatActivity {
         json.put("k109", bi.k109a.isChecked() ? "1" :
                 bi.k109ab.isChecked() ? "2" : "-1");
 
-        MainApp.kish.setsK(String.valueOf(json));
+        kish.setsK(String.valueOf(json));
     }
 
     private boolean formValidation() {

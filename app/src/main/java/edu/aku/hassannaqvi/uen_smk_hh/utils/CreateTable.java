@@ -3,13 +3,13 @@ package edu.aku.hassannaqvi.uen_smk_hh.utils;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.AdolscentContract.SingleAdolscent;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.BLRandomContract.RandomHH;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.ChildContract;
+import edu.aku.hassannaqvi.uen_smk_hh.contracts.DistrictContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.FormsContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.KishMWRAContract.SingleKishMWRA;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRAContract.MWRATable;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.MWRA_PREContract.SingleMWRAPRE;
-import edu.aku.hassannaqvi.uen_smk_hh.contracts.MortalityContract.SingleMortality;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.UsersContract;
 import edu.aku.hassannaqvi.uen_smk_hh.contracts.VersionAppContract;
 
@@ -63,25 +63,6 @@ public final class CreateTable {
             VersionAppContract.VersionAppTable.COLUMN_VERSION_NAME + " TEXT, " +
             VersionAppContract.VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
-/*
-    public static final String SQL_CREATE_TALUKAS = "CREATE TABLE " + TalukasContract.singleTalukas.TABLE_NAME + "("
-            + TalukasContract.singleTalukas._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + TalukasContract.singleTalukas.COLUMN_TALUKA_CODE + " TEXT,"
-            + TalukasContract.singleTalukas.COLUMN_TALUKA + " TEXT );";
-
-
-    public static final String SQL_CREATE_UCS = "CREATE TABLE " + UCsContract.singleUCs.TABLE_NAME + "("
-            + UCsContract.singleUCs._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + UCsContract.singleUCs.COLUMN_UCCODE + " TEXT,"
-            + UCsContract.singleUCs.COLUMN_TALUKA_CODE + " TEXT,"
-            + UCsContract.singleUCs.COLUMN_UCS + " TEXT );";
-
-
-    public static final String SQL_CREATE_AREAS = "CREATE TABLE " + AreasContract.singleAreas.TABLE_NAME + "("
-            + AreasContract.singleAreas._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + AreasContract.singleAreas.COLUMN_AREACODE + " TEXT,"
-            + AreasContract.singleAreas.COLUMN_UC_CODE + " TEXT,"
-            + AreasContract.singleAreas.COLUMN_AREA + " TEXT );";*/
 
     public static final String SQL_CREATE_BL_RANDOM = "CREATE TABLE " + RandomHH.TABLE_NAME + "("
             + RandomHH.COLUMN_ID + " TEXT,"
@@ -171,19 +152,6 @@ public final class CreateTable {
             + ChildContract.ChildTable.COLUMN_SYNCED + " TEXT,"
             + ChildContract.ChildTable.COLUMN_SYNCED_DATE + " TEXT );";
 
-    /*public static final String SQL_CREATE_MORTALITY = "CREATE TABLE " + SingleMortality.TABLE_NAME + "("
-            + SingleMortality._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + SingleMortality.COLUMN_UID + " TEXT,"
-            + SingleMortality.COLUMN__UUID + " TEXT,"
-            + SingleMortality.COLUMN_DEVICEID + " TEXT,"
-            + SingleMortality.COLUMN_FORMDATE + " TEXT,"
-            + SingleMortality.COLUMN_USER + " TEXT,"
-            + SingleMortality.COLUMN_SE3 + " TEXT,"
-            + SingleMortality.COLUMN_DEVICETAGID + " TEXT,"
-            + SingleMortality.COLUMN_SYNCED + " TEXT,"
-            + SingleMortality.COLUMN_SYNCED_DATE + " TEXT );";*/
-
-
     public static final String SQL_CREATE_FAMILY_MEMBERS = "CREATE TABLE " + FamilyMembersContract.SingleMember.TABLE_NAME + "("
             + FamilyMembersContract.SingleMember.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             FamilyMembersContract.SingleMember.COLUMN_UID + " TEXT," +
@@ -206,5 +174,12 @@ public final class CreateTable {
             FamilyMembersContract.SingleMember.COLUMN_SYNCED + " TEXT," +
             FamilyMembersContract.SingleMember.COLUMN_SYNCED_DATE + " TEXT"
             + ");";
+
+    public static final String SQL_CREATE_DISTRICTS = "CREATE TABLE " + DistrictContract.DistrictTable.TABLE_NAME + "("
+            + DistrictContract.DistrictTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + DistrictContract.DistrictTable.COLUMN_DIST_ID + " TEXT,"
+            + DistrictContract.DistrictTable.COLUMN_DIST_NAME + " TEXT,"
+            + DistrictContract.DistrictTable.COLUMN_PROVINCE_NAME + " TEXT );";
+
 
 }
