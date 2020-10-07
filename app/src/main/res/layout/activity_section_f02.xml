@@ -400,6 +400,11 @@
                                 style="@style/checkbox"
                                 android:text="@string/f125f" />
 
+                            <CheckBox
+                                android:id="@+id/f125g"
+                                style="@style/checkbox"
+                                android:text="@string/f125g" />
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -905,19 +910,6 @@
                                 android:id="@+id/f131j"
                                 style="@style/radiobutton"
                                 android:text="@string/f131j" />
-
-                            <RadioButton
-                                android:id="@+id/f13196"
-                                style="@style/radiobutton"
-                                android:text="@string/other" />
-
-                            <EditText
-                                android:id="@+id/f13196x"
-                                style="@style/EditTextAlpha"
-                                android:hint="@string/specify"
-                                android:tag="f13196"
-                                android:text='@{f13196.checked? f13196x.getText().toString() : ""}'
-                                android:visibility='@{f13196.checked? View.VISIBLE : View.GONE}' />
 
                         </RadioGroup>
 

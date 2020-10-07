@@ -158,21 +158,21 @@ public class SectionKActivity extends AppCompatActivity {
         json.put("k101", bi.k101a.isChecked() ? "1" :
                 bi.k101b.isChecked() ? "2" : "-1");
 
-        json.put("k101aaa", bi.k101aaa.isChecked() ? "1" : "-1");
-        json.put("k101aab", bi.k101aab.isChecked() ? "2" : "-1");
-        json.put("k101aac", bi.k101aac.isChecked() ? "3" : "-1");
-        json.put("k101aad", bi.k101aad.isChecked() ? "4" : "-1");
-        json.put("k101aae", bi.k101aae.isChecked() ? "5" : "-1");
-        json.put("k101aaf", bi.k101aaf.isChecked() ? "6" : "-1");
-        json.put("k101aag", bi.k101aag.isChecked() ? "7" : "-1");
-        json.put("k101aah", bi.k101aah.isChecked() ? "8" : "-1");
-        json.put("k101aai", bi.k101aai.isChecked() ? "9" : "-1");
-        json.put("k101aaj", bi.k101aaj.isChecked() ? "10" : "-1");
-        json.put("k101aak", bi.k101aak.isChecked() ? "11" : "-1");
-        json.put("k101aal", bi.k101aal.isChecked() ? "12" : "-1");
-        json.put("k101aam", bi.k101aam.isChecked() ? "13" : "-1");
+        json.put("k10101a", bi.k101aaa.isChecked() ? "1" : "-1");
+        json.put("k10101b", bi.k101aab.isChecked() ? "2" : "-1");
+        json.put("k10101c", bi.k101aac.isChecked() ? "3" : "-1");
+        json.put("k10101d", bi.k101aad.isChecked() ? "4" : "-1");
+        json.put("k10101e", bi.k101aae.isChecked() ? "5" : "-1");
+        json.put("k10101f", bi.k101aaf.isChecked() ? "6" : "-1");
+        json.put("k10101g", bi.k101aag.isChecked() ? "7" : "-1");
+        json.put("k10101h", bi.k101aah.isChecked() ? "8" : "-1");
+        json.put("k10101i", bi.k101aai.isChecked() ? "9" : "-1");
+        json.put("k10101j", bi.k101aaj.isChecked() ? "10" : "-1");
+        json.put("k10101k", bi.k101aak.isChecked() ? "11" : "-1");
+        json.put("k10101l", bi.k101aal.isChecked() ? "12" : "-1");
+        json.put("k10101m", bi.k101aam.isChecked() ? "13" : "-1");
 
-        json.put("k10101", bi.k10101a.isChecked() ? "1"
+        json.put("k10102", bi.k10101a.isChecked() ? "1"
                 : bi.k10101b.isChecked() ? "2"
                 : "-1");
 
@@ -208,9 +208,9 @@ public class SectionKActivity extends AppCompatActivity {
         json.put("k105i", bi.k105i.isChecked() ? "9" : "-1");
 
 
-        json.put("k105aaa", bi.k105aaa.getText().toString().trim().isEmpty() ? "-1" : bi.k105aaa.getText().toString());
-        json.put("k105aab", bi.k105aab.getText().toString().trim().isEmpty() ? "-1" : bi.k105aab.getText().toString());
-        json.put("k105aac", bi.k105aac.isChecked() ? "444" : "-1");
+        json.put("k10501a", bi.k105aaa.getText().toString().trim().isEmpty() ? "-1" : bi.k105aaa.getText().toString());
+        json.put("k10501b", bi.k105aab.getText().toString().trim().isEmpty() ? "-1" : bi.k105aab.getText().toString());
+        json.put("k10501c", bi.k105aac.isChecked() ? "444" : "-1");
 
         json.put("k106a", bi.k106a.isChecked() ? "1" : "-1");
         json.put("k106b", bi.k106b.isChecked() ? "2" : "-1");

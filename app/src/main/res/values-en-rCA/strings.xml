@@ -558,6 +558,7 @@
     <string name="f125d"> Swollen hands/face/feet </string>
     <string name="f125e"> Reduced fatal movement </string>
     <string name="f125f"> Abdominal pain/cramps(&lt;37th weeks) </string>
+    <string name="f125g"> دورے/جھٹکے </string>
 
     <string name="f126"> F126:\t By whom Did you receive the information on danger signs/problems during your pregnancy with {NAME} ? </string>
     <string name="f126a"> Doctor </string>
@@ -673,13 +674,12 @@
     <string name="g102e"> BASIC HEALTH UNIT </string>
     <string name="g102f"> Mother And child health centre </string>
     <string name="g102g"> BIRTH STATION </string>
-    <string name="g102h"> HEALTH HOUSE </string>
     <string name="g102h2"> Private medical sector </string>
-    <string name="g102i"> Private hospital </string>
-    <string name="g102j"> Private clinic </string>
-    <string name="g102k"> Private maternity home </string>
-    <string name="g102l"> NGO HEALTH FACILITY </string>
-    <string name="g102m"> ON THE WAY TO HEALTH FACILTIY </string>
+    <string name="g102h"> Private hospital </string>
+    <string name="g102i"> Private clinic </string>
+    <string name="g102j"> Private maternity home </string>
+    <string name="g102k"> NGO HEALTH FACILITY </string>
+    <string name="g102l"> ON THE WAY TO HEALTH FACILTIY </string>
     <string name="g10296"> Other (specify) </string>
 
     <string name="g103"> G103:\t Why didn’t you deliver {NAME} in a health facility ? </string>
@@ -843,6 +843,7 @@
     <string name="g12401k"> High blood pressure </string>
     <string name="g12401l"> Generalized edema </string>
     <string name="g12401m"> Severe nausea or vomiting </string>
+    <string name="g12401n"> No danger signs/problems during labour and delivery </string>
 
     <string name="g125"> G125:\t Was LHW present at the time of your delivery ? </string>
     <string name="g125a"> Yes </string>
@@ -1155,7 +1156,8 @@
     <string name="h13602g"> Yellow or pale color on skin eyes </string>
     <string name="h13602h"> Low birth weight </string>
     <string name="h13602i"> Not crying </string>
-    <string name="h13602j"> Don’t Know </string>
+    <string name="h13602j"> No danger signs/problems </string>
+    <string name="h13602k"> Don’t Know </string>
 
     <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
     <string name="h13603a"> Yes </string>
@@ -2230,7 +2232,7 @@
     <string name="k101a"> Yes </string>
     <string name="k101b"> No </string>
 
-    <string name="k101aa"> K101A:\t From where you get the information about FP methods?</string>
+    <string name="k101aa"> K10101:\t From where you get the information about FP methods?</string>
     <string name="k101aaa">Government Hospital</string>
     <string name="k101aab">Family Welfare Centre</string>
     <string name="k101aac">Mobile service camp</string>
@@ -2245,7 +2247,7 @@
     <string name="k101aal">Pamphalet/ Broucher</string>
     <string name="k101aam">Mobile/Smart Phone/TV</string>
 
-    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
+    <string name="k101ab"> K10102:\t Do you think it is important to use any family planning methods? </string>
     <string name="k101aba"> Agree </string>
     <string name="k101abb"> Disagree </string>
 
@@ -2271,7 +2273,7 @@
     <string name="k104m">Other traditional method</string>
     <string name="k105"> K105:\t From where did you get the current method to delay or avoid pregnancy?</string>
     <string name="k105a">Government Hospital</string>
-    <string name="k105aa"> K105A:\t Since when you are using current method without stopping it?</string>
+    <string name="k105aa"> K10501:\t Since when you are using current method without stopping it?</string>
     <string name="k105aaa">Month</string>
     <string name="k105aab">Years</string>
     <string name="k105aac">Stop using now</string>
@@ -2297,7 +2299,7 @@
     <string name="k1071a">Yes</string>
     <string name="k1071b">No</string>
 
-    <string name="k1072"> K1072:\t Reasons for not visiting LHW ? </string>
+    <string name="k1072"> K10701:\t Reasons for not visiting LHW ? </string>
     <string name="k1072a">LHW usually don’t visit</string>
     <string name="k1072b">LHW didn’t visit in Lockdown</string>
     <string name="k1072c"> LHW came but we didn’t allow her to enter in the home</string>
@@ -2334,7 +2336,7 @@
     <string name="l1021a">Yes</string>
     <string name="l1021b">No</string>
 
-    <string name="l1022">K108:\t Reasons for not working?</string>
+    <string name="l1022">L10201:\t Reasons for not working?</string>
     <string name="l1022a">It is usually not necessary</string>
     <string name="l1022b">Layoff due to Corona</string>
     <string name="l1022c"> Fear to contact with Corona </string>
@@ -2875,16 +2877,19 @@
     <string name="ah6a">Co (Boys And Girls)</string>
     <string name="ah6b">Only Boys</string>
     <string name="ah6c">Only Girls</string>
+
     <string name="ah7">What Are The Reasons For Not Getting Education?</string>
     <string name="ah7a">My Family Does Not Want Me To Attend School</string>
     <string name="ah7b">Girls In My Village Do Not Attend School</string>
-    <string name="ah7c">There Are No (Girls)’ Schools Nearby</string>
-    <string name="ah7d">There Are No (Female) Teachers Available</string>
-    <string name="ah7e">I Am Engaged Or Married</string>
-    <string name="ah7f">The Cost Is Too Much</string>
-    <string name="ah7g">Has To Perform / Share House- Hold Chores</string>
-    <string name="ah7h">Refuse To Answer</string>
+    <string name="ah7c">There Are No Schools Nearby</string>
+    <string name="ah7d"> گاؤں میں اسکول ہی نہیں ہے </string>
+    <string name="ah7e">There Are No (Female) Teachers Available</string>
+    <string name="ah7f">I Am Engaged Or Married</string>
+    <string name="ah7g">The Cost Is Too Much</string>
+    <string name="ah7h">Has To Perform / Share House- Hold Chores</string>
+    <string name="ah7i">Refuse To Answer</string>
     <string name="ah7x">Other (Specify)</string>
+
     <string name="ahemtitle">Employment:</string>
     <string name="ah8">Have You Done Any Work?</string>
     <string name="ah8a">Yes Independently</string>

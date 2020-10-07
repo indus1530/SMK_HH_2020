@@ -443,6 +443,11 @@
                                 android:text="@string/ah7h" />
 
                             <CheckBox
+                                android:id="@+id/ah7i"
+                                style="@style/checkbox"
+                                android:text="@string/ah7i" />
+
+                            <CheckBox
                                 android:id="@+id/ah796"
                                 style="@style/checkbox"
                                 android:checked="@{ah7h.checked ? false : false}"

@@ -566,6 +566,7 @@
     <string name="f125d"> سوڄ ھٿن، پيرن ۽ منھن تي </string>
     <string name="f125e"> ٻار جي چر پر گھٽ ٿي وڃڻ </string>
     <string name="f125f"> (پيٽ ۾ سور (37 ھفتن کان گھٽ </string>
+    <string name="f125g"> دورے/جھٹکے </string>
 
     <string name="f126"> F126:\t توھان کي (نالو) حمل جي دوران ٿيندڙ  خطرناڪ علامتن / پيچيدگين جي معلومات ڪنھن کان حاصل ڪئي؟</string>
     <string name="f126a"> ڊاڪٽر </string>
@@ -681,14 +682,13 @@
     <string name="g102e"> BASIC HEALTH UNIT </string>
     <string name="g102f"> Mother And child health centre </string>
     <string name="g102g"> BIRTH STATION </string>
-    <string name="g102h"> HEALTH HOUSE </string>
     <string name="g102h2"> Private medical sector </string>
-    <string name="g102i"> Private hospital </string>
-    <string name="g102j"> Private clinic </string>
-    <string name="g102k"> Private maternity home </string>
-    <string name="g102l"> NGO HEALTH FACILITY </string>
-    <string name="g102m"> ON THE WAY TO HEALTH FACILTIY </string>
-    <string name="g10296"> Other (specify) </string>
+    <string name="g102h"> خانگی ہسپتال </string>
+    <string name="g102i"> خانگی کلینک </string>
+    <string name="g102j"> خانگی زچگی گھر </string>
+    <string name="g102k"> این جی او صحت مرکز </string>
+    <string name="g102l"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="g10296"> دیگر (وضاحت کریں </string>
 
     <string name="g103"> G103:\t توھان (نالو) ڊليوري صحت مرڪز تي ڇو نه ڪرائي ان جو ڇا سبب آھي؟</string>
     <string name="g103hint"> جيڪڏھن ويم گھر ۾ ٿيو هو- ڪنهن ٻي سبب جي نشاندهي ڪرڻ جي لاءِ پڇا ڪريو- ٻڌايل سڀني جوابن کي رڪارڊ ڪريو </string>
@@ -841,6 +841,7 @@
     <string name="g12401k"> بلند فشار خون </string>
     <string name="g12401l"> پورے جسم پر سوجن </string>
     <string name="g12401m"> شدید متلی اور الٹیاں </string>
+    <string name="g12401n"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="g125"> G125:\t نالو) ڇا ڊليوري جي وقت ليڊي ھيلٿ ورڪر موجود ھئي ؟)</string>
     <string name="g125a"> ھا </string>
@@ -1160,7 +1161,8 @@
     <string name="h13602g"> جسم یا آنکھوں کی پپلی رنگت یا پیلاپن </string>
     <string name="h13602h"> پیدائش کم وزن </string>
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
-    <string name="h13602j"> معلوم نہیں </string>
+    <string name="h13602j"> کوئی خطرناک علامات درپیش نہیں آئے تھے </string>
+    <string name="h13602k"> معلوم نہیں </string>
 
     <string name="h13603"> H13603:\t Did you seek newborn care for the above experienced problems? </string>
     <string name="h13603a"> ہاں </string>
@@ -2233,7 +2235,7 @@
     <string name="k101"> K101:\t ڇا توھان ڪڏھن به حمل کي روڪڻ واري طريقي جي باري ۾ ٻڌو آھي ؟ </string>
     <string name="k101a"> ھا </string>
 
-    <string name="k101aa"> K101a:\t توھان خانداني منصوبه بندي جي طريقن بابت ڪٿان معلومات حاصل ڪئي ؟ </string>
+    <string name="k101aa"> K10101:\t توھان خانداني منصوبه بندي جي طريقن بابت ڪٿان معلومات حاصل ڪئي ؟ </string>
     <string name="k101aaa"> سرڪاري صحت مرڪز </string>
     <string name="k101aab"> خانداني فلاحي مرڪز </string>
     <string name="k101aac"> موبائل سروس مھم </string>
@@ -2249,7 +2251,7 @@
     <string name="k101aam"> موبائل / سمارٽ فون </string>
     <string name="k101b"> نه </string>
 
-    <string name="k101ab"> K101B:\t Do you think it is important to use any family planning methods? </string>
+    <string name="k101ab"> K10102:\t Do you think it is important to use any family planning methods? </string>
     <string name="k101aba"> Agree </string>
     <string name="k101abb"> Disagree </string>
 
@@ -2279,7 +2281,7 @@
     <string name="k105"> K105:\t توھان اھو طريقو ڪٿان حاصل ڪيو ؟ </string>
     <string name="k105a"> سرڪاري صحت مرڪز </string>
 
-    <string name="k105aa"> K105aa:\t ڪڏھن کان توھان ڪو طريقو استعمال ڪرڻ کان علاوه ھن کي روڪي رھيا آھيو ؟ </string>
+    <string name="k105aa"> K10501:\t ڪڏھن کان توھان ڪو طريقو استعمال ڪرڻ کان علاوه ھن کي روڪي رھيا آھيو ؟ </string>
     <string name="k105aaa"> مهينا </string>
     <string name="k105aab"> سال </string>
     <string name="k105aac"> ھاڻي استعمال روڪي ڇڏيو آھي </string>
@@ -2307,7 +2309,7 @@
     <string name="k1071a"> ھا </string>
     <string name="k1071b"> نه </string>
 
-    <string name="k1072"> k107a:\t ليڊي ھيلٿ ورڪر جي مھيا نه ڪرڻ جو ڇا سبب ھو ؟ </string>
+    <string name="k1072"> k10701:\t ليڊي ھيلٿ ورڪر جي مھيا نه ڪرڻ جو ڇا سبب ھو ؟ </string>
     <string name="k1072a"> ليڊي ھيلٿ ورڪر اڪثر ڪري نه ايندي آھي </string>
     <string name="k1072b"> ڪرونا جي لاڪ ڊائون ڪري دورو نه ڪيو </string>
     <string name="k1072c"> ليڊي ھيلٿ ورڪر آئي پر اسان ڪرونا جي ڪري اچڻ نه ڏنو </string>
@@ -2346,7 +2348,7 @@
     <string name="l1021a"> ھا </string>
     <string name="l1021b"> نه </string>
 
-    <string name="l1022"> L102a:\t ڪم تي نه وڃڻ جو سبب ڇا آھي ؟ </string>
+    <string name="l1022"> L10201:\t ڪم تي نه وڃڻ جو سبب ڇا آھي ؟ </string>
     <string name="l1022a"> اھو ضروري نه آھي  </string>
     <string name="l1022b"> ڪرونا جي ڪري موڪل آھي </string>
     <string name="l1022c"> ڪرونا جو خوف / ڊپ </string>
@@ -2924,16 +2926,19 @@
     <string name="ah6a">Co (Boys And Girls)</string>
     <string name="ah6b">Only Boys</string>
     <string name="ah6c">Only Girls</string>
+
     <string name="ah7">What Are The Reasons For Not Getting Education?</string>
     <string name="ah7a">My Family Does Not Want Me To Attend School</string>
     <string name="ah7b">Girls In My Village Do Not Attend School</string>
     <string name="ah7c">There Are No (Girls)’ Schools Nearby</string>
-    <string name="ah7d">There Are No (Female) Teachers Available</string>
-    <string name="ah7e">I Am Engaged Or Married</string>
-    <string name="ah7f">The Cost Is Too Much</string>
-    <string name="ah7g">Has To Perform / Share House- Hold Chores</string>
-    <string name="ah7h">Refuse To Answer</string>
+    <string name="ah7d"> No school in village </string>
+    <string name="ah7e">There Are No (Female) Teachers Available</string>
+    <string name="ah7f">I Am Engaged Or Married</string>
+    <string name="ah7g">The Cost Is Too Much</string>
+    <string name="ah7h">Has To Perform / Share House- Hold Chores</string>
+    <string name="ah7i">Refuse To Answer</string>
     <string name="ah7x">Other (Specify)</string>
+
     <string name="ahemtitle">Employment:</string>
     <string name="ah8">Have You Done Any Work?</string>
     <string name="ah8a">Yes Independently</string>

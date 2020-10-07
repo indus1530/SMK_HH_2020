@@ -809,16 +809,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-
-
-
-
-
-
-
-
-
-
                 <!-- ah41  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVah41"

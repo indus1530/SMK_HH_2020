@@ -122,14 +122,14 @@
                                 style="@style/radiobutton"
                                 android:text="@string/g102g" />
 
+                            <TextView
+                                style="@style/i_textviewhint"
+                                android:text="@string/g102h2" />
+
                             <RadioButton
                                 android:id="@+id/g102h"
                                 style="@style/radiobutton"
                                 android:text="@string/g102h" />
-
-                            <TextView
-                                style="@style/i_textviewhint"
-                                android:text="@string/g102h2" />
 
                             <RadioButton
                                 android:id="@+id/g102i"
@@ -150,11 +150,6 @@
                                 android:id="@+id/g102l"
                                 style="@style/radiobutton"
                                 android:text="@string/g102l" />
-
-                            <RadioButton
-                                android:id="@+id/g102m"
-                                style="@style/radiobutton"
-                                android:text="@string/g102m" />
 
                             <RadioButton
                                 android:id="@+id/g10296"
@@ -1448,7 +1443,14 @@
                                 style="@style/checkbox"
                                 android:text="@string/g12401m" />
 
+
                         </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/g12401n"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/g12401n" />
 
                     </LinearLayout>
 

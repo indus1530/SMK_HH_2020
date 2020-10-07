@@ -172,6 +172,10 @@ public class SectionGActivity extends AppCompatActivity {
             }
         });
 
+        bi.g12401n.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            Clear.Companion.clearAllFields(bi.g12401check, !isChecked);
+        });
+
         //g1251
         bi.g1251c.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (!isChecked) {
@@ -281,7 +285,6 @@ public class SectionGActivity extends AppCompatActivity {
                 : bi.g102j.isChecked() ? "10"
                 : bi.g102k.isChecked() ? "11"
                 : bi.g102l.isChecked() ? "12"
-                : bi.g102m.isChecked() ? "13"
                 : bi.g10296.isChecked() ? "96"
                 : "-1");
 
@@ -429,6 +432,7 @@ public class SectionGActivity extends AppCompatActivity {
         json.put("g12401k", bi.g12401k.isChecked() ? "11" : "-1");
         json.put("g12401l", bi.g12401l.isChecked() ? "12" : "-1");
         json.put("g12401m", bi.g12401m.isChecked() ? "13" : "-1");
+        json.put("g12401n", bi.g12401n.isChecked() ? "14" : "-1");
 
         json.put("g125", bi.g125a.isChecked() ? "1"
                 : bi.g125b.isChecked() ? "2"

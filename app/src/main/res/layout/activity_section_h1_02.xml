@@ -1350,13 +1350,18 @@
                                 style="@style/checkbox"
                                 android:text="@string/h13602i" />
 
+                            <CheckBox
+                                android:id="@+id/h13602j"
+                                style="@style/checkbox"
+                                android:text="@string/h13602j" />
+
                         </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/h1360298"
                             style="@style/checkbox"
                             android:tag="-1"
-                            android:text="@string/dkn" />
+                            android:text="@string/h13602k" />
 
                     </LinearLayout>
 

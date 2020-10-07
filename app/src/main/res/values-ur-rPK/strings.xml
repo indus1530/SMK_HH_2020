@@ -555,6 +555,7 @@
     <string name="f125d"> ہاتھ/چہرے/پیر کی سوجن </string>
     <string name="f125e"> بچے کی حرکت کا کم ہون </string>
     <string name="f125f"> پیٹ میں درد/ مڑور(37thہفتوں سے کم) </string>
+    <string name="f125g"> دورے/جھٹکے </string>
 
     <string name="f126"> F126:\t آپ نے(نام)کی پیدائش سےقبل حمل کے دوران خطرناک علامات/مسائل کی معلومات کن زرائع سے حاصل کی تھی؟ </string>
     <string name="f126a"> ڈاکٹر </string>
@@ -669,13 +670,12 @@
     <string name="g102e"> بنیادی صحت مرکز </string>
     <string name="g102f"> ماں اور بچے کا صحت مرکز </string>
     <string name="g102g"> زچگی گھر </string>
-    <string name="g102h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
     <string name="g102h2"> خانگی ہسپتال </string>
-    <string name="g102i"> خانگی ہسپتال </string>
-    <string name="g102j"> خانگی کلینک </string>
-    <string name="g102k"> خانگی زچگی گھر </string>
-    <string name="g102l"> این جی او صحت مرکز </string>
-    <string name="g102m"> راستے میں صحت مرکز جاتے وقت </string>
+    <string name="g102h"> خانگی ہسپتال </string>
+    <string name="g102i"> خانگی کلینک </string>
+    <string name="g102j"> خانگی زچگی گھر </string>
+    <string name="g102k"> این جی او صحت مرکز </string>
+    <string name="g102l"> راستے میں صحت مرکز جاتے وقت </string>
     <string name="g10296"> دیگر (وضاحت کریں </string>
 
     <string name="g103"> G103:\t آپ نے (نام) کی پیدائش مرکز صحت پر کیوں نہیں کروائی ؟ </string>
@@ -838,6 +838,7 @@
     <string name="g12401k"> بلند فشار خون </string>
     <string name="g12401l"> پورے جسم پر سوجن </string>
     <string name="g12401m"> شدید متلی اور الٹیاں </string>
+    <string name="g12401n"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
     <string name="g125"> G125:\t کیاآپ کے بچے کی پیدائش کے وقت ایل-ایچ-ڈبلیو موجود تھی ؟ </string>
     <string name="g125a"> ہاں </string>
@@ -1156,7 +1157,8 @@
     <string name="h13602g"> جسم یا آنکھوں کی پپلی رنگت یا پیلاپن </string>
     <string name="h13602h"> پیدائش کم وزن </string>
     <string name="h13602i"> پیدائش کے فورا بعد نہ رونا </string>
-    <string name="h13602j"> معلوم نہیں </string>
+    <string name="h13602j"> کوئی خطرناک علامات درپیش نہیں آئے تھے </string>
+    <string name="h13602k"> معلوم نہیں </string>
 
     <string name="h13603"> H13603:\t کیا آپ نے کےنوزائیدہ  کو کوئی خطرناک علامت کا علاج کروایا ؟ </string>
     <string name="h13603a"> ہاں </string>
@@ -2226,7 +2228,7 @@
     <string name="k101a"> ہاں </string>
     <string name="k101b"> نہیں </string>
 
-    <string name="k101aa">  K101a:\t آپ نے حمل میں وقفہ کرنے کے طریقہ کار کے بارے میں کہاں سے سنا ہے ؟ </string>
+    <string name="k101aa">  K10101:\t آپ نے حمل میں وقفہ کرنے کے طریقہ کار کے بارے میں کہاں سے سنا ہے ؟ </string>
     <string name="k101aaa"> گورمنٹ ہسپتال </string>
     <string name="k101aab"> فیملی ویلفئر سینٹر </string>
     <string name="k101aac"> موبائل سروس کیمپ </string>
@@ -2241,7 +2243,7 @@
     <string name="k101aal"> پمفلٹ / بروشر </string>
     <string name="k101aam"> موبائل فون / اسمارٹ فون </string>
 
-    <string name="k101ab"> K101B:\t کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟ </string>
+    <string name="k101ab"> K10102:\t کیا آپ  خاندانی منصوبہ بندی استعمال کی اہمیت کو سمجھتی ہیں؟ </string>
     <string name="k101aba"> متفق </string>
     <string name="k101abb"> غیر متفق </string>
 
@@ -2279,7 +2281,7 @@
     <string name="k105h"> دوست / رشتےدار </string>
     <string name="k105i"> دائی/ٹی بی اے </string>
 
-    <string name="k105aa"> K105a:\t آپ کب سے بغیر تعطل کے یہ طریقہ استعمال کر رہیں ہیں ؟ </string>
+    <string name="k105aa"> K10501:\t آپ کب سے بغیر تعطل کے یہ طریقہ استعمال کر رہیں ہیں ؟ </string>
     <string name="k105aaa"> مہینے </string>
     <string name="k105aab"> سال </string>
     <string name="k105aac"> استعمال کرنا بند کردیا </string>
@@ -2299,7 +2301,7 @@
     <string name="k1071a"> ہاں </string>
     <string name="k1071b"> نہیں </string>
 
-    <string name="k1072"> K107a:\t لیڈی ہیلتھ ورکر نے کیوں نہیں مہیا کیا ؟ </string>
+    <string name="k1072"> K10701:\t لیڈی ہیلتھ ورکر نے کیوں نہیں مہیا کیا ؟ </string>
     <string name="k1072a"> ایل ایچھ ڈبلیو اکثر وزٹ پر نہیں آتی </string>
     <string name="k1072b"> ایل ایچھ ڈبلیو کرونا کی وجہ سے وزٹ نہیں کرسکی </string>
     <string name="k1072c"> ایل ایچھ ڈبلیو آئی مگر ہم نے گھر میں آنے نہیں دیا </string>
@@ -2337,7 +2339,7 @@
     <string name="l1021a"> ہاں </string>
     <string name="l1021b"> نہیں </string>
 
-    <string name="l1022">L102a:\t کام پر نہیں جانے کا  سبب کیا تھا ؟ </string>
+    <string name="l1022">L10201:\t کام پر نہیں جانے کا  سبب کیا تھا ؟ </string>
     <string name="l1022a"> اتنا اہم نہیں تھا </string>
     <string name="l1022b"> کرونا کی وجہ سے چھٹی ہے </string>
     <string name="l1022c"> کرونا کا ڈریا خوف </string>
@@ -2916,16 +2918,19 @@
     <string name="ah6a">محفلوط تھا</string>
     <string name="ah6b">صرف لڑکوں کا تھا</string>
     <string name="ah6c">صرف لڑکیوں کا تھا</string>
+
     <string name="ah7">AH7:\t تعلیم حاصل نہ کرنے کی وجوہات کیا ہیں؟ ایک سے زیادہ جوابات</string>
     <string name="ah7a">میری فیملی نہیں چاہتی کہ میں اسکول جاؤں</string>
     <string name="ah7b">میرے گاؤں میں لڑکیاں اسکول نہیں جاتیں۔</string>
     <string name="ah7c">اسکول قریب نہیں</string>
-    <string name="ah7d">اسکول میں استاد / استانی موجود نہیں</string>
-    <string name="ah7e">میری منگنی / شادی ہوئی ہے</string>
-    <string name="ah7f">اسکول اخراجات نہیں اٹھا سکتے</string>
-    <string name="ah7g">گھر کے کام کاج کرنے ہوتے ہیں</string>
-    <string name="ah7h">جوابات دینے سے منع کر دیا</string>
+    <string name="ah7d"> گاؤں میں اسکول ہی نہیں ہے </string>
+    <string name="ah7e">اسکول میں استاد / استانی موجود نہیں</string>
+    <string name="ah7f">میری منگنی / شادی ہوئی ہے</string>
+    <string name="ah7g">اسکول اخراجات نہیں اٹھا سکتے</string>
+    <string name="ah7h">گھر کے کام کاج کرنے ہوتے ہیں</string>
+    <string name="ah7i">جوابات دینے سے منع کر دیا</string>
     <string name="ah7x">دیگر وجہ (وضاحت)</string>
+
     <string name="ahemtitle">روزگار</string>
     <string name="ah8">AH8:\t کیا آپ نے کبھی کام کیا ہے؟</string>
     <string name="ah8a">جی اپنا کام کیا ہے</string>

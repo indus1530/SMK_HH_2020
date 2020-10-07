@@ -133,6 +133,42 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.ah796x.setVisibility(View.GONE);
             }
         });
+
+        //h2080298
+        bi.ah7i.setOnCheckedChangeListener((compoundButton, b) -> {
+
+            if (b) {
+
+                bi.ah7a.setChecked(false);
+                bi.ah7b.setChecked(false);
+                bi.ah7c.setChecked(false);
+                bi.ah7d.setChecked(false);
+                bi.ah7e.setChecked(false);
+                bi.ah7f.setChecked(false);
+                bi.ah7g.setChecked(false);
+                bi.ah7h.setChecked(false);
+
+                bi.ah7a.setEnabled(false);
+                bi.ah7b.setEnabled(false);
+                bi.ah7c.setEnabled(false);
+                bi.ah7d.setEnabled(false);
+                bi.ah7e.setEnabled(false);
+                bi.ah7f.setEnabled(false);
+                bi.ah7g.setEnabled(false);
+                bi.ah7h.setEnabled(false);
+
+            } else {
+
+                bi.ah7a.setEnabled(true);
+                bi.ah7b.setEnabled(true);
+                bi.ah7c.setEnabled(true);
+                bi.ah7d.setEnabled(true);
+                bi.ah7e.setEnabled(true);
+                bi.ah7f.setEnabled(true);
+                bi.ah7g.setEnabled(true);
+                bi.ah7h.setEnabled(true);
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -235,6 +271,7 @@ public class SectionAH1Activity extends AppCompatActivity {
         json.put("ah7f", bi.ah7f.isChecked() ? "6" : "-1");
         json.put("ah7g", bi.ah7g.isChecked() ? "7" : "-1");
         json.put("ah7h", bi.ah7h.isChecked() ? "8" : "-1");
+        json.put("ah7i", bi.ah7i.isChecked() ? "9" : "-1");
         json.put("ah796", bi.ah796.isChecked() ? "96" : "-1");
 
         json.put("ah796x", bi.ah796x.getText().toString().trim().isEmpty() ? "-1" : bi.ah796x.getText().toString());

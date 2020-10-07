@@ -259,6 +259,10 @@ public class SectionH102Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.h13602check, true);
             }
         });
+
+        bi.h13602j.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            Clear.Companion.clearAllFields(bi.h13602check, !isChecked);
+        });
     }
 
     public void BtnContinue() {
@@ -434,6 +438,7 @@ public class SectionH102Activity extends AppCompatActivity {
         json.put("h13602g", bi.h13602g.isChecked() ? "7" : "-1");
         json.put("h13602h", bi.h13602h.isChecked() ? "8" : "-1");
         json.put("h13602i", bi.h13602i.isChecked() ? "9" : "-1");
+        json.put("h13602j", bi.h13602j.isChecked() ? "10" : "-1");
         json.put("h1360298", bi.h1360298.isChecked() ? "98" : "-1");
 
         json.put("h13603", bi.h13603a.isChecked() ? "1" :

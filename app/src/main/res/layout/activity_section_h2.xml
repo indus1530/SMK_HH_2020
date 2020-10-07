@@ -344,7 +344,7 @@
                             style="@style/radiobutton"
                             android:text="@string/h204j" />
 
-                        <RadioButton
+                        <!--<RadioButton
                             android:id="@+id/h20496"
                             style="@style/radiobutton"
                             android:text="@string/other" />
@@ -355,7 +355,7 @@
                             android:hint="@string/specify"
                             android:tag="h20496"
                             android:text='@{h20496.checked? h20496x.getText().toString() : ""}'
-                            android:visibility='@{h20496.checked? View.VISIBLE : View.GONE}' />
+                            android:visibility='@{h20496.checked? View.VISIBLE : View.GONE}' />-->
 
                     </RadioGroup>
 
@@ -473,15 +473,15 @@
                         android:text="@string/h205aai" />
 
                     <CheckBox
-                        android:id="@+id/h205a96"
+                        android:id="@+id/h2050196"
                         style="@style/checkbox"
                         android:text="@string/specify" />
 
                     <EditText
-                        android:id="@+id/h205a96x"
+                        android:id="@+id/h2050196x"
                         style="@style/EditTextAlpha"
                         android:hint="@string/specify"
-                        android:visibility='@{h205a96.checked ? View.VISIBLE : View.GONE}' />
+                        android:visibility='@{h2050196.checked ? View.VISIBLE : View.GONE}' />
 
                 </LinearLayout>
 
