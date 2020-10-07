@@ -955,6 +955,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 SingleMember.COLUMN_RELATION_HH,
                 SingleMember.COLUMN_AGE,
                 SingleMember.COLUMN_MONTH_FM,
+                SingleMember.COLUMN_DAY_FM,
+                SingleMember.AGE_IN_DAYS,
                 SingleMember.COLUMN_MOTHER_NAME,
                 SingleMember.COLUMN_MOTHER_SERIAL,
                 SingleMember.COLUMN_GENDER,
