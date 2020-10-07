@@ -1259,7 +1259,7 @@
     <string name="h20802h"> چھاتی کے مسائل : (engorgement, sore, cracked bleeding or inverted nipples) </string>
     <string name="h20802i"> کوئی خطرناک علامت درپیش نہیں آئے تھے </string>
 
-    <string name="h20803"> H208C:\t Did you seek care of above experience danger sign /problems after delivery? </string>
+    <string name="h20803"> H20803:\t کیا آپ نے  علاج کروایا؟ </string>
     <string name="h20803a"> ہاں </string>
     <string name="h20803b"> نہیں </string>
 
@@ -3234,7 +3234,7 @@
     <string name="ah3706d">لاگو نہیں</string>
     <string name="ah3706f">انفرادی طور پہ</string>
     <string name="ah3706x">دیگر</string>
-    <string name="ah37a">AH37a:\t آپ کی عمر کیا ہے؟</string>
+    <string name="ah37a">AH3701:\t آپ کی عمر کیا ہے؟</string>
     <string name="ah37aa">دن</string>
     <string name="ah37ab">مہینے</string>
     <string name="ah37ac">سال</string>

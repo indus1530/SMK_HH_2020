@@ -147,6 +147,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.ah7f.setChecked(false);
                 bi.ah7g.setChecked(false);
                 bi.ah7h.setChecked(false);
+                bi.ah796.setChecked(false);
 
                 bi.ah7a.setEnabled(false);
                 bi.ah7b.setEnabled(false);
@@ -156,6 +157,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.ah7f.setEnabled(false);
                 bi.ah7g.setEnabled(false);
                 bi.ah7h.setEnabled(false);
+                bi.ah796.setEnabled(false);
 
             } else {
 
@@ -167,6 +169,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 bi.ah7f.setEnabled(true);
                 bi.ah7g.setEnabled(true);
                 bi.ah7h.setEnabled(true);
+                bi.ah796.setEnabled(true);
             }
         });
     }
