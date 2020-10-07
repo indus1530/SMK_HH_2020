@@ -378,7 +378,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         new GetAllData(mContext, item, syncListAdapter, list).execute();
                     }
                 } else {
-                    String[] downloadTables = {"EnumBlock", "BLRandom", "District"};
+                    String[] downloadTables = {"EnumBlock", "BLRandom"};
                     for (String item : downloadTables) {
                         if (listActivityCreated) {
                             model = new SyncModel();
