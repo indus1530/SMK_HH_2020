@@ -390,22 +390,19 @@
     <string name="f101ao">احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور کارکنان صحت دستانے نہیں پہنےہوئے تھے) </string>
 
     <string name="f102"> F102:\t آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا؟ </string>
-    <string name="f102h1"> عوامی/ سرکاری ہسپتال </string>
+    <string name="f102h1"> سرکاری مرکز صحت </string>
     <string name="f102a"> گھر </string>
-    <string name="f102b"> تربیتی/ سول ہسپتال </string>
-    <string name="f102c">     ضلعہ/تعلقہ ہسپتال</string>
-    <string name="f102d"> دیہی صحت مرکز </string>
+    <string name="f102b">سول ہسپتال / ٹرشری</string>
+    <string name="f102c">ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر</string>
+    <string name="f102d"> رورل ہیلتھ سینٹر </string>
     <string name="f102e"> بنیادی صحت مرکز </string>
     <string name="f102f"> ماں اور بچے کا صحت مرکز </string>
-    <string name="f102g"> زچگی گھر </string>
-    <string name="f102h"> ہیلتھ ہائوس (ایل ایچھ ڈبلیو)</string>
-    <string name="f102h2"> خانگی ہسپتال </string>
-    <string name="f102i"> خانگی ہسپتال </string>
-    <string name="f102j"> خانگی کلینک </string>
-    <string name="f102k"> خانگی زچگی گھر </string>
-    <string name="f102l"> این جی او صحت مرکز </string>
-    <string name="f102m"> راستے میں صحت مرکز جاتے وقت </string>
-    <string name="f10296"> دیگر (وضاحت کریں </string>
+    <string name="f102g"> برتھ اسٹیشن (کمیونٹی مڈوائف)  </string>
+    <string name="f102h2"> نجی مرکز صحت </string>
+    <string name="f102h"> پرائیوٹ ہسپتال </string>
+    <string name="f102i"> پرائیوٹ کلینک </string>
+    <string name="f102j"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="f102k"> این جی او صحت مرکز </string>
 
     <string name="f103"> F103:\t آخری حمل کے دوران پیدائش سے قبل معائنہ کس نے کیا تھا ؟ مزید پوچھیں: کوئی اور </string>
     <string name="f103a"> ڈاکٹر </string>
@@ -864,14 +861,17 @@
     <string name="g127"> G127:\t کیا لیڈی ہیلتھ ورکر نے آپ کو ڈیلوری کٹ کے استعمال کے بارے میں بتایا تھا ؟ </string>
     <string name="g127a"> ہاں </string>
     <string name="g127b"> نہیں </string>
+    <string name="g127c"> لاگو نہیں </string>
 
     <string name="g128"> G128:\t کیا لیڈی ہیلتھ ورکر نے آپ کو زچگی کے بعد خون کا اخراج ہونے کے بارے میں بتایا تھا ؟ </string>
     <string name="g128a"> ہاں </string>
     <string name="g128b"> نہیں </string>
+    <string name="g128c"> لاگو نہیں </string>
 
     <string name="g129"> G129:\t کیا لیڈی ہیلتھ ورکر نے زچگی کے بعد معائنہ کا مشورہ دیا تھا ؟ </string>
     <string name="g129a"> ہاں </string>
     <string name="g129b"> نہیں </string>
+    <string name="g129c"> لاگو نہیں </string>
 
     <string name="th1heading"> SECTION H: NEWBORN HEALTH </string>
     <string name="h101"> H101:\t (نام) کی پیدائش کے وقت آپ کے حمل کی مدُت کیا تھی ؟ </string>
@@ -2310,6 +2310,7 @@
     <string name="k1072f"> سماجی مفاصلا </string>
     <string name="k1072g"> حفاظتی سامان گھر پر موجود نہیں تھا </string>
     <string name="k1072h">لاگو نہیں ہوتا</string>
+    <string name="k1072i"> گولیوں کی عدم دستیابی </string>
 
     <string name="k1081"> K108:\t کیا(ایل ایچ ڈبلیو) کے سیشن میں آپ اور آپ کے شوہر   نے شمولیت کی تھی؟ </string>
     <string name="k1081a"> ہاں </string>
@@ -2900,15 +2901,17 @@
     <string name="ah2">AH2:\t کیا آپ ابھی اسکول / کالج جاتے ہیں؟</string>
     <string name="ah2a">ہاں</string>
     <string name="ah2b">نہیں</string>
+
     <string name="ah3">AH3:\t آپ مزید کتنے تعلیمی سال مکمل کر لیں گے؟</string>
-    <string name="ah3a">پرائمری(1-5)</string>
-    <string name="ah3b">مڈل (8-6)</string>
-    <string name="ah3c">سیکنڈری (10-9)</string>
-    <string name="ah3d">انٹرمیڈیٹ</string>
-    <string name="ah3e">آنڈر گریجویٹ</string>
-    <string name="ah3f">ٹیکنیکل ٹریننگ</string>
-    <string name="ah3g">دینی تعلیم ((حافظ/ حافظہ /عالم / عالمہ))</string>
+    <string name="ah3a">مڈل (8-6)</string>
+    <string name="ah3b">سیکنڈری (10-9)</string>
+    <string name="ah3c">انٹرمیڈیٹ</string>
+    <string name="ah3d">آنڈر گریجویٹ</string>
+    <string name="ah3e">ٹیکنیکل ٹریننگ</string>
+    <string name="ah3f">دینی تعلیم ((حافظ/ حافظہ /عالم / عالمہ))</string>
     <string name="ah3other"> دیگر وضاحت کریں</string>
+    <string name="ah3g">مزید تعلیم نہیں چاہتا/چاہتی </string>
+
     <string name="ah4">AH4:\t آپ کی عمر کیا تھی جب آپ نے اسکول/ کالج چھوڑا؟</string>
     <string name="ah4a">عمر</string>
     <string name="ah5">AH5:\t آپ کا اسکول سرکاری تھا یا نجی؟</string>
@@ -2960,7 +2963,7 @@
     <string name="ah13">AH13:\t آپ کام ڈھونڈ رہے ہیں؟</string>
     <string name="ah13a">ہاں</string>
     <string name="ah13b">نہیں</string>
-    <string name="ah13aa">AH13a:\t آپ کا بینک اکاؤنٹ ہے؟</string>
+    <string name="ah13aa">AH1301:\t آپ کا بینک اکاؤنٹ ہے؟</string>
     <string name="ah13aaa">جی علیحدہ</string>
     <string name="ah13aab">جی مشترکہ</string>
     <string name="ah13aac">نہیں</string>
@@ -3340,9 +3343,19 @@
     <string name="ah57b">کوئی بچہ نہیں</string>
     <string name="ah58">AH58:\t آپ کتنی دفعہ حاملہ ہوئی ہیں؟</string>
     <string name="ah58a">تعداد</string>
-    <string name="ah59">AH59:\t آپ کے کتنے حمل ضائع ہوئے ہیں</string>
-    <string name="ah59a">تعداد</string>
-    <string name="ah59b">کوئی نہیں</string>
+
+    <string name="ah59h">AH59:\t آپ کے کتنے حمل ضائع ہوئے ہیں</string>
+    <string name="ah5901">مردہ پیدائش</string>
+    <string name="ah5901a">تعداد</string>
+    <string name="ah5901b">کوئی نہیں</string>
+    <string name="ah5902">اسقاطِ حمل</string>
+    <string name="ah5902a">تعداد</string>
+    <string name="ah5902b">کوئی نہیں</string>
+    <string name="ah5903">حمل ضائع کیا گیا</string>
+    <string name="ah5903a">تعداد</string>
+    <string name="ah5903b">کوئی نہیں</string>
+
+
     <string name="ah60">AH60:\t آپ کے خیال میں کتنے بچے ہونے چاہئیں؟</string>
     <string name="ah60a">تعداد</string>
 

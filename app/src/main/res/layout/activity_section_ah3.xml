@@ -1251,14 +1251,14 @@
                             style="@style/radiobutton"
                             android:text="@string/ah26f" />
 
+                        <TextView
+                            style="@style/textView3Head"
+                            android:text="@string/ah26h2" />
+
                         <RadioButton
                             android:id="@+id/ah26g"
                             style="@style/radiobutton"
                             android:text="@string/ah26g" />
-
-                        <TextView
-                            style="@style/textView3Head"
-                            android:text="@string/ah26h2" />
 
                         <RadioButton
                             android:id="@+id/ah26h"
@@ -1270,14 +1270,14 @@
                             style="@style/radiobutton"
                             android:text="@string/ah26i" />
 
+                        <TextView
+                            style="@style/textView3Head"
+                            android:text="@string/f127h3" />
+
                         <RadioButton
                             android:id="@+id/ah26j"
                             style="@style/radiobutton"
                             android:text="@string/ah26j" />
-
-                        <TextView
-                            style="@style/textView3Head"
-                            android:text="@string/f127h3" />
 
                     </RadioGroup>
 

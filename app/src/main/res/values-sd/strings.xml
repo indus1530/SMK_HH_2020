@@ -401,23 +401,20 @@
     <string name="f101n"> نه </string>
     <string name="f101y"> ھا </string>
 
-    <string name="f102"> F102:\t Place of death</string>
-    <string name="f102a"> Home </string>
-    <string name="f102h1"> Public medical sector </string>
-    <string name="f102b"> TERTIARY/CIVIL HOSPITAL </string>
-    <string name="f102c"> DISTRICTHQ/TEHSIL HQ </string>
-    <string name="f102d"> RURAL HC </string>
-    <string name="f102e"> BASIC HEALTH UNIT </string>
-    <string name="f102f"> Mother And child health centre </string>
-    <string name="f102g"> BIRTH STATION </string>
-    <string name="f102h"> HEALTH HOUSE </string>
-    <string name="f102h2"> Private medical sector </string>
-    <string name="f102i"> Private hospital </string>
-    <string name="f102j"> Private clinic </string>
-    <string name="f102k"> Private maternity home </string>
-    <string name="f102l"> NGO HEALTH FACILITY </string>
-    <string name="f102m"> ON THE WAY TO HEALTH FACILTIY </string>
-    <string name="f10296"> Other (specify) </string>
+    <string name="f102"> F102:\t آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا؟ </string>
+    <string name="f102h1"> سرکاری مرکز صحت </string>
+    <string name="f102a"> گھر </string>
+    <string name="f102b">سول ہسپتال / ٹرشری</string>
+    <string name="f102c">ڈسٹرکٹ ہیڈ کواٹر / تحصیل  ہیڈ کواٹر</string>
+    <string name="f102d"> رورل ہیلتھ سینٹر </string>
+    <string name="f102e"> بنیادی صحت مرکز </string>
+    <string name="f102f"> ماں اور بچے کا صحت مرکز </string>
+    <string name="f102g"> برتھ اسٹیشن (کمیونٹی مڈوائف)  </string>
+    <string name="f102h2"> نجی مرکز صحت </string>
+    <string name="f102h"> پرائیوٹ ہسپتال </string>
+    <string name="f102i"> پرائیوٹ کلینک </string>
+    <string name="f102j"> پرائیوٹ میٹرنٹی ہوم </string>
+    <string name="f102k"> این جی او صحت مرکز </string>
 
     <string name="f103"> F103:\t توھان (نالو) حمل دوران طبي معائنو (ANC) ڪنھن کان ڪرايو ؟ </string>
     <string name="f103a"> ڊاڪٽر </string>
@@ -867,14 +864,17 @@
     <string name="g127"> G127:\t ڇا ليڊي ھيلٿ ورڪر توھان کي ڪلين ڊليوري ڪٽ جي استعمال جي باري ۾ ٻڌايو ؟</string>
     <string name="g127a"> ھا </string>
     <string name="g127b"> نه </string>
+    <string name="g127c"> لاڳو نٿو ٿئي </string>
 
     <string name="g128"> G128:\t ڇا ليڊي ھيلٿ ورڪر توھان کي پوسٽ پارٽم (ڊليوري کانپوءِ شديد رت جو اچڻ) جي باري ۾ ٻڌايو ؟</string>
     <string name="g128a"> ھا </string>
     <string name="g128b"> نه </string>
+    <string name="g128c"> لاڳو نٿو ٿئي </string>
 
     <string name="g129"> G129:\t ڇا ليڊي ھيلٿ ورڪر توھان کي ڊليوري کانپوءِ طبي چڪاس لاءِ صحت مرڪز وڃڻ جو مشورو ڏنو ؟</string>
     <string name="g129a"> ھا </string>
     <string name="g129b"> نه </string>
+    <string name="g129c"> لاڳو نٿو ٿئي </string>
 
 
     <!--  SECTION - H  -->
@@ -2318,6 +2318,7 @@
     <string name="k1072f"> سماجي مفاصلو </string>
     <string name="k1072g"> حفاظتي سامان گهر ۾ موجود نه ھو </string>
     <string name="k1072h">Not Applicable</string>
+    <string name="k1072i"> گولیوں کی عدم دستیابی </string>
 
     <string name="k1081"> K108:\t ڇا ليڊي هيلٿ ورڪر صحت جي حوالي سان توھان ۽ توھان جي مڙس ڪا ميٽنگ ڪئي ؟ </string>
     <string name="k1081a"> ھا </string>
@@ -2908,15 +2909,17 @@
     <string name="ah2">Are You Currently Attending School/College</string>
     <string name="ah2a">Yes</string>
     <string name="ah2b">No</string>
+
     <string name="ah3">How Many More Years Of Education Do You Expect To Complete?</string>
-    <string name="ah3a">Primary(1-5)</string>
-    <string name="ah3b">Middle (6-8)</string>
-    <string name="ah3c">Secondary(9-10)</string>
-    <string name="ah3d">Intermediate</string>
-    <string name="ah3e">Under Graduate</string>
-    <string name="ah3f">Technical Training</string>
-    <string name="ah3g">Religious Education (Hafiz/Aalim/Aalima)</string>
+    <string name="ah3a">Middle (6-8)</string>
+    <string name="ah3b">Secondary(9-10)</string>
+    <string name="ah3c">Intermediate</string>
+    <string name="ah3d">Under Graduate</string>
+    <string name="ah3e">Technical Training</string>
+    <string name="ah3f">Religious Education (Hafiz/Aalim/Aalima)</string>
     <string name="ah3other">Other (Specify)</string>
+    <string name="ah3g">مزید تعلیم نہیں چاہتا/چاہتی </string>
+
     <string name="ah4">How Old Were You When You Left The School/College</string>
     <string name="ah4a">Age</string>
     <string name="ah5">Is The School, College That You Attend(Ed) A Government Or Private Institute?</string>
@@ -3348,9 +3351,20 @@
     <string name="ah57b">No Children</string>
     <string name="ah58">How Many Times You Got Pregnant?</string>
     <string name="ah58a">Number</string>
-    <string name="ah59">How Many Still Birth/Miscarriage/Abortions You Got?</string>
-    <string name="ah59a">Number</string>
-    <string name="ah59b">No One</string>
+
+
+    <string name="ah59h">AH59:\t آپ کے کتنے حمل ضائع ہوئے ہیں</string>
+    <string name="ah5901">مردہ پیدائش</string>
+    <string name="ah5901a">تعداد</string>
+    <string name="ah5901b">کوئی نہیں</string>
+    <string name="ah5902">اسقاطِ حمل</string>
+    <string name="ah5902a">تعداد</string>
+    <string name="ah5902b">کوئی نہیں</string>
+    <string name="ah5903">حمل ضائع کیا گیا</string>
+    <string name="ah5903a">تعداد</string>
+    <string name="ah5903b">کوئی نہیں</string>
+
+
     <string name="ah60">How Many Children Would You Ideally Like To Have?</string>
     <string name="ah60a">Number</string>
 

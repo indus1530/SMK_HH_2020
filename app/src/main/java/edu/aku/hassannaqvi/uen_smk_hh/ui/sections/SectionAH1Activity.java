@@ -244,16 +244,16 @@ public class SectionAH1Activity extends AppCompatActivity {
                 : bi.ah2b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah3", bi.ah3a.isChecked() ? "2"
-                : bi.ah3b.isChecked() ? "3"
-                : bi.ah3c.isChecked() ? "4"
-                : bi.ah3d.isChecked() ? "5"
-                : bi.ah3e.isChecked() ? "6"
-                : bi.ah3f.isChecked() ? "7"
-                : bi.ah3g.isChecked() ? "8"
+        json.put("ah3", bi.ah3a.isChecked() ? "1"
+                : bi.ah3b.isChecked() ? "2"
+                : bi.ah3c.isChecked() ? "3"
+                : bi.ah3d.isChecked() ? "4"
+                : bi.ah3e.isChecked() ? "5"
+                : bi.ah3f.isChecked() ? "6"
+                : bi.ah3g.isChecked() ? "7"
                 : bi.ah3other.isChecked() ? "96"
                 : "-1");
-        json.put("ah3otherx", bi.ah3otherx.getText().toString().trim().isEmpty() ? "-1" : bi.ah3otherx.getText().toString());
+        json.put("ah396x", bi.ah3otherx.getText().toString().trim().isEmpty() ? "-1" : bi.ah3otherx.getText().toString());
 
         json.put("ah4", bi.ah4.getText().toString().trim().isEmpty() ? "-1" : bi.ah4.getText().toString());
 

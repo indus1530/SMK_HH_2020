@@ -388,50 +388,59 @@
                                 style="@style/i_textview"
                                 android:text="@string/k105" />
 
-                            <CheckBox
-                                android:id="@+id/k105a"
-                                style="@style/checkbox"
-                                android:text="@string/k105a" />
+                            <LinearLayout
+                                android:id="@+id/llk105"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="0">
 
-                            <CheckBox
-                                android:id="@+id/k105b"
-                                style="@style/checkbox"
-                                android:text="@string/k105b" />
+                                <CheckBox
+                                    android:id="@+id/k105a"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105a" />
 
-                            <CheckBox
-                                android:id="@+id/k105c"
-                                style="@style/checkbox"
-                                android:text="@string/k105c" />
+                                <CheckBox
+                                    android:id="@+id/k105b"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105b" />
 
-                            <CheckBox
-                                android:id="@+id/k105d"
-                                style="@style/checkbox"
-                                android:text="@string/k105d" />
+                                <CheckBox
+                                    android:id="@+id/k105c"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105c" />
 
-                            <CheckBox
-                                android:id="@+id/k105e"
-                                style="@style/checkbox"
-                                android:text="@string/k105e" />
+                                <CheckBox
+                                    android:id="@+id/k105d"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105d" />
 
-                            <CheckBox
-                                android:id="@+id/k105f"
-                                style="@style/checkbox"
-                                android:text="@string/k105f" />
+                                <CheckBox
+                                    android:id="@+id/k105e"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105e" />
 
-                            <CheckBox
-                                android:id="@+id/k105g"
-                                style="@style/checkbox"
-                                android:text="@string/k105g" />
+                                <CheckBox
+                                    android:id="@+id/k105f"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105f" />
 
-                            <CheckBox
-                                android:id="@+id/k105h"
-                                style="@style/checkbox"
-                                android:text="@string/k105h" />
+                                <CheckBox
+                                    android:id="@+id/k105g"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105g" />
 
-                            <CheckBox
-                                android:id="@+id/k105i"
-                                style="@style/checkbox"
-                                android:text="@string/k105i" />
+                                <CheckBox
+                                    android:id="@+id/k105h"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105h" />
+
+                                <CheckBox
+                                    android:id="@+id/k105i"
+                                    style="@style/checkbox"
+                                    android:text="@string/k105i" />
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -643,6 +652,11 @@
                             android:id="@+id/k1072a"
                             style="@style/checkbox"
                             android:text="@string/k1072a" />
+
+                        <CheckBox
+                            android:id="@+id/k1072i"
+                            style="@style/checkbox"
+                            android:text="@string/k1072i" />
 
                         <CheckBox
                             android:id="@+id/k1072b"

@@ -460,6 +460,28 @@
 
                             <TextView
                                 style="@style/textView3Head"
+                                android:text="@string/ah37aa" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah37aa"
+                                style="@style/EditTextNum"
+                                android:hint="@string/ah37aa"
+                                android:maxLength="2"
+                                android:textColor="@android:color/black"
+                                app:maxValue="31"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView3Head"
                                 android:text="@string/ah37ab" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker

@@ -53,6 +53,38 @@ public class SectionAH7Activity extends AppCompatActivity {
                 bi.fldGrpAH52.setVisibility(View.VISIBLE);
         });
 
+
+        bi.ah59a97.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId) {
+                Clear.clearAllFields(bi.ah59a);
+                bi.ah59a.setVisibility(View.GONE);
+            } else {
+                bi.ah59a.setVisibility(View.VISIBLE);
+            }
+        });
+
+        bi.ah59b97.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId) {
+                Clear.clearAllFields(bi.ah59b);
+                bi.ah59b.setVisibility(View.GONE);
+            } else {
+                bi.ah59b.setVisibility(View.VISIBLE);
+            }
+        });
+
+        bi.ah59c97.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId) {
+                Clear.clearAllFields(bi.ah59c);
+                bi.ah59c.setVisibility(View.GONE);
+            } else {
+                bi.ah59c.setVisibility(View.VISIBLE);
+            }
+        });
+
+
     }
 
     public void BtnContinue() {
@@ -100,8 +132,8 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah50c.isChecked() ? "98"
                 : "-1");
 
-        json.put("ah50aaa", bi.ah50aaa.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aaa.getText().toString());
-        json.put("ah50aab", bi.ah50aab.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aab.getText().toString());
+        json.put("ah5001B", bi.ah50aaa.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aaa.getText().toString());
+        json.put("ah5001G", bi.ah50aab.getText().toString().trim().isEmpty() ? "-1" : bi.ah50aab.getText().toString());
 
         json.put("ah51", bi.ah51a.isChecked() ? "1"
                 : bi.ah51b.isChecked() ? "2"
@@ -116,8 +148,8 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah53b.isChecked() ? "2"
                 : "-1");
 
-        json.put("ah54a", bi.ah54a.getText().toString().trim().isEmpty() ? "-1" : bi.ah54a.getText().toString());
-        json.put("ah54b", bi.ah54b.isChecked() ? "1" : "-1");
+        json.put("ah54", bi.ah54a.getText().toString().trim().isEmpty() ? "-1" : bi.ah54a.getText().toString());
+        json.put("ah5498", bi.ah54b.isChecked() ? "98" : "-1");
 
         json.put("ah55", bi.ah55a.isChecked() ? "1"
                 : bi.ah55b.isChecked() ? "2"
@@ -125,15 +157,21 @@ public class SectionAH7Activity extends AppCompatActivity {
                 : bi.ah55d.isChecked() ? "7"
                 : "-1");
 
-        json.put("ah56a", bi.ah56a.getText().toString().trim().isEmpty() ? "-1" : bi.ah56a.getText().toString());
+        json.put("ah56", bi.ah56a.getText().toString().trim().isEmpty() ? "-1" : bi.ah56a.getText().toString());
+        json.put("ah5698", bi.ah56b.isChecked() ? "98" : "-1");
 
         json.put("ah57a", bi.ah57a.getText().toString().trim().isEmpty() ? "-1" : bi.ah57a.getText().toString());
-        json.put("ah57b", bi.ah57b.isChecked() ? "1" : "-1");
+        json.put("ah57b", bi.ah57b.isChecked() ? "99" : "-1");
 
         json.put("ah58", bi.ah58.getText().toString().trim().isEmpty() ? "-1" : bi.ah58.getText().toString());
 
-        json.put("ah59", bi.ah59a.getText().toString().trim().isEmpty() ? "-1" : bi.ah59a.getText().toString());
-        json.put("ah59", bi.ah59b.isChecked() ? "1" : "-1");
+        json.put("ah5901", bi.ah59a.getText().toString().trim().isEmpty() ? "-1" : bi.ah59a.getText().toString());
+        json.put("ah5902", bi.ah59b.getText().toString().trim().isEmpty() ? "-1" : bi.ah59b.getText().toString());
+        json.put("ah5903", bi.ah59c.getText().toString().trim().isEmpty() ? "-1" : bi.ah59c.getText().toString());
+
+        json.put("ah590197", bi.ah59a97.isChecked() ? "1" : "-1");
+        json.put("ah590297", bi.ah59b97.isChecked() ? "1" : "-1");
+        json.put("ah590397", bi.ah59c97.isChecked() ? "1" : "-1");
 
         json.put("ah60", bi.ah60.getText().toString().trim().isEmpty() ? "-1" : bi.ah60.getText().toString());
 

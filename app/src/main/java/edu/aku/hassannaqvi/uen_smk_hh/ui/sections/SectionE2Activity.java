@@ -27,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.uen_smk_hh.CONSTANTS;
 import edu.aku.hassannaqvi.uen_smk_hh.R;
@@ -237,34 +238,35 @@ public class SectionE2Activity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
+                if (UpdateDB()) {
+                    if (MainApp.twinFlag) {
+                        openDialog();
+                    } else {
+                        if (MainApp.noOfPragnencies != noOfPreCounter) {
+                            finish();
+                            startActivity(new Intent(SectionE2Activity.this, SectionE2Activity.class)
+                                    .putExtra(CONSTANTS.MWRA_INFO, mwraContract));
+                        } else {
+                            noOfPreCounter = 0;
+                            if (MainApp.pragnantWoman.getFirst().size() > 0) {
+                                finish();
+                                startActivity(new Intent(SectionE2Activity.this, SectionE1Activity.class));
+                            } else {
+                                finish();
+                                Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionMActivity.class;
+                                startActivity(new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass));
+
+                                //    startActivity(new Intent(SectionE2Activity.this, SectionE3Activity.class));
+                            }
+                        }
+
+                    }
+                }
+
             } catch (Exception e) {
                 e.printStackTrace();
+                Toast.makeText(this, "You can't proceed to next section. Please contact IT department.", Toast.LENGTH_SHORT).show();
             }
-            if (UpdateDB()) {
-                if (MainApp.twinFlag) {
-                    openDialog();
-                } else {
-                    if (MainApp.noOfPragnencies != noOfPreCounter) {
-                        finish();
-                        startActivity(new Intent(SectionE2Activity.this, SectionE2Activity.class)
-                                .putExtra(CONSTANTS.MWRA_INFO, mwraContract));
-                    } else {
-                        noOfPreCounter = 0;
-                        if (MainApp.pragnantWoman.getFirst().size() > 0) {
-                            finish();
-                            startActivity(new Intent(SectionE2Activity.this, SectionE1Activity.class));
-                        } else {
-                            finish();
-                            Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionMActivity.class;
-                            startActivity(new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass));
-
-                            //    startActivity(new Intent(SectionE2Activity.this, SectionE3Activity.class));
-                        }
-                    }
-
-                }
-            }
-
         }
     }
 
@@ -331,7 +333,7 @@ public class SectionE2Activity extends AppCompatActivity {
         json.put("_luid", MainApp.fc.getLuid());
         json.put("appversion", MainApp.appInfo.getAppVersion());
         json.put("counter", noOfPreCounter);
-        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        json.put("sysdate", new SimpleDateFormat("dd-MM-yy HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("e104", bi.e104a.isChecked() ? "1"
                 : bi.e104b.isChecked() ? "2"
@@ -348,7 +350,7 @@ public class SectionE2Activity extends AppCompatActivity {
         json.put("e106a", bi.e106a.getText().toString().trim().isEmpty() ? "-1" : bi.e106a.getText().toString());
         json.put("e106b", bi.e106b.getText().toString().trim().isEmpty() ? "-1" : bi.e106b.getText().toString());
         json.put("e106c", bi.e106c.getText().toString().trim().isEmpty() ? "-1" : bi.e106c.getText().toString());
-        json.put("e10698", bi.e10698.isChecked() ? "1" : "-1");
+        //json.put("e10698", bi.e10698.isChecked() ? "1" : "-1");
 
         json.put("e107", bi.e107a.isChecked() ? "1"
                 : bi.e107b.isChecked() ? "2"
@@ -360,16 +362,10 @@ public class SectionE2Activity extends AppCompatActivity {
 
         json.put("e109", bi.e109.getText().toString().trim().isEmpty() ? "-1" : bi.e109.getText().toString());
 
-        if (bi.container1.getVisibility() == View.VISIBLE && position != 1) {
-            json.put("ch_serial", fmc_child.getSerialno());
-            json.put("ch_name", fmc_child.getName());
-            json.put("ch_uid", fmc_child.getUid());
-        }
-
         json.put("e110a", bi.e110a.getText().toString().trim().isEmpty() ? "-1" : bi.e110a.getText().toString());
         json.put("e110b", bi.e110b.getText().toString().trim().isEmpty() ? "-1" : bi.e110b.getText().toString());
         json.put("e110c", bi.e110c.getText().toString().trim().isEmpty() ? "-1" : bi.e110c.getText().toString());
-        json.put("e11098", bi.e11098.isChecked() ? "1" : "-1");
+        //json.put("e11098", bi.e11098.isChecked() ? "1" : "-1");
 
         json.put("e111", bi.e111a.isChecked() ? "1"
                 : bi.e111b.isChecked() ? "2"
@@ -420,17 +416,30 @@ public class SectionE2Activity extends AppCompatActivity {
                 : bi.e115b.isChecked() ? "2"
                 : "-1");
 
+        if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd107.getVisibility() == View.VISIBLE && position != 1) {
+
+            json.put("ch_serial", fmc_child.getSerialno());
+            json.put("ch_name", fmc_child.getName());
+            json.put("ch_uid", fmc_child.getUid());
+        } else {
+            json.put("ch_serial", "-1");
+            json.put("ch_name", "-1");
+            json.put("ch_uid", "-1");
+        }
+
         mwraPre.setsE2(String.valueOf(json));
 
         // Update Corona Check
-        if (MainApp.selectedKishMWRA.getSerialno().equals(mwraContract.getFm_serial()) && !MainApp.selectedKishMWRA.isCoronaCase()) {
-            if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
-                MainApp.selectedKishMWRA.setCoronaCase(Integer.parseInt(bi.e106c.getText().toString()) == 2020);
+        if (MainApp.selectedKishMWRA  != null) {
+            if (MainApp.selectedKishMWRA.getSerialno().equals(mwraContract.getFm_serial()) && !MainApp.selectedKishMWRA.isCoronaCase()) {
+                if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd108.getVisibility() == View.VISIBLE) {
+                    MainApp.selectedKishMWRA.setCoronaCase(Integer.parseInt(bi.e106c.getText().toString()) == 2020);
+                }
             }
         }
 
         // Deleting item in list
-        if (bi.container1.getVisibility() == View.VISIBLE && position != 1) {
+        if (bi.container1.getVisibility() == View.VISIBLE && bi.fldGrpCVd107.getVisibility() == View.VISIBLE && position != 1) {
             MainApp.selectedMWRAChildLst.getFirst().remove(position - 2);
             MainApp.selectedMWRAChildLst.getSecond().remove(position - 2);
         }

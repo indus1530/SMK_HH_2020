@@ -1746,7 +1746,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         List<String> mwras = new ArrayList<String>();
 
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select distinct m.mother_serial as mother_serial, m.mother_name as mother_name from familymembers m where CAST(m.ageInDays as int) = (select min(CAST(ageInDays as int)) from familymembers where _uuid = m._uuid and mother_serial = m.mother_serial and mother_name = m.mother_name) AND m._uuid = '" + _uuid + "' AND m.mother_serial != '97' AND CAST(m.mother_serial as int) > 0", null);
+        Cursor res = db.rawQuery("select distinct m.mother_serial as mother_serial, m.mother_name as mother_name, ageInDays from familymembers m where CAST(m.ageInDays as int) = (select min(CAST(ageInDays as int)) from familymembers where _uuid = m._uuid) AND m._uuid = '" + _uuid + "' AND m.mother_serial != '97' AND CAST(m.mother_serial as int) > 0", null);
         mwras.add("....");
         if (res.moveToFirst()) {
             do {

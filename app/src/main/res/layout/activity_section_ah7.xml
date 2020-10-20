@@ -350,8 +350,8 @@
                             android:enabled='@{ah54b.checked ? false : true }'
                             android:hint="@string/ah54a"
                             android:inputType="number"
-                            android:text='@{ah54b.checked ? "" : ah54a.getText().toString() }'
                             android:maxLength="2"
+                            android:text='@{ah54b.checked ? "" : ah54a.getText().toString() }'
                             app:mask="##"
                             app:maxValue="19"
                             app:minValue="10"
@@ -485,8 +485,8 @@
                             android:enabled='@{ah57b.checked ? false : true }'
                             android:hint="@string/ah57a"
                             android:inputType="number"
-                            android:text='@{ah57b.checked ? "" : ah57a.getText().toString() }'
                             android:maxLength="2"
+                            android:text='@{ah57b.checked ? "" : ah57a.getText().toString() }'
                             app:mask="##"
                             app:maxValue="7"
                             app:minValue="0"
@@ -538,9 +538,9 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <!-- ah 59  Input-Numeric   -->
+                    <!-- ah 59a  Input-Numeric   -->
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVah59"
+                        android:id="@+id/fldGrpCVah59a"
                         style="@style/cardView">
 
                         <LinearLayout
@@ -550,12 +550,57 @@
 
                             <TextView
                                 style="@style/i_textview"
-                                android:text="@string/ah59" />
+                                android:text="@string/ah59h" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/i_textview"
+                                    android:text="@string/ah5901" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/ah59a"
+                                    style="@style/EditTextNum"
+                                    android:hint="@string/ah5901a"
+                                    android:inputType="number"
+                                    app:mask="##"
+                                    app:maxValue="7"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                                <CheckBox
+                                    android:id="@+id/ah59a97"
+                                    style="@style/checkbox"
+                                    android:tag="-1"
+                                    android:text="@string/ah5901b" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- ah 59b  Input-Numeric   -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fldGrpCVah59b"
+                        style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/i_textview"
+                                android:text="@string/ah5902" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/ah59a"
+                                android:id="@+id/ah59b"
                                 style="@style/EditTextNum"
-                                android:hint="@string/ah59"
+                                android:hint="@string/ah5902a"
                                 android:inputType="number"
                                 app:mask="##"
                                 app:maxValue="7"
@@ -563,10 +608,44 @@
                                 app:type="range" />
 
                             <CheckBox
-                                android:id="@+id/ah59b"
+                                android:id="@+id/ah59b97"
                                 style="@style/checkbox"
                                 android:tag="-1"
-                                android:text="@string/ah59b" />
+                                android:text="@string/ah5902b" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- ah 59c  Input-Numeric   -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fldGrpCVah59c"
+                        style="@style/cardView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/i_textview"
+                                android:text="@string/ah5903" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/ah59c"
+                                style="@style/EditTextNum"
+                                android:hint="@string/ah5903a"
+                                android:inputType="number"
+                                app:mask="##"
+                                app:maxValue="7"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/ah59c97"
+                                style="@style/checkbox"
+                                android:tag="-1"
+                                android:text="@string/ah5903b" />
 
                         </LinearLayout>
 

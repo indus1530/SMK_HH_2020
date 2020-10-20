@@ -260,7 +260,7 @@
                         android:maxLength="2"
                         android:text='@{h203a.checked || h203b.checked || h203c.checked ? h203x.getText().toString() : ""}'
                         android:visibility='@{h203a.checked || h203b.checked || h203c.checked ? View.VISIBLE : View.GONE}'
-                        app:maxValue="99"
+                        app:maxValue="31"
                         app:minValue="1"
                         app:type="range" />
 
@@ -426,62 +426,72 @@
                         style="@style/i_textview"
                         android:text="@string/h205aa" />
 
+                    <LinearLayout
+                        android:id="@+id/llh205a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                    <CheckBox
-                        android:id="@+id/h205aa"
-                        style="@style/checkbox"
-                        android:text="@string/h205aaa" />
+                        <CheckBox
+                            android:id="@+id/h205aa"
+                            style="@style/checkbox"
+                            android:text="@string/h205aaa" />
 
-                    <CheckBox
-                        android:id="@+id/h205ab"
-                        style="@style/checkbox"
-                        android:text="@string/h205aab" />
+                        <CheckBox
+                            android:id="@+id/h205ab"
+                            style="@style/checkbox"
+                            android:text="@string/h205aab" />
 
-                    <CheckBox
-                        android:id="@+id/h205ac"
-                        style="@style/checkbox"
-                        android:text="@string/h205aac" />
+                        <CheckBox
+                            android:id="@+id/h205ac"
+                            style="@style/checkbox"
+                            android:text="@string/h205aac" />
 
-                    <CheckBox
-                        android:id="@+id/h205ad"
-                        style="@style/checkbox"
-                        android:text="@string/h205aad" />
+                        <CheckBox
+                            android:id="@+id/h205ad"
+                            style="@style/checkbox"
+                            android:text="@string/h205aad" />
 
-                    <CheckBox
-                        android:id="@+id/h205ae"
-                        style="@style/checkbox"
-                        android:text="@string/h205aae" />
+                        <CheckBox
+                            android:id="@+id/h205ae"
+                            style="@style/checkbox"
+                            android:text="@string/h205aae" />
 
-                    <CheckBox
-                        android:id="@+id/h205af"
-                        style="@style/checkbox"
-                        android:text="@string/h205aaf" />
+                        <CheckBox
+                            android:id="@+id/h205af"
+                            style="@style/checkbox"
+                            android:text="@string/h205aaf" />
 
-                    <CheckBox
-                        android:id="@+id/h205ag"
-                        style="@style/checkbox"
-                        android:text="@string/h205aag" />
+                        <CheckBox
+                            android:id="@+id/h205ag"
+                            style="@style/checkbox"
+                            android:text="@string/h205aag" />
 
-                    <CheckBox
-                        android:id="@+id/h205ah"
-                        style="@style/checkbox"
-                        android:text="@string/h205aah" />
+                        <CheckBox
+                            android:id="@+id/h205ah"
+                            style="@style/checkbox"
+                            android:text="@string/h205aah" />
 
-                    <CheckBox
-                        android:id="@+id/h205ai"
-                        style="@style/checkbox"
-                        android:text="@string/h205aai" />
+                        <CheckBox
+                            android:id="@+id/h205ai"
+                            style="@style/checkbox"
+                            android:text="@string/h205aai" />
 
-                    <CheckBox
-                        android:id="@+id/h2050196"
-                        style="@style/checkbox"
-                        android:text="@string/specify" />
+                        <CheckBox
+                            android:id="@+id/h2050196"
+                            style="@style/checkbox"
+                            android:text="@string/specify" />
 
-                    <EditText
-                        android:id="@+id/h2050196x"
-                        style="@style/EditTextAlpha"
-                        android:hint="@string/specify"
-                        android:visibility='@{h2050196.checked ? View.VISIBLE : View.GONE}' />
+                        <EditText
+                            android:id="@+id/h2050196x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="h2050196"
+                            android:text='@{h2050196.checked ? h2050196x.getText().toString() : "" }'
+                            android:visibility='@{h2050196.checked ? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -1360,8 +1370,8 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpsecH201"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility='@{h217a.checked ? View.VISIBLE : View.GONE}'>
 

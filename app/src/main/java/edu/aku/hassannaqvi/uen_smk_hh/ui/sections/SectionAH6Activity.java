@@ -185,6 +185,7 @@ public class SectionAH6Activity extends AppCompatActivity {
         json.put("ah370696x", bi.ah370696x.getText().toString().trim().isEmpty() ? "-1" : bi.ah370696x.getText().toString());
 
         //    json.put("ah37aa", bi.ah37aa.getText().toString());
+        json.put("ah37aa", bi.ah37aa.getText().toString().trim().isEmpty() ? "-1" : bi.ah37aa.getText().toString());
         json.put("ah37ab", bi.ah37ab.getText().toString().trim().isEmpty() ? "-1" : bi.ah37ab.getText().toString());
         json.put("ah37ac", bi.ah37ac.getText().toString().trim().isEmpty() ? "-1" : bi.ah37ac.getText().toString());
 
@@ -224,17 +225,7 @@ public class SectionAH6Activity extends AppCompatActivity {
                 : bi.ah40aah.isChecked() ? "8"
                 : bi.ah40aa96.isChecked() ? "96" : "-1");
 
-        /*json.put("ah40aaa", bi.ah40aaa.isChecked() ? "1" : "-1");
-        json.put("ah40aab", bi.ah40aab.isChecked() ? "2" : "-1");
-        json.put("ah40aac", bi.ah40aac.isChecked() ? "3" : "-1");
-        json.put("ah40aad", bi.ah40aad.isChecked() ? "4" : "-1");
-        json.put("ah40aae", bi.ah40aae.isChecked() ? "5" : "-1");
-        json.put("ah40aaf", bi.ah40aaf.isChecked() ? "6" : "-1");
-        json.put("ah40aag", bi.ah40aag.isChecked() ? "7" : "-1");
-        json.put("ah40aah", bi.ah40aah.isChecked() ? "8" : "-1");
-        json.put("ah40aa96", bi.ah40aa96.isChecked() ? "96" : "-1");*/
-
-        json.put("ah40aa96x", bi.ah40aa96x.getText().toString().trim().isEmpty() ? "-1" : bi.ah40aa96x.getText().toString());
+        json.put("ah400196x", bi.ah40aa96x.getText().toString().trim().isEmpty() ? "-1" : bi.ah40aa96x.getText().toString());
 
         json.put("ah41", bi.ah41a.isChecked() ? "1"
                 : bi.ah41b.isChecked() ? "2"
@@ -270,7 +261,7 @@ public class SectionAH6Activity extends AppCompatActivity {
                 : bi.ah46c.isChecked() ? "98"
                 : "-1");
 
-        json.put("ah47d", bi.ah47a.isChecked() ? "1"
+        json.put("ah47", bi.ah47a.isChecked() ? "1"
                 : bi.ah47b.isChecked() ? "2"
                 : bi.ah47c.isChecked() ? "98"
                 : "-1");
