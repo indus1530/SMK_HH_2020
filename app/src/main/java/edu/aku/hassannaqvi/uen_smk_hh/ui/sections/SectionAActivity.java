@@ -46,8 +46,8 @@ public class SectionAActivity extends AppCompatActivity implements Util.EndSecAA
 
         setUIComponent();
 
-        db.resetAll();
-        Toast.makeText(this, "Updated: " + new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()), Toast.LENGTH_SHORT).show();
+        /*db.resetAll();
+        Toast.makeText(this, "Updated: " + new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()), Toast.LENGTH_SHORT).show();*/
 
     }
 
