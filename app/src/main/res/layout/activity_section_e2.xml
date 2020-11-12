@@ -824,7 +824,7 @@
                             android:text="@string/e114" />
 
                         <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/e114"
+                            android:id="@+id/e114m"
                             style="@style/EditTextNum"
                             android:hint="@string/e110b"
                             android:maxLength="2"
@@ -834,7 +834,7 @@
                             app:minValue="1"
                             app:type="range" />
 
-                        <!--<com.edittextpicker.aliazaz.EditTextPicker
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/e114w"
                             style="@style/EditTextNum"
                             android:hint="@string/weeks"
@@ -843,7 +843,7 @@
                             app:defaultValue="00"
                             app:maxValue="22"
                             app:minValue="1"
-                            app:type="range" />-->
+                            app:type="range" />
 
                     </LinearLayout>
 

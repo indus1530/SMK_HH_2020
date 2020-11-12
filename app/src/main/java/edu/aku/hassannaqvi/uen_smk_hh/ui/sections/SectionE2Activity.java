@@ -416,9 +416,9 @@ public class SectionE2Activity extends AppCompatActivity {
         json.put("e113m", bi.e113m.getText().toString().trim().isEmpty() ? "-1" : bi.e113m.getText().toString());
         json.put("e113y", bi.e113y.getText().toString().trim().isEmpty() ? "-1" : bi.e113y.getText().toString());
 
-        /*json.put("e114m", bi.e114m.getText().toString().trim().isEmpty() ? "-1" : bi.e114m.getText().toString());
-        json.put("e114w", bi.e114w.getText().toString().trim().isEmpty() ? "-1" : bi.e114w.getText().toString());*/
-        json.put("e114", bi.e114.getText().toString().trim().isEmpty() ? "-1" : bi.e114.getText().toString());
+        json.put("e114m", bi.e114m.getText().toString().trim().isEmpty() ? "-1" : bi.e114m.getText().toString());
+        json.put("e114w", bi.e114w.getText().toString().trim().isEmpty() ? "-1" : bi.e114w.getText().toString());
+        //json.put("e114", bi.e114.getText().toString().trim().isEmpty() ? "-1" : bi.e114.getText().toString());
 
         json.put("e115", bi.e115a.isChecked() ? "1"
                 : bi.e115b.isChecked() ? "2"
