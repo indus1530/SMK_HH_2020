@@ -132,31 +132,28 @@ public class SectionH102Activity extends AppCompatActivity {
         //h132
         bi.h132.setOnCheckedChangeListener(((radioGroup, i) -> {
 
+
+            bi.fldGrpCVh133.setVisibility(View.VISIBLE);
+            if (MainApp.selectedKishMWRA.isCoronaCase()) {
+                bi.fldGrpCVh1321.setVisibility(View.VISIBLE);
+            }
+
             if (i == bi.h132a.getId()) {
 
-
                 bi.fldGrpCVh133.setVisibility(View.VISIBLE);
-
-                if (MainApp.selectedKishMWRA.isCoronaCase()) {
-                    Clear.clearAllFields(bi.fldGrpCVh1321);
-                    bi.fldGrpCVh1321.setVisibility(View.GONE);
-                }
+                Clear.clearAllFields(bi.fldGrpCVh1321);
+                bi.fldGrpCVh1321.setVisibility(View.GONE);
 
             } else if (i == bi.h132b.getId()) {
 
-                if (MainApp.selectedKishMWRA.isCoronaCase()) {
-                    bi.fldGrpCVh1321.setVisibility(View.VISIBLE);
-                }
+                bi.fldGrpCVh1321.setVisibility(View.VISIBLE);
                 Clear.clearAllFields(bi.fldGrpCVh133);
                 bi.fldGrpCVh133.setVisibility(View.GONE);
 
             } else {
 
-                if (MainApp.selectedKishMWRA.isCoronaCase()) {
-
-                    Clear.clearAllFields(bi.fldGrpCVh1321);
-                    bi.fldGrpCVh1321.setVisibility(View.GONE);
-                }
+                Clear.clearAllFields(bi.fldGrpCVh1321);
+                bi.fldGrpCVh1321.setVisibility(View.GONE);
 
                 Clear.clearAllFields(bi.fldGrpCVh133);
                 bi.fldGrpCVh133.setVisibility(View.GONE);

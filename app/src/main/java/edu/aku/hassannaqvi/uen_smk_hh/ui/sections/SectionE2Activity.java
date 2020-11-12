@@ -235,7 +235,9 @@ public class SectionE2Activity extends AppCompatActivity {
     }
 
     public void BtnContinue() {
+
         if (formValidation()) {
+
             try {
                 SaveDraft();
                 if (UpdateDB()) {
@@ -247,7 +249,9 @@ public class SectionE2Activity extends AppCompatActivity {
                             startActivity(new Intent(SectionE2Activity.this, SectionE2Activity.class)
                                     .putExtra(CONSTANTS.MWRA_INFO, mwraContract));
                         } else {
+
                             noOfPreCounter = 0;
+
                             if (MainApp.pragnantWoman.getFirst().size() > 0) {
                                 finish();
                                 startActivity(new Intent(SectionE2Activity.this, SectionE1Activity.class));
@@ -262,6 +266,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
                     }
                 }
+
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -410,6 +415,9 @@ public class SectionE2Activity extends AppCompatActivity {
 
         json.put("e113m", bi.e113m.getText().toString().trim().isEmpty() ? "-1" : bi.e113m.getText().toString());
         json.put("e113y", bi.e113y.getText().toString().trim().isEmpty() ? "-1" : bi.e113y.getText().toString());
+
+        /*json.put("e114m", bi.e114m.getText().toString().trim().isEmpty() ? "-1" : bi.e114m.getText().toString());
+        json.put("e114w", bi.e114w.getText().toString().trim().isEmpty() ? "-1" : bi.e114w.getText().toString());*/
         json.put("e114", bi.e114.getText().toString().trim().isEmpty() ? "-1" : bi.e114.getText().toString());
 
         json.put("e115", bi.e115a.isChecked() ? "1"

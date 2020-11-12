@@ -834,6 +834,17 @@
                             app:minValue="1"
                             app:type="range" />
 
+                        <!--<com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/e114w"
+                            style="@style/EditTextNum"
+                            android:hint="@string/weeks"
+                            android:maxLength="2"
+                            android:textColor="@android:color/black"
+                            app:defaultValue="00"
+                            app:maxValue="22"
+                            app:minValue="1"
+                            app:type="range" />-->
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

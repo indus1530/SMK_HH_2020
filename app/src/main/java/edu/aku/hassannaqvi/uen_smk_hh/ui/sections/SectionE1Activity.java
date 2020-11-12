@@ -93,7 +93,11 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
                 if (!charSequence.toString().isEmpty()) {
-                    MainApp.noOfPragnencies = Integer.parseInt(charSequence.toString());
+                    if (bi.e102aa.isChecked()) {
+                        MainApp.noOfPragnencies = Integer.parseInt(charSequence.toString()) - 1;
+                    } else {
+                        MainApp.noOfPragnencies = Integer.parseInt(charSequence.toString());
+                    }
                 }
 
             }
@@ -125,8 +129,17 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
         if (UpdateDB()) {
             Intent next;
             if (bi.e101a.isChecked()) {
-                next = new Intent(SectionE1Activity.this, SectionE2Activity.class);
-                next.putExtra(CONSTANTS.MWRA_INFO, mwra);
+                if (bi.e102aa.isChecked() && Integer.parseInt(bi.e102.getText().toString()) > 1) {
+                    next = new Intent(SectionE1Activity.this, SectionE2Activity.class);
+                    next.putExtra(CONSTANTS.MWRA_INFO, mwra).putExtra("cp", bi.e102aa.isChecked());
+                } else {
+                    if (MainApp.pragnantWoman.getFirst().size() > 0) {
+                        next = new Intent(SectionE1Activity.this, SectionE1Activity.class);
+                    } else {
+                        Class<?> nextClass = MainApp.selectedKishAdols != null ? SectionAH1Activity.class : SectionMActivity.class;
+                        next = new Intent(this, MainApp.selectedKishMWRA != null ? SectionFActivity.class : nextClass);
+                    }
+                }
             } else {
                 if (MainApp.pragnantWoman.getFirst().size() > 0) {
                     next = new Intent(SectionE1Activity.this, SectionE1Activity.class);
@@ -185,10 +198,13 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
                 : bi.e101b.isChecked() ? "2"
                 : "-1");
 
+        // e102 how many times got pregnant after marriage
         json.put("e003", bi.e102.getText().toString().trim().isEmpty() ? "-1" : bi.e102.getText().toString());
 
         json.put("e004", bi.e10201.getText().toString().trim().isEmpty() ? "-1" : bi.e10201.getText().toString());
 
+
+        // currently pregnant
         json.put("e005", bi.e102aa.isChecked() ? "1"
                 : bi.e102ab.isChecked() ? "2"
                 : "-1");

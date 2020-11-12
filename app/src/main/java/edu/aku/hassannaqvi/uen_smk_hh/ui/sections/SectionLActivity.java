@@ -43,6 +43,12 @@ public class SectionLActivity extends AppCompatActivity {
             }
         }));
 
+        bi.l1022.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i != bi.l102296.getId()) {
+                Clear.clearAllFields(bi.l102296x);
+            }
+        }));
+
         bi.l103.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             if (i == bi.l103b.getId()) {
@@ -119,7 +125,10 @@ public class SectionLActivity extends AppCompatActivity {
                 : bi.l1022e.isChecked() ? "5"
                 : bi.l1022f.isChecked() ? "6"
                 : bi.l1022g.isChecked() ? "7"
+                : bi.l102296.isChecked() ? "96"
                 : "-1");
+
+        json.put("l1020196", bi.l102296x.getText().toString().trim().isEmpty() ? "-1" : bi.l102296x.getText().toString());
 
         json.put("l103", bi.l103a.isChecked() ? "1"
                 : bi.l103b.isChecked() ? "2"

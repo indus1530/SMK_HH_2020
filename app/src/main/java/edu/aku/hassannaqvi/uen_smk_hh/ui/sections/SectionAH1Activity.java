@@ -82,6 +82,7 @@ public class SectionAH1Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVah3);
             } else if (i == bi.ah2a.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVah4);
+                Clear.clearAllFields(bi.fldGrpCVah7);
             }
         }));
 
