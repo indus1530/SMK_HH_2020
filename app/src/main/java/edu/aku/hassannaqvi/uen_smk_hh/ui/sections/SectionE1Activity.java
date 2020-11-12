@@ -129,7 +129,7 @@ public class SectionE1Activity extends AppCompatActivity implements Util.EndSecA
         if (UpdateDB()) {
             Intent next;
             if (bi.e101a.isChecked()) {
-                if (bi.e102aa.isChecked() && Integer.parseInt(bi.e102.getText().toString()) > 1) {
+                if (Integer.parseInt(bi.e102.getText().toString()) > 1 || (Integer.parseInt(bi.e102.getText().toString()) == 1 && bi.e102ab.isChecked())) {
                     next = new Intent(SectionE1Activity.this, SectionE2Activity.class);
                     next.putExtra(CONSTANTS.MWRA_INFO, mwra).putExtra("cp", bi.e102aa.isChecked());
                 } else {
